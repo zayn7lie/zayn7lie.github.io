@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: '/zayn7lie.github.io'
+baseurl: ''
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -27,7 +27,7 @@ description: >-                        # used by seo meta and the atom feed
   Teaching others is the best teacher for teaching ourselves.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://zayn7lie.github.io'
+url: ''
 
 github:
   username: zayn7lie             # change to your github username
