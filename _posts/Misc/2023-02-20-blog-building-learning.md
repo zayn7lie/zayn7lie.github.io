@@ -23,10 +23,11 @@ tags: [blog, building, jekyll, chirpy, github]     # lowercase
 -  更多的设置可以自己在后端调配，本篇教程也会列出一些我自己遇到的问题和解决方案
 -  有关chirpy主题的教程可以在 [这里](https://chirpy.cotes.page/) 查看
 
-# 网站tab图标修改
+# 博客图标头像修改
 - [ref](https://chirpy.cotes.page/posts/customize-the-favicon/)
 - 打开 [Real Favicon Generator](https://realfavicongenerator.net) 导入你想要的图标
 - 加载完毕，拉到最下边，点击 `Generate your Favicons and HTML code` 点击 `Download your package:` 的 `Favicon package`
 - 解压，删除 `browserconfig.xml` 和 `site.webmanifest`
 - 将图片全部上传到你的库里的 `assets/img/favicons/` （如果没有就创建这样文件夹）
 - Commit后图标就出来啦！
+- 主页头标的修改在 `_config.yml` 的 `avatar` 里设置路径，例如 `avatar: 'assets/img/avatar.png'`
