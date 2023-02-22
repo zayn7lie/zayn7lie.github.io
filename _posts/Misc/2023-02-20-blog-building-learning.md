@@ -1,5 +1,5 @@
 ---
-title: 从0开始的博客网站搭建
+title: 最简单的从0开始免费博客网站搭建
 date: 2023-2-20 # HH:MM:SS +/-TTTT
 categories: [Misc]
 tags: [blog, building, jekyll, chirpy, github]     # lowercase
