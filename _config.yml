@@ -21,7 +21,7 @@ timezone: Asia/Hong_Kong
 
 title: zayn_lie's Blog                          # the main title
 
-tagline: Better understanding for some knowledge points [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie)   # it will display as the sub-title
+tagline: Better understanding for some knowledge points    # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Teaching others is the best teacher for teaching ourselves.
