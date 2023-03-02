@@ -8,19 +8,27 @@ math: true
 [![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/2.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
 
 ### WHY: 为什么要使用编译器和搭建C++环境
+
 - ~= 为什么吃饭要使用嘴巴
+
 ### WHAT: 什么是编译器和C++环境
+
 - 本小节内容仅供有兴趣者阅读，因为本小节对于竞赛和平时使用并无太大帮助，当然在了解了编译器和环境后对以后的一些C++能够有更深的理解，也有助于以后真正使用C++写程序。
 - 暂时不想写，先玩算法竞赛，本小节敬请期待。
+
 ### HOW: 如何搭建C++环境及编译器的选择
+
 #### 对于中国体制内参加 `NOI` 的算法竞赛生：dev-cpp
+
 - 不要想花里胡哨好玩的编译器了，老老实实给我用 [dev-cpp: ](https://sourceforge.net/projects/orwelldevcpp/files/latest/download)https://sourceforge.net/projects/orwelldevcpp/files/latest/download！
 - 该软件是全国统一的竞赛软件（for c++），因此你即使掌握了再多各种软件和各种功能，考试的时候还是得使用dev-cpp，那为什么不一开始就使用这个软件呢？
 - 点击上方即可下载，不要下载最新版。一方面全国的机考都是用该版本dev-cpp，另一方面最新版dev-cpp已闭源商用。开源就是最好的，那么闭源就是最差的，因此不要用最差的闭源软件。（个人喜欢拿逻辑开玩笑，别介意）
 - 下载完安装（如果连安装都不会的话就一路点next就行）
     - 该软件会帮你直接安装好编译器并且搭建好C++环境
 - 点击左上角空白的纸打开新的一页，写完程序按f11即可保存并运行。
+
 ### 其他的竞赛生（线上考生）：vs-code
+
 - 编译器下载
     - 一律推荐使用[vs-code: ](https://code.visualstudio.com/download)https://code.visualstudio.com/download
         - 首先，这个软件比dev-cpp更好用，但是也会更麻烦。因此怕麻烦的话也可以使用上面的dev-cpp。
