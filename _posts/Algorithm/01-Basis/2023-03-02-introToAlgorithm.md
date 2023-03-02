@@ -2,7 +2,7 @@
 title: 从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？
 date: 2023-03-02 # +/-TTTT
 categories: [Algorithm, Basis]
-tags: [blog, template] # lowercase
+tags: [algorithm] # lowercase
 math: true
 ---
 [![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/4.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
