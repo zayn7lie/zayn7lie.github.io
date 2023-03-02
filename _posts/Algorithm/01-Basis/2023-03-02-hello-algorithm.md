@@ -5,7 +5,7 @@ categories: [Algorithm, Basis]
 tags: [blog, template] # lowercase
 math: true
 ---
-[![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/2.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
+[![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/4.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
 
 ### WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？
 
@@ -46,4 +46,4 @@ math: true
     - 复杂度优化：最后分析是否有更好的结构、方法可以提高代码速度、减少占用空间。
 - 当然，这种分析只是一个框架，具体问题仍需具体分析。但是，当我们将每个问题放到这个框架中，便可以越来越熟悉，将框架转化为一种习惯或者说感觉。最终达到准确率和速度都提升的效果。
 
-[![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/2.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
+[![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/4.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
