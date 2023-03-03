@@ -55,12 +55,14 @@ int f(int x){
     if(x > 7) return f(x - 1);
 }
 ```
+
+- 这就是递归函数该怎么写。虽然这节课的内容较少，但是递归将伴随整个算法生涯，甚至后面递归我们不会再强调，而是把它当作一种和加减乘除一样常见的方法。所以希望本节课大家能好好理解。特别是注意写递归时不仅要有传递，还要有回归（限制条件要写清楚）。如果没有限制条件或者条件不当，程序将无限运行下去，知道内存超标。
+
 ### 练习
 #### KN
 #### US
 #### MS
 #### ANS
 
-- 这就是递归函数该怎么写。虽然这节课的内容较少，但是递归将伴随整个算法生涯，甚至后面递归我们不会再强调，而是把它当作一种和加减乘除一样常见的方法。所以希望本节课大家能好好理解。特别是注意写递归时不仅要有传递，还要有回归（限制条件要写清楚）。如果没有限制条件或者条件不当，程序将无限运行下去，知道内存超标。
 
 [![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/4.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
