@@ -2,7 +2,7 @@
 title: 从0开始的C++语言基础00：编译器及C++环境的设置
 date: 2023-02-20
 categories: [C++]
-tags: [c++, environment, compiler] # lowercase
+tags: [c++, environment, compiler]
 math: true
 ---
 
