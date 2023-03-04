@@ -5,7 +5,6 @@ categories: [Algorithm, Basis]
 tags: [algorithm, function, recursion, loop, enumeration] # lowercase
 math: true
 ---
-[![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/4.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
 
 ## 递归(Recursion)
 ### WHY: 为什么要学递归？
@@ -185,5 +184,3 @@ int LCM(int x, int y){
     return x * y / GCD(x, y);
 }
 ```
-
-[![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/4.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 

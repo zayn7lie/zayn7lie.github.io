@@ -6,7 +6,6 @@ tags: [algorithm] # lowercase
 math: true
 pin: true
 ---
-[![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/4.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
 
 ### WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？
 - 如果你真的有这种疑惑，那么你大概率平时是靠感觉解决问题的 —— 我并不是说我们并不能靠感觉解决问题的，且凭感觉解决问题也是很重要的一项技能（凭感觉解决问题其实并不是什么不好的方式，其实就是第六感），凭感觉有着速度快、和经验正相关的精准等优点。但是作为理科竞赛，我更希望凭感觉少些，分析的成分多些。这样在你一些从没有遇到类型的问题你也可以得出正确答案。
@@ -45,5 +44,3 @@ pin: true
     - 代码转化：将方案转化为代码。
     - 复杂度优化：最后分析是否有更好的结构、方法可以提高代码速度、减少占用空间。
 - 当然，这种分析只是一个框架，具体问题仍需具体分析。但是，当我们将每个问题放到这个框架中，便可以越来越熟悉，将框架转化为一种习惯或者说感觉。最终达到准确率和速度都提升的效果。
-
-[![BY-SA](https://img.shields.io/badge/license-BY--SA-blue)](https://creativecommons.org/licenses/by-sa/4.0/) [![BMaC](https://img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/zayn7lie) 
