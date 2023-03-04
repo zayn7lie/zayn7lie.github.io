@@ -69,7 +69,7 @@ int f(int x){
 
 ```c++
 bool find(int* vector, int target){
-    int l = 0, r = vector.lenth() - 1;
+    int l = 0, r = sizeof(vector) / sizeof(vector[0]) - 1; // r 为数组的右指针
     while(vector[l] <= target && target <= vector[r]){
         int m = (l + r) / 2;
         if(vector[m] == target || vector[r] == target || vector[l] == target) // 预先看下左边界有边界是否相等，避免遗漏
