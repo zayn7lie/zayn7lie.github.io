@@ -98,7 +98,7 @@ bool find(int* vector, int target){
 - 请写出一个函数GCD(x, y)，要求返回x和y的最大公因数。
 - [luogu-P1888 三角函数](https://www.luogu.com.cn/problem/P1888)
 
-### MS
+### MT
 - 请写出一个函数LCM(x, y)，要求返回x和y的最小公倍数。
 - [luogu-P1029 [NOIP2001 普及组] 最大公约数和最小公倍数问题 ](https://www.luogu.com.cn/problem/P1029)
 
@@ -179,7 +179,7 @@ int GCD(int x, int y){
 
 - 相信写完这个程序大家能够对递归有着更深刻的了解。
 
-#### MS
+#### MT
 - 推完了GCD，大家可以自己想想很相似的LCM。这里只要注意因为类似排列和组合相似性，LCE和GCD的公式会存在关联。大家可以自己尝试下正推。我这里给出函数：
 
 ```c++
