@@ -1,7 +1,7 @@
 ---
 title: 从0开始的算法竞赛01-算法基础01：递归和枚举
 date: 2023-03-02
-categories: [Algorithm, Basis]
+categories: [Algorithm, 01-Basis]
 tags: [algorithm, function, recursion, loop, enumeration, dichotony]
 math: true
 ---

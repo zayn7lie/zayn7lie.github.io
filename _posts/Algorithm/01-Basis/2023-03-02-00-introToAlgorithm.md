@@ -1,7 +1,7 @@
 ---
 title: 从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？
 date: 2023-03-02
-categories: [Algorithm, Basis]
+categories: [Algorithm, 01-Basis]
 tags: [algorithm, simulation, divide_and_conquer]
 math: true
 pin: true
