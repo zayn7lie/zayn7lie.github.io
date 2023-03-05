@@ -95,9 +95,11 @@ bool find(int* vector, int target){
 
 #### US
 - 请写出一个函数GCD(x, y)，要求返回x和y的最大公因数。
+- [luogu-P1888 三角函数](https://www.luogu.com.cn/problem/P1888)
 
 #### MS
 - 请写出一个函数LCM(x, y)，要求返回x和y的最小公倍数。
+- [luogu-P1029 [NOIP2001 普及组] 最大公约数和最小公倍数问题 ](https://www.luogu.com.cn/problem/P1029)
 
 #### ANS
 ##### KN
