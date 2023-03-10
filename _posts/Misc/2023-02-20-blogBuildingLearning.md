@@ -16,7 +16,7 @@ math: true
 - 模板库的配置
   - 进入库，找到 `_config.yml` 并打开
   - 在代码栏的右上角点击笔的图案，进入编辑模式
-  - 修改 `title: ` 后的内容，为你的博客取个名字
+  - 修改 `title:` 后的内容，为你的博客取个名字
   - 拉到最下方，点击 `Commit changes`
 - 模板库的初始化
   - 提交完成后，在上方点击 `Setting` -> 左方 `Code and automation` -> `pages` -> 右方 `Build and deployment` -> `Source` 从 `Deploy from a branch` 换成 `GitHub Actions`
