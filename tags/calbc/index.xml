@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>CalBC on zayn_lie&#39;s blog</title>
+        <link>/tags/calbc/</link>
+        <description>Recent content in CalBC on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/calbc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Calculus</title>
+        <link>/posts/aptest/2023-04-16-calbc/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/aptest/2023-04-16-calbc/</guid>
+        <description>&lt;h2 id=&#34;differentiation&#34;&gt;Differentiation&lt;/h2&gt;
+&lt;h3 id=&#34;why&#34;&gt;WHY&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Difference between differentiate $\frac{\Delta y}{dx}$ and derivative $y&#39;$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;differentiate is a method to cut source function to know the tendency&lt;/li&gt;
+&lt;li&gt;derivative is that kinds of tendency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzing f is increasing/decreasing/constant on $[a, b]$&lt;/li&gt;
+&lt;li&gt;Analyzing points
+&lt;ul&gt;
+&lt;li&gt;Critical point: $f&amp;rsquo; = 0 \ or \ \nexists f&#39;$&lt;/li&gt;
+&lt;li&gt;Stationary point: $f&amp;rsquo; = 0$&lt;/li&gt;
+&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo; = 0 \ and \ f&amp;rsquo;&amp;rsquo; \neq 0$&lt;/li&gt;
+&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo; = 0$
+&lt;ul&gt;
+&lt;li&gt;expression: concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wht-differentiability&#34;&gt;WHT: Differentiability&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If and only if $\lim_{x → a^+}f(x) = \lim_{x → a^-}f(x)$, $\lim_{x → a}f(x)$ exists and equals $\lim_{x → a^+}f(x) = \lim_{x → a^-}f(x)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If and only if $\lim_{x → a}f(x) = f(a)$, we say $f(x)$ is continuous at $x = a$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, $\exists a, f(a) \in [a, b]$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MVT (Mean Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; and &lt;em&gt;differentiable&lt;/em&gt; on $[a, b]$, $\exists a, f&amp;rsquo;(a) = \frac{f(b) - f(a)}{b - a}$&lt;/li&gt;
+&lt;li&gt;EVT (Extreme Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt;, and it is a close interval on $[a, b]$, $\exists a, b, f_{max} = f(a), f_{min} = f(b)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Discontinuity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removable ~: $\lim_{x → a}f(x) \neq f(x)$&lt;/li&gt;
+&lt;li&gt;Infinite ~: $\lim_{x → a^+}f(x) or \lim_{x → a^-}f(x) = \pm \infty$&lt;/li&gt;
+&lt;li&gt;Jump ~: $\lim_{x → a^+}f(x) \neq \lim_{x → a^-}f(x)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If and only if $f(x)$ is continuous at $x = a$ and $lim_{b → 0^+}\frac{f(a + b) - f(a)}{b} = \lim_{b → 0^-}\frac{f(a + b) - f(a)}{b}$ or $\lim_{b → 0}\frac{f(a + b) - f(a)}{b}$ exist, $f(x)$ is differentiable at $x = a$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ep. $f&amp;rsquo;(x)$ not exist while $lim_{x → a}f&amp;rsquo;(x) = \pm \infty$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-differentiating&#34;&gt;HOW: Differentiating&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Approximation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;when use the tangent line at $x = a$ to approximate $f(b)$:&lt;/p&gt;
+&lt;p&gt;$$
+f(b) = f(a) + f&amp;rsquo;(a)(b - a)
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+(f \pm g)&amp;rsquo; = f&amp;rsquo; \pm g&amp;rsquo;, \
+(f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&amp;rsquo;,\ (\frac{f}{g})&amp;rsquo; = \frac{f&amp;rsquo; \cdot g - f \cdot g&amp;rsquo;}{g^2}, \
+RelatedRate: (f(g(x)))&amp;rsquo; = f&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) \ or \ \frac{\Delta f}{dx} = \frac{\Delta f}{dg} \cdot \frac{\Delta g}{dx}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Implicit &amp;amp; Explicit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+Implicit \ form:
+(xy = 1)&amp;rsquo; → (y + y&amp;rsquo;x = 0) → y&amp;rsquo; = - \frac{y}{x} \
+Explicit \ form:
+(y = \frac{1}{x})&amp;rsquo; → y&amp;rsquo; = - \frac{1}{x^2}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inverse&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+(arcsin/cos{x})&amp;rsquo; = \pm \frac{1}{\sqrt{1 - x^2}} \
+(arctan{x})&amp;rsquo; = \frac{1}{1 + x^2}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;L&amp;rsquo;Hospital Rule&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When exist fraction with $0$ or $\infty$, we use following rule:
+$$
+\lim_{x → a}\frac{f(x)}{g(x)} = \lim_{x → a}\frac{f&amp;rsquo;(x)}{g&amp;rsquo;(x)}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;integration&#34;&gt;Integration&lt;/h2&gt;
+&lt;h3 id=&#34;why-1&#34;&gt;WHY&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Function Area&lt;/li&gt;
+&lt;li&gt;Slope Fields&lt;/li&gt;
+&lt;li&gt;Arc Length&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+L = \int_a^b{\sqrt{dx^2 + \Delta{y}^2}} = \int_a^b{\sqrt{1 + (\frac{\Delta{y}}{dx})^2}{dx}}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;how&#34;&gt;HOW&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Approximating&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Trapezoidal Sum: $\sum_{i = 0}^{n - 1}{\frac{(f(x_i) + f(x_{i + 1})) \cdot \frac{b - a}{n}}{2}}$&lt;/li&gt;
+&lt;li&gt;Riemann Sum
+&lt;ul&gt;
+&lt;li&gt;left/right/mid-end: every rectangular&amp;rsquo;s left/right/mid above point start at the curve
+&lt;ul&gt;
+&lt;li&gt;right-end: $\sum_{i = 1}^{n}{f(x_i) \cdot \frac{b - a}{n}} \ or \ \sum_{k = 1}^{n}{f(a + k \cdot \frac{b - a}{n}) \cdot \frac{b - a}{n}}$&lt;/li&gt;
+&lt;li&gt;Integral: $\int_{a}^{b}f(x)dx = lim_{n → \infty}{\sum_{k = 1}^{n}{f(a + k \cdot \frac{b - a}{n}) \cdot \frac{b - a}{n}}}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Euler&amp;rsquo;s Method: $x_{i + 1} = x_i + step, y_{i + 1} = y_i + step \cdot f,(x_i, y_i)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Basic&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Similar to Differentiate
+$$
+\int_a^b{f(x)dx} = - \int_b^a{f(x)dx} \
+\int_a^b{f(x)dx} = \int_a^c{f(x)dx} + \int_c^b{f(x)dx}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Substitution: multi-functions with its derivative function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember to separate variables&lt;/p&gt;
+&lt;p&gt;$$
+\int{f(g(x)) \cdot \frac{\Delta}{dx}g(x) dx} = f,(g(x)) + C
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integration by Parts: complex function(from simple derivative) multiply another complex function(its derivative function is simple)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\int{f(x) \cdot g&amp;rsquo;(x)}{dx} = f(x) \cdot g(x) \mid_{a}^{b}- \int{f&amp;rsquo;(x) \cdot g(x)}{dx}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sequence&#34;&gt;Sequence&lt;/h2&gt;
+&lt;h3 id=&#34;why-2&#34;&gt;WHY&lt;/h3&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

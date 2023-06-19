@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>blog on zayn_lie&#39;s blog</title>
+        <link>/tags/blog/</link>
+        <description>Recent content in blog on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 04 Jan 1145 11:45:14 +0800</lastBuildDate><atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Blog Template</title>
+        <link>/posts/misc/1145-01-04-template/</link>
+        <pubDate>Thu, 04 Jan 1145 11:45:14 +0800</pubDate>
+        
+        <guid>/posts/misc/1145-01-04-template/</guid>
+        <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-setting&#34; data-lang=&#34;setting&#34;&gt;https://chirpy.cotes.page/posts/write-a-new-post/
+
+![img-description](/path/to/image)
+_Image Caption_
+
+---
+pin: true
+---
+
+---
+toc: false # table of content
+---
+
+---
+comments: false
+---
+
+---
+mermaid: true
+---
+&lt;/code&gt;&lt;/pre&gt;</description>
+        </item>
+        <item>
+        <title>最简单的从0开始免费博客网站搭建</title>
+        <link>/posts/misc/2023-02-20-blogbuildinglearning/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/misc/2023-02-20-blogbuildinglearning/</guid>
+        <description>&lt;h3 id=&#34;基本网站的搭建&#34;&gt;基本网站的搭建&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;创建 GitHub 账号并登录&lt;/li&gt;
+&lt;li&gt;模板库的复制
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/cotes2020/chirpy-starter/generate&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点我&lt;/a&gt; 复制（ folk ） chirpy 主题的模板库&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Repository name&lt;/code&gt; 一栏输入 &lt;code&gt;用户名.github.io&lt;/code&gt; ，例如我的是 &lt;code&gt;zayn7lie.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点击 &lt;code&gt;Create repository from template&lt;/code&gt; 生成网站后端库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;模板库的配置
+&lt;ul&gt;
+&lt;li&gt;进入库，找到 &lt;code&gt;_config.yml&lt;/code&gt; 并打开&lt;/li&gt;
+&lt;li&gt;在代码栏的右上角点击笔的图案，进入编辑模式&lt;/li&gt;
+&lt;li&gt;修改 &lt;code&gt;title:&lt;/code&gt; 后的内容，为你的博客取个名字&lt;/li&gt;
+&lt;li&gt;拉到最下方，点击 &lt;code&gt;Commit changes&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;模板库的初始化
+&lt;ul&gt;
+&lt;li&gt;提交完成后，在上方点击 &lt;code&gt;Setting&lt;/code&gt; -&amp;gt; 左方 &lt;code&gt;Code and automation&lt;/code&gt; -&amp;gt; &lt;code&gt;pages&lt;/code&gt; -&amp;gt; 右方 &lt;code&gt;Build and deployment&lt;/code&gt; -&amp;gt; &lt;code&gt;Source&lt;/code&gt; 从 &lt;code&gt;Deploy from a branch&lt;/code&gt; 换成 &lt;code&gt;GitHub Actions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;过一会后打开 &lt;code&gt;用户名.github.io&lt;/code&gt; 你的博客界面就创建完毕啦&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;更多的设置可以自己在后端调配，本篇教程也会列出一些我自己遇到的问题和解决方案&lt;/li&gt;
+&lt;li&gt;有关 chirpy 主题的教程可以在 &lt;a class=&#34;link&#34; href=&#34;https://chirpy.cotes.page/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这里&lt;/a&gt; 查看&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;博客图标头像修改&#34;&gt;博客图标头像修改&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://chirpy.cotes.page/posts/customize-the-favicon/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ref&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;打开 &lt;a class=&#34;link&#34; href=&#34;https://realfavicongenerator.net&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Real Favicon Generator&lt;/a&gt; 导入你想要的图标&lt;/li&gt;
+&lt;li&gt;加载完毕，拉到最下边，点击 &lt;code&gt;Generate your Favicons and HTML code&lt;/code&gt; 点击 &lt;code&gt;Download your package:&lt;/code&gt; 的 &lt;code&gt;Favicon package&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;解压，删除 &lt;code&gt;browserconfig.xml&lt;/code&gt; 和 &lt;code&gt;site.webmanifest&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将图片全部上传到你的库里的 &lt;code&gt;assets/img/favicons/&lt;/code&gt; （如果没有就创建这样文件夹）&lt;/li&gt;
+&lt;li&gt;Commit 后图标就出来啦！&lt;/li&gt;
+&lt;li&gt;主页头标的修改在 &lt;code&gt;_config.yml&lt;/code&gt; 的 &lt;code&gt;avatar&lt;/code&gt; 里设置路径，例如 &lt;code&gt;avatar: &#39;assets/img/avatar.png&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

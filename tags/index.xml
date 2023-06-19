@@ -1,10 +1,331 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on My New Hugo Site</title>
+        <title>Tags on zayn_lie&#39;s blog</title>
         <link>/tags/</link>
-        <description>Recent content in Tags on My New Hugo Site</description>
+        <description>Recent content in Tags on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>data</title>
+        <link>/tags/data/</link>
+        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/data/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Matplotlib</title>
+        <link>/tags/matplotlib/</link>
+        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/matplotlib/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Pandas</title>
+        <link>/tags/pandas/</link>
+        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/pandas/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>/tags/python/</link>
+        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Pytorch</title>
+        <link>/tags/pytorch/</link>
+        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/pytorch/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Scikit-learn</title>
+        <link>/tags/scikit-learn/</link>
+        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/scikit-learn/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>AP</title>
+        <link>/tags/ap/</link>
+        <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/ap/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>stat</title>
+        <link>/tags/stat/</link>
+        <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/stat/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>paper</title>
+        <link>/tags/paper/</link>
+        <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/paper/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>research</title>
+        <link>/tags/research/</link>
+        <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/research/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>zotero</title>
+        <link>/tags/zotero/</link>
+        <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/zotero/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>CalBC</title>
+        <link>/tags/calbc/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/calbc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>PhyCE</title>
+        <link>/tags/phyce/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/phyce/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>PhyCM</title>
+        <link>/tags/phycm/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/phycm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>CSA</title>
+        <link>/tags/csa/</link>
+        <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/csa/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>algorithm</title>
+        <link>/tags/algorithm/</link>
+        <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/algorithm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>greedy</title>
+        <link>/tags/greedy/</link>
+        <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/greedy/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>sort</title>
+        <link>/tags/sort/</link>
+        <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/sort/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>complexity</title>
+        <link>/tags/complexity/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/complexity/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>dichotony</title>
+        <link>/tags/dichotony/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/dichotony/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>divide_and_conquer</title>
+        <link>/tags/divide_and_conquer/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/divide_and_conquer/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>enumeration</title>
+        <link>/tags/enumeration/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/enumeration/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>function</title>
+        <link>/tags/function/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/function/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>loop</title>
+        <link>/tags/loop/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/loop/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>multiply</title>
+        <link>/tags/multiply/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/multiply/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>recursion</title>
+        <link>/tags/recursion/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/recursion/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>simulation</title>
+        <link>/tags/simulation/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/simulation/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>space</title>
+        <link>/tags/space/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/space/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>time</title>
+        <link>/tags/time/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/time/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>c&#43;&#43;</title>
+        <link>/tags/c&#43;&#43;/</link>
+        <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/c&#43;&#43;/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>headfile</title>
+        <link>/tags/headfile/</link>
+        <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/headfile/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>compiler</title>
+        <link>/tags/compiler/</link>
+        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/compiler/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>environment</title>
+        <link>/tags/environment/</link>
+        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/environment/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Example Tag</title>
+        <link>/tags/example-tag/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/example-tag/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>blog</title>
+        <link>/tags/blog/</link>
+        <pubDate>Thu, 04 Jan 1145 11:45:14 +0800</pubDate>
+        
+        <guid>/tags/blog/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>template</title>
+        <link>/tags/template/</link>
+        <pubDate>Thu, 04 Jan 1145 11:45:14 +0800</pubDate>
+        
+        <guid>/tags/template/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>building</title>
+        <link>/tags/building/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/building/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>chirpy</title>
+        <link>/tags/chirpy/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/chirpy/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>github</title>
+        <link>/tags/github/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/github/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>jekyll</title>
+        <link>/tags/jekyll/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/jekyll/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>

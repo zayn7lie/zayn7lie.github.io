@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>template on zayn_lie&#39;s blog</title>
+        <link>/categories/template/</link>
+        <description>Recent content in template on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 04 Jan 1145 11:45:14 +0800</lastBuildDate><atom:link href="/categories/template/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Blog Template</title>
+        <link>/posts/misc/1145-01-04-template/</link>
+        <pubDate>Thu, 04 Jan 1145 11:45:14 +0800</pubDate>
+        
+        <guid>/posts/misc/1145-01-04-template/</guid>
+        <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-setting&#34; data-lang=&#34;setting&#34;&gt;https://chirpy.cotes.page/posts/write-a-new-post/
+
+![img-description](/path/to/image)
+_Image Caption_
+
+---
+pin: true
+---
+
+---
+toc: false # table of content
+---
+
+---
+comments: false
+---
+
+---
+mermaid: true
+---
+&lt;/code&gt;&lt;/pre&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

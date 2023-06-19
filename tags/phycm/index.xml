@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>PhyCM on zayn_lie&#39;s blog</title>
+        <link>/tags/phycm/</link>
+        <description>Recent content in PhyCM on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/phycm/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Mechanics</title>
+        <link>/posts/aptest/2023-04-19-phycm/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/aptest/2023-04-19-phycm/</guid>
+        <description>&lt;h2 id=&#34;motion-and-force&#34;&gt;Motion and Force&lt;/h2&gt;
+&lt;h3 id=&#34;basis&#34;&gt;Basis&lt;/h3&gt;
+&lt;p&gt;$$
+v = \frac{d}{dt}x, a = \frac{d}{dt}v, F = m \cdot a \
+\bar{v} = \frac{s}{t} = \frac{v_0 + v}{2}, 2a\Delta{x} = v^2 - v_0^2 \
+$$
+$x = \vec{Displacement}(vector)$ $s = Distance(scalar)$&lt;/p&gt;
+&lt;h3 id=&#34;force&#34;&gt;Force&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Type: Normal Force $n$, Friction $f$, Tension $T$, Weight $w$, &lt;em&gt;Resistive Force&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;v-t relation when Resistive Force exists(v(0) = 0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+N2L: F = ma = mg - kv, \frac{a}{g - \frac{kv}{m}} = 1 \
+\int_0^t{\frac{a}{g - \frac{kv}{m}}}{dt} = \int_0^t{1}{dt} , \int_0^t{-\frac{m}{k} \cdot \frac{-\frac{k}{m} \cdot \frac{d}{dt}v}{g - \frac{k}{m}v}}{dt} = t \
+-\frac{m}{k} \cdot ln(g - \frac{k}{m}v) \mid_0^t = t, ln(1 - \frac{k}{mg}v(t)) = -\frac{kt}{m} \
+1 - \frac{k}{mg}v(t) = e^{-\frac{kt}{m}}, v(t) = \frac{mg}{k}(1 - e^{-\frac{k}{m}t})
+$$&lt;/p&gt;
+&lt;h3 id=&#34;energy&#34;&gt;Energy&lt;/h3&gt;
+&lt;p&gt;$$
+W = \vec{F} \cdot \vec{s}, P = \frac{d}{dt}W = \vec{F} \cdot \vec{v} \
+Restoring \ Force: W = \int_{x_1}^{x_2}{-kx}{dx} = \frac{1}{2}k(x_1^2 - x_2^2) \
+Work-Energy \ Theorem: K = \frac{1}{2}mv^2, W_{net} = \Delta{K} \
+Potential \ Energy: \Delta{U_g} = m\vec{g}\vec{\Delta{x}}, U_s = \frac{1}{2}k\Delta^2{x} \
+CoME_{Conservation \ of \ Mechanical \ Energy}: \Delta{E_{mech}} = K + U
+$$&lt;/p&gt;
+&lt;h3 id=&#34;momentum-and-impulse&#34;&gt;Momentum and Impulse&lt;/h3&gt;
+&lt;p&gt;$$
+\vec{p} = m \vec{v}, \vec{J} = \int{F}{dt},J = \Delta{p} \
+Collision(Elastic): v_1 = \frac{m_1 - m_2}{m_1 + m_2}v_1, v_2 = \frac{m_1 + m_1}{m_1 + m_2}v_1
+$$&lt;/p&gt;
+&lt;h3 id=&#34;universal-gravitation&#34;&gt;Universal Gravitation&lt;/h3&gt;
+&lt;p&gt;$$
+G M = v^2 r = g r^2, \frac{T^2}{r^3} = \frac{4 \pi^2}{G M}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;rotation-and-torque&#34;&gt;Rotation and Torque&lt;/h2&gt;
+&lt;p&gt;Similar to Motion and Force&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+Parallel-axis \ Theorem: I = I_0 + M \Delta^2{d} \
+Rod: \frac{1}{12} M L^2 \ Sphere: \frac{2}{5} \ Disk: \frac{1}{2} \ Hollow: \frac{2}{3} \ Hoop: 1\
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Synthesize&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+Rolling \ without \ slipping: v_{cm} = r \omega (\alpha, &amp;hellip;) \
+Energy: \frac{K_{\omega}}{K_v} = \frac{\frac{1}{2} I \omega^2}{\frac{1}{2} m v^2} = \frac{\frac{I}{r^2}}{m} \
+Momentum: \tau \cdot \Delta{t} = \Delta{L}, \vec{L} = \vec{r} \times \vec{p}
+$$&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

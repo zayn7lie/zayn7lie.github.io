@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>function on zayn_lie&#39;s blog</title>
+        <link>/tags/function/</link>
+        <description>Recent content in function on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/function/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>从0开始的算法竞赛01-算法基础01：递归和枚举</title>
+        <link>/posts/algorithm/01-basis/2023-03-02-01-recursionenumeration/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/algorithm/01-basis/2023-03-02-01-recursionenumeration/</guid>
+        <description>&lt;h2 id=&#34;递归recursion&#34;&gt;递归(Recursion)&lt;/h2&gt;
+&lt;h3 id=&#34;why-为什么要学递归&#34;&gt;WHY: 为什么要学递归？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;首先我们先明确，算法其实是另外一种形式的数学 —— 它们解决问题的思路很相近，及通过一系列的计算得出结果。但是在计算机的帮助下，算法能干更多数学干起来很麻烦的事情 —— 一些重复、模板性的问题。&lt;/li&gt;
+&lt;li&gt;而递归，作为算法的第一课，便很好的体现出算法和数学的异同之处。递归，可以化简大量的重复性问题。因此学会递归，我们便可以利用计算机化简许多问题的运算过程。&lt;/li&gt;
+&lt;li&gt;可能不太好理解，没关系，我们先往下看看递归是什么。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;what-什么是递归&#34;&gt;WHAT: 什么是递归？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;我们先来看下这个函数公式：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+f(x) =
+\begin{cases}
+0, &amp;amp; x \leq 7 \
+f(x - 1), &amp;amp; x &amp;gt; 7 \
+\end{cases}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;很显然，当 $x \leq 7$ 的时候 $f(x)$ 均等于0。但是当 $x = 10$ 的时候呢？
+&lt;ul&gt;
+&lt;li&gt;$f(10) = f(9) = f(8) = f(7) = 0$&lt;/li&gt;
+&lt;li&gt;当 $x &amp;gt; 7$ 的时候有没有一种感觉，就是这个 $f(x)$ 的 $x$ 一直在 &lt;em&gt;传递&lt;/em&gt; 到下一个 $f(x)$ ，只是自身每次减一？&lt;/li&gt;
+&lt;li&gt;当 $x = 7$ 时， $f(x)$ return 0时候有没有一种感觉这个0在不断 &lt;em&gt;回归&lt;/em&gt; 到 $f(10)$ ?&lt;/li&gt;
+&lt;li&gt;这种 &lt;em&gt;传递&lt;/em&gt; 和 &lt;em&gt;回归&lt;/em&gt; 的感觉就叫做 &lt;em&gt;递归&lt;/em&gt; 。或者说， &lt;em&gt;递归&lt;/em&gt; = &lt;em&gt;传递&lt;/em&gt; + &lt;em&gt;回归&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;很多教材喜欢举一些很有趣但是对初学者很不友好的例子： &lt;em&gt;想要知道递归，就得先知道递归&lt;/em&gt; ， &lt;em&gt;自己调用自己&lt;/em&gt; 等等。但是经过我利用上面数学公式的举例，相信你能看得懂这些玩笑了。实际上，这些例子都是在强调 $f(x) = f(x - 1)$ 的过程。但这只是 &lt;em&gt;传递&lt;/em&gt; 的过程。&lt;/li&gt;
+&lt;li&gt;另外，通过这里例子，我们还可以加深算法与数学异同的理解。数学遇到这种公式一般需要转化为其他公式（就想上面的展开 $f(10) = f(9) = f(8) = f(7) = 0$ 等等）再求解，这其实如果数据一大，公式一复杂，求解就会变得困难。而算法，正盼望着你把问题转化为这种 &lt;em&gt;自己调用自己&lt;/em&gt; 形式，那剩下的求解呢？交给计算机就可以了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-递归怎么写&#34;&gt;HOW: 递归怎么写？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;递归分为传递和回归，传递就是往下的方式，回归就是限制条件回来的过程。很抽象，我们还是看刚刚那个公式：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+f(x) =
+\begin{cases}
+0, &amp;amp; x \leq 7 \
+f(x - 1), &amp;amp; x &amp;gt; 7 \
+\end{cases}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这里传递就是 $f(x) = f(x - 1)$ ，方式就是 $x$ 自己减一。&lt;/li&gt;
+&lt;li&gt;回归的限制条件是 $x \leq 7$ 。&lt;/li&gt;
+&lt;li&gt;如果这些都能理解，我再告诉你个条件。在程序函数中，是可以自己调用自己的，那即使你只学过我 &lt;em&gt;0基础c++体系-函数&lt;/em&gt; 的第一节课应该可以写的出来这个函数：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; f(x &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;这就是递归函数该怎么写。虽然内容较少，但是递归将伴随整个算法生涯，甚至后面递归我们不会再强调，而是把它当作一种和加减乘除一样常见的方法。所以希望本节课大家能好好理解。特别是注意写递归时不仅要有传递，还要有回归（限制条件要写清楚）。如果没有限制条件或者条件不当，程序将无限运行下去，知道内存超标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;枚举enumeration&#34;&gt;枚举(Enumeration)&lt;/h2&gt;
+&lt;h3 id=&#34;why-为什么要学枚举&#34;&gt;WHY: 为什么要学枚举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;和递归类似，枚举也是让计算机帮助我们列举情况，找到我们要求的解。掌握枚举也可以让我们再调试和运行时提高一定的效率。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;what-什么是枚举&#34;&gt;WHAT: 什么是枚举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;实际上，在你学 &lt;code&gt;for(;;)&lt;/code&gt; 和 &lt;code&gt;while()&lt;/code&gt; 的时候，你已经开始接触枚举了。我们当时只不过是通过循环把每一种情况列举出来，这就叫枚举。但是枚举的方式不仅仅只有循环，想本章的递归也可以作为枚举的一种方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-怎么写枚举&#34;&gt;HOW: 怎么写枚举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;循环：关于循环的枚举已经在 c++ 基础讲完了。所以这里就强调下注意循环的对象，开始，终点和步长。
+&lt;ul&gt;
+&lt;li&gt;实际上，循环的枚举往往是可优化的。例如在一个从小到大排列的数组中询问某个数是否存在的时候，往往可以从中间开始列举。如果比中间的数大，则应该在右侧寻找，及对右侧再进行相同操作；如果比中间的数小，则对左侧进行相同操作。直到找到这个数或者是发现这个数在最终两个数之间 —— 不存在。&lt;/li&gt;
+&lt;li&gt;这种不断一分为二缩小范围寻找答案的方法叫做二分，是一种常用的枚举优化方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;递归：刚刚的样例已经包含了递归 —— 如果比中间的数大，对右侧进行相同操作 —— 这个相同操作就是递归中的传递。有时候，循环和递归是可以互换的。例如你可以用循环实现刚刚的操作：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;bool&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;find&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; vector, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; target){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(vector) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;sizeof&lt;/span&gt;(vector[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]) &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;// r 为数组的右指针
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;(vector[l] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; target &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; target &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; vector[r]){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; m &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (l &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; r) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(vector[m] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; target &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; vector[r] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; target &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; vector[l] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; target) &lt;span style=&#34;color:#75715e&#34;&gt;// 预先看下左边界有边界是否相等，避免遗漏
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; true;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(vector[m] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; target)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(vector[m] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; target)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; false;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;当循环和递归可以同时实现的时候，更推荐用循环的形式。因为递归在传递还未回归的时候那些传递过程中的函数在计算机运算时需要存起来（想想为什么），可能导致内存占用变高。&lt;/li&gt;
+&lt;li&gt;最后希望各位能够认真完成这节课 US 和 MS 的 GCD 和 LCM ，其困难在许多体制内学生并不认识辗转相除法。大家自行了解后尝试解决，对于本节课可以有更深的了解。&lt;/li&gt;
+&lt;li&gt;这节课内容虽少，但是对于之后的学习非常重要。因此我会在 ANS 对于每道题目做出较详细的讲解。希望大家无论是否做出来了也认真的看完题解。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;练习&#34;&gt;练习&lt;/h2&gt;
+&lt;h3 id=&#34;kn&#34;&gt;KN&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;请写出一个函数 A(x, y) ，要求返回 x 中取 y 个元素进行排列的所有种类数。&lt;/li&gt;
+&lt;li&gt;请写出一个函数 C(x, y) ，要求返回 x 中取 y 个元素进行组合的所有种类数。&lt;/li&gt;
+&lt;li&gt;想想能不能进行优化？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;我们先来讲讲排列组合怎么算
+&lt;ul&gt;
+&lt;li&gt;从 x 中选取 y 个进行排列，那么我们就对 y 中的每个元素进行枚举：第一个元素一共有 x 种选法，第二个元素一共有 x - 1 种选法，第三个元素一共有 x - 2 种选法&amp;hellip; 第 y 个元素一共有 x - y + 1 种选法。因此一共有 $x(x - 1)(x - 2) \dotsm (x - y + 1)$ 种选法。通过阶乘我们还可以表示成更简单的方法 $\frac{x!}{(x-y)!}$。这就是排列。&lt;/li&gt;
+&lt;li&gt;而对于组合，实际上就是把排列中的部分情况去除掉： ABC, ACB, BAC &amp;hellip; 在组合中是相同的，因此只保留一个。那么一共有多少种相同的情况呢？如果再观察可以发现，每一种情况相当于是自己本身的排列。 ABC, ACB, BAC &amp;hellip; 实际上就是 ABC 的 A(3, 3) 的排列。所以再原来基础上只要再除掉一个 A(y, y) 就是正确答案了。那么可以表达为 $\frac{x!}{y!(x - y)!}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;那么第一反应的程序是这个样子的：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;A&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;// ans = answer
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; x; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ans &lt;span style=&#34;color:#f92672&#34;&gt;*=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; y; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ans &lt;span style=&#34;color:#f92672&#34;&gt;/=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;C&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; x; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ans &lt;span style=&#34;color:#f92672&#34;&gt;*=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; y; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ans &lt;span style=&#34;color:#f92672&#34;&gt;/=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; y; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ans &lt;span style=&#34;color:#f92672&#34;&gt;/=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;可以化简，因为我们知道组合是排列的除掉部分情况的结果，直接调用 A 函数即可：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;C&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; A(x, y);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; y; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ans &lt;span style=&#34;color:#f92672&#34;&gt;/=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;分析可以知道， A 乘和除掉了一部分相同内容，我们不要枚举除掉的部分其实就可以达到效果了。因此对 A 再化简：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;A&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; x; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ans &lt;span style=&#34;color:#f92672&#34;&gt;*=&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;这验证了我们上面所述，枚举一般都可以进行优化。当然这里只是对枚举的过程优化，实际上我们学到后面还会学到直接对整个枚举这个方法进行优化等等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;us&#34;&gt;US&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;请写出一个函数 &lt;code&gt;GCD(x, y)&lt;/code&gt; ，要求返回 x 和 y 的最大公因数。&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1888&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;luogu-P1888 三角函数&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;接下来我们来说一说 GCD （最大公因数）怎么算
+&lt;ul&gt;
+&lt;li&gt;首先我要拿辗转相除法说下“正着推”和“反着推”的区别和好坏
+&lt;ul&gt;
+&lt;li&gt;很多人了解辗转相除法的公式，但是问为什么的时候，教练一般从辗转相除法的公式入手，有的运用假设法（假设辗转相除法不成立），有的运用从公式开始推导到条件法等等。这些实际上都是反着推。他们先知道了结论才给你推的出来。这其实不叫“为什么”，这个叫“怎么证明”。换句话说，“反着推”就是如果你不知道这个公式你就推不出来，你必须先知道，先背住这个公式才推的出来。这个好处就是很快，你都背住了竞赛直接用即可。但是很容易忘，而且遇到没见过的也推不出来。&lt;/li&gt;
+&lt;li&gt;是不是觉得在哪里见过？没错，在我讲第0节课“凭感觉”和“靠分析”的时候出现过“速度”和“准确”的区别。其实“逆着推”也可以算作一种凭感觉的解决方法问题。我也讲过理科竞赛讲究的不是感觉而是分析。那么“正着推”作为靠分析的手段，我们怎么“正着推”辗转相除法？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;首先我们要求 x 和 y 的最大公因数 z ，那么我们知道的条件是 $x = z \cdot a, y = z \cdot b (z, a, b, x, y \in Z)$ 那么我们有两条路，一条是继续推导公式，一条是拆分或化简问题。因为现在是独立的两个条件，而我们需要的是一个通解，这时候我选择继续推导公式，将这5个变量联系在一起。因此有 $x - y = z \cdot (a - b)$ 通过推导和观察我们发现，z也是(x - y)的因数（我们假设 $x &amp;gt; y$）。但是(x - y)必定比x, y都小，因此，z又是y和(x - y)的GCD。有什么意义呢？大家发现，这一步我其实化简了问题：把两个很大的数开始变小，并且这两个较小数和原来的两个较大的数有联系并经过了 &lt;em&gt;相同操作&lt;/em&gt; 。&lt;em&gt;相同操作&lt;/em&gt; ，对，有没有发现什么 —— 递归！计算机给了我么另外一个思路，把公式转化相同形式的运算也可以！那么我们得出了一个结论：$GCD(x, y) = GCD(y, x - y)$。脑中模拟一边过程，发现那么只要这么一直重复下去x, y一定会越来越逼近0（因为x, y一定一直减小），在等于0的前一刻呢？x必然等于y, 因为x - y才等于0。那这时候x = y这个值不就是原来的GCD(x, y)吗？&lt;/li&gt;
+&lt;li&gt;接下来我们看看能不能优化。因为过程中出现了很多次x - y，当x很大时必然会减很多次y，这产生了很多操作。那能不能化简呢？就是让x减去最多的y但是仍然大于0？很多人想到了 —— 模运算！ $x \mod y$ 就是操作了最多次x - y的结果！那么我们就优化出了这个公式 $GCD(x, y) = GCD(y, x \mod y)$ 这就是辗转相除法（因为模运算涉及除法的余数）&lt;/li&gt;
+&lt;li&gt;这就是正着推的辗转相除法，从条件推导公式而不是从公式推导条件！相信这么推一次大家印象一定很深刻。即使以后忘记只要记着遇见条件想办法进行 &lt;em&gt;推导&lt;/em&gt; ， &lt;em&gt;拆分&lt;/em&gt; 和 &lt;em&gt;化简&lt;/em&gt; 就能得出正确答案！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;因此递归公式得到后，程序就好实现了：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;GCD&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(y &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; x){ &lt;span style=&#34;color:#75715e&#34;&gt;//让x &amp;gt;= y，统一化
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; tmp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; x;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; y;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; temp;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(y &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 递归的回归条件
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; GCD(y, x &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; y);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;相信写完这个程序大家能够对递归有着更深刻的了解。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mt&#34;&gt;MT&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;请写出一个函数 LCM(x, y) ，要求返回 x 和 y 的最小公倍数。&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1029&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;luogu-P1029 [NOIP2001 普及组] 最大公约数和最小公倍数问题&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;推完了 GCD ，大家可以自己想想很相似的 LCM 。这里只要注意因为类似排列和组合相似性， LCE 和 GCD 的公式会存在关联。大家可以自己尝试下正推。我这里给出函数：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;LCM&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; y &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; GCD(x, y);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>从0开始的C&#43;&#43;语言基础01：函数</title>
+        <link>/posts/c&#43;&#43;/2023-02-22-01-function/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/c&#43;&#43;/2023-02-22-01-function/</guid>
+        <description>&lt;h3 id=&#34;why-为什么不应该先学hello-world&#34;&gt;WHY: 为什么不应该先学“Hello, world”？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;我相信更多人想问为什么从函数讲起，而不是从&amp;quot;Hello, world&amp;quot;讲起。原因很简单： &lt;code&gt;Hello, world&lt;/code&gt; 这个程序太“难”了。&lt;/li&gt;
+&lt;li&gt;我知道很多人对“难”很有意见。先别急，对于学过的人自己想想，当时在第一次看 &lt;code&gt;Hello, world&lt;/code&gt; 代码时是不是一头雾水？并且被要求死记硬背？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    printf(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, world!&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;或者&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    cout &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;你一定会问： &lt;code&gt;include&lt;/code&gt; 是干什么用的？什么是 &lt;code&gt;namespace&lt;/code&gt; ？为什么要写 &lt;code&gt;int main()&lt;/code&gt; ？&amp;hellip; 这时候教练会说：你先记着，以后就知道了？&lt;/li&gt;
+&lt;li&gt;不管你爽不爽，反正一上来就死记硬背我很不爽，理科竞赛应该是自己写的每一个逻辑语句都清清楚楚原理，而不是死记硬背。而且&amp;quot;Hello, world&amp;quot;之所以出名是因为方便检测 &lt;em&gt;编译器&lt;/em&gt; 而不是 &lt;em&gt;用来学习&lt;/em&gt; 。所以，我打算从比 &lt;code&gt;Hello, world&lt;/code&gt; 更简单的程序说起。&lt;/li&gt;
+&lt;li&gt;先请看以下程序，这个程序是不是更简洁，不懂的地方是不是也更少？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;这准确来说并不是程序（虽然编译器不会报错），这是个 &lt;em&gt;函数&lt;/em&gt; ，等价于 &lt;code&gt;f(x) = x + 1&lt;/code&gt; ，这个才应该作为初学者的起点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;what-比hello-world更简单的程序--函数&#34;&gt;WHAT: 比&amp;quot;Hello, world&amp;quot;更简单的“程序” —— 函数&lt;/h3&gt;
+&lt;h4 id=&#34;什么是函数为什么要先学函数&#34;&gt;什么是函数？/为什么要先学函数？&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;什么是函数？ &lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;函数&lt;/a&gt; （英语： Function ）是数学描述对应关系的一种特殊集合。&lt;/li&gt;
+&lt;li&gt;放心，这么抽象的定义我也看不懂，但是注意下函数的英语： Function 。对，功能。函，同含。因此你可以理解为函数就是包含了一系列功能的“数”。（ p.s. 计算机科学中的函数更偏向功能的意思，因为它削弱了 &lt;em&gt;映射&lt;/em&gt; 的关系，加强了功能性）&lt;/li&gt;
+&lt;li&gt;举个例子： &lt;code&gt;f(x) = x + 1&lt;/code&gt; ， &lt;code&gt;f(x)&lt;/code&gt; 这个函数所包含的功能就是把 &lt;code&gt;x&lt;/code&gt; 加上1后输出。&lt;/li&gt;
+&lt;li&gt;因此，我们可以发现，所有的答案都可以转化为复杂的函数 &lt;code&gt;f(g(x) + h(y) * u(z))&lt;/code&gt; 等等。把这个过程实现了，就是一个程序了。&lt;/li&gt;
+&lt;li&gt;函数的重要性由此彰显，这也就是我们为什么先学函数。函数，就是程序最根本的底层逻辑。或者说， &lt;em&gt;所有的程序由函数组成&lt;/em&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;函数的组成&#34;&gt;函数的组成&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;我们再回来看下这个函数：&lt;code&gt;int f(int x){return x + 1;}&lt;/code&gt; 等价于数学中的 &lt;code&gt;f(x) = x + 1&lt;/code&gt;。接下来，我们来彻底搞懂这个函数：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt; ：就相当于先告诉计算机这个 &lt;code&gt;f&lt;/code&gt; 和 &lt;code&gt;x&lt;/code&gt; 是整数（ integer ）&lt;/li&gt;
+&lt;li&gt;(&lt;code&gt;int x&lt;/code&gt;)： 输入的值。后面的程序可以直接 &lt;code&gt;f(1)&lt;/code&gt; ， &lt;code&gt;f(2)&lt;/code&gt; 的用函数，此时x等于1，2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;return&lt;/code&gt; ：经历一系列计算最终返回的值，等价于数学中最终 &lt;code&gt;f(x)&lt;/code&gt; 的值&lt;/li&gt;
+&lt;li&gt;;：分隔符，把几个语句隔开来&lt;/li&gt;
+&lt;li&gt;{}：把整个函数“包”起来&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;此时你应该有个大概的理解了，但是可能还是有些模糊。那我们再来看下这一个更复杂的函数，我会运用比喻加深下理解：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;第2行：&lt;code&gt;int b&lt;/code&gt; 语句的专业属于叫做 &lt;em&gt;声明(declare)&lt;/em&gt; 。可以理解为计算机是一家有大，中，小胶囊房间的胶囊宾馆。我们预定了名字叫 b 的小型房间。这个房间小到只能装的下整数(int)，比如浮点数(&lt;code&gt;float&lt;/code&gt; ，整数 + 小数)因为有尾巴（小数）因此住不下，而长整数(&lt;code&gt;long long int&lt;/code&gt; ，可以储存更大的整数)因为太胖了也住不下，必须住大型房间。&lt;code&gt;int f&lt;/code&gt; 和 &lt;code&gt;int a&lt;/code&gt; 也是同理。更多的房间类型我们会在以后遇到的时候讲到。目前只要知道 &lt;code&gt;int&lt;/code&gt; 整数就可以了。另外，这里的 &lt;code&gt;int&lt;/code&gt; &lt;code&gt;float&lt;/code&gt; &lt;code&gt;long long int&lt;/code&gt; 叫做 &lt;em&gt;类型（&lt;code&gt;type&lt;/code&gt;）&lt;/em&gt;，这里的 &lt;code&gt;b&lt;/code&gt; &lt;code&gt;f&lt;/code&gt; &lt;code&gt;a&lt;/code&gt; 叫做 &lt;em&gt;变量（&lt;code&gt;variable&lt;/code&gt;）&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;所以，一个 declare 的语句应该是这样的：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;type variable;&lt;/code&gt; 例如 &lt;code&gt;int a;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;第3行：此时b房间住进了整数1。这里 &lt;code&gt;=&lt;/code&gt; 是 &lt;em&gt;住进&lt;/em&gt; 的意思（专有名词： &lt;em&gt;赋值运算符&lt;/em&gt;），并不是相等的意思，意思就是把 &lt;code&gt;1&lt;/code&gt; 这个值赋给了 b 。&lt;/li&gt;
+&lt;li&gt;第4行：把 &lt;code&gt;b&lt;/code&gt; 的值赋给了 &lt;code&gt;a&lt;/code&gt; 。这里我不用住宾馆的比喻是因为如果我说 &lt;code&gt;b&lt;/code&gt; 的 &lt;code&gt;1&lt;/code&gt; 住进了 &lt;code&gt;a&lt;/code&gt; 可能会引起 &lt;code&gt;a&lt;/code&gt; 现在没人的误解。实际上此时 &lt;code&gt;a&lt;/code&gt; 和 &lt;code&gt;b&lt;/code&gt; 里面都是 &lt;code&gt;1&lt;/code&gt; 。可以理解 &lt;code&gt;b&lt;/code&gt; 里住的 &lt;code&gt;1&lt;/code&gt; 分身的另一个 &lt;code&gt;1&lt;/code&gt; 住进了 &lt;code&gt;a&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;第5行：如果充分理解了上面的内容。这里可以理解为 &lt;code&gt;a&lt;/code&gt; 里住的人分身后乘以2（此时1 * 2 = 2）然后住回了 &lt;code&gt;a&lt;/code&gt; 。那 &lt;code&gt;a&lt;/code&gt; 里面原来的 &lt;code&gt;1&lt;/code&gt; 呢？被新来的 &lt;code&gt;2&lt;/code&gt; 赶跑替换掉了。（后来居上）&lt;/li&gt;
+&lt;li&gt;第6行： &lt;code&gt;a&lt;/code&gt; 里的 &lt;code&gt;2&lt;/code&gt; 分身后替换掉了 &lt;code&gt;b&lt;/code&gt; 中的 &lt;code&gt;1&lt;/code&gt; ，此时 &lt;code&gt;a&lt;/code&gt; 和 &lt;code&gt;b&lt;/code&gt; 中住的是 &lt;code&gt;2&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;第7行： &lt;code&gt;f(a)&lt;/code&gt; 最终返回的值，返回 &lt;code&gt;a&lt;/code&gt; 中的 &lt;code&gt;2&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;此时我全用专业术语讲一遍：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;a&lt;/code&gt; 输入 &lt;code&gt;f&lt;/code&gt; 函数，&lt;code&gt;b&lt;/code&gt; 初始化为整数，把 &lt;code&gt;1&lt;/code&gt; 赋值给 &lt;code&gt;b&lt;/code&gt; 。把 &lt;code&gt;b&lt;/code&gt; 中的值赋值给 &lt;code&gt;a&lt;/code&gt; ， &lt;code&gt;a&lt;/code&gt; 自己乘以2，&lt;code&gt;b&lt;/code&gt; 赋值回 &lt;code&gt;a&lt;/code&gt;， 最终函数 &lt;code&gt;f&lt;/code&gt; 返回 &lt;code&gt;a&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果你能看懂，那么恭喜你，你已经 c++ 入门了。可是，你可能会又疑惑，写了这么多函数，虽然没有写程序时候的报错（ compile time error(CE) ，编译时错误），但是运行时后会报错（ runtime error(RE) ，运行时错误）。那程序怎样能运行起来呢？程序又从哪儿开始呢？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;程序之主--main函数&#34;&gt;程序之主 —— main()函数&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;再开始前，我要补充下：函数不一定要有输入，例如数学中 &lt;code&gt;f(x) = 1&lt;/code&gt; 作为常函数就不需要输入（虽然数学中的函数更为偏向映射的意思，计算机更偏向功能的意思）。因此写程序时可以直接写 &lt;code&gt;int f(){return 1;}&lt;/code&gt; 而不需要写 &lt;code&gt;int f(int x){return 1;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;我们来看看接下来这个程序：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; y;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; c;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f(a, b);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;这个程序已经可以运行起来了。但是这个程序有些奇怪：没有输入也没有输出。我们来研究下这个程序：
+&lt;ul&gt;
+&lt;li&gt;计算机从 &lt;code&gt;main()&lt;/code&gt; 作为主函数（程序的开头）开始运行。但为什么我们先写 &lt;code&gt;f(int x, int y)&lt;/code&gt; 。这就像我们解答数学考卷一样，在使用函数前要先写清楚描述清楚函数。计算机从上往下读取时也得先知道有 &lt;code&gt;f&lt;/code&gt; 这个函数，在后面调用中才知道要往上找来执行。&lt;/li&gt;
+&lt;li&gt;这里主函数 &lt;code&gt;return 0&lt;/code&gt; 并不是说为了某个程序调用时返回0，毕竟作为主函数也没有必要返回值 —— 一般在运行中间就得到答案就可以输出了。这里的 &lt;code&gt;return 0&lt;/code&gt; 只是告诉计算机该程序正常运行，没有出错而已。&lt;/li&gt;
+&lt;li&gt;注意此时 &lt;code&gt;f&lt;/code&gt; 有两个输入 &lt;code&gt;x&lt;/code&gt;(&lt;code&gt;a&lt;/code&gt;) 和 &lt;code&gt;y&lt;/code&gt;(&lt;code&gt;b&lt;/code&gt;) 返回 &lt;code&gt;x + y&lt;/code&gt; 的值。这是合法的，一个函数可以有多个输入。此时程序等效为 c = a + b (或者 c = 1 + 1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果可以理解了，我们就来看看这个复杂的程序：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;h&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; h(i);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ...;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    f(i);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;你能说出这个程序的运行顺序吗？
+&lt;ul&gt;
+&lt;li&gt;main -&amp;gt; f -&amp;gt; h -&amp;gt;(此时开始返回值) f -&amp;gt; main&lt;/li&gt;
+&lt;li&gt;这有点像搭积木，我们把 main 放在最底下，然后 f 放在 main 上面，最上面放上 h ； h 输出后移走 h 露出 f ， f 输出拿走 f ，最后再到最底下的 main&lt;/li&gt;
+&lt;li&gt;这种结构，后进先出（ LIFO, Last In First Out ）（越后面进来的先输出后离开）我们称呼为堆栈（ stack ）这种结构我们后面还会提及，这里有个基本模糊的理解即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-怎么写一个基本的程序&#34;&gt;HOW: 怎么写一个基本的程序？&lt;/h3&gt;
+&lt;h4 id=&#34;main-框架&#34;&gt;main() 框架&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;根据上面的内容，我们可以知道一个程序首先要写 &lt;code&gt;main()&lt;/code&gt; 函数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;语句&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;我们知道 &lt;code&gt;main()&lt;/code&gt; 的输出并不重要，那为什么我们把 &lt;code&gt;main()&lt;/code&gt; 函数定义为整数 &lt;code&gt;int&lt;/code&gt; ？
+&lt;ul&gt;
+&lt;li&gt;在讲之前，我希望能够通过这个问题提高大家的 &lt;em&gt;答案寻找能力&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;寻找一个问题的答案需要先 &lt;em&gt;提取关键词&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;关键词： c++ （问题的所属领域） main （问题的对象） why declare int （问题）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;然后选择提问平台
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;谷歌&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://www.baidu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;百度&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;知乎&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;填入关键词进行搜索&lt;/li&gt;
+&lt;li&gt;更多的提问方法可以参考 &lt;a class=&#34;link&#34; href=&#34;https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;提问的智慧&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;经过搜索后，你可能会找到该答案：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;The short answer, is because the C++ standard requires main() to return int . As you probably know, the return value from the main() function is used by the runtime library as the exit code for the process. Both Unix and Win32 support the concept of a (small) integer returned from a process after it has finished.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;简单来说，就是早期 c++ 标准时候的规定，当程序返回0时运行正常。&lt;/li&gt;
+&lt;li&gt;我通过这个案例的真实目的是强调我 blog 的作用并不是 &lt;em&gt;寻找答案&lt;/em&gt; ，而是提供一个对于知识点可能更好的一种理解，以此提高大家学习的效率。我希望大家向我提出的问题更多是对于理解的疑惑，而不是像这个问题一样本来可以在各种平台上找到答案而偏要浪费大家的时间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;那么，现在大家会写一个函数的框架了，那么里面的具体运算呢？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;arithmetic-基础计算运算符&#34;&gt;Arithmetic 基础计算&amp;amp;运算符&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;基本的“+ - * /” 是可以直接用的，例如 &lt;code&gt;a = 1 + 1, a = 1 * 1&lt;/code&gt; 但注意，除法仍然不能除以0，如果除以0会报RE(runtime error)&lt;/li&gt;
+&lt;li&gt;在上面我们曾提过，“=” 是赋值运算符而不是 &lt;em&gt;等于&lt;/em&gt; 的意思。就相当于安排房间的意思。那 &lt;em&gt;等于&lt;/em&gt; 要怎么表示呢？实际上，等于并不在基本运算里。如果你有疑惑，请注意，&lt;em&gt;等于&lt;/em&gt; 或者 &lt;em&gt;相等&lt;/em&gt; 实际上是一种判断， &lt;em&gt;a 等于 b&lt;/em&gt; 并不是运算，而是一种判断，判断 a 是和 b 相等的意思。至于判断语句，我们会在后面讲解。目前只需知道 “=” 是赋值运算符即可。&lt;/li&gt;
+&lt;li&gt;接下来我们要介绍一种特殊的运算：模运算 &lt;code&gt;%&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;模运算作为数论里重要的一部分，可惜体制内学生连数论的接触也较少。因此我会介绍下模运算，如果学过的可以直接跳过。&lt;/li&gt;
+&lt;li&gt;模是在整数运算中求一个整数 x 除以另一个整数 y 的余数的运算，且不考虑运算的商。&lt;/li&gt;
+&lt;li&gt;回忆下最初学的除法运算：8 / 5 = 1 ······ 3&lt;/li&gt;
+&lt;li&gt;这里 x = 8，y = 5 这里的 3 就是 8 mod 5 的结果&lt;/li&gt;
+&lt;li&gt;所以 8 mod 5 = 3&lt;/li&gt;
+&lt;li&gt;表达： &lt;code&gt;a = b % c&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;还有些常见的定理，可以自行了解：
+&lt;ul&gt;
+&lt;li&gt;(a ± b) % c = (a % c ± b % c) % c&lt;/li&gt;
+&lt;li&gt;(a * b) % c = a % c * (b % c) % c
+&lt;ul&gt;
+&lt;li&gt;想想除法是否也可以这么用？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(a ^ b) % c = (a % c)^ b % c
+&lt;ul&gt;
+&lt;li&gt;想想为什么不是^(b % c)？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;其实我挺纠结要不要把总结给写出来。因为总结本来是由大家自行总结并建立体系的一个环节，我希望大家能够自己总结自己学到的东西而不是一味的输入。而且每个人的总结方式有所不同。所以我可能以后会根据情况而定是否总结。&lt;/li&gt;
+&lt;li&gt;这里举例两种总结方式：
+&lt;ul&gt;
+&lt;li&gt;Function:
+&lt;ul&gt;
+&lt;li&gt;WHY: &amp;hellip;&lt;/li&gt;
+&lt;li&gt;WHAT: &amp;hellip;&lt;/li&gt;
+&lt;li&gt;HOW: &amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Function:
+&lt;ul&gt;
+&lt;li&gt;declare: type: int &amp;hellip; &amp;amp; name &amp;hellip;&lt;/li&gt;
+&lt;li&gt;body: arithmetic: &amp;hellip;&lt;/li&gt;
+&lt;li&gt;return: &amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;总结的目的是复习自己今天所学知识，能够对自己学到东西的多少有判断并且再次复盘加深印象。每个人适合的总结方法也不同，不一定要按照上面的方式总结，自己通过搜索引擎多试几种方法，找到最适合自己的方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;预告&#34;&gt;预告&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;我们已经学会了函数的基本写法，也知道程序的主函数 &lt;code&gt;main()&lt;/code&gt; 在运行中已经得到答案了，最后的 &lt;code&gt;return 0&lt;/code&gt; 只是告诉计算机程序正常运行。但是，怎么把答案输出呢？或者怎么把我们想要知道的变量里的数输出呢？这个问题，我们将在下一节得出答案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;练习&#34;&gt;练习&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;作为第一次练习，我会强调我的练习分为三种程度：知道（ know or KN ） 理解（ understand or US ） 掌握（ master or MT ）&lt;/li&gt;
+&lt;li&gt;KN 练习着重于通过练习加深对于本章所讲内容的梳理，是打好基础的必要条件。做出来只能证明你认真的看完了本节内容。&lt;/li&gt;
+&lt;li&gt;US 练习对知识点进行了一定的迁移与参数的改变，是继续往下学的必要条件。做出来可以证明你在学习时有进行一定的思考和消化。&lt;/li&gt;
+&lt;li&gt;MT 练习对知识点进行深挖和探究，进行了较大的迁移，是学好 c++ 和算法的重要条件。做出来可以证明你在学习时能够内化知识并且建立自己的理解和体系。&lt;/li&gt;
+&lt;li&gt;如果 KN 练习做不出来，希望你能够重新好好的看完本节内容再做。如果 US 练习做不出来，可以好好的消化复习本节内容，并通过搜索引擎解决存在的疑惑后再次尝试。如果 MT 练习做不出来，可以对照答案思考自己所欠缺的内容，加深自己的理解后自己重新在做一遍。答案在本章最后或者下章开头。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;kn&#34;&gt;KN&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;请说出下列函数中 &lt;code&gt;a&lt;/code&gt; 的值：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f(a);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;a = 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;us&#34;&gt;US&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;请说出下列函数中 &lt;code&gt;a&lt;/code&gt; 的值和运行的顺序：
+&lt;ul&gt;
+&lt;li&gt;提示：括号里的运算拥有较高优先级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;h&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;g&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; h(x);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; g(h(x));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f(a);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;1, main() -&amp;gt; f -&amp;gt; h(括号内的先算，直接返回值) -&amp;gt; g -&amp;gt; h -&amp;gt;（开始返回值） g -&amp;gt; f -&amp;gt; main&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mt&#34;&gt;MT&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;请写一个函数 &lt;code&gt;f&lt;/code&gt; ，输入为 &lt;code&gt;a, b&lt;/code&gt; ，交换 &lt;code&gt;a, b&lt;/code&gt; 的值后输出
+&lt;code&gt;a&lt;/code&gt; ；(所有 type 均为 int)
+&lt;ul&gt;
+&lt;li&gt;提示：需要引入辅助变量 &lt;code&gt;c&lt;/code&gt; 完成交换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; c;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

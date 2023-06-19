@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>PhyCE on zayn_lie&#39;s blog</title>
+        <link>/tags/phyce/</link>
+        <description>Recent content in PhyCE on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/phyce/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Electricity and Magnetism</title>
+        <link>/posts/aptest/2023-04-20-phyce/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/aptest/2023-04-20-phyce/</guid>
+        <description>&lt;h2 id=&#34;electricity&#34;&gt;Electricity&lt;/h2&gt;
+&lt;h3 id=&#34;micro&#34;&gt;Micro&lt;/h3&gt;
+&lt;h4 id=&#34;force-coulombs-law&#34;&gt;Force: Coulomb&amp;rsquo;s Law&lt;/h4&gt;
+&lt;p&gt;$$
+|\vec{F_E}| = \frac{1}{4 \pi \epsilon_0} |\frac{q_1 q_2}{r^2}| = \vec{E} \cdot q
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$q_1$ &amp;amp; $q_2$ (Charge): Positive (Glass + Silk) Negative (Plastic + Fur)
+&lt;ul&gt;
+&lt;li&gt;electrons: neg (e)&lt;/li&gt;
+&lt;li&gt;Protons: pos (e)&lt;/li&gt;
+&lt;li&gt;neutrons &amp;amp; atoms: neutral&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;field-reason-of-force-gausss-law&#34;&gt;Field (Reason of Force): Gauss&amp;rsquo;s Law&lt;/h4&gt;
+&lt;p&gt;$$
+\Phi_E(Flux) = \oint{\vec{E}}{d\vec{A}} = \frac{Q}{\epsilon_0} \
+Q =
+\begin{cases}
+\int{\lambda}{dL} \
+\int{\sigma}{dA} \
+\int{\rho}{dV}
+\end{cases}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\oint{\vec{E}}$ (Gaussian Surface): enclosing with sphere or cylinder
+&lt;ul&gt;
+&lt;li&gt;Sphere: $\frac{Q}{\epsilon_0 \cdot 4 \pi L^2}$, non-conducting (L &amp;lt; r): $\frac{Q L}{\epsilon_0 \cdot 4 \pi r^3}$&lt;/li&gt;
+&lt;li&gt;Cylinder (wire): $\frac{\lambda}{\epsilon_0 \cdot 2 \pi L}$&lt;/li&gt;
+&lt;li&gt;Plate: $\frac{\sigma}{\epsilon_0 \cdot 2}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;potential-energy-of-force&#34;&gt;Potential (Energy of Force)&lt;/h4&gt;
+&lt;p&gt;$$
+W_{a → b} = -\Delta{U}, U = k \frac{q q_0}{r} \
+V = \frac{U}{q} = k \frac{q}{r} = E \cdot r
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Equipotential Surfaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;macro&#34;&gt;Macro&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Kirchhoff&amp;rsquo;s Rules
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Current rule: for every junction, exists $I = \sum{I_i}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voltage rule: for every loop, exists $0 = \sum{V_i}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;conductors&#34;&gt;Conductors&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Charge distribution: surface, $\propto$ curvature
+&lt;ul&gt;
+&lt;li&gt;Electric field: inside = 0, surface: vertical&lt;/li&gt;
+&lt;li&gt;Potential: inside: same&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;capacitors&#34;&gt;Capacitors&lt;/h4&gt;
+&lt;p&gt;$$
+C = \frac{(\kappa) \epsilon_0 A}{d} = \frac{Q}{\Delta{V}}
+$$
+$Q$: only one plate; $\kappa$: vacuum = 1, others &amp;gt; 1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;other shape: $C = \frac{Q}{E d}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Relationship with time (RC Circuit)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+Charging: \
+\epsilon - i R - \frac{q}{C} = 0, i = \frac{d}{dt}{q} \
+q = C \epsilon(1 - e^{-\frac{t}{R C}}) \
+\
+Discharging: \
+-\frac{q}{C} - i R = 0, i = \frac{d}{dt}{q},
+q = Q_0 e^{-\frac{t}{RC}}
+$$
+$\tau = R C$ when $t = \tau$, $q = (1 - \frac{1}{e})Q_f$&lt;/p&gt;
+&lt;h2 id=&#34;magnetism&#34;&gt;Magnetism&lt;/h2&gt;
+&lt;h3 id=&#34;micro-1&#34;&gt;Micro&lt;/h3&gt;
+&lt;h4 id=&#34;fields-reason-of-force-amperes-law&#34;&gt;Fields (Reason of Force)： Ampere&amp;rsquo;s Law&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;enclosed loops&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;macro-1&#34;&gt;Macro&lt;/h3&gt;
+&lt;h4 id=&#34;inductance&#34;&gt;Inductance&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;RL Similar to RC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+-i R - L \frac{d}{dt}i = 0,
+i = I_0 e^{-\frac{t}{L / R}},
+\tau = L / R
+$$&lt;/p&gt;
+&lt;p&gt;Other things could be similar to Electricity&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

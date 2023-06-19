@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>stat on zayn_lie&#39;s blog</title>
+        <link>/tags/stat/</link>
+        <description>Recent content in stat on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/stat/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Statistic</title>
+        <link>/posts/aptest/2023-04-23-stat/</link>
+        <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/aptest/2023-04-23-stat/</guid>
+        <description>&lt;h2 id=&#34;statisticdata&#34;&gt;Statistic(Data)&lt;/h2&gt;
+&lt;h3 id=&#34;collection&#34;&gt;Collection&lt;/h3&gt;
+&lt;h4 id=&#34;observation-study&#34;&gt;Observation Study&lt;/h4&gt;
+&lt;p&gt;Collecting &lt;em&gt;Sample&lt;/em&gt; from &lt;em&gt;Population&lt;/em&gt; to make inference about the &lt;em&gt;Population&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Method: SRS(simple random sample) - every individual has an equal chance: label - generate n different number - select corresponding individuals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stratified Random Sampling: SRS individual samples from every group population&lt;/li&gt;
+&lt;li&gt;Cluster Random Sampling: SRS cluster samples from cluster population&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Error&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sampling
+&lt;ul&gt;
+&lt;li&gt;convenience sample
+&lt;ul&gt;
+&lt;li&gt;overestimate&lt;/li&gt;
+&lt;li&gt;underestimate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;voluntary response sample&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Non-Sampling
+&lt;ul&gt;
+&lt;li&gt;Under coverage&lt;/li&gt;
+&lt;li&gt;Nonresponse&lt;/li&gt;
+&lt;li&gt;The wording of questions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;experiment-prevent-confounding&#34;&gt;Experiment: prevent confounding&lt;/h4&gt;
+&lt;p&gt;$$
+Response Variable = a \times Factor(Explanatory Variable) + b \times Confounding Variable(Control)
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Method: Random assignment to each unit -&amp;gt; control -&amp;gt; comparisons -&amp;gt; replication&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Blind Experiment&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Placebo Effect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;census-all-data-collected&#34;&gt;Census: all data collected&lt;/h4&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;h4 id=&#34;one-variable&#34;&gt;One Variable&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Plot&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bar graph&lt;/li&gt;
+&lt;li&gt;Histogram&lt;/li&gt;
+&lt;li&gt;Stem plot(accurate)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;word&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MACRO
+&lt;ul&gt;
+&lt;li&gt;shape/distribution
+&lt;ul&gt;
+&lt;li&gt;uniform&lt;/li&gt;
+&lt;li&gt;unimodal: skewed left/symmetric/skewed right&lt;/li&gt;
+&lt;li&gt;bimodal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;spread: range, InterquartileRange(IQR)(resistant), StandartDeviation
+&lt;ul&gt;
+&lt;li&gt;z-score: $z = \frac{x - mean}{SD}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;micro
+&lt;ul&gt;
+&lt;li&gt;Outliers: 1.5 times IQR(interquartile range)&lt;/li&gt;
+&lt;li&gt;center: (mean &amp;amp;) median(resistant)&lt;/li&gt;
+&lt;li&gt;gap: no data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;two-variable&#34;&gt;Two Variable&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Plot&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;scatter plots&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;word&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MACRO
+&lt;ul&gt;
+&lt;li&gt;Direction(correlation r: -1 -(str_nag)- -0.8 - 0.8 -(str_pos) - 1)&lt;/li&gt;
+&lt;li&gt;Form &amp;amp; Strength(moderately strong)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;micro: Outliers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Regression&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;s - SD of residual&lt;/li&gt;
+&lt;li&gt;R-Sq (square of the correlation coefficient) - proportion of the variability that is accounted for by the linear relationship.&lt;/li&gt;
+&lt;li&gt;slope-int: $b \pm t_{\frac{\alpha}{2}(df = n - 2)} \times SE_b$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;probability&#34;&gt;Probability&lt;/h2&gt;
+&lt;h3 id=&#34;distribution&#34;&gt;Distribution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Discrete Distribution&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;types&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Binomial Random Variable(P of k in n happen with A)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;condition: B - Binomial; I - independence; N - n(trails) is certain&lt;/li&gt;
+&lt;li&gt;calculator: certain x p - &lt;code&gt;binompdf(&lt;/code&gt;; from 0 to x - &lt;code&gt;binomcdf(&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Geometric Random Variable(&lt;code&gt;P of A&lt;/code&gt; happen when kth in n)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;condition: same as BRV&lt;/li&gt;
+&lt;li&gt;shape: skewed right&lt;/li&gt;
+&lt;li&gt;calculator: certain x p - &lt;code&gt;geometpdf(&lt;/code&gt;; from 0 to x - &lt;code&gt;geometcdf(&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;calculation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Combine Variable
+&lt;ul&gt;
+&lt;li&gt;$\bar{x} = \bar{x_1} \pm \bar{x_2}$&lt;/li&gt;
+&lt;li&gt;$\sigma = \sqrt{\sigma_1^2 + \sigma_2^2}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transform Variable: $y = ax + b$
+&lt;ul&gt;
+&lt;li&gt;$\bar{y} = a \bar{x} + b$&lt;/li&gt;
+&lt;li&gt;$\sigma_y = a \sigma_x$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Normal Distributions(n -&amp;gt; $\infty$, continuous)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sampling Distribution&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;condition: CLT(Central Limit Theorem): n &amp;gt; 30, normal distribution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;estimation&#34;&gt;Estimation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;calculate&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;confidence level - confidence interval&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;expression&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;state
+&lt;ul&gt;
+&lt;li&gt;name + definition&lt;/li&gt;
+&lt;li&gt;condition
+&lt;ul&gt;
+&lt;li&gt;Independent
+&lt;ul&gt;
+&lt;li&gt;n &amp;lt;= 10%N&lt;/li&gt;
+&lt;li&gt;normal: n &amp;gt;= 30 or np, n(1 - p) &amp;gt;= 10 or draw stem plot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;calculation&lt;/li&gt;
+&lt;li&gt;conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;test&#34;&gt;Test&lt;/h3&gt;
+&lt;p&gt;H_0: p = a
+H_0: p &amp;gt; or &amp;lt; or != a&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sample test&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;calculator
+&lt;ul&gt;
+&lt;li&gt;input
+&lt;ul&gt;
+&lt;li&gt;n is given: &lt;code&gt;T-Test&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;n is infty or ideal: &lt;code&gt;Z-Test&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;output: &lt;code&gt;t&lt;/code&gt; or &lt;code&gt;z&lt;/code&gt;: t-value or z-value &lt;code&gt;p&lt;/code&gt;: p-value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prop test&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;calculator
+&lt;ul&gt;
+&lt;li&gt;input: &lt;code&gt;1-PropZTest&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;output: &lt;code&gt;z&lt;/code&gt;: z-value &lt;code&gt;p&lt;/code&gt;: p-value &lt;code&gt;p-hat&lt;/code&gt;: x / n&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Chi-Square&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GoF(Goodness-of-Fit) Tests&lt;/li&gt;
+&lt;li&gt;one dimension(Correct or not): Observed list and Expected list&lt;/li&gt;
+&lt;li&gt;two dimension(df = (row - 1)(col - 1))
+&lt;ul&gt;
+&lt;li&gt;Independence or not: $E = \frac{row \cdot col}{total}$&lt;/li&gt;
+&lt;li&gt;Homogeneity or not: whether different is the same&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

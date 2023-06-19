@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>time on zayn_lie&#39;s blog</title>
+        <link>/tags/time/</link>
+        <description>Recent content in time on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/time/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>从0开始的算法竞赛01-算法基础02：时间和空间</title>
+        <link>/posts/algorithm/01-basis/2023-03-03-02-timespace/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/algorithm/01-basis/2023-03-03-02-timespace/</guid>
+        <description>&lt;h3 id=&#34;why-为什么要关注时间和空间&#34;&gt;WHY: 为什么要关注时间和空间&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。&lt;/li&gt;
+&lt;li&gt;不仅如此，算法竞赛中大多都会限制你所使用的空间（内存）和时间。并且往往时间的限制更严格（毕竟现在 CPU 等硬件可以不断的扩大内存，但是时间仍然对人类很宝贵）。&lt;/li&gt;
+&lt;li&gt;那我们怎么测量时间和空间呢？ —— 时间复杂度和空间复杂度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;what-什么是时间复杂度和空间复杂度&#34;&gt;WHAT: 什么是时间复杂度和空间复杂度&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;我们先来看一个函数：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run1&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; n){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    printf(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;execute &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        printf(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;execute &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; j &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; n; j &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        printf(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;execute &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; a &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; a &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; b &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; b &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; c &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; c &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            printf(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;execute &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;运行一次这个程序要多久？很显然，要进行 $1 + n + n^2 + n^3$ 次操作。相比一个要进行 &lt;code&gt;run2(n)&lt;/code&gt; $n + n^2 + n^3$ 的程序一定更慢，相比 &lt;code&gt;run3(n)&lt;/code&gt; $1 + n + n^2$ 当n不为0时也更慢。&lt;/li&gt;
+&lt;li&gt;我们来考虑两种情况，当n很小（趋近0）时，显然 $run2 &amp;lt; run3 &amp;lt; run1$。当n很大时（趋近正无穷）时， $run3 &amp;lt; run2 &amp;lt; run1$ 。那如果你要选一个程序来跑，你会选择 run2 还是 run3 ？&lt;/li&gt;
+&lt;li&gt;也许你会反应过来，当n很小时，虽然run2更快，但是大家本身都很快，run3也许运行个1ms，run2只运行0.99999ms，但我哪感受的出来？而且如果有个时间限制，run2和run3一定都不会超出限制。但是n很大的时候，run2因为三次方的数量级增长的很快，一下就会慢run3很多。所以我们都会选择run3来运行。&lt;/li&gt;
+&lt;li&gt;通过这个例子，大家会有一个模糊的概念，我们关注时间的时候往往关注的是最高次方（或者增长最快的哪一项），因为我们在评价程序快慢的时候只有在 n 很大的情况下评价才有意义， n 很小大家速度都差不多，是没什么意义的。所以我们就创造了一个符号来表示程序运行的最高次项（或增长最快的项） - $O$ ，称为时间复杂度。例如run1和run2的时间复杂度为 $O(n^3)$ ，run3的时间复杂度为 $O(n^2)$ 这下谁快谁慢就显而易见了。&lt;/li&gt;
+&lt;li&gt;知道了时间复杂度，那空间复杂度是什么？还记得例如递归的函数里面套函数吗？当函数运行一半跑去运行另一个函数时，这个函数还没返回值就会先占用一定的内存。另外你用的参数越多，占用的内存也越多。比如你开一个 10^9 的数组一定比开 10 的数组占用的空间多。因此我们知道空间复杂度和调用的函数深度（函数里面调用函数的次数，每次就像往深处又探了一点）与参数的使用相关。那计算公式呢？其实不太重要。因为你只要注意这两点基本上就不再会遇到空间不足的问题了 —— 毕竟正如上面所说，竞赛重时间轻空间。并且这里还可以回顾上章所说为什么如果递归的回归没有加限制条件往往会爆内存 —— 函数无线的深探下去，占用的内存越来越多，最终导致 CPU 内存占满程序运行错误。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-怎么测量时间复杂度怎么优化时间复杂度&#34;&gt;HOW: 怎么测量时间复杂度？怎么优化时间复杂度？&lt;/h3&gt;
+&lt;h4 id=&#34;测量时间复杂度的测量&#34;&gt;测量时间复杂度的测量&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;根据上面的例子，我们可以知道时间复杂度只与最高次项有关，那次项间怎么对比呢？我们来看这组关系：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+1 &amp;lt; \log{n} &amp;lt; n &amp;lt; n \cdot \log{n} &amp;lt; n^2 &amp;lt; n^2 \cdot \log{n} &amp;lt; \dotso
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这么多实际上只要知道 $1 &amp;lt; \log{n} &amp;lt; n$ 即可，剩下的自己组合相乘。&lt;/li&gt;
+&lt;li&gt;1 用在正常的语句，没有枚举循环递归等等，最正常最快的时间复杂度。有些人会有为什么不是2，3之类的疑惑（当有2个或3个语句）。实际上，这些系数都是搭配常数，不影响整体的上升趋势，比起趋向无限大的n时均可忽略不计，常数无论搭配哪种系数绝对比不过一次二次的n。同理，如果操作次数为 $2 \cdot n$ 我们也仍写作 $O(n)$ 。&lt;/li&gt;
+&lt;li&gt;n 就是正常只有一个循环就是 $O(n)$ ，循环里套一个循环娃就是 $O(n^2)$ ，循环里套的娃再套一个娃就是 $O(n^3)$&lt;/li&gt;
+&lt;li&gt;$O(\log{n})$ 的时间复杂度实际上在上一节课枚举中找已经排好的元素中是否存在某个元素就出现过。大家发现我们每次提出中间然后一分为二，不断的一分为二（专业称为二分）就创造出了 $\log_{2}{n}$ 次操作。但是底数2仍然只是个常数，因为 $\log_{2}{n} = \frac{\log_{a}{n}}{\log_{a}{2}}$ 其中 $\log_{a}{2}$ 作为常数不影响整体趋势，因此我们直接写成 $\log{n}$ 即可。
+&lt;ul&gt;
+&lt;li&gt;有二分就有倍增，倍增也是可以将 $O(n)$ 优化为 $O(\log{n})$ 的一种常用手段。倍增的理解这里就不再提及了，有一篇很好的理解方式推荐给大家：&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/jarjingx/article/details/8180560&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;倍增与兔子的故事&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;那 $n \cdot \log{n}$ 应该也不难理解：循环里套一个二分就是 $O(n \cdot \log{n})$&lt;/li&gt;
+&lt;li&gt;剩下的都是一样的道理，至于一些我们没见过的时间复杂度会在后面遇到的时候再讲。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;时间复杂度的优化和前缀和&#34;&gt;时间复杂度的优化和前缀和&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;大家发现我们没有提到空间复杂度，还是那句话，现代 &lt;em&gt;重时间轻空间&lt;/em&gt; 。因此，我们往往会牺牲空间复杂度来减小时间复杂度，或者说 &lt;em&gt;拿空间换时间&lt;/em&gt; 。这节课我们会介绍拿空间换时间的典型例子 —— 前缀和。&lt;/li&gt;
+&lt;li&gt;我们先看下这道题目：已知数组储存有 n 个数，求 t 次第 a 个数到第 b 个数所有数的和（对于每次 a, b 不相同）。&lt;/li&gt;
+&lt;li&gt;正常的思路就是从 a 一个一个加到 b ，因此会写出这样的程序：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sum&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; vector, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; b; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ans &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; vector[i];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;先问问大家这个程序运行一次的时间复杂度是多少？很容易回答： $O(b - a)$ 。但是是错误的，正确答案是 $O(n)$ 。注意，我讲时间复杂度的时候一直在强调上升趋势，大家发现我 b - a 的限制只会与 n 相关，当 n 越大， b - a 的范围可以越大，换句话说，上升的比例和 n 成正比。所以，正确答案是 $O(n)$。如果调用这个函数的次数为t，那么总时间复杂度为 $O(t \cdot n)$ 。也许你还不是很理解，但没关系，我们接下来会遇到大量对于时间复杂度的考虑和计算，你也会对时间复杂度有更深刻的了解。&lt;/li&gt;
+&lt;li&gt;一般来说，枚举都可以进行优化，那这个可不可以进行一些优化（我们接下来课程说的优化一般都将重心放在时间复杂度的优化）呢？照样，我们不会像某些竞赛教练先告诉大家有前缀和然后逆推到结论：前缀和能优化时间复杂度，我们照样按照逻辑正着推。大家发现，我能优化的点只有在这个循环上 —— 毕竟你不能改变函数的调用次数。那怎么优化呢？还记得我们可以 &lt;em&gt;拿空间换时间&lt;/em&gt; ，那么我希望能够先储存一定的信息，然后通过这个信息能够直接快速的得出 a 到 b 的和。那我要储存什么信息呢？什么信息能够在不破坏（不加深）时间复杂度的情况下提前储存和的信息？首先我们可以分析（化简和拆分）这个问题 —— 怎么处理从 a 开始的和 + 怎么处理到 b 结尾的和。然后推导公式 —— 两边如果都添上一个从0开始的和，那就有
+a 到 b 的和 = 0到b的和 - 0到a - 1的和。那我们的数组需要储存的信息就是从0到x的和即可（$O(n)$）（我只要储存一次即可），剩下需要访问的话就直接把 &lt;code&gt;vector[b]&lt;/code&gt; 和 &lt;code&gt;vector[a - 1]&lt;/code&gt; 相减即可（$O(t \cdot 1)$）总时间复杂度 $O(n + t) &amp;lt; O(t \cdot n)$ 。因此，我们用一个数组（空间），储存了一些关键信息，成功的化简了时间复杂度。因此程序变成这样：&lt;/li&gt;
+&lt;li&gt;前缀和数组构建：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; vector[n &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], sum[n &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;construct&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        sum[i] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sum[i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; vector[i];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;主要函数就变成这个样子：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sumFromAToB&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; sum[b] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; sum[a &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;用数组储存信息化简时间复杂度是一种非常重要的化简方法，在后面线段树、并查集等等都会用到。希望大家能够好好掌握前缀和，掌握这种用空间换时间很基本的方法。我们在今天的练习中还会对前缀和进行拓展，希望大家完成后认真的学习一下题解，相信对大家以后的优化程序能力会有很大提升。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;练习&#34;&gt;练习&lt;/h3&gt;
+&lt;h4 id=&#34;kn&#34;&gt;KN&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;luogu-P1115 最大子段和&lt;/a&gt;（运用前缀和）
+&lt;ul&gt;
+&lt;li&gt;40分基本要求&lt;/li&gt;
+&lt;li&gt;100分需要优化遍历：想想哪些步骤是没有必要的？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;40分主要代码：（a是前缀和数组）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; a){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1e5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; i; j &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; j &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;){ &lt;span style=&#34;color:#75715e&#34;&gt;// [i, j]这个区间之和
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; a[j] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; a[i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; ans : a[j] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; a[i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]; &lt;span style=&#34;color:#75715e&#34;&gt;// 比较大小，相当于 ans = max{ans, a[j] - a[i - 1]}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;100分代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; a){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1e5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; i; j &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; j &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      ans &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ans &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; a[j] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; a[i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; ans : a[j] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; a[i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(a[j] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; a[i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 优化
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; ans;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;这里解释下为什么有这个优化。首先我们脑中模拟一遍这个程序，寻找是否存在不必要的操作，可以发现当 &lt;code&gt;a[i]&lt;/code&gt; 小于等于 0 时，无论 i + 1 到 j 的和多大， i 到 j 的和必然小于 i + 1 到 j 的和，因为 i 到 j 的和相当于 i + 1 到 j 的和加上了个小于等于0的数仍然小于等于 i + 1 到 j ，因此其中必然不会有更大的值，就直接跳过了。&lt;/li&gt;
+&lt;li&gt;学完动态规划，你会发现即使时间复杂度已经化简到很小了，连空间复杂度还可以再次化简。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;us&#34;&gt;US&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;已知二维数组(n, m)储存有 $n \cdot m$ 个数，求t次第$(x_a, y_a)$ 个数到第 $(x_b, y_b)$ 个数所有数的和（对于每次 a, b 不相同）。
+&lt;ul&gt;
+&lt;li&gt;提示：如果没思路可以先自行了解下 &lt;em&gt;容斥原理&lt;/em&gt; 再尝试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;sum 数组构建：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; vector[n &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;][m &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], sum[n &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;][m &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;construct&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; i &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; j &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; n; j &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      sum[i][j] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; vector[i][j] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (sum[i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;][j] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; sum[i][j &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; sum[i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;][j &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]); &lt;span style=&#34;color:#75715e&#34;&gt;// 括号里的内容及运用容斥原理
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;主要函数：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sumFromAToB&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x_a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y_a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x_b, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y_b){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; sum[x_b][y_b] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; sum[x_b][y_a &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; sum[x_a &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;][y_b] &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; sum[x_a &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;][y_a &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]; &lt;span style=&#34;color:#75715e&#34;&gt;// 仍然是容斥原理
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;mt&#34;&gt;MT&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P2367&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;luogu-P2367 语文成绩&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;提示：既然有前缀和，那为什么不能有前缀差（专业名称：差分）呢？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;因为差分的思路和前缀和及其相似，这就不过多解释了，详情请见 &lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/solution/P2367&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;题解&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;usmt&#34;&gt;US+MT&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P3664&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;luogu-P3664 Modern Art&lt;/a&gt; / &lt;a class=&#34;link&#34; href=&#34;http://www.usaco.org/index.php?page=viewproblem2&amp;amp;cpid=744&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;usaco-17UopP1 Modern Art&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
