@@ -253,12 +253,20 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#why-为什么要关注时间和空间">WHY: 为什么要关注时间和空间</a></li>
+    <li><a href="#what-什么是时间复杂度和空间复杂度">WHAT: 什么是时间复杂度和空间复杂度</a></li>
+    <li><a href="#how-怎么测量时间复杂度怎么优化时间复杂度">HOW: 怎么测量时间复杂度？怎么优化时间复杂度？</a>
       <ul>
-        <li><a href="#why-为什么要关注时间和空间">WHY: 为什么要关注时间和空间</a></li>
-        <li><a href="#what-什么是时间复杂度和空间复杂度">WHAT: 什么是时间复杂度和空间复杂度</a></li>
-        <li><a href="#how-怎么测量时间复杂度怎么优化时间复杂度">HOW: 怎么测量时间复杂度？怎么优化时间复杂度？</a></li>
-        <li><a href="#练习">练习</a></li>
+        <li><a href="#测量时间复杂度的测量">测量时间复杂度的测量</a></li>
+        <li><a href="#时间复杂度的优化和前缀和">时间复杂度的优化和前缀和</a></li>
+      </ul>
+    </li>
+    <li><a href="#练习">练习</a>
+      <ul>
+        <li><a href="#kn">KN</a></li>
+        <li><a href="#us">US</a></li>
+        <li><a href="#mt">MT</a></li>
+        <li><a href="#usmt">US+MT</a></li>
       </ul>
     </li>
   </ul>
@@ -340,13 +348,13 @@
     <section class="article-content">
     
     
-    <h3 id="why-为什么要关注时间和空间">WHY: 为什么要关注时间和空间</h3>
+    <h2 id="why-为什么要关注时间和空间">WHY: 为什么要关注时间和空间</h2>
 <ul>
 <li>想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。</li>
 <li>不仅如此，算法竞赛中大多都会限制你所使用的空间（内存）和时间。并且往往时间的限制更严格（毕竟现在 CPU 等硬件可以不断的扩大内存，但是时间仍然对人类很宝贵）。</li>
 <li>那我们怎么测量时间和空间呢？ —— 时间复杂度和空间复杂度</li>
 </ul>
-<h3 id="what-什么是时间复杂度和空间复杂度">WHAT: 什么是时间复杂度和空间复杂度</h3>
+<h2 id="what-什么是时间复杂度和空间复杂度">WHAT: 什么是时间复杂度和空间复杂度</h2>
 <ul>
 <li>我们先来看一个函数：</li>
 </ul>
@@ -369,8 +377,8 @@
 <li>通过这个例子，大家会有一个模糊的概念，我们关注时间的时候往往关注的是最高次方（或者增长最快的哪一项），因为我们在评价程序快慢的时候只有在 n 很大的情况下评价才有意义， n 很小大家速度都差不多，是没什么意义的。所以我们就创造了一个符号来表示程序运行的最高次项（或增长最快的项） - $O$ ，称为时间复杂度。例如run1和run2的时间复杂度为 $O(n^3)$ ，run3的时间复杂度为 $O(n^2)$ 这下谁快谁慢就显而易见了。</li>
 <li>知道了时间复杂度，那空间复杂度是什么？还记得例如递归的函数里面套函数吗？当函数运行一半跑去运行另一个函数时，这个函数还没返回值就会先占用一定的内存。另外你用的参数越多，占用的内存也越多。比如你开一个 10^9 的数组一定比开 10 的数组占用的空间多。因此我们知道空间复杂度和调用的函数深度（函数里面调用函数的次数，每次就像往深处又探了一点）与参数的使用相关。那计算公式呢？其实不太重要。因为你只要注意这两点基本上就不再会遇到空间不足的问题了 —— 毕竟正如上面所说，竞赛重时间轻空间。并且这里还可以回顾上章所说为什么如果递归的回归没有加限制条件往往会爆内存 —— 函数无线的深探下去，占用的内存越来越多，最终导致 CPU 内存占满程序运行错误。</li>
 </ul>
-<h3 id="how-怎么测量时间复杂度怎么优化时间复杂度">HOW: 怎么测量时间复杂度？怎么优化时间复杂度？</h3>
-<h4 id="测量时间复杂度的测量">测量时间复杂度的测量</h4>
+<h2 id="how-怎么测量时间复杂度怎么优化时间复杂度">HOW: 怎么测量时间复杂度？怎么优化时间复杂度？</h2>
+<h3 id="测量时间复杂度的测量">测量时间复杂度的测量</h3>
 <ul>
 <li>根据上面的例子，我们可以知道时间复杂度只与最高次项有关，那次项间怎么对比呢？我们来看这组关系：</li>
 </ul>
@@ -390,7 +398,7 @@ $$</p>
 <li>那 $n \cdot \log{n}$ 应该也不难理解：循环里套一个二分就是 $O(n \cdot \log{n})$</li>
 <li>剩下的都是一样的道理，至于一些我们没见过的时间复杂度会在后面遇到的时候再讲。</li>
 </ul>
-<h4 id="时间复杂度的优化和前缀和">时间复杂度的优化和前缀和</h4>
+<h3 id="时间复杂度的优化和前缀和">时间复杂度的优化和前缀和</h3>
 <ul>
 <li>大家发现我们没有提到空间复杂度，还是那句话，现代 <em>重时间轻空间</em> 。因此，我们往往会牺牲空间复杂度来减小时间复杂度，或者说 <em>拿空间换时间</em> 。这节课我们会介绍拿空间换时间的典型例子 —— 前缀和。</li>
 <li>我们先看下这道题目：已知数组储存有 n 个数，求 t 次第 a 个数到第 b 个数所有数的和（对于每次 a, b 不相同）。</li>
@@ -424,8 +432,8 @@ a 到 b 的和 = 0到b的和 - 0到a - 1的和。那我们的数组需要储存�
 </span></span></code></pre></div><ul>
 <li>用数组储存信息化简时间复杂度是一种非常重要的化简方法，在后面线段树、并查集等等都会用到。希望大家能够好好掌握前缀和，掌握这种用空间换时间很基本的方法。我们在今天的练习中还会对前缀和进行拓展，希望大家完成后认真的学习一下题解，相信对大家以后的优化程序能力会有很大提升。</li>
 </ul>
-<h3 id="练习">练习</h3>
-<h4 id="kn">KN</h4>
+<h2 id="练习">练习</h2>
+<h3 id="kn">KN</h3>
 <ul>
 <li><a class="link" href="https://www.luogu.com.cn/problem/P1115"  target="_blank" rel="noopener"
     >luogu-P1115 最大子段和</a>（运用前缀和）
@@ -466,7 +474,7 @@ a 到 b 的和 = 0到b的和 - 0到a - 1的和。那我们的数组需要储存�
 <li>这里解释下为什么有这个优化。首先我们脑中模拟一遍这个程序，寻找是否存在不必要的操作，可以发现当 <code>a[i]</code> 小于等于 0 时，无论 i + 1 到 j 的和多大， i 到 j 的和必然小于 i + 1 到 j 的和，因为 i 到 j 的和相当于 i + 1 到 j 的和加上了个小于等于0的数仍然小于等于 i + 1 到 j ，因此其中必然不会有更大的值，就直接跳过了。</li>
 <li>学完动态规划，你会发现即使时间复杂度已经化简到很小了，连空间复杂度还可以再次化简。</li>
 </ul>
-<h4 id="us">US</h4>
+<h3 id="us">US</h3>
 <ul>
 <li>已知二维数组(n, m)储存有 $n \cdot m$ 个数，求t次第$(x_a, y_a)$ 个数到第 $(x_b, y_b)$ 个数所有数的和（对于每次 a, b 不相同）。
 <ul>
@@ -491,7 +499,7 @@ a 到 b 的和 = 0到b的和 - 0到a - 1的和。那我们的数组需要储存�
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">sumFromAToB</span>(<span style="color:#66d9ef">int</span> x_a, <span style="color:#66d9ef">int</span> y_a, <span style="color:#66d9ef">int</span> x_b, <span style="color:#66d9ef">int</span> y_b){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> sum[x_b][y_b] <span style="color:#f92672">-</span> sum[x_b][y_a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> sum[x_a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][y_b] <span style="color:#f92672">+</span> sum[x_a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][y_a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]; <span style="color:#75715e">// 仍然是容斥原理
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
-</span></span></code></pre></div><h4 id="mt">MT</h4>
+</span></span></code></pre></div><h3 id="mt">MT</h3>
 <ul>
 <li><a class="link" href="https://www.luogu.com.cn/problem/P2367"  target="_blank" rel="noopener"
     >luogu-P2367 语文成绩</a>
@@ -505,7 +513,7 @@ a 到 b 的和 = 0到b的和 - 0到a - 1的和。那我们的数组需要储存�
 <li>因为差分的思路和前缀和及其相似，这就不过多解释了，详情请见 <a class="link" href="https://www.luogu.com.cn/problem/solution/P2367"  target="_blank" rel="noopener"
     >题解</a></li>
 </ul>
-<h4 id="usmt">US+MT</h4>
+<h3 id="usmt">US+MT</h3>
 <ul>
 <li><a class="link" href="https://www.luogu.com.cn/problem/P3664"  target="_blank" rel="noopener"
     >luogu-P3664 Modern Art</a> / <a class="link" href="http://www.usaco.org/index.php?page=viewproblem2&amp;cpid=744"  target="_blank" rel="noopener"

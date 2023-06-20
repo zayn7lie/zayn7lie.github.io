@@ -12,17 +12,17 @@
         <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>/posts/c&#43;&#43;/cpp-00compilerenvironment/</guid>
-        <description>&lt;h3 id=&#34;why-为什么要使用编译器和搭建-c-环境&#34;&gt;WHY: 为什么要使用编译器和搭建 C++ 环境&lt;/h3&gt;
+        <description>&lt;h2 id=&#34;why-为什么要使用编译器和搭建-c-环境&#34;&gt;WHY: 为什么要使用编译器和搭建 C++ 环境&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;~= 为什么吃饭要使用嘴巴&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-什么是编译器和-c-环境&#34;&gt;WHAT: 什么是编译器和 C++ 环境&lt;/h3&gt;
+&lt;h2 id=&#34;what-什么是编译器和-c-环境&#34;&gt;WHAT: 什么是编译器和 C++ 环境&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;本小节内容仅供有兴趣者阅读，因为本小节对于竞赛和平时使用并无太大帮助，当然在了解了编译器和环境后对以后的一些 C++ 能够有更深的理解，也有助于以后真正使用 C++ 写程序。&lt;/li&gt;
 &lt;li&gt;暂时不想写，先玩算法竞赛，本小节敬请期待。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-如何搭建-c-环境及编译器的选择&#34;&gt;HOW: 如何搭建 C++ 环境及编译器的选择&lt;/h3&gt;
-&lt;h4 id=&#34;对于中国体制内参加-noi-的算法竞赛生-dev-cpp&#34;&gt;对于中国体制内参加 &lt;code&gt;NOI&lt;/code&gt; 的算法竞赛生： dev-cpp&lt;/h4&gt;
+&lt;h2 id=&#34;how-如何搭建-c-环境及编译器的选择&#34;&gt;HOW: 如何搭建 C++ 环境及编译器的选择&lt;/h2&gt;
+&lt;h3 id=&#34;对于中国体制内参加-noi-的算法竞赛生-dev-cpp&#34;&gt;对于中国体制内参加 &lt;code&gt;NOI&lt;/code&gt; 的算法竞赛生： dev-cpp&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;不要想花里胡哨好玩的编译器了，老老实实给我用 &lt;a class=&#34;link&#34; href=&#34;https://sourceforge.net/projects/orwelldevcpp/files/latest/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;dev-cpp&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://sourceforge.net/projects/orwelldevcpp/files/latest/download%ef%bc%81&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -36,7 +36,7 @@
 &lt;/li&gt;
 &lt;li&gt;点击左上角空白的纸打开新的一页，写完程序按f11即可保存并运行。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;其他的竞赛生线上考生-vs-code&#34;&gt;其他的竞赛生（线上考生）： vs-code&lt;/h3&gt;
+&lt;h2 id=&#34;其他的竞赛生线上考生-vs-code&#34;&gt;其他的竞赛生（线上考生）： vs-code&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;编译器下载
 &lt;ul&gt;

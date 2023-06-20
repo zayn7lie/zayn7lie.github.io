@@ -253,12 +253,14 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#why-为什么我们要使用头文件">WHY: 为什么我们要使用头文件？</a></li>
+    <li><a href="#what-什么是头文件">WHAT: 什么是头文件？</a></li>
+    <li><a href="#how-怎么使用头文件">HOW: 怎么使用头文件</a></li>
+    <li><a href="#标准输入输出函数">标准输入输出函数</a>
       <ul>
-        <li><a href="#why-为什么我们要使用头文件">WHY: 为什么我们要使用头文件？</a></li>
-        <li><a href="#what-什么是头文件">WHAT: 什么是头文件？</a></li>
-        <li><a href="#how-怎么使用头文件">HOW: 怎么使用头文件</a></li>
-        <li><a href="#标准输入输出函数">标准输入输出函数</a></li>
+        <li><a href="#why-为什么存在输入输出还需要标准">WHY: 为什么存在输入输出，还需要“标准”？</a></li>
+        <li><a href="#what-那什么是标准输入输出呢">WHAT: 那什么是标准输入输出呢？</a></li>
+        <li><a href="#how-怎么进行输入输出">HOW: 怎么进行输入输出？</a></li>
       </ul>
     </li>
   </ul>
@@ -340,7 +342,7 @@
     <section class="article-content">
     
     
-    <h3 id="why-为什么我们要使用头文件">WHY: 为什么我们要使用头文件？</h3>
+    <h2 id="why-为什么我们要使用头文件">WHY: 为什么我们要使用头文件？</h2>
 <ul>
 <li>上节课我们已经了解了函数的结构及作用。实际上，存在这各种各样奇奇怪怪且复杂的函数，例如 <em>打印函数</em> <code>printf()</code> 。</li>
 </ul>
@@ -355,12 +357,12 @@
 <li>该函数的作用就是我们上节课提及的 <em>输出</em> 或者 <em>打印</em> 函数。而且这一段只是函数的主题部分，还有各种涉及计算机底层端口的各种调用和参数。</li>
 <li>如果我们需要使用自己写一遍绝对是非常没有效率的行为。而且如果真的要求记忆这么大段内容这就不是理科竞赛的目的了。因此， c++ 已经帮我们写好了，而我们只需要通过一些小 tricks 就可以调用这些函数了 —— 使用头文件。</li>
 </ul>
-<h3 id="what-什么是头文件">WHAT: 什么是头文件？</h3>
+<h2 id="what-什么是头文件">WHAT: 什么是头文件？</h2>
 <ul>
 <li>存储了一些函数的文件，方便我们编写程序。</li>
 <li>一般放在需要调用头文件程序（或函数）的头部（开始）。</li>
 </ul>
-<h3 id="how-怎么使用头文件">HOW: 怎么使用头文件</h3>
+<h2 id="how-怎么使用头文件">HOW: 怎么使用头文件</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;cstdio&gt; //调用头文件&lt;cstdio&gt; 该头文件里包含 printf() 函数</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
 </span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>); <span style="color:#75715e">//&#34;Hello, world!&#34;打印出来/输出到终端（屏幕）
@@ -371,21 +373,21 @@
 <li>我们发现上面的程序多了个 <code>#include&lt;cstdio&gt;</code> ，头文件的调用就是简简单单通过 <code>#include&lt;头文件&gt;</code> 来进行的。</li>
 <li>大家发现我们并没有定义 <code>printf()</code> ，实际上这个函数已经被定义在 <code>cstdio</code> 头文件里了，所以我们是可以直接使用该函数的。</li>
 </ul>
-<h3 id="标准输入输出函数">标准输入输出函数</h3>
+<h2 id="标准输入输出函数">标准输入输出函数</h2>
 <ul>
 <li>接下来，我们将沿着 <code>printf()</code> 这个重要的函数，讲一讲输入和输出的方法。</li>
 </ul>
-<h4 id="why-为什么存在输入输出还需要标准">WHY: 为什么存在输入输出，还需要“标准”？</h4>
+<h3 id="why-为什么存在输入输出还需要标准">WHY: 为什么存在输入输出，还需要“标准”？</h3>
 <ul>
 <li>输入相当于我们把我们的需求输入计算机，计算机最终返回我们需要的结果。</li>
 <li>输入设备和输出设备千奇百怪，什么都有。例如文件输入，终端输入等等。这些输入输出的格式也不一样</li>
 <li>因此，我们需要让程序有统一的输入和输出格式和设备。</li>
 </ul>
-<h4 id="what-那什么是标准输入输出呢">WHAT: 那什么是标准输入输出呢？</h4>
+<h3 id="what-那什么是标准输入输出呢">WHAT: 那什么是标准输入输出呢？</h3>
 <ul>
 <li>标准输入输出是全由终端进行输入和输出的一种方式。</li>
 </ul>
-<h4 id="how-怎么进行输入输出">HOW: 怎么进行输入输出？</h4>
+<h3 id="how-怎么进行输入输出">HOW: 怎么进行输入输出？</h3>
 <ul>
 <li>首先，我要先说明，我并不推荐有些教练所述通过输入输出流进行输入输出（ <code>&lt;iostream&gt; //input ouput stream</code> 中的 <code>std::cin</code> 和 <code>std::cout</code>）因为它太 <em>臃肿</em> 了，在使用不当的情况下会拖累程序运行。</li>
 <li>我推荐的是源自 c 语言的 <code>&lt;cstdio&gt; //c standard input ouput</code> 中的 <code>scanf()</code> 和 <code>printf()</code> 函数。</li>

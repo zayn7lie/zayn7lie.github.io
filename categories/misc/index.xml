@@ -55,8 +55,8 @@
         <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
         
         <guid>/posts/misc/misc-zotero/</guid>
-        <description>&lt;h3 id=&#34;better-bibtex-for-zoterohttpsretorquerezotero-better-bibtex&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://retorque.re/zotero-better-bibtex/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;Better BibTex for Zotero&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
+        <description>&lt;h2 id=&#34;better-bibtex-for-zoterohttpsretorquerezotero-better-bibtex&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://retorque.re/zotero-better-bibtex/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;Better BibTex for Zotero&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;BibTex Style as Google Research&lt;/code&gt;&lt;/p&gt;
@@ -80,8 +80,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;zotero-citation-counts-managerhttpsgithubcomeschnettzotero-citationcounts&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/eschnett/zotero-citationcounts&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;Zotero Citation Counts Manager&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;zotero-citation-counts-managerhttpsgithubcomeschnettzotero-citationcounts&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/eschnett/zotero-citationcounts&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;Zotero Citation Counts Manager&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
 </description>
         </item>
         <item>
@@ -90,7 +90,7 @@
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>/posts/misc/misc-blogbuildinglearning/</guid>
-        <description>&lt;h3 id=&#34;基本网站的搭建&#34;&gt;基本网站的搭建&lt;/h3&gt;
+        <description>&lt;h2 id=&#34;基本网站的搭建&#34;&gt;基本网站的搭建&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;创建 GitHub 账号并登录&lt;/li&gt;
 &lt;li&gt;模板库的复制
@@ -119,7 +119,7 @@
 &lt;li&gt;有关 chirpy 主题的教程可以在 &lt;a class=&#34;link&#34; href=&#34;https://chirpy.cotes.page/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这里&lt;/a&gt; 查看&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;博客图标头像修改&#34;&gt;博客图标头像修改&lt;/h3&gt;
+&lt;h2 id=&#34;博客图标头像修改&#34;&gt;博客图标头像修改&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://chirpy.cotes.page/posts/customize-the-favicon/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ref&lt;/a&gt;&lt;/li&gt;
