@@ -5,12 +5,13 @@
         <link>/tags/github/</link>
         <description>Recent content in github on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>最简单的从0开始免费博客网站搭建</title>
-        <link>/posts/misc/2023-02-20-blogbuildinglearning/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <link>/posts/misc/misc-blogbuildinglearning/</link>
+        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/misc/2023-02-20-blogbuildinglearning/</guid>
+        <guid>/posts/misc/misc-blogbuildinglearning/</guid>
         <description>&lt;h3 id=&#34;基本网站的搭建&#34;&gt;基本网站的搭建&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;创建 GitHub 账号并登录&lt;/li&gt;

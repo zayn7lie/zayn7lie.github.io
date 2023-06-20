@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/pytorch/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Machine Learning</title>
-        <link>/posts/python/2023-06-07-pyml/</link>
+        <link>/posts/python/py-pyml/</link>
         <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/python/2023-06-07-pyml/</guid>
+        <guid>/posts/python/py-pyml/</guid>
         <description>&lt;h2 id=&#34;package&#34;&gt;Package&lt;/h2&gt;
 &lt;h3 id=&#34;pytorch&#34;&gt;Pytorch&lt;/h3&gt;
 &lt;h3 id=&#34;scikit-learn&#34;&gt;Scikit-learn&lt;/h3&gt;

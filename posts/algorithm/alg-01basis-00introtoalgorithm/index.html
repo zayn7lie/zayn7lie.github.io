@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？ 如果你真的有这种疑惑，那么你大概率平时是靠感觉解决问题的 —— 我并不是说我们并不能靠感觉解决问题的，且凭感觉解决问题也是很重要的一项技能（凭感觉解决问题其实并不是什么不好的方式，其实就是第六感），凭感觉有着速度快、和经验正相关的精准等优点。但是作为理科竞赛，我更希望凭感觉少些，分析的成分多些。这样在你一些从没有遇到类型的问题你也可以得出正确答案。 WHAT: 什么是凭感觉？什么是靠分析？ 凭感觉准确是指一眼看题目便能不经过任何考虑便知道怎么解决，一个很简单的例子就是 7 * 7 = ？ ，你能够直接回答出乘法口诀表七七四十九。而不是分析：拆分成7个7进行相加。这就是我对凭感觉的定义。另外一个突出的例子就是网上各大媒体流传的《秒杀高考/中考题目》的各种技巧。很显然，凭感觉的最突出优点就是快。但是当问题复杂时（条件不足、没有见到）很容易就没法得出正确答案。 分析就是形成一套万能的体系机器，无论是什么问题输入机器后通过机器内的逻辑加工都能的出正确答案。例如我在写每一章知识时都将知识拆分成 WHY WHAT HOW ，这便是 分析 中的 拆分 。当然，因为它的通用性导致它的速度肯定不如凭感觉。但是它是最稳定的正确答案输出器，且符合理科竞赛的靠逻辑本质。所以我将在本章详细将如何分析一个算法题目。 HOW: 怎么分析一道理科题目？ 首先，一道理科题目一般由这几个部分组成： 背景 主体 数据 样例 。 我们来看这个样例： # Farmer John(FJ) 的奶牛很喜欢学习，他们看到FJ学了编程也想参与其中，但是在阅读编程书籍的时候出现了问题。 # 这本编程书籍一上来就要求编译一个程序计算 a &#43; b 的值。但是他们才第一天学，什么都不知道。请问你可以帮助他们写一个样例吗做个示范吗？ # 输入一行a和b，用空格隔开。 # 输出一行，输出 a &#43; b 的值。 # 样例：输入：1 1 输出：2 # 数据范围：0 &amp;lt; a, b &amp;lt; 10^9 我们来分析下这个样例： 背景：第一行就是背景了（该样例虽然是我自己编的，但是以后看到 Farmer John 和奶牛就可以猜是 USACO 的题目，这毕竟是他们题目背景的特色）。该背景基本上没啥用，就是放松下，顺便彰显下作为理科生毫无编故事能力。基本可以直接跳过。 主体：主体在第三行，主体也经常会和背景混杂在一起。对于主体，我们要会提取关键信息。关键信息一般是提出的问题，例如这里“帮助写样例”是关键，而什么样例 —— “a &#43; b 程序” 也成了关键。关键信息的提取一般需要经过训练培养感觉，不要浪费太多时间。 数据：为什么主体问题提取不要浪费太多时间？因为即使关键提取的较为模糊，数据也会帮你把关键信息打磨干净。这里数据位于4、5和最后一行 —— 包含了输入输出和范围。就算你主体的关键信息没提取清楚，看到输出你也清楚了 —— 就是一个输出 a &#43; b 的程序嘛。至于范围，一般都是在题目的最后。你一般需要利用范围选择合适的结构和数据类型来解决问题。 样例：样例一般是作为测试的数据。它一般较为简单，方便你调试。用于写完写程序时的模拟和程序后的检验。 我们已经知道了一个题目的结构，接下来就是分析解决问题了： 建立模型：就是把实例问题数学化。就类似我们一般会把鸡兔同笼问题转化为二元一次方程一样，这就是模型的建立。 模拟&amp;amp;拆分： 模拟：我们在心里模拟一边代码的大致运行路程，或者说模拟就是题目说什么我们就写什么不做任何优化。例如题目说有一组背包，每个背包重多少时，我们就建立一个数组，把这个数组用来储存背包重量，题目说每个背包减轻了30kg，我们就把数组的每个元素都减30&amp;hellip; 实际上模拟虽然很多教练都特别提出来讲，但是其实没有什么必要 —— 我们每道题实际上都有用到模拟，只是多数情况下在脑中模拟而已。 拆分：在模拟过后，我们对程序有了个大致的框架想法，这时候就可以把一个大问题拆分成几个小问题了。先把简单的问题解决，难的问题再经过后续步骤得出方案。（更系统的拆分叫做 分治 ，这里就不细说了，有兴趣可以自己了解下。 分治 还特意加入了合并步骤，更加的科学合理。） 方法选择：对于每个子问题选择最优的方案。实际上，我们接下来讲的各种递归，二分等都是方法，运用在这一步骤。 代码转化：将方案转化为代码。 复杂度优化：最后分析是否有更好的结构、方法可以提高代码速度、减少占用空间。 当然，这种分析只是一个框架，具体问题仍需具体分析。但是，当我们将每个问题放到这个框架中，便可以越来越熟悉，将框架转化为一种习惯或者说感觉。最终达到准确率和速度都提升的效果。 '>
+<title>从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？</title>
+
+<link rel='canonical' href='/posts/algorithm/alg-01basis-00introtoalgorithm/'>
+
+<link rel="stylesheet" href="/scss/style.min.542e4d78795d8585adc4270db4f7e4e460c92c614a8023b37eaaec53ce1d2557.css"><meta property='og:title' content='从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？'>
+<meta property='og:description' content='WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？ 如果你真的有这种疑惑，那么你大概率平时是靠感觉解决问题的 —— 我并不是说我们并不能靠感觉解决问题的，且凭感觉解决问题也是很重要的一项技能（凭感觉解决问题其实并不是什么不好的方式，其实就是第六感），凭感觉有着速度快、和经验正相关的精准等优点。但是作为理科竞赛，我更希望凭感觉少些，分析的成分多些。这样在你一些从没有遇到类型的问题你也可以得出正确答案。 WHAT: 什么是凭感觉？什么是靠分析？ 凭感觉准确是指一眼看题目便能不经过任何考虑便知道怎么解决，一个很简单的例子就是 7 * 7 = ？ ，你能够直接回答出乘法口诀表七七四十九。而不是分析：拆分成7个7进行相加。这就是我对凭感觉的定义。另外一个突出的例子就是网上各大媒体流传的《秒杀高考/中考题目》的各种技巧。很显然，凭感觉的最突出优点就是快。但是当问题复杂时（条件不足、没有见到）很容易就没法得出正确答案。 分析就是形成一套万能的体系机器，无论是什么问题输入机器后通过机器内的逻辑加工都能的出正确答案。例如我在写每一章知识时都将知识拆分成 WHY WHAT HOW ，这便是 分析 中的 拆分 。当然，因为它的通用性导致它的速度肯定不如凭感觉。但是它是最稳定的正确答案输出器，且符合理科竞赛的靠逻辑本质。所以我将在本章详细将如何分析一个算法题目。 HOW: 怎么分析一道理科题目？ 首先，一道理科题目一般由这几个部分组成： 背景 主体 数据 样例 。 我们来看这个样例： # Farmer John(FJ) 的奶牛很喜欢学习，他们看到FJ学了编程也想参与其中，但是在阅读编程书籍的时候出现了问题。 # 这本编程书籍一上来就要求编译一个程序计算 a &#43; b 的值。但是他们才第一天学，什么都不知道。请问你可以帮助他们写一个样例吗做个示范吗？ # 输入一行a和b，用空格隔开。 # 输出一行，输出 a &#43; b 的值。 # 样例：输入：1 1 输出：2 # 数据范围：0 &amp;lt; a, b &amp;lt; 10^9 我们来分析下这个样例： 背景：第一行就是背景了（该样例虽然是我自己编的，但是以后看到 Farmer John 和奶牛就可以猜是 USACO 的题目，这毕竟是他们题目背景的特色）。该背景基本上没啥用，就是放松下，顺便彰显下作为理科生毫无编故事能力。基本可以直接跳过。 主体：主体在第三行，主体也经常会和背景混杂在一起。对于主体，我们要会提取关键信息。关键信息一般是提出的问题，例如这里“帮助写样例”是关键，而什么样例 —— “a &#43; b 程序” 也成了关键。关键信息的提取一般需要经过训练培养感觉，不要浪费太多时间。 数据：为什么主体问题提取不要浪费太多时间？因为即使关键提取的较为模糊，数据也会帮你把关键信息打磨干净。这里数据位于4、5和最后一行 —— 包含了输入输出和范围。就算你主体的关键信息没提取清楚，看到输出你也清楚了 —— 就是一个输出 a &#43; b 的程序嘛。至于范围，一般都是在题目的最后。你一般需要利用范围选择合适的结构和数据类型来解决问题。 样例：样例一般是作为测试的数据。它一般较为简单，方便你调试。用于写完写程序时的模拟和程序后的检验。 我们已经知道了一个题目的结构，接下来就是分析解决问题了： 建立模型：就是把实例问题数学化。就类似我们一般会把鸡兔同笼问题转化为二元一次方程一样，这就是模型的建立。 模拟&amp;amp;拆分： 模拟：我们在心里模拟一边代码的大致运行路程，或者说模拟就是题目说什么我们就写什么不做任何优化。例如题目说有一组背包，每个背包重多少时，我们就建立一个数组，把这个数组用来储存背包重量，题目说每个背包减轻了30kg，我们就把数组的每个元素都减30&amp;hellip; 实际上模拟虽然很多教练都特别提出来讲，但是其实没有什么必要 —— 我们每道题实际上都有用到模拟，只是多数情况下在脑中模拟而已。 拆分：在模拟过后，我们对程序有了个大致的框架想法，这时候就可以把一个大问题拆分成几个小问题了。先把简单的问题解决，难的问题再经过后续步骤得出方案。（更系统的拆分叫做 分治 ，这里就不细说了，有兴趣可以自己了解下。 分治 还特意加入了合并步骤，更加的科学合理。） 方法选择：对于每个子问题选择最优的方案。实际上，我们接下来讲的各种递归，二分等都是方法，运用在这一步骤。 代码转化：将方案转化为代码。 复杂度优化：最后分析是否有更好的结构、方法可以提高代码速度、减少占用空间。 当然，这种分析只是一个框架，具体问题仍需具体分析。但是，当我们将每个问题放到这个框架中，便可以越来越熟悉，将框架转化为一种习惯或者说感觉。最终达到准确率和速度都提升的效果。 '>
+<meta property='og:url' content='/posts/algorithm/alg-01basis-00introtoalgorithm/'>
+<meta property='og:site_name' content='zayn_lie&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='algorithm' /><meta property='article:tag' content='simulation' /><meta property='article:tag' content='divide_and_conquer' /><meta property='article:published_time' content='2023-03-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-03-02T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？">
+<meta name="twitter:description" content="WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？ 如果你真的有这种疑惑，那么你大概率平时是靠感觉解决问题的 —— 我并不是说我们并不能靠感觉解决问题的，且凭感觉解决问题也是很重要的一项技能（凭感觉解决问题其实并不是什么不好的方式，其实就是第六感），凭感觉有着速度快、和经验正相关的精准等优点。但是作为理科竞赛，我更希望凭感觉少些，分析的成分多些。这样在你一些从没有遇到类型的问题你也可以得出正确答案。 WHAT: 什么是凭感觉？什么是靠分析？ 凭感觉准确是指一眼看题目便能不经过任何考虑便知道怎么解决，一个很简单的例子就是 7 * 7 = ？ ，你能够直接回答出乘法口诀表七七四十九。而不是分析：拆分成7个7进行相加。这就是我对凭感觉的定义。另外一个突出的例子就是网上各大媒体流传的《秒杀高考/中考题目》的各种技巧。很显然，凭感觉的最突出优点就是快。但是当问题复杂时（条件不足、没有见到）很容易就没法得出正确答案。 分析就是形成一套万能的体系机器，无论是什么问题输入机器后通过机器内的逻辑加工都能的出正确答案。例如我在写每一章知识时都将知识拆分成 WHY WHAT HOW ，这便是 分析 中的 拆分 。当然，因为它的通用性导致它的速度肯定不如凭感觉。但是它是最稳定的正确答案输出器，且符合理科竞赛的靠逻辑本质。所以我将在本章详细将如何分析一个算法题目。 HOW: 怎么分析一道理科题目？ 首先，一道理科题目一般由这几个部分组成： 背景 主体 数据 样例 。 我们来看这个样例： # Farmer John(FJ) 的奶牛很喜欢学习，他们看到FJ学了编程也想参与其中，但是在阅读编程书籍的时候出现了问题。 # 这本编程书籍一上来就要求编译一个程序计算 a &#43; b 的值。但是他们才第一天学，什么都不知道。请问你可以帮助他们写一个样例吗做个示范吗？ # 输入一行a和b，用空格隔开。 # 输出一行，输出 a &#43; b 的值。 # 样例：输入：1 1 输出：2 # 数据范围：0 &amp;lt; a, b &amp;lt; 10^9 我们来分析下这个样例： 背景：第一行就是背景了（该样例虽然是我自己编的，但是以后看到 Farmer John 和奶牛就可以猜是 USACO 的题目，这毕竟是他们题目背景的特色）。该背景基本上没啥用，就是放松下，顺便彰显下作为理科生毫无编故事能力。基本可以直接跳过。 主体：主体在第三行，主体也经常会和背景混杂在一起。对于主体，我们要会提取关键信息。关键信息一般是提出的问题，例如这里“帮助写样例”是关键，而什么样例 —— “a &#43; b 程序” 也成了关键。关键信息的提取一般需要经过训练培养感觉，不要浪费太多时间。 数据：为什么主体问题提取不要浪费太多时间？因为即使关键提取的较为模糊，数据也会帮你把关键信息打磨干净。这里数据位于4、5和最后一行 —— 包含了输入输出和范围。就算你主体的关键信息没提取清楚，看到输出你也清楚了 —— 就是一个输出 a &#43; b 的程序嘛。至于范围，一般都是在题目的最后。你一般需要利用范围选择合适的结构和数据类型来解决问题。 样例：样例一般是作为测试的数据。它一般较为简单，方便你调试。用于写完写程序时的模拟和程序后的检验。 我们已经知道了一个题目的结构，接下来就是分析解决问题了： 建立模型：就是把实例问题数学化。就类似我们一般会把鸡兔同笼问题转化为二元一次方程一样，这就是模型的建立。 模拟&amp;amp;拆分： 模拟：我们在心里模拟一边代码的大致运行路程，或者说模拟就是题目说什么我们就写什么不做任何优化。例如题目说有一组背包，每个背包重多少时，我们就建立一个数组，把这个数组用来储存背包重量，题目说每个背包减轻了30kg，我们就把数组的每个元素都减30&amp;hellip; 实际上模拟虽然很多教练都特别提出来讲，但是其实没有什么必要 —— 我们每道题实际上都有用到模拟，只是多数情况下在脑中模拟而已。 拆分：在模拟过后，我们对程序有了个大致的框架想法，这时候就可以把一个大问题拆分成几个小问题了。先把简单的问题解决，难的问题再经过后续步骤得出方案。（更系统的拆分叫做 分治 ，这里就不细说了，有兴趣可以自己了解下。 分治 还特意加入了合并步骤，更加的科学合理。） 方法选择：对于每个子问题选择最优的方案。实际上，我们接下来讲的各种递归，二分等都是方法，运用在这一步骤。 代码转化：将方案转化为代码。 复杂度优化：最后分析是否有更好的结构、方法可以提高代码速度、减少占用空间。 当然，这种分析只是一个框架，具体问题仍需具体分析。但是，当我们将每个问题放到这个框架中，便可以越来越熟悉，将框架转化为一种习惯或者说感觉。最终达到准确率和速度都提升的效果。 ">
+    <link rel="shortcut icon" href="/favicon-32x32.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu79e66637751ac2025847b44eaa185475_328321_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">zayn_lie&#39;s blog</a></h1>
+            <h2 class="site-description">Algorithm&amp;Mathematics, Music_Theory&amp;Rhythm_Game, Rationality&amp;Philosophy, Peace&amp;Open_Source</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/sponsor/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Sponsor</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#why-为什么要分析算法问题我怎么知道我是分析还是凭感觉">WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？</a></li>
+        <li><a href="#what-什么是凭感觉什么是靠分析">WHAT: 什么是凭感觉？什么是靠分析？</a></li>
+        <li><a href="#how-怎么分析一道理科题目">HOW: 怎么分析一道理科题目？</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/algorithm/" style="background-color: #00e89b; color: #000000;">
+                Algorithm
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/algorithm/alg-01basis-00introtoalgorithm/">从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">03/02/23</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h3 id="why-为什么要分析算法问题我怎么知道我是分析还是凭感觉">WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？</h3>
+<ul>
+<li>如果你真的有这种疑惑，那么你大概率平时是靠感觉解决问题的 —— 我并不是说我们并不能靠感觉解决问题的，且凭感觉解决问题也是很重要的一项技能（凭感觉解决问题其实并不是什么不好的方式，其实就是第六感），凭感觉有着速度快、和经验正相关的精准等优点。但是作为理科竞赛，我更希望凭感觉少些，分析的成分多些。这样在你一些从没有遇到类型的问题你也可以得出正确答案。</li>
+</ul>
+<h3 id="what-什么是凭感觉什么是靠分析">WHAT: 什么是凭感觉？什么是靠分析？</h3>
+<ul>
+<li>凭感觉准确是指一眼看题目便能不经过任何考虑便知道怎么解决，一个很简单的例子就是 <em>7 * 7 = ？</em> ，你能够直接回答出乘法口诀表七七四十九。而不是分析：拆分成7个7进行相加。这就是我对凭感觉的定义。另外一个突出的例子就是网上各大媒体流传的《秒杀高考/中考题目》的各种技巧。很显然，凭感觉的最突出优点就是快。但是当问题复杂时（条件不足、没有见到）很容易就没法得出正确答案。</li>
+<li>分析就是形成一套万能的体系机器，无论是什么问题输入机器后通过机器内的逻辑加工都能的出正确答案。例如我在写每一章知识时都将知识拆分成 <em>WHY WHAT HOW</em> ，这便是 <em>分析</em> 中的 <em>拆分</em> 。当然，因为它的通用性导致它的速度肯定不如凭感觉。但是它是最稳定的正确答案输出器，且符合理科竞赛的靠逻辑本质。所以我将在本章详细将如何分析一个算法题目。</li>
+</ul>
+<h3 id="how-怎么分析一道理科题目">HOW: 怎么分析一道理科题目？</h3>
+<ul>
+<li>首先，一道理科题目一般由这几个部分组成： <em>背景 主体 数据 样例</em> 。 我们来看这个样例：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e"># Farmer John(FJ) 的奶牛很喜欢学习，他们看到FJ学了编程也想参与其中，但是在阅读编程书籍的时候出现了问题。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 这本编程书籍一上来就要求编译一个程序计算 a + b 的值。但是他们才第一天学，什么都不知道。请问你可以帮助他们写一个样例吗做个示范吗？
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 输入一行a和b，用空格隔开。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># 输出一行，输出 a + b 的值。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 样例：输入：1 1 输出：2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 数据范围：0 &lt; a, b &lt; 10^9
+</span></span></span></code></pre></div><ul>
+<li>我们来分析下这个样例：
+<ul>
+<li>背景：第一行就是背景了（该样例虽然是我自己编的，但是以后看到 Farmer John 和奶牛就可以猜是 <code>USACO</code> 的题目，这毕竟是他们题目背景的特色）。该背景基本上没啥用，就是放松下，顺便彰显下作为理科生毫无编故事能力。基本可以直接跳过。</li>
+<li>主体：主体在第三行，主体也经常会和背景混杂在一起。对于主体，我们要会提取关键信息。关键信息一般是提出的问题，例如这里“帮助写样例”是关键，而什么样例 —— “a + b 程序” 也成了关键。关键信息的提取一般需要经过训练培养感觉，不要浪费太多时间。</li>
+<li>数据：为什么主体问题提取不要浪费太多时间？因为即使关键提取的较为模糊，数据也会帮你把关键信息打磨干净。这里数据位于4、5和最后一行 —— 包含了输入输出和范围。就算你主体的关键信息没提取清楚，看到输出你也清楚了 —— 就是一个输出 a + b 的程序嘛。至于范围，一般都是在题目的最后。你一般需要利用范围选择合适的结构和数据类型来解决问题。</li>
+<li>样例：样例一般是作为测试的数据。它一般较为简单，方便你调试。用于写完写程序时的模拟和程序后的检验。</li>
+</ul>
+</li>
+<li>我们已经知道了一个题目的结构，接下来就是分析解决问题了：
+<ul>
+<li>建立模型：就是把实例问题数学化。就类似我们一般会把鸡兔同笼问题转化为二元一次方程一样，这就是模型的建立。</li>
+<li>模拟&amp;拆分：
+<ul>
+<li>模拟：我们在心里模拟一边代码的大致运行路程，或者说模拟就是题目说什么我们就写什么不做任何优化。例如题目说有一组背包，每个背包重多少时，我们就建立一个数组，把这个数组用来储存背包重量，题目说每个背包减轻了30kg，我们就把数组的每个元素都减30&hellip; 实际上模拟虽然很多教练都特别提出来讲，但是其实没有什么必要 —— 我们每道题实际上都有用到模拟，只是多数情况下在脑中模拟而已。</li>
+<li>拆分：在模拟过后，我们对程序有了个大致的框架想法，这时候就可以把一个大问题拆分成几个小问题了。先把简单的问题解决，难的问题再经过后续步骤得出方案。（更系统的拆分叫做 <em>分治</em> ，这里就不细说了，有兴趣可以自己了解下。 <em>分治</em> 还特意加入了合并步骤，更加的科学合理。）</li>
+</ul>
+</li>
+<li>方法选择：对于每个子问题选择最优的方案。实际上，我们接下来讲的各种递归，二分等都是方法，运用在这一步骤。</li>
+<li>代码转化：将方案转化为代码。</li>
+<li>复杂度优化：最后分析是否有更好的结构、方法可以提高代码速度、减少占用空间。</li>
+</ul>
+</li>
+<li>当然，这种分析只是一个框架，具体问题仍需具体分析。但是，当我们将每个问题放到这个框架中，便可以越来越熟悉，将框架转化为一种习惯或者说感觉。最终达到准确率和速度都提升的效果。</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/algorithm/">algorithm</a>
+        
+            <a href="/tags/simulation/">simulation</a>
+        
+            <a href="/tags/divide_and_conquer/">divide_and_conquer</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/posts/algorithm/alg-01basis-01recursionenumeration/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">从0开始的算法竞赛01-算法基础01：递归和枚举</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/algorithm/alg-01basis-02timespace/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">从0开始的算法竞赛01-算法基础02：时间和空间</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="bb55d628-fc4a-4ec4-b2ff-091c0dc240d5"
+    data-page-id="96f1765332d92fc4d13332c92485c53a"
+    data-page-url="/posts/algorithm/alg-01basis-00introtoalgorithm/"
+    data-page-title="从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
+        }
+    }
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2023 zayn_lie&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

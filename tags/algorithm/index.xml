@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/algorithm/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>从0开始的算法竞赛01-算法基础03：贪心</title>
-        <link>/posts/algorithm/01-basis/2023-03-05-03-greedy/</link>
+        <link>/posts/algorithm/alg-01basis-03greedy/</link>
         <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/01-basis/2023-03-05-03-greedy/</guid>
+        <guid>/posts/algorithm/alg-01basis-03greedy/</guid>
         <description>&lt;h3 id=&#34;why-为什么要学贪心算法&#34;&gt;WHY: 为什么要学贪心算法？&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;我相信大家愿意跟着我建立算法和 c++ 体系的原因是体系的逻辑性及减少凭感觉解决问题，这也是本博客的目的。但是，凡事没有绝对。在算法中，有一种凭感觉解决问题的方法也成立了自己的体系 —— 贪心。&lt;/li&gt;
@@ -102,10 +102,10 @@
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础04：排序</title>
-        <link>/posts/algorithm/01-basis/2023-03-05-04-sort/</link>
+        <link>/posts/algorithm/alg-01basis-04sort/</link>
         <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/01-basis/2023-03-05-04-sort/</guid>
+        <guid>/posts/algorithm/alg-01basis-04sort/</guid>
         <description>&lt;h3 id=&#34;why-为什么学排序相关的算法&#34;&gt;WHY: 为什么学排序相关的算法？&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;实际上，我们学排序并不是因为排序本身，毕竟 c++ 本身已经又自己的排序函数 &lt;code&gt;std::sort(头指针，尾指针，（规则）)&lt;/code&gt; 位于 &lt;code&gt;&amp;lt;algorithm&amp;gt;&lt;/code&gt; 头文件中。而且这个排序一般比我们自己写的时间复杂度更低。&lt;/li&gt;
@@ -120,10 +120,10 @@
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？</title>
-        <link>/posts/algorithm/01-basis/2023-03-02-00-introtoalgorithm/</link>
+        <link>/posts/algorithm/alg-01basis-00introtoalgorithm/</link>
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/01-basis/2023-03-02-00-introtoalgorithm/</guid>
+        <guid>/posts/algorithm/alg-01basis-00introtoalgorithm/</guid>
         <description>&lt;h3 id=&#34;why-为什么要分析算法问题我怎么知道我是分析还是凭感觉&#34;&gt;WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;如果你真的有这种疑惑，那么你大概率平时是靠感觉解决问题的 —— 我并不是说我们并不能靠感觉解决问题的，且凭感觉解决问题也是很重要的一项技能（凭感觉解决问题其实并不是什么不好的方式，其实就是第六感），凭感觉有着速度快、和经验正相关的精准等优点。但是作为理科竞赛，我更希望凭感觉少些，分析的成分多些。这样在你一些从没有遇到类型的问题你也可以得出正确答案。&lt;/li&gt;
@@ -176,10 +176,10 @@
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础01：递归和枚举</title>
-        <link>/posts/algorithm/01-basis/2023-03-02-01-recursionenumeration/</link>
+        <link>/posts/algorithm/alg-01basis-01recursionenumeration/</link>
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/01-basis/2023-03-02-01-recursionenumeration/</guid>
+        <guid>/posts/algorithm/alg-01basis-01recursionenumeration/</guid>
         <description>&lt;h2 id=&#34;递归recursion&#34;&gt;递归(Recursion)&lt;/h2&gt;
 &lt;h3 id=&#34;why-为什么要学递归&#34;&gt;WHY: 为什么要学递归？&lt;/h3&gt;
 &lt;ul&gt;
@@ -379,10 +379,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础02：时间和空间</title>
-        <link>/posts/algorithm/01-basis/2023-03-03-02-timespace/</link>
+        <link>/posts/algorithm/alg-01basis-02timespace/</link>
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/01-basis/2023-03-03-02-timespace/</guid>
+        <guid>/posts/algorithm/alg-01basis-02timespace/</guid>
         <description>&lt;h3 id=&#34;why-为什么要关注时间和空间&#34;&gt;WHY: 为什么要关注时间和空间&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。&lt;/li&gt;

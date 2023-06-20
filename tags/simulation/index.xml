@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？</title>
-        <link>/posts/algorithm/01-basis/2023-03-02-00-introtoalgorithm/</link>
+        <link>/posts/algorithm/alg-01basis-00introtoalgorithm/</link>
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/01-basis/2023-03-02-00-introtoalgorithm/</guid>
+        <guid>/posts/algorithm/alg-01basis-00introtoalgorithm/</guid>
         <description>&lt;h3 id=&#34;why-为什么要分析算法问题我怎么知道我是分析还是凭感觉&#34;&gt;WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;如果你真的有这种疑惑，那么你大概率平时是靠感觉解决问题的 —— 我并不是说我们并不能靠感觉解决问题的，且凭感觉解决问题也是很重要的一项技能（凭感觉解决问题其实并不是什么不好的方式，其实就是第六感），凭感觉有着速度快、和经验正相关的精准等优点。但是作为理科竞赛，我更希望凭感觉少些，分析的成分多些。这样在你一些从没有遇到类型的问题你也可以得出正确答案。&lt;/li&gt;

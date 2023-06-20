@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/environment/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>从0开始的C&#43;&#43;语言基础00：编译器及C&#43;&#43;环境的设置</title>
-        <link>/posts/c&#43;&#43;/2023-02-20-00-compilerenvironment/</link>
+        <link>/posts/c&#43;&#43;/cpp-00compilerenvironment/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/c&#43;&#43;/2023-02-20-00-compilerenvironment/</guid>
+        <guid>/posts/c&#43;&#43;/cpp-00compilerenvironment/</guid>
         <description>&lt;h3 id=&#34;why-为什么要使用编译器和搭建-c-环境&#34;&gt;WHY: 为什么要使用编译器和搭建 C++ 环境&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;~= 为什么吃饭要使用嘴巴&lt;/li&gt;

@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Fri, 21 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/paper/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Vscode Setting</title>
-        <link>/posts/misc/2023-04-21-vscode/</link>
+        <link>/posts/misc/misc-vscode/</link>
         <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/misc/2023-04-21-vscode/</guid>
+        <guid>/posts/misc/misc-vscode/</guid>
         <description>&lt;h2 id=&#34;extensions&#34;&gt;Extensions&lt;/h2&gt;
 &lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
 &lt;ul&gt;
@@ -51,10 +51,10 @@
         </item>
         <item>
         <title>Zotero Setting</title>
-        <link>/posts/misc/2023-04-21-zotero/</link>
+        <link>/posts/misc/misc-zotero/</link>
         <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/misc/2023-04-21-zotero/</guid>
+        <guid>/posts/misc/misc-zotero/</guid>
         <description>&lt;h3 id=&#34;better-bibtex-for-zoterohttpsretorquerezotero-better-bibtex&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://retorque.re/zotero-better-bibtex/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Better BibTex for Zotero&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
