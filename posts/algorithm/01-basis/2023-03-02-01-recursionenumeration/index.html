@@ -7,7 +7,7 @@
 
 <link rel='canonical' href='/posts/algorithm/01-basis/2023-03-02-01-recursionenumeration/'>
 
-<link rel="stylesheet" href="/scss/style.min.db071a25251871d0d5c54c2c2064fa8529be80e89e2ba91fe1b80997a2273942.css"><meta property='og:title' content='从0开始的算法竞赛01-算法基础01：递归和枚举'>
+<link rel="stylesheet" href="/scss/style.min.618dafac6ac734ff5479c7b1ff9ec10cbe7e562460351b331b9ff0792a75e9d5.css"><meta property='og:title' content='从0开始的算法竞赛01-算法基础01：递归和枚举'>
 <meta property='og:description' content='递归(Recursion) WHY: 为什么要学递归？ 首先我们先明确，算法其实是另外一种形式的数学 —— 它们解决问题的思路很相近，及通过一系列的计算得出结果。但是在计算机的帮助下，算法能干更多数学干起来很麻烦的事情 —— 一些重复、模板性的问题。 而递归，作为算法的第一课，便很好的体现出算法和数学的异同之处。递归，可以化简大量的重复性问题。因此学会递归，我们便可以利用计算机化简许多问题的运算过程。 可能不太好理解，没关系，我们先往下看看递归是什么。 WHAT: 什么是递归？ 我们先来看下这个函数公式： $$ f(x) = \begin{cases} 0, &amp;amp; x \leq 7 \ f(x - 1), &amp;amp; x &amp;gt; 7 \ \end{cases} $$
 很显然，当 $x \leq 7$ 的时候 $f(x)$ 均等于0。但是当 $x = 10$ 的时候呢？ $f(10) = f(9) = f(8) = f(7) = 0$ 当 $x &amp;gt; 7$ 的时候有没有一种感觉，就是这个 $f(x)$ 的 $x$ 一直在 传递 到下一个 $f(x)$ ，只是自身每次减一？ 当 $x = 7$ 时， $f(x)$ return 0时候有没有一种感觉这个0在不断 回归 到 $f(10)$ ?'>
 <meta property='og:url' content='/posts/algorithm/01-basis/2023-03-02-01-recursionenumeration/'>
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="从0开始的算法竞赛01-算法基础01：递归和枚举">
 <meta name="twitter:description" content="递归(Recursion) WHY: 为什么要学递归？ 首先我们先明确，算法其实是另外一种形式的数学 —— 它们解决问题的思路很相近，及通过一系列的计算得出结果。但是在计算机的帮助下，算法能干更多数学干起来很麻烦的事情 —— 一些重复、模板性的问题。 而递归，作为算法的第一课，便很好的体现出算法和数学的异同之处。递归，可以化简大量的重复性问题。因此学会递归，我们便可以利用计算机化简许多问题的运算过程。 可能不太好理解，没关系，我们先往下看看递归是什么。 WHAT: 什么是递归？ 我们先来看下这个函数公式： $$ f(x) = \begin{cases} 0, &amp;amp; x \leq 7 \ f(x - 1), &amp;amp; x &amp;gt; 7 \ \end{cases} $$
 很显然，当 $x \leq 7$ 的时候 $f(x)$ 均等于0。但是当 $x = 10$ 的时候呢？ $f(10) = f(9) = f(8) = f(7) = 0$ 当 $x &amp;gt; 7$ 的时候有没有一种感觉，就是这个 $f(x)$ 的 $x$ 一直在 传递 到下一个 $f(x)$ ，只是自身每次减一？ 当 $x = 7$ 时， $f(x)$ return 0时候有没有一种感觉这个0在不断 回归 到 $f(10)$ ?">
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon-32x32.png" />
 
     </head>
     <body class="
@@ -269,7 +269,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Mar 02, 2023</time>
+                <time class="article-time--published">03/02/23</time>
             </div>
         
 
@@ -517,6 +517,19 @@ $$</p>
     </section>
 
 
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a></span>
+    </section>
     </footer>
 
 
@@ -602,6 +615,28 @@ $$</p>
      
     
         
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="bb55d628-fc4a-4ec4-b2ff-091c0dc240d5"
+    data-page-id="c5778ea4951d5532133ea4b9ff0150b6"
+    data-page-url="/posts/algorithm/01-basis/2023-03-02-01-recursionenumeration/"
+    data-page-title="从0开始的算法竞赛01-算法基础01：递归和枚举"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
+        }
+    }
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
+
+
     
 
     <footer class="site-footer">
