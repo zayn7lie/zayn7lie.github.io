@@ -5,6 +5,133 @@
         <link>/categories/linux/</link>
         <description>Recent content in Linux on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        <lastBuildDate>Tue, 20 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Install Arch Linux with XFCE</title>
+        <link>/posts/linux/archwithxfce/</link>
+        <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/linux/archwithxfce/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h3 id=&#34;why-i-want-to-switch-from-windows-to-linux&#34;&gt;Why I want to switch from Windows to Linux?&lt;/h3&gt;
+&lt;p&gt;First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want. But in Windows, we have to deal with lots of random and unknown services to change only a system font, and then we will get a number of bugs that we cannot solve for the unknown source code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I am able to fully maximize my efficiency. If I want to install tools, I could just simply type &lt;code&gt;$ sudo pacman -S ${pachage}&lt;/code&gt; or &lt;code&gt;$ sudo apt install ${pachage}&lt;/code&gt;, and those packages&amp;rsquo; licenses like MIT, GNU are easy to follow. But in Windows, it is time-consuming to download, depackage, install, agree to license, pay for the software, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I am able to debug by my self. If we encounter a bug, we could just look at the source code and fix the bug. We could also PR to the repos and improve the software together. But for some software in Windows, it is hard to figure out how the software runs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We have a large community to solve problems. In Linux, I have solved all bugs and run system smoothly without asking for any help - almost all problems and questions I encountered have been solved in Linux communities or forums.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I am able to uninstall the services I do not want. In Linux, we are able to install whatever we want and uninstall (remove) whatever we do not want. But in Windows, there are so many services like SMB file transfer that I might not want to use for entire life!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-i-want-to-switch-from-ubuntu-to-arch&#34;&gt;Why I want to switch from Ubuntu to Arch?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;After using Ubuntu for several months, I have the ability to work smoothly with terminals and have basis understanding of Linux. I want to step in further, and installing Arch Linux is a good approach to that.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Arch have the most complete wiki that we might be able to solve all problems there!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Arch Linux has more universal package manager and various packages from different system (it might be &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Arch_User_Repository&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AUR&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ubuntu still have lots of services I do not know. And gnome is an anti-lightweight desktop environment which could be very annoying.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ubuntu with gnome is stepping in commercial and be less community-friendly. And there are some ads of Ubuntu Pro appear in the system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wht&#34;&gt;WHT&lt;/h2&gt;
+&lt;p&gt;Here is an introduction of Arch Linux from its wiki: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Arch_Linux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wiki.archlinux.org/title/Arch_Linux&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;p&gt;N.B.1. This guide is just a simplification, clarification and modification based &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Arch Linux-Installation Guide&lt;/a&gt;. If you have any questions or if I not mention or skip about some necessary steps, you could just read the wiki and find out the answer. By the way, this guide is more focusing on understanding Linux system and how a system could be installed in a machine.&lt;/p&gt;
+&lt;p&gt;N.B.2. Every command begin with &lt;code&gt;$&lt;/code&gt; meaning it is a shell command. &lt;code&gt;$&lt;/code&gt; is always input automatically that you do not need to type it again. E.g. &lt;code&gt;$ mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; you might only need to type in &lt;code&gt;mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;. &lt;code&gt;#&lt;/code&gt;, &lt;code&gt;[iwd]#&lt;/code&gt;, etc. is also similar to &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;N.B.3. Everything with &lt;code&gt;?{ }&lt;/code&gt; meaning that you could modify it based on your situation, for example &lt;code&gt;$ mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; might be &lt;code&gt;$ mount /dev/sd1 /mnt&lt;/code&gt; for you. Everything with &lt;code&gt;!{ }&lt;/code&gt; meaning that you could not to type this based on your situation. E.g. &lt;code&gt;$ arch-chroot /mnt !{/bin/bash}&lt;/code&gt; you might only need to run &lt;code&gt;$ arch-chroot /mnt&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;1-preparation&#34;&gt;1. Preparation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A target machine that you want to install system to. A computer with 16 GB or above disk and AMD or Intel CPU is recommended. (P.S. High RAM is highly recommended. In this guide, I would not introduce how to create SWAP partition because my 16 GB RAM is enough for daily use.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A USB flash drive (storage device) that could be modified. A USB with 8 GB or larger is recommended.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An available network that is able to access to Arch Linux packages. (If you are a Chinese User, &lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/18/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;this post&lt;/a&gt; is recommended to use.) An unhidden network is recommended.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-making-an-installation-medium&#34;&gt;2. Making an Installation Medium&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Windows User&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select one release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geo.mirror.pkgbuild.com/iso/&lt;/a&gt; that is ending with &lt;code&gt;.iso&lt;/code&gt; or just download the standard release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a class=&#34;link&#34; href=&#34;https://rufus.ie/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rufus&lt;/a&gt; for installing installation image.&lt;/li&gt;
+&lt;li&gt;Plug in your medium and using Rufus to install.&lt;/li&gt;
+&lt;li&gt;Reboot with your medium and enter BIOS or UEFI.&lt;/li&gt;
+&lt;li&gt;Select the installation medium and get into Arch Linux installation and select the first option.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Linux User&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select one release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geo.mirror.pkgbuild.com/iso/&lt;/a&gt; that is ending with &lt;code&gt;.iso&lt;/code&gt; or just download the standard release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ dd if=${Path_to_ISO} of=/dev/?{Your_medium} bs=4M&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reboot with your medium and enter BIOS or UEFI.&lt;/li&gt;
+&lt;li&gt;Select the installation medium and get into Arch Linux installation and select the first option.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-network-configuration&#34;&gt;3. Network Configuration&lt;/h3&gt;
+&lt;p&gt;N.B. The installation medium have installed &lt;code&gt;iwd&lt;/code&gt; tool. Although &lt;code&gt;networkmanager&lt;/code&gt; is more popular in Arch Linux network settings, &lt;code&gt;iwd&lt;/code&gt; is the default network settings tool for installation.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# iwctl&lt;/code&gt; to enter &lt;code&gt;iwd&lt;/code&gt; tool.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# device list&lt;/code&gt; to check your network device. You need to remember your device name and type into &lt;code&gt;?{wlan0}&lt;/code&gt; in the following commands.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# station ?{wlan0} get-networks&lt;/code&gt; to check your networks and remember your SSID to type into following &lt;code&gt;${SSID}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# station ?{wlan0} connect ${SSID}&lt;/code&gt; to connect to SSID, you might need to type password after connect to it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# exit&lt;/code&gt; to exit the network tool.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# hwclock --systohc --utc&lt;/code&gt; and &lt;code&gt;# timedatectl set-ntp true&lt;/code&gt; to update your system time to installation medium time.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-disk-mounting-and-installation&#34;&gt;4. Disk Mounting and Installation&lt;/h3&gt;
+&lt;p&gt;N.B. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# fdisk -l&lt;/code&gt; to check your partitions of disk.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p4}&lt;/code&gt; to format a partition to &lt;code&gt;ext4&lt;/code&gt; file system for your main Arch Linux System Installation. If you want to install Dual-systems, do not run the following commands: &lt;code&gt;# mkfs.vfat -F32 /dev/?{nvme0n1p1}&lt;/code&gt; to format a partition to &lt;code&gt;fat32&lt;/code&gt; file system for the boot partition.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; &lt;code&gt;# mkdir -p /mnt/boot&lt;/code&gt; &lt;code&gt;# mount /dev/?{nvme0n1p1} /mnt/boot&lt;/code&gt; to connect disk partitions to the installation medium.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# lsblk&lt;/code&gt; to check your mounting situation. If this not meet your condition, you could modify by &lt;code&gt;# unmount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; command.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacstrap /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim}&lt;/code&gt; to install basis Arch Linux. &lt;code&gt;base-devel&lt;/code&gt; contains &lt;code&gt;makepkg&lt;/code&gt; that is necessary for installing &lt;code&gt;AUR&lt;/code&gt; packages. You can install the &lt;code&gt;linux&lt;/code&gt; kernels that you want through &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/kernel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wiki.archlinux.org/title/kernel&lt;/a&gt;. &lt;code&gt;linux-firmware&lt;/code&gt; is necessary Linux kernel firmware. &lt;code&gt;e2fsprogs&lt;/code&gt; is for configuration of &lt;code&gt;ext4&lt;/code&gt; file system. &lt;code&gt;ntfs-3g&lt;/code&gt; is for configuration of &lt;code&gt;NTFS&lt;/code&gt; (Windows File System) file system. &lt;code&gt;vim&lt;/code&gt; if for latter file editing.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt; to enerate a &lt;code&gt;fstab&lt;/code&gt; file for Linux file tree viewing. It is safer to &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt; to check whether file is generated properly. P.S. Difference between &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt;: &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; is appending (add) to the end of the file, &lt;code&gt;&amp;gt;&lt;/code&gt; is replacing the file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;5-user-setting&#34;&gt;5. User Setting&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# arch-chroot /mnt /bin/bash&lt;/code&gt; to change root to &lt;code&gt;/mnt&lt;/code&gt; (root user path) using shell in &lt;code&gt;/bin/bash&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# passwd&lt;/code&gt; to reset the root user password.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# echo ?{zayn7lie-acl} &amp;gt; /etc/hostname&lt;/code&gt; to reset your machine name.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# useradd -m -G wheel -s /bin/bash ${zayn7lie}&lt;/code&gt; set up a new user &lt;code&gt;${zayn7lie}&lt;/code&gt;, set it log in directory and add to wheel group. &lt;code&gt;# passwd ${zayn7lie}&lt;/code&gt; to set user&amp;rsquo;s password. P.S. Wheel group is used for updating system (like a wheel to update continuously)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;6-launch-setting&#34;&gt;6. Launch Setting&lt;/h3&gt;
+&lt;h3 id=&#34;7-language--time&#34;&gt;7. Language &amp;amp; Time&lt;/h3&gt;
+&lt;h3 id=&#34;8-xfce-installation&#34;&gt;8. XFCE Installation&lt;/h3&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>
