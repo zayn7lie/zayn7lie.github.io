@@ -135,14 +135,6 @@
         <description></description>
         </item>
         <item>
-        <title>greedy</title>
-        <link>/tags/greedy/</link>
-        <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/greedy/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>sort</title>
         <link>/tags/sort/</link>
         <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
@@ -151,11 +143,43 @@
         <description></description>
         </item>
         <item>
+        <title>greedy</title>
+        <link>/tags/greedy/</link>
+        <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/greedy/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>complexity</title>
         <link>/tags/complexity/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
         
         <guid>/tags/complexity/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>multiply</title>
+        <link>/tags/multiply/</link>
+        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/multiply/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>space</title>
+        <link>/tags/space/</link>
+        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/space/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>time</title>
+        <link>/tags/time/</link>
+        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/time/</guid>
         <description></description>
         </item>
         <item>
@@ -164,14 +188,6 @@
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
         
         <guid>/tags/dichotony/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>divide_and_conquer</title>
-        <link>/tags/divide_and_conquer/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/divide_and_conquer/</guid>
         <description></description>
         </item>
         <item>
@@ -199,14 +215,6 @@
         <description></description>
         </item>
         <item>
-        <title>multiply</title>
-        <link>/tags/multiply/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/multiply/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>recursion</title>
         <link>/tags/recursion/</link>
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
@@ -215,27 +223,19 @@
         <description></description>
         </item>
         <item>
+        <title>divide_and_conquer</title>
+        <link>/tags/divide_and_conquer/</link>
+        <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/divide_and_conquer/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>simulation</title>
         <link>/tags/simulation/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
         
         <guid>/tags/simulation/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>space</title>
-        <link>/tags/space/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/space/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>time</title>
-        <link>/tags/time/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/time/</guid>
         <description></description>
         </item>
         <item>
@@ -279,22 +279,6 @@
         <description></description>
         </item>
         <item>
-        <title>compiler</title>
-        <link>/tags/compiler/</link>
-        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/compiler/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>environment</title>
-        <link>/tags/environment/</link>
-        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/environment/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>github</title>
         <link>/tags/github/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
@@ -308,6 +292,22 @@
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>/tags/jekyll/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>compiler</title>
+        <link>/tags/compiler/</link>
+        <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/compiler/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>environment</title>
+        <link>/tags/environment/</link>
+        <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/environment/</guid>
         <description></description>
         </item>
         

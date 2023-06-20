@@ -20,7 +20,7 @@
 <meta property='og:description' content='WHY: 为什么要使用编译器和搭建 C&#43;&#43; 环境 ~= 为什么吃饭要使用嘴巴 WHAT: 什么是编译器和 C&#43;&#43; 环境 本小节内容仅供有兴趣者阅读，因为本小节对于竞赛和平时使用并无太大帮助，当然在了解了编译器和环境后对以后的一些 C&#43;&#43; 能够有更深的理解，也有助于以后真正使用 C&#43;&#43; 写程序。 暂时不想写，先玩算法竞赛，本小节敬请期待。 HOW: 如何搭建 C&#43;&#43; 环境及编译器的选择 对于中国体制内参加 NOI 的算法竞赛生： dev-cpp 不要想花里胡哨好玩的编译器了，老老实实给我用 dev-cpp https://sourceforge.net/projects/orwelldevcpp/files/latest/download！ 该软件是全国统一的竞赛软件（ for c&#43;&#43; ），因此你即使掌握了再多各种软件和各种功能，考试的时候还是得使用 dev-cpp ，那为什么不一开始就使用这个软件呢？ 点击上方即可下载，不要下载最新版。一方面全国的机考都是用该版本 dev-cpp ，另一方面最新版 dev-cpp 已闭源商用。开源就是最好的，那么闭源就是最差的，因此不要用最差的闭源软件。（个人喜欢拿逻辑开玩笑，别介意） 下载完安装（如果连安装都不会的话就一路点 next 就行） 该软件会帮你直接安装好编译器并且搭建好 C&#43;&#43; 环境 点击左上角空白的纸打开新的一页，写完程序按f11即可保存并运行。 其他的竞赛生（线上考生）： vs-code 编译器下载 一律推荐使用 vs-code https://code.visualstudio.com/download 首先，这个软件比 dev-cpp 更好用，但是也会更麻烦。因此怕麻烦的话也可以使用上面的 dev-cpp 。 如果你决定使用 vs-code ，那么恭喜你，你将获得一个可以使用一生的软件。 vs-code 支持所有语言，你还可以把它当作一个 txt 阅读器，上面还有一堆插件，你甚至可以把它折腾成一个 all in one 的软件。 下载完后安装，没什么需要强调的，上面默认勾选的已经足够正常使用了（如果连安装都不会的话，请仔仔细细看完每个页面的内容，选择自己的需求，然后点击下一步。如果你不愿意那么麻烦的话，那不太建议你使用 vs-code ，可以使用上面 dev-cpp ，毕竟安装连使用的第一步都算不上） 打开之后在最左边侧栏点击积木（插件 extentions ），搜索框输入 c&#43;&#43; ，找到并点击由 microsoft 发布的 C/C&#43;&#43;，之后在右边主界面上方点击 Install 搜索 Code Runner ，下载由 Jun Han 发布的 Code Runner C&#43;&#43;环境配置 下载并安装mingw64 http://sourceforge.'>
 <meta property='og:url' content='/posts/c&#43;&#43;/cpp-00compilerenvironment/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='c&#43;&#43;' /><meta property='article:tag' content='environment' /><meta property='article:tag' content='compiler' /><meta property='article:published_time' content='2023-02-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-02-20T00:00:00&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='c&#43;&#43;' /><meta property='article:tag' content='environment' /><meta property='article:tag' content='compiler' /><meta property='article:published_time' content='2023-02-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-02-19T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="从0开始的C&#43;&#43;语言基础00：编译器及C&#43;&#43;环境的设置">
 <meta name="twitter:description" content="WHY: 为什么要使用编译器和搭建 C&#43;&#43; 环境 ~= 为什么吃饭要使用嘴巴 WHAT: 什么是编译器和 C&#43;&#43; 环境 本小节内容仅供有兴趣者阅读，因为本小节对于竞赛和平时使用并无太大帮助，当然在了解了编译器和环境后对以后的一些 C&#43;&#43; 能够有更深的理解，也有助于以后真正使用 C&#43;&#43; 写程序。 暂时不想写，先玩算法竞赛，本小节敬请期待。 HOW: 如何搭建 C&#43;&#43; 环境及编译器的选择 对于中国体制内参加 NOI 的算法竞赛生： dev-cpp 不要想花里胡哨好玩的编译器了，老老实实给我用 dev-cpp https://sourceforge.net/projects/orwelldevcpp/files/latest/download！ 该软件是全国统一的竞赛软件（ for c&#43;&#43; ），因此你即使掌握了再多各种软件和各种功能，考试的时候还是得使用 dev-cpp ，那为什么不一开始就使用这个软件呢？ 点击上方即可下载，不要下载最新版。一方面全国的机考都是用该版本 dev-cpp ，另一方面最新版 dev-cpp 已闭源商用。开源就是最好的，那么闭源就是最差的，因此不要用最差的闭源软件。（个人喜欢拿逻辑开玩笑，别介意） 下载完安装（如果连安装都不会的话就一路点 next 就行） 该软件会帮你直接安装好编译器并且搭建好 C&#43;&#43; 环境 点击左上角空白的纸打开新的一页，写完程序按f11即可保存并运行。 其他的竞赛生（线上考生）： vs-code 编译器下载 一律推荐使用 vs-code https://code.visualstudio.com/download 首先，这个软件比 dev-cpp 更好用，但是也会更麻烦。因此怕麻烦的话也可以使用上面的 dev-cpp 。 如果你决定使用 vs-code ，那么恭喜你，你将获得一个可以使用一生的软件。 vs-code 支持所有语言，你还可以把它当作一个 txt 阅读器，上面还有一堆插件，你甚至可以把它折腾成一个 all in one 的软件。 下载完后安装，没什么需要强调的，上面默认勾选的已经足够正常使用了（如果连安装都不会的话，请仔仔细细看完每个页面的内容，选择自己的需求，然后点击下一步。如果你不愿意那么麻烦的话，那不太建议你使用 vs-code ，可以使用上面 dev-cpp ，毕竟安装连使用的第一步都算不上） 打开之后在最左边侧栏点击积木（插件 extentions ），搜索框输入 c&#43;&#43; ，找到并点击由 microsoft 发布的 C/C&#43;&#43;，之后在右边主界面上方点击 Install 搜索 Code Runner ，下载由 Jun Han 发布的 Code Runner C&#43;&#43;环境配置 下载并安装mingw64 http://sourceforge.">
     <link rel="shortcut icon" href="/favicon-32x32.png" />
@@ -310,7 +310,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">02/20/23</time>
+                <time class="article-time--published">02/19/23</time>
             </div>
         
 
@@ -493,28 +493,6 @@
     
 
     
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">Related content</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="">
-    <a href="/posts/c&#43;&#43;/cpp-01function/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">从0开始的C&#43;&#43;语言基础01：函数</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
 
      
     
