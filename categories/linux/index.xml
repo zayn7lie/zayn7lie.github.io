@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Tue, 20 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Install Arch Linux with XFCE</title>
+        <title>Install Arch Linux with Xfce</title>
         <link>/posts/linux/archwithxfce/</link>
         <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>/posts/linux/archwithxfce/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
-&lt;h3 id=&#34;why-i-want-to-switch-from-windows-to-linux&#34;&gt;Why I want to switch from Windows to Linux?&lt;/h3&gt;
+&lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;Why do I want to switch from Windows to Linux?&lt;/h3&gt;
 &lt;p&gt;First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -32,7 +32,7 @@
 &lt;p&gt;I am able to uninstall the services I do not want. In Linux, we are able to install whatever we want and uninstall (remove) whatever we do not want. But in Windows, there are so many services like SMB file transfer that I might not want to use for entire life!&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-i-want-to-switch-from-ubuntu-to-arch&#34;&gt;Why I want to switch from Ubuntu to Arch?&lt;/h3&gt;
+&lt;h3 id=&#34;why-do-i-want-to-switch-from-ubuntu-to-arch&#34;&gt;Why do I want to switch from Ubuntu to Arch?&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;After using Ubuntu for several months, I have the ability to work smoothly with terminals and have basis understanding of Linux. I want to step in further, and installing Arch Linux is a good approach to that.&lt;/p&gt;
@@ -51,7 +51,21 @@
 &lt;p&gt;Ubuntu with gnome is stepping in commercial and be less community-friendly. And there are some ads of Ubuntu Pro appear in the system.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;wht&#34;&gt;WHT&lt;/h2&gt;
+&lt;h3 id=&#34;why-do-i-want-to-install-arch-linux-without-the-script&#34;&gt;Why do I want to install Arch Linux without the script?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Learn more about Linux and fully customize for myself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-do-i-want-to-switch-from-gnome-to-xfce&#34;&gt;Why do I want to switch from Gnome to Xfce&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Xfce is a more lightweight &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/desktop_environment&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Desktop Environment&lt;/a&gt; (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Xfce is clean and easy to customize. You can install lots of plugins for Xfce and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wat&#34;&gt;WAT&lt;/h2&gt;
 &lt;p&gt;Here is an introduction of Arch Linux from its wiki: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Arch_Linux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/Arch_Linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
@@ -122,14 +136,57 @@
 &lt;/ol&gt;
 &lt;h3 id=&#34;5-user-setting&#34;&gt;5. User Setting&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;# arch-chroot /mnt /bin/bash&lt;/code&gt; to change root to &lt;code&gt;/mnt&lt;/code&gt; (root user path) using shell in &lt;code&gt;/bin/bash&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# passwd&lt;/code&gt; to reset the root user password.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# echo ?{zayn7lie-acl} &amp;gt; /etc/hostname&lt;/code&gt; to reset your machine name.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# useradd -m -G wheel -s /bin/bash ${zayn7lie}&lt;/code&gt; set up a new user &lt;code&gt;${zayn7lie}&lt;/code&gt;, set it log in directory and add to wheel group. &lt;code&gt;# passwd ${zayn7lie}&lt;/code&gt; to set user&amp;rsquo;s password. P.S. Wheel group is used for updating system (like a wheel to update continuously)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;# arch-chroot /mnt /bin/bash&lt;/code&gt; to change root to &lt;code&gt;/mnt&lt;/code&gt; (root user path) using shell in &lt;code&gt;/bin/bash&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;# passwd&lt;/code&gt; to reset the root user password.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;# echo ?{zayn7lie-acl} &amp;gt; /etc/hostname&lt;/code&gt; to reset your machine name.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;# useradd -m -G wheel -s /bin/bash ${zayn7lie}&lt;/code&gt; set up a new user &lt;code&gt;${zayn7lie}&lt;/code&gt;, set it log in directory and add to wheel group. &lt;code&gt;# passwd ${zayn7lie}&lt;/code&gt; to set user&amp;rsquo;s password. P.S. Wheel group users are used to update system (like a wheel to update continuously)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;# vim /etc/sudoers&lt;/code&gt; to open config file using &lt;code&gt;vim&lt;/code&gt;. Type &lt;code&gt;i&lt;/code&gt; to enter &lt;code&gt;insert(edit) mode&lt;/code&gt; for vim and then find and uncomment (delete &lt;code&gt;#&lt;/code&gt;) before &lt;code&gt;%wheel ALL=(ALL) ALL&lt;/code&gt;. Then &lt;code&gt;esc&lt;/code&gt; to escape from &lt;code&gt;insert mode&lt;/code&gt; and &lt;code&gt;:wq&lt;/code&gt; to write in (save) and quit. P.S. &lt;code&gt;:wq!&lt;/code&gt; and &lt;code&gt;:q!&lt;/code&gt; the &lt;code&gt;!&lt;/code&gt; means &lt;code&gt;force&lt;/code&gt;. &lt;code&gt;:wq!&lt;/code&gt; will force writing in (If the file is unchangeable, it will create a new file and replace it.), and &lt;code&gt;:q!&lt;/code&gt; will force you to quite without any change of the file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;vim /etc/hosts&lt;/code&gt; to config &lt;code&gt;localhost&lt;/code&gt; settings. Insert:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-hosts&#34; data-lang=&#34;hosts&#34;&gt;127.0.0.1 localhost
+::1 localhost
+127.0.1.1 ?{zayn7lie-acl}.localdomain ?{zayn7lie-acl}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;replace &lt;code&gt;?{zayn7lie-acl}&lt;/code&gt; with your machine name.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;6-launch-setting&#34;&gt;6. Launch Setting&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S ?{amd-ucode} grub efibootmgr&lt;/code&gt; to install necessary boot package. If you are using Intel CPU, change &lt;code&gt;?{amd-ucode}&lt;/code&gt; to &lt;code&gt;intel-ucode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&amp;quot;Arch Linux&amp;quot;} --recheck&lt;/code&gt; to install grub file. &lt;code&gt;!{--removable}&lt;/code&gt; determines whether you are able to remove it from &lt;code&gt;UEFI&lt;/code&gt;, &lt;code&gt;?{&amp;quot;Arch Linux&amp;quot;}&lt;/code&gt; is your system name in grub.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt; to generate config file.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3 id=&#34;7-language--time&#34;&gt;7. Language &amp;amp; Time&lt;/h3&gt;
-&lt;h3 id=&#34;8-xfce-installation&#34;&gt;8. XFCE Installation&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# vim /etc/locale.gen&lt;/code&gt; to enter language config file, then uncomment &lt;code&gt;en-US.UTF-8 UTF-8&lt;/code&gt; and the language you want use, then save the file. &lt;code&gt;# locale-gen&lt;/code&gt; to generate and install language files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# echo LANG=en-US.UTF-8 &amp;gt; /etc/locale.conf&lt;/code&gt; to choose &lt;code&gt;en-US.UTF-8&lt;/code&gt; as your root user language.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime&lt;/code&gt; to config your local time. &lt;code&gt;?{EST}&lt;/code&gt; Could be change based on your region. You can use &lt;code&gt;# ls /usr/share/zoneinfo/&lt;/code&gt; to check which option could be used. Some folder like &lt;code&gt;./Asia&lt;/code&gt; might have subfolders that you need to choose in more specific way. E.G. &lt;code&gt;# ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime&lt;/code&gt;. P.S. &lt;code&gt;s&lt;/code&gt; meaning soft link which will not actually copy all file to the target folder, &lt;code&gt;f&lt;/code&gt; meaning force to do it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;8-xfce-installation&#34;&gt;8. Xfce Installation&lt;/h3&gt;
+&lt;p&gt;N.B. In this section, I will just introduce how to install the cleanest and most basic Xfce with without any plugin. If you want to make Xfce better, you can read my &lt;code&gt;[Xfce customization and beautification](comming soon)&lt;/code&gt; post.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S xorg&lt;/code&gt; to install xorg. Xorg is the basis package which contains X11 that many DE (Desktop Environment) based on.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install Xfce. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start xfce4 in the next boot and ignore step 3. It is highly recommended to install a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-loceker&lt;/code&gt; to install this recommended lightweight DM, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DM&lt;/a&gt;. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt; to install &lt;code&gt;NetworkManager&lt;/code&gt; tool, then &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt; to let &lt;code&gt;NetworkManager&lt;/code&gt; start automatically when you boot your system. As I have mentioned above, &lt;code&gt;networkmanager&lt;/code&gt; is more popular than &lt;code&gt;iwd&lt;/code&gt;. And &lt;code&gt;iwd&lt;/code&gt; is only installed in your installation medium but not your system. You still have to install a network manager tool for your &lt;code&gt;Arch Linux&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;finish-installation&#34;&gt;Finish Installation&lt;/h3&gt;
+&lt;p&gt;Congratulation! You have installed &lt;code&gt;Arch Linux&lt;/code&gt; in your machine. Now you can &lt;code&gt;# exit&lt;/code&gt; to exit your root user account, &lt;code&gt;# reboot&lt;/code&gt; and remove installation medium when computer is completely closed. Now, start your journey to &lt;code&gt;Arch Linux&lt;/code&gt;!&lt;/p&gt;
+&lt;h3 id=&#34;post-installation&#34;&gt;Post-installation&lt;/h3&gt;
+&lt;p&gt;As I have mentioned above, if you want to make Xfce better, you can read my &lt;code&gt;[Xfce customization and beautification](comming soon)&lt;/code&gt; post. At the same time, if you encounter any problems or bugs, reading &lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wiki&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;googling&lt;/a&gt;, searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;a smart way&lt;/a&gt;. That&amp;rsquo;s all, it is my best hope that you could join and enjoy our open-source communities!&lt;/p&gt;
 </description>
         </item>
         

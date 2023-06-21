@@ -12,16 +12,16 @@
         gtag('config', 'G-DBJKC6FW2S');
         </script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Run dual-systems Arch Linux &#43; Windows 11 on ROG flow x13 (2022)'>
-<title>Install Arch Linux with XFCE</title>
+<title>Install Arch Linux with Xfce</title>
 
 <link rel='canonical' href='/posts/linux/archwithxfce/'>
 
-<link rel="stylesheet" href="/scss/style.min.542e4d78795d8585adc4270db4f7e4e460c92c614a8023b37eaaec53ce1d2557.css"><meta property='og:title' content='Install Arch Linux with XFCE'>
+<link rel="stylesheet" href="/scss/style.min.542e4d78795d8585adc4270db4f7e4e460c92c614a8023b37eaaec53ce1d2557.css"><meta property='og:title' content='Install Arch Linux with Xfce'>
 <meta property='og:description' content='Run dual-systems Arch Linux &#43; Windows 11 on ROG flow x13 (2022)'>
 <meta property='og:url' content='/posts/linux/archwithxfce/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Arch' /><meta property='article:tag' content='XFCE' /><meta property='article:tag' content='Linuxzx' /><meta property='article:published_time' content='2023-06-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-20T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="Install Arch Linux with XFCE">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Arch' /><meta property='article:tag' content='Xfce' /><meta property='article:tag' content='Linuxzx' /><meta property='article:published_time' content='2023-06-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-20T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Install Arch Linux with Xfce">
 <meta name="twitter:description" content="Run dual-systems Arch Linux &#43; Windows 11 on ROG flow x13 (2022)">
     <link rel="shortcut icon" href="/favicon-32x32.png" />
 
@@ -255,11 +255,13 @@
   <ul>
     <li><a href="#why">WHY</a>
       <ul>
-        <li><a href="#why-i-want-to-switch-from-windows-to-linux">Why I want to switch from Windows to Linux?</a></li>
-        <li><a href="#why-i-want-to-switch-from-ubuntu-to-arch">Why I want to switch from Ubuntu to Arch?</a></li>
+        <li><a href="#why-do-i-want-to-switch-from-windows-to-linux">Why do I want to switch from Windows to Linux?</a></li>
+        <li><a href="#why-do-i-want-to-switch-from-ubuntu-to-arch">Why do I want to switch from Ubuntu to Arch?</a></li>
+        <li><a href="#why-do-i-want-to-install-arch-linux-without-the-script">Why do I want to install Arch Linux without the script?</a></li>
+        <li><a href="#why-do-i-want-to-switch-from-gnome-to-xfce">Why do I want to switch from Gnome to Xfce</a></li>
       </ul>
     </li>
-    <li><a href="#wht">WHT</a></li>
+    <li><a href="#wat">WAT</a></li>
     <li><a href="#how">HOW</a>
       <ul>
         <li><a href="#1-preparation">1. Preparation</a></li>
@@ -269,7 +271,9 @@
         <li><a href="#5-user-setting">5. User Setting</a></li>
         <li><a href="#6-launch-setting">6. Launch Setting</a></li>
         <li><a href="#7-language--time">7. Language &amp; Time</a></li>
-        <li><a href="#8-xfce-installation">8. XFCE Installation</a></li>
+        <li><a href="#8-xfce-installation">8. Xfce Installation</a></li>
+        <li><a href="#finish-installation">Finish Installation</a></li>
+        <li><a href="#post-installation">Post-installation</a></li>
       </ul>
     </li>
   </ul>
@@ -299,7 +303,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/posts/linux/archwithxfce/">Install Arch Linux with XFCE</a>
+            <a href="/posts/linux/archwithxfce/">Install Arch Linux with Xfce</a>
         </h2>
     
         
@@ -340,7 +344,7 @@
 
 
                 <time class="article-time--reading">
-                    7 minute read
+                    10 minute read
                 </time>
             </div>
         
@@ -356,7 +360,7 @@
     
     
     <h2 id="why">WHY</h2>
-<h3 id="why-i-want-to-switch-from-windows-to-linux">Why I want to switch from Windows to Linux?</h3>
+<h3 id="why-do-i-want-to-switch-from-windows-to-linux">Why do I want to switch from Windows to Linux?</h3>
 <p>First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.</p>
 <ul>
 <li>
@@ -375,7 +379,7 @@
 <p>I am able to uninstall the services I do not want. In Linux, we are able to install whatever we want and uninstall (remove) whatever we do not want. But in Windows, there are so many services like SMB file transfer that I might not want to use for entire life!</p>
 </li>
 </ul>
-<h3 id="why-i-want-to-switch-from-ubuntu-to-arch">Why I want to switch from Ubuntu to Arch?</h3>
+<h3 id="why-do-i-want-to-switch-from-ubuntu-to-arch">Why do I want to switch from Ubuntu to Arch?</h3>
 <ul>
 <li>
 <p>After using Ubuntu for several months, I have the ability to work smoothly with terminals and have basis understanding of Linux. I want to step in further, and installing Arch Linux is a good approach to that.</p>
@@ -394,7 +398,21 @@
 <p>Ubuntu with gnome is stepping in commercial and be less community-friendly. And there are some ads of Ubuntu Pro appear in the system.</p>
 </li>
 </ul>
-<h2 id="wht">WHT</h2>
+<h3 id="why-do-i-want-to-install-arch-linux-without-the-script">Why do I want to install Arch Linux without the script?</h3>
+<ul>
+<li>Learn more about Linux and fully customize for myself</li>
+</ul>
+<h3 id="why-do-i-want-to-switch-from-gnome-to-xfce">Why do I want to switch from Gnome to Xfce</h3>
+<ul>
+<li>
+<p>Xfce is a more lightweight <a class="link" href="https://wiki.archlinux.org/title/desktop_environment"  target="_blank" rel="noopener"
+    >Desktop Environment</a> (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).</p>
+</li>
+<li>
+<p>Xfce is clean and easy to customize. You can install lots of plugins for Xfce and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.</p>
+</li>
+</ul>
+<h2 id="wat">WAT</h2>
 <p>Here is an introduction of Arch Linux from its wiki: <a class="link" href="https://wiki.archlinux.org/title/Arch_Linux"  target="_blank" rel="noopener"
     >https://wiki.archlinux.org/title/Arch_Linux</a></p>
 <h2 id="how">HOW</h2>
@@ -465,14 +483,57 @@
 </ol>
 <h3 id="5-user-setting">5. User Setting</h3>
 <ol>
-<li><code># arch-chroot /mnt /bin/bash</code> to change root to <code>/mnt</code> (root user path) using shell in <code>/bin/bash</code>.</li>
-<li><code># passwd</code> to reset the root user password.</li>
-<li><code># echo ?{zayn7lie-acl} &gt; /etc/hostname</code> to reset your machine name.</li>
-<li><code># useradd -m -G wheel -s /bin/bash ${zayn7lie}</code> set up a new user <code>${zayn7lie}</code>, set it log in directory and add to wheel group. <code># passwd ${zayn7lie}</code> to set user&rsquo;s password. P.S. Wheel group is used for updating system (like a wheel to update continuously)</li>
+<li>
+<p><code># arch-chroot /mnt /bin/bash</code> to change root to <code>/mnt</code> (root user path) using shell in <code>/bin/bash</code>.</p>
+</li>
+<li>
+<p><code># passwd</code> to reset the root user password.</p>
+</li>
+<li>
+<p><code># echo ?{zayn7lie-acl} &gt; /etc/hostname</code> to reset your machine name.</p>
+</li>
+<li>
+<p><code># useradd -m -G wheel -s /bin/bash ${zayn7lie}</code> set up a new user <code>${zayn7lie}</code>, set it log in directory and add to wheel group. <code># passwd ${zayn7lie}</code> to set user&rsquo;s password. P.S. Wheel group users are used to update system (like a wheel to update continuously)</p>
+</li>
+<li>
+<p><code># vim /etc/sudoers</code> to open config file using <code>vim</code>. Type <code>i</code> to enter <code>insert(edit) mode</code> for vim and then find and uncomment (delete <code>#</code>) before <code>%wheel ALL=(ALL) ALL</code>. Then <code>esc</code> to escape from <code>insert mode</code> and <code>:wq</code> to write in (save) and quit. P.S. <code>:wq!</code> and <code>:q!</code> the <code>!</code> means <code>force</code>. <code>:wq!</code> will force writing in (If the file is unchangeable, it will create a new file and replace it.), and <code>:q!</code> will force you to quite without any change of the file.</p>
+</li>
+<li>
+<p><code>vim /etc/hosts</code> to config <code>localhost</code> settings. Insert:</p>
+<pre tabindex="0"><code class="language-hosts" data-lang="hosts">127.0.0.1 localhost
+::1 localhost
+127.0.1.1 ?{zayn7lie-acl}.localdomain ?{zayn7lie-acl}
+</code></pre><p>replace <code>?{zayn7lie-acl}</code> with your machine name.</p>
+</li>
 </ol>
 <h3 id="6-launch-setting">6. Launch Setting</h3>
+<ol>
+<li><code># pacman -S ?{amd-ucode} grub efibootmgr</code> to install necessary boot package. If you are using Intel CPU, change <code>?{amd-ucode}</code> to <code>intel-ucode</code></li>
+<li><code># grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&quot;Arch Linux&quot;} --recheck</code> to install grub file. <code>!{--removable}</code> determines whether you are able to remove it from <code>UEFI</code>, <code>?{&quot;Arch Linux&quot;}</code> is your system name in grub.</li>
+<li><code># grub-mkconfig -o /boot/grub/grub.cfg</code> to generate config file.</li>
+</ol>
 <h3 id="7-language--time">7. Language &amp; Time</h3>
-<h3 id="8-xfce-installation">8. XFCE Installation</h3>
+<ol>
+<li><code># vim /etc/locale.gen</code> to enter language config file, then uncomment <code>en-US.UTF-8 UTF-8</code> and the language you want use, then save the file. <code># locale-gen</code> to generate and install language files.</li>
+<li><code># echo LANG=en-US.UTF-8 &gt; /etc/locale.conf</code> to choose <code>en-US.UTF-8</code> as your root user language.</li>
+<li><code># ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime</code> to config your local time. <code>?{EST}</code> Could be change based on your region. You can use <code># ls /usr/share/zoneinfo/</code> to check which option could be used. Some folder like <code>./Asia</code> might have subfolders that you need to choose in more specific way. E.G. <code># ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime</code>. P.S. <code>s</code> meaning soft link which will not actually copy all file to the target folder, <code>f</code> meaning force to do it.</li>
+</ol>
+<h3 id="8-xfce-installation">8. Xfce Installation</h3>
+<p>N.B. In this section, I will just introduce how to install the cleanest and most basic Xfce with without any plugin. If you want to make Xfce better, you can read my <code>[Xfce customization and beautification](comming soon)</code> post.</p>
+<ol>
+<li><code># pacman -S xorg</code> to install xorg. Xorg is the basis package which contains X11 that many DE (Desktop Environment) based on.</li>
+<li><code># pacman -S xfce4</code> to install Xfce. It is NOT recommended that you can <code># echo &quot;exec startxfce4&quot; &gt;&gt; /etc/X11/xinit/xinitrc</code> to start xfce4 in the next boot and ignore step 3. It is highly recommended to install a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.</li>
+<li><code># pacman -S lightdm lightdm-gtk-greeter light-loceker</code> to install this recommended lightweight DM, then <code># systemctl enable lightdm</code> to let <code>lightdm</code> start automatically when you boot your system. You can also choose your <a class="link" href="https://wiki.archlinux.org/title/Display_manager"  target="_blank" rel="noopener"
+    >DM</a>. P.S. <code>lightdm</code> is the main DM, <code>lightdm-gtk-greeter</code> is for configuring your <code>lightdm</code>, <code>light-loceker</code> is for that you can lock your screen with your settings.</li>
+<li><code># pacman -S networkmanager</code> to install <code>NetworkManager</code> tool, then <code># systemctl enable NetworkManager</code> to let <code>NetworkManager</code> start automatically when you boot your system. As I have mentioned above, <code>networkmanager</code> is more popular than <code>iwd</code>. And <code>iwd</code> is only installed in your installation medium but not your system. You still have to install a network manager tool for your <code>Arch Linux</code>.</li>
+</ol>
+<h3 id="finish-installation">Finish Installation</h3>
+<p>Congratulation! You have installed <code>Arch Linux</code> in your machine. Now you can <code># exit</code> to exit your root user account, <code># reboot</code> and remove installation medium when computer is completely closed. Now, start your journey to <code>Arch Linux</code>!</p>
+<h3 id="post-installation">Post-installation</h3>
+<p>As I have mentioned above, if you want to make Xfce better, you can read my <code>[Xfce customization and beautification](comming soon)</code> post. At the same time, if you encounter any problems or bugs, reading <a class="link" href="https://archlinux.org/"  target="_blank" rel="noopener"
+    >Wiki</a>, <a class="link" href="https://www.google.com/"  target="_blank" rel="noopener"
+    >googling</a>, searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in <a class="link" href="http://www.catb.org/~esr/faqs/smart-questions.html"  target="_blank" rel="noopener"
+    >a smart way</a>. That&rsquo;s all, it is my best hope that you could join and enjoy our open-source communities!</p>
 
 </section>
 
@@ -483,7 +544,7 @@
         
             <a href="/tags/arch/">Arch</a>
         
-            <a href="/tags/xfce/">XFCE</a>
+            <a href="/tags/xfce/">Xfce</a>
         
             <a href="/tags/linuxzx/">Linuxzx</a>
         
@@ -545,7 +606,7 @@
     data-app-id="bb55d628-fc4a-4ec4-b2ff-091c0dc240d5"
     data-page-id="15bbe43fcdd461ff8e77c89fb21369ec"
     data-page-url="/posts/linux/archwithxfce/"
-    data-page-title="Install Arch Linux with XFCE"></div>
+    data-page-title="Install Arch Linux with Xfce"></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <script>
