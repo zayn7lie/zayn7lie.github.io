@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head>
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBJKC6FW2S"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DBJKC6FW2S');
+        </script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
+Power: tlp tlp-rdw
+Network: network-manager-applet networkmanager-openconnect (because of some bug, 1.2.8 is recommended)
+FTP: gvfs
+AppImage: AUR - appimagelauncher
+compress: file-roller thunar-archive-plugin
+AUR manager: yay
+download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst Appearance HiDPI: Application - Settings - Appearance : DPI 128
+fonts
+packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fonts-emoji Default Font: Ubuntu Regular 10.5 Default Mono Font: Fira Code Regular 10.5 icons: Tela icons'>
+<title>Xfce customization and applications</title>
+
+<link rel='canonical' href='/posts/linux/xfcecustom/'>
+
+<link rel="stylesheet" href="/scss/style.min.542e4d78795d8585adc4270db4f7e4e460c92c614a8023b37eaaec53ce1d2557.css"><meta property='og:title' content='Xfce customization and applications'>
+<meta property='og:description' content='System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
+Power: tlp tlp-rdw
+Network: network-manager-applet networkmanager-openconnect (because of some bug, 1.2.8 is recommended)
+FTP: gvfs
+AppImage: AUR - appimagelauncher
+compress: file-roller thunar-archive-plugin
+AUR manager: yay
+download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst Appearance HiDPI: Application - Settings - Appearance : DPI 128
+fonts
+packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fonts-emoji Default Font: Ubuntu Regular 10.5 Default Mono Font: Fira Code Regular 10.5 icons: Tela icons'>
+<meta property='og:url' content='/posts/linux/xfcecustom/'>
+<meta property='og:site_name' content='zayn_lie&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2023-06-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-21T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Xfce customization and applications">
+<meta name="twitter:description" content="System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
+Power: tlp tlp-rdw
+Network: network-manager-applet networkmanager-openconnect (because of some bug, 1.2.8 is recommended)
+FTP: gvfs
+AppImage: AUR - appimagelauncher
+compress: file-roller thunar-archive-plugin
+AUR manager: yay
+download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst Appearance HiDPI: Application - Settings - Appearance : DPI 128
+fonts
+packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fonts-emoji Default Font: Ubuntu Regular 10.5 Default Mono Font: Fira Code Regular 10.5 icons: Tela icons">
+    <link rel="shortcut icon" href="/favicon-32x32.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu79e66637751ac2025847b44eaa185475_328321_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">zayn_lie&#39;s blog</a></h1>
+            <h2 class="site-description">Algorithm&amp;Mathematics, Music_Theory&amp;Rhythm_Game, Rationality&amp;Logicism, Peace&amp;Open_Source</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/sponsor/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Sponsor</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#system">System</a></li>
+    <li><a href="#appearance">Appearance</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#input">Input</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#game">Game</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/linux/xfcecustom/">Xfce customization and applications</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">06/21/23</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="system">System</h2>
+<ul>
+<li>
+<p>Gnome Keyring: <code>gnome-keyring</code> <code>libsecret</code> <code>libgnome-keyring</code></p>
+</li>
+<li>
+<p>Power: <code>tlp</code> <code>tlp-rdw</code></p>
+</li>
+<li>
+<p>Network: <code>network-manager-applet</code> <code>networkmanager-openconnect</code> (because of some bug, <code>1.2.8</code> is recommended)</p>
+</li>
+<li>
+<p>FTP: <code>gvfs</code></p>
+</li>
+<li>
+<p>AppImage: AUR - <a class="link" href="https://aur.archlinux.org/packages/appimagelauncher"  target="_blank" rel="noopener"
+    ><code>appimagelauncher</code></a></p>
+</li>
+<li>
+<p>compress: <code>file-roller</code> <code>thunar-archive-plugin</code></p>
+</li>
+<li>
+<p>AUR manager: <a class="link" href="https://aur.archlinux.org/packages/yay"  target="_blank" rel="noopener"
+    ><code>yay</code></a></p>
+<ol>
+<li>download <code>snapshot</code></li>
+<li><code>$ makepkg</code></li>
+<li><code>$ sudo pacman -U *.pkg.tar.zst</code></li>
+</ol>
+</li>
+</ul>
+<h2 id="appearance">Appearance</h2>
+<ul>
+<li>
+<p>HiDPI: <code>Application</code> - <code>Settings</code> - <code>Appearance</code> : DPI 128</p>
+</li>
+<li>
+<p>fonts</p>
+<ul>
+<li>packages
+<ul>
+<li><code>ttf-ubuntu-font-family</code></li>
+<li><code>ttf-fira-code</code></li>
+<li><code>noto-fonts</code> <code>noto-fonts-cjk</code> <code>noto-fonts-emoji</code></li>
+</ul>
+</li>
+<li>Default Font: <code>Ubuntu Regular 10.5</code></li>
+<li>Default Mono Font: <code>Fira Code Regular 10.5</code></li>
+</ul>
+</li>
+<li>
+<p>icons: <a class="link" href="https://github.com/vinceliuice/Tela-icon-theme"  target="_blank" rel="noopener"
+    >Tela icons</a></p>
+</li>
+<li>
+<p>terminal: <code>xfce4-terminal --drop-down</code></p>
+<ul>
+<li><code>.bashrc</code>: <code>[\u@\h \W]\$</code> -&gt; <code>[\u]\w\$</code></li>
+</ul>
+</li>
+<li>
+<p>locker &amp; login</p>
+<ul>
+<li>
+<p><code>/etc/lightdm/lightdm-gtk-greeter.conf</code>:</p>
+<pre><code>```conf
+[greeter]
+background=/usr/share/backgrounds/xfce/bg.png
+#user-background=
+theme-name=Adwaita-dark
+icon-theme-name=Tela-ubuntu-dark
+font-name=Ubuntu 10.5
+xft-antialias=1
+xft-dpi=128
+xft-hintstyle=hintfull
+xft-rgba=none
+```
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Desktop: <code>conky</code></p>
+</li>
+</ul>
+<h2 id="media">Media</h2>
+<ul>
+<li>
+<p>Sound</p>
+<ul>
+<li>Basis: <code>pipewire-pulse</code> <code>pipewire-alsa</code> <code>pipewire-jack</code> <code>pipewire</code> <code>alsa-utils</code></li>
+<li>GUI: <code>xfce4-pulseaudio-plugin</code></li>
+<li>Mix: <code>pavucontrol</code></li>
+<li>Noise suppression: <a class="link" href="https://github.com/werman/noise-suppression-for-voice"  target="_blank" rel="noopener"
+    ><code>noise-suppression-for-voice</code></a></li>
+<li>Music Player: <code>audacious</code> (Status Icon in Config)</li>
+</ul>
+</li>
+<li>
+<p>Video</p>
+<ul>
+<li>Video Player: <code>vlc</code></li>
+</ul>
+</li>
+<li>
+<p>Image</p>
+<ul>
+<li>Screenshot: <code>flameshot</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="input">Input</h2>
+<ul>
+<li>
+<p>Method: <code>fcitx5</code></p>
+<ul>
+<li>Basis: <code>fcitx5-im</code> <code>fcitx5-chinese-addons</code></li>
+<li>GUI: <code>fcitx5-nord</code></li>
+</ul>
+</li>
+<li>
+<p>Clipboard: <code>xfce4-clipman-plugin</code></p>
+</li>
+<li>
+<p>Dictionary: <code>goldendict</code></p>
+</li>
+</ul>
+<h2 id="work">Work</h2>
+<ul>
+<li>
+<p>Code: AUR - <a class="link" href="https://aur.archlinux.org/packages/visual-studio-code-bin/"  target="_blank" rel="noopener"
+    ><code>visual-studio-code-bin</code></a> this package contains full functions of vs-code including sync with GitHub. (Need <a class="link" href="#system" >Gnome Keyring</a> above)</p>
+<ul>
+<li>manager: <code>git</code></li>
+</ul>
+</li>
+<li>
+<p>Paper: AUR - <a class="link" href="https://aur.archlinux.org/packages/zotero"  target="_blank" rel="noopener"
+    ><code>zotero</code></a></p>
+<ul>
+<li><a class="link" href="https://retorque.re/zotero-better-bibtex/installation/"  target="_blank" rel="noopener"
+    >Better Bibtex</a></li>
+</ul>
+</li>
+<li>
+<p><code>libreoffice-still</code></p>
+</li>
+<li>
+<p>email: <code>evolution</code></p>
+<ul>
+<li>System tray: <code>evolution-on</code></li>
+</ul>
+</li>
+<li>
+<p>community: <code>telegram-desktop</code></p>
+</li>
+<li>
+<p>Browser: <code>firefox</code></p>
+</li>
+</ul>
+<h2 id="game">Game</h2>
+<ul>
+<li>
+<p>Steam: <code>steam</code></p>
+<ul>
+<li>enable multilib: <code>/etc/pacman.conf</code> - <code>[multilib]</code> - uncomment <code>Include = /etc/pacman.d/mirrorlist</code>
+<ul>
+<li>refresh: <code>$ sudo pacman -Syy</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>osu!: <a class="link" href="https://osu.ppy.sh/home/download"  target="_blank" rel="noopener"
+    ><code>osu!</code></a></p>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="bb55d628-fc4a-4ec4-b2ff-091c0dc240d5"
+    data-page-id="66f5492a4f80579c0f862c19ee6176e1"
+    data-page-url="/posts/linux/xfcecustom/"
+    data-page-title="Xfce customization and applications"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
+        }
+    }
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2023 zayn_lie&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -6,7 +6,192 @@
         <description>Recent content on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 20 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Xfce customization and applications</title>
+        <link>/posts/linux/xfcecustom/</link>
+        <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/linux/xfcecustom/</guid>
+        <description>&lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Gnome Keyring: &lt;code&gt;gnome-keyring&lt;/code&gt; &lt;code&gt;libsecret&lt;/code&gt; &lt;code&gt;libgnome-keyring&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Power: &lt;code&gt;tlp&lt;/code&gt; &lt;code&gt;tlp-rdw&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Network: &lt;code&gt;network-manager-applet&lt;/code&gt; &lt;code&gt;networkmanager-openconnect&lt;/code&gt; (because of some bug, &lt;code&gt;1.2.8&lt;/code&gt; is recommended)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FTP: &lt;code&gt;gvfs&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AppImage: AUR - &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/appimagelauncher&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;appimagelauncher&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;compress: &lt;code&gt;file-roller&lt;/code&gt; &lt;code&gt;thunar-archive-plugin&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AUR manager: &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/yay&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;yay&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;download &lt;code&gt;snapshot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ makepkg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ sudo pacman -U *.pkg.tar.zst&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;HiDPI: &lt;code&gt;Application&lt;/code&gt; - &lt;code&gt;Settings&lt;/code&gt; - &lt;code&gt;Appearance&lt;/code&gt; : DPI 128&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;fonts&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;packages
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ttf-ubuntu-font-family&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ttf-fira-code&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;noto-fonts&lt;/code&gt; &lt;code&gt;noto-fonts-cjk&lt;/code&gt; &lt;code&gt;noto-fonts-emoji&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Default Font: &lt;code&gt;Ubuntu Regular 10.5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Default Mono Font: &lt;code&gt;Fira Code Regular 10.5&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;icons: &lt;a class=&#34;link&#34; href=&#34;https://github.com/vinceliuice/Tela-icon-theme&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tela icons&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;terminal: &lt;code&gt;xfce4-terminal --drop-down&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.bashrc&lt;/code&gt;: &lt;code&gt;[\u@\h \W]\$&lt;/code&gt; -&amp;gt; &lt;code&gt;[\u]\w\$&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;locker &amp;amp; login&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/etc/lightdm/lightdm-gtk-greeter.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```conf
+[greeter]
+background=/usr/share/backgrounds/xfce/bg.png
+#user-background=
+theme-name=Adwaita-dark
+icon-theme-name=Tela-ubuntu-dark
+font-name=Ubuntu 10.5
+xft-antialias=1
+xft-dpi=128
+xft-hintstyle=hintfull
+xft-rgba=none
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Desktop: &lt;code&gt;conky&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;media&#34;&gt;Media&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sound&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basis: &lt;code&gt;pipewire-pulse&lt;/code&gt; &lt;code&gt;pipewire-alsa&lt;/code&gt; &lt;code&gt;pipewire-jack&lt;/code&gt; &lt;code&gt;pipewire&lt;/code&gt; &lt;code&gt;alsa-utils&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;GUI: &lt;code&gt;xfce4-pulseaudio-plugin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Mix: &lt;code&gt;pavucontrol&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt; (Status Icon in Config)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Video&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Video Player: &lt;code&gt;vlc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Image&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Screenshot: &lt;code&gt;flameshot&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;input&#34;&gt;Input&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basis: &lt;code&gt;fcitx5-im&lt;/code&gt; &lt;code&gt;fcitx5-chinese-addons&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;GUI: &lt;code&gt;fcitx5-nord&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clipboard: &lt;code&gt;xfce4-clipman-plugin&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dictionary: &lt;code&gt;goldendict&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;work&#34;&gt;Work&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Code: AUR - &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/visual-studio-code-bin/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;visual-studio-code-bin&lt;/code&gt;&lt;/a&gt; this package contains full functions of vs-code including sync with GitHub. (Need &lt;a class=&#34;link&#34; href=&#34;#system&#34; &gt;Gnome Keyring&lt;/a&gt; above)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;manager: &lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Paper: AUR - &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/zotero&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;zotero&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://retorque.re/zotero-better-bibtex/installation/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Better Bibtex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;libreoffice-still&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;email: &lt;code&gt;evolution&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;System tray: &lt;code&gt;evolution-on&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;community: &lt;code&gt;telegram-desktop&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Browser: &lt;code&gt;firefox&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;game&#34;&gt;Game&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;enable multilib: &lt;code&gt;/etc/pacman.conf&lt;/code&gt; - &lt;code&gt;[multilib]&lt;/code&gt; - uncomment &lt;code&gt;Include = /etc/pacman.d/mirrorlist&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;osu!: &lt;a class=&#34;link&#34; href=&#34;https://osu.ppy.sh/home/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;osu!&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Install Arch Linux with Xfce</title>
         <link>/posts/linux/archwithxfce/</link>
         <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
