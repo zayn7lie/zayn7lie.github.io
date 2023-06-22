@@ -12,7 +12,11 @@
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>/posts/linux/xfcecustom/</guid>
-        <description>&lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;useful-command&#34;&gt;Useful Command&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;autoclean: &lt;code&gt;pacman -Rcs $(pacman -Qdtq)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Gnome Keyring: &lt;code&gt;gnome-keyring&lt;/code&gt; &lt;code&gt;libsecret&lt;/code&gt; &lt;code&gt;libgnome-keyring&lt;/code&gt;&lt;/p&gt;
@@ -31,7 +35,11 @@
     &gt;&lt;code&gt;appimagelauncher&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;compress: &lt;code&gt;file-roller&lt;/code&gt; &lt;code&gt;thunar-archive-plugin&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Thunar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;compress: &lt;code&gt;file-roller&lt;/code&gt; &lt;code&gt;thunar-archive-plugin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;open terminal here: &lt;code&gt;edit&lt;/code&gt; &amp;gt; &lt;code&gt;Configure custom actions&lt;/code&gt; &amp;gt; &lt;code&gt;open terminal here&lt;/code&gt;: &lt;code&gt;exo-open --working-directory %f --launch TerminalEmulator&lt;/code&gt; &amp;gt; &lt;code&gt;xfce4-terminal --tab --drop-down --working-directory=%f&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;AUR manager: &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/yay&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -41,6 +49,10 @@
 &lt;li&gt;&lt;code&gt;$ makepkg&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;$ sudo pacman -U *.pkg.tar.zst&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;backup: &lt;code&gt;restic&lt;/code&gt; + &lt;code&gt;rclone&lt;/code&gt;: &lt;a class=&#34;link&#34; href=&#34;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;
@@ -158,6 +170,9 @@ xft-rgba=none
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;libreoffice-still&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;email: &lt;code&gt;evolution&lt;/code&gt;&lt;/p&gt;

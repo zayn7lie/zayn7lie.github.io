@@ -11,45 +11,39 @@
 
         gtag('config', 'G-DBJKC6FW2S');
         </script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Useful Command autoclean: pacman -Rcs $(pacman -Qdtq) System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
 Power: tlp tlp-rdw
 Network: network-manager-applet networkmanager-openconnect (because of some bug, 1.2.8 is recommended)
 FTP: gvfs
 AppImage: AUR - appimagelauncher
-compress: file-roller thunar-archive-plugin
-AUR manager: yay
-download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst Appearance HiDPI: Application - Settings - Appearance : DPI 128
-fonts
-packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fonts-emoji Default Font: Ubuntu Regular 10.5 Default Mono Font: Fira Code Regular 10.5 icons: Tela icons'>
+Thunar
+compress: file-roller thunar-archive-plugin open terminal here: edit &amp;gt; Configure custom actions &amp;gt; open terminal here: exo-open --working-directory %f --launch TerminalEmulator &amp;gt; xfce4-terminal --tab --drop-down --working-directory=%f AUR manager: yay
+download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst backup: restic &#43; rclone: https://restic.'>
 <title>Xfce customization and applications</title>
 
 <link rel='canonical' href='/posts/linux/xfcecustom/'>
 
 <link rel="stylesheet" href="/scss/style.min.542e4d78795d8585adc4270db4f7e4e460c92c614a8023b37eaaec53ce1d2557.css"><meta property='og:title' content='Xfce customization and applications'>
-<meta property='og:description' content='System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
+<meta property='og:description' content='Useful Command autoclean: pacman -Rcs $(pacman -Qdtq) System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
 Power: tlp tlp-rdw
 Network: network-manager-applet networkmanager-openconnect (because of some bug, 1.2.8 is recommended)
 FTP: gvfs
 AppImage: AUR - appimagelauncher
-compress: file-roller thunar-archive-plugin
-AUR manager: yay
-download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst Appearance HiDPI: Application - Settings - Appearance : DPI 128
-fonts
-packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fonts-emoji Default Font: Ubuntu Regular 10.5 Default Mono Font: Fira Code Regular 10.5 icons: Tela icons'>
+Thunar
+compress: file-roller thunar-archive-plugin open terminal here: edit &amp;gt; Configure custom actions &amp;gt; open terminal here: exo-open --working-directory %f --launch TerminalEmulator &amp;gt; xfce4-terminal --tab --drop-down --working-directory=%f AUR manager: yay
+download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst backup: restic &#43; rclone: https://restic.'>
 <meta property='og:url' content='/posts/linux/xfcecustom/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Xfce' /><meta property='article:tag' content='Arch' /><meta property='article:tag' content='Linux' /><meta property='article:published_time' content='2023-06-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-21T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Xfce customization and applications">
-<meta name="twitter:description" content="System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
+<meta name="twitter:description" content="Useful Command autoclean: pacman -Rcs $(pacman -Qdtq) System Gnome Keyring: gnome-keyring libsecret libgnome-keyring
 Power: tlp tlp-rdw
 Network: network-manager-applet networkmanager-openconnect (because of some bug, 1.2.8 is recommended)
 FTP: gvfs
 AppImage: AUR - appimagelauncher
-compress: file-roller thunar-archive-plugin
-AUR manager: yay
-download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst Appearance HiDPI: Application - Settings - Appearance : DPI 128
-fonts
-packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fonts-emoji Default Font: Ubuntu Regular 10.5 Default Mono Font: Fira Code Regular 10.5 icons: Tela icons">
+Thunar
+compress: file-roller thunar-archive-plugin open terminal here: edit &amp;gt; Configure custom actions &amp;gt; open terminal here: exo-open --working-directory %f --launch TerminalEmulator &amp;gt; xfce4-terminal --tab --drop-down --working-directory=%f AUR manager: yay
+download snapshot $ makepkg $ sudo pacman -U *.pkg.tar.zst backup: restic &#43; rclone: https://restic.">
     <link rel="shortcut icon" href="/favicon-32x32.png" />
 
     </head>
@@ -280,6 +274,7 @@ packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fon
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
+    <li><a href="#useful-command">Useful Command</a></li>
     <li><a href="#system">System</a></li>
     <li><a href="#appearance">Appearance</a></li>
     <li><a href="#media">Media</a></li>
@@ -350,7 +345,7 @@ packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fon
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    2 minute read
                 </time>
             </div>
         
@@ -365,7 +360,11 @@ packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fon
     <section class="article-content">
     
     
-    <h2 id="system">System</h2>
+    <h2 id="useful-command">Useful Command</h2>
+<ul>
+<li>autoclean: <code>pacman -Rcs $(pacman -Qdtq)</code></li>
+</ul>
+<h2 id="system">System</h2>
 <ul>
 <li>
 <p>Gnome Keyring: <code>gnome-keyring</code> <code>libsecret</code> <code>libgnome-keyring</code></p>
@@ -384,7 +383,11 @@ packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fon
     ><code>appimagelauncher</code></a></p>
 </li>
 <li>
-<p>compress: <code>file-roller</code> <code>thunar-archive-plugin</code></p>
+<p>Thunar</p>
+<ul>
+<li>compress: <code>file-roller</code> <code>thunar-archive-plugin</code></li>
+<li>open terminal here: <code>edit</code> &gt; <code>Configure custom actions</code> &gt; <code>open terminal here</code>: <code>exo-open --working-directory %f --launch TerminalEmulator</code> &gt; <code>xfce4-terminal --tab --drop-down --working-directory=%f</code></li>
+</ul>
 </li>
 <li>
 <p>AUR manager: <a class="link" href="https://aur.archlinux.org/packages/yay"  target="_blank" rel="noopener"
@@ -394,6 +397,10 @@ packages ttf-ubuntu-font-family ttf-fira-code noto-fonts noto-fonts-cjk noto-fon
 <li><code>$ makepkg</code></li>
 <li><code>$ sudo pacman -U *.pkg.tar.zst</code></li>
 </ol>
+</li>
+<li>
+<p>backup: <code>restic</code> + <code>rclone</code>: <a class="link" href="https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone"  target="_blank" rel="noopener"
+    >https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone</a></p>
 </li>
 </ul>
 <h2 id="appearance">Appearance</h2>
@@ -511,6 +518,9 @@ xft-rgba=none
 </li>
 <li>
 <p><code>libreoffice-still</code></p>
+</li>
+<li>
+<p><code>hugo</code></p>
 </li>
 <li>
 <p>email: <code>evolution</code></p>
