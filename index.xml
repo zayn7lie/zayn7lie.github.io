@@ -15,6 +15,7 @@
         <description>&lt;h2 id=&#34;useful-command&#34;&gt;Useful Command&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;autoclean: &lt;code&gt;pacman -Rcs $(pacman -Qdtq)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;clean cache: &lt;code&gt;pacman -Sc&lt;/code&gt; &lt;code&gt;yay -Sc&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;
 &lt;ul&gt;
@@ -126,12 +127,14 @@ xft-rgba=none
 &lt;p&gt;Video&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Video Player: &lt;code&gt;vlc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;record &amp;amp; steaming: &lt;code&gt;obs-studio&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Image&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Screenshot: &lt;code&gt;flameshot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;edit: &lt;code&gt;krita&lt;/code&gt; &lt;code&gt;inkscape&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
