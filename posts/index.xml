@@ -55,6 +55,14 @@
 &lt;p&gt;backup: &lt;code&gt;restic&lt;/code&gt; + &lt;code&gt;rclone&lt;/code&gt;: &lt;a class=&#34;link&#34; href=&#34;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Android emulator: &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/android-emulator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AUR - &lt;code&gt;android-emulator&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/android-sdk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AUR - &lt;code&gt;android-sdk&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;
 &lt;ul&gt;
@@ -90,8 +98,7 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;/etc/lightdm/lightdm-gtk-greeter.conf&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```conf
-[greeter]
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;[greeter]
 background=/usr/share/backgrounds/xfce/bg.png
 #user-background=
 theme-name=Adwaita-dark
@@ -101,9 +108,7 @@ xft-antialias=1
 xft-dpi=128
 xft-hintstyle=hintfull
 xft-rgba=none
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -143,8 +148,19 @@ xft-rgba=none
 &lt;li&gt;
 &lt;p&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Basis: &lt;code&gt;fcitx5-im&lt;/code&gt; &lt;code&gt;fcitx5-chinese-addons&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;GUI: &lt;code&gt;fcitx5-nord&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Basis: &lt;code&gt;fcitx5-im&lt;/code&gt; &lt;code&gt;fcitx5-chinese-addons&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GUI: &lt;code&gt;fcitx5-nord&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;$ code /etc/environment&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-etc&#34; data-lang=&#34;etc&#34;&gt;GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+SDL_IM_MODULE=fcitx
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -157,10 +173,22 @@ xft-rgba=none
 &lt;h2 id=&#34;work&#34;&gt;Work&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Code: AUR - &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/visual-studio-code-bin/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt; or AUR - &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/visual-studio-code-bin/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;visual-studio-code-bin&lt;/code&gt;&lt;/a&gt; this package contains full functions of vs-code including sync with GitHub. (Need &lt;a class=&#34;link&#34; href=&#34;#system&#34; &gt;Gnome Keyring&lt;/a&gt; above)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;manager: &lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Extention
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Copilot&lt;/a&gt;: &lt;code&gt;Install fron CSIX&lt;/code&gt; (extensions top right corner)&lt;/li&gt;
+&lt;li&gt;markdown
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;markdown all in one&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdownlint&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -352,7 +380,7 @@ xft-rgba=none
 &lt;p&gt;&lt;code&gt;# useradd -m -G wheel -s /bin/bash ${zayn7lie}&lt;/code&gt; set up a new user &lt;code&gt;${zayn7lie}&lt;/code&gt;, set it log in directory and add to wheel group. &lt;code&gt;# passwd ${zayn7lie}&lt;/code&gt; to set user&amp;rsquo;s password. P.S. Wheel group users are used to update system (like a wheel to update continuously)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;# vim /etc/sudoers&lt;/code&gt; to open config file using &lt;code&gt;vim&lt;/code&gt;. Type &lt;code&gt;i&lt;/code&gt; to enter &lt;code&gt;insert(edit) mode&lt;/code&gt; for vim and then find and uncomment (delete &lt;code&gt;#&lt;/code&gt;) before &lt;code&gt;%wheel ALL=(ALL) ALL&lt;/code&gt;. Then &lt;code&gt;esc&lt;/code&gt; to escape from &lt;code&gt;insert mode&lt;/code&gt; and &lt;code&gt;:wq&lt;/code&gt; to write in (save) and quit. P.S. &lt;code&gt;:wq!&lt;/code&gt; and &lt;code&gt;:q!&lt;/code&gt; the &lt;code&gt;!&lt;/code&gt; means &lt;code&gt;force&lt;/code&gt;. &lt;code&gt;:wq!&lt;/code&gt; will force writing in (If the file is unchangeable, it will create a new file and replace it.), and &lt;code&gt;:q!&lt;/code&gt; will force you to quite without any change of the file.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# vim /etc/sudoers&lt;/code&gt; to open config file using &lt;code&gt;vim&lt;/code&gt;. Type &lt;code&gt;i&lt;/code&gt; to enter &lt;code&gt;insert(edit) mode&lt;/code&gt; for vim and then find and uncomment (delete &lt;code&gt;#&lt;/code&gt;) before &lt;code&gt;%wheel ALL=(ALL:ALL) ALL&lt;/code&gt;. Then &lt;code&gt;esc&lt;/code&gt; to escape from &lt;code&gt;insert mode&lt;/code&gt; and &lt;code&gt;:wq&lt;/code&gt; to write in (save) and quit. P.S. &lt;code&gt;:wq!&lt;/code&gt; and &lt;code&gt;:q!&lt;/code&gt; the &lt;code&gt;!&lt;/code&gt; means &lt;code&gt;force&lt;/code&gt;. &lt;code&gt;:wq!&lt;/code&gt; will force writing in (If the file is unchangeable, it will create a new file and replace it.), and &lt;code&gt;:q!&lt;/code&gt; will force you to quite without any change of the file.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;vim /etc/hosts&lt;/code&gt; to config &lt;code&gt;localhost&lt;/code&gt; settings. Insert:&lt;/p&gt;
@@ -362,24 +390,24 @@ xft-rgba=none
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;replace &lt;code&gt;?{zayn7lie-acl}&lt;/code&gt; with your machine name.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;6-launch-setting&#34;&gt;6. Launch Setting&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;# pacman -S ?{amd-ucode} grub efibootmgr&lt;/code&gt; to install necessary boot package. If you are using Intel CPU, change &lt;code&gt;?{amd-ucode}&lt;/code&gt; to &lt;code&gt;intel-ucode&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&amp;quot;Arch Linux&amp;quot;} --recheck&lt;/code&gt; to install grub file. &lt;code&gt;!{--removable}&lt;/code&gt; determines whether you are able to remove it from &lt;code&gt;UEFI&lt;/code&gt;, &lt;code&gt;?{&amp;quot;Arch Linux&amp;quot;}&lt;/code&gt; is your system name in grub.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt; to generate config file.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;7-language--time&#34;&gt;7. Language &amp;amp; Time&lt;/h3&gt;
+&lt;h3 id=&#34;6-language--time&#34;&gt;6. Language &amp;amp; Time&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# vim /etc/locale.gen&lt;/code&gt; to enter language config file, then uncomment &lt;code&gt;en-US.UTF-8 UTF-8&lt;/code&gt; and the language you want use, then save the file. &lt;code&gt;# locale-gen&lt;/code&gt; to generate and install language files.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# echo LANG=en-US.UTF-8 &amp;gt; /etc/locale.conf&lt;/code&gt; to choose &lt;code&gt;en-US.UTF-8&lt;/code&gt; as your root user language.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime&lt;/code&gt; to config your local time. &lt;code&gt;?{EST}&lt;/code&gt; Could be change based on your region. You can use &lt;code&gt;# ls /usr/share/zoneinfo/&lt;/code&gt; to check which option could be used. Some folder like &lt;code&gt;./Asia&lt;/code&gt; might have subfolders that you need to choose in more specific way. E.G. &lt;code&gt;# ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime&lt;/code&gt;. P.S. &lt;code&gt;s&lt;/code&gt; meaning soft link which will not actually copy all file to the target folder, &lt;code&gt;f&lt;/code&gt; meaning force to do it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;7-launch-setting&#34;&gt;7. Launch Setting&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S ?{amd-ucode} grub efibootmgr&lt;/code&gt; to install necessary boot package. If you are using Intel CPU, change &lt;code&gt;?{amd-ucode}&lt;/code&gt; to &lt;code&gt;intel-ucode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&amp;quot;Arch Linux&amp;quot;} --recheck&lt;/code&gt; to install grub file. &lt;code&gt;!{--removable}&lt;/code&gt; determines whether you are able to remove it from &lt;code&gt;UEFI&lt;/code&gt;, &lt;code&gt;?{&amp;quot;Arch Linux&amp;quot;}&lt;/code&gt; is your system name in grub.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt; to generate config file.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;8-xfce-installation&#34;&gt;8. Xfce Installation&lt;/h3&gt;
 &lt;p&gt;N.B. In this section, I will just introduce how to install the cleanest and most basic Xfce with without any plugin. If you want to make Xfce better, you can read my &lt;code&gt;[Xfce customization and beautification](comming soon)&lt;/code&gt; post.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# pacman -S xorg&lt;/code&gt; to install xorg. Xorg is the basis package which contains X11 that many DE (Desktop Environment) based on.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install Xfce. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start xfce4 in the next boot and ignore step 3. It is highly recommended to install a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-loceker&lt;/code&gt; to install this recommended lightweight DM, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight DM, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DM&lt;/a&gt;. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt; to install &lt;code&gt;NetworkManager&lt;/code&gt; tool, then &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt; to let &lt;code&gt;NetworkManager&lt;/code&gt; start automatically when you boot your system. As I have mentioned above, &lt;code&gt;networkmanager&lt;/code&gt; is more popular than &lt;code&gt;iwd&lt;/code&gt;. And &lt;code&gt;iwd&lt;/code&gt; is only installed in your installation medium but not your system. You still have to install a network manager tool for your &lt;code&gt;Arch Linux&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;

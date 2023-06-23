@@ -269,8 +269,8 @@
         <li><a href="#3-network-configuration">3. Network Configuration</a></li>
         <li><a href="#4-disk-mounting-and-installation">4. Disk Mounting and Installation</a></li>
         <li><a href="#5-user-setting">5. User Setting</a></li>
-        <li><a href="#6-launch-setting">6. Launch Setting</a></li>
-        <li><a href="#7-language--time">7. Language &amp; Time</a></li>
+        <li><a href="#6-language--time">6. Language &amp; Time</a></li>
+        <li><a href="#7-launch-setting">7. Launch Setting</a></li>
         <li><a href="#8-xfce-installation">8. Xfce Installation</a></li>
         <li><a href="#finish-installation">Finish Installation</a></li>
         <li><a href="#post-installation">Post-installation</a></li>
@@ -496,7 +496,7 @@
 <p><code># useradd -m -G wheel -s /bin/bash ${zayn7lie}</code> set up a new user <code>${zayn7lie}</code>, set it log in directory and add to wheel group. <code># passwd ${zayn7lie}</code> to set user&rsquo;s password. P.S. Wheel group users are used to update system (like a wheel to update continuously)</p>
 </li>
 <li>
-<p><code># vim /etc/sudoers</code> to open config file using <code>vim</code>. Type <code>i</code> to enter <code>insert(edit) mode</code> for vim and then find and uncomment (delete <code>#</code>) before <code>%wheel ALL=(ALL) ALL</code>. Then <code>esc</code> to escape from <code>insert mode</code> and <code>:wq</code> to write in (save) and quit. P.S. <code>:wq!</code> and <code>:q!</code> the <code>!</code> means <code>force</code>. <code>:wq!</code> will force writing in (If the file is unchangeable, it will create a new file and replace it.), and <code>:q!</code> will force you to quite without any change of the file.</p>
+<p><code># vim /etc/sudoers</code> to open config file using <code>vim</code>. Type <code>i</code> to enter <code>insert(edit) mode</code> for vim and then find and uncomment (delete <code>#</code>) before <code>%wheel ALL=(ALL:ALL) ALL</code>. Then <code>esc</code> to escape from <code>insert mode</code> and <code>:wq</code> to write in (save) and quit. P.S. <code>:wq!</code> and <code>:q!</code> the <code>!</code> means <code>force</code>. <code>:wq!</code> will force writing in (If the file is unchangeable, it will create a new file and replace it.), and <code>:q!</code> will force you to quite without any change of the file.</p>
 </li>
 <li>
 <p><code>vim /etc/hosts</code> to config <code>localhost</code> settings. Insert:</p>
@@ -506,24 +506,24 @@
 </code></pre><p>replace <code>?{zayn7lie-acl}</code> with your machine name.</p>
 </li>
 </ol>
-<h3 id="6-launch-setting">6. Launch Setting</h3>
-<ol>
-<li><code># pacman -S ?{amd-ucode} grub efibootmgr</code> to install necessary boot package. If you are using Intel CPU, change <code>?{amd-ucode}</code> to <code>intel-ucode</code></li>
-<li><code># grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&quot;Arch Linux&quot;} --recheck</code> to install grub file. <code>!{--removable}</code> determines whether you are able to remove it from <code>UEFI</code>, <code>?{&quot;Arch Linux&quot;}</code> is your system name in grub.</li>
-<li><code># grub-mkconfig -o /boot/grub/grub.cfg</code> to generate config file.</li>
-</ol>
-<h3 id="7-language--time">7. Language &amp; Time</h3>
+<h3 id="6-language--time">6. Language &amp; Time</h3>
 <ol>
 <li><code># vim /etc/locale.gen</code> to enter language config file, then uncomment <code>en-US.UTF-8 UTF-8</code> and the language you want use, then save the file. <code># locale-gen</code> to generate and install language files.</li>
 <li><code># echo LANG=en-US.UTF-8 &gt; /etc/locale.conf</code> to choose <code>en-US.UTF-8</code> as your root user language.</li>
 <li><code># ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime</code> to config your local time. <code>?{EST}</code> Could be change based on your region. You can use <code># ls /usr/share/zoneinfo/</code> to check which option could be used. Some folder like <code>./Asia</code> might have subfolders that you need to choose in more specific way. E.G. <code># ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime</code>. P.S. <code>s</code> meaning soft link which will not actually copy all file to the target folder, <code>f</code> meaning force to do it.</li>
+</ol>
+<h3 id="7-launch-setting">7. Launch Setting</h3>
+<ol>
+<li><code># pacman -S ?{amd-ucode} grub efibootmgr</code> to install necessary boot package. If you are using Intel CPU, change <code>?{amd-ucode}</code> to <code>intel-ucode</code></li>
+<li><code># grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&quot;Arch Linux&quot;} --recheck</code> to install grub file. <code>!{--removable}</code> determines whether you are able to remove it from <code>UEFI</code>, <code>?{&quot;Arch Linux&quot;}</code> is your system name in grub.</li>
+<li><code># grub-mkconfig -o /boot/grub/grub.cfg</code> to generate config file.</li>
 </ol>
 <h3 id="8-xfce-installation">8. Xfce Installation</h3>
 <p>N.B. In this section, I will just introduce how to install the cleanest and most basic Xfce with without any plugin. If you want to make Xfce better, you can read my <code>[Xfce customization and beautification](comming soon)</code> post.</p>
 <ol>
 <li><code># pacman -S xorg</code> to install xorg. Xorg is the basis package which contains X11 that many DE (Desktop Environment) based on.</li>
 <li><code># pacman -S xfce4</code> to install Xfce. It is NOT recommended that you can <code># echo &quot;exec startxfce4&quot; &gt;&gt; /etc/X11/xinit/xinitrc</code> to start xfce4 in the next boot and ignore step 3. It is highly recommended to install a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.</li>
-<li><code># pacman -S lightdm lightdm-gtk-greeter light-loceker</code> to install this recommended lightweight DM, then <code># systemctl enable lightdm</code> to let <code>lightdm</code> start automatically when you boot your system. You can also choose your <a class="link" href="https://wiki.archlinux.org/title/Display_manager"  target="_blank" rel="noopener"
+<li><code># pacman -S lightdm lightdm-gtk-greeter light-locker</code> to install this recommended lightweight DM, then <code># systemctl enable lightdm</code> to let <code>lightdm</code> start automatically when you boot your system. You can also choose your <a class="link" href="https://wiki.archlinux.org/title/Display_manager"  target="_blank" rel="noopener"
     >DM</a>. P.S. <code>lightdm</code> is the main DM, <code>lightdm-gtk-greeter</code> is for configuring your <code>lightdm</code>, <code>light-loceker</code> is for that you can lock your screen with your settings.</li>
 <li><code># pacman -S networkmanager</code> to install <code>NetworkManager</code> tool, then <code># systemctl enable NetworkManager</code> to let <code>NetworkManager</code> start automatically when you boot your system. As I have mentioned above, <code>networkmanager</code> is more popular than <code>iwd</code>. And <code>iwd</code> is only installed in your installation medium but not your system. You still have to install a network manager tool for your <code>Arch Linux</code>.</li>
 </ol>

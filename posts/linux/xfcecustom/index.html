@@ -403,6 +403,14 @@ download snapshot $ makepkg $ sudo pacman -U *.">
 <p>backup: <code>restic</code> + <code>rclone</code>: <a class="link" href="https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone"  target="_blank" rel="noopener"
     >https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone</a></p>
 </li>
+<li>
+<p>Android emulator: <a class="link" href="https://aur.archlinux.org/packages/android-emulator/"  target="_blank" rel="noopener"
+    >AUR - <code>android-emulator</code></a></p>
+<ul>
+<li><a class="link" href="https://aur.archlinux.org/packages/android-sdk"  target="_blank" rel="noopener"
+    >AUR - <code>android-sdk</code></a></li>
+</ul>
+</li>
 </ul>
 <h2 id="appearance">Appearance</h2>
 <ul>
@@ -438,8 +446,7 @@ download snapshot $ makepkg $ sudo pacman -U *.">
 <ul>
 <li>
 <p><code>/etc/lightdm/lightdm-gtk-greeter.conf</code>:</p>
-<pre><code>```conf
-[greeter]
+<pre tabindex="0"><code class="language-conf" data-lang="conf">[greeter]
 background=/usr/share/backgrounds/xfce/bg.png
 #user-background=
 theme-name=Adwaita-dark
@@ -449,9 +456,7 @@ xft-antialias=1
 xft-dpi=128
 xft-hintstyle=hintfull
 xft-rgba=none
-```
-</code></pre>
-</li>
+</code></pre></li>
 </ul>
 </li>
 <li>
@@ -491,8 +496,19 @@ xft-rgba=none
 <li>
 <p>Method: <code>fcitx5</code></p>
 <ul>
-<li>Basis: <code>fcitx5-im</code> <code>fcitx5-chinese-addons</code></li>
-<li>GUI: <code>fcitx5-nord</code></li>
+<li>
+<p>Basis: <code>fcitx5-im</code> <code>fcitx5-chinese-addons</code></p>
+</li>
+<li>
+<p>GUI: <code>fcitx5-nord</code></p>
+</li>
+<li>
+<p><code>$ code /etc/environment</code>:</p>
+<pre tabindex="0"><code class="language-etc" data-lang="etc">GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+SDL_IM_MODULE=fcitx
+</code></pre></li>
 </ul>
 </li>
 <li>
@@ -505,10 +521,22 @@ xft-rgba=none
 <h2 id="work">Work</h2>
 <ul>
 <li>
-<p>Code: AUR - <a class="link" href="https://aur.archlinux.org/packages/visual-studio-code-bin/"  target="_blank" rel="noopener"
+<p>Code: <code>code</code> or AUR - <a class="link" href="https://aur.archlinux.org/packages/visual-studio-code-bin/"  target="_blank" rel="noopener"
     ><code>visual-studio-code-bin</code></a> this package contains full functions of vs-code including sync with GitHub. (Need <a class="link" href="#system" >Gnome Keyring</a> above)</p>
 <ul>
 <li>manager: <code>git</code></li>
+<li>Extention
+<ul>
+<li><a class="link" href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"  target="_blank" rel="noopener"
+    >GitHub Copilot</a>: <code>Install fron CSIX</code> (extensions top right corner)</li>
+<li>markdown
+<ul>
+<li><code>markdown all in one</code></li>
+<li><code>markdownlint</code></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
