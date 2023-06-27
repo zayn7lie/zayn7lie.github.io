@@ -63,6 +63,9 @@
     &gt;AUR - &lt;code&gt;android-sdk&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;System Monitor: &lt;code&gt;xfce4-taskmanager&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;
 &lt;ul&gt;
@@ -133,6 +136,7 @@ xft-rgba=none
 &lt;ul&gt;
 &lt;li&gt;Video Player: &lt;code&gt;vlc&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;record &amp;amp; steaming: &lt;code&gt;obs-studio&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;edit: &lt;code&gt;flowblade&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -176,7 +180,30 @@ SDL_IM_MODULE=fcitx
 &lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt; or AUR - &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/visual-studio-code-bin/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;visual-studio-code-bin&lt;/code&gt;&lt;/a&gt; this package contains full functions of vs-code including sync with GitHub. (Need &lt;a class=&#34;link&#34; href=&#34;#system&#34; &gt;Gnome Keyring&lt;/a&gt; above)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;manager: &lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Programming
+&lt;ul&gt;
+&lt;li&gt;IntelliCode: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;IntelliCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/docs/cpp/config-linux#_explore-intellisense&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;C++&lt;/a&gt;: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;C/C++&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;gdb: &lt;code&gt;gdb&lt;/code&gt; (pacman)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;python
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python-pip&lt;/code&gt; (pacman)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python-ipykernel&lt;/code&gt; (pacman) + &lt;code&gt;Jupyter&lt;/code&gt; (vscode-previous version)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;manager: &lt;code&gt;git&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$ git config -–global user.name/user.email&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Extention
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
