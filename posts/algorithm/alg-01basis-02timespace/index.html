@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head>
-
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBJKC6FW2S"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-DBJKC6FW2S');
-        </script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: 为什么要关注时间和空间 想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。 不仅如此，算法竞赛中大多都会限制你所使用的空间（内存）和时间。并且往往时间的限制更严格（毕竟现在 CPU 等硬件可以不断的扩大内存，但是时间仍然对人类很宝贵）。 那我们怎么测量时间和空间呢？ —— 时间复杂度和空间复杂度 WHAT: 什么是时间复杂度和空间复杂度 我们先来看一个函数： void run1(int n){ printf(&amp;#34;execute &amp;#34;); for(int i = 1; i &amp;lt;= n; i &#43;&#43;) printf(&amp;#34;execute &amp;#34;); for(int i = 1; i &amp;lt;= n; i &#43;&#43;) for(int j = 1; j &amp;lt; = n; j &#43;&#43;) printf(&amp;#34;execute &amp;#34;); for(int a = 1; a &amp;lt;= n; a &#43;&#43;) for(int b = 1; b &amp;lt;= n; b &#43;&#43;) for(int c = 1; c &amp;lt;= n; c &#43;&#43;) printf(&amp;#34;execute &amp;#34;); } 运行一次这个程序要多久？很显然，要进行 $1 &#43; n &#43; n^2 &#43; n^3$ 次操作。相比一个要进行 run2(n) $n &#43; n^2 &#43; n^3$ 的程序一定更慢，相比 run3(n) $1 &#43; n &#43; n^2$ 当n不为0时也更慢。 我们来考虑两种情况，当n很小（趋近0）时，显然 $run2 &amp;lt; run3 &amp;lt; run1$。当n很大时（趋近正无穷）时， $run3 &amp;lt; run2 &amp;lt; run1$ 。那如果你要选一个程序来跑，你会选择 run2 还是 run3 ？ 也许你会反应过来，当n很小时，虽然run2更快，但是大家本身都很快，run3也许运行个1ms，run2只运行0.'>
 <title>从0开始的算法竞赛01-算法基础02：时间和空间</title>
 
@@ -762,5 +752,6 @@ a 到 b 的和 = 0到b的和 - 0到a - 1的和。那我们的数组需要储存�
     }());
 </script>
 
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "407bf5c0c80b4ec98f0e15deba4ee174"}'></script>
     </body>
 </html>

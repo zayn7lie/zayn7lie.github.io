@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head>
-
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBJKC6FW2S"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-DBJKC6FW2S');
-        </script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: 为什么我们要使用头文件？ 上节课我们已经了解了函数的结构及作用。实际上，存在这各种各样奇奇怪怪且复杂的函数，例如 打印函数 printf() 。 int printf (const char *__format, ...){ int __retval; __builtin_va_list __local_argv; __builtin_va_start( __local_argv, __format ); __retval = __mingw_vfprintf( stdout, __format, __local_argv ); __builtin_va_end( __local_argv ); return __retval; } 该函数的作用就是我们上节课提及的 输出 或者 打印 函数。而且这一段只是函数的主题部分，还有各种涉及计算机底层端口的各种调用和参数。 如果我们需要使用自己写一遍绝对是非常没有效率的行为。而且如果真的要求记忆这么大段内容这就不是理科竞赛的目的了。因此， c&#43;&#43; 已经帮我们写好了，而我们只需要通过一些小 tricks 就可以调用这些函数了 —— 使用头文件。 WHAT: 什么是头文件？ 存储了一些函数的文件，方便我们编写程序。 一般放在需要调用头文件程序（或函数）的头部（开始）。 HOW: 怎么使用头文件 #include&amp;lt;cstdio&amp;gt; //调用头文件&amp;lt;cstdio&amp;gt; 该头文件里包含 printf() 函数 int main(){ printf(&amp;#34;Hello, world!&amp;#34;); //&amp;#34;Hello, world!&amp;#34;打印出来/输出到终端（屏幕） return 0; } 接下来课程，我会在程序中使用 // 添加注解方便大家的理解，这些 // 之后的同行内容将被编译器忽略。相似的注解方式还有 /* 注解内容 */ 等。 我们发现上面的程序多了个 #include&amp;lt;cstdio&amp;gt; ，头文件的调用就是简简单单通过 #include&amp;lt;头文件&amp;gt; 来进行的。 大家发现我们并没有定义 printf() ，实际上这个函数已经被定义在 cstdio 头文件里了，所以我们是可以直接使用该函数的。 标准输入输出函数 接下来，我们将沿着 printf() 这个重要的函数，讲一讲输入和输出的方法。 WHY: 为什么存在输入输出，还需要“标准”？ 输入相当于我们把我们的需求输入计算机，计算机最终返回我们需要的结果。 输入设备和输出设备千奇百怪，什么都有。例如文件输入，终端输入等等。这些输入输出的格式也不一样 因此，我们需要让程序有统一的输入和输出格式和设备。 WHAT: 那什么是标准输入输出呢？ 标准输入输出是全由终端进行输入和输出的一种方式。 HOW: 怎么进行输入输出？ 首先，我要先说明，我并不推荐有些教练所述通过输入输出流进行输入输出（ &amp;lt;iostream&amp;gt; //input ouput stream 中的 std::cin 和 std::cout）因为它太 臃肿 了，在使用不当的情况下会拖累程序运行。 我推荐的是源自 c 语言的 &amp;lt;cstdio&amp;gt; //c standard input ouput 中的 scanf() 和 printf() 函数。 我们上面已经知道这两个函数需要调用 &amp;lt;cstdio&amp;gt; 函数，那我们这里会详细的将这两个函数该怎么用： printf(): scanf(): '>
 <title>从0开始的C&#43;&#43;语言基础02：头文件</title>
 
@@ -635,5 +625,6 @@
     }());
 </script>
 
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "407bf5c0c80b4ec98f0e15deba4ee174"}'></script>
     </body>
 </html>
