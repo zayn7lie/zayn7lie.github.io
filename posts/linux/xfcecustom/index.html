@@ -391,8 +391,7 @@ download snapshot $ makepkg $ sudo pacman -U *.">
 </li>
 <li>
 <p>backup: <code>restic</code> + <code>rclone</code>: <a class="link" href="https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone"  target="_blank" rel="noopener"
-    >https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone</a>
-t</p>
+    >https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone</a></p>
 </li>
 <li>
 <p>Android emulator: <a class="link" href="https://aur.archlinux.org/packages/android-emulator/"  target="_blank" rel="noopener"
@@ -570,6 +569,7 @@ SDL_IM_MODULE=fcitx
 <li><code>markdownlint</code></li>
 </ul>
 </li>
+<li><code>vim</code></li>
 </ul>
 </li>
 </ul>
@@ -578,8 +578,29 @@ SDL_IM_MODULE=fcitx
 <p>Paper: AUR - <a class="link" href="https://aur.archlinux.org/packages/zotero"  target="_blank" rel="noopener"
     ><code>zotero</code></a></p>
 <ul>
-<li><a class="link" href="https://retorque.re/zotero-better-bibtex/installation/"  target="_blank" rel="noopener"
-    >Better Bibtex</a></li>
+<li>
+<p><a class="link" href="https://retorque.re/zotero-better-bibtex/installation/"  target="_blank" rel="noopener"
+    >Better Bibtex</a></p>
+<ul>
+<li><code>BibTex Style as Google Research</code></li>
+<li>Edit -&gt; preference -&gt; <code>Better BibTex</code></li>
+<li>Citation key formula: <code>auth.lower + year + shorttitle(1,0).lower</code></li>
+</ul>
+</li>
+<li>
+<p><code>Copy BibTex</code></p>
+<ul>
+<li>Edit -&gt; preference -&gt; Export</li>
+<li>Item Format: <code>Better BibTex</code></li>
+</ul>
+</li>
+<li>
+<p>Exclude(omit) unnecessary item</p>
+<ul>
+<li><code>Better BibTex</code> -&gt; Export -&gt; Fields</li>
+<li>Fields to omit: <code>abstract, urldate, file, annotation, langid</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li>

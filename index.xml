@@ -53,8 +53,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;backup: &lt;code&gt;restic&lt;/code&gt; + &lt;code&gt;rclone&lt;/code&gt;: &lt;a class=&#34;link&#34; href=&#34;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&lt;/a&gt;
-t&lt;/p&gt;
+    &gt;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Android emulator: &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/android-emulator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -232,6 +231,7 @@ SDL_IM_MODULE=fcitx
 &lt;li&gt;&lt;code&gt;markdownlint&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vim&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -240,8 +240,29 @@ SDL_IM_MODULE=fcitx
 &lt;p&gt;Paper: AUR - &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/zotero&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;zotero&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://retorque.re/zotero-better-bibtex/installation/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Better Bibtex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://retorque.re/zotero-better-bibtex/installation/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Better Bibtex&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BibTex Style as Google Research&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit -&amp;gt; preference -&amp;gt; &lt;code&gt;Better BibTex&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Citation key formula: &lt;code&gt;auth.lower + year + shorttitle(1,0).lower&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Copy BibTex&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Edit -&amp;gt; preference -&amp;gt; Export&lt;/li&gt;
+&lt;li&gt;Item Format: &lt;code&gt;Better BibTex&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exclude(omit) unnecessary item&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Better BibTex&lt;/code&gt; -&amp;gt; Export -&amp;gt; Fields&lt;/li&gt;
+&lt;li&gt;Fields to omit: &lt;code&gt;abstract, urldate, file, annotation, langid&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -813,84 +834,6 @@ H_0: p &amp;gt; or &amp;lt; or != a&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>Vscode Setting</title>
-        <link>/posts/misc/misc-vscode/</link>
-        <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/posts/misc/misc-vscode/</guid>
-        <description>&lt;h2 id=&#34;extensions&#34;&gt;Extensions&lt;/h2&gt;
-&lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Markdown All in One&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Markdownlint&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Setting
-&lt;ul&gt;
-&lt;li&gt;Config: &lt;code&gt;&amp;quot;MD024&amp;quot;: {&amp;quot;siblings_only&amp;quot;: true}&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Markdown Preview Github Styling&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;latex&#34;&gt;Latex&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;LaTeX Workshop
-&lt;ul&gt;
-&lt;li&gt;Setting
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;quot;latex-workshop.latex.recipe.default&amp;quot;: &amp;quot;lastUsed&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;quot;latex-workshop.latex.recipes&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;pbpp&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;pdflatex&amp;quot;, &amp;quot;bibtex&amp;quot;, &amp;quot;pdflatex&amp;quot;, &amp;quot;pdflatex&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;pdflatex&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;pdflatex&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;latexmk&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;latexmk&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;latexmk (latexmkrc)&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;latexmk_rconly&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;latexmk (lualatex)&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;lualatexmk&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;latexmk (xelatex)&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;xelatexmk&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;Compile Rnw files&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;rnw2tex&amp;quot;, &amp;quot;latexmk&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;Compile Jnw files&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;jnw2tex&amp;quot;, &amp;quot;latexmk&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;Compile Pnw files&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;pnw2tex&amp;quot;, &amp;quot;latexmk&amp;quot; ] }, { &amp;quot;name&amp;quot;: &amp;quot;tectonic&amp;quot;, &amp;quot;tools&amp;quot;: [ &amp;quot;tectonic&amp;quot; ] } ]&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;quot;latex-workshop.latex.tools&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;latexmk&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;latexmk&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-synctex=1&amp;quot;, &amp;quot;-interaction=nonstopmode&amp;quot;, &amp;quot;-file-line-error&amp;quot;, &amp;quot;-pdf&amp;quot;, &amp;quot;-outdir=%OUTDIR%&amp;quot;, &amp;quot;%DOC%&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;lualatexmk&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;latexmk&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-synctex=1&amp;quot;, &amp;quot;-interaction=nonstopmode&amp;quot;, &amp;quot;-file-line-error&amp;quot;, &amp;quot;-lualatex&amp;quot;, &amp;quot;-outdir=%OUTDIR%&amp;quot;, &amp;quot;%DOC%&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;xelatexmk&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;latexmk&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-synctex=1&amp;quot;, &amp;quot;-interaction=nonstopmode&amp;quot;, &amp;quot;-file-line-error&amp;quot;, &amp;quot;-xelatex&amp;quot;, &amp;quot;-outdir=%OUTDIR%&amp;quot;, &amp;quot;%DOC%&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;latexmk_rconly&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;latexmk&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;%DOC%&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;pdflatex&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;pdflatex&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-synctex=1&amp;quot;, &amp;quot;-interaction=nonstopmode&amp;quot;, &amp;quot;-file-line-error&amp;quot;, &amp;quot;%DOC%&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;bibtex&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;bibtex&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;%DOCFILE%&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;rnw2tex&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;Rscript&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-e&amp;quot;, &amp;quot;knitr::opts_knit$set(concordance = TRUE); knitr::knit(&#39;%DOCFILE_EXT%&#39;)&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;jnw2tex&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;julia&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-e&amp;quot;, &amp;quot;using Weave; weave(\&amp;quot;%DOC_EXT%\&amp;quot;, doctype=\&amp;quot;tex\&amp;quot;)&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;jnw2texminted&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;julia&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-e&amp;quot;, &amp;quot;using Weave; weave(\&amp;quot;%DOC_EXT%\&amp;quot;, doctype=\&amp;quot;texminted\&amp;quot;)&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;pnw2tex&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;pweave&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-f&amp;quot;, &amp;quot;tex&amp;quot;, &amp;quot;%DOC_EXT%&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;pnw2texminted&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;pweave&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;-f&amp;quot;, &amp;quot;texminted&amp;quot;, &amp;quot;%DOC_EXT%&amp;quot; ], &amp;quot;env&amp;quot;: {} }, { &amp;quot;name&amp;quot;: &amp;quot;tectonic&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;tectonic&amp;quot;, &amp;quot;args&amp;quot;: [ &amp;quot;--synctex&amp;quot;, &amp;quot;--keep-logs&amp;quot;, &amp;quot;%DOC%.tex&amp;quot; ], &amp;quot;env&amp;quot;: {} } ]&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LTeX
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;quot;ltex.dictionary&amp;quot;: { &amp;quot;en-US&amp;quot;: [ &amp;quot;Zayn&amp;quot;, &amp;quot;BlazEndeR&amp;quot; ] }&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;quot;ltex.disabledRules&amp;quot;: { &amp;quot;en-US&amp;quot;: [ &amp;quot;ENGLISH_WORD_REPEAT_BEGINNING_RULE&amp;quot;, &amp;quot;UPPERCASE_SENTENCE_START&amp;quot; ] }&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>Zotero Setting</title>
-        <link>/posts/misc/misc-zotero/</link>
-        <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/posts/misc/misc-zotero/</guid>
-        <description>&lt;h2 id=&#34;better-bibtex-for-zoterohttpsretorquerezotero-better-bibtex&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://retorque.re/zotero-better-bibtex/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;Better BibTex for Zotero&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;BibTex Style as Google Research&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Edit -&amp;gt; preference -&amp;gt; &lt;code&gt;Better BibTex&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Citation key formula: &lt;code&gt;auth.lower + year + shorttitle(1,0).lower&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Copy BibTex&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Edit -&amp;gt; preference -&amp;gt; Export&lt;/li&gt;
-&lt;li&gt;Item Format: &lt;code&gt;Better BibTex&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Exclude(omit) unnecessary item&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Better BibTex&lt;/code&gt; -&amp;gt; Export -&amp;gt; Fields&lt;/li&gt;
-&lt;li&gt;Fields to omit: &lt;code&gt;abstract, urldate, file, annotation, langid&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;zotero-citation-counts-managerhttpsgithubcomeschnettzotero-citationcounts&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/eschnett/zotero-citationcounts&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;Zotero Citation Counts Manager&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
 </description>
         </item>
         <item>
@@ -2481,7 +2424,7 @@ $$&lt;/p&gt;
         <guid>/page/about/</guid>
         <description>&lt;h2 id=&#34;zayn-lie&#34;&gt;Zayn Lie&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Account: zayn7lie (&lt;a class=&#34;link&#34; href=&#34;mailto:zayn7lie.ber7&amp;#43;blog@gmail.com&#34; &gt;zayn7lie.ber7+blog@gmail.com&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Account: zayn7lie (Email: &lt;code&gt;echo &amp;quot;emF5bjdsaWUuYmVyNytibG9nQGdtYWlsLmNvbQo=&amp;quot; | base64 -d&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;Background: New York University&lt;/li&gt;
 &lt;li&gt;Field: Mostly focusing on theory and basis of Mathematics, Computer Science, Data Science (Machine Learning).&lt;/li&gt;
 &lt;li&gt;Habits: Arch Linux User (with XFCE), Osu!, Arknights, open world game (e.g. Unturned, Terraria, Minecraft)&lt;/li&gt;
@@ -2490,7 +2433,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;泽忚&#34;&gt;泽忚&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;账号：zayn7lie, zayn_lie, zaynXlie (&lt;a class=&#34;link&#34; href=&#34;mailto:zayn7lie.ber7&amp;#43;blog@gmail.com&#34; &gt;zayn7lie.ber7+blog@gmail.com&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;账号：zayn7lie, zayn_lie, zaynXlie (邮箱：&lt;code&gt;echo &amp;quot;emF5bjdsaWUuYmVyNytibG9nQGdtYWlsLmNvbQo=&amp;quot; | base64 -d&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;学历：目前就读于 &lt;code&gt;New York University&lt;/code&gt; ， Mathematics, Computer Science, Data Science 专业方向。&lt;/li&gt;
 &lt;li&gt;领域：偏理论研究类蒟蒻，喜欢有挑战性的算法和数学问题，并曾喜欢游荡于各大竞赛（ &lt;code&gt;Google Code Jam&lt;/code&gt; ， &lt;code&gt;CodeForce&lt;/code&gt; 等），&lt;del&gt;又菜又爱玩&lt;/del&gt;。最近开始研究机器学习，研究机器学习解释性相关问题，入门 &lt;code&gt;Kaggle&lt;/code&gt; 竞赛。&lt;/li&gt;
 &lt;li&gt;爱好： Arch Linux 用户（桌面环境 XFCE ）， Osu! ，明日方舟，部分开放式游戏（ Unturned, Terraria, Minecraft 等）&lt;/li&gt;

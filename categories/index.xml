@@ -31,14 +31,6 @@
         <description>&lt;img src="/categories/aptest/APtest.png" alt="Featured image of post APtest" /&gt;</description>
         </item>
         <item>
-        <title>Misc</title>
-        <link>/categories/misc/</link>
-        <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/categories/misc/</guid>
-        <description>&lt;img src="/categories/misc/misc.webp" alt="Featured image of post Misc" /&gt;</description>
-        </item>
-        <item>
         <title>Algorithm</title>
         <link>/categories/algorithm/</link>
         <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
@@ -53,6 +45,14 @@
         
         <guid>/categories/c&#43;&#43;/</guid>
         <description>&lt;img src="/categories/c++/cpp.png" alt="Featured image of post C&#43;&#43;" /&gt;</description>
+        </item>
+        <item>
+        <title>Misc</title>
+        <link>/categories/misc/</link>
+        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/categories/misc/</guid>
+        <description>&lt;img src="/categories/misc/misc.webp" alt="Featured image of post Misc" /&gt;</description>
         </item>
         
     </channel>

@@ -74,24 +74,6 @@
     <loc>/posts/aptest/apt-stat/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/misc/</loc>
-    <lastmod>2023-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/paper/</loc>
-    <lastmod>2023-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/research/</loc>
-    <lastmod>2023-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/misc/misc-vscode/</loc>
-    <lastmod>2023-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/zotero/</loc>
-    <lastmod>2023-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/misc/misc-zotero/</loc>
-    <lastmod>2023-04-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/calbc/</loc>
     <lastmod>2023-04-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -201,6 +183,9 @@
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/jekyll/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/misc/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/c&#43;&#43;/cpp-01function/</loc>
