@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/aptest/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Statistic</title>
-        <link>/posts/aptest/apt-stat/</link>
+        <link>/posts/aptest/stat/</link>
         <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-stat/</guid>
+        <guid>/posts/aptest/stat/</guid>
         <description>&lt;h2 id=&#34;statisticdata&#34;&gt;Statistic(Data)&lt;/h2&gt;
 &lt;h3 id=&#34;collection&#34;&gt;Collection&lt;/h3&gt;
 &lt;h4 id=&#34;observation-study&#34;&gt;Observation Study&lt;/h4&gt;
@@ -268,10 +268,10 @@ H_0: p &amp;gt; or &amp;lt; or != a&lt;/p&gt;
         </item>
         <item>
         <title>Calculus</title>
-        <link>/posts/aptest/apt-calbc/</link>
+        <link>/posts/aptest/calbc/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-calbc/</guid>
+        <guid>/posts/aptest/calbc/</guid>
         <description>&lt;h2 id=&#34;differentiation&#34;&gt;Differentiation&lt;/h2&gt;
 &lt;h3 id=&#34;why&#34;&gt;WHY&lt;/h3&gt;
 &lt;ul&gt;
@@ -429,10 +429,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Electricity and Magnetism</title>
-        <link>/posts/aptest/apt-phyce/</link>
+        <link>/posts/aptest/phyce/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-phyce/</guid>
+        <guid>/posts/aptest/phyce/</guid>
         <description>&lt;h2 id=&#34;electricity&#34;&gt;Electricity&lt;/h2&gt;
 &lt;h3 id=&#34;micro&#34;&gt;Micro&lt;/h3&gt;
 &lt;h4 id=&#34;force-coulombs-law&#34;&gt;Force: Coulomb&amp;rsquo;s Law&lt;/h4&gt;
@@ -541,10 +541,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Mechanics</title>
-        <link>/posts/aptest/apt-phycm/</link>
+        <link>/posts/aptest/phycm/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-phycm/</guid>
+        <guid>/posts/aptest/phycm/</guid>
         <description>&lt;h2 id=&#34;motion-and-force&#34;&gt;Motion and Force&lt;/h2&gt;
 &lt;h3 id=&#34;basis&#34;&gt;Basis&lt;/h3&gt;
 &lt;p&gt;$$
@@ -601,10 +601,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>OOP (Objected-Oriented Programming)</title>
-        <link>/posts/aptest/apt-csa/</link>
+        <link>/posts/aptest/csa/</link>
         <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-csa/</guid>
+        <guid>/posts/aptest/csa/</guid>
         <description>&lt;p&gt;ps. Algorithm is too simple in AP CSA, and there are some similar grammar between java and c++. So I just conclude some basic java grammar instead of all knowledge points in AP testing.&lt;/p&gt;
 &lt;h2 id=&#34;class-creation&#34;&gt;Class creation&lt;/h2&gt;
 &lt;h3 id=&#34;normal&#34;&gt;Normal&lt;/h3&gt;

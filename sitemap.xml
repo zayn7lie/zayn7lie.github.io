@@ -35,13 +35,13 @@
     <loc>/tags/data/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/python/py-pydata/</loc>
+    <loc>/posts/proglang/py-pydata/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/python/py-pydraw/</loc>
+    <loc>/posts/proglang/py-pydraw/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/python/py-pyml/</loc>
+    <loc>/posts/proglang/py-pyml/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/matplotlib/</loc>
@@ -71,19 +71,19 @@
     <loc>/tags/stat/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/aptest/apt-stat/</loc>
+    <loc>/posts/aptest/stat/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/calbc/</loc>
     <lastmod>2023-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/aptest/apt-calbc/</loc>
+    <loc>/posts/aptest/calbc/</loc>
     <lastmod>2023-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/aptest/apt-phyce/</loc>
+    <loc>/posts/aptest/phyce/</loc>
     <lastmod>2023-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/aptest/apt-phycm/</loc>
+    <loc>/posts/aptest/phycm/</loc>
     <lastmod>2023-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/phyce/</loc>
@@ -95,7 +95,7 @@
     <loc>/tags/csa/</loc>
     <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/aptest/apt-csa/</loc>
+    <loc>/posts/aptest/csa/</loc>
     <lastmod>2023-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/algorithm/</loc>
@@ -107,13 +107,13 @@
     <loc>/tags/sort/</loc>
     <lastmod>2023-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/alg-01basis-04sort/</loc>
+    <loc>/posts/algorithm/01basis-04sort/</loc>
     <lastmod>2023-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/greedy/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/alg-01basis-03greedy/</loc>
+    <loc>/posts/algorithm/01basis-03greedy/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/complexity/</loc>
@@ -128,7 +128,7 @@
     <loc>/tags/time/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/alg-01basis-02timespace/</loc>
+    <loc>/posts/algorithm/01basis-02timespace/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/dichotony/</loc>
@@ -146,7 +146,7 @@
     <loc>/tags/recursion/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/alg-01basis-01recursionenumeration/</loc>
+    <loc>/posts/algorithm/01basis-01recursionenumeration/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/divide_and_conquer/</loc>
@@ -155,7 +155,7 @@
     <loc>/tags/simulation/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/alg-01basis-00introtoalgorithm/</loc>
+    <loc>/posts/algorithm/01basis-00introtoalgorithm/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/c&#43;&#43;/</loc>
@@ -167,7 +167,7 @@
     <loc>/tags/headfile/</loc>
     <lastmod>2023-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/c&#43;&#43;/cpp-02headfile/</loc>
+    <loc>/posts/proglang/cpp-02headfile/</loc>
     <lastmod>2023-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/blog/</loc>
@@ -188,7 +188,7 @@
     <loc>/categories/misc/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/c&#43;&#43;/cpp-01function/</loc>
+    <loc>/posts/proglang/cpp-01function/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/misc/misc-blogbuildinglearning/</loc>
@@ -200,7 +200,7 @@
     <loc>/tags/environment/</loc>
     <lastmod>2023-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/c&#43;&#43;/cpp-00compilerenvironment/</loc>
+    <loc>/posts/proglang/cpp-00compilerenvironment/</loc>
     <lastmod>2023-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/page/about/</loc>
@@ -216,6 +216,8 @@
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/page/links/</loc>
+  </url><url>
+    <loc>/categories/proglang/</loc>
   </url><url>
     <loc>/page/search/</loc>
   </url>

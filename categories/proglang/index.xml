@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Programming Language on zayn_lie&#39;s blog</title>
+        <link>/categories/proglang/</link>
+        <description>Recent content in Programming Language on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language><atom:link href="/categories/proglang/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
+</rss>

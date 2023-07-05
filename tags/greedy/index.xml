@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Sat, 04 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/greedy/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>从0开始的算法竞赛01-算法基础03：贪心</title>
-        <link>/posts/algorithm/alg-01basis-03greedy/</link>
+        <link>/posts/algorithm/01basis-03greedy/</link>
         <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-03greedy/</guid>
+        <guid>/posts/algorithm/01basis-03greedy/</guid>
         <description>&lt;h2 id=&#34;why-为什么要学贪心算法&#34;&gt;WHY: 为什么要学贪心算法？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;我相信大家愿意跟着我建立算法和 c++ 体系的原因是体系的逻辑性及减少凭感觉解决问题，这也是本博客的目的。但是，凡事没有绝对。在算法中，有一种凭感觉解决问题的方法也成立了自己的体系 —— 贪心。&lt;/li&gt;

@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/function/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>从0开始的算法竞赛01-算法基础01：递归和枚举</title>
-        <link>/posts/algorithm/alg-01basis-01recursionenumeration/</link>
+        <link>/posts/algorithm/01basis-01recursionenumeration/</link>
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-01recursionenumeration/</guid>
+        <guid>/posts/algorithm/01basis-01recursionenumeration/</guid>
         <description>&lt;h2 id=&#34;递归recursion&#34;&gt;递归(Recursion)&lt;/h2&gt;
 &lt;h3 id=&#34;why-为什么要学递归&#34;&gt;WHY: 为什么要学递归？&lt;/h3&gt;
 &lt;ul&gt;
@@ -211,10 +211,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的C&#43;&#43;语言基础01：函数</title>
-        <link>/posts/c&#43;&#43;/cpp-01function/</link>
+        <link>/posts/proglang/cpp-01function/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/c&#43;&#43;/cpp-01function/</guid>
+        <guid>/posts/proglang/cpp-01function/</guid>
         <description>&lt;h2 id=&#34;why-为什么不应该先学hello-world&#34;&gt;WHY: 为什么不应该先学“Hello, world”？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;我相信更多人想问为什么从函数讲起，而不是从&amp;quot;Hello, world&amp;quot;讲起。原因很简单： &lt;code&gt;Hello, world&lt;/code&gt; 这个程序太“难”了。&lt;/li&gt;

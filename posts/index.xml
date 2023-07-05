@@ -488,10 +488,10 @@ SDL_IM_MODULE=fcitx
         </item>
         <item>
         <title>Data Analyzation</title>
-        <link>/posts/python/py-pydata/</link>
+        <link>/posts/proglang/py-pydata/</link>
         <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/python/py-pydata/</guid>
+        <guid>/posts/proglang/py-pydata/</guid>
         <description>&lt;h2 id=&#34;package&#34;&gt;Package&lt;/h2&gt;
 &lt;h3 id=&#34;pandas-import-data&#34;&gt;Pandas: import data&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install pandas
@@ -535,10 +535,10 @@ SDL_IM_MODULE=fcitx
         </item>
         <item>
         <title>Draw and Paint</title>
-        <link>/posts/python/py-pydraw/</link>
+        <link>/posts/proglang/py-pydraw/</link>
         <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/python/py-pydraw/</guid>
+        <guid>/posts/proglang/py-pydraw/</guid>
         <description>&lt;h2 id=&#34;package&#34;&gt;Package&lt;/h2&gt;
 &lt;h3 id=&#34;matplotlib-draw-data&#34;&gt;Matplotlib: draw data&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install matplotlib
@@ -556,10 +556,10 @@ SDL_IM_MODULE=fcitx
         </item>
         <item>
         <title>Machine Learning</title>
-        <link>/posts/python/py-pyml/</link>
+        <link>/posts/proglang/py-pyml/</link>
         <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/python/py-pyml/</guid>
+        <guid>/posts/proglang/py-pyml/</guid>
         <description>&lt;h2 id=&#34;package&#34;&gt;Package&lt;/h2&gt;
 &lt;h3 id=&#34;pytorch&#34;&gt;Pytorch&lt;/h3&gt;
 &lt;h3 id=&#34;scikit-learn&#34;&gt;Scikit-learn&lt;/h3&gt;
@@ -578,10 +578,10 @@ SDL_IM_MODULE=fcitx
         </item>
         <item>
         <title>Statistic</title>
-        <link>/posts/aptest/apt-stat/</link>
+        <link>/posts/aptest/stat/</link>
         <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-stat/</guid>
+        <guid>/posts/aptest/stat/</guid>
         <description>&lt;h2 id=&#34;statisticdata&#34;&gt;Statistic(Data)&lt;/h2&gt;
 &lt;h3 id=&#34;collection&#34;&gt;Collection&lt;/h3&gt;
 &lt;h4 id=&#34;observation-study&#34;&gt;Observation Study&lt;/h4&gt;
@@ -838,10 +838,10 @@ H_0: p &amp;gt; or &amp;lt; or != a&lt;/p&gt;
         </item>
         <item>
         <title>Calculus</title>
-        <link>/posts/aptest/apt-calbc/</link>
+        <link>/posts/aptest/calbc/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-calbc/</guid>
+        <guid>/posts/aptest/calbc/</guid>
         <description>&lt;h2 id=&#34;differentiation&#34;&gt;Differentiation&lt;/h2&gt;
 &lt;h3 id=&#34;why&#34;&gt;WHY&lt;/h3&gt;
 &lt;ul&gt;
@@ -999,10 +999,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Electricity and Magnetism</title>
-        <link>/posts/aptest/apt-phyce/</link>
+        <link>/posts/aptest/phyce/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-phyce/</guid>
+        <guid>/posts/aptest/phyce/</guid>
         <description>&lt;h2 id=&#34;electricity&#34;&gt;Electricity&lt;/h2&gt;
 &lt;h3 id=&#34;micro&#34;&gt;Micro&lt;/h3&gt;
 &lt;h4 id=&#34;force-coulombs-law&#34;&gt;Force: Coulomb&amp;rsquo;s Law&lt;/h4&gt;
@@ -1111,10 +1111,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Mechanics</title>
-        <link>/posts/aptest/apt-phycm/</link>
+        <link>/posts/aptest/phycm/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-phycm/</guid>
+        <guid>/posts/aptest/phycm/</guid>
         <description>&lt;h2 id=&#34;motion-and-force&#34;&gt;Motion and Force&lt;/h2&gt;
 &lt;h3 id=&#34;basis&#34;&gt;Basis&lt;/h3&gt;
 &lt;p&gt;$$
@@ -1171,10 +1171,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>OOP (Objected-Oriented Programming)</title>
-        <link>/posts/aptest/apt-csa/</link>
+        <link>/posts/aptest/csa/</link>
         <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/aptest/apt-csa/</guid>
+        <guid>/posts/aptest/csa/</guid>
         <description>&lt;p&gt;ps. Algorithm is too simple in AP CSA, and there are some similar grammar between java and c++. So I just conclude some basic java grammar instead of all knowledge points in AP testing.&lt;/p&gt;
 &lt;h2 id=&#34;class-creation&#34;&gt;Class creation&lt;/h2&gt;
 &lt;h3 id=&#34;normal&#34;&gt;Normal&lt;/h3&gt;
@@ -1363,10 +1363,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础04：排序</title>
-        <link>/posts/algorithm/alg-01basis-04sort/</link>
+        <link>/posts/algorithm/01basis-04sort/</link>
         <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-04sort/</guid>
+        <guid>/posts/algorithm/01basis-04sort/</guid>
         <description>&lt;h2 id=&#34;why-为什么学排序相关的算法&#34;&gt;WHY: 为什么学排序相关的算法？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;实际上，我们学排序并不是因为排序本身，毕竟 c++ 本身已经又自己的排序函数 &lt;code&gt;std::sort(头指针，尾指针，（规则）)&lt;/code&gt; 位于 &lt;code&gt;&amp;lt;algorithm&amp;gt;&lt;/code&gt; 头文件中。而且这个排序一般比我们自己写的时间复杂度更低。&lt;/li&gt;
@@ -1381,10 +1381,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础03：贪心</title>
-        <link>/posts/algorithm/alg-01basis-03greedy/</link>
+        <link>/posts/algorithm/01basis-03greedy/</link>
         <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-03greedy/</guid>
+        <guid>/posts/algorithm/01basis-03greedy/</guid>
         <description>&lt;h2 id=&#34;why-为什么要学贪心算法&#34;&gt;WHY: 为什么要学贪心算法？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;我相信大家愿意跟着我建立算法和 c++ 体系的原因是体系的逻辑性及减少凭感觉解决问题，这也是本博客的目的。但是，凡事没有绝对。在算法中，有一种凭感觉解决问题的方法也成立了自己的体系 —— 贪心。&lt;/li&gt;
@@ -1475,10 +1475,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础02：时间和空间</title>
-        <link>/posts/algorithm/alg-01basis-02timespace/</link>
+        <link>/posts/algorithm/01basis-02timespace/</link>
         <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-02timespace/</guid>
+        <guid>/posts/algorithm/01basis-02timespace/</guid>
         <description>&lt;h2 id=&#34;why-为什么要关注时间和空间&#34;&gt;WHY: 为什么要关注时间和空间&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。&lt;/li&gt;
@@ -1654,10 +1654,10 @@ a 到 b 的和 = 0到b的和 - 0到a - 1的和。那我们的数组需要储存�
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础01：递归和枚举</title>
-        <link>/posts/algorithm/alg-01basis-01recursionenumeration/</link>
+        <link>/posts/algorithm/01basis-01recursionenumeration/</link>
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-01recursionenumeration/</guid>
+        <guid>/posts/algorithm/01basis-01recursionenumeration/</guid>
         <description>&lt;h2 id=&#34;递归recursion&#34;&gt;递归(Recursion)&lt;/h2&gt;
 &lt;h3 id=&#34;why-为什么要学递归&#34;&gt;WHY: 为什么要学递归？&lt;/h3&gt;
 &lt;ul&gt;
@@ -1857,10 +1857,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？</title>
-        <link>/posts/algorithm/alg-01basis-00introtoalgorithm/</link>
+        <link>/posts/algorithm/01basis-00introtoalgorithm/</link>
         <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-00introtoalgorithm/</guid>
+        <guid>/posts/algorithm/01basis-00introtoalgorithm/</guid>
         <description>&lt;h2 id=&#34;why-为什么要分析算法问题我怎么知道我是分析还是凭感觉&#34;&gt;WHY: 为什么要分析算法问题？我怎么知道我是分析还是凭感觉？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;如果你真的有这种疑惑，那么你大概率平时是靠感觉解决问题的 —— 我并不是说我们并不能靠感觉解决问题的，且凭感觉解决问题也是很重要的一项技能（凭感觉解决问题其实并不是什么不好的方式，其实就是第六感），凭感觉有着速度快、和经验正相关的精准等优点。但是作为理科竞赛，我更希望凭感觉少些，分析的成分多些。这样在你一些从没有遇到类型的问题你也可以得出正确答案。&lt;/li&gt;
@@ -1913,10 +1913,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的C&#43;&#43;语言基础02：头文件</title>
-        <link>/posts/c&#43;&#43;/cpp-02headfile/</link>
+        <link>/posts/proglang/cpp-02headfile/</link>
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/c&#43;&#43;/cpp-02headfile/</guid>
+        <guid>/posts/proglang/cpp-02headfile/</guid>
         <description>&lt;h2 id=&#34;why-为什么我们要使用头文件&#34;&gt;WHY: 为什么我们要使用头文件？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;上节课我们已经了解了函数的结构及作用。实际上，存在这各种各样奇奇怪怪且复杂的函数，例如 &lt;em&gt;打印函数&lt;/em&gt; &lt;code&gt;printf()&lt;/code&gt; 。&lt;/li&gt;
@@ -1977,10 +1977,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的C&#43;&#43;语言基础01：函数</title>
-        <link>/posts/c&#43;&#43;/cpp-01function/</link>
+        <link>/posts/proglang/cpp-01function/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/c&#43;&#43;/cpp-01function/</guid>
+        <guid>/posts/proglang/cpp-01function/</guid>
         <description>&lt;h2 id=&#34;why-为什么不应该先学hello-world&#34;&gt;WHY: 为什么不应该先学“Hello, world”？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;我相信更多人想问为什么从函数讲起，而不是从&amp;quot;Hello, world&amp;quot;讲起。原因很简单： &lt;code&gt;Hello, world&lt;/code&gt; 这个程序太“难”了。&lt;/li&gt;
@@ -2320,10 +2320,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>从0开始的C&#43;&#43;语言基础00：编译器及C&#43;&#43;环境的设置</title>
-        <link>/posts/c&#43;&#43;/cpp-00compilerenvironment/</link>
+        <link>/posts/proglang/cpp-00compilerenvironment/</link>
         <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/c&#43;&#43;/cpp-00compilerenvironment/</guid>
+        <guid>/posts/proglang/cpp-00compilerenvironment/</guid>
         <description>&lt;h2 id=&#34;why-为什么要使用编译器和搭建-c-环境&#34;&gt;WHY: 为什么要使用编译器和搭建 C++ 环境&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;~= 为什么吃饭要使用嘴巴&lt;/li&gt;

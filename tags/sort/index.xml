@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/sort/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>从0开始的算法竞赛01-算法基础04：排序</title>
-        <link>/posts/algorithm/alg-01basis-04sort/</link>
+        <link>/posts/algorithm/01basis-04sort/</link>
         <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-04sort/</guid>
+        <guid>/posts/algorithm/01basis-04sort/</guid>
         <description>&lt;h2 id=&#34;why-为什么学排序相关的算法&#34;&gt;WHY: 为什么学排序相关的算法？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;实际上，我们学排序并不是因为排序本身，毕竟 c++ 本身已经又自己的排序函数 &lt;code&gt;std::sort(头指针，尾指针，（规则）)&lt;/code&gt; 位于 &lt;code&gt;&amp;lt;algorithm&amp;gt;&lt;/code&gt; 头文件中。而且这个排序一般比我们自己写的时间复杂度更低。&lt;/li&gt;

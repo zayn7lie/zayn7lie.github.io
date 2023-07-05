@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/time/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>从0开始的算法竞赛01-算法基础02：时间和空间</title>
-        <link>/posts/algorithm/alg-01basis-02timespace/</link>
+        <link>/posts/algorithm/01basis-02timespace/</link>
         <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/alg-01basis-02timespace/</guid>
+        <guid>/posts/algorithm/01basis-02timespace/</guid>
         <description>&lt;h2 id=&#34;why-为什么要关注时间和空间&#34;&gt;WHY: 为什么要关注时间和空间&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。&lt;/li&gt;
