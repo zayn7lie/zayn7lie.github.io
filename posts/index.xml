@@ -53,7 +53,8 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;backup: &lt;code&gt;restic&lt;/code&gt; + &lt;code&gt;rclone&lt;/code&gt;: &lt;a class=&#34;link&#34; href=&#34;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&lt;/a&gt;&lt;/p&gt;
+    &gt;https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone&lt;/a&gt;
+t&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Android emulator: &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/android-emulator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -65,6 +66,21 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;System Monitor: &lt;code&gt;xfce4-taskmanager&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Manual: &lt;code&gt;man&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Secure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ufw&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$ sudo ufw allow ?{port}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ sudo ufw enable&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/ufw/before.rules&lt;/code&gt; - &lt;code&gt;# ok icmp codes for INPUT&lt;/code&gt;: &lt;code&gt;-A ufw-before-input -p icmp --icmp-type echo-request -j DROP&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;
@@ -129,6 +145,7 @@ xft-rgba=none
 &lt;li&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt; (Status Icon in Config)&lt;/li&gt;
+&lt;li&gt;Steaming: aur - &lt;code&gt;soundnode&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -144,6 +161,7 @@ xft-rgba=none
 &lt;ul&gt;
 &lt;li&gt;Screenshot: &lt;code&gt;flameshot&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;edit: &lt;code&gt;krita&lt;/code&gt; &lt;code&gt;inkscape&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;view: &lt;code&gt;ristretto&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -239,7 +257,7 @@ SDL_IM_MODULE=fcitx
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;community: &lt;code&gt;telegram-desktop&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;community: &lt;code&gt;telegram-desktop&lt;/code&gt; &lt;code&gt;discord&lt;/code&gt; AUR - &lt;code&gt;zoom&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Browser: &lt;code&gt;firefox&lt;/code&gt;&lt;/p&gt;

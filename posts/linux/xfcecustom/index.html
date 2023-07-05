@@ -391,7 +391,8 @@ download snapshot $ makepkg $ sudo pacman -U *.">
 </li>
 <li>
 <p>backup: <code>restic</code> + <code>rclone</code>: <a class="link" href="https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone"  target="_blank" rel="noopener"
-    >https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone</a></p>
+    >https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone</a>
+t</p>
 </li>
 <li>
 <p>Android emulator: <a class="link" href="https://aur.archlinux.org/packages/android-emulator/"  target="_blank" rel="noopener"
@@ -403,6 +404,21 @@ download snapshot $ makepkg $ sudo pacman -U *.">
 </li>
 <li>
 <p>System Monitor: <code>xfce4-taskmanager</code></p>
+</li>
+<li>
+<p>Manual: <code>man</code></p>
+</li>
+<li>
+<p>Secure</p>
+<ul>
+<li><code>ufw</code>
+<ul>
+<li><code>$ sudo ufw allow ?{port}</code></li>
+<li><code>$ sudo ufw enable</code></li>
+<li><code>/etc/ufw/before.rules</code> - <code># ok icmp codes for INPUT</code>: <code>-A ufw-before-input -p icmp --icmp-type echo-request -j DROP</code></li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 <h2 id="appearance">Appearance</h2>
@@ -467,6 +483,7 @@ xft-rgba=none
 <li>Noise suppression: <a class="link" href="https://github.com/werman/noise-suppression-for-voice"  target="_blank" rel="noopener"
     ><code>noise-suppression-for-voice</code></a></li>
 <li>Music Player: <code>audacious</code> (Status Icon in Config)</li>
+<li>Steaming: aur - <code>soundnode</code></li>
 </ul>
 </li>
 <li>
@@ -482,6 +499,7 @@ xft-rgba=none
 <ul>
 <li>Screenshot: <code>flameshot</code></li>
 <li>edit: <code>krita</code> <code>inkscape</code></li>
+<li>view: <code>ristretto</code></li>
 </ul>
 </li>
 </ul>
@@ -577,7 +595,7 @@ SDL_IM_MODULE=fcitx
 </ul>
 </li>
 <li>
-<p>community: <code>telegram-desktop</code></p>
+<p>community: <code>telegram-desktop</code> <code>discord</code> AUR - <code>zoom</code></p>
 </li>
 <li>
 <p>Browser: <code>firefox</code></p>
