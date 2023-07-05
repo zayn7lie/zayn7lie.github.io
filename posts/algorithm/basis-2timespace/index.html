@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: 为什么要关注时间和空间 想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。 不仅如此，算法竞赛中大多都会限制你所使用的空间（内存）和时间。并且往往时间的限制更严格（毕竟现在 CPU 等硬件可以不断的扩大内存，但是时间仍然对人类很宝贵）。 那我们怎么测量时间和空间呢？ —— 时间复杂度和空间复杂度 WHAT: 什么是时间复杂度和空间复杂度 我们先来看一个函数： void run1(int n){ printf(&amp;#34;execute &amp;#34;); for(int i = 1; i &amp;lt;= n; i &#43;&#43;) printf(&amp;#34;execute &amp;#34;); for(int i = 1; i &amp;lt;= n; i &#43;&#43;) for(int j = 1; j &amp;lt; = n; j &#43;&#43;) printf(&amp;#34;execute &amp;#34;); for(int a = 1; a &amp;lt;= n; a &#43;&#43;) for(int b = 1; b &amp;lt;= n; b &#43;&#43;) for(int c = 1; c &amp;lt;= n; c &#43;&#43;) printf(&amp;#34;execute &amp;#34;); } 运行一次这个程序要多久？很显然，要进行 $1 &#43; n &#43; n^2 &#43; n^3$ 次操作。相比一个要进行 run2(n) $n &#43; n^2 &#43; n^3$ 的程序一定更慢，相比 run3(n) $1 &#43; n &#43; n^2$ 当n不为0时也更慢。 我们来考虑两种情况，当n很小（趋近0）时，显然 $run2 &amp;lt; run3 &amp;lt; run1$。当n很大时（趋近正无穷）时， $run3 &amp;lt; run2 &amp;lt; run1$ 。那如果你要选一个程序来跑，你会选择 run2 还是 run3 ？ 也许你会反应过来，当n很小时，虽然run2更快，但是大家本身都很快，run3也许运行个1ms，run2只运行0.'>
+<title>从0开始的算法竞赛01-算法基础02：时间和空间</title>
+
+<link rel='canonical' href='/posts/algorithm/basis-2timespace/'>
+
+<link rel="stylesheet" href="/scss/style.min.542e4d78795d8585adc4270db4f7e4e460c92c614a8023b37eaaec53ce1d2557.css"><meta property='og:title' content='从0开始的算法竞赛01-算法基础02：时间和空间'>
+<meta property='og:description' content='WHY: 为什么要关注时间和空间 想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。 不仅如此，算法竞赛中大多都会限制你所使用的空间（内存）和时间。并且往往时间的限制更严格（毕竟现在 CPU 等硬件可以不断的扩大内存，但是时间仍然对人类很宝贵）。 那我们怎么测量时间和空间呢？ —— 时间复杂度和空间复杂度 WHAT: 什么是时间复杂度和空间复杂度 我们先来看一个函数： void run1(int n){ printf(&amp;#34;execute &amp;#34;); for(int i = 1; i &amp;lt;= n; i &#43;&#43;) printf(&amp;#34;execute &amp;#34;); for(int i = 1; i &amp;lt;= n; i &#43;&#43;) for(int j = 1; j &amp;lt; = n; j &#43;&#43;) printf(&amp;#34;execute &amp;#34;); for(int a = 1; a &amp;lt;= n; a &#43;&#43;) for(int b = 1; b &amp;lt;= n; b &#43;&#43;) for(int c = 1; c &amp;lt;= n; c &#43;&#43;) printf(&amp;#34;execute &amp;#34;); } 运行一次这个程序要多久？很显然，要进行 $1 &#43; n &#43; n^2 &#43; n^3$ 次操作。相比一个要进行 run2(n) $n &#43; n^2 &#43; n^3$ 的程序一定更慢，相比 run3(n) $1 &#43; n &#43; n^2$ 当n不为0时也更慢。 我们来考虑两种情况，当n很小（趋近0）时，显然 $run2 &amp;lt; run3 &amp;lt; run1$。当n很大时（趋近正无穷）时， $run3 &amp;lt; run2 &amp;lt; run1$ 。那如果你要选一个程序来跑，你会选择 run2 还是 run3 ？ 也许你会反应过来，当n很小时，虽然run2更快，但是大家本身都很快，run3也许运行个1ms，run2只运行0.'>
+<meta property='og:url' content='/posts/algorithm/basis-2timespace/'>
+<meta property='og:site_name' content='zayn_lie&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='algorithm' /><meta property='article:tag' content='time' /><meta property='article:tag' content='space' /><meta property='article:tag' content='complexity' /><meta property='article:tag' content='multiply' /><meta property='article:published_time' content='2023-03-03T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-03-03T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="从0开始的算法竞赛01-算法基础02：时间和空间">
+<meta name="twitter:description" content="WHY: 为什么要关注时间和空间 想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。 不仅如此，算法竞赛中大多都会限制你所使用的空间（内存）和时间。并且往往时间的限制更严格（毕竟现在 CPU 等硬件可以不断的扩大内存，但是时间仍然对人类很宝贵）。 那我们怎么测量时间和空间呢？ —— 时间复杂度和空间复杂度 WHAT: 什么是时间复杂度和空间复杂度 我们先来看一个函数： void run1(int n){ printf(&amp;#34;execute &amp;#34;); for(int i = 1; i &amp;lt;= n; i &#43;&#43;) printf(&amp;#34;execute &amp;#34;); for(int i = 1; i &amp;lt;= n; i &#43;&#43;) for(int j = 1; j &amp;lt; = n; j &#43;&#43;) printf(&amp;#34;execute &amp;#34;); for(int a = 1; a &amp;lt;= n; a &#43;&#43;) for(int b = 1; b &amp;lt;= n; b &#43;&#43;) for(int c = 1; c &amp;lt;= n; c &#43;&#43;) printf(&amp;#34;execute &amp;#34;); } 运行一次这个程序要多久？很显然，要进行 $1 &#43; n &#43; n^2 &#43; n^3$ 次操作。相比一个要进行 run2(n) $n &#43; n^2 &#43; n^3$ 的程序一定更慢，相比 run3(n) $1 &#43; n &#43; n^2$ 当n不为0时也更慢。 我们来考虑两种情况，当n很小（趋近0）时，显然 $run2 &amp;lt; run3 &amp;lt; run1$。当n很大时（趋近正无穷）时， $run3 &amp;lt; run2 &amp;lt; run1$ 。那如果你要选一个程序来跑，你会选择 run2 还是 run3 ？ 也许你会反应过来，当n很小时，虽然run2更快，但是大家本身都很快，run3也许运行个1ms，run2只运行0.">
+    <link rel="shortcut icon" href="/favicon-32x32.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu5f6eb280eeff4ec5c1d9478805c7efdb_400985_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">zayn_lie&#39;s blog</a></h1>
+            <h2 class="site-description">Algorithm&amp;Mathematics, Music_Theory&amp;Rhythm_Game, Rationality&amp;Logicism, Peace&amp;Open_Source</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/sponsor/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Sponsor</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-为什么要关注时间和空间">WHY: 为什么要关注时间和空间</a></li>
+    <li><a href="#what-什么是时间复杂度和空间复杂度">WHAT: 什么是时间复杂度和空间复杂度</a></li>
+    <li><a href="#how-怎么测量时间复杂度怎么优化时间复杂度">HOW: 怎么测量时间复杂度？怎么优化时间复杂度？</a>
+      <ul>
+        <li><a href="#测量时间复杂度的测量">测量时间复杂度的测量</a></li>
+        <li><a href="#时间复杂度的优化和前缀和">时间复杂度的优化和前缀和</a></li>
+      </ul>
+    </li>
+    <li><a href="#练习">练习</a>
+      <ul>
+        <li><a href="#kn">KN</a></li>
+        <li><a href="#us">US</a></li>
+        <li><a href="#mt">MT</a></li>
+        <li><a href="#usmt">US+MT</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/algorithm/" style="background-color: #00e89b; color: #000000;">
+                Algorithm
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/algorithm/basis-2timespace/">从0开始的算法竞赛01-算法基础02：时间和空间</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">03/03/23</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="why-为什么要关注时间和空间">WHY: 为什么要关注时间和空间</h2>
+<ul>
+<li>想象你面前有两个程序可以实现你的目的。 A 程序需要 1 GB 的内存来运行且要跑1个小时才能得出答案， B 程序需要 1 KB 内存需要跑1秒钟得出答案，你会选择哪个程序。很显然， B 程序。</li>
+<li>不仅如此，算法竞赛中大多都会限制你所使用的空间（内存）和时间。并且往往时间的限制更严格（毕竟现在 CPU 等硬件可以不断的扩大内存，但是时间仍然对人类很宝贵）。</li>
+<li>那我们怎么测量时间和空间呢？ —— 时间复杂度和空间复杂度</li>
+</ul>
+<h2 id="what-什么是时间复杂度和空间复杂度">WHAT: 什么是时间复杂度和空间复杂度</h2>
+<ul>
+<li>我们先来看一个函数：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run1</span>(<span style="color:#66d9ef">int</span> n){
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;execute &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;execute &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; j <span style="color:#f92672">&lt;</span> <span style="color:#f92672">=</span> n; j <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;execute &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; a <span style="color:#f92672">&lt;=</span> n; a <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; b <span style="color:#f92672">&lt;=</span> n; b <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; c <span style="color:#f92672">&lt;=</span> n; c <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>            printf(<span style="color:#e6db74">&#34;execute &#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>运行一次这个程序要多久？很显然，要进行 $1 + n + n^2 + n^3$ 次操作。相比一个要进行 <code>run2(n)</code> $n + n^2 + n^3$ 的程序一定更慢，相比 <code>run3(n)</code> $1 + n + n^2$ 当n不为0时也更慢。</li>
+<li>我们来考虑两种情况，当n很小（趋近0）时，显然 $run2 &lt; run3 &lt; run1$。当n很大时（趋近正无穷）时， $run3 &lt; run2 &lt; run1$ 。那如果你要选一个程序来跑，你会选择 run2 还是 run3 ？</li>
+<li>也许你会反应过来，当n很小时，虽然run2更快，但是大家本身都很快，run3也许运行个1ms，run2只运行0.99999ms，但我哪感受的出来？而且如果有个时间限制，run2和run3一定都不会超出限制。但是n很大的时候，run2因为三次方的数量级增长的很快，一下就会慢run3很多。所以我们都会选择run3来运行。</li>
+<li>通过这个例子，大家会有一个模糊的概念，我们关注时间的时候往往关注的是最高次方（或者增长最快的哪一项），因为我们在评价程序快慢的时候只有在 n 很大的情况下评价才有意义， n 很小大家速度都差不多，是没什么意义的。所以我们就创造了一个符号来表示程序运行的最高次项（或增长最快的项） - $O$ ，称为时间复杂度。例如run1和run2的时间复杂度为 $O(n^3)$ ，run3的时间复杂度为 $O(n^2)$ 这下谁快谁慢就显而易见了。</li>
+<li>知道了时间复杂度，那空间复杂度是什么？还记得例如递归的函数里面套函数吗？当函数运行一半跑去运行另一个函数时，这个函数还没返回值就会先占用一定的内存。另外你用的参数越多，占用的内存也越多。比如你开一个 10^9 的数组一定比开 10 的数组占用的空间多。因此我们知道空间复杂度和调用的函数深度（函数里面调用函数的次数，每次就像往深处又探了一点）与参数的使用相关。那计算公式呢？其实不太重要。因为你只要注意这两点基本上就不再会遇到空间不足的问题了 —— 毕竟正如上面所说，竞赛重时间轻空间。并且这里还可以回顾上章所说为什么如果递归的回归没有加限制条件往往会爆内存 —— 函数无线的深探下去，占用的内存越来越多，最终导致 CPU 内存占满程序运行错误。</li>
+</ul>
+<h2 id="how-怎么测量时间复杂度怎么优化时间复杂度">HOW: 怎么测量时间复杂度？怎么优化时间复杂度？</h2>
+<h3 id="测量时间复杂度的测量">测量时间复杂度的测量</h3>
+<ul>
+<li>根据上面的例子，我们可以知道时间复杂度只与最高次项有关，那次项间怎么对比呢？我们来看这组关系：</li>
+</ul>
+<p>$$
+1 &lt; \log{n} &lt; n &lt; n \cdot \log{n} &lt; n^2 &lt; n^2 \cdot \log{n} &lt; \dotso
+$$</p>
+<ul>
+<li>这么多实际上只要知道 $1 &lt; \log{n} &lt; n$ 即可，剩下的自己组合相乘。</li>
+<li>1 用在正常的语句，没有枚举循环递归等等，最正常最快的时间复杂度。有些人会有为什么不是2，3之类的疑惑（当有2个或3个语句）。实际上，这些系数都是搭配常数，不影响整体的上升趋势，比起趋向无限大的n时均可忽略不计，常数无论搭配哪种系数绝对比不过一次二次的n。同理，如果操作次数为 $2 \cdot n$ 我们也仍写作 $O(n)$ 。</li>
+<li>n 就是正常只有一个循环就是 $O(n)$ ，循环里套一个循环娃就是 $O(n^2)$ ，循环里套的娃再套一个娃就是 $O(n^3)$</li>
+<li>$O(\log{n})$ 的时间复杂度实际上在上一节课枚举中找已经排好的元素中是否存在某个元素就出现过。大家发现我们每次提出中间然后一分为二，不断的一分为二（专业称为二分）就创造出了 $\log_{2}{n}$ 次操作。但是底数2仍然只是个常数，因为 $\log_{2}{n} = \frac{\log_{a}{n}}{\log_{a}{2}}$ 其中 $\log_{a}{2}$ 作为常数不影响整体趋势，因此我们直接写成 $\log{n}$ 即可。
+<ul>
+<li>有二分就有倍增，倍增也是可以将 $O(n)$ 优化为 $O(\log{n})$ 的一种常用手段。倍增的理解这里就不再提及了，有一篇很好的理解方式推荐给大家：<a class="link" href="https://blog.csdn.net/jarjingx/article/details/8180560"  target="_blank" rel="noopener"
+    >倍增与兔子的故事</a></li>
+</ul>
+</li>
+<li>那 $n \cdot \log{n}$ 应该也不难理解：循环里套一个二分就是 $O(n \cdot \log{n})$</li>
+<li>剩下的都是一样的道理，至于一些我们没见过的时间复杂度会在后面遇到的时候再讲。</li>
+</ul>
+<h3 id="时间复杂度的优化和前缀和">时间复杂度的优化和前缀和</h3>
+<ul>
+<li>大家发现我们没有提到空间复杂度，还是那句话，现代 <em>重时间轻空间</em> 。因此，我们往往会牺牲空间复杂度来减小时间复杂度，或者说 <em>拿空间换时间</em> 。这节课我们会介绍拿空间换时间的典型例子 —— 前缀和。</li>
+<li>我们先看下这道题目：已知数组储存有 n 个数，求 t 次第 a 个数到第 b 个数所有数的和（对于每次 a, b 不相同）。</li>
+<li>正常的思路就是从 a 一个一个加到 b ，因此会写出这样的程序：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">sum</span>(<span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> vector, <span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> a; i <span style="color:#f92672">&lt;=</span> b; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        ans <span style="color:#f92672">+=</span> vector[i];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ans;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>先问问大家这个程序运行一次的时间复杂度是多少？很容易回答： $O(b - a)$ 。但是是错误的，正确答案是 $O(n)$ 。注意，我讲时间复杂度的时候一直在强调上升趋势，大家发现我 b - a 的限制只会与 n 相关，当 n 越大， b - a 的范围可以越大，换句话说，上升的比例和 n 成正比。所以，正确答案是 $O(n)$。如果调用这个函数的次数为t，那么总时间复杂度为 $O(t \cdot n)$ 。也许你还不是很理解，但没关系，我们接下来会遇到大量对于时间复杂度的考虑和计算，你也会对时间复杂度有更深刻的了解。</li>
+<li>一般来说，枚举都可以进行优化，那这个可不可以进行一些优化（我们接下来课程说的优化一般都将重心放在时间复杂度的优化）呢？照样，我们不会像某些竞赛教练先告诉大家有前缀和然后逆推到结论：前缀和能优化时间复杂度，我们照样按照逻辑正着推。大家发现，我能优化的点只有在这个循环上 —— 毕竟你不能改变函数的调用次数。那怎么优化呢？还记得我们可以 <em>拿空间换时间</em> ，那么我希望能够先储存一定的信息，然后通过这个信息能够直接快速的得出 a 到 b 的和。那我要储存什么信息呢？什么信息能够在不破坏（不加深）时间复杂度的情况下提前储存和的信息？首先我们可以分析（化简和拆分）这个问题 —— 怎么处理从 a 开始的和 + 怎么处理到 b 结尾的和。然后推导公式 —— 两边如果都添上一个从0开始的和，那就有
+a 到 b 的和 = 0到b的和 - 0到a - 1的和。那我们的数组需要储存的信息就是从0到x的和即可（$O(n)$）（我只要储存一次即可），剩下需要访问的话就直接把 <code>vector[b]</code> 和 <code>vector[a - 1]</code> 相减即可（$O(t \cdot 1)$）总时间复杂度 $O(n + t) &lt; O(t \cdot n)$ 。因此，我们用一个数组（空间），储存了一些关键信息，成功的化简了时间复杂度。因此程序变成这样：</li>
+<li>前缀和数组构建：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> vector[n <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>], sum[n <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> {<span style="color:#ae81ff">0</span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">construct</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i <span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>        sum[i] <span style="color:#f92672">=</span> sum[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> vector[i];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>主要函数就变成这个样子：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">sumFromAToB</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sum[b] <span style="color:#f92672">-</span> sum[a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>用数组储存信息化简时间复杂度是一种非常重要的化简方法，在后面线段树、并查集等等都会用到。希望大家能够好好掌握前缀和，掌握这种用空间换时间很基本的方法。我们在今天的练习中还会对前缀和进行拓展，希望大家完成后认真的学习一下题解，相信对大家以后的优化程序能力会有很大提升。</li>
+</ul>
+<h2 id="练习">练习</h2>
+<h3 id="kn">KN</h3>
+<ul>
+<li><a class="link" href="https://www.luogu.com.cn/problem/P1115"  target="_blank" rel="noopener"
+    >luogu-P1115 最大子段和</a>（运用前缀和）
+<ul>
+<li>40分基本要求</li>
+<li>100分需要优化遍历：想想哪些步骤是没有必要的？</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>40分主要代码：（a是前缀和数组）</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> a){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1e5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> i; j <span style="color:#f92672">&lt;=</span> n; j <span style="color:#f92672">++</span>){ <span style="color:#75715e">// [i, j]这个区间之和
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      ans <span style="color:#f92672">=</span> ans <span style="color:#f92672">&gt;</span> a[j] <span style="color:#f92672">-</span> a[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">?</span> ans : a[j] <span style="color:#f92672">-</span> a[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]; <span style="color:#75715e">// 比较大小，相当于 ans = max{ans, a[j] - a[i - 1]}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> ans;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>100分代码</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> a){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1e5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> i; j <span style="color:#f92672">&lt;=</span> n; j <span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>      ans <span style="color:#f92672">=</span> ans <span style="color:#f92672">&gt;</span> a[j] <span style="color:#f92672">-</span> a[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">?</span> ans : a[j] <span style="color:#f92672">-</span> a[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(a[j] <span style="color:#f92672">-</span> a[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>) <span style="color:#75715e">// 优化
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> ans;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>这里解释下为什么有这个优化。首先我们脑中模拟一遍这个程序，寻找是否存在不必要的操作，可以发现当 <code>a[i]</code> 小于等于 0 时，无论 i + 1 到 j 的和多大， i 到 j 的和必然小于 i + 1 到 j 的和，因为 i 到 j 的和相当于 i + 1 到 j 的和加上了个小于等于0的数仍然小于等于 i + 1 到 j ，因此其中必然不会有更大的值，就直接跳过了。</li>
+<li>学完动态规划，你会发现即使时间复杂度已经化简到很小了，连空间复杂度还可以再次化简。</li>
+</ul>
+<h3 id="us">US</h3>
+<ul>
+<li>已知二维数组(n, m)储存有 $n \cdot m$ 个数，求t次第$(x_a, y_a)$ 个数到第 $(x_b, y_b)$ 个数所有数的和（对于每次 a, b 不相同）。
+<ul>
+<li>提示：如果没思路可以先自行了解下 <em>容斥原理</em> 再尝试。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>sum 数组构建：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> vector[n <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>][m <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>], sum[n <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>][m <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">construct</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; j <span style="color:#f92672">&lt;=</span> n; j <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>      sum[i][j] <span style="color:#f92672">=</span> vector[i][j] <span style="color:#f92672">+</span> (sum[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">+</span> sum[i][j <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> sum[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]); <span style="color:#75715e">// 括号里的内容及运用容斥原理
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>主要函数：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">sumFromAToB</span>(<span style="color:#66d9ef">int</span> x_a, <span style="color:#66d9ef">int</span> y_a, <span style="color:#66d9ef">int</span> x_b, <span style="color:#66d9ef">int</span> y_b){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> sum[x_b][y_b] <span style="color:#f92672">-</span> sum[x_b][y_a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> sum[x_a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][y_b] <span style="color:#f92672">+</span> sum[x_a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][y_a <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]; <span style="color:#75715e">// 仍然是容斥原理
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h3 id="mt">MT</h3>
+<ul>
+<li><a class="link" href="https://www.luogu.com.cn/problem/P2367"  target="_blank" rel="noopener"
+    >luogu-P2367 语文成绩</a>
+<ul>
+<li>提示：既然有前缀和，那为什么不能有前缀差（专业名称：差分）呢？</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>因为差分的思路和前缀和及其相似，这就不过多解释了，详情请见 <a class="link" href="https://www.luogu.com.cn/problem/solution/P2367"  target="_blank" rel="noopener"
+    >题解</a></li>
+</ul>
+<h3 id="usmt">US+MT</h3>
+<ul>
+<li><a class="link" href="https://www.luogu.com.cn/problem/P3664"  target="_blank" rel="noopener"
+    >luogu-P3664 Modern Art</a> / <a class="link" href="http://www.usaco.org/index.php?page=viewproblem2&amp;cpid=744"  target="_blank" rel="noopener"
+    >usaco-17UopP1 Modern Art</a></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/algorithm/">algorithm</a>
+        
+            <a href="/tags/time/">time</a>
+        
+            <a href="/tags/space/">space</a>
+        
+            <a href="/tags/complexity/">complexity</a>
+        
+            <a href="/tags/multiply/">multiply</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/posts/algorithm/basis-1recursionenumeration/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">从0开始的算法竞赛01-算法基础01：递归和枚举</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/algorithm/basis-0introtoalgorithm/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="bb55d628-fc4a-4ec4-b2ff-091c0dc240d5"
+    data-page-id="0fa6127e911b291fb55abee7fee6441f"
+    data-page-url="/posts/algorithm/basis-2timespace/"
+    data-page-title="从0开始的算法竞赛01-算法基础02：时间和空间"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
+        }
+    }
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2023 zayn_lie&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "407bf5c0c80b4ec98f0e15deba4ee174"}'></script>
+    </body>
+</html>

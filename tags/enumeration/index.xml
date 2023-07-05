@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/enumeration/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>从0开始的算法竞赛01-算法基础01：递归和枚举</title>
-        <link>/posts/algorithm/01basis-01recursionenumeration/</link>
+        <link>/posts/algorithm/basis-1recursionenumeration/</link>
         <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/algorithm/01basis-01recursionenumeration/</guid>
+        <guid>/posts/algorithm/basis-1recursionenumeration/</guid>
         <description>&lt;h2 id=&#34;递归recursion&#34;&gt;递归(Recursion)&lt;/h2&gt;
 &lt;h3 id=&#34;why-为什么要学递归&#34;&gt;WHY: 为什么要学递归？&lt;/h3&gt;
 &lt;ul&gt;

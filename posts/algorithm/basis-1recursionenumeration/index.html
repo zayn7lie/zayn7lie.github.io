@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='递归(Recursion) WHY: 为什么要学递归？ 首先我们先明确，算法其实是另外一种形式的数学 —— 它们解决问题的思路很相近，及通过一系列的计算得出结果。但是在计算机的帮助下，算法能干更多数学干起来很麻烦的事情 —— 一些重复、模板性的问题。 而递归，作为算法的第一课，便很好的体现出算法和数学的异同之处。递归，可以化简大量的重复性问题。因此学会递归，我们便可以利用计算机化简许多问题的运算过程。 可能不太好理解，没关系，我们先往下看看递归是什么。 WHAT: 什么是递归？ 我们先来看下这个函数公式： $$ f(x) = \begin{cases} 0, &amp;amp; x \leq 7 \ f(x - 1), &amp;amp; x &amp;gt; 7 \ \end{cases} $$
+很显然，当 $x \leq 7$ 的时候 $f(x)$ 均等于0。但是当 $x = 10$ 的时候呢？ $f(10) = f(9) = f(8) = f(7) = 0$ 当 $x &amp;gt; 7$ 的时候有没有一种感觉，就是这个 $f(x)$ 的 $x$ 一直在 传递 到下一个 $f(x)$ ，只是自身每次减一？ 当 $x = 7$ 时， $f(x)$ return 0时候有没有一种感觉这个0在不断 回归 到 $f(10)$ ?'>
+<title>从0开始的算法竞赛01-算法基础01：递归和枚举</title>
+
+<link rel='canonical' href='/posts/algorithm/basis-1recursionenumeration/'>
+
+<link rel="stylesheet" href="/scss/style.min.542e4d78795d8585adc4270db4f7e4e460c92c614a8023b37eaaec53ce1d2557.css"><meta property='og:title' content='从0开始的算法竞赛01-算法基础01：递归和枚举'>
+<meta property='og:description' content='递归(Recursion) WHY: 为什么要学递归？ 首先我们先明确，算法其实是另外一种形式的数学 —— 它们解决问题的思路很相近，及通过一系列的计算得出结果。但是在计算机的帮助下，算法能干更多数学干起来很麻烦的事情 —— 一些重复、模板性的问题。 而递归，作为算法的第一课，便很好的体现出算法和数学的异同之处。递归，可以化简大量的重复性问题。因此学会递归，我们便可以利用计算机化简许多问题的运算过程。 可能不太好理解，没关系，我们先往下看看递归是什么。 WHAT: 什么是递归？ 我们先来看下这个函数公式： $$ f(x) = \begin{cases} 0, &amp;amp; x \leq 7 \ f(x - 1), &amp;amp; x &amp;gt; 7 \ \end{cases} $$
+很显然，当 $x \leq 7$ 的时候 $f(x)$ 均等于0。但是当 $x = 10$ 的时候呢？ $f(10) = f(9) = f(8) = f(7) = 0$ 当 $x &amp;gt; 7$ 的时候有没有一种感觉，就是这个 $f(x)$ 的 $x$ 一直在 传递 到下一个 $f(x)$ ，只是自身每次减一？ 当 $x = 7$ 时， $f(x)$ return 0时候有没有一种感觉这个0在不断 回归 到 $f(10)$ ?'>
+<meta property='og:url' content='/posts/algorithm/basis-1recursionenumeration/'>
+<meta property='og:site_name' content='zayn_lie&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='algorithm' /><meta property='article:tag' content='function' /><meta property='article:tag' content='recursion' /><meta property='article:tag' content='loop' /><meta property='article:tag' content='enumeration' /><meta property='article:tag' content='dichotony' /><meta property='article:published_time' content='2023-03-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-03-02T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="从0开始的算法竞赛01-算法基础01：递归和枚举">
+<meta name="twitter:description" content="递归(Recursion) WHY: 为什么要学递归？ 首先我们先明确，算法其实是另外一种形式的数学 —— 它们解决问题的思路很相近，及通过一系列的计算得出结果。但是在计算机的帮助下，算法能干更多数学干起来很麻烦的事情 —— 一些重复、模板性的问题。 而递归，作为算法的第一课，便很好的体现出算法和数学的异同之处。递归，可以化简大量的重复性问题。因此学会递归，我们便可以利用计算机化简许多问题的运算过程。 可能不太好理解，没关系，我们先往下看看递归是什么。 WHAT: 什么是递归？ 我们先来看下这个函数公式： $$ f(x) = \begin{cases} 0, &amp;amp; x \leq 7 \ f(x - 1), &amp;amp; x &amp;gt; 7 \ \end{cases} $$
+很显然，当 $x \leq 7$ 的时候 $f(x)$ 均等于0。但是当 $x = 10$ 的时候呢？ $f(10) = f(9) = f(8) = f(7) = 0$ 当 $x &amp;gt; 7$ 的时候有没有一种感觉，就是这个 $f(x)$ 的 $x$ 一直在 传递 到下一个 $f(x)$ ，只是自身每次减一？ 当 $x = 7$ 时， $f(x)$ return 0时候有没有一种感觉这个0在不断 回归 到 $f(10)$ ?">
+    <link rel="shortcut icon" href="/favicon-32x32.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu5f6eb280eeff4ec5c1d9478805c7efdb_400985_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">zayn_lie&#39;s blog</a></h1>
+            <h2 class="site-description">Algorithm&amp;Mathematics, Music_Theory&amp;Rhythm_Game, Rationality&amp;Logicism, Peace&amp;Open_Source</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/sponsor/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Sponsor</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#递归recursion">递归(Recursion)</a>
+      <ul>
+        <li><a href="#why-为什么要学递归">WHY: 为什么要学递归？</a></li>
+        <li><a href="#what-什么是递归">WHAT: 什么是递归？</a></li>
+        <li><a href="#how-递归怎么写">HOW: 递归怎么写？</a></li>
+      </ul>
+    </li>
+    <li><a href="#枚举enumeration">枚举(Enumeration)</a>
+      <ul>
+        <li><a href="#why-为什么要学枚举">WHY: 为什么要学枚举</a></li>
+        <li><a href="#what-什么是枚举">WHAT: 什么是枚举</a></li>
+        <li><a href="#how-怎么写枚举">HOW: 怎么写枚举</a></li>
+      </ul>
+    </li>
+    <li><a href="#练习">练习</a>
+      <ul>
+        <li><a href="#kn">KN</a></li>
+        <li><a href="#us">US</a></li>
+        <li><a href="#mt">MT</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/algorithm/" style="background-color: #00e89b; color: #000000;">
+                Algorithm
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/algorithm/basis-1recursionenumeration/">从0开始的算法竞赛01-算法基础01：递归和枚举</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">03/02/23</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="递归recursion">递归(Recursion)</h2>
+<h3 id="why-为什么要学递归">WHY: 为什么要学递归？</h3>
+<ul>
+<li>首先我们先明确，算法其实是另外一种形式的数学 —— 它们解决问题的思路很相近，及通过一系列的计算得出结果。但是在计算机的帮助下，算法能干更多数学干起来很麻烦的事情 —— 一些重复、模板性的问题。</li>
+<li>而递归，作为算法的第一课，便很好的体现出算法和数学的异同之处。递归，可以化简大量的重复性问题。因此学会递归，我们便可以利用计算机化简许多问题的运算过程。</li>
+<li>可能不太好理解，没关系，我们先往下看看递归是什么。</li>
+</ul>
+<h3 id="what-什么是递归">WHAT: 什么是递归？</h3>
+<ul>
+<li>我们先来看下这个函数公式：</li>
+</ul>
+<p>$$
+f(x) =
+\begin{cases}
+0, &amp; x \leq 7 \
+f(x - 1), &amp; x &gt; 7 \
+\end{cases}
+$$</p>
+<ul>
+<li>很显然，当 $x \leq 7$ 的时候 $f(x)$ 均等于0。但是当 $x = 10$ 的时候呢？
+<ul>
+<li>$f(10) = f(9) = f(8) = f(7) = 0$</li>
+<li>当 $x &gt; 7$ 的时候有没有一种感觉，就是这个 $f(x)$ 的 $x$ 一直在 <em>传递</em> 到下一个 $f(x)$ ，只是自身每次减一？</li>
+<li>当 $x = 7$ 时， $f(x)$ return 0时候有没有一种感觉这个0在不断 <em>回归</em> 到 $f(10)$ ?</li>
+<li>这种 <em>传递</em> 和 <em>回归</em> 的感觉就叫做 <em>递归</em> 。或者说， <em>递归</em> = <em>传递</em> + <em>回归</em></li>
+</ul>
+</li>
+<li>很多教材喜欢举一些很有趣但是对初学者很不友好的例子： <em>想要知道递归，就得先知道递归</em> ， <em>自己调用自己</em> 等等。但是经过我利用上面数学公式的举例，相信你能看得懂这些玩笑了。实际上，这些例子都是在强调 $f(x) = f(x - 1)$ 的过程。但这只是 <em>传递</em> 的过程。</li>
+<li>另外，通过这里例子，我们还可以加深算法与数学异同的理解。数学遇到这种公式一般需要转化为其他公式（就想上面的展开 $f(10) = f(9) = f(8) = f(7) = 0$ 等等）再求解，这其实如果数据一大，公式一复杂，求解就会变得困难。而算法，正盼望着你把问题转化为这种 <em>自己调用自己</em> 形式，那剩下的求解呢？交给计算机就可以了。</li>
+</ul>
+<h3 id="how-递归怎么写">HOW: 递归怎么写？</h3>
+<ul>
+<li>递归分为传递和回归，传递就是往下的方式，回归就是限制条件回来的过程。很抽象，我们还是看刚刚那个公式：</li>
+</ul>
+<p>$$
+f(x) =
+\begin{cases}
+0, &amp; x \leq 7 \
+f(x - 1), &amp; x &gt; 7 \
+\end{cases}
+$$</p>
+<ul>
+<li>这里传递就是 $f(x) = f(x - 1)$ ，方式就是 $x$ 自己减一。</li>
+<li>回归的限制条件是 $x \leq 7$ 。</li>
+<li>如果这些都能理解，我再告诉你个条件。在程序函数中，是可以自己调用自己的，那即使你只学过我 <em>0基础c++体系-函数</em> 的第一节课应该可以写的出来这个函数：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span> x){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(x <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">7</span>) <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">7</span>) <span style="color:#66d9ef">return</span> f(x <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>这就是递归函数该怎么写。虽然内容较少，但是递归将伴随整个算法生涯，甚至后面递归我们不会再强调，而是把它当作一种和加减乘除一样常见的方法。所以希望本节课大家能好好理解。特别是注意写递归时不仅要有传递，还要有回归（限制条件要写清楚）。如果没有限制条件或者条件不当，程序将无限运行下去，知道内存超标。</li>
+</ul>
+<h2 id="枚举enumeration">枚举(Enumeration)</h2>
+<h3 id="why-为什么要学枚举">WHY: 为什么要学枚举</h3>
+<ul>
+<li>和递归类似，枚举也是让计算机帮助我们列举情况，找到我们要求的解。掌握枚举也可以让我们再调试和运行时提高一定的效率。</li>
+</ul>
+<h3 id="what-什么是枚举">WHAT: 什么是枚举</h3>
+<ul>
+<li>实际上，在你学 <code>for(;;)</code> 和 <code>while()</code> 的时候，你已经开始接触枚举了。我们当时只不过是通过循环把每一种情况列举出来，这就叫枚举。但是枚举的方式不仅仅只有循环，想本章的递归也可以作为枚举的一种方法。</li>
+</ul>
+<h3 id="how-怎么写枚举">HOW: 怎么写枚举</h3>
+<ul>
+<li>循环：关于循环的枚举已经在 c++ 基础讲完了。所以这里就强调下注意循环的对象，开始，终点和步长。
+<ul>
+<li>实际上，循环的枚举往往是可优化的。例如在一个从小到大排列的数组中询问某个数是否存在的时候，往往可以从中间开始列举。如果比中间的数大，则应该在右侧寻找，及对右侧再进行相同操作；如果比中间的数小，则对左侧进行相同操作。直到找到这个数或者是发现这个数在最终两个数之间 —— 不存在。</li>
+<li>这种不断一分为二缩小范围寻找答案的方法叫做二分，是一种常用的枚举优化方法。</li>
+</ul>
+</li>
+<li>递归：刚刚的样例已经包含了递归 —— 如果比中间的数大，对右侧进行相同操作 —— 这个相同操作就是递归中的传递。有时候，循环和递归是可以互换的。例如你可以用循环实现刚刚的操作：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">find</span>(<span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> vector, <span style="color:#66d9ef">int</span> target){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> l <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, r <span style="color:#f92672">=</span> <span style="color:#66d9ef">sizeof</span>(vector) <span style="color:#f92672">/</span> <span style="color:#66d9ef">sizeof</span>(vector[<span style="color:#ae81ff">0</span>]) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>; <span style="color:#75715e">// r 为数组的右指针
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">while</span>(vector[l] <span style="color:#f92672">&lt;=</span> target <span style="color:#f92672">&amp;&amp;</span> target <span style="color:#f92672">&lt;=</span> vector[r]){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> m <span style="color:#f92672">=</span> (l <span style="color:#f92672">+</span> r) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(vector[m] <span style="color:#f92672">==</span> target <span style="color:#f92672">||</span> vector[r] <span style="color:#f92672">==</span> target <span style="color:#f92672">||</span> vector[l] <span style="color:#f92672">==</span> target) <span style="color:#75715e">// 预先看下左边界有边界是否相等，避免遗漏
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> true;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(vector[m] <span style="color:#f92672">&lt;</span> target)
+</span></span><span style="display:flex;"><span>        l <span style="color:#f92672">=</span> m;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(vector[m] <span style="color:#f92672">&gt;</span> target)
+</span></span><span style="display:flex;"><span>        r <span style="color:#f92672">=</span> m;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>当循环和递归可以同时实现的时候，更推荐用循环的形式。因为递归在传递还未回归的时候那些传递过程中的函数在计算机运算时需要存起来（想想为什么），可能导致内存占用变高。</li>
+<li>最后希望各位能够认真完成这节课 US 和 MS 的 GCD 和 LCM ，其困难在许多体制内学生并不认识辗转相除法。大家自行了解后尝试解决，对于本节课可以有更深的了解。</li>
+<li>这节课内容虽少，但是对于之后的学习非常重要。因此我会在 ANS 对于每道题目做出较详细的讲解。希望大家无论是否做出来了也认真的看完题解。</li>
+</ul>
+<h2 id="练习">练习</h2>
+<h3 id="kn">KN</h3>
+<ul>
+<li>请写出一个函数 A(x, y) ，要求返回 x 中取 y 个元素进行排列的所有种类数。</li>
+<li>请写出一个函数 C(x, y) ，要求返回 x 中取 y 个元素进行组合的所有种类数。</li>
+<li>想想能不能进行优化？</li>
+</ul>
+<hr>
+<ul>
+<li>我们先来讲讲排列组合怎么算
+<ul>
+<li>从 x 中选取 y 个进行排列，那么我们就对 y 中的每个元素进行枚举：第一个元素一共有 x 种选法，第二个元素一共有 x - 1 种选法，第三个元素一共有 x - 2 种选法&hellip; 第 y 个元素一共有 x - y + 1 种选法。因此一共有 $x(x - 1)(x - 2) \dotsm (x - y + 1)$ 种选法。通过阶乘我们还可以表示成更简单的方法 $\frac{x!}{(x-y)!}$。这就是排列。</li>
+<li>而对于组合，实际上就是把排列中的部分情况去除掉： ABC, ACB, BAC &hellip; 在组合中是相同的，因此只保留一个。那么一共有多少种相同的情况呢？如果再观察可以发现，每一种情况相当于是自己本身的排列。 ABC, ACB, BAC &hellip; 实际上就是 ABC 的 A(3, 3) 的排列。所以再原来基础上只要再除掉一个 A(y, y) 就是正确答案了。那么可以表达为 $\frac{x!}{y!(x - y)!}$</li>
+</ul>
+</li>
+<li>那么第一反应的程序是这个样子的：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">A</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; <span style="color:#75715e">// ans = answer
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> x; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        ans <span style="color:#f92672">*=</span> i;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> x <span style="color:#f92672">-</span> y; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        ans <span style="color:#f92672">/=</span> i;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ans;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">C</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> x; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        ans <span style="color:#f92672">*=</span> i;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> x <span style="color:#f92672">-</span> y; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        ans <span style="color:#f92672">/=</span> i;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> y; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        ans <span style="color:#f92672">/=</span> i;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ans;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>可以化简，因为我们知道组合是排列的除掉部分情况的结果，直接调用 A 函数即可：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">C</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> A(x, y);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> y; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        ans <span style="color:#f92672">/=</span> i;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ans;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>分析可以知道， A 乘和除掉了一部分相同内容，我们不要枚举除掉的部分其实就可以达到效果了。因此对 A 再化简：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">A</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> x <span style="color:#f92672">-</span> y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> x; i <span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>        ans <span style="color:#f92672">*=</span> i;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ans;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>这验证了我们上面所述，枚举一般都可以进行优化。当然这里只是对枚举的过程优化，实际上我们学到后面还会学到直接对整个枚举这个方法进行优化等等。</li>
+</ul>
+<h3 id="us">US</h3>
+<ul>
+<li>请写出一个函数 <code>GCD(x, y)</code> ，要求返回 x 和 y 的最大公因数。</li>
+<li><a class="link" href="https://www.luogu.com.cn/problem/P1888"  target="_blank" rel="noopener"
+    >luogu-P1888 三角函数</a></li>
+</ul>
+<hr>
+<ul>
+<li>接下来我们来说一说 GCD （最大公因数）怎么算
+<ul>
+<li>首先我要拿辗转相除法说下“正着推”和“反着推”的区别和好坏
+<ul>
+<li>很多人了解辗转相除法的公式，但是问为什么的时候，教练一般从辗转相除法的公式入手，有的运用假设法（假设辗转相除法不成立），有的运用从公式开始推导到条件法等等。这些实际上都是反着推。他们先知道了结论才给你推的出来。这其实不叫“为什么”，这个叫“怎么证明”。换句话说，“反着推”就是如果你不知道这个公式你就推不出来，你必须先知道，先背住这个公式才推的出来。这个好处就是很快，你都背住了竞赛直接用即可。但是很容易忘，而且遇到没见过的也推不出来。</li>
+<li>是不是觉得在哪里见过？没错，在我讲第0节课“凭感觉”和“靠分析”的时候出现过“速度”和“准确”的区别。其实“逆着推”也可以算作一种凭感觉的解决方法问题。我也讲过理科竞赛讲究的不是感觉而是分析。那么“正着推”作为靠分析的手段，我们怎么“正着推”辗转相除法？</li>
+</ul>
+</li>
+<li>首先我们要求 x 和 y 的最大公因数 z ，那么我们知道的条件是 $x = z \cdot a, y = z \cdot b (z, a, b, x, y \in Z)$ 那么我们有两条路，一条是继续推导公式，一条是拆分或化简问题。因为现在是独立的两个条件，而我们需要的是一个通解，这时候我选择继续推导公式，将这5个变量联系在一起。因此有 $x - y = z \cdot (a - b)$ 通过推导和观察我们发现，z也是(x - y)的因数（我们假设 $x &gt; y$）。但是(x - y)必定比x, y都小，因此，z又是y和(x - y)的GCD。有什么意义呢？大家发现，这一步我其实化简了问题：把两个很大的数开始变小，并且这两个较小数和原来的两个较大的数有联系并经过了 <em>相同操作</em> 。<em>相同操作</em> ，对，有没有发现什么 —— 递归！计算机给了我么另外一个思路，把公式转化相同形式的运算也可以！那么我们得出了一个结论：$GCD(x, y) = GCD(y, x - y)$。脑中模拟一边过程，发现那么只要这么一直重复下去x, y一定会越来越逼近0（因为x, y一定一直减小），在等于0的前一刻呢？x必然等于y, 因为x - y才等于0。那这时候x = y这个值不就是原来的GCD(x, y)吗？</li>
+<li>接下来我们看看能不能优化。因为过程中出现了很多次x - y，当x很大时必然会减很多次y，这产生了很多操作。那能不能化简呢？就是让x减去最多的y但是仍然大于0？很多人想到了 —— 模运算！ $x \mod y$ 就是操作了最多次x - y的结果！那么我们就优化出了这个公式 $GCD(x, y) = GCD(y, x \mod y)$ 这就是辗转相除法（因为模运算涉及除法的余数）</li>
+<li>这就是正着推的辗转相除法，从条件推导公式而不是从公式推导条件！相信这么推一次大家印象一定很深刻。即使以后忘记只要记着遇见条件想办法进行 <em>推导</em> ， <em>拆分</em> 和 <em>化简</em> 就能得出正确答案！</li>
+</ul>
+</li>
+<li>因此递归公式得到后，程序就好实现了：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">GCD</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(y <span style="color:#f92672">&gt;</span> x){ <span style="color:#75715e">//让x &gt;= y，统一化
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> tmp <span style="color:#f92672">=</span> x;
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> y;
+</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> temp;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#75715e">// 递归的回归条件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> x;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> GCD(y, x <span style="color:#f92672">%</span> y);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>相信写完这个程序大家能够对递归有着更深刻的了解。</li>
+</ul>
+<h3 id="mt">MT</h3>
+<ul>
+<li>请写出一个函数 LCM(x, y) ，要求返回 x 和 y 的最小公倍数。</li>
+<li><a class="link" href="https://www.luogu.com.cn/problem/P1029"  target="_blank" rel="noopener"
+    >luogu-P1029 [NOIP2001 普及组] 最大公约数和最小公倍数问题</a></li>
+</ul>
+<hr>
+<ul>
+<li>推完了 GCD ，大家可以自己想想很相似的 LCM 。这里只要注意因为类似排列和组合相似性， LCE 和 GCD 的公式会存在关联。大家可以自己尝试下正推。我这里给出函数：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">LCM</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> y <span style="color:#f92672">/</span> GCD(x, y);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/algorithm/">algorithm</a>
+        
+            <a href="/tags/function/">function</a>
+        
+            <a href="/tags/recursion/">recursion</a>
+        
+            <a href="/tags/loop/">loop</a>
+        
+            <a href="/tags/enumeration/">enumeration</a>
+        
+            <a href="/tags/dichotony/">dichotony</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/posts/algorithm/basis-0introtoalgorithm/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">从0开始的算法竞赛01-算法基础00：你真的会分析算法问题吗？</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/proglang/cpp-01function/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">从0开始的C&#43;&#43;语言基础01：函数</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="bb55d628-fc4a-4ec4-b2ff-091c0dc240d5"
+    data-page-id="9b2514dda02096c7ff93170dff3616ed"
+    data-page-url="/posts/algorithm/basis-1recursionenumeration/"
+    data-page-title="从0开始的算法竞赛01-算法基础01：递归和枚举"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
+        }
+    }
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2023 zayn_lie&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "407bf5c0c80b4ec98f0e15deba4ee174"}'></script>
+    </body>
+</html>

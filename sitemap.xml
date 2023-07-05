@@ -107,13 +107,13 @@
     <loc>/tags/sort/</loc>
     <lastmod>2023-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/01basis-04sort/</loc>
+    <loc>/posts/algorithm/basis-4sort/</loc>
     <lastmod>2023-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/greedy/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/01basis-03greedy/</loc>
+    <loc>/posts/algorithm/basis-3greedy/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/complexity/</loc>
@@ -128,7 +128,7 @@
     <loc>/tags/time/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/01basis-02timespace/</loc>
+    <loc>/posts/algorithm/basis-2timespace/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/dichotony/</loc>
@@ -146,7 +146,7 @@
     <loc>/tags/recursion/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/01basis-01recursionenumeration/</loc>
+    <loc>/posts/algorithm/basis-1recursionenumeration/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/divide_and_conquer/</loc>
@@ -155,7 +155,7 @@
     <loc>/tags/simulation/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/algorithm/01basis-00introtoalgorithm/</loc>
+    <loc>/posts/algorithm/basis-0introtoalgorithm/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/c&#43;&#43;/</loc>
@@ -216,6 +216,8 @@
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/page/links/</loc>
+  </url><url>
+    <loc>/categories/mechinelearning/</loc>
   </url><url>
     <loc>/categories/proglang/</loc>
   </url><url>
