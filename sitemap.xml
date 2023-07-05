@@ -50,10 +50,10 @@
     <loc>/tags/pandas/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/python/</loc>
+    <loc>/categories/proglang/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/python/</loc>
+    <loc>/tags/python/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/pytorch/</loc>
@@ -161,9 +161,6 @@
     <loc>/tags/c&#43;&#43;/</loc>
     <lastmod>2023-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/c&#43;&#43;/</loc>
-    <lastmod>2023-02-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/headfile/</loc>
     <lastmod>2023-02-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -218,8 +215,6 @@
     <loc>/page/links/</loc>
   </url><url>
     <loc>/categories/mechinelearning/</loc>
-  </url><url>
-    <loc>/categories/proglang/</loc>
   </url><url>
     <loc>/page/search/</loc>
   </url>
