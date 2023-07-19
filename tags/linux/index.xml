@@ -103,7 +103,8 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;icons: &lt;a class=&#34;link&#34; href=&#34;https://github.com/vinceliuice/Tela-icon-theme&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Tela icons&lt;/a&gt;&lt;/p&gt;
+    &gt;Tela icons&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://github.com/PapirusDevelopmentTeam/papirus-icon-theme&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Papirus&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;terminal: &lt;code&gt;xfce4-terminal --drop-down&lt;/code&gt;&lt;/p&gt;
