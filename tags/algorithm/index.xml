@@ -354,7 +354,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(x &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; f(x &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;这就是递归函数该怎么写。虽然内容较少，但是递归将伴随整个算法生涯，甚至后面递归我们不会再强调，而是把它当作一种和加减乘除一样常见的方法。所以希望本节课大家能好好理解。特别是注意写递归时不仅要有传递，还要有回归（限制条件要写清楚）。如果没有限制条件或者条件不当，程序将无限运行下去，知道内存超标。&lt;/li&gt;
+&lt;li&gt;这就是递归函数该怎么写。虽然内容较少，但是递归将伴随整个算法生涯，甚至后面递归我们不会再强调，而是把它当作一种和加减乘除一样常见的方法。所以希望本节课大家能好好理解。特别是注意写递归时不仅要有传递，还要有回归（限制条件要写清楚）。如果没有限制条件或者条件不当，程序将无限运行下去，直到内存溢出。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;枚举enumeration&#34;&gt;枚举(Enumeration)&lt;/h2&gt;
 &lt;h3 id=&#34;why-为什么要学枚举&#34;&gt;WHY: 为什么要学枚举&lt;/h3&gt;
@@ -476,7 +476,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(y &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; x){ &lt;span style=&#34;color:#75715e&#34;&gt;//让x &amp;gt;= y，统一化
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; tmp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; x;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; y;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; temp;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tmp;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(y &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// 递归的回归条件
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x;

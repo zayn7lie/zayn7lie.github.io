@@ -6,18 +6,83 @@
         <description>Recent content in Arch on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/arch/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/arch/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hyprland installation &amp; Configuration</title>
+        <link>/posts/linux/hyprlandcustom/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/linux/hyprlandcustom/</guid>
+        <description>&lt;p&gt;Note. This guide is based on Arch Linux&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;h2 id=&#34;customization&#34;&gt;Customization&lt;/h2&gt;
+&lt;h3 id=&#34;hyprland-configuration&#34;&gt;Hyprland configuration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable Mouse Acceleration: add &lt;code&gt;force_no_accel = true&lt;/code&gt; to &lt;code&gt;input{}&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;packages-usement&#34;&gt;Packages Usement&lt;/h3&gt;
+&lt;h4 id=&#34;basic-packages&#34;&gt;Basic Packages&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Desktop Manager (Could this be called &lt;em&gt;Desktop&lt;/em&gt;?): &lt;code&gt;sddm&lt;/code&gt;, then &lt;code&gt;$ sudo systemctl enable sddm&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Screen Lock: &lt;code&gt;swaylock-effect&lt;/code&gt;, then bind hotkey using &lt;code&gt;bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Swaylock-effect configuration: &lt;code&gt;~/.config/swaylock/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Authorocation: &lt;code&gt;polkit-gnome&lt;/code&gt;, then add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Keyboard Input &amp;amp; Clipboard: &lt;code&gt;fcitx5&lt;/code&gt; &lt;code&gt;fcitx5-config-qt&lt;/code&gt; &lt;code&gt;fcitx5-qt&lt;/code&gt; &lt;code&gt;fcitx5-gtk&lt;/code&gt; &lt;code&gt;fcitx5-nord&lt;/code&gt; &lt;code&gt;fcitx5-chinese-addons&lt;/code&gt;, then add &lt;code&gt;exec-once = fcitx5&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt; and in &lt;code&gt;/etc/environment&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-environment&#34; data-lang=&#34;environment&#34;&gt;GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+SDL_IM_MODULE=fcitx
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Network: &lt;code&gt;networkmanager&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;beautification&#34;&gt;Beautification&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Background/Wallpaper: &lt;code&gt;swaybg&lt;/code&gt;, then add &lt;code&gt;exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png}&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt; (&lt;code&gt;?{}&lt;/code&gt; is the path to your background picture)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Topbar: &lt;code&gt;waybar&lt;/code&gt;, then add &lt;code&gt;exec-once = LANG=C waybar&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Waybar configuration file: &lt;code&gt;~/.config/waybar/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;multi-media&#34;&gt;Multi-Media&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Screenshot: &lt;code&gt;swappy&lt;/code&gt; &lt;code&gt;grim&lt;/code&gt; &lt;code&gt;slurp&lt;/code&gt;, then bind hotkey: &lt;code&gt;bind = $mainMod SHIFT, S, exec, grim -g &amp;quot;$(slurp)&amp;quot; - | swappy -f - # screenshot: swappy, grim, slurp&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Xfce customization and applications</title>
         <link>/posts/linux/xfcecustom/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>/posts/linux/xfcecustom/</guid>
-        <description>&lt;h2 id=&#34;useful-command&#34;&gt;Useful Command&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S xorg&lt;/code&gt; to install xorg. Xorg is the basis package which contains X11 that many DE (Desktop Environment) based on.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install Xfce. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start xfce4 in the next boot and ignore step 3. It is highly recommended to install a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight DM, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DM&lt;/a&gt;. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
+&lt;h3 id=&#34;useful-command&#34;&gt;Useful Command&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;autoclean: &lt;code&gt;pacman -Rcs $(pacman -Qdtq)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;clean cache: &lt;code&gt;pacman -Sc&lt;/code&gt; &lt;code&gt;yay -Sc&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;
+&lt;h3 id=&#34;system&#34;&gt;System&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Gnome Keyring: &lt;code&gt;gnome-keyring&lt;/code&gt; &lt;code&gt;libsecret&lt;/code&gt; &lt;code&gt;libgnome-keyring&lt;/code&gt;&lt;/p&gt;
@@ -82,7 +147,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;
+&lt;h3 id=&#34;appearance&#34;&gt;Appearance&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;HiDPI: &lt;code&gt;Application&lt;/code&gt; - &lt;code&gt;Settings&lt;/code&gt; - &lt;code&gt;Appearance&lt;/code&gt; : DPI 128&lt;/p&gt;
@@ -103,8 +168,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;icons: &lt;a class=&#34;link&#34; href=&#34;https://github.com/vinceliuice/Tela-icon-theme&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Tela icons&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://github.com/PapirusDevelopmentTeam/papirus-icon-theme&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Papirus&lt;/a&gt;&lt;/p&gt;
+    &gt;Tela icons&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;terminal: &lt;code&gt;xfce4-terminal --drop-down&lt;/code&gt;&lt;/p&gt;
@@ -134,7 +198,7 @@ xft-rgba=none
 &lt;p&gt;Desktop: &lt;code&gt;conky&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;media&#34;&gt;Media&lt;/h2&gt;
+&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Sound&lt;/p&gt;
@@ -165,7 +229,7 @@ xft-rgba=none
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;input&#34;&gt;Input&lt;/h2&gt;
+&lt;h3 id=&#34;input&#34;&gt;Input&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;&lt;/p&gt;
@@ -192,7 +256,7 @@ SDL_IM_MODULE=fcitx
 &lt;p&gt;Dictionary: &lt;code&gt;goldendict&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;work&#34;&gt;Work&lt;/h2&gt;
+&lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt; or AUR - &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/visual-studio-code-bin/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -285,7 +349,7 @@ SDL_IM_MODULE=fcitx
 &lt;p&gt;Browser: &lt;code&gt;firefox&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;game&#34;&gt;Game&lt;/h2&gt;
+&lt;h3 id=&#34;game&#34;&gt;Game&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
@@ -305,11 +369,11 @@ SDL_IM_MODULE=fcitx
 </description>
         </item>
         <item>
-        <title>Install Arch Linux with Xfce</title>
-        <link>/posts/linux/archwithxfce/</link>
+        <title>Install Arch Linux</title>
+        <link>/posts/linux/archinstallation/</link>
         <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>/posts/linux/archwithxfce/</guid>
+        <guid>/posts/linux/archinstallation/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
 &lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;Why do I want to switch from Windows to Linux?&lt;/h3&gt;
 &lt;p&gt;First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.&lt;/p&gt;
@@ -469,19 +533,12 @@ SDL_IM_MODULE=fcitx
 &lt;li&gt;&lt;code&gt;# grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&amp;quot;Arch Linux&amp;quot;} --recheck&lt;/code&gt; to install grub file. &lt;code&gt;!{--removable}&lt;/code&gt; determines whether you are able to remove it from &lt;code&gt;UEFI&lt;/code&gt;, &lt;code&gt;?{&amp;quot;Arch Linux&amp;quot;}&lt;/code&gt; is your system name in grub.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt; to generate config file.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;8-xfce-installation&#34;&gt;8. Xfce Installation&lt;/h3&gt;
-&lt;p&gt;N.B. In this section, I will just introduce how to install the cleanest and most basic Xfce with without any plugin. If you want to make Xfce better, you can read my &lt;code&gt;[Xfce customization and beautification](comming soon)&lt;/code&gt; post.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;# pacman -S xorg&lt;/code&gt; to install xorg. Xorg is the basis package which contains X11 that many DE (Desktop Environment) based on.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install Xfce. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start xfce4 in the next boot and ignore step 3. It is highly recommended to install a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight DM, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;DM&lt;/a&gt;. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt; to install &lt;code&gt;NetworkManager&lt;/code&gt; tool, then &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt; to let &lt;code&gt;NetworkManager&lt;/code&gt; start automatically when you boot your system. As I have mentioned above, &lt;code&gt;networkmanager&lt;/code&gt; is more popular than &lt;code&gt;iwd&lt;/code&gt;. And &lt;code&gt;iwd&lt;/code&gt; is only installed in your installation medium but not your system. You still have to install a network manager tool for your &lt;code&gt;Arch Linux&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&#34;8-misc&#34;&gt;8. Misc&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt; to install &lt;code&gt;NetworkManager&lt;/code&gt; tool, then &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt; to let &lt;code&gt;NetworkManager&lt;/code&gt; start automatically when you boot your system. As I have mentioned above, &lt;code&gt;networkmanager&lt;/code&gt; is more popular than &lt;code&gt;iwd&lt;/code&gt;. And &lt;code&gt;iwd&lt;/code&gt; is only installed in your installation medium but not your system. You still have to install a network manager tool for your &lt;code&gt;Arch Linux&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;finish-installation&#34;&gt;Finish Installation&lt;/h3&gt;
 &lt;p&gt;Congratulation! You have installed &lt;code&gt;Arch Linux&lt;/code&gt; in your machine. Now you can &lt;code&gt;# exit&lt;/code&gt; to exit your root user account, &lt;code&gt;# reboot&lt;/code&gt; and remove installation medium when computer is completely closed. Now, start your journey to &lt;code&gt;Arch Linux&lt;/code&gt;!&lt;/p&gt;
 &lt;h3 id=&#34;post-installation&#34;&gt;Post-installation&lt;/h3&gt;
-&lt;p&gt;As I have mentioned above, if you want to make Xfce better, you can read my &lt;code&gt;[Xfce customization and beautification](comming soon)&lt;/code&gt; post. At the same time, if you encounter any problems or bugs, reading &lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;If you encounter any problems or bugs, reading &lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wiki&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;googling&lt;/a&gt;, searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;a smart way&lt;/a&gt;. That&amp;rsquo;s all, it is my best hope that you could join and enjoy our open-source communities!&lt;/p&gt;

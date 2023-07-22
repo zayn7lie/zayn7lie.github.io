@@ -6,20 +6,44 @@
         <description>Recent content in Tags on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Arch</title>
         <link>/tags/arch/</link>
-        <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>/tags/arch/</guid>
         <description></description>
         </item>
         <item>
+        <title>Hyprland</title>
+        <link>/tags/hyprland/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/hyprland/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Linux</title>
         <link>/tags/linux/</link>
-        <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>/tags/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Misc</title>
+        <link>/tags/misc/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/misc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>WM</title>
+        <link>/tags/wm/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/tags/wm/</guid>
         <description></description>
         </item>
         <item>

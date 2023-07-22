@@ -397,7 +397,7 @@ $$</p>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">7</span>) <span style="color:#66d9ef">return</span> f(x <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ul>
-<li>这就是递归函数该怎么写。虽然内容较少，但是递归将伴随整个算法生涯，甚至后面递归我们不会再强调，而是把它当作一种和加减乘除一样常见的方法。所以希望本节课大家能好好理解。特别是注意写递归时不仅要有传递，还要有回归（限制条件要写清楚）。如果没有限制条件或者条件不当，程序将无限运行下去，知道内存超标。</li>
+<li>这就是递归函数该怎么写。虽然内容较少，但是递归将伴随整个算法生涯，甚至后面递归我们不会再强调，而是把它当作一种和加减乘除一样常见的方法。所以希望本节课大家能好好理解。特别是注意写递归时不仅要有传递，还要有回归（限制条件要写清楚）。如果没有限制条件或者条件不当，程序将无限运行下去，直到内存溢出。</li>
 </ul>
 <h2 id="枚举enumeration">枚举(Enumeration)</h2>
 <h3 id="why-为什么要学枚举">WHY: 为什么要学枚举</h3>
@@ -519,7 +519,7 @@ $$</p>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(y <span style="color:#f92672">&gt;</span> x){ <span style="color:#75715e">//让x &gt;= y，统一化
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> tmp <span style="color:#f92672">=</span> x;
 </span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> y;
-</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> temp;
+</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> tmp;
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#75715e">// 递归的回归条件
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> x;

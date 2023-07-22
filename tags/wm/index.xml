@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>WM on zayn_lie&#39;s blog</title>
+        <link>/tags/wm/</link>
+        <description>Recent content in WM on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/wm/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hyprland installation &amp; Configuration</title>
+        <link>/posts/linux/hyprlandcustom/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/posts/linux/hyprlandcustom/</guid>
+        <description>&lt;p&gt;Note. This guide is based on Arch Linux&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;h2 id=&#34;customization&#34;&gt;Customization&lt;/h2&gt;
+&lt;h3 id=&#34;hyprland-configuration&#34;&gt;Hyprland configuration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable Mouse Acceleration: add &lt;code&gt;force_no_accel = true&lt;/code&gt; to &lt;code&gt;input{}&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;packages-usement&#34;&gt;Packages Usement&lt;/h3&gt;
+&lt;h4 id=&#34;basic-packages&#34;&gt;Basic Packages&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Desktop Manager (Could this be called &lt;em&gt;Desktop&lt;/em&gt;?): &lt;code&gt;sddm&lt;/code&gt;, then &lt;code&gt;$ sudo systemctl enable sddm&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Screen Lock: &lt;code&gt;swaylock-effect&lt;/code&gt;, then bind hotkey using &lt;code&gt;bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Swaylock-effect configuration: &lt;code&gt;~/.config/swaylock/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Authorocation: &lt;code&gt;polkit-gnome&lt;/code&gt;, then add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Keyboard Input &amp;amp; Clipboard: &lt;code&gt;fcitx5&lt;/code&gt; &lt;code&gt;fcitx5-config-qt&lt;/code&gt; &lt;code&gt;fcitx5-qt&lt;/code&gt; &lt;code&gt;fcitx5-gtk&lt;/code&gt; &lt;code&gt;fcitx5-nord&lt;/code&gt; &lt;code&gt;fcitx5-chinese-addons&lt;/code&gt;, then add &lt;code&gt;exec-once = fcitx5&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt; and in &lt;code&gt;/etc/environment&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-environment&#34; data-lang=&#34;environment&#34;&gt;GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+SDL_IM_MODULE=fcitx
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Network: &lt;code&gt;networkmanager&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;beautification&#34;&gt;Beautification&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Background/Wallpaper: &lt;code&gt;swaybg&lt;/code&gt;, then add &lt;code&gt;exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png}&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt; (&lt;code&gt;?{}&lt;/code&gt; is the path to your background picture)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Topbar: &lt;code&gt;waybar&lt;/code&gt;, then add &lt;code&gt;exec-once = LANG=C waybar&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Waybar configuration file: &lt;code&gt;~/.config/waybar/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;multi-media&#34;&gt;Multi-Media&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Screenshot: &lt;code&gt;swappy&lt;/code&gt; &lt;code&gt;grim&lt;/code&gt; &lt;code&gt;slurp&lt;/code&gt;, then bind hotkey: &lt;code&gt;bind = $mainMod SHIFT, S, exec, grim -g &amp;quot;$(slurp)&amp;quot; - | swappy -f - # screenshot: swappy, grim, slurp&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

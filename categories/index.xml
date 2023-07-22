@@ -6,13 +6,21 @@
         <description>Recent content in Categories on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux</title>
         <link>/categories/linux/</link>
-        <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>/categories/linux/</guid>
         <description>&lt;img src="/categories/linux/linux.png" alt="Featured image of post Linux" /&gt;</description>
+        </item>
+        <item>
+        <title>Misc</title>
+        <link>/categories/misc/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/categories/misc/</guid>
+        <description>&lt;img src="/categories/misc/misc.webp" alt="Featured image of post Misc" /&gt;</description>
         </item>
         <item>
         <title>Programming Language</title>
@@ -37,14 +45,6 @@
         
         <guid>/categories/algorithm/</guid>
         <description>&lt;img src="/categories/algorithm/algorithm.jpg" alt="Featured image of post Algorithm" /&gt;</description>
-        </item>
-        <item>
-        <title>Misc</title>
-        <link>/categories/misc/</link>
-        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/categories/misc/</guid>
-        <description>&lt;img src="/categories/misc/misc.webp" alt="Featured image of post Misc" /&gt;</description>
         </item>
         <item>
         <title>Mechine Learning</title>
