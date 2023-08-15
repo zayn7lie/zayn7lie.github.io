@@ -2,336 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on zayn_lie&#39;s blog</title>
-        <link>/tags/</link>
+        <link>https://zayn7lie.github.io/tags/</link>
         <description>Recent content in Tags on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Arch</title>
-        <link>/tags/arch/</link>
-        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        <lastBuildDate>Sun, 06 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Arknights</title>
+        <link>https://zayn7lie.github.io/tags/arknights/</link>
+        <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>/tags/arch/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Hyprland</title>
-        <link>/tags/hyprland/</link>
-        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/hyprland/</guid>
+        <guid>https://zayn7lie.github.io/tags/arknights/</guid>
         <description></description>
         </item>
         <item>
         <title>Linux</title>
-        <link>/tags/linux/</link>
-        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        <link>https://zayn7lie.github.io/tags/linux/</link>
+        <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>/tags/linux/</guid>
+        <guid>https://zayn7lie.github.io/tags/linux/</guid>
         <description></description>
         </item>
         <item>
         <title>Misc</title>
-        <link>/tags/misc/</link>
+        <link>https://zayn7lie.github.io/tags/misc/</link>
+        <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/tags/misc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>English</title>
+        <link>https://zayn7lie.github.io/tags/english/</link>
+        <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/tags/english/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Reading</title>
+        <link>https://zayn7lie.github.io/tags/reading/</link>
+        <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/tags/reading/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>TOEFL</title>
+        <link>https://zayn7lie.github.io/tags/toefl/</link>
+        <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/tags/toefl/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Arch Linux</title>
+        <link>https://zayn7lie.github.io/tags/arch-linux/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>/tags/misc/</guid>
+        <guid>https://zayn7lie.github.io/tags/arch-linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>config</title>
+        <link>https://zayn7lie.github.io/tags/config/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/tags/config/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>DE</title>
+        <link>https://zayn7lie.github.io/tags/de/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/tags/de/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Hyprland</title>
+        <link>https://zayn7lie.github.io/tags/hyprland/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/tags/hyprland/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>install</title>
+        <link>https://zayn7lie.github.io/tags/install/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/tags/install/</guid>
         <description></description>
         </item>
         <item>
         <title>WM</title>
-        <link>/tags/wm/</link>
+        <link>https://zayn7lie.github.io/tags/wm/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>/tags/wm/</guid>
+        <guid>https://zayn7lie.github.io/tags/wm/</guid>
         <description></description>
         </item>
         <item>
-        <title>Xfce</title>
-        <link>/tags/xfce/</link>
+        <title>XFCE</title>
+        <link>https://zayn7lie.github.io/tags/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>/tags/xfce/</guid>
+        <guid>https://zayn7lie.github.io/tags/xfce/</guid>
         <description></description>
         </item>
         <item>
-        <title>data</title>
-        <link>/tags/data/</link>
-        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/data/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Matplotlib</title>
-        <link>/tags/matplotlib/</link>
-        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/matplotlib/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Pandas</title>
-        <link>/tags/pandas/</link>
-        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/pandas/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Python</title>
-        <link>/tags/python/</link>
-        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/python/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Pytorch</title>
-        <link>/tags/pytorch/</link>
-        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/pytorch/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Scikit-learn</title>
-        <link>/tags/scikit-learn/</link>
-        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/scikit-learn/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>AP</title>
-        <link>/tags/ap/</link>
-        <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/ap/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>stat</title>
-        <link>/tags/stat/</link>
-        <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/stat/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>CalBC</title>
-        <link>/tags/calbc/</link>
-        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/calbc/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>PhyCE</title>
-        <link>/tags/phyce/</link>
-        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/phyce/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>PhyCM</title>
-        <link>/tags/phycm/</link>
-        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/phycm/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>CSA</title>
-        <link>/tags/csa/</link>
-        <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/csa/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>algorithm</title>
-        <link>/tags/algorithm/</link>
-        <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/algorithm/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>sort</title>
-        <link>/tags/sort/</link>
-        <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/sort/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>greedy</title>
-        <link>/tags/greedy/</link>
-        <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/greedy/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>complexity</title>
-        <link>/tags/complexity/</link>
-        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/complexity/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>multiply</title>
-        <link>/tags/multiply/</link>
-        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/multiply/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>space</title>
-        <link>/tags/space/</link>
-        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/space/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>time</title>
-        <link>/tags/time/</link>
-        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/time/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>dichotony</title>
-        <link>/tags/dichotony/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/dichotony/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>enumeration</title>
-        <link>/tags/enumeration/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/enumeration/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>function</title>
-        <link>/tags/function/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/function/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>loop</title>
-        <link>/tags/loop/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/loop/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>recursion</title>
-        <link>/tags/recursion/</link>
-        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/recursion/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>divide_and_conquer</title>
-        <link>/tags/divide_and_conquer/</link>
-        <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/divide_and_conquer/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>simulation</title>
-        <link>/tags/simulation/</link>
-        <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/simulation/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>c&#43;&#43;</title>
-        <link>/tags/c&#43;&#43;/</link>
-        <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/c&#43;&#43;/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>headfile</title>
-        <link>/tags/headfile/</link>
-        <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/headfile/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>blog</title>
-        <link>/tags/blog/</link>
+        <title>C&#43;&#43;</title>
+        <link>https://zayn7lie.github.io/tags/c&#43;&#43;/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/tags/blog/</guid>
+        <guid>https://zayn7lie.github.io/tags/c&#43;&#43;/</guid>
         <description></description>
         </item>
         <item>
-        <title>building</title>
-        <link>/tags/building/</link>
+        <title>CSCI</title>
+        <link>https://zayn7lie.github.io/tags/csci/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/tags/building/</guid>
+        <guid>https://zayn7lie.github.io/tags/csci/</guid>
         <description></description>
         </item>
         <item>
-        <title>chirpy</title>
-        <link>/tags/chirpy/</link>
+        <title>Program Language</title>
+        <link>https://zayn7lie.github.io/tags/program-language/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/tags/chirpy/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>github</title>
-        <link>/tags/github/</link>
-        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/github/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>jekyll</title>
-        <link>/tags/jekyll/</link>
-        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/jekyll/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>compiler</title>
-        <link>/tags/compiler/</link>
-        <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/compiler/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>environment</title>
-        <link>/tags/environment/</link>
-        <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/tags/environment/</guid>
+        <guid>https://zayn7lie.github.io/tags/program-language/</guid>
         <description></description>
         </item>
         

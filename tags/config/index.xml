@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>config on zayn_lie&#39;s blog</title>
+        <link>https://zayn7lie.github.io/tags/config/</link>
+        <description>Recent content in config on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/config/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hyprland</title>
+        <link>https://zayn7lie.github.io/posts/linux/hyprland/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/linux/hyprland/</guid>
+        <description>&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;Easy to install: &lt;code&gt;$ sudo pacman -S hyprland&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;config&#34;&gt;Config&lt;/h2&gt;
+&lt;h3 id=&#34;system&#34;&gt;System&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable Mouse Acceleration: add &lt;code&gt;force_no_accel = true&lt;/code&gt; to &lt;code&gt;input{}&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Desktop Manager (Could this be called Desktop?): &lt;code&gt;sddm&lt;/code&gt;, then &lt;code&gt;$ sudo systemctl enable sddm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Screen Lock: &lt;code&gt;swaylock-effect&lt;/code&gt;, then bind hotkey using &lt;code&gt;bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Swaylock-effect&lt;/code&gt; configuration: &lt;code&gt;~/.config/swaylock/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Authorization: &lt;code&gt;polkit-gnome&lt;/code&gt;, then add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;background/Wallpaper: &lt;code&gt;swaybg&lt;/code&gt;, then add &lt;code&gt;exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png} to ~/.config/hypr/hyprland.conf&lt;/code&gt; (&lt;code&gt;?{}&lt;/code&gt; is the path to your background picture)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Topbar&lt;/code&gt;: &lt;code&gt;waybar&lt;/code&gt;, then add &lt;code&gt;exec-once = LANG=C waybar&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;waybar&lt;/code&gt; configuration file: &lt;code&gt;~/.config/waybar/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
+&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Screenshot: &lt;code&gt;swappy grim slurp&lt;/code&gt;, then bind hotkey: &lt;code&gt;bind = $mainMod SHIFT, S, exec, grim -g &amp;quot;$(slurp)&amp;quot; - | swappy -f - # screenshot: swappy, grim, slurp&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>XFCE</title>
+        <link>https://zayn7lie.github.io/posts/linux/xfce/</link>
+        <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/linux/xfce/</guid>
+        <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
+&lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install XFCE. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start &lt;code&gt;xfce4&lt;/code&gt; in the next boot and ignore step 3. It is highly recommended installing a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DM&lt;/a&gt;, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your DM. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/p&gt;
+&lt;h2 id=&#34;config&#34;&gt;Config&lt;/h2&gt;
+&lt;h3 id=&#34;system&#34;&gt;System&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;AUR manager: &lt;code&gt;yay&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;download &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/yay&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;snapshot&lt;/a&gt;, &lt;code&gt;$ makepkg&lt;/code&gt;, &lt;code&gt;$ sudo pacman -U *.pkg.tar.zst&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gnome Keyring: &lt;code&gt;gnome-keyring&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Power Management: &lt;code&gt;tlp&lt;/code&gt;, &lt;code&gt;tlp-rdw&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Network Management: &lt;code&gt;network-manager-applet&lt;/code&gt;, &lt;code&gt;networkmanager-openconnect&lt;/code&gt; (because of some bug, &lt;a class=&#34;link&#34; href=&#34;https://archive.archlinux.org/packages/n/networkmanager-openconnect/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;1.2.8&lt;/code&gt;&lt;/a&gt; is recommended)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Folder Management: &lt;code&gt;gvfs&lt;/code&gt;, &lt;code&gt;gvfs-mtp&lt;/code&gt; for mobile connection, &lt;code&gt;thunar-archive-plugin file-roller&lt;/code&gt; for compress function&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;edit&lt;/code&gt; &amp;gt; &lt;code&gt;Configure custom actions&lt;/code&gt; &amp;gt; &lt;code&gt;open terminal here&lt;/code&gt;: &lt;code&gt;exo-open --working-directory %f --launch TerminalEmulator&lt;/code&gt; &amp;gt; &lt;code&gt;xfce4-terminal --tab --drop-down --working-directory=%f&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Resource Monitor: &lt;code&gt;xfce4-taskmanager&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Terminal: &lt;code&gt;xfce4-terminal --drop-down&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Light-locker: &lt;code&gt;/etc/lightdm/lightdm-gtk-greeter.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;greeter&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;background&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;usr&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;share&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;backgrounds&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;xfce&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;Laterano.png
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#user-background=
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;theme-name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Adwaita-dark
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;icon-theme-name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ePapirus-Dark
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;font-name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Ubuntu 11
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xft-antialias&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xft-dpi&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;128
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xft-hintstyle&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;hintfull
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xft-rgba&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Desktop&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;HiDPI&lt;/code&gt;: &lt;code&gt;Application&lt;/code&gt; - &lt;code&gt;Settings&lt;/code&gt; - &lt;code&gt;Appearance&lt;/code&gt; : &lt;code&gt;DPI&lt;/code&gt; 128&lt;/li&gt;
+&lt;li&gt;Fonts: &lt;code&gt;ttf-ubuntu-font-family&lt;/code&gt;, &lt;code&gt;ttf-fira-code&lt;/code&gt;, &lt;code&gt;noto-fonts noto-fonts-cjk noto-fonts-emoji&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Icons: &lt;code&gt;papirus-icon-theme&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
+&lt;h4 id=&#34;sound&#34;&gt;Sound&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GUI: &lt;code&gt;xfce4-pulseaudio-plugin&lt;/code&gt;, &lt;code&gt;pavucontrol&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf&lt;/code&gt;, then &lt;code&gt;$ systemctl restart --user pipewire.service&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;context.modules &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{   name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; libpipewire-module-filter-chain
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    args &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        node.description &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Noise Canceling source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        media.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Noise Canceling source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        filter.graph &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nodes &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ladspa
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rnnoise
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    plugin &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;usr&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;lib&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;ladspa&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;librnnoise_ladspa.so
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    label &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; noise_suppressor_mono
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    control &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;VAD Threshold (%)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 50.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;VAD Grace Period (ms)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 200
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Retroactive VAD Grace (ms)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        capture.props &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;capture.rnnoise_source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.passive &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            audio.rate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 48000
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        playback.props &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rnnoise_source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            media.class &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Audio&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;Source
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            audio.rate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 48000
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;video&#34;&gt;Video&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Video Player: &lt;code&gt;vlc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Recording &amp;amp; Steaming: &lt;code&gt;obs-studio&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit: &lt;code&gt;flowblade&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Screenshot: &lt;code&gt;flameshot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit: &lt;code&gt;krita inkscape&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;View: &lt;code&gt;ristretto&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
+&lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Basis: &lt;code&gt;fcitx5-im fcitx5-chinese-addons&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GUI: &lt;code&gt;fcitx5-nord fcitx5-ctk fcitx5-qt&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/etc/environment&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-env&#34; data-lang=&#34;env&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GTK_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QT_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;XMODIFIERS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;@im&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SDL_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;writing&#34;&gt;Writing&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Paper: &lt;code&gt;zotero&lt;/code&gt;AUR&lt;/li&gt;
+&lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Email: &lt;code&gt;evolution evolution-on&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Chat: &lt;code&gt;telegram-desktop discord&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Meeting: &lt;code&gt;zoom&lt;/code&gt;AUR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;game&#34;&gt;Game&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;enable &lt;code&gt;multilib&lt;/code&gt;: &lt;code&gt;/etc/pacman.conf&lt;/code&gt; - &lt;code&gt;[multilib]&lt;/code&gt; - uncomment &lt;code&gt;Include = /etc/pacman.d/mirrorlist&lt;/code&gt;
+refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

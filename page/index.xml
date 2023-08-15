@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on zayn_lie&#39;s blog</title>
-        <link>/page/</link>
+        <link>https://zayn7lie.github.io/page/</link>
         <description>Recent content in Pages on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language><atom:link href="https://zayn7lie.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>About</title>
-        <link>/page/about/</link>
-        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        <link>https://zayn7lie.github.io/page/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>/page/about/</guid>
+        <guid>https://zayn7lie.github.io/page/about/</guid>
         <description>&lt;h2 id=&#34;zayn-lie&#34;&gt;Zayn Lie&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Account: zayn7lie (Email: &lt;code&gt;echo &amp;quot;emF5bjdsaWUuYmVyNytibG9nQGdtYWlsLmNvbQo=&amp;quot; | base64 -d&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Account: zayn7lie (Email: &lt;code&gt;$ echo &amp;quot;emF5bjdsaWUuYmVyNytibG9nQGdtYWlsLmNvbQo=&amp;quot; | base64 -d&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;Background: New York University&lt;/li&gt;
 &lt;li&gt;Field: Mostly focusing on theory and basis of Mathematics, Computer Science, Data Science (Machine Learning).&lt;/li&gt;
 &lt;li&gt;Habits: Arch Linux User (with XFCE), Osu!, Arknights, open world game (e.g. Unturned, Terraria, Minecraft)&lt;/li&gt;
@@ -23,9 +22,9 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;泽忚&#34;&gt;泽忚&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;账号：zayn7lie, zayn_lie, zaynXlie (邮箱：&lt;code&gt;echo &amp;quot;emF5bjdsaWUuYmVyNytibG9nQGdtYWlsLmNvbQo=&amp;quot; | base64 -d&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;学历：目前就读于 &lt;code&gt;New York University&lt;/code&gt; ， Mathematics, Computer Science, Data Science 专业方向。&lt;/li&gt;
-&lt;li&gt;领域：偏理论研究类蒟蒻，喜欢有挑战性的算法和数学问题，并曾喜欢游荡于各大竞赛（ &lt;code&gt;Google Code Jam&lt;/code&gt; ， &lt;code&gt;CodeForce&lt;/code&gt; 等），&lt;del&gt;又菜又爱玩&lt;/del&gt;。最近开始研究机器学习，研究机器学习解释性相关问题，入门 &lt;code&gt;Kaggle&lt;/code&gt; 竞赛。&lt;/li&gt;
+&lt;li&gt;账号：zayn7lie, zayn_lie, zaynXlie (邮箱：&lt;code&gt;$ echo &amp;quot;emF5bjdsaWUuYmVyNytibG9nQGdtYWlsLmNvbQo=&amp;quot; | base64 -d&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;学历：目前就读于 New York University ， Mathematics, Computer Science, Data Science 专业方向。&lt;/li&gt;
+&lt;li&gt;领域：偏理论研究类蒟蒻，喜欢有挑战性的算法和数学问题，并曾喜欢游荡于各大竞赛（ Google Code Jam ， CodeForce 等），又菜又爱玩。最近开始研究机器学习，研究机器学习解释性相关问题，入门 Kaggle 竞赛。&lt;/li&gt;
 &lt;li&gt;爱好： Arch Linux 用户（桌面环境 XFCE ）， Osu! ，明日方舟，部分开放式游戏（ Unturned, Terraria, Minecraft 等）&lt;/li&gt;
 &lt;li&gt;观念：理想主义，开源主义，和平主义，逻辑主义，反民族主义&lt;/li&gt;
 &lt;li&gt;风格：热爱音乐伦理与音游，对于 BMS 的音乐有着无可抗拒的诱惑力。喜欢 Hardcore, Artcore, Hard Renascence 风格电子乐、交响乐和钢琴曲；凯尔特和华丽日式的合奏；混有例如皮卡第三度突出和弦的音乐。特别重视旋律，但不怎么在乎节奏。&lt;/li&gt;
@@ -34,45 +33,19 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>/page/archives/</link>
-        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        <link>https://zayn7lie.github.io/page/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>/page/archives/</guid>
+        <guid>https://zayn7lie.github.io/page/archives/</guid>
         <description></description>
         </item>
         <item>
-        <title>Sponsor</title>
-        <link>/page/sponsor/</link>
-        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
-        
-        <guid>/page/sponsor/</guid>
-        <description>&lt;p&gt;N.B. My Blog offers free helps if you follow &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;this article&lt;/a&gt;. Otherwise, please sponsor or pay for my time before questions. Thanks for your understanding.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.buymeacoffee.com/zayn7lie&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;/https:/img.shields.io/badge/support-Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&amp;amp;logo=buymeacoffee&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;BMaC&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Thanks for sponsors:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Waiting for your sponsors ~&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
         <title>Links</title>
-        <link>/page/links/</link>
+        <link>https://zayn7lie.github.io/page/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>/page/links/</guid>
-        <description>&lt;p&gt;N.B. The Friend Connections section aims at connecting and expanding different open-source communities. I am happy to share links mutually with anyone having created their own posts with high quality. If you want to create friend connections mutually with me, please contact me with Blog Email in About section using following format (Please remove the example comments after completion):&lt;/p&gt;
+        <guid>https://zayn7lie.github.io/page/links/</guid>
+        <description>&lt;p&gt;Note. The Friend Connections section aims at connecting and expanding different open-source communities. I am happy to share links mutually with anyone having created their own posts with high quality. If you want to create friend connections mutually with me, please contact me with Blog Email in About section using following format (Please remove the example comments after completion):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Blog Name&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Blog Description&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;website&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Blog url&amp;#34;&lt;/span&gt;
@@ -82,19 +55,25 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Algorithm&amp;amp;Mathematics, Music_Theory&amp;amp;Rhythm_Game, Rationality&amp;amp;Logicism, Peace&amp;amp;Open_Source&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;website&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://zayn7lie.github.io/&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;image&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://zayn7lie.github.io/img/avatar_hu52bce724e28e271956cf86328aabb587_401403_300x0_resize_box_3.png&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/18/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Arch Linux + Windows Dual-system Setup&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         <item>
         <title>Search</title>
-        <link>/page/search/</link>
+        <link>https://zayn7lie.github.io/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>/page/search/</guid>
+        <guid>https://zayn7lie.github.io/page/search/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>Sponsor</title>
+        <link>https://zayn7lie.github.io/page/sponsor/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/page/sponsor/</guid>
+        <description>&lt;p&gt;Note. My Blog offers free helps if you follow this article: &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.catb.org/~esr/faqs/smart-questions.html&lt;/a&gt;.&lt;/p&gt;
+</description>
         </item>
         
     </channel>

@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on zayn_lie&#39;s blog</title>
-        <link>/categories/</link>
+        <link>https://zayn7lie.github.io/categories/</link>
         <description>Recent content in Categories on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Linux</title>
-        <link>/categories/linux/</link>
-        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/categories/linux/</guid>
-        <description>&lt;img src="/categories/linux/linux.png" alt="Featured image of post Linux" /&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Sun, 06 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Misc</title>
-        <link>/categories/misc/</link>
+        <link>https://zayn7lie.github.io/categories/misc/</link>
+        <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/categories/misc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>English</title>
+        <link>https://zayn7lie.github.io/categories/english/</link>
+        <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/categories/english/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Linux</title>
+        <link>https://zayn7lie.github.io/categories/linux/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>/categories/misc/</guid>
-        <description>&lt;img src="/categories/misc/misc.webp" alt="Featured image of post Misc" /&gt;</description>
+        <guid>https://zayn7lie.github.io/categories/linux/</guid>
+        <description></description>
         </item>
         <item>
-        <title>Programming Language</title>
-        <link>/categories/proglang/</link>
-        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+        <title>C&#43;&#43;-Algorithm</title>
+        <link>https://zayn7lie.github.io/categories/cpp-algorithm/</link>
+        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/categories/proglang/</guid>
-        <description>&lt;img src="/categories/proglang/cpp.png" alt="Featured image of post Programming Language" /&gt;</description>
+        <guid>https://zayn7lie.github.io/categories/cpp-algorithm/</guid>
+        <description></description>
         </item>
         <item>
-        <title>APtest</title>
-        <link>/categories/aptest/</link>
-        <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/categories/aptest/</guid>
-        <description>&lt;img src="/categories/aptest/ScoreReport.jpg" alt="Featured image of post APtest" /&gt;</description>
-        </item>
-        <item>
-        <title>Algorithm</title>
-        <link>/categories/algorithm/</link>
-        <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/categories/algorithm/</guid>
-        <description>&lt;img src="/categories/algorithm/algorithm.jpg" alt="Featured image of post Algorithm" /&gt;</description>
-        </item>
-        <item>
-        <title>Mechine Learning</title>
-        <link>/categories/mechinelearning/</link>
+        <title>Math</title>
+        <link>https://zayn7lie.github.io/categories/math/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>/categories/mechinelearning/</guid>
-        <description>&lt;img src="/categories/mechinelearning/ML.jpg" alt="Featured image of post Mechine Learning" /&gt;</description>
+        <guid>https://zayn7lie.github.io/categories/math/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Py ML</title>
+        <link>https://zayn7lie.github.io/categories/py-ml/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/categories/py-ml/</guid>
+        <description></description>
         </item>
         
     </channel>

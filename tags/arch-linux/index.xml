@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Arch Linux on zayn_lie&#39;s blog</title>
+        <link>https://zayn7lie.github.io/tags/arch-linux/</link>
+        <description>Recent content in Arch Linux on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hyprland</title>
+        <link>https://zayn7lie.github.io/posts/linux/hyprland/</link>
+        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/linux/hyprland/</guid>
+        <description>&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;Easy to install: &lt;code&gt;$ sudo pacman -S hyprland&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;config&#34;&gt;Config&lt;/h2&gt;
+&lt;h3 id=&#34;system&#34;&gt;System&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable Mouse Acceleration: add &lt;code&gt;force_no_accel = true&lt;/code&gt; to &lt;code&gt;input{}&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Desktop Manager (Could this be called Desktop?): &lt;code&gt;sddm&lt;/code&gt;, then &lt;code&gt;$ sudo systemctl enable sddm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Screen Lock: &lt;code&gt;swaylock-effect&lt;/code&gt;, then bind hotkey using &lt;code&gt;bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Swaylock-effect&lt;/code&gt; configuration: &lt;code&gt;~/.config/swaylock/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Authorization: &lt;code&gt;polkit-gnome&lt;/code&gt;, then add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;background/Wallpaper: &lt;code&gt;swaybg&lt;/code&gt;, then add &lt;code&gt;exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png} to ~/.config/hypr/hyprland.conf&lt;/code&gt; (&lt;code&gt;?{}&lt;/code&gt; is the path to your background picture)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Topbar&lt;/code&gt;: &lt;code&gt;waybar&lt;/code&gt;, then add &lt;code&gt;exec-once = LANG=C waybar&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;waybar&lt;/code&gt; configuration file: &lt;code&gt;~/.config/waybar/config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
+&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Screenshot: &lt;code&gt;swappy grim slurp&lt;/code&gt;, then bind hotkey: &lt;code&gt;bind = $mainMod SHIFT, S, exec, grim -g &amp;quot;$(slurp)&amp;quot; - | swappy -f - # screenshot: swappy, grim, slurp&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>XFCE</title>
+        <link>https://zayn7lie.github.io/posts/linux/xfce/</link>
+        <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/linux/xfce/</guid>
+        <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
+&lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install XFCE. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start &lt;code&gt;xfce4&lt;/code&gt; in the next boot and ignore step 3. It is highly recommended installing a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DM&lt;/a&gt;, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your DM. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/p&gt;
+&lt;h2 id=&#34;config&#34;&gt;Config&lt;/h2&gt;
+&lt;h3 id=&#34;system&#34;&gt;System&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;AUR manager: &lt;code&gt;yay&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;download &lt;a class=&#34;link&#34; href=&#34;https://aur.archlinux.org/packages/yay&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;snapshot&lt;/a&gt;, &lt;code&gt;$ makepkg&lt;/code&gt;, &lt;code&gt;$ sudo pacman -U *.pkg.tar.zst&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gnome Keyring: &lt;code&gt;gnome-keyring&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Power Management: &lt;code&gt;tlp&lt;/code&gt;, &lt;code&gt;tlp-rdw&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Network Management: &lt;code&gt;network-manager-applet&lt;/code&gt;, &lt;code&gt;networkmanager-openconnect&lt;/code&gt; (because of some bug, &lt;a class=&#34;link&#34; href=&#34;https://archive.archlinux.org/packages/n/networkmanager-openconnect/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;1.2.8&lt;/code&gt;&lt;/a&gt; is recommended)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Folder Management: &lt;code&gt;gvfs&lt;/code&gt;, &lt;code&gt;gvfs-mtp&lt;/code&gt; for mobile connection, &lt;code&gt;thunar-archive-plugin file-roller&lt;/code&gt; for compress function&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;edit&lt;/code&gt; &amp;gt; &lt;code&gt;Configure custom actions&lt;/code&gt; &amp;gt; &lt;code&gt;open terminal here&lt;/code&gt;: &lt;code&gt;exo-open --working-directory %f --launch TerminalEmulator&lt;/code&gt; &amp;gt; &lt;code&gt;xfce4-terminal --tab --drop-down --working-directory=%f&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Resource Monitor: &lt;code&gt;xfce4-taskmanager&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Terminal: &lt;code&gt;xfce4-terminal --drop-down&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Light-locker: &lt;code&gt;/etc/lightdm/lightdm-gtk-greeter.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;greeter&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;background&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;usr&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;share&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;backgrounds&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;xfce&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;Laterano.png
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#user-background=
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;theme-name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Adwaita-dark
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;icon-theme-name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ePapirus-Dark
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;font-name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Ubuntu 11
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xft-antialias&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xft-dpi&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;128
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xft-hintstyle&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;hintfull
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xft-rgba&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Desktop&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;HiDPI&lt;/code&gt;: &lt;code&gt;Application&lt;/code&gt; - &lt;code&gt;Settings&lt;/code&gt; - &lt;code&gt;Appearance&lt;/code&gt; : &lt;code&gt;DPI&lt;/code&gt; 128&lt;/li&gt;
+&lt;li&gt;Fonts: &lt;code&gt;ttf-ubuntu-font-family&lt;/code&gt;, &lt;code&gt;ttf-fira-code&lt;/code&gt;, &lt;code&gt;noto-fonts noto-fonts-cjk noto-fonts-emoji&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Icons: &lt;code&gt;papirus-icon-theme&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
+&lt;h4 id=&#34;sound&#34;&gt;Sound&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GUI: &lt;code&gt;xfce4-pulseaudio-plugin&lt;/code&gt;, &lt;code&gt;pavucontrol&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf&lt;/code&gt;, then &lt;code&gt;$ systemctl restart --user pipewire.service&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;context.modules &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{   name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; libpipewire-module-filter-chain
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    args &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        node.description &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Noise Canceling source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        media.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Noise Canceling source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        filter.graph &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nodes &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ladspa
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rnnoise
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    plugin &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;usr&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;lib&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;ladspa&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;librnnoise_ladspa.so
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    label &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; noise_suppressor_mono
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    control &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;VAD Threshold (%)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 50.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;VAD Grace Period (ms)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 200
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Retroactive VAD Grace (ms)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        capture.props &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;capture.rnnoise_source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.passive &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            audio.rate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 48000
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        playback.props &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rnnoise_source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            media.class &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Audio&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;Source
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            audio.rate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 48000
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;video&#34;&gt;Video&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Video Player: &lt;code&gt;vlc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Recording &amp;amp; Steaming: &lt;code&gt;obs-studio&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit: &lt;code&gt;flowblade&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Screenshot: &lt;code&gt;flameshot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit: &lt;code&gt;krita inkscape&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;View: &lt;code&gt;ristretto&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
+&lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Basis: &lt;code&gt;fcitx5-im fcitx5-chinese-addons&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GUI: &lt;code&gt;fcitx5-nord fcitx5-ctk fcitx5-qt&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/etc/environment&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-env&#34; data-lang=&#34;env&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GTK_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QT_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;XMODIFIERS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;@im&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SDL_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;writing&#34;&gt;Writing&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Paper: &lt;code&gt;zotero&lt;/code&gt;AUR&lt;/li&gt;
+&lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Email: &lt;code&gt;evolution evolution-on&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Chat: &lt;code&gt;telegram-desktop discord&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Meeting: &lt;code&gt;zoom&lt;/code&gt;AUR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;game&#34;&gt;Game&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;enable &lt;code&gt;multilib&lt;/code&gt;: &lt;code&gt;/etc/pacman.conf&lt;/code&gt; - &lt;code&gt;[multilib]&lt;/code&gt; - uncomment &lt;code&gt;Include = /etc/pacman.d/mirrorlist&lt;/code&gt;
+refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Arch Linux Installation</title>
+        <link>https://zayn7lie.github.io/posts/linux/archlinux/</link>
+        <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/linux/archlinux/</guid>
+        <description>&lt;h2 id=&#34;quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part&#34;&gt;Quick Ref e.g. for me (Do NOT read this part if first installation, look at the &lt;code&gt;HOW&lt;/code&gt; part)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Network&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# iwctl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# station wlan0 get-networks&lt;/code&gt;, &lt;code&gt;[iwd]# station wlan0 connect ${SSID}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# exit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# hwclock --systohc --utc&lt;/code&gt;, &lt;code&gt;# timedatectl set-ntp true&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Disk Mounting and Installation&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# fdisk -l&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p4}&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mkdir -p /mnt/boot&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p1} /mnt/boot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# lsblk&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt;, &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;User Setting&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;# arch-chroot /mnt /bin/bash&lt;/code&gt;, &lt;code&gt;# passwd&lt;/code&gt;, &lt;code&gt;# echo zayn7lie-acl &amp;gt; /etc/hostname&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;# useradd -m -G wheel -s /bin/bash zayn7lie&lt;/code&gt;, &lt;code&gt;# passwd zayn7lie&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;# vim /etc/sudoers&lt;/code&gt; uncomment &lt;code&gt;%wheel ALL=(ALL:ALL)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;vim /etc/hosts&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-hosts&#34; data-lang=&#34;hosts&#34;&gt;127.0.0.1 localhost
+::1 localhost
+127.0.1.1 zayn7lie-acl.localdomain zayn7lie-acl
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Language &amp;amp; Time&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# vim /etc/locale.gen&lt;/code&gt; uncomment &lt;code&gt;n-US.UTF-8 UTF-8&lt;/code&gt;, &lt;code&gt;# locale-gen&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# echo LANG=en-US.UTF-8 &amp;gt; /etc/locale.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Launch Setting&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S amd-ucode grub efibootmgr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=&amp;quot;Arch Linux&amp;quot; --recheck&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Final&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt;, &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# exit&lt;/code&gt;, &lt;code&gt;# reboot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NetworkManager&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;$ nmcli device wifi list&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ nmcli device wifi connect ?{SSID_or_BSSID} password ?{password}&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pacman&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;Remove: &lt;code&gt;$ sudo pacman -Run(c or s) package&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Auto-clean: &lt;code&gt;$ sudo pacman -Runc $(pacman -Qdtq)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Clean Cache: &lt;code&gt;$ sudo pacman -Sc&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;Why do I want to switch from Windows to Linux?&lt;/h3&gt;
+&lt;p&gt;First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want. But in Windows, we have to deal with lots of random and unknown services to change only a system font, and then we will get a number of bugs that we cannot solve for the unknown source code.&lt;/li&gt;
+&lt;li&gt;I am able to fully maximize my efficiency. If I want to install tools, I could just simply type &lt;code&gt;$ sudo pacman -S ${pachage}&lt;/code&gt; or $ &lt;code&gt;sudo apt install ${pachage}&lt;/code&gt;, and those packages’ licenses like MIT, GNU are easy to follow. But in Windows, it is time-consuming to download, depackage, install, agree to license, pay for the software, etc.&lt;/li&gt;
+&lt;li&gt;I am able to debug by my self. If we encounter a bug, we could just look at the source code and fix the bug. We could also PR to the repos and improve the software together. But for some software in Windows, it is hard to figure out how the software runs.&lt;/li&gt;
+&lt;li&gt;We have a large community to solve problems. In Linux, I have solved all bugs and run system smoothly without asking for any help - almost all problems and questions I encountered have been solved in Linux communities or forums.&lt;/li&gt;
+&lt;li&gt;I am able to uninstall the services I do not want. In Linux, we are able to install whatever we want and uninstall (remove) whatever we do not want. But in Windows, there are so many services like SMB file transfer that I might not want to use for entire life! The total storage of Pure Arch Linux with Xfce and daily working and gaming software is below 8 G!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-do-i-want-to-switch-from-ubuntu-to-arch&#34;&gt;Why do I want to switch from Ubuntu to Arch?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;After using Ubuntu for several months, I have the ability to work smoothly with terminals and have basis understanding of Linux. I want to step in further, and installing Arch Linux is a good approach to that.&lt;/li&gt;
+&lt;li&gt;Arch have the most complete wiki that we might be able to solve all problems there!&lt;/li&gt;
+&lt;li&gt;Arch Linux has more universal package manager and various packages from different system (it might be &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Arch_User_Repository&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AUR&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Ubuntu still have lots of services I do not know. And gnome is an anti-lightweight desktop environment which could be very annoying.&lt;/li&gt;
+&lt;li&gt;Ubuntu with gnome is stepping in commercial and be less community-friendly. And there are some ads of Ubuntu Pro appear in the system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-do-i-want-to-install-arch-linux-without-the-script&#34;&gt;Why do I want to install Arch Linux without the script?&lt;/h3&gt;
+&lt;p&gt;Learn more about Linux and fully customize for myself.&lt;/p&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;p&gt;Here is an introduction of Arch Linux from its wiki: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Arch_Linux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wiki.archlinux.org/title/Arch_Linux&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. This guide is just a simplification, clarification and modification based &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Arch Linux-Installation Guide&lt;/a&gt;. If you have any questions or if I not mention or skip about some necessary steps, you could just read the wiki and find out the answer. By the way, this guide is more focusing on understanding Linux system and how a system could be installed in a machine.&lt;/p&gt;
+&lt;p&gt;Every command begin with &lt;code&gt;#&lt;/code&gt; meaning it is a shell command. &lt;code&gt;#&lt;/code&gt; is always input automatically that you do not need to type it again. E.g. &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; you might only need to type in &lt;code&gt;mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;. &lt;code&gt;$&lt;/code&gt;, &lt;code&gt;[iwd]#&lt;/code&gt;, etc. is also similar to &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Everything with &lt;code&gt;?{ }&lt;/code&gt; meaning that you could modify it based on your situation, for example &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; might be &lt;code&gt;# mount /dev/sd1 /mnt&lt;/code&gt; for you. Everything with &lt;code&gt;!{ }&lt;/code&gt; meaning that you could not to type this based on your situation. E.g. &lt;code&gt;# arch-chroot /mnt !{/bin/bash}&lt;/code&gt; you might only need to run &lt;code&gt;# arch-chroot /mnt&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;1-preparation&#34;&gt;1. Preparation&lt;/h3&gt;
+&lt;p&gt;A target machine that you want to install system to. A computer with 16 GB or above disk and AMD or Intel CPU is recommended. (P.S. High RAM is highly recommended. In this guide, I would not introduce how to create SWAP partition because my 16 GB RAM is enough for daily use.)&lt;/p&gt;
+&lt;p&gt;A USB flash drive (storage device) that could be modified. A USB with 8 GB or larger is recommended.&lt;/p&gt;
+&lt;p&gt;An available network that is able to access to Arch Linux packages. (If you are a Chinese User, this post is recommended to use.) An unhidden network is recommended.&lt;/p&gt;
+&lt;h3 id=&#34;2-making-an-installation-medium&#34;&gt;2. Making an Installation Medium&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Windows User&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select one release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geo.mirror.pkgbuild.com/iso/&lt;/a&gt; that is ending with &lt;code&gt;.iso&lt;/code&gt; or just download the standard release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install Rufus for installing installation image.&lt;/li&gt;
+&lt;li&gt;Plug in your medium and using Rufus to install.&lt;/li&gt;
+&lt;li&gt;Reboot with your medium and enter BIOS or UEFI.&lt;/li&gt;
+&lt;li&gt;Select the installation medium and get into Arch Linux installation and select the first option.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Linux User&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select one release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geo.mirror.pkgbuild.com/iso/&lt;/a&gt; that is ending with &lt;code&gt;.iso&lt;/code&gt; or just download the standard release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# dd if=${Path_to_ISO} of=/dev/?{Your_medium} bs=4M&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reboot with your medium and enter BIOS or UEFI.&lt;/li&gt;
+&lt;li&gt;Select the installation medium and get into Arch Linux installation and select the first option.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-network-configuration&#34;&gt;3. Network Configuration&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. The installation medium have installed &lt;code&gt;iwd&lt;/code&gt; tool. Although &lt;code&gt;networkmanager&lt;/code&gt; is more popular in Arch Linux network settings, &lt;code&gt;iwd&lt;/code&gt; is the default network settings tool for installation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# iwctl&lt;/code&gt; to enter iwd tool.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# device list&lt;/code&gt; to check your network device. You need to remember your device name and type into ?{wlan0} in the following commands.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# station ?{wlan0} get-networks&lt;/code&gt; to check your networks and remember your SSID to type into following ${SSID}&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# station ?{wlan0} connect ${SSID}&lt;/code&gt; to connect to SSID, you might need to type password after connect to it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[iwd]# exit&lt;/code&gt; to exit the network tool.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-disk-mounting-and-installation&#34;&gt;4. Disk Mounting and Installation&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# fdisk -l&lt;/code&gt; to check your partitions of disk.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p4}&lt;/code&gt; to format a partition to ext4 file system for your main Arch Linux System Installation. If you want to install Dual-systems, do not run the following commands: &lt;code&gt;# mkfs.vfat -F32 /dev/?{nvme0n1p1}&lt;/code&gt; to format a partition to fat32 file system for the boot partition.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;, &lt;code&gt;# mkdir -p /mnt/boot&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p1} /mnt/boot&lt;/code&gt; to connect disk partitions to the installation medium.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# lsblk&lt;/code&gt; to check your mounting situation. If this not meet your condition, you could modify by &lt;code&gt;# unmount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; command.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacstrap /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim} !{linux-headers}&lt;/code&gt; to install basis Arch Linux. &lt;code&gt;base-devel&lt;/code&gt; contains &lt;code&gt;makepkg&lt;/code&gt; that is necessary for installing AUR packages. You can install the Linux kernels that you want through &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/kernel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wiki.archlinux.org/title/kernel&lt;/a&gt;. &lt;code&gt;linux-firmware&lt;/code&gt; is necessary Linux kernel firmware. &lt;code&gt;e2fsprogs&lt;/code&gt; is for configuration of ext4 file system. &lt;code&gt;ntfs-3g&lt;/code&gt; is for configuration of NTFS (Windows File System) file system. &lt;code&gt;vim&lt;/code&gt; if for latter file editing.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt; to generate a &lt;code&gt;fstab&lt;/code&gt; file for Linux file tree viewing. It is safer to &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt; to check whether file is generated properly. P.S. Difference between &amp;raquo; and &amp;gt;: &amp;raquo; is appending (add) to the end of the file, &amp;gt; is replacing the file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;5-user-setting&#34;&gt;5. User Setting&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# arch-chroot /mnt /bin/bash&lt;/code&gt; to change root to &lt;code&gt;/mnt&lt;/code&gt; (root user path) using shell in &lt;code&gt;/bin/bash&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# passwd&lt;/code&gt; to reset the root user password.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# echo ?{zayn7lie-acl} &amp;gt; /etc/hostname&lt;/code&gt; to reset your machine name.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# useradd -m -G wheel -s /bin/bash ${zayn7lie}&lt;/code&gt; set up a new user &lt;code&gt;${zayn7lie}&lt;/code&gt;, set it log in directory and add to wheel group. &lt;code&gt;# passwd ${zayn7lie}&lt;/code&gt; to set user’s password. P.S. Wheel group users are used to update system (like a wheel to update continuously)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# vim /etc/sudoers&lt;/code&gt; to open config file using vim. Type i to enter insert(edit) mode for vim and then find and uncomment (delete &lt;code&gt;#&lt;/code&gt;) before &lt;code&gt;%wheel ALL=(ALL:ALL) ALL&lt;/code&gt;. Then &lt;code&gt;esc&lt;/code&gt; to escape from insert mode and &lt;code&gt;:wq&lt;/code&gt; to write in (save) and quit. P.S. &lt;code&gt;:wq!&lt;/code&gt; and &lt;code&gt;:q!&lt;/code&gt; the &lt;code&gt;!&lt;/code&gt; means force. &lt;code&gt;:wq!&lt;/code&gt; will force writing in (If the file is unchangeable, it will create a new file and replace it.), and &lt;code&gt;:q!&lt;/code&gt; will force you to quite without any change of the file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# vim /etc/hosts&lt;/code&gt; to config localhost settings. Insert:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-hosts&#34; data-lang=&#34;hosts&#34;&gt;127.0.0.1 localhost
+::1 localhost
+127.0.1.1 ?{zayn7lie-acl}.localdomain ?{zayn7lie-acl}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace &lt;code&gt;?{zayn7lie-acl}&lt;/code&gt; with your machine name.&lt;/p&gt;
+&lt;h3 id=&#34;6-language--time&#34;&gt;6. Language &amp;amp; Time&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# vim /etc/locale.gen&lt;/code&gt; to enter language config file, then uncomment &lt;code&gt;en-US.UTF-8 UTF-8&lt;/code&gt; and the language you want use, then save the file. # locale-gen to generate and install language files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# echo LANG=en-US.UTF-8 &amp;gt; /etc/locale.conf&lt;/code&gt; to choose &lt;code&gt;en-US.UTF-8&lt;/code&gt; as your root user language.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# hwclock --systohc --utc&lt;/code&gt; and &lt;code&gt;# timedatectl set-ntp true&lt;/code&gt; to update your system time to installation medium time.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime&lt;/code&gt; to config your local time. &lt;code&gt;?{EST}&lt;/code&gt; Could be change based on your region. You can use &lt;code&gt;# ls /usr/share/zoneinfo/&lt;/code&gt; to check which option could be used. Some folder like ./Asia might have subfolders that you need to choose in more specific way. E.G. &lt;code&gt;# ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime&lt;/code&gt;. P.S. s meaning soft link which will not actually copy all file to the target folder, f meaning force to do it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;7-launch-setting&#34;&gt;7. Launch Setting&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;# pacman -S ?{amd-ucode} grub efibootmgr&lt;/code&gt; to install necessary boot package. If you are using Intel CPU, change &lt;code&gt;?{amd-ucode}&lt;/code&gt; to &lt;code&gt;intel-ucode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&amp;quot;Arch Linux&amp;quot;} --recheck&lt;/code&gt; to install grub file. &lt;code&gt;!{--removable}&lt;/code&gt; determines whether you are able to remove it from UEFI, &lt;code&gt;?{&amp;quot;Arch Linux&amp;quot;}&lt;/code&gt; is your system name in grub.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt; to generate config file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;8-misc&#34;&gt;8. Misc&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt; to install NetworkManager tool, then &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt; to let &lt;code&gt;NetworkManager&lt;/code&gt; start automatically when you boot your system. As I have mentioned above, &lt;code&gt;networkmanager&lt;/code&gt; is more popular than &lt;code&gt;iwd&lt;/code&gt;. And &lt;code&gt;iwd&lt;/code&gt; is only installed in your installation medium but not your system. You still have to install a network manager tool for your &lt;code&gt;Arch Linux&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;finish-installation&#34;&gt;Finish Installation&lt;/h3&gt;
+&lt;p&gt;Congratulation! You have installed Arch Linux in your machine. Now you can &lt;code&gt;# exit&lt;/code&gt; to exit your root user account, &lt;code&gt;# reboot&lt;/code&gt; and remove installation medium when computer is completely closed. Now, start your journey to &lt;code&gt;Arch Linux&lt;/code&gt;!&lt;/p&gt;
+&lt;h3 id=&#34;post-installation&#34;&gt;Post-installation&lt;/h3&gt;
+&lt;p&gt;If you encounter any problems or bugs, reading &lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wiki&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;googling&lt;/a&gt; (&lt;a class=&#34;link&#34; href=&#34;https://duckduckgo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DDG&lt;/a&gt; is a better option with high privacy protection), searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;a smart way&lt;/a&gt;. That’s all, it is my best hope that you could join and enjoy our open-source communities!&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

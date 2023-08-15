@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>CSCI on zayn_lie&#39;s blog</title>
+        <link>https://zayn7lie.github.io/tags/csci/</link>
+        <description>Recent content in CSCI on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/csci/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C&#43;&#43; Basic - 01 Function</title>
+        <link>https://zayn7lie.github.io/posts/cpp-algorithm/basic-01function/</link>
+        <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/basic-01function/</guid>
+        <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?&lt;/h2&gt;
+&lt;p&gt;I believe many people are confused about the reason we start from function instead of popular &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt;. It is because &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; program is too difficult to beginner.&lt;/p&gt;
+&lt;p&gt;Some people might still be confused with &lt;em&gt;difficult&lt;/em&gt;, then let&amp;rsquo;s have a review of the program first:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    printf(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, world!&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    cout &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At the first sight of these, you possibly confused about what &lt;code&gt;include&lt;/code&gt; is, what is included in &lt;code&gt;namespace&lt;/code&gt;, why we should add &lt;code&gt;int main()&lt;/code&gt;, etc. But your professor would possibly reply that don&amp;rsquo;t ask, remember first?&lt;/p&gt;
+&lt;p&gt;As a science subject that is focusing on logic, I am opposed with such an unlogical way to study. What is more, &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; program is used for testing compiler instead of learning. Thus, I prefer to start with an easier program with less confusing things:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To be more accurate, this is not a &lt;em&gt;program&lt;/em&gt; but a &lt;em&gt;function&lt;/em&gt; that is supposed to be the beginning for beginner.&lt;/p&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;h3 id=&#34;what-is-function&#34;&gt;What is function?&lt;/h3&gt;
+&lt;p&gt;Ref. &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Function_%28mathematics%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wikipedia&lt;/a&gt;: In mathematics, a &lt;strong&gt;function&lt;/strong&gt; from a set $X$ to a set $Y$ assigns to each element of $X$ exactly one element of $Y$.&lt;/p&gt;
+&lt;p&gt;Too abstract? Just understand that &lt;code&gt;Function&lt;/code&gt; is a &amp;ldquo;machine&amp;rdquo; containing some functions. E.g. $f(x) = x + 1$ machine $f(x)$ contains a function that could help to add 1 to input.&lt;/p&gt;
+&lt;p&gt;Then, you might find that all math or cs questions could be turned into functions with different complexity like $f(g(x) + h(y) \cdot u(z))$. And if we turn this into a language that computer could understand, it is a &lt;em&gt;program&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Now, you might understand why should we start from function. Function, is the most basic logic under program. Or, &lt;em&gt;all programs are consisted by functions&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-the-components-of-function&#34;&gt;What is the components of function?&lt;/h3&gt;
+&lt;p&gt;Let&amp;rsquo;s have a review of the previous function: &lt;code&gt;int f(int x){return x + 1;}&lt;/code&gt;, which equals to $f(x) = x + 1$ in mathematics. It&amp;rsquo;s time to fully understand this function:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt;: tell computer (declare) that the output ($f(x)$) and input ($x$) are integers. We have to tell computer every variable&amp;rsquo;s type so that the computer could store it properly.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(int x)&lt;/code&gt;: input value. In the following program we could call this function by just using &lt;code&gt;f(1)&lt;/code&gt;, &lt;code&gt;f(2)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;return&lt;/code&gt;: tell computer that the function next is to output the value followed by &lt;code&gt;return&lt;/code&gt; and then function would be terminated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;;&lt;/code&gt;: separate different commends in the function.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{ }&lt;/code&gt;: to &amp;ldquo;pack&amp;rdquo; the function.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You might have an overview of function now, then let&amp;rsquo;s move to a more complex function:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; bestNum;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    bestNum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bestNum;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    bestNum &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; bestNum;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Line 1: At this time, we declare two things, &lt;code&gt;function()&lt;/code&gt; and &lt;code&gt;a&lt;/code&gt;, as integers. You might find that we do not use &lt;code&gt;f()&lt;/code&gt; this time, we use &lt;code&gt;function()&lt;/code&gt; instead. Right, and &lt;code&gt;function&lt;/code&gt; is better than &lt;code&gt;f&lt;/code&gt; because while reading code, people could easier to get programmers&amp;rsquo; points.&lt;/p&gt;
+&lt;p&gt;Line 2 &amp;amp; 3: &lt;code&gt;int bestNum = 7&lt;/code&gt; in short (and preferred). As I have mentioned above, &lt;code&gt;bestNum&lt;/code&gt; is better than &lt;code&gt;bn&lt;/code&gt; or just &lt;code&gt;b&lt;/code&gt; because we could understand it better. In this point, we declare &lt;code&gt;bestNum&lt;/code&gt; is an integer and &lt;em&gt;assign&lt;/em&gt; &lt;code&gt;7&lt;/code&gt; to &lt;code&gt;bestNum&lt;/code&gt;. Let me describe two things: how do the name of &lt;code&gt;bestNum&lt;/code&gt; come and what is &lt;em&gt;assign&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;camelCase&lt;/code&gt;: while writing a variable, we cannot divide the terms into separated words for computer cannot recognize it correctly like we cannot write &lt;code&gt;camelCase&lt;/code&gt; to &lt;code&gt;camel case&lt;/code&gt;. In this case, we have several ways to name this like &lt;code&gt;camel_case&lt;/code&gt;, &lt;code&gt;camel-case&lt;/code&gt;, &lt;code&gt;CamelCase&lt;/code&gt;. But &lt;code&gt;camelCase&lt;/code&gt; is one of the wide-use approach for its high efficiency. And the name of the naming method is &lt;em&gt;Camel Case&lt;/em&gt;. And &lt;code&gt;num&lt;/code&gt; is &lt;code&gt;number&lt;/code&gt; in short. There is also some abbr like &lt;code&gt;ans&lt;/code&gt; refer to &lt;code&gt;answer&lt;/code&gt;, &lt;code&gt;cnt&lt;/code&gt; refer to &lt;code&gt;counter&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;=&lt;/code&gt;: &lt;code&gt;=&lt;/code&gt; does not mean &lt;em&gt;equal&lt;/em&gt;, but &lt;em&gt;assign&lt;/em&gt;. &lt;em&gt;Equal&lt;/em&gt; is a kind of &lt;em&gt;judgement&lt;/em&gt; (We will learn it later about &lt;code&gt;==&lt;/code&gt;), but &lt;em&gt;Assign&lt;/em&gt; is a kind of &lt;em&gt;calculation&lt;/em&gt;. To fully understand this, let&amp;rsquo;s look deeper into computer memory. When we declare variables, the computer will give every variable some memory for store number like computer will give &lt;code&gt;int&lt;/code&gt; 32 bits (4 bytes) to store and give &lt;code&gt;long long int&lt;/code&gt; 64 bits to store which means &lt;code&gt;long long int&lt;/code&gt; is able to store larger integer. Every type use only &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt; to store number thus when we assign, many &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt; change to store the number when we assign to the variable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Line 4: We assign the number store in &lt;code&gt;bestNum&lt;/code&gt; to &lt;code&gt;a&lt;/code&gt;. And remember, &lt;code&gt;a&lt;/code&gt; is not a preferred name. When we write program, please make it more specific.&lt;/p&gt;
+&lt;p&gt;Line 5: We assign the number that store in &lt;code&gt;a&lt;/code&gt; and then times two to &lt;code&gt;a&lt;/code&gt;. We calculate the number at the right of &lt;code&gt;=&lt;/code&gt; first and then assign the number we calculated to the left variable.&lt;/p&gt;
+&lt;p&gt;Line 6: We assign the number store in &lt;code&gt;a&lt;/code&gt; to &lt;code&gt;bestNum&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Line 7: The overall function &lt;code&gt;function()&lt;/code&gt; returns an integer number &lt;code&gt;bestNum&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In a nutshell, the function of &lt;code&gt;function()&lt;/code&gt; is that first assigning $7$ to &lt;code&gt;bestNum&lt;/code&gt; that we declare as an integer, then assign &lt;code&gt;bestNum&lt;/code&gt; to &lt;code&gt;a&lt;/code&gt;, then assign the number that &lt;code&gt;a&lt;/code&gt; times $2$ to &lt;code&gt;a&lt;/code&gt;, then assign &lt;code&gt;a&lt;/code&gt; back to &lt;code&gt;bestNum&lt;/code&gt;, finally returns &lt;code&gt;bestNum&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You might find that there is no point to input &lt;code&gt;a&lt;/code&gt; for it will be &amp;lsquo;refreshed&amp;rsquo; or assigned with another number &lt;code&gt;bestNum&lt;/code&gt; in line 4. So we could rewrite line 1: &lt;code&gt;int function() {&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you could get the points in the nutshell, then congratulation that you stepped in c++ now. But you might still be confused about although there is no CE (Compile-time Error) but RE (Runtime Error). Which the function that the overall program start with?&lt;/p&gt;
+&lt;h3 id=&#34;the-main-function-of-a-program---main-function&#34;&gt;The main function of a program - &lt;code&gt;main()&lt;/code&gt; function&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; y;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f(a, b);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is a program without input and output (We will take about how to input and output in terminal next course). Let&amp;rsquo;s have an analysis of this function:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The program begins from &lt;code&gt;main()&lt;/code&gt;, but why do we write from &lt;code&gt;f()&lt;/code&gt;? It is because every function is supposed to be known before usage (When solving math problems, we are also supposed to clarify the function of every function before usage).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;return 0&lt;/code&gt; of the &lt;code&gt;main()&lt;/code&gt; does not mean that the whole program would return 0 after running - &lt;code&gt;0&lt;/code&gt; in C++ means that the whole program runs without problem.&lt;/li&gt;
+&lt;li&gt;You might notice that in this time, &lt;code&gt;f()&lt;/code&gt; have two parameters, it is valid. (It is also valid in mathematics)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you could get the point, let&amp;rsquo;s forward to a more .complicated program:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;h&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; h(i);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ...;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    f(i);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Could you tell the sequence of this program?&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;main&lt;/code&gt; -&amp;gt; &lt;code&gt;f&lt;/code&gt; -&amp;gt; &lt;code&gt;h&lt;/code&gt; (return) -&amp;gt; &lt;code&gt;f&lt;/code&gt; -&amp;gt; &lt;code&gt;main&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It is a &lt;code&gt;stack&lt;/code&gt; structure, which we put &lt;code&gt;main&lt;/code&gt; in the bottom first, then &lt;code&gt;f&lt;/code&gt;, then &lt;code&gt;h&lt;/code&gt;. When we want to return, we also have to pick from the top first: &lt;code&gt;h&lt;/code&gt;, &lt;code&gt;f&lt;/code&gt; then &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;stack&lt;/code&gt; structure, which is defined as LIFO, Last In First Out, is widely use in algorithm, computer hardware, etc. We will gain a deeper sight of this in the following courses.&lt;/p&gt;
+&lt;h2 id=&#34;how-how-to-write-a-program&#34;&gt;HOW: How to write a Program?&lt;/h2&gt;
+&lt;h3 id=&#34;begin-with-main-is-a-good-habit&#34;&gt;Begin with &lt;code&gt;main()&lt;/code&gt; is a good habit&lt;/h3&gt;
+&lt;p&gt;From the knowledge we have learned above, every program contains a &lt;code&gt;main()&lt;/code&gt; function.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;sentence&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We know that the return value of &lt;code&gt;main()&lt;/code&gt; is not important. But why do we declare &lt;code&gt;main&lt;/code&gt; as integer instead of other type like boolean &lt;code&gt;bool&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;At the beginning, I hope to improve the &lt;em&gt;answer searching ability&lt;/em&gt; for everyone.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;For the question &lt;em&gt;why do we declare main function as int in c++?&lt;/em&gt;, we abstract the keywords: &lt;code&gt;why declare&lt;/code&gt;(question) &lt;code&gt;main&lt;/code&gt;(target 1) &lt;code&gt;int&lt;/code&gt;(target 2) &lt;code&gt;c++&lt;/code&gt;(field)&lt;/li&gt;
+&lt;li&gt;Choose a platform for searching: &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://duckduckgo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DuckDuckGo&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack Overflow&lt;/a&gt;, and other forums.&lt;/li&gt;
+&lt;li&gt;Type in the keywords and search.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;More about how to get the answer: &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;How To Ask Questions The Smart Way&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After several searching, you might find the answer: &lt;code&gt;The short answer, is because the C++ standard requires main() to return int . As you probably know, the return value from the main() function is used by the runtime library as the exit code for the process. Both Unix and Win32 support the concept of a (small) integer returned from a process after it has finished.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In short, this is a regulation when C++ was created. When program return 0 everything goes well.&lt;/p&gt;
+&lt;p&gt;I use this case to emphasize that the purpose of my blog is not &lt;em&gt;finding answer&lt;/em&gt; but &lt;em&gt;getting better understanding and logic for specific knowledge&lt;/em&gt;. I hope everyone could follow &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;How To Ask Questions The Smart Way&lt;/a&gt; before asking questions.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The first thing to understand is that hackers actually like hard problems and good, thought-provoking questions about them. If we didn&amp;rsquo;t, we wouldn&amp;rsquo;t be here. If you give us an interesting question to chew on we&amp;rsquo;ll be grateful to you; good questions are a stimulus and a gift. Good questions help us develop our understanding, and often reveal problems we might not have noticed or thought about otherwise. Among hackers, “Good question!” is a strong and sincere compliment.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, we know how to create a structure of a program, then what about calculation?&lt;/p&gt;
+&lt;h3 id=&#34;arithmetic&#34;&gt;Arithmetic&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic &lt;code&gt;+ - * /&lt;/code&gt; could be use directly. E.g. &lt;code&gt;int a = 5 - 3;&lt;/code&gt;, &lt;code&gt;float b = 3 / 6&lt;/code&gt; (float is a type could store float number). But notice that &lt;code&gt;/&lt;/code&gt; still cannot divide with &lt;code&gt;0&lt;/code&gt;. Although there is no CE, but RE will happen while running the program.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;=&lt;/code&gt; We have clarified that &lt;code&gt;=&lt;/code&gt; is not &lt;em&gt;equal&lt;/em&gt; but &lt;em&gt;assign&lt;/em&gt; as an arithmetic.&lt;/li&gt;
+&lt;li&gt;Mod calculation: &lt;code&gt;%&lt;/code&gt;. E.g. &lt;code&gt;int a = 8 % 3; // a equals 2&lt;/code&gt; (&lt;code&gt;//&lt;/code&gt; is a comment sign. The content after &lt;code&gt;//&lt;/code&gt; will not be compiled and run. &lt;code&gt;/*content*/&lt;/code&gt; is similar to &lt;code&gt;//&lt;/code&gt;, but you can comment for several lines.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;practice&#34;&gt;Practice&lt;/h2&gt;
+&lt;p&gt;As the first practice, I will declare that how to use &lt;code&gt;practice&lt;/code&gt; to improve ourselves.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Practice&lt;/code&gt; has three levels: &lt;code&gt;KNOW&lt;/code&gt;, &lt;code&gt;UNDERSTAND&lt;/code&gt;, &lt;code&gt;MASTER&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;KNOW&lt;/code&gt; focuses on the content itself of the posts, which is necessary for basis. Figuring out &lt;code&gt;KNOW&lt;/code&gt; means that you fully read the post in this course. If you cannot solve &lt;code&gt;KNOW&lt;/code&gt;, please read the post carefully again without distraction.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UNDERSTAND&lt;/code&gt; makes some modification with content itself and parameters, which is necessary for next learning. Figuring out &lt;code&gt;UNDERSTAND&lt;/code&gt; means that you gain your own understanding while reading the post. If you cannot solve &lt;code&gt;UNDERSTAND&lt;/code&gt;, please conclude the post and find out what you miss in this course, you could ask search engine for help as well.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MASTER&lt;/code&gt; explores deeper into knowledge and content, which is necessary for mastering C++ and next learning for algorithm. Figuring out &lt;code&gt;MASTER&lt;/code&gt; means that you get every point of the post and build your would logical system of learning C++. If you cannot solve &lt;code&gt;MASTER&lt;/code&gt;, you could read the answer directly and then understand how the answer works. After that, re-answer the question again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;know&#34;&gt;KNOW&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f(a);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Find the value of &lt;code&gt;a&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt; equals 2.&lt;/p&gt;
+&lt;h3 id=&#34;understand&#34;&gt;UNDERSTAND&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;h&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;g&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; h(x);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; g(h(x));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; f(a);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Find the sequence of the functions and value of &lt;code&gt;a&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;main&lt;/code&gt; -&amp;gt; &lt;code&gt;f&lt;/code&gt; -&amp;gt; &lt;code&gt;h&lt;/code&gt;(brackets have a higher privilege for calculation) -&amp;gt; &lt;code&gt;g&lt;/code&gt; -&amp;gt; &lt;code&gt;h&lt;/code&gt;(return) -&amp;gt; &lt;code&gt;g&lt;/code&gt; -&amp;gt; &lt;code&gt;f&lt;/code&gt; -&amp;gt; &lt;code&gt;main&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt; equals 1.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;master&#34;&gt;MASTER&lt;/h3&gt;
+&lt;p&gt;Write a function &lt;code&gt;switch(int a, int b)&lt;/code&gt; that could switch the value stored in &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;, then returns &lt;code&gt;a&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;switch&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; c;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; a;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

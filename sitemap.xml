@@ -2,235 +2,113 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://zayn7lie.github.io/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/arknights/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/categories/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/posts/misc/arknights/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/linux/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/misc/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/categories/misc/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/posts/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/</loc>
+    <lastmod>2023-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/english/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/categories/english/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/reading/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/posts/english/reading/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/toefl/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/arch-linux/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/arch/</loc>
+    <loc>https://zayn7lie.github.io/tags/config/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://zayn7lie.github.io/tags/de/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/hyprland/</loc>
+    <loc>https://zayn7lie.github.io/tags/hyprland/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/linux/hyprlandcustom/</loc>
+    <loc>https://zayn7lie.github.io/posts/linux/hyprland/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/linux/</loc>
+    <loc>https://zayn7lie.github.io/tags/install/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/linux/</loc>
+    <loc>https://zayn7lie.github.io/categories/linux/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/misc/</loc>
+    <loc>https://zayn7lie.github.io/tags/wm/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/misc/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/misc/vscodecustom/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/wm/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/xfce/</loc>
+    <loc>https://zayn7lie.github.io/tags/xfce/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/linux/xfcecustom/</loc>
+    <loc>https://zayn7lie.github.io/posts/linux/xfce/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/linux/archinstallation/</loc>
+    <loc>https://zayn7lie.github.io/posts/linux/archlinux/</loc>
     <lastmod>2023-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/data/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/proglang/py-pydata/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/proglang/py-pydraw/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/proglang/py-pyml/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/matplotlib/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/pandas/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/proglang/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/python/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/pytorch/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/scikit-learn/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/ap/</loc>
-    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/aptest/</loc>
-    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/stat/</loc>
-    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/aptest/stat/</loc>
-    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/calbc/</loc>
-    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/aptest/calbc/</loc>
-    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/aptest/phyce/</loc>
-    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/aptest/phycm/</loc>
-    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/phyce/</loc>
-    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/phycm/</loc>
-    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/csa/</loc>
-    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/aptest/csa/</loc>
-    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/algorithm/</loc>
-    <lastmod>2023-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/algorithm/</loc>
-    <lastmod>2023-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/sort/</loc>
-    <lastmod>2023-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/algorithm/basis-4sort/</loc>
-    <lastmod>2023-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/greedy/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/algorithm/basis-3greedy/</loc>
-    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/complexity/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/multiply/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/space/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/time/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/algorithm/basis-2timespace/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/dichotony/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/enumeration/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/function/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/loop/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/recursion/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/algorithm/basis-1recursionenumeration/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/divide_and_conquer/</loc>
-    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/simulation/</loc>
-    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/algorithm/basis-0introtoalgorithm/</loc>
-    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/c&#43;&#43;/</loc>
-    <lastmod>2023-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/headfile/</loc>
-    <lastmod>2023-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/proglang/cpp-02headfile/</loc>
-    <lastmod>2023-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/blog/</loc>
+    <loc>https://zayn7lie.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/building/</loc>
+    <loc>https://zayn7lie.github.io/posts/cpp-algorithm/basic-01function/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/chirpy/</loc>
+    <loc>https://zayn7lie.github.io/categories/cpp-algorithm/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/github/</loc>
+    <loc>https://zayn7lie.github.io/tags/csci/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/jekyll/</loc>
+    <loc>https://zayn7lie.github.io/tags/program-language/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/proglang/cpp-01function/</loc>
-    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/misc/blogbuildinglearning/</loc>
-    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/compiler/</loc>
-    <lastmod>2023-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/environment/</loc>
-    <lastmod>2023-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/proglang/cpp-00compilerenvironment/</loc>
-    <lastmod>2023-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/page/about/</loc>
+    <loc>https://zayn7lie.github.io/posts/misc/blog_constr/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/page/archives/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+    <loc>https://zayn7lie.github.io/page/about/</loc>
   </url><url>
-    <loc>/page/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+    <loc>https://zayn7lie.github.io/page/archives/</loc>
   </url><url>
-    <loc>/page/sponsor/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+    <loc>https://zayn7lie.github.io/page/links/</loc>
   </url><url>
-    <loc>/page/links/</loc>
+    <loc>https://zayn7lie.github.io/categories/math/</loc>
   </url><url>
-    <loc>/categories/mechinelearning/</loc>
+    <loc>https://zayn7lie.github.io/page/</loc>
   </url><url>
-    <loc>/page/search/</loc>
+    <loc>https://zayn7lie.github.io/categories/py-ml/</loc>
+  </url><url>
+    <loc>https://zayn7lie.github.io/page/search/</loc>
+  </url><url>
+    <loc>https://zayn7lie.github.io/page/sponsor/</loc>
   </url>
 </urlset>
