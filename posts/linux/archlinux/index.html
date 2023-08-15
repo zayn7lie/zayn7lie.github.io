@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) Network
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) installation medium: $ ls -l /dev/disk/by-id/usb-* $ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 $ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress Network
 # iwctl [iwd]# station wlan0 get-networks, [iwd]# station wlan0 connect ${SSID} [iwd]# exit # hwclock --systohc --utc, # timedatectl set-ntp true Disk Mounting and Installation
-# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?{nvme0n1p4} /mnt # mkdir -p /mnt/boot, # mount /dev/?{nvme0n1p1} /mnt/boot # lsblk # pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim # genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab, # cat /mnt/etc/fstab User Setting'>
+# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?'>
 <title>Arch Linux Installation</title>
 
 <link rel='canonical' href='https://zayn7lie.github.io/posts/linux/archlinux/'>
 
 <link rel="stylesheet" href="/scss/style.min.aab18e4946c1c150d4e1b8571ddbee125563cec7362efba24b123504694fc1c2.css"><meta property='og:title' content='Arch Linux Installation'>
-<meta property='og:description' content='Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) Network
+<meta property='og:description' content='Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) installation medium: $ ls -l /dev/disk/by-id/usb-* $ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 $ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress Network
 # iwctl [iwd]# station wlan0 get-networks, [iwd]# station wlan0 connect ${SSID} [iwd]# exit # hwclock --systohc --utc, # timedatectl set-ntp true Disk Mounting and Installation
-# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?{nvme0n1p4} /mnt # mkdir -p /mnt/boot, # mount /dev/?{nvme0n1p1} /mnt/boot # lsblk # pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim # genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab, # cat /mnt/etc/fstab User Setting'>
+# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?'>
 <meta property='og:url' content='https://zayn7lie.github.io/posts/linux/archlinux/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='install' /><meta property='article:published_time' content='2023-06-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-20T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Arch Linux Installation">
-<meta name="twitter:description" content="Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) Network
+<meta name="twitter:description" content="Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) installation medium: $ ls -l /dev/disk/by-id/usb-* $ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 $ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress Network
 # iwctl [iwd]# station wlan0 get-networks, [iwd]# station wlan0 connect ${SSID} [iwd]# exit # hwclock --systohc --utc, # timedatectl set-ntp true Disk Mounting and Installation
-# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?{nvme0n1p4} /mnt # mkdir -p /mnt/boot, # mount /dev/?{nvme0n1p1} /mnt/boot # lsblk # pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim # genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab, # cat /mnt/etc/fstab User Setting">
+# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?">
     <link rel="shortcut icon" href="/favicon.png" />
 
     </head>
@@ -443,6 +443,15 @@
     
     
     <h2 id="quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part">Quick Ref e.g. for me (Do NOT read this part if first installation, look at the <code>HOW</code> part)</h2>
+<ul>
+<li>installation medium:
+<ul>
+<li><code>$ ls -l /dev/disk/by-id/usb-*</code></li>
+<li><code>$ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0</code></li>
+<li><code>$ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress</code></li>
+</ul>
+</li>
+</ul>
 <ol>
 <li>
 <p>Network</p>
@@ -576,7 +585,7 @@
 <li>Select one release from <a class="link" href="https://geo.mirror.pkgbuild.com/iso/"  target="_blank" rel="noopener"
     >https://geo.mirror.pkgbuild.com/iso/</a> that is ending with <code>.iso</code> or just download the standard release from <a class="link" href="https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso"  target="_blank" rel="noopener"
     >https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso</a></li>
-<li><code># dd if=${Path_to_ISO} of=/dev/?{Your_medium} bs=4M</code></li>
+<li><code># dd bs=4M if=?{path/to/archlinux-version-x86_64.iso} of=?{/dev/disk/by-id/usb-My_flash_drive} conv=fsync oflag=direct status=progress</code></li>
 <li>Reboot with your medium and enter BIOS or UEFI.</li>
 <li>Select the installation medium and get into Arch Linux installation and select the first option.</li>
 </ol>

@@ -366,6 +366,15 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         
         <guid>https://zayn7lie.github.io/posts/linux/archlinux/</guid>
         <description>&lt;h2 id=&#34;quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part&#34;&gt;Quick Ref e.g. for me (Do NOT read this part if first installation, look at the &lt;code&gt;HOW&lt;/code&gt; part)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;installation medium:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$ ls -l /dev/disk/by-id/usb-*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Network&lt;/p&gt;
@@ -499,7 +508,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;Select one release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://geo.mirror.pkgbuild.com/iso/&lt;/a&gt; that is ending with &lt;code&gt;.iso&lt;/code&gt; or just download the standard release from &lt;a class=&#34;link&#34; href=&#34;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# dd if=${Path_to_ISO} of=/dev/?{Your_medium} bs=4M&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# dd bs=4M if=?{path/to/archlinux-version-x86_64.iso} of=?{/dev/disk/by-id/usb-My_flash_drive} conv=fsync oflag=direct status=progress&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Reboot with your medium and enter BIOS or UEFI.&lt;/li&gt;
 &lt;li&gt;Select the installation medium and get into Arch Linux installation and select the first option.&lt;/li&gt;
 &lt;/ol&gt;
