@@ -2,22 +2,23 @@
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Install Easy to install: $ sudo pacman -S hyprland
-Config System Disable Mouse Acceleration: add force_no_accel = true to input{} in ~/.config/hypr/hyprland.conf Desktop Manager (Could this be called Desktop?): sddm, then $ sudo systemctl enable sddm Screen Lock: swaylock-effect, then bind hotkey using bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect in ~/.config/hypr/hyprland.conf Swaylock-effect configuration: ~/.config/swaylock/config Authorization: polkit-gnome, then add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 to ~/.config/hypr/hyprland.conf background/Wallpaper: swaybg, then add exec-once = swaybg -m fill -i ?'>
+Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{} in ~/.config/hypr/hyprland.conf Authorization: polkit-gnome, then add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 to ~/.config/hypr/hyprland.conf Desktop Manager (Could this be called Desktop?): sddm, then $ sudo systemctl enable sddm System SWAPFILE creation: https://wiki.archlinux.org/title/Swap#Swap_file rog-control-center Appearance Theme Control: qt5ct qt6ct xfce4-settings Set /etc/environment: QT_QPA_PLATFORMTHEME=qt5ct Screen Lock: swaylock-effect, then bind hotkey using bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect in ~/.'>
 <title>Hyprland</title>
 
 <link rel='canonical' href='https://zayn7lie.github.io/posts/linux/hyprland/'>
 
 <link rel="stylesheet" href="/scss/style.min.aab18e4946c1c150d4e1b8571ddbee125563cec7362efba24b123504694fc1c2.css"><meta property='og:title' content='Hyprland'>
 <meta property='og:description' content='Install Easy to install: $ sudo pacman -S hyprland
-Config System Disable Mouse Acceleration: add force_no_accel = true to input{} in ~/.config/hypr/hyprland.conf Desktop Manager (Could this be called Desktop?): sddm, then $ sudo systemctl enable sddm Screen Lock: swaylock-effect, then bind hotkey using bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect in ~/.config/hypr/hyprland.conf Swaylock-effect configuration: ~/.config/swaylock/config Authorization: polkit-gnome, then add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 to ~/.config/hypr/hyprland.conf background/Wallpaper: swaybg, then add exec-once = swaybg -m fill -i ?'>
+Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{} in ~/.config/hypr/hyprland.conf Authorization: polkit-gnome, then add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 to ~/.config/hypr/hyprland.conf Desktop Manager (Could this be called Desktop?): sddm, then $ sudo systemctl enable sddm System SWAPFILE creation: https://wiki.archlinux.org/title/Swap#Swap_file rog-control-center Appearance Theme Control: qt5ct qt6ct xfce4-settings Set /etc/environment: QT_QPA_PLATFORMTHEME=qt5ct Screen Lock: swaylock-effect, then bind hotkey using bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect in ~/.'>
 <meta property='og:url' content='https://zayn7lie.github.io/posts/linux/hyprland/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='Hyprland' /><meta property='article:tag' content='DE' /><meta property='article:tag' content='WM' /><meta property='article:tag' content='install' /><meta property='article:tag' content='config' /><meta property='article:published_time' content='2023-07-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-07-22T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Hyprland">
 <meta name="twitter:description" content="Install Easy to install: $ sudo pacman -S hyprland
-Config System Disable Mouse Acceleration: add force_no_accel = true to input{} in ~/.config/hypr/hyprland.conf Desktop Manager (Could this be called Desktop?): sddm, then $ sudo systemctl enable sddm Screen Lock: swaylock-effect, then bind hotkey using bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect in ~/.config/hypr/hyprland.conf Swaylock-effect configuration: ~/.config/swaylock/config Authorization: polkit-gnome, then add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 to ~/.config/hypr/hyprland.conf background/Wallpaper: swaybg, then add exec-once = swaybg -m fill -i ?">
+Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{} in ~/.config/hypr/hyprland.conf Authorization: polkit-gnome, then add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 to ~/.config/hypr/hyprland.conf Desktop Manager (Could this be called Desktop?): sddm, then $ sudo systemctl enable sddm System SWAPFILE creation: https://wiki.archlinux.org/title/Swap#Swap_file rog-control-center Appearance Theme Control: qt5ct qt6ct xfce4-settings Set /etc/environment: QT_QPA_PLATFORMTHEME=qt5ct Screen Lock: swaylock-effect, then bind hotkey using bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect in ~/.">
     <link rel="shortcut icon" href="/favicon.png" />
 
+        <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
     </head>
     <body class="
     article-page
@@ -240,8 +241,10 @@ Config System Disable Mouse Acceleration: add force_no_accel = true to input{} i
     <li><a href="#install">Install</a></li>
     <li><a href="#config">Config</a>
       <ul>
-        <li><a href="#system">System</a></li>
+        <li><a href="#basic">Basic</a></li>
         <li><a href="#media">Media</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#game">Game</a></li>
       </ul>
     </li>
   </ul>
@@ -426,27 +429,85 @@ Config System Disable Mouse Acceleration: add force_no_accel = true to input{} i
     <h2 id="install">Install</h2>
 <p>Easy to install: <code>$ sudo pacman -S hyprland</code></p>
 <h2 id="config">Config</h2>
-<h3 id="system">System</h3>
+<h3 id="basic">Basic</h3>
+<h4 id="io">IO</h4>
 <ul>
 <li>Disable Mouse Acceleration: add <code>force_no_accel = true</code> to <code>input{}</code> in <code>~/.config/hypr/hyprland.conf</code></li>
+<li>Authorization: <code>polkit-gnome</code>, then add <code>exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</code> to <code>~/.config/hypr/hyprland.conf</code></li>
 <li>Desktop Manager (Could this be called Desktop?): <code>sddm</code>, then <code>$ sudo systemctl enable sddm</code></li>
+</ul>
+<h4 id="system">System</h4>
+<ul>
+<li><code>SWAPFILE</code> creation: <a class="link" href="https://wiki.archlinux.org/title/Swap#Swap_file"  target="_blank" rel="noopener"
+    >https://wiki.archlinux.org/title/Swap#Swap_file</a></li>
+<li><code>rog-control-center</code></li>
+</ul>
+<h4 id="appearance">Appearance</h4>
+<ul>
+<li>Theme Control: <code>qt5ct qt6ct</code> <code>xfce4-settings</code>
+<ul>
+<li>Set <code>/etc/environment</code>: <code>QT_QPA_PLATFORMTHEME=qt5ct</code></li>
+</ul>
+</li>
 <li>Screen Lock: <code>swaylock-effect</code>, then bind hotkey using <code>bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect</code> in <code>~/.config/hypr/hyprland.conf</code>
 <ul>
 <li><code>Swaylock-effect</code> configuration: <code>~/.config/swaylock/config</code></li>
 </ul>
 </li>
-<li>Authorization: <code>polkit-gnome</code>, then add <code>exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</code> to <code>~/.config/hypr/hyprland.conf</code></li>
 <li>background/Wallpaper: <code>swaybg</code>, then add <code>exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png} to ~/.config/hypr/hyprland.conf</code> (<code>?{}</code> is the path to your background picture)</li>
-<li><code>Topbar</code>: <code>waybar</code>, then add <code>exec-once = LANG=C waybar</code> to <code>~/.config/hypr/hyprland.conf</code>
+<li><code>Topbar</code>: <code>waybar</code>, then add <code>exec-once = waybar</code> to <code>~/.config/hypr/hyprland.conf</code>
 <ul>
 <li><code>waybar</code> configuration file: <code>~/.config/waybar/config</code></li>
 </ul>
 </li>
+<li>Fonts: <code>ttf-ubuntu-font-family</code>, <code>ttf-fira-code</code>, <code>noto-fonts noto-fonts-cjk noto-fonts-emoji</code>, <code>ttf-nerd-fonts-symbols-mono</code></li>
+<li>Icons: <code>papirus-icon-theme</code></li>
 </ul>
 <h3 id="media">Media</h3>
 <h4 id="image">Image</h4>
 <ul>
 <li>Screenshot: <code>swappy grim slurp</code>, then bind hotkey: <code>bind = $mainMod SHIFT, S, exec, grim -g &quot;$(slurp)&quot; - | swappy -f - # screenshot: swappy, grim, slurp</code> in <code>~/.config/hypr/hyprland.conf</code></li>
+</ul>
+<h3 id="work">Work</h3>
+<h4 id="input">Input</h4>
+<ul>
+<li>Method: <code>fcitx5</code>
+<ul>
+<li>
+<p>Basis: <code>fcitx5-im fcitx5-chinese-addons</code></p>
+</li>
+<li>
+<p>GUI: <code>fcitx5-nord</code></p>
+</li>
+<li>
+<p><code>/etc/environment</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-env" data-lang="env"><span style="display:flex;"><span>GTK_IM_MODULE<span style="color:#f92672">=</span>fcitx
+</span></span><span style="display:flex;"><span>QT_IM_MODULE<span style="color:#f92672">=</span>fcitx
+</span></span><span style="display:flex;"><span>XMODIFIERS<span style="color:#f92672">=</span>@im<span style="color:#f92672">=</span>fcitx
+</span></span><span style="display:flex;"><span>SDL_IM_MODULE<span style="color:#f92672">=</span>fcitx
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h4 id="writing">Writing</h4>
+<ul>
+<li>Code: <code>code</code></li>
+<li>Paper: <code>zotero</code>AUR</li>
+<li>Blog: <code>hugo</code></li>
+</ul>
+<h4 id="social">Social</h4>
+<ul>
+<li>Email: <code>evolution evolution-on</code></li>
+<li>Chat: <code>telegram-desktop discord</code></li>
+<li>Meeting: <code>zoom</code>AUR</li>
+</ul>
+<h3 id="game">Game</h3>
+<ul>
+<li>
+<p>Steam: <code>steam</code></p>
+<p>enable <code>multilib</code>: <code>/etc/pacman.conf</code> - <code>[multilib]</code> - uncomment <code>Include = /etc/pacman.d/mirrorlist</code>
+refresh: <code>$ sudo pacman -Syy</code></p>
+</li>
 </ul>
 
 </section>

@@ -151,7 +151,7 @@
 &lt;p&gt;Basis: &lt;code&gt;fcitx5-im fcitx5-chinese-addons&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;GUI: &lt;code&gt;fcitx5-nord fcitx5-ctk fcitx5-qt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;GUI: &lt;code&gt;fcitx5-nord&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;/etc/environment&lt;/code&gt;:&lt;/p&gt;

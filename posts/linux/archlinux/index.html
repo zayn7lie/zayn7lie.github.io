@@ -21,6 +21,7 @@
 # fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?">
     <link rel="shortcut icon" href="/favicon.png" />
 
+        <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
     </head>
     <body class="
     article-page
@@ -496,8 +497,8 @@
 <li>
 <p>Language &amp; Time</p>
 <ol>
-<li><code># vim /etc/locale.gen</code> uncomment <code>n-US.UTF-8 UTF-8</code>, <code># locale-gen</code></li>
-<li><code># echo LANG=en-US.UTF-8 &gt; /etc/locale.conf</code></li>
+<li><code># vim /etc/locale.gen</code> uncomment <code>en-US.UTF-8 UTF-8</code>, <code># locale-gen</code></li>
+<li><code># echo LANG=C.UTF-8 &gt; /etc/locale.conf</code></li>
 <li><code># ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime</code></li>
 </ol>
 </li>
@@ -631,7 +632,7 @@
 <h3 id="6-language--time">6. Language &amp; Time</h3>
 <ol>
 <li><code># vim /etc/locale.gen</code> to enter language config file, then uncomment <code>en-US.UTF-8 UTF-8</code> and the language you want use, then save the file. # locale-gen to generate and install language files.</li>
-<li><code># echo LANG=en-US.UTF-8 &gt; /etc/locale.conf</code> to choose <code>en-US.UTF-8</code> as your root user language.</li>
+<li><code># echo LANG=C.UTF-8 &gt; /etc/locale.conf</code> make system default characters to characters in C.</li>
 <li><code># hwclock --systohc --utc</code> and <code># timedatectl set-ntp true</code> to update your system time to installation medium time.</li>
 <li><code># ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime</code> to config your local time. <code>?{EST}</code> Could be change based on your region. You can use <code># ls /usr/share/zoneinfo/</code> to check which option could be used. Some folder like ./Asia might have subfolders that you need to choose in more specific way. E.G. <code># ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime</code>. P.S. s meaning soft link which will not actually copy all file to the target folder, f meaning force to do it.</li>
 </ol>
