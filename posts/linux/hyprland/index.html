@@ -270,12 +270,16 @@ Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{}
 
     <div class="tagCloud-tags">
         
-            <a href="/tags/linux/" class="font_size_4">
+            <a href="/tags/linux/" class="font_size_5">
                 Linux
             </a>
         
             <a href="/tags/arch-linux/" class="font_size_3">
                 Arch Linux
+            </a>
+        
+            <a href="/tags/c&#43;&#43;/" class="font_size_3">
+                C&#43;&#43;
             </a>
         
             <a href="/tags/install/" class="font_size_3">
@@ -286,28 +290,24 @@ Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{}
                 config
             </a>
         
+            <a href="/tags/csci/" class="font_size_2">
+                CSCI
+            </a>
+        
             <a href="/tags/de/" class="font_size_2">
                 DE
+            </a>
+        
+            <a href="/tags/program-language/" class="font_size_2">
+                Program Language
             </a>
         
             <a href="/tags/arknights/" class="font_size_1">
                 Arknights
             </a>
         
-            <a href="/tags/c&#43;&#43;/" class="font_size_1">
-                C&#43;&#43;
-            </a>
-        
-            <a href="/tags/csci/" class="font_size_1">
-                CSCI
-            </a>
-        
             <a href="/tags/english/" class="font_size_1">
                 English
-            </a>
-        
-            <a href="/tags/hyprland/" class="font_size_1">
-                Hyprland
             </a>
         
     </div>
@@ -337,7 +337,7 @@ Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{}
                     <a href="/page/archives/#2023">
                         
                             <span class="year">2023</span>
-                            <span class="count">6</span>
+                            <span class="count">8</span>
                         
                     </a> 
                 </div>
@@ -411,7 +411,7 @@ Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{}
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    2 minute read
                 </time>
             </div>
         
@@ -454,7 +454,7 @@ Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{}
 <li><code>Swaylock-effect</code> configuration: <code>~/.config/swaylock/config</code></li>
 </ul>
 </li>
-<li>background/Wallpaper: <code>swaybg</code>, then add <code>exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png} to ~/.config/hypr/hyprland.conf</code> (<code>?{}</code> is the path to your background picture)</li>
+<li>background/Wallpaper: <code>swaybg</code>, then add <code>exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png}</code> to <code>~/.config/hypr/hyprland.conf</code> (<code>?{}</code> is the path to your background picture)</li>
 <li><code>Topbar</code>: <code>waybar</code>, then add <code>exec-once = waybar</code> to <code>~/.config/hypr/hyprland.conf</code>
 <ul>
 <li><code>waybar</code> configuration file: <code>~/.config/waybar/config</code></li>
@@ -462,11 +462,24 @@ Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{}
 </li>
 <li>Fonts: <code>ttf-ubuntu-font-family</code>, <code>ttf-fira-code</code>, <code>noto-fonts noto-fonts-cjk noto-fonts-emoji</code>, <code>ttf-nerd-fonts-symbols-mono</code></li>
 <li>Icons: <code>papirus-icon-theme</code></li>
+<li>Terminal: <code>kitty</code>
+<ul>
+<li><code>~/.config/kitty/kitty.conf</code></li>
+<li><code>font_family      Fira Code</code></li>
+<li><code>scrollback_lines 8192</code></li>
+<li><code>foreground green</code></li>
+<li><code>background_opacity 0.7</code></li>
+</ul>
+</li>
 </ul>
 <h3 id="media">Media</h3>
 <h4 id="image">Image</h4>
 <ul>
-<li>Screenshot: <code>swappy grim slurp</code>, then bind hotkey: <code>bind = $mainMod SHIFT, S, exec, grim -g &quot;$(slurp)&quot; - | swappy -f - # screenshot: swappy, grim, slurp</code> in <code>~/.config/hypr/hyprland.conf</code></li>
+<li>Screenshot: AUR<code>grimblast-git</code>, then bind hotkey: <code>bind = $mainMod SHIFT, S, exec, env XDG_SCREENSHOTS_DIR=$HOME/Pictures/Screenshot grimblast copysave area</code> in <code>~/.config/hypr/hyprland.conf</code>
+<ul>
+<li>Copy2Clipboard: <code>wl-clipboard</code></li>
+</ul>
+</li>
 </ul>
 <h3 id="work">Work</h3>
 <h4 id="input">Input</h4>
@@ -491,8 +504,22 @@ Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{}
 </ul>
 <h4 id="writing">Writing</h4>
 <ul>
-<li>Code: <code>code</code></li>
-<li>Paper: <code>zotero</code>AUR</li>
+<li>Code: <code>code</code>
+<ul>
+<li>GitHub Login: install <code>gnome-keyring</code>, <code>/usr/share/applications/code-oss.desktop</code>: <code>Exec=/usr/bin/code-oss --unity-launch --password-store=&quot;gnome&quot; %F</code></li>
+</ul>
+</li>
+<li>Paper: <code>zotero</code>AUR
+<ul>
+<li><a class="link" href="https://retorque.re/zotero-better-bibtex/"  target="_blank" rel="noopener"
+    ><code>Better BibTeX for Zotero</code>Oth</a>
+<ul>
+<li>Google Style Cite Key: <code>Citation Key Formula</code>: <code>auth.lower + year + shorttitle(1).lower</code></li>
+<li><code>Fields to omit from export</code>: <code>month, abstract, langid, file</code></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Blog: <code>hugo</code></li>
 </ul>
 <h4 id="social">Social</h4>
@@ -507,6 +534,12 @@ Config Basic IO Disable Mouse Acceleration: add force_no_accel = true to input{}
 <p>Steam: <code>steam</code></p>
 <p>enable <code>multilib</code>: <code>/etc/pacman.conf</code> - <code>[multilib]</code> - uncomment <code>Include = /etc/pacman.d/mirrorlist</code>
 refresh: <code>$ sudo pacman -Syy</code></p>
+</li>
+<li>
+<p><code>osu-lazer</code>AUR</p>
+</li>
+<li>
+<p><code>prismlauncher</code>AUR</p>
 </li>
 </ul>
 
@@ -607,6 +640,19 @@ refresh: <code>$ sudo pacman -Syy</code></p>
 
         <div class="article-details">
             <h2 class="article-title">Arch Linux Installation</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/linux/vscode/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">VSCode All in One</h2>
         </div>
     </a>
 </article>
