@@ -27,6 +27,7 @@
 &lt;li&gt;&lt;code&gt;SWAPFILE&lt;/code&gt; creation: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Swap#Swap_file&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/Swap#Swap_file&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;rog-control-center&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wlogout&lt;/code&gt;AUR: logout menu&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;appearance&#34;&gt;Appearance&lt;/h4&gt;
 &lt;ul&gt;
@@ -107,6 +108,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Dictionary: &lt;code&gt;goldendict-ng-git&lt;/code&gt;AUR&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
 &lt;ul&gt;

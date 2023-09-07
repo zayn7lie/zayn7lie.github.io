@@ -168,6 +168,7 @@
 &lt;li&gt;&lt;code&gt;SWAPFILE&lt;/code&gt; creation: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Swap#Swap_file&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/Swap#Swap_file&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;rog-control-center&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wlogout&lt;/code&gt;AUR: logout menu&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;appearance&#34;&gt;Appearance&lt;/h4&gt;
 &lt;ul&gt;
@@ -248,6 +249,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Dictionary: &lt;code&gt;goldendict-ng-git&lt;/code&gt;AUR&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
 &lt;ul&gt;
@@ -279,7 +281,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         <guid>https://zayn7lie.github.io/posts/linux/vscode/</guid>
         <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;: &lt;code&gt;Preferences: Configure Runtime Arguments&lt;/code&gt;: &lt;code&gt;&amp;quot;password-store&amp;quot;:&amp;quot;gnome&amp;quot;&lt;/code&gt; or &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Word Count: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=kirozen.wordcounter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;WordCounter&lt;/code&gt;MS&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vim: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -302,7 +304,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Install debug tool &lt;code&gt;gdb&lt;/code&gt;: &lt;code&gt;$ sudo pacman -S gdb&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Create a file &lt;code&gt;test.cpp&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Install extension &lt;code&gt;C/C++&lt;/code&gt;OOS, then create a file &lt;code&gt;test.cpp&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
@@ -315,6 +317,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Terminal&lt;/code&gt; -&amp;gt; &lt;code&gt;Config Default Build Task...&lt;/code&gt; -&amp;gt; &lt;code&gt;C/C++: g++ build active file&lt;/code&gt;; then turn back to &lt;code&gt;test.cpp&lt;/code&gt;, click the &lt;code&gt;gear&lt;/code&gt; icon: &lt;code&gt;&amp;quot;C/C++: g++ build and debug active file&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Excalidraw&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -714,11 +720,68 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
+        <title>Calculus</title>
+        <link>https://zayn7lie.github.io/posts/math/calculus/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/calculus/</guid>
+        <description>&lt;h2 id=&#34;differentiation&#34;&gt;Differentiation&lt;/h2&gt;
+&lt;h3 id=&#34;why&#34;&gt;WHY&lt;/h3&gt;
+&lt;h4 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h4&gt;
+&lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/li&gt;
+&lt;li&gt;Analyzing points ($x = a$)
+&lt;ul&gt;
+&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;Stationary point: $f&amp;rsquo;(x) = 0$&lt;/li&gt;
+&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
+&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Limit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Continuous: $lim_{x \rarr a}{f(x)} = f(a)$ ($lim_{x \rarr a}{f(x)} = lim_{x \rarr a^+}{f(x)} = lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
+&lt;ul&gt;
+&lt;li&gt;MVT (Mean Value Theorem): If $f(x)$ is &lt;em&gt;differentiable&lt;/em&gt; on $[a, b]$, then $\exist c, f&amp;rsquo;(c) = \frac{f(b) - f(a)}{b - a}$&lt;/li&gt;
+&lt;li&gt;EVT (Extreme Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on &lt;em&gt;closed&lt;/em&gt; interval $[a, b]$, then $\exist c_1, c_2, f_{max}(x) = f(c_1), f_{min}(x) = f(c_2)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Discontinuous points (Discontinuity)
+&lt;ul&gt;
+&lt;li&gt;Removable ~: $lim_{x \rarr a}f(x) \neq f(a)$&lt;/li&gt;
+&lt;li&gt;Infinite ~: $lim_{x \rarr a^+}f(x)$ or $lim_{x \rarr a^-}f(x)$ equals $\pm \infin$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Smooth: $lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{dy}{dx}$ differentiate is a method to cut source function to know the tendency&lt;/li&gt;
+&lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how&#34;&gt;HOW&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;integral&#34;&gt;Integral&lt;/h2&gt;
+</description>
+        </item>
+        <item>
         <title>C&#43;&#43; Basic - 02 Header Files</title>
-        <link>https://zayn7lie.github.io/posts/cpp-algorithm/basic-02headerfile/</link>
+        <link>https://zayn7lie.github.io/posts/cpp-algorithm/00-02/</link>
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/basic-02headerfile/</guid>
+        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/00-02/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-use-header-files&#34;&gt;WHY: Why should we use header files?&lt;/h2&gt;
 &lt;p&gt;In &lt;code&gt;C++ Basic - 01 Function&lt;/code&gt;, we have learned about function. But there are numerous which have been already written, like print function &lt;code&gt;printf()&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-h&#34; data-lang=&#34;h&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;__format, ...){
@@ -735,10 +798,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>C&#43;&#43; Basic - 01 Function</title>
-        <link>https://zayn7lie.github.io/posts/cpp-algorithm/basic-01function/</link>
+        <link>https://zayn7lie.github.io/posts/cpp-algorithm/00-01/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/basic-01function/</guid>
+        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/00-01/</guid>
         <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?&lt;/h2&gt;
 &lt;p&gt;I believe many people are confused about the reason we start from function instead of popular &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt;. It is because &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; program is too difficult to beginner.&lt;/p&gt;
 &lt;p&gt;Some people might still be confused with &lt;em&gt;difficult&lt;/em&gt;, then let&amp;rsquo;s have a review of the program first:&lt;/p&gt;
@@ -942,6 +1005,40 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
     &gt;Pawel Czerwinski&lt;/a&gt; on &lt;a class=&#34;link&#34; href=&#34;https://unsplash.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Unsplash&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://zayn7lie.github.io/posts/english/meterials/old-mrs.-grey/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/english/meterials/old-mrs.-grey/</guid>
+        <description>&lt;p&gt;OLD MRS. GREY by Virginia Woolf&lt;/p&gt;
+&lt;p&gt;There are moments even in England, now, when even the busiest, most contented suddenly let fall what they hold—it may be the week’s washing. Sheets and pyjamas crumble and dissolve in their hands, because, though they do not state this in so many words, it seems silly to take the washing round to Mrs. Peel when out there over the fields over the hills, there is no washing; no pinning of clothes to lines; mangling and ironing; no work at all, but boundless rest. Stainless and boundless rest; space unlimited; untrodden grass; wild birds flying hills whose smooth uprise continue that wild flight.&lt;/p&gt;
+&lt;p&gt;Of all this however only seven foot by four could be seen from Mrs. Grey’s corner. That was the size of her front door which stood wide open, though there was a fire burning in the grate. The fire looked like a small spot of dusty light feebly trying to escape from the embarrassing pressure of the pouring sunshine.&lt;/p&gt;
+&lt;p&gt;Mrs. Grey sat on a hard chair in the corner looking—but at what? Apparently at nothing. She did not change the focus of her eyes when visitors came in. Her eyes had ceased to focus themselves; it may be that they had lost the power. They were aged eyes, blue, unspectacled. They could see, but without looking. She had never used her eyes on anything minute and difficult; merely upon faces, and dishes and fields. And now at the age of ninety–two they saw nothing but a zigzag of pain wriggling across the door, pain that twisted her legs as it wriggled; jerked her body to and fro like a marionette. Her body was wrapped round the pain as a damp sheet is folded over a wire. The wire was spasmodically jerked by a cruel invisible hand. She flung out a foot, a hand. Then it stopped. She sat still for a moment.&lt;/p&gt;
+&lt;p&gt;In that pause she saw herself in the past at ten, at twenty, at twenty–five. She was running in and out of a cottage with eleven brothers and sisters. The line jerked. She was thrown forward in her chair.&lt;/p&gt;
+&lt;p&gt;“All dead. All dead,” she mumbled. “My brothers and sisters. And my husband gone. My daughter too. But I go on. Every morning I pray God to let me pass.”&lt;/p&gt;
+&lt;p&gt;The morning spread seven foot by four green and sunny. Like a fling of grain the birds settled on the land. She was jerked again by another tweak of the tormenting hand.&lt;/p&gt;
+&lt;p&gt;“I’m an ignorant old woman. I can’t read or write, and every morning when I crawls down stairs, I say I wish it were night; and every night, when I crawls up to bed, I say, I wish it were day. I’m only an ignorant old woman. But I prays to God: O let me pass. I’m an ignorant old woman—I can’t read or write.”&lt;/p&gt;
+&lt;p&gt;So when the colour went out of the doorway, she could not see the other page which is then lit up; or hear the voices that have argued, sung, talked for hundreds of years.&lt;/p&gt;
+&lt;p&gt;The jerked limbs were still again.&lt;/p&gt;
+&lt;p&gt;“The doctor comes every week. The parish doctor now. Since my daughter went, we can’t afford Dr. Nicholls. But he’s a good man. He says he wonders I don’t go. He says my heart’s nothing but wind and water. Yet I don’t seem able to die.”&lt;/p&gt;
+&lt;p&gt;So we—humanity—insist that the body shall still cling to the wire. We put out the eyes and the ears; but we pinion it there, with a bottle of medicine, a cup of tea, a dying fire, like a rook on a barn door; but a rook that still lives, even with a nail through it.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://zayn7lie.github.io/posts/english/meterials/surrendering/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/english/meterials/surrendering/</guid>
+        <description>&lt;p&gt;Surrendering By Ocean Vuong&lt;/p&gt;
+&lt;p&gt;Reading and writing, like any other crafts, come to the mind slowly, in pieces. But for me, as an E.S.L. student from a family of illiterate rice farmers, who saw reading as snobby, or worse, the experience of working through a book, even one as simple as “Where the Wild Things Are,” was akin to standing in quicksand, your loved ones corralled at its safe edges, their arms folded in suspicion and doubt as you sink.&lt;/p&gt;
+&lt;p&gt;My family immigrated to the U.S. from Vietnam in 1990, when I was two. We lived, all seven of us, in a one-bedroom apartment in Hartford, Connecticut, and I spent my first five years in America surrounded, inundated, by the Vietnamese language. When I entered kindergarten, I was, in a sense, immigrating all over again, except this time into English. Like any American child, I quickly learned my ABCs, thanks to the age-old melody (one I still sing rapidly to myself when I forget whether “M” comes before “N”). Within a few years, I had become fluent—but only in speech, not in the written word.&lt;/p&gt;
+&lt;p&gt;One early-spring afternoon, when I was in fourth grade, we got an assignment in language-arts class: we had two weeks to write a poem in honor of National Poetry Month. Normally, my poor writing abilities would excuse me from such assignments, and I would instead spend the class mindlessly copying out passages from books I’d retrieved from a blue plastic bin at the back of the room. The task allowed me to camouflage myself; as long as I looked as though I were doing something smart, my shame and failure were hidden. The trouble began when I decided to be dangerously ambitious. Which is to say, I decided to write a poem.&lt;/p&gt;
+&lt;p&gt;“Where is it?” the teacher asked. He held my poem up to the fluorescent classroom lights and squinted, the way one might examine counterfeit money. I could tell, by the slowly brightening room, that it had started to snow. I pointed to my work dangling from his fingers. “No, where is the poem you plagiarized? How did you even write something like this?” Then he tipped my desk toward me. The desk had a cubby attached to its underside, and I watched as the contents spilled from the cubby’s mouth: rectangular pink erasers, crayons, yellow pencils, wrinkled work sheets where dotted letters were filled in, a lime Dum Dum lollipop. But no poem. I stood before the rubble at my feet. Little moments of ice hurled themselves against the window as the boys and girls, my peers, stared, their faces as unconvinced as blank sheets of paper.&lt;/p&gt;
+&lt;p&gt;Weeks earlier, I’d been in the library. It was where I would hide during recess. Otherwise, because of my slight frame and soft voice, the boys would call me “pansy” and “fairy” and pull my shorts around my ankles in the middle of the schoolyard. I sat on the floor beside a tape player. From a box of cassettes, I chose one labelled “Great American Speeches.” I picked it because of the illustration, a microphone against a backdrop of the American flag. I picked it because the American flag was one of the few symbols I recognized.&lt;/p&gt;
 </description>
         </item>
         

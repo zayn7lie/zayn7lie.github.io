@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/categories/cpp-algorithm/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>C&#43;&#43; Basic - 02 Header Files</title>
-        <link>https://zayn7lie.github.io/posts/cpp-algorithm/basic-02headerfile/</link>
+        <link>https://zayn7lie.github.io/posts/cpp-algorithm/00-02/</link>
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/basic-02headerfile/</guid>
+        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/00-02/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-use-header-files&#34;&gt;WHY: Why should we use header files?&lt;/h2&gt;
 &lt;p&gt;In &lt;code&gt;C++ Basic - 01 Function&lt;/code&gt;, we have learned about function. But there are numerous which have been already written, like print function &lt;code&gt;printf()&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-h&#34; data-lang=&#34;h&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;__format, ...){
@@ -28,10 +28,10 @@
         </item>
         <item>
         <title>C&#43;&#43; Basic - 01 Function</title>
-        <link>https://zayn7lie.github.io/posts/cpp-algorithm/basic-01function/</link>
+        <link>https://zayn7lie.github.io/posts/cpp-algorithm/00-01/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/basic-01function/</guid>
+        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/00-01/</guid>
         <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?&lt;/h2&gt;
 &lt;p&gt;I believe many people are confused about the reason we start from function instead of popular &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt;. It is because &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; program is too difficult to beginner.&lt;/p&gt;
 &lt;p&gt;Some people might still be confused with &lt;em&gt;difficult&lt;/em&gt;, then let&amp;rsquo;s have a review of the program first:&lt;/p&gt;
