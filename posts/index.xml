@@ -774,6 +774,42 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;how&#34;&gt;HOW&lt;/h3&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;integral&#34;&gt;Integral&lt;/h2&gt;
+&lt;h3 id=&#34;technique&#34;&gt;Technique&lt;/h3&gt;
+&lt;h4 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$\int{tan{x}}{dx}$
+$$
+\int{tan{x}}{dx} = \int{\frac{sin{x}}{cos{x}}}{dx} \
+u = cos{x}, du = -sin{x} dx \rArr \int{\frac{-du}{u}} = - ln{u} + c = -ln{cos{x}} + C
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{dx}$
+$$
+u = g(x), du = g&amp;rsquo;(x) dx
+\rArr \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int{\frac{1}{x(x^2 + 1)}}{dx}$
+$$
+u = arctan{x}, du = \frac{1}{x^2 + 1}dx, x = tan{u}
+\rArr \int{\frac{1}{tan{u}}}{du} \
+v = sin{u}, dv = cos{u}du \rArr \int{\frac{1}{v}}{dv} = ln{v} + C = ln{sin{u}} + C = ln{sin{arctan{x}} + C}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int{sec^4{x} tan^3{x}}{dx}$
+$$
+sec^2{x} = tan^2{x} + 1
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx \
+\frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
+$$&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -1039,6 +1075,16 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;One early-spring afternoon, when I was in fourth grade, we got an assignment in language-arts class: we had two weeks to write a poem in honor of National Poetry Month. Normally, my poor writing abilities would excuse me from such assignments, and I would instead spend the class mindlessly copying out passages from books I’d retrieved from a blue plastic bin at the back of the room. The task allowed me to camouflage myself; as long as I looked as though I were doing something smart, my shame and failure were hidden. The trouble began when I decided to be dangerously ambitious. Which is to say, I decided to write a poem.&lt;/p&gt;
 &lt;p&gt;“Where is it?” the teacher asked. He held my poem up to the fluorescent classroom lights and squinted, the way one might examine counterfeit money. I could tell, by the slowly brightening room, that it had started to snow. I pointed to my work dangling from his fingers. “No, where is the poem you plagiarized? How did you even write something like this?” Then he tipped my desk toward me. The desk had a cubby attached to its underside, and I watched as the contents spilled from the cubby’s mouth: rectangular pink erasers, crayons, yellow pencils, wrinkled work sheets where dotted letters were filled in, a lime Dum Dum lollipop. But no poem. I stood before the rubble at my feet. Little moments of ice hurled themselves against the window as the boys and girls, my peers, stared, their faces as unconvinced as blank sheets of paper.&lt;/p&gt;
 &lt;p&gt;Weeks earlier, I’d been in the library. It was where I would hide during recess. Otherwise, because of my slight frame and soft voice, the boys would call me “pansy” and “fairy” and pull my shorts around my ankles in the middle of the schoolyard. I sat on the floor beside a tape player. From a box of cassettes, I chose one labelled “Great American Speeches.” I picked it because of the illustration, a microphone against a backdrop of the American flag. I picked it because the American flag was one of the few symbols I recognized.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://zayn7lie.github.io/posts/misc/nyu/cohort/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/misc/nyu/cohort/</guid>
+        <description>&lt;h1 id=&#34;course-in-cohort&#34;&gt;Course in Cohort&lt;/h1&gt;
+&lt;h2 id=&#34;success&#34;&gt;Success&lt;/h2&gt;
 </description>
         </item>
         

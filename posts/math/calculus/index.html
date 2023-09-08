@@ -12,7 +12,7 @@ Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$ Analyzin
 Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$ Analyzing points ($x = a$) Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$ Stationary point: $f&amp;rsquo;(x) = 0$ Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$ Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0) Why a function could be differentiated?'>
 <meta property='og:url' content='https://zayn7lie.github.io/posts/math/calculus/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='AP' /><meta property='article:published_time' content='2023-04-16T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-04-16T00:00:00&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='AP' /><meta property='article:tag' content='University' /><meta property='article:published_time' content='2023-04-16T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-04-16T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus">
 <meta name="twitter:description" content="Differentiation WHY Why should we learn differentiation? Find the rate: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).
 Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$ Analyzing points ($x = a$) Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$ Stationary point: $f&amp;rsquo;(x) = 0$ Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$ Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0) Why a function could be differentiated?">
@@ -247,7 +247,11 @@ Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$ Analyzin
         <li><a href="#how">HOW</a></li>
       </ul>
     </li>
-    <li><a href="#integral">Integral</a></li>
+    <li><a href="#integral">Integral</a>
+      <ul>
+        <li><a href="#technique">Technique</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </div>
@@ -354,7 +358,7 @@ Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$ Analyzin
                     <a href="/page/archives/#0001">
                         
                             <span class="year">0001</span>
-                            <span class="count">2</span>
+                            <span class="count">3</span>
                         
                     </a> 
                 </div>
@@ -484,6 +488,42 @@ Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$ Analyzin
 <h3 id="how">HOW</h3>
 <hr>
 <h2 id="integral">Integral</h2>
+<h3 id="technique">Technique</h3>
+<h4 id="substitution-fracdfdx--fracdfdh-cdot-fracdhdx">Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$</h4>
+<ul>
+<li>
+<p>$\int{tan{x}}{dx}$
+$$
+\int{tan{x}}{dx} = \int{\frac{sin{x}}{cos{x}}}{dx} \
+u = cos{x}, du = -sin{x} dx \rArr \int{\frac{-du}{u}} = - ln{u} + c = -ln{cos{x}} + C
+$$</p>
+</li>
+<li>
+<p>$\int{F&rsquo;(g(x)) \cdot g&rsquo;(x)}{dx}$
+$$
+u = g(x), du = g&rsquo;(x) dx
+\rArr \int{F&rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
+$$</p>
+</li>
+<li>
+<p>$\int{\frac{1}{x(x^2 + 1)}}{dx}$
+$$
+u = arctan{x}, du = \frac{1}{x^2 + 1}dx, x = tan{u}
+\rArr \int{\frac{1}{tan{u}}}{du} \
+v = sin{u}, dv = cos{u}du \rArr \int{\frac{1}{v}}{dv} = ln{v} + C = ln{sin{u}} + C = ln{sin{arctan{x}} + C}
+$$</p>
+</li>
+<li>
+<p>$\int{sec^4{x} tan^3{x}}{dx}$
+$$
+sec^2{x} = tan^2{x} + 1
+$$</p>
+</li>
+</ul>
+<p>$$
+u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx \
+\frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
+$$</p>
 
 </section>
 
@@ -497,6 +537,8 @@ Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$ Analyzin
             <a href="/tags/calculus/">Calculus</a>
         
             <a href="/tags/ap/">AP</a>
+        
+            <a href="/tags/university/">University</a>
         
     </section>
 
