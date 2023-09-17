@@ -1,0 +1,121 @@
+\documentclass{homework}
+\author{Zayn Wang, written in \LaTeX}
+\title{Homework}
+
+\graphicspath{{./media/}}
+
+\begin{document} \maketitle
+
+\newcommand\degree{^\circ}
+
+\newcommand\rarr{\rightarrow}
+
+\newcommand\rArr{\Rightarrow}
+
+% \question xxx
+% ans xxx
+
+% 3.5 5.3
+
+\question
+
+$$ When \ x \in (0, 1), 1 - x^4 < 1 - x^8 < 1 < 1 + x^4 \rArr \sqrt{1 - x^4} < \sqrt{1 - x^8} < 1 < \sqrt{1 + x^4}
+$$
+$$ \rArr \int_{0}^{1}{\sqrt{1 - x^4}}dx < \int_{0}^{1}{\sqrt{1 - x^8}}dx < \int_{0}^{1}{1}dx < \int_{0}^{1}{\sqrt{1 + x^4}}dx \\
+$$
+$$ \rArr J < L < 1 < K
+$$
+
+\question
+
+
+$$ Main \ theorem: [\int_{0}^{x}f(t)dt]' = f(x), [\int_{x}^{1}{t^2f(t)}dt]' = - x^2 f(x) \\
+$$
+$$ \rArr f(x) = -x^2f(x) + \frac{x}{2} + \frac{x^3}{2}  \rArr f(x)(x^2 + 1) = \frac{x}{2}(x^2 + 1) \rArr f(x) = \frac{x}{2} \\
+$$
+$$ \int_{0}^{x}f(t)dt = \frac{x^2}{4}, \int_{x}^{1}{t^2f(t)}dt = \frac{t^4}{8}|_{x}^{1} = \frac{1}{8} - \frac{x^4}{8}
+$$
+$$ \rArr \frac{x^2}{4} = \frac{1}{8} - \frac{x^4}{8} + \frac{x^2}{4} + \frac{x^4}{8} + c \rArr c = -\frac{1}{8}
+$$
+
+\question
+
+$$ (1) \ u = sinx \in (0, 1) , du = cosx dx \rArr \int_{0}^{1}u^ndu = \frac{u^{n+1}}{n+1} + C |_0^1 = \frac{1}{n + 1}
+$$
+$$ (2) \ u = e^x + 1, du = e^x dx = (u - 1) dx \rArr \int{\frac{1 = u - (u - 1)}{u(u - 1)}}du = \int{(\frac{1}{u - 1} - \frac{1}{u})}du 
+$$
+$$ = ln(u - 1) - lnu + c = x - ln(e^x +1) + C
+$$
+$$ (3) \ u = \sqrt{1 + x}, u^2 - 1 = x, 2u du = dx \rArr \int{(u^2 - 1)^2 u \cdot 2u}du = 2\int{u^6 - 2u^4 + u^2}du 
+$$
+$$ = \frac{2u^7}{7} - \frac{4u^5}{5} + \frac{2u^3}{3} + C = \frac{2(1 + x)^\frac{7}{2}}{7} - \frac{4(1 + x)^\frac{5}{2}}{5} + \frac{2(1 + x)^\frac{3}{2}}{3} + C
+$$
+$$ (4) \ u = sinv^3, du = 3v^2cosv^3 dv \rArr \int{\frac{1}{3}}du = \frac{u}{3} + C = \frac{sinv^3}{3} + C
+$$
+$$ (5) \ \int_{-\pi/4}^{\pi/4}{\frac{t^4\tan{t}}{2 + \cos{}}}dt, \because odd, \therefore = 0
+$$
+$$ (6) \ u = cosx, du = -sinx dx \rArr \int{-\frac{lnu}{u}}du
+$$
+$$ v = lnu, dv = \frac{1}{u} du \rArr \int{-v dv} = - \frac{v^2}{2} - C = -\frac{ln^2u}{2} - C = -\frac{ln^2cosx}{2} + C
+$$
+
+\question 
+
+$$ (1) \ e^{arctan1} - e^{arctan0}
+$$
+$$ (2) \ = \frac{d}{dx}C = 0
+$$
+$$ (3) \ = \frac{d}{dx}(F(x) - C) = e^{arctanx}
+$$
+
+\question
+
+$$(1) \ f(x) = kx\sqrt{1 - x} \rArr \int_{0}^{1}{kx\sqrt{1 - x}}dx = 1
+$$
+$$ u = \sqrt{1 - x} \in (1, 0), u^2 = 1 - x, 2u du = - dx \rArr \int_{1}^{0}{k(u^2 - 1)u \cdot 2u}du = 2k \int_{1}^{0}{u^4 - u^2}du = 2k[\frac{u^5}{5} - \frac{u^3}{3} + C]_1^0
+$$
+$$ 2k \cdot \frac{2}{15} = 1 \rArr k = \frac{15}{4}
+$$
+$$(2) \ P = \int_{0.5}^{1}f(x)dx, u \in (\frac{1}{\sqrt{2}}, 0) \rArr P = \frac{15}{2}[\frac{u^5}{5} - \frac{u^3}{3} + C]_\frac{1}{\sqrt{2}}^0 = \frac{15}{2}(\frac{1}{6\sqrt{2}} - \frac{1}{20\sqrt{2}}) = \frac{7}{8\sqrt{2}}
+$$
+$$(3) \ u \in (\sqrt{1 - m}, 0) \rArr \frac{1}{2} = \frac{15}{2}[\frac{u^5}{5} - \frac{u^3}{3} + C]_{\sqrt{1 - m}}^0 \rArr 1 = 5(1 - m)^\frac{3}{2} - 3(1 - m)^\frac{5}{2} \rArr m = 0.586
+$$
+$$(4) \ \int_{0}^{1}{\frac{15}{4}x^2\sqrt{1 - x}}dx
+$$
+$$ u = \sqrt{1 - x} \in (1, 0), u^2 = 1 - x, 2u du = - dx \rArr \int_{1}^{0}{k(u^2 - 1)^2u \cdot 2u}du = 2k \int_{1}^{0}{u^6 - 2u^4 + u^2}du 
+$$
+$$ = 2k[\frac{u^7}{7} - \frac{2u^5}{5} + \frac{u^3}{3} + C]_1^0 = \frac{4}{7}
+$$
+
+\question
+
+$$ n \rarr \infty \rArr \int_{0}^{1}{x^9}dx \rArr \frac{x^{10}}{10}|_{0}^{1} = \frac{1}{10}
+$$
+
+\question
+
+$$(1) \ F'(x) = \sqrt{1 + x^4}
+$$
+$$(2) \ y = \int_{C}^{3x + 1}sint^4dt - \int_{C}^{2x}sint^4dt, u = 3x + 1, v = 2x, u' = 3, v' = 2
+$$
+$$ \rArr y = \int_{C}^{u}sint^4dt - \int_{C}^{v}sint^4dt \rArr y' = sinu^4 \cdot u' - sinv^4 \cdot v'
+$$
+$$ \rArr y' = 3sin(3x + 1)^4 - 2sin(2x)^4
+$$
+$$(3) y = \int_{\sqrt{x}}^{x}{\frac{e^t}{t}}dt, u = \sqrt{x}, u' = \frac{1}{2\sqrt{x}} \rArr y' = \frac{e^x}{x} - \frac{e^{\sqrt{x}}}{2x}
+$$
+
+\question
+
+$$(1) False: f(x) = g(x) = 1
+$$
+$$(2) False: f(x) = x
+$$
+$$(3) True: f(x) \ is \ above \ g(x), then \ the \ accumulation(intergral) \ is \ greater.
+$$
+$$(4) True: The \ basic \ theorem
+$$
+$$(5) False: f(x) = x - 0.5
+$$
+
+\end{document}

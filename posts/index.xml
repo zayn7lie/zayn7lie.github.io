@@ -6,7 +6,137 @@
         <description>Recent content in Posts on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 06 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Physics1 - Motion</title>
+        <link>https://zayn7lie.github.io/posts/misc/nyu/physics/</link>
+        <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/misc/nyu/physics/</guid>
+        <description>&lt;h2 id=&#34;mechanics&#34;&gt;Mechanics&lt;/h2&gt;
+&lt;p&gt;Relationship of force, mass, motion, energy, momentum&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;conserved-quantities-conservation--symmetries&#34;&gt;Conserved quantities: Conservation &amp;lt;=&amp;gt; symmetries&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Standardize on one object -&amp;gt; unit&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;conservation of units: multiply by 1 e.g. $1 y \times \frac{365days}{1year} \times \frac{24hrs}{1day} &amp;hellip;$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Units are your friend! - Help you check mistakes &amp;amp; approx.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[d] = m, meter: how far light travel by $$\frac{1}{?}$&lt;/li&gt;
+&lt;li&gt;[m] = kg, kilogram: $1.4755214 \times 10^{40} \cdot h \cdot \frac{f_{133cs}}{c^2}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The radium ($\theta$) has no unit!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$10^n$: T: 1e12, G: 1e9, M: 1e6, K: 1e3, m: 1e-3, $\mu$: 1e-6, n: 1e-9, p: 1e-12, f: 1e-15&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fermi Problem: How many piano tuners are in Chicago?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;kinematics---consistent-description-of-motion&#34;&gt;Kinematics - consistent description of motion&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scalar&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vector: a basis is a set of vectors from which you can build any vector, and all basis vectors are needed. (1 block north + 1 block west in Manhattan)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basis
+&lt;ul&gt;
+&lt;li&gt;orthonormal basis: ortho- - orthogonal: perpendicular; normal - length 1&lt;/li&gt;
+&lt;li&gt;$\vec{v}$: vector; $\hat{v}$: vector with length 1 ($\frac{\vec{v}}{|\vec{v}|}$)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Product
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;dot product: $\vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|cos\theta = u_x v_x + u_y v_y + u_z v_z$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\vec{u}$ with new basis: $\vec{u} = \vec{u} \cdot \hat{e_1} \hat{e_1}+ \vec{u} \cdot \hat{e_2} \hat{e_2} + \vec{u} \cdot \hat{e_3} \hat{e_3}$&lt;/li&gt;
+&lt;li&gt;Project of A: $|\vec{A}| cos \theta = \frac{\vec{A} \cdot \vec{B}}{|\vec{B}|}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cross product: $\vec{u} \times \vec{v} = \hat{x}(u_y v_z - u_z v_y) + \hat{y}(u_z v_x - u_x v_z) + \hat{z}(u_x v_y - u_y v_x)$&lt;/p&gt;
+&lt;p&gt;Direction: Left-hand fold rule&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;point hand in dir of u&lt;/li&gt;
+&lt;li&gt;sweep hand to dir v&lt;/li&gt;
+&lt;li&gt;thumb points in $\vec{u} \times \vec{v}$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;derivative&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{dy}{dx}$ or y&amp;rsquo;(x)&lt;/li&gt;
+&lt;li&gt;$\dot{y}, \ddot{y}$: (second) derivative of time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;intergral&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;position&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;position - location relative to a fixed point (origin) - Coordinate System: x-y, x-t&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;distance (scalar) - how far an object has traveled&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;displacement $\Delta{\vec{r}} = \vec{r}_f - \vec{r}_i$ (vector) - how far is an object from its original position&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1D - x, others - $\vec{r}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;velocity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;speed $v$ (scalar) - describes how fast a particle is moving&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;velocity $\vec{v}$ (vector) - speed in a given direction&lt;/p&gt;
+&lt;p&gt;$$
+secant: v_{av} = \frac{x_f - x_i}{t_f - t_i} \ tangent: v_{ins} = \frac{dx}{dt}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;acceleration&lt;/p&gt;
+&lt;p&gt;$$
+\vec{a}_{inst} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{r}}{dt^2}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;dynamics---causes-of-motion--changes&#34;&gt;Dynamics - Causes of motion + changes&lt;/h3&gt;
+</description>
+        </item>
+        <item>
         <title>How to play Arknights on Linux, using MAA and key mapping</title>
         <link>https://zayn7lie.github.io/posts/misc/arknights/</link>
         <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
@@ -148,7 +278,7 @@
 </description>
         </item>
         <item>
-        <title>Hyprland</title>
+        <title>Hyprland (Wayland)</title>
         <link>https://zayn7lie.github.io/posts/linux/hyprland/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
@@ -206,6 +336,55 @@
 &lt;li&gt;Screenshot: AUR&lt;code&gt;grimblast-git&lt;/code&gt;, then bind hotkey: &lt;code&gt;bind = $mainMod SHIFT, S, exec, env XDG_SCREENSHOTS_DIR=$HOME/Pictures/Screenshot grimblast copysave area&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;Copy2Clipboard: &lt;code&gt;wl-clipboard&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Edit: &lt;code&gt;krita inkscape&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;view: &lt;code&gt;nsxiv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Preview: &lt;code&gt;tumbler ffmpegthumbnailer&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;audio&#34;&gt;Audio&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf&lt;/code&gt;, then &lt;code&gt;$ systemctl restart --user pipewire.service&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;context.modules &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{   name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; libpipewire-module-filter-chain
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    args &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        node.description &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Noise Canceling source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        media.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Noise Canceling source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        filter.graph &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            nodes &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ladspa
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rnnoise
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    plugin &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;usr&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;lib&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;ladspa&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;librnnoise_ladspa.so
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    label &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; noise_suppressor_mono
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    control &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;VAD Threshold (%)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 50.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;VAD Grace Period (ms)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 200
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Retroactive VAD Grace (ms)&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        capture.props &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;capture.rnnoise_source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.passive &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            audio.rate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 48000
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        playback.props &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            node.name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rnnoise_source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            media.class &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Audio&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;Source
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            audio.rate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 48000
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -324,7 +503,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>XFCE</title>
+        <title>XFCE (X11)</title>
         <link>https://zayn7lie.github.io/posts/linux/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
@@ -775,7 +954,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;integral&#34;&gt;Integral&lt;/h2&gt;
 &lt;h3 id=&#34;technique&#34;&gt;Technique&lt;/h3&gt;
-&lt;h4 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$&lt;/h4&gt;
+&lt;h4 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx--prime&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$ &amp;lsquo;: prime&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$\int{tan{x}}{dx}$
@@ -802,7 +981,8 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;$\int{sec^4{x} tan^3{x}}{dx}$
 $$
-sec^2{x} = tan^2{x} + 1
+sec^2{x} = tan^2{x} + 1 \
+tan&amp;rsquo;(x) = sec^2(x)
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -810,6 +990,13 @@ $$&lt;/p&gt;
 u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx \
 \frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
 $$&lt;/p&gt;
+&lt;h4 id=&#34;int-by-part&#34;&gt;Int by part&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{x \cdot sinx}dx$: reduce power&lt;/li&gt;
+&lt;li&gt;$\int{ln x}dx$: eliminate ln(x) (multiply with 1)&lt;/li&gt;
+&lt;li&gt;$\int{x \cdot arctanx}dx$&lt;/li&gt;
+&lt;li&gt;$\int{arcsinx \cdot lnx}dx$&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -1085,6 +1272,11 @@ $$&lt;/p&gt;
         <guid>https://zayn7lie.github.io/posts/misc/nyu/cohort/</guid>
         <description>&lt;h1 id=&#34;course-in-cohort&#34;&gt;Course in Cohort&lt;/h1&gt;
 &lt;h2 id=&#34;success&#34;&gt;Success&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;PC vs Linux&lt;/li&gt;
+&lt;li&gt;hardware problem&lt;/li&gt;
+&lt;li&gt;classmate problem solving&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         

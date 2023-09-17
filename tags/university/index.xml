@@ -62,7 +62,7 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;integral&#34;&gt;Integral&lt;/h2&gt;
 &lt;h3 id=&#34;technique&#34;&gt;Technique&lt;/h3&gt;
-&lt;h4 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$&lt;/h4&gt;
+&lt;h4 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx--prime&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$ &amp;lsquo;: prime&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$\int{tan{x}}{dx}$
@@ -89,7 +89,8 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;$\int{sec^4{x} tan^3{x}}{dx}$
 $$
-sec^2{x} = tan^2{x} + 1
+sec^2{x} = tan^2{x} + 1 \
+tan&amp;rsquo;(x) = sec^2(x)
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -97,6 +98,13 @@ $$&lt;/p&gt;
 u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx \
 \frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
 $$&lt;/p&gt;
+&lt;h4 id=&#34;int-by-part&#34;&gt;Int by part&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{x \cdot sinx}dx$: reduce power&lt;/li&gt;
+&lt;li&gt;$\int{ln x}dx$: eliminate ln(x) (multiply with 1)&lt;/li&gt;
+&lt;li&gt;$\int{x \cdot arctanx}dx$&lt;/li&gt;
+&lt;li&gt;$\int{arcsinx \cdot lnx}dx$&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         
