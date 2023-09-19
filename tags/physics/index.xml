@@ -52,7 +52,7 @@
 &lt;li&gt;Basis
 &lt;ul&gt;
 &lt;li&gt;orthonormal basis: ortho- - orthogonal: perpendicular; normal - length 1&lt;/li&gt;
-&lt;li&gt;$\vec{v}$: vector; $\hat{v}$: vector with length 1 ($\frac{\vec{v}}{|\vec{v}|}$)&lt;/li&gt;
+&lt;li&gt;$\vec{v}$: vector; $\hat{v}$: vector with length 1 ($\frac{\vec{v}}{|\vec{v}|}$)(unitless)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Product
@@ -88,8 +88,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;intergral&lt;/p&gt;
+&lt;p&gt;integral&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Polar Coordinates&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Describe Vector: $(r, \theta)$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;ul&gt;
@@ -131,6 +136,9 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \vec{a}_{inst} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{r}}{dt^2}
 $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RELATION: $x(t) = \frac{1}{2}at^2 + v_0t + x_0$ &amp;amp; $\Delta{x^2} = 2a\Delta{x}$, Core Formula for Circular Motion: $|a| = \frac{|v|^2}{R}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;dynamics---causes-of-motion--changes&#34;&gt;Dynamics - Causes of motion + changes&lt;/h3&gt;

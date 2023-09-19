@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Differentiate on zayn_lie&#39;s blog</title>
+        <link>https://zayn7lie.github.io/tags/differentiate/</link>
+        <description>Recent content in Differentiate on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/differentiate/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Calculus - Differentiate</title>
+        <link>https://zayn7lie.github.io/posts/math/differenciate/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/differenciate/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h3 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h3&gt;
+&lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/li&gt;
+&lt;li&gt;Analyzing points ($x = a$)
+&lt;ul&gt;
+&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;Stationary point: $f&amp;rsquo;(x) = 0$&lt;/li&gt;
+&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
+&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Limit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
+&lt;ul&gt;
+&lt;li&gt;MVT (Mean Value Theorem): If $f(x)$ is &lt;em&gt;differentiable&lt;/em&gt; on $[a, b]$, then $\exist c, f&amp;rsquo;(c) = \frac{f(b) - f(a)}{b - a}$&lt;/li&gt;
+&lt;li&gt;EVT (Extreme Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on &lt;em&gt;closed&lt;/em&gt; interval $[a, b]$, then $\exist c_1, c_2, f_{max}(x) = f(c_1), f_{min}(x) = f(c_2)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Discontinuous points (Discontinuity)
+&lt;ul&gt;
+&lt;li&gt;Removable ~: $\lim_{x \rarr a}f(x) \neq f(a)$&lt;/li&gt;
+&lt;li&gt;Jump ~: $\lim_{x \rarr a+}f(x) \neq \lim_{x \rarr a-}f(x)$&lt;/li&gt;
+&lt;li&gt;Infinite (Essential) ~: $\lim_{x \rarr a^+}f(x)$ or $\lim_{x \rarr a^-}f(x)$ equals $\pm \infin$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{dy}{dx}$ differentiate is a method to cut source function to know the tendency&lt;/li&gt;
+&lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -6,63 +6,14 @@
         <description>Recent content in AP on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/ap/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Calculus</title>
-        <link>https://zayn7lie.github.io/posts/math/calculus/</link>
-        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/ap/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Calculus - Integral</title>
+        <link>https://zayn7lie.github.io/posts/math/integral/</link>
+        <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/math/calculus/</guid>
-        <description>&lt;h2 id=&#34;differentiation&#34;&gt;Differentiation&lt;/h2&gt;
-&lt;h3 id=&#34;why&#34;&gt;WHY&lt;/h3&gt;
-&lt;h4 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h4&gt;
-&lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/li&gt;
-&lt;li&gt;Analyzing points ($x = a$)
-&lt;ul&gt;
-&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$&lt;/li&gt;
-&lt;li&gt;Stationary point: $f&amp;rsquo;(x) = 0$&lt;/li&gt;
-&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
-&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Limit&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Continuous: $lim_{x \rarr a}{f(x)} = f(a)$ ($lim_{x \rarr a}{f(x)} = lim_{x \rarr a^+}{f(x)} = lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
-&lt;ul&gt;
-&lt;li&gt;MVT (Mean Value Theorem): If $f(x)$ is &lt;em&gt;differentiable&lt;/em&gt; on $[a, b]$, then $\exist c, f&amp;rsquo;(c) = \frac{f(b) - f(a)}{b - a}$&lt;/li&gt;
-&lt;li&gt;EVT (Extreme Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on &lt;em&gt;closed&lt;/em&gt; interval $[a, b]$, then $\exist c_1, c_2, f_{max}(x) = f(c_1), f_{min}(x) = f(c_2)$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Discontinuous points (Discontinuity)
-&lt;ul&gt;
-&lt;li&gt;Removable ~: $lim_{x \rarr a}f(x) \neq f(a)$&lt;/li&gt;
-&lt;li&gt;Infinite ~: $lim_{x \rarr a^+}f(x)$ or $lim_{x \rarr a^-}f(x)$ equals $\pm \infin$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Smooth: $lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;$\frac{dy}{dx}$ differentiate is a method to cut source function to know the tendency&lt;/li&gt;
-&lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;how&#34;&gt;HOW&lt;/h3&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;integral&#34;&gt;Integral&lt;/h2&gt;
-&lt;h3 id=&#34;technique&#34;&gt;Technique&lt;/h3&gt;
-&lt;h4 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx--prime&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$ &amp;lsquo;: prime&lt;/h4&gt;
+        <guid>https://zayn7lie.github.io/posts/math/integral/</guid>
+        <description>&lt;h2 id=&#34;technique&#34;&gt;Technique&lt;/h2&gt;
+&lt;h3 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx-tantheta--sec2theta---1--intsec2theta&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$, $\tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}$&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$\int{tan{x}}{dx}$
@@ -98,13 +49,68 @@ $$&lt;/p&gt;
 u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx \
 \frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
 $$&lt;/p&gt;
-&lt;h4 id=&#34;int-by-part&#34;&gt;Int by part&lt;/h4&gt;
+&lt;h3 id=&#34;int-by-part&#34;&gt;Int by part&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{x \cdot sinx}dx$: reduce power&lt;/li&gt;
 &lt;li&gt;$\int{ln x}dx$: eliminate ln(x) (multiply with 1)&lt;/li&gt;
 &lt;li&gt;$\int{x \cdot arctanx}dx$&lt;/li&gt;
 &lt;li&gt;$\int{arcsinx \cdot lnx}dx$&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Calculus - Differentiate</title>
+        <link>https://zayn7lie.github.io/posts/math/differenciate/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/differenciate/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h3 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h3&gt;
+&lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/li&gt;
+&lt;li&gt;Analyzing points ($x = a$)
+&lt;ul&gt;
+&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;Stationary point: $f&amp;rsquo;(x) = 0$&lt;/li&gt;
+&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
+&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Limit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
+&lt;ul&gt;
+&lt;li&gt;MVT (Mean Value Theorem): If $f(x)$ is &lt;em&gt;differentiable&lt;/em&gt; on $[a, b]$, then $\exist c, f&amp;rsquo;(c) = \frac{f(b) - f(a)}{b - a}$&lt;/li&gt;
+&lt;li&gt;EVT (Extreme Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on &lt;em&gt;closed&lt;/em&gt; interval $[a, b]$, then $\exist c_1, c_2, f_{max}(x) = f(c_1), f_{min}(x) = f(c_2)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Discontinuous points (Discontinuity)
+&lt;ul&gt;
+&lt;li&gt;Removable ~: $\lim_{x \rarr a}f(x) \neq f(a)$&lt;/li&gt;
+&lt;li&gt;Jump ~: $\lim_{x \rarr a+}f(x) \neq \lim_{x \rarr a-}f(x)$&lt;/li&gt;
+&lt;li&gt;Infinite (Essential) ~: $\lim_{x \rarr a^+}f(x)$ or $\lim_{x \rarr a^-}f(x)$ equals $\pm \infin$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{dy}{dx}$ differentiate is a method to cut source function to know the tendency&lt;/li&gt;
+&lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
 </description>
         </item>
         

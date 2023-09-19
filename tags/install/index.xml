@@ -73,10 +73,15 @@
 &lt;/ul&gt;
 &lt;h4 id=&#34;audio&#34;&gt;Audio&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;:
+&lt;li&gt;
+&lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf&lt;/code&gt;, then &lt;code&gt;$ systemctl restart --user pipewire.service&lt;/code&gt;:&lt;/p&gt;
@@ -115,6 +120,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bluetooth: &lt;code&gt;bluez bluez-utils blueman&lt;/code&gt;, then add &lt;code&gt;blueman-applet&lt;/code&gt; to config&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;

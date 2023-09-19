@@ -6,7 +6,59 @@
         <description>Recent content in Posts on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Calculus - Integral</title>
+        <link>https://zayn7lie.github.io/posts/math/integral/</link>
+        <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/integral/</guid>
+        <description>&lt;h2 id=&#34;technique&#34;&gt;Technique&lt;/h2&gt;
+&lt;h3 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx-tantheta--sec2theta---1--intsec2theta&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$, $\tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}$&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$\int{tan{x}}{dx}$
+$$
+\int{tan{x}}{dx} = \int{\frac{sin{x}}{cos{x}}}{dx} \
+u = cos{x}, du = -sin{x} dx \rArr \int{\frac{-du}{u}} = - ln{u} + c = -ln{cos{x}} + C
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{dx}$
+$$
+u = g(x), du = g&amp;rsquo;(x) dx
+\rArr \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int{\frac{1}{x(x^2 + 1)}}{dx}$
+$$
+u = arctan{x}, du = \frac{1}{x^2 + 1}dx, x = tan{u}
+\rArr \int{\frac{1}{tan{u}}}{du} \
+v = sin{u}, dv = cos{u}du \rArr \int{\frac{1}{v}}{dv} = ln{v} + C = ln{sin{u}} + C = ln{sin{arctan{x}} + C}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int{sec^4{x} tan^3{x}}{dx}$
+$$
+sec^2{x} = tan^2{x} + 1 \
+tan&amp;rsquo;(x) = sec^2(x)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx \
+\frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;int-by-part&#34;&gt;Int by part&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{x \cdot sinx}dx$: reduce power&lt;/li&gt;
+&lt;li&gt;$\int{ln x}dx$: eliminate ln(x) (multiply with 1)&lt;/li&gt;
+&lt;li&gt;$\int{x \cdot arctanx}dx$&lt;/li&gt;
+&lt;li&gt;$\int{arcsinx \cdot lnx}dx$&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Physics1 - Motion</title>
         <link>https://zayn7lie.github.io/posts/misc/nyu/physics/</link>
         <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
@@ -52,7 +104,7 @@
 &lt;li&gt;Basis
 &lt;ul&gt;
 &lt;li&gt;orthonormal basis: ortho- - orthogonal: perpendicular; normal - length 1&lt;/li&gt;
-&lt;li&gt;$\vec{v}$: vector; $\hat{v}$: vector with length 1 ($\frac{\vec{v}}{|\vec{v}|}$)&lt;/li&gt;
+&lt;li&gt;$\vec{v}$: vector; $\hat{v}$: vector with length 1 ($\frac{\vec{v}}{|\vec{v}|}$)(unitless)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Product
@@ -88,8 +140,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;intergral&lt;/p&gt;
+&lt;p&gt;integral&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Polar Coordinates&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Describe Vector: $(r, \theta)$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;ul&gt;
@@ -131,6 +188,9 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \vec{a}_{inst} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{r}}{dt^2}
 $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RELATION: $x(t) = \frac{1}{2}at^2 + v_0t + x_0$ &amp;amp; $\Delta{x^2} = 2a\Delta{x}$, Core Formula for Circular Motion: $|a| = \frac{|v|^2}{R}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;dynamics---causes-of-motion--changes&#34;&gt;Dynamics - Causes of motion + changes&lt;/h3&gt;
@@ -344,10 +404,15 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;audio&#34;&gt;Audio&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;:
+&lt;li&gt;
+&lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf&lt;/code&gt;, then &lt;code&gt;$ systemctl restart --user pipewire.service&lt;/code&gt;:&lt;/p&gt;
@@ -386,6 +451,9 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bluetooth: &lt;code&gt;bluez bluez-utils blueman&lt;/code&gt;, then add &lt;code&gt;blueman-applet&lt;/code&gt; to config&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
@@ -899,14 +967,13 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Calculus</title>
-        <link>https://zayn7lie.github.io/posts/math/calculus/</link>
+        <title>Calculus - Differentiate</title>
+        <link>https://zayn7lie.github.io/posts/math/differenciate/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/math/calculus/</guid>
-        <description>&lt;h2 id=&#34;differentiation&#34;&gt;Differentiation&lt;/h2&gt;
-&lt;h3 id=&#34;why&#34;&gt;WHY&lt;/h3&gt;
-&lt;h4 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h4&gt;
+        <guid>https://zayn7lie.github.io/posts/math/differenciate/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h3 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h3&gt;
 &lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/li&gt;
@@ -919,13 +986,13 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h4&gt;
+&lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Limit&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Continuous: $lim_{x \rarr a}{f(x)} = f(a)$ ($lim_{x \rarr a}{f(x)} = lim_{x \rarr a^+}{f(x)} = lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
+&lt;p&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
 &lt;ul&gt;
@@ -935,68 +1002,23 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;Discontinuous points (Discontinuity)
 &lt;ul&gt;
-&lt;li&gt;Removable ~: $lim_{x \rarr a}f(x) \neq f(a)$&lt;/li&gt;
-&lt;li&gt;Infinite ~: $lim_{x \rarr a^+}f(x)$ or $lim_{x \rarr a^-}f(x)$ equals $\pm \infin$&lt;/li&gt;
+&lt;li&gt;Removable ~: $\lim_{x \rarr a}f(x) \neq f(a)$&lt;/li&gt;
+&lt;li&gt;Jump ~: $\lim_{x \rarr a+}f(x) \neq \lim_{x \rarr a-}f(x)$&lt;/li&gt;
+&lt;li&gt;Infinite (Essential) ~: $\lim_{x \rarr a^+}f(x)$ or $\lim_{x \rarr a^-}f(x)$ equals $\pm \infin$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Smooth: $lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
+&lt;p&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h3&gt;
+&lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;$\frac{dy}{dx}$ differentiate is a method to cut source function to know the tendency&lt;/li&gt;
 &lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how&#34;&gt;HOW&lt;/h3&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;integral&#34;&gt;Integral&lt;/h2&gt;
-&lt;h3 id=&#34;technique&#34;&gt;Technique&lt;/h3&gt;
-&lt;h4 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx--prime&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$ &amp;lsquo;: prime&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{tan{x}}{dx}$
-$$
-\int{tan{x}}{dx} = \int{\frac{sin{x}}{cos{x}}}{dx} \
-u = cos{x}, du = -sin{x} dx \rArr \int{\frac{-du}{u}} = - ln{u} + c = -ln{cos{x}} + C
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{dx}$
-$$
-u = g(x), du = g&amp;rsquo;(x) dx
-\rArr \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{\frac{1}{x(x^2 + 1)}}{dx}$
-$$
-u = arctan{x}, du = \frac{1}{x^2 + 1}dx, x = tan{u}
-\rArr \int{\frac{1}{tan{u}}}{du} \
-v = sin{u}, dv = cos{u}du \rArr \int{\frac{1}{v}}{dv} = ln{v} + C = ln{sin{u}} + C = ln{sin{arctan{x}} + C}
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{sec^4{x} tan^3{x}}{dx}$
-$$
-sec^2{x} = tan^2{x} + 1 \
-tan&amp;rsquo;(x) = sec^2(x)
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$$
-u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx \
-\frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
-$$&lt;/p&gt;
-&lt;h4 id=&#34;int-by-part&#34;&gt;Int by part&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;$\int{x \cdot sinx}dx$: reduce power&lt;/li&gt;
-&lt;li&gt;$\int{ln x}dx$: eliminate ln(x) (multiply with 1)&lt;/li&gt;
-&lt;li&gt;$\int{x \cdot arctanx}dx$&lt;/li&gt;
-&lt;li&gt;$\int{arcsinx \cdot lnx}dx$&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
 </description>
         </item>
         <item>
