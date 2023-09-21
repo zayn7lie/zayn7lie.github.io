@@ -13,59 +13,68 @@
         
         <guid>https://zayn7lie.github.io/posts/math/integral/</guid>
         <description>&lt;h2 id=&#34;technique&#34;&gt;Technique&lt;/h2&gt;
-&lt;h3 id=&#34;substitution-fracdfdx--fracdfdh-cdot-fracdhdx-tantheta--sec2theta---1--intsec2theta&#34;&gt;Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$, $\tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}$&lt;/h3&gt;
+&lt;h3 id=&#34;why-why-we-use-techniques-to-solve-the-integral-problems&#34;&gt;WHY: Why we use techniques to solve the integral problems?&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{tan{x}}{dx}$
-$$
-\int{tan{x}}{dx} = \int{\frac{sin{x}}{cos{x}}}{dx} \
-u = cos{x}, du = -sin{x} dx \rArr \int{\frac{-du}{u}} = - ln{u} + c = -ln{cos{x}} + C
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{dx}$
-$$
-u = g(x), du = g&amp;rsquo;(x) dx
-\rArr \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{\frac{1}{x(x^2 + 1)}}{dx}$
-$$
-u = arctan{x}, du = \frac{1}{x^2 + 1}dx, x = tan{u}
-\rArr \int{\frac{1}{tan{u}}}{du} \
-v = sin{u}, dv = cos{u}du \rArr \int{\frac{1}{v}}{dv} = ln{v} + C = ln{sin{u}} + C = ln{sin{arctan{x}} + C}
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{sec^4{x} tan^3{x}}{dx}$
-$$
-sec^2{x} = tan^2{x} + 1 \
-tan&amp;rsquo;(x) = sec^2(x)
-$$&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;The function cannot be antiderivatived directly.&lt;/li&gt;
+&lt;li&gt;The process of original function to integral is too challenging.&lt;/li&gt;
+&lt;li&gt;Direct integral cannot give us the answer.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;$$
-u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx \
-\frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
-$$&lt;/p&gt;
-&lt;h3 id=&#34;int-by-part&#34;&gt;Int by part&lt;/h3&gt;
+&lt;h3 id=&#34;what-what-is-the-techniques-of-integral&#34;&gt;WHAT: What is the techniques of integral&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;$\int{x \cdot sinx}dx$: reduce power&lt;/li&gt;
-&lt;li&gt;$\int{ln x}dx$: eliminate ln(x) (multiply with 1)&lt;/li&gt;
-&lt;li&gt;$\int{x \cdot arctanx}dx$&lt;/li&gt;
-&lt;li&gt;$\int{arcsinx \cdot lnx}dx$&lt;/li&gt;
+&lt;li&gt;It could turn one function which cannot or is challenging to integral to a simple function&lt;/li&gt;
+&lt;li&gt;The tricks that we can use in the process of integral.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;partial-fractions&#34;&gt;Partial Fractions&lt;/h3&gt;
-&lt;p&gt;$$
-f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
+&lt;h3 id=&#34;how-how-to-use-the-techniques-to-integral&#34;&gt;HOW: How to use the techniques to integral&lt;/h3&gt;
+&lt;h4 id=&#34;if-the-function-combines-with-its-derivative-substitution&#34;&gt;If the function combines with its derivative: Substitution&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Rules: $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{dx}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ u = g(x), du = g&amp;rsquo;(x) dx \rArr \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
 $$&lt;/p&gt;
-&lt;p&gt;$$
-f(x) = \frac{C(x)}{D(x)} \rArr D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
+&lt;ul&gt;
+&lt;li&gt;$\int{\tan{x}}{dx}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \int{\tan{x}}{dx} = \int{\frac{\sin{x}}{\cos{x}}}{dx}
+$$
+$$ u = \cos{x}, du = -\sin{x} dx \rArr \int{\frac{-du}{u}} = - \ln{u} + c = -\ln{\cos{x}} + C
 $$&lt;/p&gt;
-&lt;p&gt;$$
-\rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+&lt;ul&gt;
+&lt;li&gt;$\int{\frac{1}{x(x^2 + 1)}}{dx}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ u = \arctan{x}, du = \frac{1}{x^2 + 1}dx, x = \tan{u} \rArr \int{\frac{1}{\tan{u}}}{du}
+$$
+$$ v = \sin{u}, dv = \cos{u}du \rArr \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{dx}$ ($\tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}$)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \sec^2{x} = \tan^2{x} + 1
+$$
+$$ \tan&amp;rsquo;(x) = \sec^2(x)
+$$
+$$ u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx
+$$
+$$ \frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{x \cdot \sin x}dx$: reduce power&lt;/li&gt;
+&lt;li&gt;$\int{\ln x}dx$: eliminate \ln(x) (multiply with 1)&lt;/li&gt;
+&lt;li&gt;$\int{x \cdot \arctan x}dx$&lt;/li&gt;
+&lt;li&gt;$\int{\arcsin x \cdot \ln x}dx$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;other-techniques-not-belongs-to-integral&#34;&gt;Other techniques (Not belongs to Integral)&lt;/h3&gt;
+&lt;h4 id=&#34;partial-fractions&#34;&gt;Partial Fractions&lt;/h4&gt;
+&lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
+$$
+$$ f(x) = \frac{C(x)}{D(x)} \rArr D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
+$$
+$$ \rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;approx-to-limit&#34;&gt;Approx to limit&lt;/h4&gt;
 </description>
         </item>
         

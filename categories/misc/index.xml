@@ -141,6 +141,15 @@ $$&lt;/p&gt;
 &lt;p&gt;RELATION: $x(t) = \frac{1}{2}at^2 + v_0t + x_0$ &amp;amp; $\Delta{x^2} = 2a\Delta{x}$, Core Formula for Circular Motion: $|a| = \frac{|v|^2}{R}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Circular: if $|\vec{r}| = Constant$ then $\vec{r} \perp \vec{v}$; if $\vec{v} = Constant$ then $\vec{a} \perp \vec{v}$ ($\vec{w}$ is constant $\rArr \vec{w} \cdot \vec{v} = 0$)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ballistic: $x = \frac{v_0^2}{g}\sin2\theta$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;dynamics---causes-of-motion--changes&#34;&gt;Dynamics - Causes of motion + changes&lt;/h3&gt;
 </description>
         </item>
