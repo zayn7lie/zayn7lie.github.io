@@ -49,16 +49,10 @@ $$
 $$ v = \sin{u}, dv = \cos{u}du \rArr \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{dx}$ ($\tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}$)&lt;/li&gt;
+&lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{dx}$
+$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}
+$$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;$$ \sec^2{x} = \tan^2{x} + 1
-$$
-$$ \tan&amp;rsquo;(x) = \sec^2(x)
-$$
-$$ u = \sqrt{16 + 3x}, u^2 = 16 + 3x \in (4^2, 8^2), 2udu = 3dx
-$$
-$$ \frac{(u^2 - 16)2}{9}du = \frac{\frac{2}{3}u^3 - 32u}{9} = \frac{2u^3 - 3*32u}{27} = \frac{8 * 128 - 6 * 128 - 128 + 3 * 128}{27}
-$$&lt;/p&gt;
 &lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{x \cdot \sin x}dx$: reduce power&lt;/li&gt;
