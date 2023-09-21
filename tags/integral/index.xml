@@ -12,7 +12,20 @@
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/math/calculus-integral/</guid>
-        <description>&lt;h2 id=&#34;technique&#34;&gt;Technique&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;WHY: Why do we want to find out the integral&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Find out the area&lt;/li&gt;
+&lt;li&gt;Find out some physics parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-what-is-integral&#34;&gt;WHAT: What is integral&lt;/h2&gt;
+&lt;h3 id=&#34;riemann-integral&#34;&gt;Riemann integral&lt;/h3&gt;
+&lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
+&lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
+$$&lt;/p&gt;
+&lt;p&gt;eg.
+$$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$&lt;/p&gt;
+&lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;HOW: How to integral - Technique&lt;/h2&gt;
 &lt;h3 id=&#34;why-why-we-use-techniques-to-solve-the-integral-problems&#34;&gt;WHY: Why we use techniques to solve the integral problems?&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;The function cannot be antiderivatived directly.&lt;/li&gt;

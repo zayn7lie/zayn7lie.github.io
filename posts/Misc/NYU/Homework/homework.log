@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.26)  17 SEP 2023 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.26)  21 SEP 2023 19:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/zayn7lie/Blog/content/posts/Misc/NYU/Homework/homework.tex
-(/home/zayn7lie/Blog/content/posts/Misc/NYU/Homework/homework.tex
+**/home/zayn7lie/Blog/public/posts/Misc/NYU/Homework/homework.tex
+(/home/zayn7lie/Blog/public/posts/Misc/NYU/Homework/homework.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (./homework.cls
 Document Class: homework 2023/01/01 Homework
@@ -576,12 +576,12 @@ Package rerunfilecheck Info: File `homework.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  19622 strings out of 477985
- 333858 string characters out of 5840058
+ 333855 string characters out of 5840058
  1865388 words of memory out of 5000000
  39367 multiletter control sequences out of 15000+600000
  542769 words of font info for 66 fonts, out of 8000000 for 9000
  175 hyphenation exceptions out of 8191
- 90i,7n,91p,546b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,91p,545b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 Output written on homework.pdf (2 pages, 158113 bytes).
 PDF statistics:
