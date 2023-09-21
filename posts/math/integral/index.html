@@ -247,6 +247,7 @@ $\int{\frac{1}{x(x^2 &#43; 1)}}{dx}$ $$ u = arctan{x}, du = \frac{1}{x^2 &#43; 1
       <ul>
         <li><a href="#substitution-fracdfdx--fracdfdh-cdot-fracdhdx-tantheta--sec2theta---1--intsec2theta">Substitution $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$, $\tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}$</a></li>
         <li><a href="#int-by-part">Int by part</a></li>
+        <li><a href="#partial-fractions">Partial Fractions</a></li>
       </ul>
     </li>
   </ul>
@@ -355,7 +356,7 @@ $\int{\frac{1}{x(x^2 &#43; 1)}}{dx}$ $$ u = arctan{x}, du = \frac{1}{x^2 &#43; 1
                     <a href="/page/archives/#0001">
                         
                             <span class="year">0001</span>
-                            <span class="count">3</span>
+                            <span class="count">2</span>
                         
                     </a> 
                 </div>
@@ -421,7 +422,7 @@ $\int{\frac{1}{x(x^2 &#43; 1)}}{dx}$ $$ u = arctan{x}, du = \frac{1}{x^2 &#43; 1
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    2 minute read
                 </time>
             </div>
         
@@ -480,6 +481,16 @@ $$</p>
 <li>$\int{x \cdot arctanx}dx$</li>
 <li>$\int{arcsinx \cdot lnx}dx$</li>
 </ul>
+<h3 id="partial-fractions">Partial Fractions</h3>
+<p>$$
+f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &gt;= deg(B) \ or \ deg(C) &lt; deg(D)
+$$</p>
+<p>$$
+f(x) = \frac{C(x)}{D(x)} \rArr D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&hellip;(u_jx^2 + v_jx + w_j)^{r_j}
+$$</p>
+<p>$$
+\rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+$$</p>
 
 </section>
 

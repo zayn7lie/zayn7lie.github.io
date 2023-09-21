@@ -56,6 +56,16 @@ $$&lt;/p&gt;
 &lt;li&gt;$\int{x \cdot arctanx}dx$&lt;/li&gt;
 &lt;li&gt;$\int{arcsinx \cdot lnx}dx$&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;partial-fractions&#34;&gt;Partial Fractions&lt;/h3&gt;
+&lt;p&gt;$$
+f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
+$$&lt;/p&gt;
+&lt;p&gt;$$
+f(x) = \frac{C(x)}{D(x)} \rArr D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+$$&lt;/p&gt;
 </description>
         </item>
         <item>
