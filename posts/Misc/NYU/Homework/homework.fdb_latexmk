@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1695338003 "/home/zayn7lie/Blog/public/posts/Misc/NYU/Homework/homework.tex" "homework.pdf" "homework" 1695338003 0
-  "/home/zayn7lie/Blog/public/posts/Misc/NYU/Homework/homework.tex" 1695338002 2524 82e074567363ed5dc0636e0e5509fd48 ""
+["pdflatex"] 1695339283 "/home/zayn7lie/Blog/public/posts/Misc/NYU/Homework/homework.tex" "homework.pdf" "homework" 1695339283 0
+  "/home/zayn7lie/Blog/public/posts/Misc/NYU/Homework/homework.tex" 1695339282 2524 82e074567363ed5dc0636e0e5509fd48 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1689853683 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1689853683 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1689853683 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -145,14 +145,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1689853683 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1693070975 4483110 adb1e1d04498b9576f1f17c4219c5e03 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1693070934 6768050 934073da686d33bf043d280d911e3616 ""
-  "homework.aux" 1695338003 1660 28428261765827330cbeec2ecd6158c2 "pdflatex"
-  "homework.cls" 1695338002 1872 ce67e7a9759f0798eca1d9e922ac23c5 ""
-  "homework.out" 1695338003 1065 13632a2c44e380eaced8378c99fac4b3 "pdflatex"
-  "homework.png" 1695338002 45221 024646b2731fa2450eab6c524d79d83a ""
-  "homework.tex" 1695338002 2524 82e074567363ed5dc0636e0e5509fd48 ""
-  "hwcmd.sty" 1695338002 2797 f72d2795186cc3011e3a5cbb52a35fe0 ""
-  "hwlst.sty" 1695338002 1303 66bede375038a60a81934966c6a23331 ""
-  "hwsymb.sty" 1695338002 1941 fd209ea3017564166759ba9cd512359a ""
+  "homework.aux" 1695339283 1660 28428261765827330cbeec2ecd6158c2 "pdflatex"
+  "homework.cls" 1695339282 1872 ce67e7a9759f0798eca1d9e922ac23c5 ""
+  "homework.out" 1695339283 1065 13632a2c44e380eaced8378c99fac4b3 "pdflatex"
+  "homework.png" 1695339282 45221 024646b2731fa2450eab6c524d79d83a ""
+  "homework.tex" 1695339282 2524 82e074567363ed5dc0636e0e5509fd48 ""
+  "hwcmd.sty" 1695339282 2797 f72d2795186cc3011e3a5cbb52a35fe0 ""
+  "hwlst.sty" 1695339282 1303 66bede375038a60a81934966c6a23331 ""
+  "hwsymb.sty" 1695339282 1941 fd209ea3017564166759ba9cd512359a ""
   (generated)
   "homework.aux"
   "homework.log"
