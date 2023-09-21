@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/ap/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus - Integral</title>
-        <link>https://zayn7lie.github.io/posts/math/integral/</link>
+        <link>https://zayn7lie.github.io/posts/math/calculus-integral/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/math/integral/</guid>
+        <guid>https://zayn7lie.github.io/posts/math/calculus-integral/</guid>
         <description>&lt;h2 id=&#34;technique&#34;&gt;Technique&lt;/h2&gt;
 &lt;h3 id=&#34;why-why-we-use-techniques-to-solve-the-integral-problems&#34;&gt;WHY: Why we use techniques to solve the integral problems?&lt;/h3&gt;
 &lt;ul&gt;
@@ -73,10 +73,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus - Differentiate</title>
-        <link>https://zayn7lie.github.io/posts/math/differenciate/</link>
+        <link>https://zayn7lie.github.io/posts/math/calculus-differenciate/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/math/differenciate/</guid>
+        <guid>https://zayn7lie.github.io/posts/math/calculus-differenciate/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
 &lt;h3 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h3&gt;
 &lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
