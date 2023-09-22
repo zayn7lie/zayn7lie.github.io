@@ -97,7 +97,7 @@ $$ \int{\frac{iu}{(au^2+k^2)^n}}du, v = au^2 + k^2, \frac{1}{2a}dv = udu
 $$
 $$ \rArr \frac{i}{2a}\int{\frac{1}{v^n}}dv \rArr \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ (when \ n = 1)
 $$
-$$ (2)
+$$ (2)*
 $$
 $$ \int{\frac{j}{(au^2+k^2)^n}}du = \frac{j}{k}\int{\frac{1}{((\frac{u\sqrt{a}}{k})^2 + 1)^n}}du, \tan{v} = \frac{u\sqrt{a}}{k}, \sec^2{v}dv = \frac{\sqrt{a}}{k}du
 $$
