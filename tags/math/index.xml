@@ -68,11 +68,10 @@ $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;$\int{x \cdot \sin x}dx$: reduce power&lt;/li&gt;
-&lt;li&gt;$\int{\ln x}dx$: eliminate \ln(x) (multiply with 1)&lt;/li&gt;
-&lt;li&gt;$\int{x \cdot \arctan x}dx$&lt;/li&gt;
-&lt;li&gt;$\int{\arcsin x \cdot \ln x}dx$&lt;/li&gt;
+&lt;li&gt;Reduce Power: $\int{x \cdot \sin x}dx$&lt;/li&gt;
+&lt;li&gt;Eliminate complex function: $\int{\ln x}dx$&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;E.P. Find every function integral then int by part: $\int{\arcsin x \cdot \ln x}dx$&lt;/p&gt;
 &lt;h3 id=&#34;other-techniques-not-belongs-to-integral&#34;&gt;Other techniques (Not belongs to Integral)&lt;/h3&gt;
 &lt;h4 id=&#34;partial-fractions&#34;&gt;Partial Fractions&lt;/h4&gt;
 &lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
@@ -80,6 +79,27 @@ $$
 $$ f(x) = \frac{C(x)}{D(x)} \rArr D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
 $$
 $$ \rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+$$&lt;/p&gt;
+&lt;p&gt;Integral&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{\frac{c}{(ax + b)^n}}dx$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \int{\frac{c}{(ax + b)^n}}dx = \frac{c}{a} \cdot \frac{1}{(1 - n)(ax+b)^{n-1}} + C \ or \ = \frac{c}{a} \cdot \ln{|ax + b|} + C \ (when \ n = 1)
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx = \int{\frac{gx + h}{(a(x + \frac{b}{2a})^2 + c - \frac{b^2}{4a})^n}}dx, u = x + \frac{b}{2a} \rArr \int{\frac{iu + j}{(au^2 + k^2)^n}}du
+$$
+$$ (1)
+$$
+$$ \int{\frac{iu}{(au^2+k^2)^n}}du, v = au^2 + k^2, \frac{1}{2a}dv = udu
+$$
+$$ \rArr \frac{i}{2a}\int{\frac{1}{v^n}}dv \rArr \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ (when \ n = 1)
+$$
+$$ (2)
+$$
+$$ \int{\frac{j}{(au^2+k^2)^n}}du
 $$&lt;/p&gt;
 &lt;h4 id=&#34;approx-to-limit&#34;&gt;Approx to limit&lt;/h4&gt;
 &lt;p&gt;For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:&lt;/p&gt;

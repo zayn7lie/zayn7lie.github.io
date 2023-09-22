@@ -432,7 +432,7 @@ HOW: How to integral - Technique WHY: Why we use techniques to solve the integra
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    3 minute read
                 </time>
             </div>
         
@@ -503,11 +503,10 @@ $$</li>
 </ul>
 <h4 id="if-the-function-combines-with-a-simple-functions-derivative-int-by-part">If the function combines with a simple function&rsquo;s derivative: Int by part</h4>
 <ul>
-<li>$\int{x \cdot \sin x}dx$: reduce power</li>
-<li>$\int{\ln x}dx$: eliminate \ln(x) (multiply with 1)</li>
-<li>$\int{x \cdot \arctan x}dx$</li>
-<li>$\int{\arcsin x \cdot \ln x}dx$</li>
+<li>Reduce Power: $\int{x \cdot \sin x}dx$</li>
+<li>Eliminate complex function: $\int{\ln x}dx$</li>
 </ul>
+<p>E.P. Find every function integral then int by part: $\int{\arcsin x \cdot \ln x}dx$</p>
 <h3 id="other-techniques-not-belongs-to-integral">Other techniques (Not belongs to Integral)</h3>
 <h4 id="partial-fractions">Partial Fractions</h4>
 <p>$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &gt;= deg(B) \ or \ deg(C) &lt; deg(D)
@@ -515,6 +514,27 @@ $$
 $$ f(x) = \frac{C(x)}{D(x)} \rArr D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&hellip;(u_jx^2 + v_jx + w_j)^{r_j}
 $$
 $$ \rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+$$</p>
+<p>Integral</p>
+<ul>
+<li>$\int{\frac{c}{(ax + b)^n}}dx$</li>
+</ul>
+<p>$$ \int{\frac{c}{(ax + b)^n}}dx = \frac{c}{a} \cdot \frac{1}{(1 - n)(ax+b)^{n-1}} + C \ or \ = \frac{c}{a} \cdot \ln{|ax + b|} + C \ (when \ n = 1)
+$$</p>
+<ul>
+<li>$\int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx$</li>
+</ul>
+<p>$$ \int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx = \int{\frac{gx + h}{(a(x + \frac{b}{2a})^2 + c - \frac{b^2}{4a})^n}}dx, u = x + \frac{b}{2a} \rArr \int{\frac{iu + j}{(au^2 + k^2)^n}}du
+$$
+$$ (1)
+$$
+$$ \int{\frac{iu}{(au^2+k^2)^n}}du, v = au^2 + k^2, \frac{1}{2a}dv = udu
+$$
+$$ \rArr \frac{i}{2a}\int{\frac{1}{v^n}}dv \rArr \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ (when \ n = 1)
+$$
+$$ (2)
+$$
+$$ \int{\frac{j}{(au^2+k^2)^n}}du
 $$</p>
 <h4 id="approx-to-limit">Approx to limit</h4>
 <p>For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:</p>
