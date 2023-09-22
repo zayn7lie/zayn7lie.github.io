@@ -534,7 +534,13 @@ $$ \rArr \frac{i}{2a}\int{\frac{1}{v^n}}dv \rArr \frac{i}{2a} \cdot \frac{1}{(1 
 $$
 $$ (2)
 $$
-$$ \int{\frac{j}{(au^2+k^2)^n}}du
+$$ \int{\frac{j}{(au^2+k^2)^n}}du = \frac{j}{k}\int{\frac{1}{((\frac{u\sqrt{a}}{k})^2 + 1)^n}}du, \tan{v} = \frac{u\sqrt{a}}{k}, \sec^2{v}dv = \frac{\sqrt{a}}{k}du
+$$
+$$ \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{\sec^{2n-2}{v}}dv} \rArr \int{\frac{1 +\cos^{n-1}{v}}{2}dv} = \ldots = Av + \frac{1}{2^B}\int{\cos^o{v}dv}(p \ is \ odd)
+$$
+$$ \rArr \int{\cos{v}(1 - \sin^2{v})^e}dv, w = \sin{v}, dw = \cos{v}dv \rArr \int(1 - w^2)^edw
+$$
+$$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
 $$</p>
 <h4 id="approx-to-limit">Approx to limit</h4>
 <p>For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:</p>
