@@ -1,7 +1,7 @@
-PWD /home/zayn7lie/Blog/public/posts/Misc/NYU/Homework
+PWD /home/zayn7lie/Blog/content/posts/Misc/NYU/Homework
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/zayn7lie/Blog/public/posts/Misc/NYU/Homework/homework.tex
+INPUT /home/zayn7lie/Blog/content/posts/Misc/NYU/Homework/homework.tex
 OUTPUT homework.log
 INPUT ./homework.cls
 INPUT ./homework.cls
