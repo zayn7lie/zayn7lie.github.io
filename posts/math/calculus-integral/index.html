@@ -558,15 +558,17 @@ $$ \int{\frac{iu}{(au^2+k^2)^n}}du, v = au^2 + k^2, \frac{1}{2a}dv = udu
 $$
 $$ \rArr \frac{i}{2a}\int{\frac{1}{v^n}}dv \rArr \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ when \ n = 1
 $$
-$$ (2)*
+$$ (2)
+$$
+$$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
+$$
+$$ *when \ n \neq 1:
 $$
 $$ \int{\frac{j}{(au^2+k^2)^n}}du = \frac{j}{k}\int{\frac{1}{((\frac{u\sqrt{a}}{k})^2 + 1)^n}}du, \tan{v} = \frac{u\sqrt{a}}{k}, \sec^2{v}dv = \frac{\sqrt{a}}{k}du
 $$
 $$ \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{\sec^{2n-2}{v}}dv} \rArr \int{\frac{1 +\cos^{n-1}{2v}}{2}dv} = \ldots = Av + \frac{1}{2^r}\int{\cos^o{2^rv}dv}(o \ is \ odd)
 $$
 $$ \rArr \int{\cos{2^rv}(1 - \sin^2{2^rv})^e}dv \ (e \ is \ even), w = \sin{2^rv}, dw = 2^r\cos{}dv \rArr \int\frac{(1 - w^2)^e}{2^r}dw
-$$
-$$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
 $$</p>
 <h4 id="approx-to-limit">Approx to limit</h4>
 <p>For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:</p>
