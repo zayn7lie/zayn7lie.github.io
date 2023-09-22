@@ -19,7 +19,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-integral&#34;&gt;WHAT: What is integral&lt;/h2&gt;
 &lt;h3 id=&#34;riemann-integral&#34;&gt;Riemann integral&lt;/h3&gt;
-&lt;p&gt;Dividing a function and approx it to separated rec\tangles, then just calculate the areas of rec\tangles:&lt;/p&gt;
+&lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
 &lt;p&gt;eg.
