@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rec\tangles, then just calculate the areas of rec\tangles:
 $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a &#43; \frac{b - a}{n}i)} $$
 eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$
 HOW: How to integral - Technique WHY: Why we use techniques to solve the integral problems?'>
@@ -10,7 +10,7 @@ HOW: How to integral - Technique WHY: Why we use techniques to solve the integra
 <link rel='canonical' href='https://zayn7lie.github.io/posts/math/calculus-integral/'>
 
 <link rel="stylesheet" href="/scss/style.min.aab18e4946c1c150d4e1b8571ddbee125563cec7362efba24b123504694fc1c2.css"><meta property='og:title' content='Calculus - Integral'>
-<meta property='og:description' content='WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
+<meta property='og:description' content='WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rec\tangles, then just calculate the areas of rec\tangles:
 $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a &#43; \frac{b - a}{n}i)} $$
 eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$
 HOW: How to integral - Technique WHY: Why we use techniques to solve the integral problems?'>
@@ -18,7 +18,7 @@ HOW: How to integral - Technique WHY: Why we use techniques to solve the integra
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='AP' /><meta property='article:tag' content='University' /><meta property='article:tag' content='Integral' /><meta property='article:published_time' content='2023-09-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-09-19T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus - Integral">
-<meta name="twitter:description" content="WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
+<meta name="twitter:description" content="WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rec\tangles, then just calculate the areas of rec\tangles:
 $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a &#43; \frac{b - a}{n}i)} $$
 eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$
 HOW: How to integral - Technique WHY: Why we use techniques to solve the integral problems?">
@@ -432,7 +432,7 @@ HOW: How to integral - Technique WHY: Why we use techniques to solve the integra
 
 
                 <time class="article-time--reading">
-                    3 minute read
+                    4 minute read
                 </time>
             </div>
         
@@ -454,7 +454,7 @@ HOW: How to integral - Technique WHY: Why we use techniques to solve the integra
 </ul>
 <h2 id="what-what-is-integral">WHAT: What is integral</h2>
 <h3 id="riemann-integral">Riemann integral</h3>
-<p>Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:</p>
+<p>Dividing a function and approx it to separated rec\tangles, then just calculate the areas of rec\tangles:</p>
 <p>$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$</p>
 <p>eg.
@@ -497,9 +497,22 @@ $$
 $$ v = \sin{u}, dv = \cos{u}du \rArr \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$</p>
 <ul>
-<li>$\int{\sec^4{x} \tan^3{x}}{dx}$
+<li>
+<p>$\int{\sec^4{x} \tan^3{x}}{dx}$
 $$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}
-$$</li>
+$$</p>
+</li>
+<li>
+<p>*$\int{\frac{1}{\tan^n{x}}}dx$
+$$ sec^2 - \tan^2 = 1 \rArr \int{\frac{sec^2 - \tan^2}{\tan^n{x}}}dx = \int{\frac{sec^2{x}}{\tan^n{x}}}dx - \int{\frac{1}{\tan^{n - 2}{x}}}dx
+$$
+$$ \rArr \int{\frac{1}{u^n}}du - \int{\frac{sec^2 - \tan^2}{\tan^{n - 2}{x}}}dx = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{sec^2{x}}{\tan^{n - 2}{x}}}dx + \int{\frac{1}{\tan^{n - 4}{x}}}dx
+$$
+$$ = \frac{1}{(1 - n)u^{n - 1}} - \frac{1}{(3 - n)u^{n - 3}} + \frac{1}{(5 - n)u^{n - 5}} - \frac{1}{(7 - n)u^{n - 7}} + \ldots (\pm \int{\frac{1}{\tan{x}}}dx) + C
+$$
+$$ \rArr \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \rArr \int{\frac{1}{v}}dv = \ln{|v|} + C
+$$</p>
+</li>
 </ul>
 <h4 id="if-the-function-combines-with-a-simple-functions-derivative-int-by-part">If the function combines with a simple function&rsquo;s derivative: Int by part</h4>
 <ul>
@@ -511,7 +524,7 @@ $$</li>
 <h4 id="partial-fractions">Partial Fractions</h4>
 <p>$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &gt;= deg(B) \ or \ deg(C) &lt; deg(D)
 $$
-$$ f(x) = \frac{C(x)}{D(x)} \rArr D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&hellip;(u_jx^2 + v_jx + w_j)^{r_j}
+$$ D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&hellip;(u_jx^2 + v_jx + w_j)^{r_j}
 $$
 $$ \rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
 $$</p>
