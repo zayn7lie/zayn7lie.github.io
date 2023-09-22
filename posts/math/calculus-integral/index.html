@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='The knowledge marked with * is not necessary in Calculus II
+WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
 $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a &#43; \frac{b - a}{n}i)} $$
-eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$
-HOW: How to integral - Technique WHY: Why we use techniques to solve the integral problems?'>
+eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$'>
 <title>Calculus - Integral</title>
 
 <link rel='canonical' href='https://zayn7lie.github.io/posts/math/calculus-integral/'>
 
 <link rel="stylesheet" href="/scss/style.min.aab18e4946c1c150d4e1b8571ddbee125563cec7362efba24b123504694fc1c2.css"><meta property='og:title' content='Calculus - Integral'>
-<meta property='og:description' content='WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
+<meta property='og:description' content='The knowledge marked with * is not necessary in Calculus II
+WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
 $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a &#43; \frac{b - a}{n}i)} $$
-eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$
-HOW: How to integral - Technique WHY: Why we use techniques to solve the integral problems?'>
+eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$'>
 <meta property='og:url' content='https://zayn7lie.github.io/posts/math/calculus-integral/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='AP' /><meta property='article:tag' content='University' /><meta property='article:tag' content='Integral' /><meta property='article:published_time' content='2023-09-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-09-19T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus - Integral">
-<meta name="twitter:description" content="WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
+<meta name="twitter:description" content="The knowledge marked with * is not necessary in Calculus II
+WHY: Why do we want to find out the integral Find out the area Find out some physics parameters WHAT: What is integral Riemann integral Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:
 $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a &#43; \frac{b - a}{n}i)} $$
-eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$
-HOW: How to integral - Technique WHY: Why we use techniques to solve the integral problems?">
+eg. $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 &#43; (\frac{2}{n})^9 &#43; \ldots &#43; (\frac{n}{n})^9) $$">
     <link rel="shortcut icon" href="/favicon.png" />
 
         
@@ -250,6 +250,7 @@ HOW: How to integral - Technique WHY: Why we use techniques to solve the integra
     <li><a href="#what-what-is-integral">WHAT: What is integral</a>
       <ul>
         <li><a href="#riemann-integral">Riemann integral</a></li>
+        <li><a href="#trans-between-different-variables">Trans between different variables</a></li>
       </ul>
     </li>
     <li><a href="#how-how-to-integral---technique">HOW: How to integral - Technique</a>
@@ -447,7 +448,10 @@ HOW: How to integral - Technique WHY: Why we use techniques to solve the integra
     <section class="article-content">
     
     
-    <h2 id="why-why-do-we-want-to-find-out-the-integral">WHY: Why do we want to find out the integral</h2>
+    <blockquote>
+<p>The knowledge marked with * is not necessary in Calculus II</p>
+</blockquote>
+<h2 id="why-why-do-we-want-to-find-out-the-integral">WHY: Why do we want to find out the integral</h2>
 <ul>
 <li>Find out the area</li>
 <li>Find out some physics parameters</li>
@@ -459,6 +463,15 @@ HOW: How to integral - Technique WHY: Why we use techniques to solve the integra
 $$</p>
 <p>eg.
 $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$</p>
+<h3 id="trans-between-different-variables">Trans between different variables</h3>
+<p>$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \rArr \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+$$
+$$ Taking \ derivative \ in \ both \ sides: \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
+$$
+$$ F&rsquo;(x) = f(x), F(C) \ is \ constant \rArr F&rsquo;(g(x)) \cdot g&rsquo;(x) - 0 = f(g(x)) \cdot g&rsquo;(x)
+$$
+$$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
 $$</p>
 <h2 id="how-how-to-integral---technique">HOW: How to integral - Technique</h2>
 <h3 id="why-why-we-use-techniques-to-solve-the-integral-problems">WHY: Why we use techniques to solve the integral problems?</h3>
@@ -528,7 +541,7 @@ $$ D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&he
 $$
 $$ \rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
 $$</p>
-<p>Integral</p>
+<p>then Integral:</p>
 <ul>
 <li>$\int{\frac{c}{(ax + b)^n}}dx$</li>
 </ul>
@@ -549,9 +562,9 @@ $$ (2)*
 $$
 $$ \int{\frac{j}{(au^2+k^2)^n}}du = \frac{j}{k}\int{\frac{1}{((\frac{u\sqrt{a}}{k})^2 + 1)^n}}du, \tan{v} = \frac{u\sqrt{a}}{k}, \sec^2{v}dv = \frac{\sqrt{a}}{k}du
 $$
-$$ \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{\sec^{2n-2}{v}}dv} \rArr \int{\frac{1 +\cos^{n-1}{v}}{2}dv} = \ldots = Av + \frac{1}{2^r}\int{\cos^o{v}dv}(o \ is \ odd)
+$$ \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{\sec^{2n-2}{v}}dv} \rArr \int{\frac{1 +\cos^{n-1}{2v}}{2}dv} = \ldots = Av + \frac{1}{2^r}\int{\cos^o{2^rv}dv}(o \ is \ odd)
 $$
-$$ \rArr \int{\cos{v}(1 - \sin^2{v})^e}dv \ (e \ is \ even), w = \sin{v}, dw = \cos{v}dv \rArr \int(1 - w^2)^edw
+$$ \rArr \int{\cos{2^rv}(1 - \sin^2{2^rv})^e}dv \ (e \ is \ even), w = \sin{2^rv}, dw = 2^r\cos{}dv \rArr \int\frac{(1 - w^2)^e}{2^r}dw
 $$
 $$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
 $$</p>

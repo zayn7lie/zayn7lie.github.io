@@ -12,7 +12,10 @@
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/math/calculus-integral/</guid>
-        <description>&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;WHY: Why do we want to find out the integral&lt;/h2&gt;
+        <description>&lt;blockquote&gt;
+&lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;WHY: Why do we want to find out the integral&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Find out the area&lt;/li&gt;
 &lt;li&gt;Find out some physics parameters&lt;/li&gt;
@@ -24,6 +27,15 @@
 $$&lt;/p&gt;
 &lt;p&gt;eg.
 $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$&lt;/p&gt;
+&lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
+&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \rArr \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+$$
+$$ Taking \ derivative \ in \ both \ sides: \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
+$$
+$$ F&amp;rsquo;(x) = f(x), F(C) \ is \ constant \rArr F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) - 0 = f(g(x)) \cdot g&amp;rsquo;(x)
+$$
+$$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
 $$&lt;/p&gt;
 &lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;HOW: How to integral - Technique&lt;/h2&gt;
 &lt;h3 id=&#34;why-why-we-use-techniques-to-solve-the-integral-problems&#34;&gt;WHY: Why we use techniques to solve the integral problems?&lt;/h3&gt;
@@ -93,7 +105,7 @@ $$ D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1
 $$
 $$ \rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
 $$&lt;/p&gt;
-&lt;p&gt;Integral&lt;/p&gt;
+&lt;p&gt;then Integral:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{\frac{c}{(ax + b)^n}}dx$&lt;/li&gt;
 &lt;/ul&gt;
@@ -114,9 +126,9 @@ $$ (2)*
 $$
 $$ \int{\frac{j}{(au^2+k^2)^n}}du = \frac{j}{k}\int{\frac{1}{((\frac{u\sqrt{a}}{k})^2 + 1)^n}}du, \tan{v} = \frac{u\sqrt{a}}{k}, \sec^2{v}dv = \frac{\sqrt{a}}{k}du
 $$
-$$ \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{\sec^{2n-2}{v}}dv} \rArr \int{\frac{1 +\cos^{n-1}{v}}{2}dv} = \ldots = Av + \frac{1}{2^r}\int{\cos^o{v}dv}(o \ is \ odd)
+$$ \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{\sec^{2n-2}{v}}dv} \rArr \int{\frac{1 +\cos^{n-1}{2v}}{2}dv} = \ldots = Av + \frac{1}{2^r}\int{\cos^o{2^rv}dv}(o \ is \ odd)
 $$
-$$ \rArr \int{\cos{v}(1 - \sin^2{v})^e}dv \ (e \ is \ even), w = \sin{v}, dw = \cos{v}dv \rArr \int(1 - w^2)^edw
+$$ \rArr \int{\cos{2^rv}(1 - \sin^2{2^rv})^e}dv \ (e \ is \ even), w = \sin{2^rv}, dw = 2^r\cos{}dv \rArr \int\frac{(1 - w^2)^e}{2^r}dw
 $$
 $$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
 $$&lt;/p&gt;
