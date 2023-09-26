@@ -21,13 +21,30 @@
 &lt;li&gt;Find out some physics parameters&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-integral&#34;&gt;WHAT: What is integral&lt;/h2&gt;
-&lt;h3 id=&#34;riemann-integral&#34;&gt;Riemann integral&lt;/h3&gt;
+&lt;h3 id=&#34;approx-integral&#34;&gt;Approx. Integral&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Equaling space is not necessary&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
-&lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
+&lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rarr \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
 &lt;p&gt;eg.
 $$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
 $$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$&lt;/li&gt;
+&lt;li&gt;Trapezoidal = (left + right)/2&lt;/li&gt;
+&lt;li&gt;Simpson&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ y = \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)}y_0 + \frac{(x - x_2)(x - x_0)}{(x_1 - x_2)(x_1 - x_0)}y_1 + \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)}y_2
+$$
+$$ if \ (-h, y_0) (0, y_1) (h, y_2) \rArr \int_{-h}^{h}ydx = \frac{h}{3}(y_0 + 4y_1 + y_2)
+$$
+$$ \rArr S = \frac{h}{3}((y_0 + 4y_1 + y_2) + (y_2 + 4y_3 + y_4) + \ldots + (y_{n - 2} + 4y_{n - 1} + y_n)) (n \ is \ even)
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Error Bond&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
 &lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \rArr \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
@@ -128,19 +145,7 @@ $$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v
 $$
 $$ *when \ n \neq 1:
 $$
-$$ (a)
-$$
-$$ \int{\frac{j}{(au^2+k^2)^n}}du = \frac{j}{k^{2n}}\int{\frac{1}{((\frac{u\sqrt{a}}{k})^2 + 1)^n}}du, \tan{v} = \frac{u\sqrt{a}}{k}, \sec^2{v}dv = \frac{\sqrt{a}}{k}du
-$$
-$$ \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{\sec^{2n-2}{v}}dv} \rArr \int{\frac{1 +\cos^{n-1}{2v}}{2}dv} = \ldots = Av + \frac{1}{2^r}\int{\cos^o{2^rv}dv}(o \ is \ odd)
-$$
-$$ \int{\cos{2^rv}(1 - \sin^2{2^rv})^e}dv \ (e \ is \ even), w = \sin{2^rv}, dw = 2^r\cos{}dv \rArr \int\frac{(1 - w^2)^e}{2^r}dw
-$$
-$$ (b)
-$$
-$$ \int{\frac{1}{(ax^2 + b)^n}}dx, u = \frac{1}{(ax^2 + b)^n}, u&amp;rsquo; = \frac{-n \cdot 2ax}{(ax^2 + b)^{n + 1}}, v&amp;rsquo; = 1, v = x
-$$
-$$ \rArr \frac{x}{(ax^2 + b)^n} - \int{\frac{-n \cdot 2ax^2}{(ax^2 + b)^{n + 1}}}dx
+$$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}dx + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
 $$&lt;/p&gt;
 &lt;h4 id=&#34;approx-to-limit&#34;&gt;Approx to limit&lt;/h4&gt;
 &lt;p&gt;For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:&lt;/p&gt;

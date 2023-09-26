@@ -58,7 +58,7 @@
 &lt;li&gt;Product
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;dot product: $\vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|cos\theta = u_x v_x + u_y v_y + u_z v_z$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;dot product&lt;/strong&gt;: $\vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|cos\theta = u_x v_x + u_y v_y + u_z v_z$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$\vec{u}$ with new basis: $\vec{u} = \vec{u} \cdot \hat{e_1} \hat{e_1}+ \vec{u} \cdot \hat{e_2} \hat{e_2} + \vec{u} \cdot \hat{e_3} \hat{e_3}$&lt;/li&gt;
 &lt;li&gt;Project of A: $|\vec{A}| cos \theta = \frac{\vec{A} \cdot \vec{B}}{|\vec{B}|}$&lt;/li&gt;
@@ -147,10 +147,30 @@ $$&lt;/p&gt;
 &lt;p&gt;Circular: if $|\vec{r}| = Constant$ then $\vec{r} \perp \vec{v}$; if $\vec{v} = Constant$ then $\vec{a} \perp \vec{v}$ ($\vec{w}$ is constant $\rArr \vec{w} \cdot \vec{v} = 0$)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Ballistic: $x = \frac{v_0^2}{g}\sin2\theta$&lt;/p&gt;
+&lt;p&gt;Ballistic: $\frac{d\vec{v}}{dt} = -g\hat{z}, \frac{dv_z}{dt} = -g$ -&amp;gt; $x = \frac{v_0^2}{g}\sin2\theta$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;dynamics---causes-of-motion--changes&#34;&gt;Dynamics - Causes of motion + changes&lt;/h3&gt;
+&lt;h4 id=&#34;n2l-veca--fracvecfm-or-vecf_tot--sumvecf--m-veca&#34;&gt;N2L: $\vec{a} = \frac{\vec{F}}{m}$ or $\vec{F}_{TOT} = \sum\vec{F} = m \vec{a}$&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;N1L: $\vec{F} \rArr \frac{d\vec{v}}{dt} = 0$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Mass $m$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inertial ($E = mc$) mass: $m = \frac{\vec{F}}{\vec{a}}$&lt;/li&gt;
+&lt;li&gt;Gravitational mass: $m = \frac{\vec{F}}{-g\vec{z}}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Force $\vec{F}$: With FBD (Free Body Diagram)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Normal (perpendicular) Force: Perpendicular to surface, connectors force perpendicular to the surface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;n3l-vecf_a-b---vecf_b-a&#34;&gt;N3L: $\vec{F}&lt;em&gt;{a-b} = -\vec{F}&lt;/em&gt;{b-a}$&lt;/h4&gt;
 </description>
         </item>
         
