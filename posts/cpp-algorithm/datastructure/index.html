@@ -632,13 +632,16 @@
 </span></span><span style="display:flex;"><span>Node<span style="color:#f92672">&lt;</span>MANY_TYPES<span style="color:#f92672">&gt;</span> n <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Node<span style="color:#f92672">&lt;</span>MANY_TYPES<span style="color:#f92672">&gt;();</span>
 </span></span></code></pre></div></li>
 <li>
-<p>Iterating through a List</p>
+<p>Iterating through a List <code>O(N)</code></p>
+<blockquote>
+<p>get the number: <code>O(1)</code></p>
+</blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Node cur <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span> <span style="color:#75715e">// leave the head ref alone, do not use head pointer to iterate
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>cur <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>  cur <span style="color:#f92672">=</span> cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span> <span style="color:#75715e">// move the current pointer to the next
 </span></span></span></code></pre></div></li>
 <li>
-<p>Adding a Linked List</p>
+<p>Adding a Linked List <code>O(N)</code></p>
 <ul>
 <li>Empty List: <code>Node n = new Node(); head = n, tail = n;</code></li>
 <li>Push Front: <code>Node n = new Node(); n.next = head; head = n;</code></li>
@@ -665,7 +668,28 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> counter<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div></li>
+<li>
+<p>Removing From a Linked List <code>O(N)</code></p>
+<blockquote>
+<p>reminding one node situation</p>
+</blockquote>
+<ul>
+<li>
+<p>Head: only need to point the head pointer to the next</p>
+</li>
+<li>
+<p>Tail: Begin from the head to the second last</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>head <span style="color:#f92672">==</span> tail<span style="color:#f92672">)</span> Statement<span style="color:#f92672">;</span> <span style="color:#75715e">// check for one node list
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">!=</span> tail<span style="color:#f92672">)</span> cur <span style="color:#f92672">=</span> cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span> <span style="color:#75715e">// or for loop
+</span></span></span></code></pre></div></li>
+<li>
+<p>Arbitrary</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div></li>
 </ul>
+</li>
+</ul>
+<h4 id="new">New</h4>
 
 </section>
 
