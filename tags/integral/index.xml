@@ -157,7 +157,10 @@ $$&lt;/p&gt;
 &lt;p&gt;For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)}dx = \lim_{t \rarr b}\int_a^t{f(x)}dx
 $$&lt;/p&gt;
-&lt;h3 id=&#34;how-to-apply-integral-to-reality&#34;&gt;How to apply integral to reality&lt;/h3&gt;
+&lt;h2 id=&#34;how-how-to-apply-integral-to-reality---area--volume&#34;&gt;HOW: How to apply integral to reality - Area &amp;amp; Volume&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{f(x)}dxdx = 0$&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         
