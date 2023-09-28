@@ -20,7 +20,7 @@
 &lt;li&gt;Find out the area&lt;/li&gt;
 &lt;li&gt;Find out some physics parameters&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-integral&#34;&gt;WHAT: What is integral&lt;/h2&gt;
+&lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;&lt;/h2&gt;
 &lt;h3 id=&#34;approx-integral&#34;&gt;Approx. Integral&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Equaling space is not necessary&lt;/p&gt;
@@ -91,22 +91,9 @@ $$
 $$ v = \sin{u}, dv = \cos{u}du \rArr \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;$\int{\sec^4{x} \tan^3{x}}{dx}$
+&lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{dx}$
 $$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;*$\int{\frac{1}{\tan^n{x}}}dx$
-$$ \sec^2 - \tan^2 = 1 \rArr \int{\frac{\sec^2 - \tan^2}{\tan^n{x}}}dx = \int{\frac{\sec^2{x}}{\tan^n{x}}}dx - \int{\frac{1}{\tan^{n - 2}{x}}}dx
-$$
-$$ \rArr \int{\frac{1}{u^n}}du - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}dx = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}dx + \int{\frac{1}{\tan^{n - 4}{x}}}dx
-$$
-$$ = \frac{1}{(1 - n)u^{n - 1}} - \frac{1}{(3 - n)u^{n - 3}} + \frac{1}{(5 - n)u^{n - 5}} - \frac{1}{(7 - n)u^{n - 7}} + \ldots (\pm \int{\frac{1}{\tan{x}}}dx) + C
-$$
-$$ \rArr \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \rArr \int{\frac{1}{v}}dv = \ln{|v|} + C
-$$&lt;/p&gt;
-&lt;/li&gt;
+$$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
 &lt;ul&gt;
@@ -114,6 +101,17 @@ $$&lt;/p&gt;
 &lt;li&gt;Eliminate complex function: $\int{\ln x}dx$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;E.P. Find every function integral then int by part: $\int{\arcsin x \cdot \ln x}dx$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;*$\int{\frac{1}{\tan^n{x}}}dx$
+$$ \sec^2 - \tan^2 = 1 \rArr \int{\frac{\sec^2 - \tan^2}{\tan^n{x}}}dx = \int{\frac{\sec^2{x}}{\tan^n{x}}}dx - \int{\frac{1}{\tan^{n - 2}{x}}}dx
+$$
+$$ \rArr \int{\frac{1}{u^n}}du - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}dx = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}dx + \int{\frac{1}{\tan^{n - 4}{x}}}dx
+$$
+$$ = \frac{1}{(1 - n)u^{n - 1}} - \frac{1}{(3 - n)u^{n - 3}} + \frac{1}{(5 - n)u^{n - 5}} - \frac{1}{(7 - n)u^{n - 7}} + \ldots (\pm \int{\frac{1}{\tan{x}}}dx) + C
+$$
+$$ \rArr \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \rArr \int{\frac{1}{v}}dv = \ln{|v|} + C
+$$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;other-techniques-not-belongs-to-integral&#34;&gt;Other techniques (Not belongs to Integral)&lt;/h3&gt;
 &lt;h4 id=&#34;partial-fractions&#34;&gt;Partial Fractions&lt;/h4&gt;
 &lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
@@ -145,12 +143,21 @@ $$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v
 $$
 $$ *when \ n \neq 1:
 $$
+$$ \int{\frac{1}{(x^2 + 1)^n}}dx, x = \tan{u}, dx = \sec^2{u}du \rArr \int{\frac{1}{\sec^{2n - 2}{u}}}du = \int{\frac{\sec^2{u} - \tan^2{u}}{\sec^{2n - 2}{u}}}du
+$$
+$$ = \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{\tan{u}\sec{u}\tan{u}}{\sec^{2n - 1}{u}}}du, i&amp;rsquo; = \frac{\tan{u}\sec{u}}{\sec^{2n - 1}{u}}, i = \frac{-1}{(2n - 2)\sec^{2n - 2}u}
+$$
+$$ \rArr \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{sec^2{u}}{(2n - 2)\sec^{2n - 2}{u}}}
+$$
+$$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x^2 + 1)^{n - 1}}}
+$$
 $$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}dx + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
 $$&lt;/p&gt;
 &lt;h4 id=&#34;approx-to-limit&#34;&gt;Approx to limit&lt;/h4&gt;
 &lt;p&gt;For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)}dx = \lim_{t \rarr b}\int_a^t{f(x)}dx
 $$&lt;/p&gt;
+&lt;h3 id=&#34;how-to-apply-integral-to-reality&#34;&gt;How to apply integral to reality&lt;/h3&gt;
 </description>
         </item>
         

@@ -606,10 +606,22 @@ $$&lt;/p&gt;
 &lt;p&gt;Force $\vec{F}$: With FBD (Free Body Diagram)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Normal (perpendicular) Force: Perpendicular to surface, connectors force perpendicular to the surface&lt;/li&gt;
+&lt;li&gt;Friction Force: &amp;ldquo;proportional&amp;rdquo; to normal force &amp;amp; opposes applied force or motion
+&lt;ul&gt;
+&lt;li&gt;Static: max static friction - $- \mu_s F_N$&lt;/li&gt;
+&lt;li&gt;Kinetic: $- \mu_k F_N \hat{v}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$\mu_k &amp;lt; \mu_s$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;n3l-vecf_a-b---vecf_b-a&#34;&gt;N3L: $\vec{F}&lt;em&gt;{a-b} = -\vec{F}&lt;/em&gt;{b-a}$&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Integration &amp;amp; Separation&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
