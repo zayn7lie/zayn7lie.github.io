@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/physics/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Physics - Motion</title>
+        <title>Physics - Mechanics</title>
         <link>https://zayn7lie.github.io/posts/misc/physics/</link>
         <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/misc/physics/</guid>
-        <description>&lt;h2 id=&#34;mechanics&#34;&gt;Mechanics&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;motion&#34;&gt;Motion&lt;/h2&gt;
 &lt;p&gt;Relationship of force, mass, motion, energy, momentum&amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;conserved-quantities-conservation--symmetries&#34;&gt;Conserved quantities: Conservation &amp;lt;=&amp;gt; symmetries&lt;/h3&gt;
 &lt;ul&gt;
@@ -25,7 +25,7 @@
 &lt;li&gt;
 &lt;p&gt;Units are your friend! - Help you check mistakes &amp;amp; approx.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[d] = m, meter: how far light travel by $$\frac{1}{?}$&lt;/li&gt;
+&lt;li&gt;[d] = m, meter: how far light travel by $\frac{1}{?}$&lt;/li&gt;
 &lt;li&gt;[m] = kg, kilogram: $1.4755214 \times 10^{40} \cdot h \cdot \frac{f_{133cs}}{c^2}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -183,6 +183,16 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Integration &amp;amp; Separation&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;energy&#34;&gt;Energy&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Integral Required&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;work-w-n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W (N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
+&lt;h4 id=&#34;kinetic-energy-k_epsilon--frac12mv2&#34;&gt;Kinetic Energy $K_{\epsilon} = \frac{1}{2}mv^2$&lt;/h4&gt;
+&lt;p&gt;$$ \vec{F} = m \cdot \vec{a} = m \cdot \frac{d\vec{v}}{dt}, d\vec{r}(v) = t \cdot d\vec{v}
+$$
+$$ W = \int{m \cdot \frac{d\vec{v}}{dt} \cdot d\vec{r}} = \int{m \cdot \frac{d\vec{v}(t(v))}{dt(v)} \cdot t(v) \cdot d\vec{v}} = \frac{1}{2}mv^2
+$$&lt;/p&gt;
 </description>
         </item>
         
