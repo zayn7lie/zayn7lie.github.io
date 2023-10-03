@@ -339,7 +339,7 @@ XFCE is clean and easy to customize. You can install lots of plugins for XFCE an
                     <a href="/page/archives/#2023">
                         
                             <span class="year">2023</span>
-                            <span class="count">13</span>
+                            <span class="count">14</span>
                         
                     </a> 
                 </div>
@@ -471,17 +471,17 @@ XFCE is clean and easy to customize. You can install lots of plugins for XFCE an
 </li>
 <li>
 <p>Light-locker: <code>/etc/lightdm/lightdm-gtk-greeter.conf</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-conf" data-lang="conf"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">[</span>greeter<span style="color:#960050;background-color:#1e0010">]</span>
-</span></span><span style="display:flex;"><span>background<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">/</span>usr<span style="color:#960050;background-color:#1e0010">/</span>share<span style="color:#960050;background-color:#1e0010">/</span>backgrounds<span style="color:#960050;background-color:#1e0010">/</span>xfce<span style="color:#960050;background-color:#1e0010">/</span>Laterano.png
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#user-background=
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>theme-name<span style="color:#f92672">=</span>Adwaita-dark
-</span></span><span style="display:flex;"><span>icon-theme-name<span style="color:#f92672">=</span>ePapirus-Dark
-</span></span><span style="display:flex;"><span>font-name<span style="color:#f92672">=</span>Ubuntu 11
-</span></span><span style="display:flex;"><span>xft-antialias<span style="color:#f92672">=</span>1
-</span></span><span style="display:flex;"><span>xft-dpi<span style="color:#f92672">=</span>128
-</span></span><span style="display:flex;"><span>xft-hintstyle<span style="color:#f92672">=</span>hintfull
-</span></span><span style="display:flex;"><span>xft-rgba<span style="color:#f92672">=</span><span style="color:#66d9ef">none</span>
-</span></span></code></pre></div></li>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">[greeter]
+background=/usr/share/backgrounds/xfce/Laterano.png
+#user-background=
+theme-name=Adwaita-dark
+icon-theme-name=ePapirus-Dark
+font-name=Ubuntu 11
+xft-antialias=1
+xft-dpi=128
+xft-hintstyle=hintfull
+xft-rgba=none
+</code></pre></li>
 <li>
 <p>Desktop</p>
 <ul>
@@ -506,40 +506,40 @@ XFCE is clean and easy to customize. You can install lots of plugins for XFCE an
 <ul>
 <li>
 <p><code>~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf</code>, then <code>$ systemctl restart --user pipewire.service</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-conf" data-lang="conf"><span style="display:flex;"><span>context.modules <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">[</span>
-</span></span><span style="display:flex;"><span>{   name <span style="color:#f92672">=</span> libpipewire-module-filter-chain
-</span></span><span style="display:flex;"><span>    args <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>        node.description <span style="color:#f92672">=</span>  <span style="color:#e6db74">&#34;Noise Canceling source&#34;</span>
-</span></span><span style="display:flex;"><span>        media.name <span style="color:#f92672">=</span>  <span style="color:#e6db74">&#34;Noise Canceling source&#34;</span>
-</span></span><span style="display:flex;"><span>        filter.graph <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            nodes <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">[</span>
-</span></span><span style="display:flex;"><span>                {
-</span></span><span style="display:flex;"><span>                    type <span style="color:#f92672">=</span> ladspa
-</span></span><span style="display:flex;"><span>                    name <span style="color:#f92672">=</span> rnnoise
-</span></span><span style="display:flex;"><span>                    plugin <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">/</span>usr<span style="color:#960050;background-color:#1e0010">/</span>lib<span style="color:#960050;background-color:#1e0010">/</span>ladspa<span style="color:#960050;background-color:#1e0010">/</span>librnnoise_ladspa.so
-</span></span><span style="display:flex;"><span>                    label <span style="color:#f92672">=</span> noise_suppressor_mono
-</span></span><span style="display:flex;"><span>                    control <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;VAD Threshold (%)&#34;</span> <span style="color:#f92672">=</span> 50.0
-</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;VAD Grace Period (ms)&#34;</span> <span style="color:#f92672">=</span> 200
-</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;Retroactive VAD Grace (ms)&#34;</span> <span style="color:#f92672">=</span> 0
-</span></span><span style="display:flex;"><span>                    }
-</span></span><span style="display:flex;"><span>                }
-</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">]</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        capture.props <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            node.name <span style="color:#f92672">=</span>  <span style="color:#e6db74">&#34;capture.rnnoise_source&#34;</span>
-</span></span><span style="display:flex;"><span>            node.passive <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>            audio.rate <span style="color:#f92672">=</span> 48000
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        playback.props <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            node.name <span style="color:#f92672">=</span>  <span style="color:#e6db74">&#34;rnnoise_source&#34;</span>
-</span></span><span style="display:flex;"><span>            media.class <span style="color:#f92672">=</span> Audio<span style="color:#960050;background-color:#1e0010">/</span>Source
-</span></span><span style="display:flex;"><span>            audio.rate <span style="color:#f92672">=</span> 48000
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">]</span>
-</span></span></code></pre></div></li>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">context.modules = [
+{   name = libpipewire-module-filter-chain
+    args = {
+        node.description =  &#34;Noise Canceling source&#34;
+        media.name =  &#34;Noise Canceling source&#34;
+        filter.graph = {
+            nodes = [
+                {
+                    type = ladspa
+                    name = rnnoise
+                    plugin = /usr/lib/ladspa/librnnoise_ladspa.so
+                    label = noise_suppressor_mono
+                    control = {
+                        &#34;VAD Threshold (%)&#34; = 50.0
+                        &#34;VAD Grace Period (ms)&#34; = 200
+                        &#34;Retroactive VAD Grace (ms)&#34; = 0
+                    }
+                }
+            ]
+        }
+        capture.props = {
+            node.name =  &#34;capture.rnnoise_source&#34;
+            node.passive = true
+            audio.rate = 48000
+        }
+        playback.props = {
+            node.name =  &#34;rnnoise_source&#34;
+            media.class = Audio/Source
+            audio.rate = 48000
+        }
+    }
+}
+]
+</code></pre></li>
 </ul>
 </li>
 <li>

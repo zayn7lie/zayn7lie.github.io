@@ -3,10 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zayn7lie.github.io/</loc>
-    <lastmod>2023-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.github.io/categories/</loc>
-    <lastmod>2023-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/eosd/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/music/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/categories/music-sheet/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/posts/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/re-compose/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/touhou/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.github.io/posts/music-sheet/touhou-01-01/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.github.io/tags/license/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
@@ -18,12 +42,6 @@
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.github.io/categories/misc/</loc>
-    <lastmod>2023-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.github.io/posts/</loc>
-    <lastmod>2023-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.github.io/tags/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.github.io/tags/ap/</loc>
@@ -178,6 +196,8 @@
     <loc>https://zayn7lie.github.io/categories/py-ml/</loc>
   </url><url>
     <loc>https://zayn7lie.github.io/page/search/</loc>
+  </url><url>
+    <loc>https://zayn7lie.github.io/tags/sheet/score/</loc>
   </url><url>
     <loc>https://zayn7lie.github.io/page/sponsor/</loc>
   </url>
