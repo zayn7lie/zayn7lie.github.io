@@ -628,9 +628,9 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;work-w-n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W (N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
 &lt;h4 id=&#34;kinetic-energy-k_epsilon--frac12mv2&#34;&gt;Kinetic Energy $K_{\epsilon} = \frac{1}{2}mv^2$&lt;/h4&gt;
-&lt;p&gt;$$ \vec{F} = m \cdot \vec{a} = m \cdot \frac{d\vec{v}}{dt}, d\vec{r}(v) = t \cdot d\vec{v}
+&lt;p&gt;$$ \vec{F} = m \cdot \vec{a} = m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})}
 $$
-$$ W = \int{m \cdot \frac{d\vec{v}}{dt} \cdot d\vec{r}} = \int{m \cdot \frac{d\vec{v}(t(v))}{dt(v)} \cdot t(v) \cdot d\vec{v}} = \frac{1}{2}mv^2
+$$ W = \int{m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})} \cdot d\vec{r}} = \int{m \cdot \frac{d\vec{v}(t(v))}{dt(v)} \cdot t(v) \cdot d\vec{v}} = \frac{1}{2}mv^2
 $$&lt;/p&gt;
 </description>
         </item>
