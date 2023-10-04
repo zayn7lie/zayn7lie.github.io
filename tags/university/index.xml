@@ -178,7 +178,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \rArr \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \rArr x\frac{dy}{dx} = -x
 $$&lt;/p&gt;
 &lt;h3 id=&#34;arc-length&#34;&gt;Arc Length&lt;/h3&gt;
-&lt;p&gt;$$ L = \lim_{x_2 \rarr x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;}}dx
+&lt;p&gt;$$ L = \lim_{x_2 \rarr x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
 $$
 $$ * \int{\sqrt{(x^2 + 1)^2 + b}}dx
 $$&lt;/p&gt;
