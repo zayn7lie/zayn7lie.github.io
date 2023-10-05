@@ -292,7 +292,7 @@ $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(
 
     <div class="tagCloud-tags">
         
-            <a href="/tags/linux/" class="font_size_5">
+            <a href="/tags/linux/" class="font_size_6">
                 Linux
             </a>
         
@@ -359,7 +359,7 @@ $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(
                     <a href="/page/archives/#2023">
                         
                             <span class="year">2023</span>
-                            <span class="count">14</span>
+                            <span class="count">15</span>
                         
                     </a> 
                 </div>
@@ -465,7 +465,9 @@ $$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(
 <p>$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rarr \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$</p>
 <p>eg.
-$$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$ 1. prove\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$
+$$ 2. prove\ln(n + 1) &lt; \sum_{i = 1}^{n}\frac{1}{i} &lt; \ln{n} + 1
 $$</p>
 <ul>
 <li>Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$</li>
@@ -513,13 +515,6 @@ $$</p>
 <p>$$ u = g(x), du = g&rsquo;(x) dx \rArr \int{F&rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
 $$</p>
 <ul>
-<li>$\int{\tan{x}}{dx}$</li>
-</ul>
-<p>$$ \int{\tan{x}}{dx} = \int{\frac{\sin{x}}{\cos{x}}}{dx}
-$$
-$$ u = \cos{x}, du = -\sin{x} dx \rArr \int{\frac{-du}{u}} = - \ln{u} + c = -\ln{\cos{x}} + C
-$$</p>
-<ul>
 <li>$\int{\frac{1}{x(x^2 + 1)}}{dx}$</li>
 </ul>
 <p>$$ u = \arctan{x}, du = \frac{1}{x^2 + 1}dx, x = \tan{u} \rArr \int{\frac{1}{\tan{u}}}{du}
@@ -528,9 +523,14 @@ $$ v = \sin{u}, dv = \cos{u}du \rArr \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\s
 $$</p>
 <ul>
 <li>$\int{\sec^4{x} \tan^3{x}}{dx}$
-$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}
+$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
 $$</li>
 </ul>
+<p>eg.
+$$ \int{\frac{\sqrt{\tan{u}}}{\sin{2u}}}dx: \ Be \ brave!
+$$
+$$ \int_{-1}^{2}{\frac{x}{\sqrt[3]{1-x}}}dx: \ Domain!
+$$</p>
 <h4 id="if-the-function-combines-with-a-simple-functions-derivative-int-by-part">If the function combines with a simple function&rsquo;s derivative: Int by part</h4>
 <ul>
 <li>Reduce Power: $\int{x \cdot \sin x}dx$</li>
@@ -588,6 +588,11 @@ $$
 $$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x^2 + 1)^{n - 1}}}
 $$
 $$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}dx + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
+$$</p>
+<p>eg.
+$$ \int{ln{(x^2 - x + 3)}}dx
+$$
+$$ \int{\sec{x}}dx
 $$</p>
 <h4 id="approx-to-limit">Approx to limit</h4>
 <p>For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:</p>
@@ -724,7 +729,7 @@ $$</p>
     <div id="cusdis_thread"
     data-host="https://cusdis.com"
     data-app-id="bb55d628-fc4a-4ec4-b2ff-091c0dc240d5"
-    data-page-id="c293a5d8d9c3bf0b4e0e5b1c4099b790"
+    data-page-id="796be7e7fc8b46c06ca2c396dbcaa702"
     data-page-url="https://zayn7lie.github.io/posts/math/calculus-integral/"
     data-page-title="Calculus - Integral"></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>

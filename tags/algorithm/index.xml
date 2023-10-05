@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Data Structure (with Java)</title>
-        <link>https://zayn7lie.github.io/posts/cpp-algorithm/datastructure/</link>
+        <link>https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/</link>
         <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/datastructure/</guid>
+        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/</guid>
         <description>&lt;h2 id=&#34;how-java-runs&#34;&gt;How Java runs&lt;/h2&gt;
 &lt;p&gt;Source Code -&lt;code&gt;javac SOURCE_CODE_FILE&lt;/code&gt;-&amp;gt; bytecode -&lt;code&gt;java CLASS_FILE&lt;/code&gt;-&amp;gt; machine instructions (in Java Virtual Machine or JVM)&lt;/p&gt;
 &lt;h3 id=&#34;jvm&#34;&gt;JVM&lt;/h3&gt;
@@ -257,8 +257,42 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Doubly Linked List&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Circular Linked List&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;new&#34;&gt;New&lt;/h4&gt;
+&lt;h4 id=&#34;arrayliste&#34;&gt;&lt;code&gt;ArrayList&amp;lt;E&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add Last: &lt;code&gt;O(N)&lt;/code&gt;, but faster than do it by ourselves - use &lt;code&gt;arraycopy()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Amortized Analysis&lt;/li&gt;
+&lt;li&gt;Add and Remove Arbiitrary: &lt;code&gt;O(N)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Size &amp;amp; Capacity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Size: Actual number of elements in the array&lt;/li&gt;
+&lt;li&gt;Capacity: The &amp;ldquo;size&amp;rdquo; of the storage array&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;equals()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If address is the same &lt;code&gt;if(0 == this)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;If type is the same &lt;code&gt;if(!(o instanceof List))&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;If every element is the same &lt;code&gt;if(!(o1 = null ? o2 == null : o1.equals(o2)))&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ques&#34;&gt;Ques&lt;/h2&gt;
+&lt;p&gt;Absolute path&lt;/p&gt;
+&lt;p&gt;comment&lt;/p&gt;
+&lt;p&gt;List&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 </description>
         </item>
         

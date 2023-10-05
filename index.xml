@@ -6,7 +6,28 @@
         <description>Recent content on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to Create a Minecraft Server with AWS</title>
+        <link>https://zayn7lie.github.io/posts/misc/minecraft_server/</link>
+        <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/misc/minecraft_server/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;h3 id=&#34;1-create-a-aws-ec2-instance&#34;&gt;1. Create a AWS EC2 Instance&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://calculator.aws/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AWS Price Calculator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-connect-linux-to-the-instance-with-ssh&#34;&gt;2. Connect Linux to the Instance with SSH&lt;/h3&gt;
+&lt;h3 id=&#34;3-install-java-and-minecraft-server-to-the-instance&#34;&gt;3. Install Java and Minecraft Server to the Instance&lt;/h3&gt;
+&lt;h3 id=&#34;4-launch-the-server&#34;&gt;4. Launch the Server&lt;/h3&gt;
+&lt;h3 id=&#34;more&#34;&gt;More&lt;/h3&gt;
+&lt;h4 id=&#34;1&#34;&gt;1&lt;/h4&gt;
+</description>
+        </item>
+        <item>
         <title>Touhou - 01 EOSD - 01 A Dream that is more Scarlet than Red</title>
         <link>https://zayn7lie.github.io/posts/music-sheet/touhou-01-01/</link>
         <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
@@ -488,7 +509,9 @@ for any purpose, even commercially.&lt;/li&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rarr \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
 &lt;p&gt;eg.
-$$ \int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$ 1. prove\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$
+$$ 2. prove\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$&lt;/li&gt;
@@ -536,13 +559,6 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ u = g(x), du = g&amp;rsquo;(x) dx \rArr \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$\int{\tan{x}}{dx}$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$$ \int{\tan{x}}{dx} = \int{\frac{\sin{x}}{\cos{x}}}{dx}
-$$
-$$ u = \cos{x}, du = -\sin{x} dx \rArr \int{\frac{-du}{u}} = - \ln{u} + c = -\ln{\cos{x}} + C
-$$&lt;/p&gt;
-&lt;ul&gt;
 &lt;li&gt;$\int{\frac{1}{x(x^2 + 1)}}{dx}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$ u = \arctan{x}, du = \frac{1}{x^2 + 1}dx, x = \tan{u} \rArr \int{\frac{1}{\tan{u}}}{du}
@@ -551,9 +567,14 @@ $$ v = \sin{u}, dv = \cos{u}du \rArr \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\s
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{dx}$
-$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}
+$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
 $$&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;eg.
+$$ \int{\frac{\sqrt{\tan{u}}}{\sin{2u}}}dx: \ Be \ brave!
+$$
+$$ \int_{-1}^{2}{\frac{x}{\sqrt[3]{1-x}}}dx: \ Domain!
+$$&lt;/p&gt;
 &lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Reduce Power: $\int{x \cdot \sin x}dx$&lt;/li&gt;
@@ -612,6 +633,11 @@ $$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x
 $$
 $$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}dx + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
 $$&lt;/p&gt;
+&lt;p&gt;eg.
+$$ \int{ln{(x^2 - x + 3)}}dx
+$$
+$$ \int{\sec{x}}dx
+$$&lt;/p&gt;
 &lt;h4 id=&#34;approx-to-limit&#34;&gt;Approx to limit&lt;/h4&gt;
 &lt;p&gt;For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)}dx = \lim_{t \rarr b}\int_a^t{f(x)}dx
@@ -655,10 +681,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Data Structure (with Java)</title>
-        <link>https://zayn7lie.github.io/posts/cpp-algorithm/datastructure/</link>
+        <link>https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/</link>
         <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/datastructure/</guid>
+        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/</guid>
         <description>&lt;h2 id=&#34;how-java-runs&#34;&gt;How Java runs&lt;/h2&gt;
 &lt;p&gt;Source Code -&lt;code&gt;javac SOURCE_CODE_FILE&lt;/code&gt;-&amp;gt; bytecode -&lt;code&gt;java CLASS_FILE&lt;/code&gt;-&amp;gt; machine instructions (in Java Virtual Machine or JVM)&lt;/p&gt;
 &lt;h3 id=&#34;jvm&#34;&gt;JVM&lt;/h3&gt;
@@ -904,8 +930,42 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Doubly Linked List&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Circular Linked List&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;new&#34;&gt;New&lt;/h4&gt;
+&lt;h4 id=&#34;arrayliste&#34;&gt;&lt;code&gt;ArrayList&amp;lt;E&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add Last: &lt;code&gt;O(N)&lt;/code&gt;, but faster than do it by ourselves - use &lt;code&gt;arraycopy()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Amortized Analysis&lt;/li&gt;
+&lt;li&gt;Add and Remove Arbiitrary: &lt;code&gt;O(N)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Size &amp;amp; Capacity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Size: Actual number of elements in the array&lt;/li&gt;
+&lt;li&gt;Capacity: The &amp;ldquo;size&amp;rdquo; of the storage array&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;equals()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If address is the same &lt;code&gt;if(0 == this)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;If type is the same &lt;code&gt;if(!(o instanceof List))&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;If every element is the same &lt;code&gt;if(!(o1 = null ? o2 == null : o1.equals(o2)))&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ques&#34;&gt;Ques&lt;/h2&gt;
+&lt;p&gt;Absolute path&lt;/p&gt;
+&lt;p&gt;comment&lt;/p&gt;
+&lt;p&gt;List&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -1091,10 +1151,20 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;work-w-n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W (N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
 &lt;h4 id=&#34;kinetic-energy-k_epsilon--frac12mv2&#34;&gt;Kinetic Energy $K_{\epsilon} = \frac{1}{2}mv^2$&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Work energy theorem&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;$$ \vec{F} = m \cdot \vec{a} = m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})}, \frac{dt(\vec{r})}{d\vec{r}} \frac{d\vec{r}}{dt(\vec{r})} = \frac{dt(\vec{r})}{d\vec{r}} \cdot \vec{v}(\vec{r})= 1 (inverse \ function)
 $$
-$$ W = \int{m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})} \cdot \frac{dt(\vec{r})}{d\vec{r}} \cdot \vec{v}(\vec{r}) \cdot d\vec{r}} = \int{m \frac{d\vec{v}(\vec{r})}{d\vec{r}}}\vec{v}(\vec{r}) d\vec{r} = \frac{1}{2}mv^2 (Chain \ Rule)
+$$ W = \int{m \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})} \frac{dt(\vec{r})}{d\vec{r}} \vec{v}(\vec{r}) d\vec{r}} = \int{m \frac{d\vec{v}(\vec{r})}{d\vec{r}}}\vec{v}(\vec{r}) d\vec{r} = \frac{1}{2}m v^2 + C| = \frac{1}{2}m \Delta v^2
 $$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pulleys: $W = \vec{F} \cdot \vec{d} = \frac{\vec{F}}{n} \cdot n \vec{d}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;potential-energy&#34;&gt;Potential Energy&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Springs - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -1472,6 +1542,8 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Excalidraw&lt;/li&gt;
+&lt;li&gt;SSH: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;Remote - SSH&lt;/code&gt;MS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
@@ -1893,11 +1965,13 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Limit&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
+&lt;li&gt;Limit: L&amp;rsquo;hospital rule&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;eg.
+$$ \lim_{x \rarr 0}{x\ln{x}}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)
 &lt;ul&gt;
 &lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
 &lt;ul&gt;
@@ -1914,9 +1988,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
 &lt;ul&gt;

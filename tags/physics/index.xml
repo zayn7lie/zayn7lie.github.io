@@ -189,10 +189,20 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;work-w-n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W (N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
 &lt;h4 id=&#34;kinetic-energy-k_epsilon--frac12mv2&#34;&gt;Kinetic Energy $K_{\epsilon} = \frac{1}{2}mv^2$&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Work energy theorem&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;$$ \vec{F} = m \cdot \vec{a} = m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})}, \frac{dt(\vec{r})}{d\vec{r}} \frac{d\vec{r}}{dt(\vec{r})} = \frac{dt(\vec{r})}{d\vec{r}} \cdot \vec{v}(\vec{r})= 1 (inverse \ function)
 $$
-$$ W = \int{m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})} \cdot \frac{dt(\vec{r})}{d\vec{r}} \cdot \vec{v}(\vec{r}) \cdot d\vec{r}} = \int{m \frac{d\vec{v}(\vec{r})}{d\vec{r}}}\vec{v}(\vec{r}) d\vec{r} = \frac{1}{2}mv^2 (Chain \ Rule)
+$$ W = \int{m \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})} \frac{dt(\vec{r})}{d\vec{r}} \vec{v}(\vec{r}) d\vec{r}} = \int{m \frac{d\vec{v}(\vec{r})}{d\vec{r}}}\vec{v}(\vec{r}) d\vec{r} = \frac{1}{2}m v^2 + C| = \frac{1}{2}m \Delta v^2
 $$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pulleys: $W = \vec{F} \cdot \vec{d} = \frac{\vec{F}}{n} \cdot n \vec{d}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;potential-energy&#34;&gt;Potential Energy&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Springs - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

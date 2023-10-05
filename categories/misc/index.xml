@@ -6,7 +6,28 @@
         <description>Recent content in Misc on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/categories/misc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/categories/misc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to Create a Minecraft Server with AWS</title>
+        <link>https://zayn7lie.github.io/posts/misc/minecraft_server/</link>
+        <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/misc/minecraft_server/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;h3 id=&#34;1-create-a-aws-ec2-instance&#34;&gt;1. Create a AWS EC2 Instance&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://calculator.aws/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AWS Price Calculator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-connect-linux-to-the-instance-with-ssh&#34;&gt;2. Connect Linux to the Instance with SSH&lt;/h3&gt;
+&lt;h3 id=&#34;3-install-java-and-minecraft-server-to-the-instance&#34;&gt;3. Install Java and Minecraft Server to the Instance&lt;/h3&gt;
+&lt;h3 id=&#34;4-launch-the-server&#34;&gt;4. Launch the Server&lt;/h3&gt;
+&lt;h3 id=&#34;more&#34;&gt;More&lt;/h3&gt;
+&lt;h4 id=&#34;1&#34;&gt;1&lt;/h4&gt;
+</description>
+        </item>
+        <item>
         <title>LICENSE Changing Announcement</title>
         <link>https://zayn7lie.github.io/posts/misc/license/</link>
         <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
@@ -628,10 +649,20 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;work-w-n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W (N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
 &lt;h4 id=&#34;kinetic-energy-k_epsilon--frac12mv2&#34;&gt;Kinetic Energy $K_{\epsilon} = \frac{1}{2}mv^2$&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Work energy theorem&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;$$ \vec{F} = m \cdot \vec{a} = m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})}, \frac{dt(\vec{r})}{d\vec{r}} \frac{d\vec{r}}{dt(\vec{r})} = \frac{dt(\vec{r})}{d\vec{r}} \cdot \vec{v}(\vec{r})= 1 (inverse \ function)
 $$
-$$ W = \int{m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})} \cdot \frac{dt(\vec{r})}{d\vec{r}} \cdot \vec{v}(\vec{r}) \cdot d\vec{r}} = \int{m \frac{d\vec{v}(\vec{r})}{d\vec{r}}}\vec{v}(\vec{r}) d\vec{r} = \frac{1}{2}mv^2 (Chain \ Rule)
+$$ W = \int{m \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})} \frac{dt(\vec{r})}{d\vec{r}} \vec{v}(\vec{r}) d\vec{r}} = \int{m \frac{d\vec{v}(\vec{r})}{d\vec{r}}}\vec{v}(\vec{r}) d\vec{r} = \frac{1}{2}m v^2 + C| = \frac{1}{2}m \Delta v^2
 $$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pulleys: $W = \vec{F} \cdot \vec{d} = \frac{\vec{F}}{n} \cdot n \vec{d}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;potential-energy&#34;&gt;Potential Energy&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Springs - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

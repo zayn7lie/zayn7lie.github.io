@@ -28,11 +28,13 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Limit&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
+&lt;li&gt;Limit: L&amp;rsquo;hospital rule&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;eg.
+$$ \lim_{x \rarr 0}{x\ln{x}}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)
 &lt;ul&gt;
 &lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
 &lt;ul&gt;
@@ -49,9 +51,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
 &lt;ul&gt;

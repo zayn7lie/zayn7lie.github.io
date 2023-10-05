@@ -240,6 +240,8 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Excalidraw&lt;/li&gt;
+&lt;li&gt;SSH: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;Remote - SSH&lt;/code&gt;MS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>

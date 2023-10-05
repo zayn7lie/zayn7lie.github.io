@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='LICENCE: ©zayn7lie. CC-BY, ©Joanna Klukowska. CC-BY-SA'>
+<title>Data Structure (with Java)</title>
+
+<link rel='canonical' href='https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/'>
+
+<link rel="stylesheet" href="/scss/style.min.aab18e4946c1c150d4e1b8571ddbee125563cec7362efba24b123504694fc1c2.css"><meta property='og:title' content='Data Structure (with Java)'>
+<meta property='og:description' content='LICENCE: ©zayn7lie. CC-BY, ©Joanna Klukowska. CC-BY-SA'>
+<meta property='og:url' content='https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/'>
+<meta property='og:site_name' content='zayn_lie&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Algorithm' /><meta property='article:tag' content='Java' /><meta property='article:tag' content='NYU' /><meta property='article:published_time' content='2023-09-06T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-09-06T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Data Structure (with Java)">
+<meta name="twitter:description" content="LICENCE: ©zayn7lie. CC-BY, ©Joanna Klukowska. CC-BY-SA">
+    <link rel="shortcut icon" href="/favicon.png" />
+
+        
+        <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
+        
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu1bc2e8ba0ab089870cb7502d0657f636_205678_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">zayn_lie&#39;s blog</a></h1>
+            <h2 class="site-description">Algorithm&amp;Mathematics, Music_Theory&amp;Rhythm_Game, Rationality&amp;Logicism, Peace&amp;Open_Source</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/sponsor/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px" fill-rule="nonzero"><g fill="#c7c7c7" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-11.02793,0 -20,8.97207 -20,20c0,11.02793 8.97207,20 20,20c11.02793,0 20,-8.97207 20,-20c0,-11.02793 -8.97207,-20 -20,-20zM24,7c9.40662,0 17,7.59339 17,17c0,9.40661 -7.59338,17 -17,17c-9.40661,0 -17,-7.59339 -17,-17c0,-9.40661 7.59339,-17 17,-17zM23.47656,10.97852c-0.82766,0.01293 -1.48843,0.69381 -1.47656,1.52148v1.15234c-2.79221,0.386 -5,2.70524 -5,5.59766c0,3.15782 2.59218,5.75 5.75,5.75h2c1.8121,0 3.25,1.4379 3.25,3.25c0,1.8121 -1.4379,3.25 -3.25,3.25h-2.25c-1.17774,0 -2.14106,-0.79655 -2.41992,-1.86719c-0.12291,-0.53182 -0.52499,-0.95491 -1.04987,-1.10473c-0.52488,-0.14982 -1.08971,-0.00272 -1.47483,0.38409c-0.38512,0.38681 -0.52975,0.95228 -0.37764,1.4765c0.57468,2.20636 2.50862,3.80911 4.82227,4.02734v1.08398c-0.00765,0.54095 0.27656,1.04412 0.74381,1.31683c0.46725,0.27271 1.04514,0.27271 1.51238,0c0.46725,-0.27271 0.75146,-0.77588 0.74381,-1.31683v-1.05078c3.31301,-0.13994 6,-2.85378 6,-6.19922c0,-3.4339 -2.8161,-6.25 -6.25,-6.25h-2c-1.53618,0 -2.75,-1.21382 -2.75,-2.75c0,-1.53618 1.21382,-2.75 2.75,-2.75h0.50391c0.16103,0.02645 0.3253,0.02645 0.48633,0h0.75977c1.16914,0 2.12787,0.78679 2.41406,1.8457c0.13982,0.5175 0.54514,0.92108 1.06324,1.05868c0.5181,0.13759 1.07025,-0.01171 1.44841,-0.39165c0.37816,-0.37994 0.52486,-0.93279 0.38484,-1.45023c-0.58996,-2.18285 -2.51356,-3.76217 -4.81055,-3.97852v-1.08398c0.00582,-0.40562 -0.15288,-0.7963 -0.43991,-1.08296c-0.28703,-0.28666 -0.67792,-0.44486 -1.08353,-0.43852z"></path></g></g></svg>
+                
+                <span>Sponsor</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-java-runs">How Java runs</a>
+      <ul>
+        <li><a href="#jvm">JVM</a></li>
+        <li><a href="#programs-memory-heap-and-stack">Program&rsquo;s Memory: Heap and Stack</a></li>
+      </ul>
+    </li>
+    <li><a href="#why-should-we-learn-algorithm">Why should we learn algorithm</a></li>
+    <li><a href="#what">WHAT</a>
+      <ul>
+        <li><a href="#array">Array</a></li>
+        <li><a href="#linked-list">Linked List</a></li>
+        <li><a href="#stacks">Stacks</a></li>
+        <li><a href="#queue">Queue</a></li>
+        <li><a href="#binary-trees">Binary Trees</a></li>
+        <li><a href="#hash-tables">Hash Tables</a></li>
+      </ul>
+    </li>
+    <li><a href="#how">HOW</a>
+      <ul>
+        <li><a href="#how-to-read-the-code-of-programs">How to read the code of programs?</a></li>
+        <li><a href="#how-to-create-a-data-structure">How to create a data structure?</a></li>
+      </ul>
+    </li>
+    <li><a href="#ques">Ques</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Tags</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/linux/" class="font_size_6">
+                Linux
+            </a>
+        
+            <a href="/tags/arch-linux/" class="font_size_3">
+                Arch Linux
+            </a>
+        
+            <a href="/tags/c&#43;&#43;/" class="font_size_3">
+                C&#43;&#43;
+            </a>
+        
+            <a href="/tags/install/" class="font_size_3">
+                install
+            </a>
+        
+            <a href="/tags/ap/" class="font_size_2">
+                AP
+            </a>
+        
+            <a href="/tags/calculus/" class="font_size_2">
+                Calculus
+            </a>
+        
+            <a href="/tags/config/" class="font_size_2">
+                config
+            </a>
+        
+            <a href="/tags/csci/" class="font_size_2">
+                CSCI
+            </a>
+        
+            <a href="/tags/de/" class="font_size_2">
+                DE
+            </a>
+        
+            <a href="/tags/math/" class="font_size_2">
+                Math
+            </a>
+        
+    </div>
+</section>
+            
+        
+            
+                <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Archives</h2>
+
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/page/archives/#2023">
+                        
+                            <span class="year">2023</span>
+                            <span class="count">15</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
+                    <a href="/page/archives/#2022">
+                        
+                            <span class="year">2022</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/cpp-algorithm/" style="background-color: #4974a5; color: #ffffff;">
+                C&#43;&#43;-Algorithm
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/cpp-algorithm/data_structure/">Data Structure (with Java)</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            LICENCE: ©zayn7lie. CC-BY, ©Joanna Klukowska. CC-BY-SA
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">09/06/2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="how-java-runs">How Java runs</h2>
+<p>Source Code -<code>javac SOURCE_CODE_FILE</code>-&gt; bytecode -<code>java CLASS_FILE</code>-&gt; machine instructions (in Java Virtual Machine or JVM)</p>
+<h3 id="jvm">JVM</h3>
+<p>pros: run in different machine</p>
+<p>cons: make java slightly slower</p>
+<h3 id="programs-memory-heap-and-stack">Program&rsquo;s Memory: Heap and Stack</h3>
+<h4 id="variable-types-storage">Variable Types Storage</h4>
+<p>Primitive: <code>int x = 7;</code></p>
+<ul>
+<li>name: x</li>
+<li>value: 7</li>
+<li>address: 0x12AB5</li>
+<li>size: 4 bytes(int)</li>
+</ul>
+<p>Reference: <code>Circle c; c = new Circle(7);</code></p>
+<ul>
+<li>name: c -&gt; name: c</li>
+<li>address: 0x4AF23 -&gt; address: 0x3EF3B(new memory address)</li>
+<li>size: ? -&gt; size: address: 8 bytes (64 bit)</li>
+<li>value: ? (better to assign <code>null</code>) -&gt; value: 0x3EF3B(store the memory address, or <strong>points</strong> to)</li>
+<li>If no pointer points to the object, the object will turn into Garbage Collection</li>
+</ul>
+<h4 id="memory-storage">Memory Storage</h4>
+<p>Stack</p>
+<ul>
+<li>Stack frames: collection of memory blocks(ONLY create while functions runs)</li>
+<li>Size: could be varied concerning variables, number of functions</li>
+<li>content: the function arguments, all locally created variables, the return value</li>
+</ul>
+<p>Heap</p>
+<ul>
+<li>
+<p>Stack: <code>Circle c;</code></p>
+</li>
+<li>
+<p>Heap: <code>c = new Circle();</code></p>
+</li>
+<li>
+<p>Array on the heap: <code>int[] array = new int[7];</code></p>
+<ul>
+<li>Current_address = initial_address + index * size_of_type</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><code>void swap(d1, d2)</code> does not work in Java</p>
+</blockquote>
+<h2 id="why-should-we-learn-algorithm">Why should we learn algorithm</h2>
+<p>Be CORRECT and EFFICIENT</p>
+<blockquote>
+<p>Be CORRECT first then EFFICIENT.</p>
+</blockquote>
+<ul>
+<li>Binary Search - O($\log{N}$)</li>
+</ul>
+<h2 id="what">WHAT</h2>
+<h3 id="array">Array</h3>
+<ul>
+<li>Search
+<ul>
+<li>Operation time: O(1)</li>
+<li>Not sorted: o(N)(linear search) + O(log N)(binary search)</li>
+</ul>
+</li>
+<li>Add
+<ul>
+<li>Copy to bigger array and then add: O(N)</li>
+<li>Have Room: O(1)</li>
+</ul>
+</li>
+<li>String to Char Array
+<ul>
+<li>Notice <code>null</code> String</li>
+<li><code>toCharArray()</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="linked-list">Linked List</h3>
+<p>Storing - <code>class Node {int data; Node next;}</code></p>
+<blockquote>
+<p><code>head</code> is a reference to the first node, <code>tail</code> is a reference to the last node (they are not nodes)</p>
+</blockquote>
+<ul>
+<li>Add: O(1)</li>
+<li>Search: O(N)
+<ul>
+<li>Binary Search is not Possible</li>
+<li>&ldquo;Skip List&rdquo; Store the middle one</li>
+</ul>
+</li>
+</ul>
+<h3 id="stacks">Stacks</h3>
+<p>FILO: First In Last Out</p>
+<ul>
+<li>Add: <code>push</code>(only one)</li>
+<li>Remove: <code>pop</code>(only one)</li>
+<li>Search
+<ul>
+<li><code>top</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="queue">Queue</h3>
+<p>FIFO: First In First Out</p>
+<ul>
+<li>Add: enqueue</li>
+<li>Remove: dequeue</li>
+<li>Search
+<ul>
+<li>front: font</li>
+<li>back</li>
+</ul>
+</li>
+</ul>
+<h3 id="binary-trees">Binary Trees</h3>
+<blockquote>
+<p>Connect Array(Binary Search) and Linked List</p>
+</blockquote>
+<p>Storing: <code>class Node { int data; Node left; Node right;}</code></p>
+<ul>
+<li>Root</li>
+</ul>
+<h3 id="hash-tables">Hash Tables</h3>
+<h2 id="how">HOW</h2>
+<h3 id="how-to-read-the-code-of-programs">How to read the code of programs?</h3>
+<p><code>javadoc 17</code></p>
+<ol>
+<li>Read <code>README.md</code> &amp; try to run the program(build class with package name <code>$ javac packageName/foo.java</code>, then run code <code>$ java packageName.foo</code>)</li>
+<li>Find the <code>main</code> function then <code>debug</code></li>
+</ol>
+<h3 id="how-to-create-a-data-structure">How to create a data structure?</h3>
+<h4 id="a-list-adt">A List ADT</h4>
+<ul>
+<li>
+<p>(ADT) Abstract Data Type</p>
+<ul>
+<li>
+<p>Intuitive list</p>
+<ul>
+<li>a collection of elements with some notion of position information for each element</li>
+<li>operations:
+<ul>
+<li>add/remove at specified positions</li>
+<li>find and element in the list (or determine that it is not there)</li>
+<li>retrieve and element from a particular position</li>
+<li>determine the length of the list</li>
+<li>empty the list</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>List ADT</p>
+<ul>
+<li>values stored
+<ul>
+<li>the list of elements itself</li>
+<li>size - current number of elements in the list</li>
+</ul>
+</li>
+<li>operations
+<ul>
+<li><code>add(item, pos)</code> - adds an element at position pos, restriction: 0 &lt;= pos &lt; size, shifts elements starting at pos one to the right (higher position values)</li>
+<li><code>remove(pos)</code> - removes and returns an element at position pos, restriction: 0 &lt;= pos &lt; size, shifts elements starting at pos+1 one to the left (lower position values)</li>
+<li><code>find(item)</code> - determines if the item is in the list and if so returns its position, otherwise returns -1</li>
+<li><code>get(pos)</code> - retrieves and returns an item from position pos, restriction: 0 &lt;= pos &lt; size</li>
+<li><code>size()</code> - returns the current number of elements in the list, i.e. size</li>
+<li><code>clear()</code> - removes all elements from the list, and reset size to 0</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Nodes (or a Linked List Building Blocks)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Node</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  ONE_TYPE data<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  Node next<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>Node n <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Node<span style="color:#f92672">();</span>
+</span></span></code></pre></div><p>But other than the type of data, is there really any difference in what nodes need to do?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Node</span><span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  TYPE data<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  Node<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> next<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>Node<span style="color:#f92672">&lt;</span>MANY_TYPES<span style="color:#f92672">&gt;</span> n <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Node<span style="color:#f92672">&lt;</span>MANY_TYPES<span style="color:#f92672">&gt;();</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Iterating through a List <code>O(N)</code></p>
+<blockquote>
+<p>get the number: <code>O(1)</code></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Node cur <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span> <span style="color:#75715e">// leave the head ref alone, do not use head pointer to iterate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>cur <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  cur <span style="color:#f92672">=</span> cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span> <span style="color:#75715e">// move the current pointer to the next
+</span></span></span></code></pre></div></li>
+<li>
+<p>Adding a Linked List <code>O(N)</code></p>
+<ul>
+<li>Empty List: <code>Node n = new Node(); head = n, tail = n;</code></li>
+<li>Push Front: <code>Node n = new Node(); n.next = head; head = n;</code></li>
+<li>Push Back: <code>Node n = new Node(); n = tail.next; tail = n;</code></li>
+<li>Push Arbitrary Position: <code>Node n = new Node(); Node cur = head; n.ext = cur.next; cur.next = n</code></li>
+</ul>
+</li>
+<li>
+<p>Searching in a Linked List</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">find</span> <span style="color:#f92672">(</span>E it<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//start the counter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    Node<span style="color:#f92672">&lt;</span>E<span style="color:#f92672">&gt;</span> current <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//stop if we reach the end or find it
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>current <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>cureent<span style="color:#f92672">.</span><span style="color:#a6e22e">data</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>it<span style="color:#f92672">))</span> <span style="color:#f92672">{</span> <span style="color:#75715e">// euquals is able to handle null
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        current <span style="color:#f92672">=</span> current<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        counter<span style="color:#f92672">++;</span>  <span style="color:#75715e">//we just passed a node
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//if the list is empty,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//or we went to the end
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>current <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> counter<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Removing From a Linked List <code>O(N)</code></p>
+<blockquote>
+<p>reminding one node situation</p>
+</blockquote>
+<ul>
+<li>
+<p>Head: only need to point the head pointer to the next</p>
+</li>
+<li>
+<p>Tail: Begin from the head to the second last</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>head <span style="color:#f92672">==</span> tail<span style="color:#f92672">)</span> Statement<span style="color:#f92672">;</span> <span style="color:#75715e">// check for one node list
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">!=</span> tail<span style="color:#f92672">)</span> cur <span style="color:#f92672">=</span> cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span> <span style="color:#75715e">// or for loop
+</span></span></span></code></pre></div></li>
+<li>
+<p>Arbitrary</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>Doubly Linked List</p>
+</li>
+<li>
+<p>Circular Linked List</p>
+</li>
+</ul>
+<h4 id="arrayliste"><code>ArrayList&lt;E&gt;</code></h4>
+<ul>
+<li>
+<p>Add Last: <code>O(N)</code>, but faster than do it by ourselves - use <code>arraycopy()</code></p>
+<ul>
+<li>Amortized Analysis</li>
+<li>Add and Remove Arbiitrary: <code>O(N)</code></li>
+</ul>
+</li>
+<li>
+<p>Size &amp; Capacity</p>
+<ul>
+<li>Size: Actual number of elements in the array</li>
+<li>Capacity: The &ldquo;size&rdquo; of the storage array</li>
+</ul>
+</li>
+<li>
+<p><code>equals()</code></p>
+<ul>
+<li>If address is the same <code>if(0 == this)</code></li>
+<li>If type is the same <code>if(!(o instanceof List))</code></li>
+<li>If every element is the same <code>if(!(o1 = null ? o2 == null : o1.equals(o2)))</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="ques">Ques</h2>
+<p>Absolute path</p>
+<p>comment</p>
+<p>List<!-- raw HTML omitted --></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/algorithm/">Algorithm</a>
+        
+            <a href="/tags/java/">Java</a>
+        
+            <a href="/tags/nyu/">NYU</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by/4.0/"  target="_blank" rel="noopener"
+    >CC BY 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="bb55d628-fc4a-4ec4-b2ff-091c0dc240d5"
+    data-page-id="bdcdba04055fecdafb3aeb08936bc05d"
+    data-page-url="https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/"
+    data-page-title="Data Structure (with Java)"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
+        }
+    }
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 zayn_lie&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.17.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+        
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "407bf5c0c80b4ec98f0e15deba4ee174"}'></script>
+        
+    </body>
+</html>
