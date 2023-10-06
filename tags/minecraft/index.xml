@@ -73,6 +73,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Stop the Server: &lt;code&gt;/stop&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;5-adding-mods-and-worlds&#34;&gt;5*. Adding mods and worlds&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Before the second launch, create a new folder &lt;code&gt;world&lt;/code&gt; or &lt;code&gt;mod&lt;/code&gt; then put the data into the folder&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         
