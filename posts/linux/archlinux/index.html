@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) installation medium: $ ls -l /dev/disk/by-id/usb-* $ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 $ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress Network
-# iwctl [iwd]# station wlan0 get-networks, [iwd]# station wlan0 connect ${SSID} [iwd]# exit # hwclock --systohc --utc, # timedatectl set-ntp true Disk Mounting and Installation
-# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY Why do I want to switch from Windows to Linux? First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.
+I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want.'>
 <title>Arch Linux Installation</title>
 
 <link rel='canonical' href='https://zayn7lie.github.io/posts/linux/archlinux/'>
 
 <link rel="stylesheet" href="/scss/style.min.aab18e4946c1c150d4e1b8571ddbee125563cec7362efba24b123504694fc1c2.css"><meta property='og:title' content='Arch Linux Installation'>
-<meta property='og:description' content='Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) installation medium: $ ls -l /dev/disk/by-id/usb-* $ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 $ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress Network
-# iwctl [iwd]# station wlan0 get-networks, [iwd]# station wlan0 connect ${SSID} [iwd]# exit # hwclock --systohc --utc, # timedatectl set-ntp true Disk Mounting and Installation
-# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?'>
+<meta property='og:description' content='WHY Why do I want to switch from Windows to Linux? First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.
+I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want.'>
 <meta property='og:url' content='https://zayn7lie.github.io/posts/linux/archlinux/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='install' /><meta property='article:published_time' content='2023-06-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-20T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Arch Linux Installation">
-<meta name="twitter:description" content="Quick Ref e.g. for me (Do NOT read this part if first installation, look at the HOW part) installation medium: $ ls -l /dev/disk/by-id/usb-* $ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 $ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress Network
-# iwctl [iwd]# station wlan0 get-networks, [iwd]# station wlan0 connect ${SSID} [iwd]# exit # hwclock --systohc --utc, # timedatectl set-ntp true Disk Mounting and Installation
-# fdisk -l # mkfs.ext4 /dev/?{nvme0n1p4}, # mount /dev/?">
+<meta name="twitter:description" content="WHY Why do I want to switch from Windows to Linux? First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.
+I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want.">
     <link rel="shortcut icon" href="/favicon.png" />
 
         
@@ -243,7 +240,6 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part">Quick Ref e.g. for me (Do NOT read this part if first installation, look at the <code>HOW</code> part)</a></li>
     <li><a href="#why">WHY</a>
       <ul>
         <li><a href="#why-do-i-want-to-switch-from-windows-to-linux">Why do I want to switch from Windows to Linux?</a></li>
@@ -266,6 +262,7 @@
         <li><a href="#post-installation">Post-installation</a></li>
       </ul>
     </li>
+    <li><a href="#quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part">Quick Ref e.g. for me (Do NOT read this part if first installation, look at the <code>HOW</code> part)</a></li>
   </ul>
 </nav>
         </div>
@@ -445,95 +442,7 @@
     <section class="article-content">
     
     
-    <h2 id="quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part">Quick Ref e.g. for me (Do NOT read this part if first installation, look at the <code>HOW</code> part)</h2>
-<ul>
-<li>installation medium:
-<ul>
-<li><code>$ ls -l /dev/disk/by-id/usb-*</code></li>
-<li><code>$ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0</code></li>
-<li><code>$ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress</code></li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>
-<p>Network</p>
-<ol>
-<li><code># iwctl</code></li>
-<li><code>[iwd]# station wlan0 get-networks</code>, <code>[iwd]# station wlan0 connect ${SSID}</code></li>
-<li><code>[iwd]# exit</code></li>
-<li><code># hwclock --systohc --utc</code>, <code># timedatectl set-ntp true</code></li>
-</ol>
-</li>
-<li>
-<p>Disk Mounting and Installation</p>
-<ol>
-<li><code># fdisk -l</code></li>
-<li><code># mkfs.ext4 /dev/?{nvme0n1p4}</code>, <code># mount /dev/?{nvme0n1p4} /mnt</code></li>
-<li><code># mkdir -p /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code></li>
-<li><code># lsblk</code></li>
-<li><code># pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim</code></li>
-<li><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code>, <code># cat /mnt/etc/fstab</code></li>
-</ol>
-</li>
-<li>
-<p>User Setting</p>
-<ol>
-<li>
-<p><code># arch-chroot /mnt /bin/bash</code>, <code># passwd</code>, <code># echo zayn7lie-acl &gt; /etc/hostname</code></p>
-</li>
-<li>
-<p><code># useradd -m -G wheel -s /bin/bash zayn7lie</code>, <code># passwd zayn7lie</code></p>
-</li>
-<li>
-<p><code># vim /etc/sudoers</code> uncomment <code>%wheel ALL=(ALL:ALL)</code></p>
-</li>
-<li>
-<p><code>vim /etc/hosts</code>:</p>
-<pre tabindex="0"><code class="language-hosts" data-lang="hosts">127.0.0.1 localhost
-::1 localhost
-127.0.1.1 zayn7lie-acl.localdomain zayn7lie-acl
-</code></pre></li>
-</ol>
-</li>
-<li>
-<p>Language &amp; Time</p>
-<ol>
-<li><code># vim /etc/locale.gen</code> uncomment <code>en-US.UTF-8 UTF-8</code>, <code># locale-gen</code></li>
-<li><code># echo LANG=C.UTF-8 &gt; /etc/locale.conf</code></li>
-<li><code># ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime</code></li>
-</ol>
-</li>
-<li>
-<p>Launch Setting</p>
-<ol>
-<li><code># pacman -S amd-ucode grub efibootmgr</code></li>
-<li><code># grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=&quot;Arch Linux&quot; --recheck</code></li>
-<li><code># grub-mkconfig -o /boot/grub/grub.cfg</code></li>
-</ol>
-</li>
-<li>
-<p>Final</p>
-<ol>
-<li><code># pacman -S networkmanager</code>, <code># systemctl enable NetworkManager</code></li>
-<li><code># exit</code>, <code># reboot</code></li>
-<li><code>NetworkManager</code>
-<ol>
-<li><code>$ nmcli device wifi list</code></li>
-<li><code>$ nmcli device wifi connect ?{SSID_or_BSSID} password ?{password}</code></li>
-</ol>
-</li>
-<li><code>pacman</code>
-<ol>
-<li>Remove: <code>$ sudo pacman -Run(c or s) package</code></li>
-<li>Auto-clean: <code>$ sudo pacman -Runc $(pacman -Qdtq)</code></li>
-<li>Clean Cache: <code>$ sudo pacman -Sc</code></li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="why">WHY</h2>
+    <h2 id="why">WHY</h2>
 <h3 id="why-do-i-want-to-switch-from-windows-to-linux">Why do I want to switch from Windows to Linux?</h3>
 <p>First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.</p>
 <ul>
@@ -654,6 +563,94 @@
     >googling</a> (<a class="link" href="https://duckduckgo.com/"  target="_blank" rel="noopener"
     >DDG</a> is a better option with high privacy protection), searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in <a class="link" href="http://www.catb.org/~esr/faqs/smart-questions.html"  target="_blank" rel="noopener"
     >a smart way</a>. That’s all, it is my best hope that you could join and enjoy our open-source communities!</p>
+<h2 id="quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part">Quick Ref e.g. for me (Do NOT read this part if first installation, look at the <code>HOW</code> part)</h2>
+<ul>
+<li>installation medium:
+<ul>
+<li><code>$ ls -l /dev/disk/by-id/usb-*</code></li>
+<li><code>$ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0</code></li>
+<li><code>$ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress</code></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<p>Network</p>
+<ol>
+<li><code># iwctl</code></li>
+<li><code>[iwd]# station wlan0 get-networks</code>, <code>[iwd]# station wlan0 connect ${SSID}</code></li>
+<li><code>[iwd]# exit</code></li>
+<li><code># hwclock --systohc --utc</code>, <code># timedatectl set-ntp true</code></li>
+</ol>
+</li>
+<li>
+<p>Disk Mounting and Installation</p>
+<ol>
+<li><code># fdisk -l</code></li>
+<li><code># mkfs.ext4 /dev/?{nvme0n1p4}</code>, <code># mount /dev/?{nvme0n1p4} /mnt</code></li>
+<li><code># mkdir -p /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code></li>
+<li><code># lsblk</code></li>
+<li><code># pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim</code></li>
+<li><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code>, <code># cat /mnt/etc/fstab</code></li>
+</ol>
+</li>
+<li>
+<p>User Setting</p>
+<ol>
+<li>
+<p><code># arch-chroot /mnt /bin/bash</code>, <code># passwd</code>, <code># echo zayn7lie-acl &gt; /etc/hostname</code></p>
+</li>
+<li>
+<p><code># useradd -m -G wheel -s /bin/bash zayn7lie</code>, <code># passwd zayn7lie</code></p>
+</li>
+<li>
+<p><code># vim /etc/sudoers</code> uncomment <code>%wheel ALL=(ALL:ALL)</code></p>
+</li>
+<li>
+<p><code>vim /etc/hosts</code>:</p>
+<pre tabindex="0"><code class="language-hosts" data-lang="hosts">127.0.0.1 localhost
+::1 localhost
+127.0.1.1 zayn7lie-acl.localdomain zayn7lie-acl
+</code></pre></li>
+</ol>
+</li>
+<li>
+<p>Language &amp; Time</p>
+<ol>
+<li><code># vim /etc/locale.gen</code> uncomment <code>en-US.UTF-8 UTF-8</code>, <code># locale-gen</code></li>
+<li><code># echo LANG=C.UTF-8 &gt; /etc/locale.conf</code></li>
+<li><code># ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime</code></li>
+</ol>
+</li>
+<li>
+<p>Launch Setting</p>
+<ol>
+<li><code># pacman -S amd-ucode grub efibootmgr</code></li>
+<li><code># grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=&quot;Arch Linux&quot; --recheck</code></li>
+<li><code># grub-mkconfig -o /boot/grub/grub.cfg</code></li>
+</ol>
+</li>
+<li>
+<p>Final</p>
+<ol>
+<li><code># pacman -S networkmanager</code>, <code># systemctl enable NetworkManager</code></li>
+<li><code># exit</code>, <code># reboot</code></li>
+<li><code>NetworkManager</code>
+<ol>
+<li><code>$ nmcli device wifi list</code></li>
+<li><code>$ nmcli device wifi connect ?{SSID_or_BSSID} password ?{password}</code></li>
+</ol>
+</li>
+<li><code>pacman</code>
+<ol>
+<li>Remove: <code>$ sudo pacman -Run(c or s) package</code></li>
+<li>Auto-clean: <code>$ sudo pacman -Runc $(pacman -Qdtq)</code></li>
+<li>Clean Cache: <code>$ sudo pacman -Sc</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
 </section>
 
