@@ -288,6 +288,12 @@
 &lt;li&gt;If every element is the same &lt;code&gt;if(!(o1 = null ? o2 == null : o1.equals(o2)))&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Iterator&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dif between &lt;code&gt;Interface&lt;/code&gt; and &lt;code&gt;AbstractClass&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;ques&#34;&gt;Ques&lt;/h2&gt;
 &lt;p&gt;Absolute path&lt;/p&gt;
