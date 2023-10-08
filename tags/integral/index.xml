@@ -29,7 +29,7 @@
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rarr \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
-&lt;p&gt;eg.
+&lt;p&gt;E.g.
 $$ 1. prove\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
 $$
 $$ 2. prove\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1
@@ -91,7 +91,7 @@ $$&lt;/p&gt;
 $$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;eg.
+&lt;p&gt;E.g.
 $$ \int{\frac{\sqrt{\tan{u}}}{\sin{2u}}}dx: \ Be \ brave!
 $$
 $$ \int_{-1}^{2}{\frac{x}{\sqrt[3]{1-x}}}dx: \ Domain!
@@ -154,7 +154,7 @@ $$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x
 $$
 $$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}dx + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
 $$&lt;/p&gt;
-&lt;p&gt;eg.
+&lt;p&gt;E.g.
 $$ \int{ln{(x^2 - x + 3)}}dx
 $$
 $$ \int{\sec{x}}dx

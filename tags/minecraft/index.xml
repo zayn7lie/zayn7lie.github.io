@@ -61,6 +61,7 @@
 &lt;li&gt;&lt;code&gt;-Xmx1024M&lt;/code&gt; is maximum RAM allow server to use&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;-Xms1024M&lt;/code&gt; is minimum RAM allow server to use&lt;/li&gt;
 &lt;li&gt;Or you can launch by &lt;code&gt;systemd&lt;/code&gt;: &lt;code&gt;sudo touch /etc/systemd/system/minecraft.service&lt;/code&gt;, &lt;code&gt;sudo chmod 664 /etc/systemd/system/minecraft.service&lt;/code&gt;, &lt;code&gt;sudo vim /etc/systemd/system/minecraft.service&lt;/code&gt;, &lt;code&gt;sudo systemctl daemon-reload&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;eg. &lt;code&gt;$ java -Xmx3548M -Xms512M -jar forge-1.16.5-36.2.34.jar --nogui&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

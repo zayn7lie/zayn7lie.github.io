@@ -16,21 +16,14 @@
 &lt;h3 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h3&gt;
 &lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/li&gt;
-&lt;li&gt;Analyzing points ($x = a$)
-&lt;ul&gt;
-&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$&lt;/li&gt;
-&lt;li&gt;Stationary point: $f&amp;rsquo;(x) = 0$&lt;/li&gt;
-&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
-&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Analyzing function&lt;/li&gt;
+&lt;li&gt;Analyzing points&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Limit: L&amp;rsquo;hospital rule&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;eg.
+&lt;p&gt;E.g.
 $$ \lim_{x \rarr 0}{x\ln{x}}
 $$&lt;/p&gt;
 &lt;ul&gt;
@@ -59,6 +52,38 @@ $$&lt;/p&gt;
 &lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;h3 id=&#34;how-to-differenciate&#34;&gt;How to differenciate?&lt;/h3&gt;
+&lt;h4 id=&#34;basic-rules&#34;&gt;Basic rules&lt;/h4&gt;
+&lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \ or \ (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
+$$
+$$ \frac{d}{dx}(f(x) \cdot g(x)) = \frac{d}{dx}f(x) \cdot g(x) + f(x) \cdot \frac{d}{dx}g(x) \ or \ (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
+$$
+$$ \frac{d}{dx}f(g(x)) = f&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) = \frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{dx}g(x)
+$$
+$$ * Inverse \ function: y(x) \lrArr x(y) \rArr \frac{d}{dx}y(x_1) \cdot \frac{d}{dx}x(y_1) = 1
+$$&lt;/p&gt;
+&lt;h4 id=&#34;basic-function&#34;&gt;Basic function&lt;/h4&gt;
+&lt;p&gt;$$ \frac{d}{dx}x^n = n \cdot x^{n - 1}, \frac{d}{dx}\ln{x} = \frac{1}{x}, \frac{d}{dx}e^x = e^x
+$$
+$$ \frac{d}{dx}\sin{x} = \cos{x}, \frac{d}{dx}\cos{x} = -\sin{x}, \frac{d}{dx}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
+$$
+$$ \frac{d}{dx}\sin^{-1} = \frac{d}{dx}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\cos^{-1} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\tan^{-1} = \frac{1}{1 + x^2}
+$$&lt;/p&gt;
+&lt;p&gt;E.g. Derive $a^x$ and $\log_ax$&lt;/p&gt;
+&lt;p&gt;E.g. Differential Equations: $x^2 + y^2 = 25$, derive $\frac{d}{dx}y$&lt;/p&gt;
+&lt;h3 id=&#34;how-to-apply-differentiation-to-reality&#34;&gt;How to apply differentiation to reality&lt;/h3&gt;
+&lt;h4 id=&#34;finding-rates&#34;&gt;Finding Rates&lt;/h4&gt;
+&lt;p&gt;E.g. A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
+&lt;p&gt;E.g. The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{d}{dt}x = \frac{d}{dt}z$ and the rate of the diagonal $z$ has $\frac{d}{dt}z = \frac{d}{dt}y$. Derive the value of $k$.&lt;/p&gt;
+&lt;h4 id=&#34;curve-sketching&#34;&gt;Curve Sketching&lt;/h4&gt;
+&lt;p&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/p&gt;
+&lt;p&gt;Analyzing points ($x = a$)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;Stationary point: $f&amp;rsquo;(x) = 0$&lt;/li&gt;
+&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
+&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         
