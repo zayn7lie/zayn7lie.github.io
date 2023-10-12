@@ -190,7 +190,7 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;work-w-n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W (N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
 &lt;h4 id=&#34;kinetic-energy-k_epsilon--frac12mv2&#34;&gt;Kinetic Energy $K_{\epsilon} = \frac{1}{2}mv^2$&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Work energy theorem&lt;/li&gt;
+&lt;li&gt;Work energy theorem: $W = \frac{1}{2}m\Delta{v^2}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$ \vec{F} = m \cdot \vec{a} = m \cdot \frac{d\vec{v}(t(\vec{r}))}{dt(\vec{r})}, \frac{dt(\vec{r})}{d\vec{r}} \frac{d\vec{r}}{dt(\vec{r})} = \frac{dt(\vec{r})}{d\vec{r}} \cdot \vec{v}(\vec{r})= 1 (inverse \ function)
 $$
@@ -199,10 +199,11 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Pulleys: $W = \vec{F} \cdot \vec{d} = \frac{\vec{F}}{n} \cdot n \vec{d}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;potential-energy&#34;&gt;Potential Energy&lt;/h4&gt;
+&lt;h4 id=&#34;potential-energy-u--or---v--mgz----int_refvecxvecfcdot-dvecl&#34;&gt;Potential Energy $U \ or  \ V = mgz = - \int_{ref}^{\vec{x}}\vec{F}\cdot d\vec{l}$&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Springs - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/li&gt;
+&lt;li&gt;Simple Harmonic Oscillator (SHO) Springs - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h4 id=&#34;total-energy-epsilon--k_epsilon--u&#34;&gt;Total Energy $\epsilon = K_\epsilon + U$&lt;/h4&gt;
 </description>
         </item>
         

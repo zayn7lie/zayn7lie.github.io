@@ -294,11 +294,19 @@
 &lt;li&gt;Dif between &lt;code&gt;Interface&lt;/code&gt; and &lt;code&gt;AbstractClass&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;?&amp;gt;&lt;/code&gt;: we need not actually type is the same.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h4 id=&#34;stacke&#34;&gt;&lt;code&gt;Stack&amp;lt;E&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LinkedList&lt;/code&gt;: top at the head: &lt;code&gt;O(1)&lt;/code&gt; (pop), top at the tail: &lt;code&gt;O(N)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;queuee-interface&#34;&gt;&lt;code&gt;Queue&amp;lt;E&amp;gt;&lt;/code&gt;: interface&lt;/h4&gt;
+&lt;p&gt;$$ Negative \ Modulo: -6 = (8 - 6) \equiv 2 \pmod{8}
+$$&lt;/p&gt;
 &lt;h2 id=&#34;ques&#34;&gt;Ques&lt;/h2&gt;
-&lt;p&gt;Absolute path&lt;/p&gt;
-&lt;p&gt;comment&lt;/p&gt;
-&lt;p&gt;List&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

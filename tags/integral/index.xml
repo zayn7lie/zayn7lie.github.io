@@ -92,7 +92,7 @@ $$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
 $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;E.g.
-$$ \int{\frac{\sqrt{\tan{u}}}{\sin{2u}}}dx: \ Be \ brave!
+$$ \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}dx: \ Be \ brave!
 $$
 $$ \int_{-1}^{2}{\frac{x}{\sqrt[3]{1-x}}}dx: \ Domain!
 $$&lt;/p&gt;
