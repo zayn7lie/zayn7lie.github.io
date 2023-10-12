@@ -79,6 +79,9 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$ u = g(x), du = g&amp;rsquo;(x) dx \rArr \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
 $$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{\frac{1}{x(x^2 + 1)}}{dx}$&lt;/li&gt;
 &lt;/ul&gt;
@@ -94,7 +97,9 @@ $$&lt;/li&gt;
 &lt;p&gt;E.g.
 $$ \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}dx: \ Be \ brave!
 $$
-$$ \int_{-1}^{2}{\frac{x}{\sqrt[3]{1-x}}}dx: \ Domain!
+$$ \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx: \ Domain!
+$$
+$$ \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx
 $$&lt;/p&gt;
 &lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
 &lt;ul&gt;
@@ -113,6 +118,9 @@ $$
 $$ \rArr \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \rArr \int{\frac{1}{v}}dv = \ln{|v|} + C
 $$&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;E.g.&lt;/p&gt;
+&lt;p&gt;$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2})
+$$&lt;/p&gt;
 &lt;h3 id=&#34;other-techniques-not-belongs-to-integral&#34;&gt;Other techniques (Not belongs to Integral)&lt;/h3&gt;
 &lt;h4 id=&#34;partial-fractions&#34;&gt;Partial Fractions&lt;/h4&gt;
 &lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
@@ -187,6 +195,9 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ L = \lim_{x_2 \rarr x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
 $$
 $$ * \int{\sqrt{(x^2 + 1)^2 + b}}dx
+$$&lt;/p&gt;
+&lt;p&gt;E.g.&lt;/p&gt;
+&lt;p&gt;$$ Find \ curve \ length \ of \ y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4
 $$&lt;/p&gt;
 &lt;h3 id=&#34;areas&#34;&gt;Areas&lt;/h3&gt;
 &lt;p&gt;$$ A = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy

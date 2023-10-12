@@ -47,7 +47,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;E.g.
-$$ \lim_{x \rarr 0}{x\ln{x}}
+$$ \lim_{x \rarr 0^+}{x\ln{x}}, \lim_{x \rarr 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
 $$&lt;/p&gt;
 &lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
 &lt;ul&gt;
