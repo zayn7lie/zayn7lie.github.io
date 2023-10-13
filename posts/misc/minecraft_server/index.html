@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY I want to learn something about AWS, SSH remote connection.
-I want to play Minecraft with my friends.
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.
+WHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.
+Playing Minecraft with my friends when not under LAN.
 WHAT AWS Introduction
 SSH Intro
 HOW * means Optional Operation
-1. Create am AWS EC2 Instance AWS Price Calculator: A Pure Minecraft with Two People Server needs at least 1 GiB RAM. t3.small is recommended for 2-3 people playing pure Minecraft without mod. 2. Connect Linux to the Instance with SSH Create a new key pair: rsa, and store your .'>
+1. Create an AWS EC2 Instance Note.'>
 <title>How to Create a Minecraft Server with AWS</title>
 
 <link rel='canonical' href='https://zayn7lie.github.io/posts/misc/minecraft_server/'>
 
 <link rel="stylesheet" href="/scss/style.min.21dd04c9bdb63d4e8435c2d96c8458fb0397cd7ac2b2f69521767054761cf0ca.css"><meta property='og:title' content='How to Create a Minecraft Server with AWS'>
-<meta property='og:description' content='WHY I want to learn something about AWS, SSH remote connection.
-I want to play Minecraft with my friends.
+<meta property='og:description' content='This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.
+WHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.
+Playing Minecraft with my friends when not under LAN.
 WHAT AWS Introduction
 SSH Intro
 HOW * means Optional Operation
-1. Create am AWS EC2 Instance AWS Price Calculator: A Pure Minecraft with Two People Server needs at least 1 GiB RAM. t3.small is recommended for 2-3 people playing pure Minecraft without mod. 2. Connect Linux to the Instance with SSH Create a new key pair: rsa, and store your .'>
+1. Create an AWS EC2 Instance Note.'>
 <meta property='og:url' content='https://zayn7lie.github.io/posts/misc/minecraft_server/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Minecraft' /><meta property='article:tag' content='AWS' /><meta property='article:tag' content='Server' /><meta property='article:published_time' content='2023-10-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-04T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="How to Create a Minecraft Server with AWS">
-<meta name="twitter:description" content="WHY I want to learn something about AWS, SSH remote connection.
-I want to play Minecraft with my friends.
+<meta name="twitter:description" content="This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.
+WHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.
+Playing Minecraft with my friends when not under LAN.
 WHAT AWS Introduction
 SSH Intro
 HOW * means Optional Operation
-1. Create am AWS EC2 Instance AWS Price Calculator: A Pure Minecraft with Two People Server needs at least 1 GiB RAM. t3.small is recommended for 2-3 people playing pure Minecraft without mod. 2. Connect Linux to the Instance with SSH Create a new key pair: rsa, and store your .">
+1. Create an AWS EC2 Instance Note.">
     <link rel="shortcut icon" href="/favicon.png" />
 
         
@@ -256,7 +259,7 @@ HOW * means Optional Operation
     <li><a href="#what">WHAT</a></li>
     <li><a href="#how">HOW</a>
       <ul>
-        <li><a href="#1-create-am-aws-ec2-instance">1. Create am AWS EC2 Instance</a></li>
+        <li><a href="#1-create-an-aws-ec2-instance">1. Create an AWS EC2 Instance</a></li>
         <li><a href="#2-connect-linux-to-the-instance-with-ssh">2. Connect Linux to the Instance with SSH</a></li>
         <li><a href="#3-install-java--minecraft-server-to-the-instance">3. Install Java &amp; Minecraft Server to the Instance</a></li>
         <li><a href="#4-launch-the-server--commands">4. Launch the Server &amp; Commands</a></li>
@@ -427,7 +430,7 @@ HOW * means Optional Operation
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    5 minute read
                 </time>
             </div>
         
@@ -442,9 +445,12 @@ HOW * means Optional Operation
     <section class="article-content">
     
     
-    <h2 id="why">WHY</h2>
-<p>I want to learn something about <code>AWS</code>, <code>SSH</code> remote connection.</p>
-<p>I want to play Minecraft with my friends.</p>
+    <blockquote>
+<p>This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.</p>
+</blockquote>
+<h2 id="why">WHY</h2>
+<p>Learning something about <code>AWS</code>, <code>SSH</code> remote connection (<code>ip</code>, <code>port</code>, <code>domain</code>), and <code>java</code> usage.</p>
+<p>Playing Minecraft with my friends when not under <code>LAN</code>.</p>
 <h2 id="what">WHAT</h2>
 <p><a class="link" href="https://aws.amazon.com/what-is-aws/"  target="_blank" rel="noopener"
     >AWS Introduction</a></p>
@@ -454,39 +460,90 @@ HOW * means Optional Operation
 <blockquote>
 <p><code>*</code> means Optional Operation</p>
 </blockquote>
-<h3 id="1-create-am-aws-ec2-instance">1. Create am AWS EC2 Instance</h3>
-<ul>
-<li><a class="link" href="https://calculator.aws/#/"  target="_blank" rel="noopener"
-    >AWS Price Calculator</a>: A Pure Minecraft with Two People Server needs at least 1 GiB RAM.</li>
-<li><code>t3.small</code> is recommended for 2-3 people playing pure Minecraft without mod.</li>
-</ul>
+<h3 id="1-create-an-aws-ec2-instance">1. Create an AWS EC2 Instance</h3>
+<blockquote>
+<p>Note. There is a free x86_64 CPU &ldquo;<code>Free tier: In your first year includes 750 hours of t2.micro (or t3.micro in the Regions in which t2.micro is unavailable) instance usage on free tier AMIs per month, 30 GiB of EBS storage, 2 million IOs, 1 GB of snapshots, and 100 GB of bandwidth to the internet.</code>&rdquo; for new user, but it is not very good for running Minecraft Server. But if you want to use it, you could follow the tutor, but you need to change the <code>Architecture</code> to <code>64-bit (x86)</code> in <code>Application and OS Images (Amazon Machine Image)</code> and choose <code>t2.micro</code> in <code>Instance type</code></p>
+</blockquote>
+<ol>
+<li>Create a <code>AWS</code> account</li>
+<li>Choose a good place that near your home on the top right of the AWS main webpage, e.g. I choose <code>US East (N. Virginia)us-east-1</code></li>
+<li>Look at the top left of the webpage, select <code>Services</code> - <code>Compute</code> - <code>EC2</code> - <code>Instances</code> - <code>Launch instances</code>, or you could just search <code>EC2</code> then <code>Launch instances</code></li>
+<li>Create an instance for Minecraft Server
+<ol>
+<li><code>Name and tags</code>: Create a Name so that you could know this is your instance that run your Minecraft server.</li>
+<li><code>Application and OS Images (Amazon Machine Image)</code>: Define which types of CPU and System you would use
+<ol>
+<li><code>Amazon Machine Image (AMI)</code>: Select a system for your instance. Amazon Linux <code>Amazon Machine Image (AMI)</code> is recommended for its cheapness (CPU under Linux Base System is cheaper) and lightweight (we do not need lots of functions to run Minecraft Server)</li>
+<li><code>Architecture</code>: <code>64-bit (Arm)</code> is recommended because it has more CPUs with cheaper price.</li>
+</ol>
+</li>
+<li><code>Instance type</code>: Choose a CPU for running Minecraft Server, here is a list of price for every CPU: <a class="link" href="https://calculator.aws/#/"  target="_blank" rel="noopener"
+    >AWS Price Calculator</a>. Remind that a pure Minecraft server (No mod) with two people server needs at least 1 GiB RAM</li>
+<li><code>Key pair (login)</code>: Define how can you login to the instance safely.
+<ol>
+<li><code>Create new key pair</code> if you do not have one, otherwise you could choose one you know.</li>
+<li><code>Key pair name</code>: Create a name for your key pair so that you could know it is using for connection for your instance.</li>
+<li><code>Key pair type</code>: <code>RSA</code> is recommended for its higher security.</li>
+<li><code>Private key file format</code>: <code>.pem</code> is recommended for many Linux machines have already installed it.</li>
+<li><code>Create key pair</code> and select your key pair name.</li>
+<li>It will generate a <code>.pem</code> file for instance authorization, remember to save it properly.
+<ol>
+<li>Create new path for storing if you do not have: <code>$ mkdir ~/.ssh</code></li>
+<li>Move file to the folder: <code>$ mv YOUR_PEM_FILE.pem ~/.ssh</code></li>
+<li>Change the permission to make the file safer: <code>$ chmod 400 ~/.ssh/YOUR_PEM_FILE.pem</code></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><code>Network settings</code>
+<ol>
+<li><code>Firewall (security groups)</code>: It is recommended that create a security groups independently and choose here.</li>
+<li>In the left panel, select <code>Security Groups</code> - <code>Create security group</code></li>
+<li><code>Basic details</code> Create a name so that you could know this security group is for your server.</li>
+<li><code>Inbound rules</code>: add two rules, one <code>Type</code> is <code>SSH</code> (port <code>22</code>) and <code>0.0.0.0/0</code> as the source for <code>SSH</code> connection; one <code>Type</code> is <code>Custom TCP</code> which has <code>25565</code> <code>port range</code> which is the default port for Minecraft Server</li>
+<li><code>Outbound rules</code>: It might already exist that <code>All traffic</code> to enable internet connection, if no, create one.</li>
+<li>Back to instance creation, <code>Select existing security group</code> and choose the security group you just created.</li>
+</ol>
+</li>
+<li><code>Configure storage</code>: default <code>8GiB</code> with <code>gp3</code> is enough (even for my mods Server).</li>
+<li>Turn to right panel <code>Launch instance</code></li>
+</ol>
+</li>
+</ol>
 <h3 id="2-connect-linux-to-the-instance-with-ssh">2. Connect Linux to the Instance with SSH</h3>
 <ol>
-<li>
-<p>Create a new key pair: <code>rsa</code>, and store your <code>.pem</code> file.</p>
-</li>
-<li>
-<p>Open port <code>22</code> for <code>SSH</code> connection.</p>
-<ol>
-<li>Create a new <code>Security Group</code></li>
-<li>Inbound rules: Open <code>TCP</code> port <code>22</code> (SSH) and <code>25565</code> (Minecraft Server)</li>
-<li>Outbound rules: <code>All traffic</code> to internet connection.</li>
-</ol>
-</li>
-<li>
-<p><code>$ ssh -i PATH_TO_PEM ec2-user@IPV4</code></p>
-</li>
+<li>Turn back to <code>instances</code>, select the <code>instance id</code> you just created</li>
+<li>Then you open a new panel which lists all the detailed information for your instance. If the instance is not open, select <code>Instance state</code> - <code>Start Instance</code> to start it.</li>
+<li>Record <code>Public IPv4 address</code> or <code>Public IPv4 DNS</code> as your instance <code>IPv4</code> that would help you to connect to your instance</li>
+<li>Use <code>OpenSSH</code> command <code>$ ssh -i PATH_TO_PEM.pem ec2-user@IPv4</code> to connect to your instance.</li>
+<li>*Before step 2.4, you might already have Minecraft Server file, you could transfer your file through <code>$ scp -i PATH_TO_PEM.pem -r SOURCE_FILE_OR_FOLDER ec2-user@IPv4:PATH_YOU_WANT_TO_STORE</code></li>
 </ol>
 <h3 id="3-install-java--minecraft-server-to-the-instance">3. Install Java &amp; Minecraft Server to the Instance</h3>
-<p>1.1 Install <code>Java 8</code>: <code>$ sudo yum install java-1.8.0</code></p>
-<p>2.1 Download Server Package(1.16.5): <code>$ wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar</code></p>
-<p>2.2 First Launch: <code>$ java -jar server.jar nogui</code></p>
-<p>2.3 Accept <a class="link" href="https://account.mojang.com/documents/minecraft_eula"  target="_blank" rel="noopener"
+<ol>
+<li>
+<p>Install <code>Java 8</code>: <code>$ sudo yum install java-1.8.0</code></p>
+</li>
+<li>
+<p>Download Server Package</p>
+<ol>
+<li>1.16.5 (No Mod): <code>$ wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar</code></li>
+<li>For other release, you could Google: <code>Minecraft, Server, VERSION</code> and look at the website in this format: <a class="link" href="https://www.minecraft.net/en-us/article/minecraft-java-edition-VERSION"  target="_blank" rel="noopener"
+    >https://www.minecraft.net/en-us/article/minecraft-java-edition-VERSION</a> then scroll down to get the link</li>
+<li>For mod Server, you could find here <a class="link" href="https://files.minecraftforge.net/net/minecraftforge/forge/"  target="_blank" rel="noopener"
+    >https://files.minecraftforge.net/net/minecraftforge/forge/</a> and download, but remind that later we will install it before first launch.</li>
+</ol>
+</li>
+<li>
+<p>First Launch: <code>$ java -jar server.jar --nogui</code>, if install <code>forge</code>, then run <code>$ java -jar forge-x.xx.x-installer.jar --installServer --nogui</code> instead.</p>
+</li>
+<li>
+<p>Accept <a class="link" href="https://account.mojang.com/documents/minecraft_eula"  target="_blank" rel="noopener"
     ><code>EULA</code></a>: 1. Open <code>eula.txt</code>: <code>$ vim eula.txt</code>, 2. Change <code>eula=false</code> to <code>eula=true</code> to indicate acceptance of the <code>EULA</code></p>
-<p>2.4* Install forge version: <code>$ wget https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.5-36.2.34/forge-1.16.5-36.2.34-installer.jar</code> and run <code>$ java -jar forge-1.16.5-36.2.34-installer.jar --installServer</code></p>
+</li>
+</ol>
 <h3 id="4-launch-the-server--commands">4. Launch the Server &amp; Commands</h3>
 <ul>
-<li>Launch Pure or Forge version <code>$ java -Xmx1536M -Xms512M -jar SERVER_NAME.jar nogui</code>
+<li>Launch Pure or Forge version <code>$ java -Xmx1536M -Xms512M -jar SERVER_NAME.jar --nogui</code>
 <ul>
 <li><code>-Xmx1024M</code> is maximum RAM allow server to use</li>
 <li><code>-Xms1024M</code> is minimum RAM allow server to use</li>
@@ -499,7 +556,7 @@ HOW * means Optional Operation
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">User</span><span style="color:#f92672">=</span><span style="color:#e6db74">ec2-user</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">WorkingDirectory</span><span style="color:#f92672">=</span><span style="color:#e6db74">/home/ec2-user/minecraft</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">ReadWriteDirectories</span><span style="color:#f92672">=</span><span style="color:#e6db74">/home/ec2-user/minecraft</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ExecStart</span><span style="color:#f92672">=</span><span style="color:#e6db74">java -Xmx1536M -Xms512M -jar /home/ec2-user/minecraft/server.jar nogui</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ExecStart</span><span style="color:#f92672">=</span><span style="color:#e6db74">java -Xmx1536M -Xms512M -jar /home/ec2-user/minecraft/server.jar --nogui</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">ExecStop</span><span style="color:#f92672">=</span><span style="color:#e6db74">/stop</span>
 </span></span></code></pre></div><ul>
 <li>Stop the Server: <code>/stop</code></li>
