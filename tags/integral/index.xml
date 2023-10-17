@@ -48,11 +48,10 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Error Bond&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;$$ Riemann - \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|)
-$$&lt;/p&gt;
-&lt;p&gt;$$ Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|)
-$$&lt;/p&gt;
-&lt;p&gt;$$ Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
+&lt;p&gt;$$
+Riemann - \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;em&gt;{max}(x)|) \newline
+Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;/em&gt;{max}(x)|) \newline
+Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 $$&lt;/p&gt;
 &lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
 &lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \rArr \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
