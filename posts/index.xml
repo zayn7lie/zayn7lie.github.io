@@ -632,7 +632,15 @@ $$ if \ (-h, y_0) (0, y_1) (h, y_2) \rArr \int_{-h}^{h}ydx = \frac{h}{3}(y_0 + 4
 $$
 $$ \rArr S = \frac{h}{3}((y_0 + 4y_1 + y_2) + (y_2 + 4y_3 + y_4) + \ldots + (y_{n - 2} + 4y_{n - 1} + y_n)) (n \ is \ even)
 $$&lt;/p&gt;
-&lt;p&gt;Error Bond: $K = |f&amp;rsquo;&amp;rsquo;&lt;em&gt;{max}(x)|$ Riemann - $\frac{K(b - a)^3}{24n^2}$; Trapezoidal - $\frac{K(b - a)^3}{12n^2}$; $K = |f^{(4)}&lt;/em&gt;{max}(x)|$ Simpson - $\frac{K(b - a)^5}{180n^4}$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Error Bond&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ Riemann - \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;em&gt;{max}(x)|)
+$$
+$$ Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;/em&gt;{max}(x)|)
+$$
+$$ Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
+$$&lt;/p&gt;
 &lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
 &lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \rArr \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
@@ -752,13 +760,13 @@ $$ \int{ln{(x^2 - x + 3)}}dx
 $$
 $$ \int{\sec{x}}dx
 $$&lt;/p&gt;
-&lt;h4 id=&#34;approx-to-limit&#34;&gt;Approx to limit&lt;/h4&gt;
+&lt;h4 id=&#34;approx-to-limit-improper-integral&#34;&gt;Approx to limit: Improper Integral&lt;/h4&gt;
 &lt;p&gt;For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)}dx = \lim_{t \rarr b}\int_a^t{f(x)}dx
 $$&lt;/p&gt;
 &lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality&lt;/h2&gt;
 &lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations&lt;/h3&gt;
-&lt;p&gt;$$ Imformal: \frac{dy}{dx} = \frac{x}{y} \rArr ydy = xdx \rArr \int{y}dy = \int{x}dx
+&lt;p&gt;$$ Informal: \frac{dy}{dx} = \frac{x}{y} \rArr ydy = xdx \rArr \int{y}dy = \int{x}dx
 $$
 $$ *Formal \ Solution: \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \lrArr \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
 $$&lt;/p&gt;
