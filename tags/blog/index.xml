@@ -6,10 +6,10 @@
         <description>Recent content in Blog on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Blog Constructing</title>
         <link>https://zayn7lie.github.io/posts/misc/blog/</link>
-        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/misc/blog/</guid>
         <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;WHY: Why do I want to construct my blog site?&lt;/h2&gt;
@@ -34,12 +34,13 @@
 &lt;li&gt;The site constructed by your own is more appealing to geeks, companies, and educational facilities which means you would gain more opportunities from them.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;h3 id=&#34;pre-request&#34;&gt;Pre-request&lt;/h3&gt;
+&lt;h3 id=&#34;basic-constructing&#34;&gt;Basic Constructing&lt;/h3&gt;
+&lt;h4 id=&#34;pre-request&#34;&gt;Pre-request&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;A valid GitHub account&lt;/li&gt;
 &lt;li&gt;Already installing &lt;code&gt;Hugo&lt;/code&gt; on your machine: &lt;code&gt;$ sudo pacman -S hugo&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;create-a-new-github-page&#34;&gt;Create a new GitHub Page&lt;/h3&gt;
+&lt;h4 id=&#34;create-a-new-github-page&#34;&gt;Create a new GitHub Page&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a new repo with Repository name &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;, then your repo will look like this: &lt;code&gt;YOUR_GITHUB_NAME/YOUR_GITHUB_NAME.github.io&lt;/code&gt;, e.g. Mine is &lt;code&gt;zayn7lie/zayn7lie.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Connect the repo to your local computer
@@ -49,8 +50,74 @@
 &lt;li&gt;&lt;code&gt;$ git clone YOUR_HTTPS&lt;/code&gt; to clone the repo to local or &lt;code&gt;git init .&lt;/code&gt; then &lt;code&gt;git remote add origin YOUR_HTTPS&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;li&gt;In the repo, turn to &lt;code&gt;Setting&lt;/code&gt; - &lt;code&gt;Code and automation&lt;/code&gt; - &lt;code&gt;Pages&lt;/code&gt;, check &lt;code&gt;Build and deployment&lt;/code&gt; - &lt;code&gt;Source&lt;/code&gt; is &lt;code&gt;Deploy from a branch&lt;/code&gt;, and &lt;code&gt;Branch&lt;/code&gt; is &lt;code&gt;master&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</description>
+&lt;h4 id=&#34;setting-up-source-code-for-blog&#34;&gt;Setting up source code for blog&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Turn to your local machine, &lt;code&gt;$ hugo new site YOUR_SITE_NAME&lt;/code&gt; to create and initial your new blog site, add &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt; in &lt;code&gt;baseURL&lt;/code&gt; in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Turn to the folder you just connect with your &lt;code&gt;GitHub Page&lt;/code&gt;, rename it as &lt;code&gt;public&lt;/code&gt; with moving it to your site folder you just have generated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ hugo new content posts/my-first-post.md&lt;/code&gt; to generate a new post for your blog (Remember to use &lt;a class=&#34;link&#34; href=&#34;https://www.markdownguide.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;Markdown&lt;/code&gt;&lt;/a&gt; to write)&lt;/li&gt;
+&lt;li&gt;After writing, &lt;code&gt;$ hugo server&lt;/code&gt; to view your pre-generate blog, you can see it in &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:1313/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;After checking, &lt;code&gt;$ hugo&lt;/code&gt; to generate the final &lt;code&gt;html&lt;/code&gt; to &lt;code&gt;public&lt;/code&gt; folder, then commit it to your &lt;code&gt;GitHub&lt;/code&gt; repo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GitHub&lt;/code&gt; will automatically run &lt;code&gt;Action&lt;/code&gt; to build your blog website with &lt;code&gt;Jekyll&lt;/code&gt;(you do not need to know anything about &lt;code&gt;Jekyll&lt;/code&gt;), after compiling, you could see your public website in &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;advanced-configuration&#34;&gt;Advanced Configuration&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The global config file is in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;theme-setting&#34;&gt;Theme Setting&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I am using &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack&lt;/a&gt;, it has a &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;doc&lt;/a&gt; for fully configuration that you could read.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a &lt;code&gt;themes&lt;/code&gt; folder, and move the theme folder that you want to adopt, to &lt;code&gt;themes&lt;/code&gt; folder.&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;hugo.toml&lt;/code&gt;, insert &lt;code&gt;theme = &amp;quot;YOUR_THEME_NAME&amp;quot;&lt;/code&gt; at the beginning&lt;/li&gt;
+&lt;li&gt;If you want to do modification with your theme, you just need to copy the specific file from your theme folder to the root file, then modify it. E.g. I want to modify &lt;code&gt;themes/hugo-theme-stack/layouts/_default/baseof.html&lt;/code&gt;, I could just create a &lt;code&gt;layouts/_default/baseof.html&lt;/code&gt; in root and modify it.&lt;/li&gt;
+&lt;li&gt;More things could be modified in &lt;code&gt;hugo.toml&lt;/code&gt;, I just show my &lt;code&gt;stack theme&lt;/code&gt; config: &lt;code&gt;[param]&lt;/code&gt; (Erasing some sensitive information):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mainSections&lt;/span&gt; = [ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;posts&amp;#34;&lt;/span&gt; ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;favicon&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/favicon.png&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;dateFormat&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;published&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01/02/2006&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;lastUpdated&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01/02/2006&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sidebar&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;compact&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;subtitle&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Algorithm&amp;amp;Mathematics, Music_Theory&amp;amp;Rhythm_Game, Rationality&amp;amp;Logicism, Peace&amp;amp;Open_Source&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;article&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;math&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;article&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;license&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;default&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Licensed under [CC BY 4.0](https://zayn7lie.ber7.org/posts/misc/license/)&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;comments&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;enabled&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;provider&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cusdis&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;comments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;cusdis&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;host&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://cusdis.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;SENSITIVE_INFORMATION&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;widgets&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;homepage&lt;/span&gt; = [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;search&amp;#34;&lt;/span&gt;},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;categories&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;77&lt;/span&gt;}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tag-cloud&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;77&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;page&lt;/span&gt; = [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;toc&amp;#34;&lt;/span&gt;},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tag-cloud&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;archives&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         
     </channel>
