@@ -429,7 +429,12 @@
     <section class="article-content">
     
     
-    <h2 id="install">Install</h2>
+    <blockquote>
+<p>This is a records of some fixes for some bugs that I encounter, dot files, and the packages that I am using.</p>
+<p>Dot files could be found in <a class="link" href="https://github.com/zayn7lie/dot-files"  target="_blank" rel="noopener"
+    >https://github.com/zayn7lie/dot-files</a></p>
+</blockquote>
+<h2 id="install">Install</h2>
 <p>Easy to install: <code>$ sudo pacman -S hyprland</code></p>
 <h2 id="config">Config</h2>
 <h3 id="basic">Basic</h3>
@@ -448,25 +453,35 @@
 </ul>
 <h4 id="appearance">Appearance</h4>
 <ul>
-<li>Theme Control: <code>qt5ct qt6ct</code> <code>xfce4-settings</code>
+<li>
+<p>Theme Control: <code>qt5ct qt6ct</code> <code>xfce4-settings</code></p>
 <ul>
 <li>Set <code>/etc/environment</code>: <code>QT_QPA_PLATFORMTHEME=qt5ct</code></li>
 </ul>
 </li>
-<li>Screen Lock: <code>swaylock-effect</code>, then bind hotkey using <code>bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect</code> in <code>~/.config/hypr/hyprland.conf</code>
+<li>
+<p>Screen Lock: <code>swaylock-effect</code>, then bind hotkey using <code>bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect</code> in <code>~/.config/hypr/hyprland.conf</code></p>
 <ul>
 <li><code>Swaylock-effect</code> configuration: <code>~/.config/swaylock/config</code></li>
 </ul>
 </li>
-<li>background/Wallpaper: <code>swaybg</code>, then add <code>exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png}</code> to <code>~/.config/hypr/hyprland.conf</code> (<code>?{}</code> is the path to your background picture)</li>
-<li><code>Topbar</code>: <code>waybar</code>, then add <code>exec-once = waybar</code> to <code>~/.config/hypr/hyprland.conf</code>
+<li>
+<p>background/Wallpaper: <code>swaybg</code>, then add <code>exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png}</code> to <code>~/.config/hypr/hyprland.conf</code> (<code>?{}</code> is the path to your background picture)</p>
+</li>
+<li>
+<p><code>Topbar</code>: <code>waybar</code>, then add <code>exec-once = waybar</code> to <code>~/.config/hypr/hyprland.conf</code></p>
 <ul>
 <li><code>waybar</code> configuration file: <code>~/.config/waybar/config</code></li>
 </ul>
 </li>
-<li>Fonts: <code>ttf-ubuntu-font-family</code>, <code>ttf-fira-code</code>, <code>noto-fonts noto-fonts-cjk noto-fonts-emoji</code>, <code>ttf-nerd-fonts-symbols-mono</code></li>
-<li>Icons: <code>papirus-icon-theme</code></li>
-<li>Terminal: <code>kitty</code>
+<li>
+<p>Fonts: <code>ttf-ubuntu-font-family</code>, <code>ttf-fira-code</code>, <code>noto-fonts noto-fonts-cjk noto-fonts-emoji</code>, <code>ttf-nerd-fonts-symbols-mono</code></p>
+</li>
+<li>
+<p>Icons: <code>papirus-icon-theme</code></p>
+</li>
+<li>
+<p>Terminal: <code>kitty</code></p>
 <ul>
 <li><code>~/.config/kitty/kitty.conf</code></li>
 <li><code>font_family      Fira Code</code></li>
@@ -594,8 +609,9 @@
 <ul>
 <li>
 <p>Steam: <code>steam</code></p>
-<p>enable <code>multilib</code>: <code>/etc/pacman.conf</code> - <code>[multilib]</code> - uncomment <code>Include = /etc/pacman.d/mirrorlist</code>
-refresh: <code>$ sudo pacman -Syy</code></p>
+<ul>
+<li>enable <code>multilib</code>: <code>/etc/pacman.conf</code> - <code>[multilib]</code> - uncomment <code>Include = /etc/pacman.d/mirrorlist</code>, then refresh: <code>$ sudo pacman -Syy</code></li>
+</ul>
 </li>
 <li>
 <p><code>osu-lazer</code>AUR</p>

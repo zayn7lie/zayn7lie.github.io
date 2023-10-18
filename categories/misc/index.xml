@@ -770,9 +770,21 @@ $$&lt;/p&gt;
 &lt;li&gt;Pulleys: $W = \vec{F} \cdot \vec{d} = \frac{\vec{F}}{n} \cdot n \vec{d}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;potential-energy-u--or---v--mgz----int_refvecxvecfcdot-dvecl&#34;&gt;Potential Energy $U \ or  \ V = mgz = - \int_{ref}^{\vec{x}}\vec{F}\cdot d\vec{l}$&lt;/h4&gt;
+&lt;p&gt;Taylor series: $f(x_0 + x) = \frac{f(x_0)}{0!}x^0 ( = f(x_0)) + \frac{f^1(x_0)}{1!}x + \frac{f^2(x_0)}{2!}x^2 + \ldots + \frac{f^n(x_0)}{n!}x^n$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Simple Harmonic Oscillator (SHO) Springs - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/li&gt;
+&lt;li&gt;Gravity: $U_G = F_Gx$&lt;/li&gt;
+&lt;li&gt;Simple Harmonic Oscillator (SHO) Springs: $U_S = \frac{k}{2}x^2$ - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$
+$$ F = -kx = ma = m\ddot{x} \rArr \ddot{x} = \frac{k}{m}x \rArr x = \sin{\sqrt{\frac{k}{m}}t} \ or \ \cos{\sqrt{\frac{k}{m}}}, \omega = \sqrt{\frac{k}{m}}
+$$
+$$ \rArr x(t) = a_1\cos{\omega t} + a_2\sin{\omega t} = A\cos(\omega t - \phi) \ (A = \sqrt{a_1^2 + a_2^2}, \phi = \tan^{-1}\frac{a_2}{a_1})
+$$
+&lt;ul&gt;
+&lt;li&gt;Oscillations: two approx - $\sin\theta \approx \theta \ or \cos\theta \approx 1 - \frac{x^2}{2}$ and $\theta \approx \frac{x}{l}$ $\rArr \ddot{x} = -\frac{g}{l}x$&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ U = mg\Delta{z} \approx mgl\frac{\theta^2}{2} = \frac{mg}{2l}x^2 \rArr k = \frac{mg}{l}, \omega^2 = \frac{k}{m} \rArr \omega = \sqrt{\frac{g}{l3}}
+$$&lt;/p&gt;
 &lt;h4 id=&#34;total-energy-epsilon--k_epsilon--u&#34;&gt;Total Energy $\epsilon = K_\epsilon + U$&lt;/h4&gt;
 </description>
         </item>
