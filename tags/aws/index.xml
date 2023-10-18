@@ -85,7 +85,7 @@
 &lt;li&gt;Use &lt;code&gt;OpenSSH&lt;/code&gt; command &lt;code&gt;$ ssh -i PATH_TO_PEM.pem ec2-user@IPv4&lt;/code&gt; to connect to your instance.&lt;/li&gt;
 &lt;li&gt;*Before step 2.4, you might already have Minecraft Server file, you could transfer your file through &lt;code&gt;$ scp -i PATH_TO_PEM.pem -r SOURCE_FILE_OR_FOLDER ec2-user@IPv4:PATH_YOU_WANT_TO_STORE&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;3-install-java--minecraft-server-to-the-instance&#34;&gt;3. Install Java &amp;amp; Minecraft Server to the Instance&lt;/h3&gt;
+&lt;h3 id=&#34;3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance&#34;&gt;3. Install Java &amp;amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install &lt;code&gt;Java 8&lt;/code&gt;: &lt;code&gt;$ sudo yum install java-1.8.0&lt;/code&gt;&lt;/p&gt;

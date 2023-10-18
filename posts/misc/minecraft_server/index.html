@@ -261,7 +261,7 @@ HOW * means Optional Operation
       <ul>
         <li><a href="#1-create-an-aws-ec2-instance">1. Create an AWS EC2 Instance</a></li>
         <li><a href="#2-connect-linux-to-the-instance-with-ssh">2. Connect Linux to the Instance with SSH</a></li>
-        <li><a href="#3-install-java--minecraft-server-to-the-instance">3. Install Java &amp; Minecraft Server to the Instance</a></li>
+        <li><a href="#3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance">3. Install Java &amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)</a></li>
         <li><a href="#4-launch-the-server--commands">4. Launch the Server &amp; Commands</a></li>
         <li><a href="#5-adding-mods-and-worlds">5*. Adding mods and worlds</a></li>
       </ul>
@@ -293,6 +293,10 @@ HOW * means Optional Operation
                 Linux
             </a>
         
+            <a href="/tags/install/" class="font_size_4">
+                install
+            </a>
+        
             <a href="/tags/arch-linux/" class="font_size_3">
                 Arch Linux
             </a>
@@ -301,8 +305,8 @@ HOW * means Optional Operation
                 C&#43;&#43;
             </a>
         
-            <a href="/tags/install/" class="font_size_3">
-                install
+            <a href="/tags/config/" class="font_size_3">
+                config
             </a>
         
             <a href="/tags/ap/" class="font_size_2">
@@ -311,10 +315,6 @@ HOW * means Optional Operation
         
             <a href="/tags/calculus/" class="font_size_2">
                 Calculus
-            </a>
-        
-            <a href="/tags/config/" class="font_size_2">
-                config
             </a>
         
             <a href="/tags/csci/" class="font_size_2">
@@ -518,7 +518,7 @@ HOW * means Optional Operation
 <li>Use <code>OpenSSH</code> command <code>$ ssh -i PATH_TO_PEM.pem ec2-user@IPv4</code> to connect to your instance.</li>
 <li>*Before step 2.4, you might already have Minecraft Server file, you could transfer your file through <code>$ scp -i PATH_TO_PEM.pem -r SOURCE_FILE_OR_FOLDER ec2-user@IPv4:PATH_YOU_WANT_TO_STORE</code></li>
 </ol>
-<h3 id="3-install-java--minecraft-server-to-the-instance">3. Install Java &amp; Minecraft Server to the Instance</h3>
+<h3 id="3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance">3. Install Java &amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)</h3>
 <ol>
 <li>
 <p>Install <code>Java 8</code>: <code>$ sudo yum install java-1.8.0</code></p>

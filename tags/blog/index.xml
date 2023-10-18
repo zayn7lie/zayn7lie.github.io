@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blog on zayn_lie&#39;s blog</title>
+        <link>https://zayn7lie.github.io/tags/blog/</link>
+        <description>Recent content in Blog on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Blog Constructing</title>
+        <link>https://zayn7lie.github.io/posts/misc/blog/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/misc/blog/</guid>
+        <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;WHY: Why do I want to construct my blog site?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Contributing to and being involved in the open-source community&lt;/li&gt;
+&lt;li&gt;Sharing some knowledge with my own understanding way and logic&lt;/li&gt;
+&lt;li&gt;I am a tech-geek who loves to learn some new tech&lt;/li&gt;
+&lt;li&gt;Increasing my popularity to make more people know about me and accept my ideal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;h3 id=&#34;what-is-the-blog-site&#34;&gt;What is the Blog Site&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A unique site that runs your blog, people could directly gain access to your blog through website address or searching engines&lt;/li&gt;
+&lt;li&gt;A place that you could post your own idea, share your thinking, help others, and introduce yourself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34;&gt;What is the difference between constructing own site and use others services of other companies? (WHY I do not want to use other companies service directly?)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;More freedom in configuring your webpage, customizing your appearance, and fewer limitations from companies&lt;/li&gt;
+&lt;li&gt;Cheaper price (even no price) running the whole service (you could choose every service you want)&lt;/li&gt;
+&lt;li&gt;Less worry of your posts will be deleted or modified by the services&amp;rsquo; runner&lt;/li&gt;
+&lt;li&gt;You will learn more things about constructing a blog, like &lt;code&gt;hugo&lt;/code&gt; usage, IP allocating, etc.&lt;/li&gt;
+&lt;li&gt;The site constructed by your own is more appealing to geeks, companies, and educational facilities which means you would gain more opportunities from them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;h3 id=&#34;pre-request&#34;&gt;Pre-request&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A valid GitHub account&lt;/li&gt;
+&lt;li&gt;Already installing &lt;code&gt;Hugo&lt;/code&gt; on your machine: &lt;code&gt;$ sudo pacman -S hugo&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;create-a-new-github-page&#34;&gt;Create a new GitHub Page&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new repo with Repository name &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;, then your repo will look like this: &lt;code&gt;YOUR_GITHUB_NAME/YOUR_GITHUB_NAME.github.io&lt;/code&gt;, e.g. Mine is &lt;code&gt;zayn7lie/zayn7lie.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Connect the repo to your local computer
+&lt;ol&gt;
+&lt;li&gt;You could use &lt;code&gt;HTTPS&lt;/code&gt; method with &lt;code&gt;GitHub authorization&lt;/code&gt; or &lt;code&gt;SSH&lt;/code&gt;, I will show how to connect with &lt;code&gt;HTTPS&lt;/code&gt; method&lt;/li&gt;
+&lt;li&gt;Record your repo&amp;rsquo;s &lt;code&gt;HTTPS&lt;/code&gt;, e.g. &lt;code&gt;https://github.com/zayn7lie/zayn7lie.github.io.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ git clone YOUR_HTTPS&lt;/code&gt; to clone the repo to local or &lt;code&gt;git init .&lt;/code&gt; then &lt;code&gt;git remote add origin YOUR_HTTPS&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
