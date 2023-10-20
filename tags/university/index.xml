@@ -6,7 +6,60 @@
         <description>Recent content in University on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/university/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/university/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Calculus - Series</title>
+        <link>https://zayn7lie.github.io/posts/math/cal-ser/</link>
+        <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/cal-ser/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
+&lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;p&gt;Sequences: A list of number written in a definite order&lt;/p&gt;
+&lt;p&gt;Series&lt;/p&gt;
+&lt;h3 id=&#34;convergence-of-a-series&#34;&gt;Convergence of a Series&lt;/h3&gt;
+&lt;h4 id=&#34;what-what-is-convergence&#34;&gt;WHAT: What is convergence&lt;/h4&gt;
+&lt;p&gt;$$ \forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ l
+$$&lt;/p&gt;
+&lt;p&gt;E.g. $\frac{1}{x}$&lt;/p&gt;
+&lt;p&gt;$$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0
+$$&lt;/p&gt;
+&lt;p&gt;Convergent = Bounded in both sides + Monotonically increasing or decreasing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bounded in both sides&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\forall n, a_n \leq M$ and $\forall n, a_n \geq N$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Monotonically increasing or decreasing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\forall n, a_n &amp;lt; a_{n+1}$ or $\forall n, a_n &amp;gt; a_{n+1}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-continuity-and-convergence-theorem&#34;&gt;HOW: Continuity and convergence theorem&lt;/h4&gt;
+&lt;p&gt;$$ if \ \lim_{n \rarr \infty}a_n = L, \lim_{n \rarr \infty}f(a_n) = f(L) (f \ is \ continuous \ at \ x = L)
+$$&lt;/p&gt;
+&lt;p&gt;$$ (1) \lim_{n \rarr \infty}a_n = L \rArr a_n \ converge \ to \ L
+$$
+$$ (2) f(x): a_n = f(n), if \lim_{x \rarr \infty} = L, a_n \ converge \ to \ L
+$$
+$$ (-1)^n: divergent
+$$
+$$ when \ a_n, b_n \ convergent \rArr \lim{a + / \cdot b} = \lim{a} + \cdot \lim{b}; \lim{a \cdot ^\ c} = \lim{a} \cdot ^\ c
+$$
+$$ a_n \leq b_n \leq c_n \rArr \lim{b_n} = L
+$$&lt;/p&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+</description>
+        </item>
+        <item>
         <title>Calculus - Integral</title>
         <link>https://zayn7lie.github.io/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
@@ -104,6 +157,8 @@ $$
 $$ \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx: \ Domain!
 $$
 $$ \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx
+$$
+$$ \int{\frac{x^5 - x}{x^8 + 1}}dx
 $$&lt;/p&gt;
 &lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
 &lt;ul&gt;

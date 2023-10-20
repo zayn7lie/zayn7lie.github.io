@@ -578,10 +578,10 @@ for any purpose, even commercially.&lt;/li&gt;
         </item>
         <item>
         <title>Physics - Mechanics</title>
-        <link>https://zayn7lie.github.io/posts/misc/physics-01/</link>
+        <link>https://zayn7lie.github.io/posts/misc/physics-1/</link>
         <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/misc/physics-01/</guid>
+        <guid>https://zayn7lie.github.io/posts/misc/physics-1/</guid>
         <description>&lt;h2 id=&#34;motion&#34;&gt;Motion&lt;/h2&gt;
 &lt;p&gt;Relationship of force, mass, motion, energy, momentum&amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;conserved-quantities-conservation--symmetries&#34;&gt;Conserved quantities: Conservation &amp;lt;=&amp;gt; symmetries&lt;/h3&gt;
@@ -757,7 +757,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Integral Required&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;work-w-n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W (N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
+&lt;h3 id=&#34;work-w-w-j--n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W ([W] =J = N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
 &lt;h4 id=&#34;kinetic-energy-k_epsilon--frac12mv2&#34;&gt;Kinetic Energy $K_{\epsilon} = \frac{1}{2}mv^2$&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Work energy theorem: $W = \frac{1}{2}m\Delta{v^2}$&lt;/li&gt;
@@ -773,19 +773,37 @@ $$&lt;/p&gt;
 &lt;p&gt;Taylor series: $f(x_0 + x) = \frac{f(x_0)}{0!}x^0 ( = f(x_0)) + \frac{f^1(x_0)}{1!}x + \frac{f^2(x_0)}{2!}x^2 + \ldots + \frac{f^n(x_0)}{n!}x^n$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Gravity: $U_G = F_Gx$&lt;/li&gt;
-&lt;li&gt;Simple Harmonic Oscillator (SHO) Springs: $U_S = \frac{k}{2}x^2$ - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$
-$$ F = -kx = ma = m\ddot{x} \rArr \ddot{x} = \frac{k}{m}x \rArr x = \sin{\sqrt{\frac{k}{m}}t} \ or \ \cos{\sqrt{\frac{k}{m}}}, \omega = \sqrt{\frac{k}{m}}
+&lt;li&gt;Simple Harmonic Oscillator (SHO) Springs: $U_S = \frac{k}{2}x^2, x = A\cos{(\omega t + \phi)}$
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/p&gt;
+&lt;p&gt;$$ F = -kx = ma = m\ddot{x} \rArr \ddot{x} = \frac{k}{m}x \rArr x = \sin{\sqrt{\frac{k}{m}}t} \ or \ \cos{\sqrt{\frac{k}{m}}}, \omega = \sqrt{\frac{k}{m}}
 $$
 $$ \rArr x(t) = a_1\cos{\omega t} + a_2\sin{\omega t} = A\cos(\omega t - \phi) \ (A = \sqrt{a_1^2 + a_2^2}, \phi = \tan^{-1}\frac{a_2}{a_1})
-$$
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Oscillations: two approx - $\sin\theta \approx \theta \ or \cos\theta \approx 1 - \frac{x^2}{2}$ and $\theta \approx \frac{x}{l}$ $\rArr \ddot{x} = -\frac{g}{l}x$&lt;/p&gt;
+&lt;p&gt;$$ U = mg\Delta{z} \approx mgl\frac{\theta^2}{2} = \frac{mg}{2l}x^2 \rArr k = \frac{mg}{l}, \omega^2 = \frac{k}{m} \rArr \omega = \sqrt{\frac{g}{l}}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. $\phi$ depends on both initial motion and position.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Oscillations: two approx - $\sin\theta \approx \theta \ or \cos\theta \approx 1 - \frac{x^2}{2}$ and $\theta \approx \frac{x}{l}$ $\rArr \ddot{x} = -\frac{g}{l}x$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Energy Conservation&lt;/p&gt;
+&lt;p&gt;$$ E = \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2A^2\sin^2 + \frac{1}{2}KA^2\cos^2 = \frac{1}{2}kA^2
+$$
+$$ \rArr \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2
+$$&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;$$ U = mg\Delta{z} \approx mgl\frac{\theta^2}{2} = \frac{mg}{2l}x^2 \rArr k = \frac{mg}{l}, \omega^2 = \frac{k}{m} \rArr \omega = \sqrt{\frac{g}{l3}}
-$$&lt;/p&gt;
 &lt;h4 id=&#34;total-energy-epsilon--k_epsilon--u&#34;&gt;Total Energy $\epsilon = K_\epsilon + U$&lt;/h4&gt;
+&lt;h3 id=&#34;power-p-p-watt--jsec--n-cdot-m--sec--fracdwdt-w--intvecf-cdot-dvecr-rarr-fracdwdt--vecf-vecv&#34;&gt;Power $P ([P] =Watt = J/sec = N \cdot m / sec) = \frac{dW}{dt}, W = \int{\vec{F} \cdot d\vec{r}} \rArr \frac{dW}{dt} = \vec{F} \vec{v}$&lt;/h3&gt;
 </description>
         </item>
         <item>

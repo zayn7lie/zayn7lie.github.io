@@ -6,7 +6,60 @@
         <description>Recent content in Posts on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Calculus - Series</title>
+        <link>https://zayn7lie.github.io/posts/math/cal-ser/</link>
+        <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/cal-ser/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
+&lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;p&gt;Sequences: A list of number written in a definite order&lt;/p&gt;
+&lt;p&gt;Series&lt;/p&gt;
+&lt;h3 id=&#34;convergence-of-a-series&#34;&gt;Convergence of a Series&lt;/h3&gt;
+&lt;h4 id=&#34;what-what-is-convergence&#34;&gt;WHAT: What is convergence&lt;/h4&gt;
+&lt;p&gt;$$ \forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ l
+$$&lt;/p&gt;
+&lt;p&gt;E.g. $\frac{1}{x}$&lt;/p&gt;
+&lt;p&gt;$$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0
+$$&lt;/p&gt;
+&lt;p&gt;Convergent = Bounded in both sides + Monotonically increasing or decreasing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bounded in both sides&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\forall n, a_n \leq M$ and $\forall n, a_n \geq N$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Monotonically increasing or decreasing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\forall n, a_n &amp;lt; a_{n+1}$ or $\forall n, a_n &amp;gt; a_{n+1}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-continuity-and-convergence-theorem&#34;&gt;HOW: Continuity and convergence theorem&lt;/h4&gt;
+&lt;p&gt;$$ if \ \lim_{n \rarr \infty}a_n = L, \lim_{n \rarr \infty}f(a_n) = f(L) (f \ is \ continuous \ at \ x = L)
+$$&lt;/p&gt;
+&lt;p&gt;$$ (1) \lim_{n \rarr \infty}a_n = L \rArr a_n \ converge \ to \ L
+$$
+$$ (2) f(x): a_n = f(n), if \lim_{x \rarr \infty} = L, a_n \ converge \ to \ L
+$$
+$$ (-1)^n: divergent
+$$
+$$ when \ a_n, b_n \ convergent \rArr \lim{a + / \cdot b} = \lim{a} + \cdot \lim{b}; \lim{a \cdot ^\ c} = \lim{a} \cdot ^\ c
+$$
+$$ a_n \leq b_n \leq c_n \rArr \lim{b_n} = L
+$$&lt;/p&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+</description>
+        </item>
+        <item>
         <title>How to Create a Minecraft Server with AWS</title>
         <link>https://zayn7lie.github.io/posts/misc/minecraft_server/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
@@ -694,6 +747,8 @@ $$
 $$ \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx: \ Domain!
 $$
 $$ \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx
+$$
+$$ \int{\frac{x^5 - x}{x^8 + 1}}dx
 $$&lt;/p&gt;
 &lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
 &lt;ul&gt;
@@ -1113,10 +1168,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Physics - Mechanics</title>
-        <link>https://zayn7lie.github.io/posts/misc/physics-01/</link>
+        <link>https://zayn7lie.github.io/posts/misc/physics-1/</link>
         <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/misc/physics-01/</guid>
+        <guid>https://zayn7lie.github.io/posts/misc/physics-1/</guid>
         <description>&lt;h2 id=&#34;motion&#34;&gt;Motion&lt;/h2&gt;
 &lt;p&gt;Relationship of force, mass, motion, energy, momentum&amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;conserved-quantities-conservation--symmetries&#34;&gt;Conserved quantities: Conservation &amp;lt;=&amp;gt; symmetries&lt;/h3&gt;
@@ -1292,7 +1347,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Integral Required&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;work-w-n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W (N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
+&lt;h3 id=&#34;work-w-w-j--n-cdot-m--intvecf-cdot-dvecr&#34;&gt;Work $W ([W] =J = N \cdot m) = \int{\vec{F} \cdot d\vec{r}}$&lt;/h3&gt;
 &lt;h4 id=&#34;kinetic-energy-k_epsilon--frac12mv2&#34;&gt;Kinetic Energy $K_{\epsilon} = \frac{1}{2}mv^2$&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Work energy theorem: $W = \frac{1}{2}m\Delta{v^2}$&lt;/li&gt;
@@ -1308,19 +1363,37 @@ $$&lt;/p&gt;
 &lt;p&gt;Taylor series: $f(x_0 + x) = \frac{f(x_0)}{0!}x^0 ( = f(x_0)) + \frac{f^1(x_0)}{1!}x + \frac{f^2(x_0)}{2!}x^2 + \ldots + \frac{f^n(x_0)}{n!}x^n$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Gravity: $U_G = F_Gx$&lt;/li&gt;
-&lt;li&gt;Simple Harmonic Oscillator (SHO) Springs: $U_S = \frac{k}{2}x^2$ - Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$
-$$ F = -kx = ma = m\ddot{x} \rArr \ddot{x} = \frac{k}{m}x \rArr x = \sin{\sqrt{\frac{k}{m}}t} \ or \ \cos{\sqrt{\frac{k}{m}}}, \omega = \sqrt{\frac{k}{m}}
+&lt;li&gt;Simple Harmonic Oscillator (SHO) Springs: $U_S = \frac{k}{2}x^2, x = A\cos{(\omega t + \phi)}$
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/p&gt;
+&lt;p&gt;$$ F = -kx = ma = m\ddot{x} \rArr \ddot{x} = \frac{k}{m}x \rArr x = \sin{\sqrt{\frac{k}{m}}t} \ or \ \cos{\sqrt{\frac{k}{m}}}, \omega = \sqrt{\frac{k}{m}}
 $$
 $$ \rArr x(t) = a_1\cos{\omega t} + a_2\sin{\omega t} = A\cos(\omega t - \phi) \ (A = \sqrt{a_1^2 + a_2^2}, \phi = \tan^{-1}\frac{a_2}{a_1})
-$$
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Oscillations: two approx - $\sin\theta \approx \theta \ or \cos\theta \approx 1 - \frac{x^2}{2}$ and $\theta \approx \frac{x}{l}$ $\rArr \ddot{x} = -\frac{g}{l}x$&lt;/p&gt;
+&lt;p&gt;$$ U = mg\Delta{z} \approx mgl\frac{\theta^2}{2} = \frac{mg}{2l}x^2 \rArr k = \frac{mg}{l}, \omega^2 = \frac{k}{m} \rArr \omega = \sqrt{\frac{g}{l}}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note. $\phi$ depends on both initial motion and position.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Oscillations: two approx - $\sin\theta \approx \theta \ or \cos\theta \approx 1 - \frac{x^2}{2}$ and $\theta \approx \frac{x}{l}$ $\rArr \ddot{x} = -\frac{g}{l}x$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Energy Conservation&lt;/p&gt;
+&lt;p&gt;$$ E = \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2A^2\sin^2 + \frac{1}{2}KA^2\cos^2 = \frac{1}{2}kA^2
+$$
+$$ \rArr \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2
+$$&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;$$ U = mg\Delta{z} \approx mgl\frac{\theta^2}{2} = \frac{mg}{2l}x^2 \rArr k = \frac{mg}{l}, \omega^2 = \frac{k}{m} \rArr \omega = \sqrt{\frac{g}{l3}}
-$$&lt;/p&gt;
 &lt;h4 id=&#34;total-energy-epsilon--k_epsilon--u&#34;&gt;Total Energy $\epsilon = K_\epsilon + U$&lt;/h4&gt;
+&lt;h3 id=&#34;power-p-p-watt--jsec--n-cdot-m--sec--fracdwdt-w--intvecf-cdot-dvecr-rarr-fracdwdt--vecf-vecv&#34;&gt;Power $P ([P] =Watt = J/sec = N \cdot m / sec) = \frac{dW}{dt}, W = \int{\vec{F} \cdot d\vec{r}} \rArr \frac{dW}{dt} = \vec{F} \vec{v}$&lt;/h3&gt;
 </description>
         </item>
         <item>

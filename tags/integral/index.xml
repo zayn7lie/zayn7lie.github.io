@@ -104,6 +104,8 @@ $$
 $$ \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx: \ Domain!
 $$
 $$ \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx
+$$
+$$ \int{\frac{x^5 - x}{x^8 + 1}}dx
 $$&lt;/p&gt;
 &lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
 &lt;ul&gt;
