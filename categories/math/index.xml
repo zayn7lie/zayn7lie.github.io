@@ -12,50 +12,133 @@
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/math/cal-ser/</guid>
-        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
-&lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
-&lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
-&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;p&gt;Sequences: A list of number written in a definite order&lt;/p&gt;
-&lt;p&gt;Series&lt;/p&gt;
-&lt;h3 id=&#34;convergence-of-a-series&#34;&gt;Convergence of a Series&lt;/h3&gt;
-&lt;h4 id=&#34;what-what-is-convergence&#34;&gt;WHAT: What is convergence&lt;/h4&gt;
-&lt;p&gt;$$ \forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ l
-$$&lt;/p&gt;
-&lt;p&gt;E.g. $\frac{1}{x}$&lt;/p&gt;
-&lt;p&gt;$$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0
-$$&lt;/p&gt;
-&lt;p&gt;Convergent = Bounded in both sides + Monotonically increasing or decreasing&lt;/p&gt;
+        <description>&lt;p&gt;Sequence: 3 - squeeze theorem, con and con theorem, bounded&lt;/p&gt;
+&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Bounded in both sides&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;$\forall n, a_n \leq M$ and $\forall n, a_n \geq N$&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Monotonically increasing or decreasing&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;$\forall n, a_n &amp;lt; a_{n+1}$ or $\forall n, a_n &amp;gt; a_{n+1}$&lt;/li&gt;
+&lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;h3 id=&#34;sequence&#34;&gt;Sequence&lt;/h3&gt;
+&lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
+&lt;h4 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h4&gt;
+&lt;p&gt;E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Test&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bounded by lines: Bounded in both sides + Monotonically increasing or decreasing (the continuous decreasing of distance) = Convergent&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bounded in both sides: $\forall n, a_n \leq M$ and $\forall n, a_n \geq N$&lt;/li&gt;
+&lt;li&gt;Monotonically increasing or decreasing: $\forall n, a_n &amp;lt; a_{n+1}$ or $\forall n, a_n &amp;gt; a_{n+1}$
 &lt;blockquote&gt;
 &lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-continuity-and-convergence-theorem&#34;&gt;HOW: Continuity and convergence theorem&lt;/h4&gt;
-&lt;p&gt;$$ if \ \lim_{n \rarr \infty}a_n = L, \lim_{n \rarr \infty}f(a_n) = f(L) (f \ is \ continuous \ at \ x = L)
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bounded by functions (Squeeze Theorem): $a_n \leq b_n \leq c_n \rArr \lim{b_n} = L$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Continuity and Convergence theorem: $\lim_{x \rarr L}f \exist, \lim_{n \rarr \infty}a_n = L \rArr \lim_{n \rarr \infty}f$
+&lt;ul&gt;
+&lt;li&gt;$f(x): a_n = f(n), \lim_{x \rarr \infty}f = L \rArr a_n \rarr L$&lt;/li&gt;
+&lt;li&gt;$a_n, b_n, d_n \rarr C \rArr \lim{(a^C + b \cdot d)} = (\lim{a})^C + \lim{b} \cdot \lim{d}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Arithmetic sequence&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Geometric progression&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;series&#34;&gt;Series&lt;/h3&gt;
+&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Intergral of a Sequence&amp;rdquo;&lt;/p&gt;
+&lt;h4 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Test for Series&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Direct Test
+&lt;ul&gt;
+&lt;li&gt;Overall elements (Integral Test): $f(x)$ is continuous and $a_n = f(n)$, $\sum a_n \rarr/\nrightarrow C \lrArr \int_1^\infty f(x)dx \rarr/\nrightarrow C$&lt;/li&gt;
+&lt;li&gt;Adjacent elements (Ratio test): $\lim_{n \rarr \infty}|\frac{a_{n + 1}}{a_n}| = l &amp;lt; 1 \rArr$ absolute converge (prove using geometric series) (&amp;gt; 1 - diverge, = 1 - inconclusive)&lt;/li&gt;
+&lt;li&gt;Single elements (Root Test): $\lim_{n \rarr \infty}\sqrt[n]{|a_n|}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Non-direct Test: Compare with another
+&lt;ul&gt;
+&lt;li&gt;Limit Comparison test: $\sum a_n, \sum b_n &amp;gt; 0, \lim_{n \rarr \infty}\frac{a_n}{b_n} = C \rArr \sum a_n, \sum b_n$ both di/converge.&lt;/li&gt;
+&lt;li&gt;Comparison test(&amp;ldquo;Squeeze Theorem&amp;rdquo;): $\sum a_n, \sum b_n &amp;gt; 0, \sum b_n$ converges and $a_n \leq b_n$ $\rArr$ $\sum a_n$ converges, vice versa (con to di, $\leq$ to $\geq$).
+&lt;ul&gt;
+&lt;li&gt;Absolutely converge $\sum|a_n|$ is converges (Conditionally = the condition is not plug in absolute value): $0 \leq \sum a_n + \sum|a_n| \leq 2 \sum|a_n|$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sum a_n, \sum b_n$ converge, $\sum a_n + \sum b_n = \sum (a_n + b_n)$ and $\sum Ca_n = C \sum a_n$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The relationship of Sequence and Series&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;series $\sum_{n = 1}^\infty$ converges $\rArr$ $\lim_{n \rarr \infty}a_n = 0$, or series $\sum_{n = 1}^\infty$ diverges $\rArr$ $\lim_{n \rarr \infty}a_n \neq 0$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minus prove: $ S_{n} - S_{n - 1}$&lt;/li&gt;
+&lt;li&gt;integral prove&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\lim_{n \rarr \infty}a_n = 0$ $\nRightarrow$ series $\sum_{n = 1}^\infty$ converges, e.g. $\sum_{i = 1}^\infty\frac{1}{i} &amp;gt; \ln{(n + 1)}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Geometric Series&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternating Series $\sum(-1)^{n - 1} a_n$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$a_{n + 1} \leq a_n, \lim_{n \rarr \infty}a_n = 0 \rArr converge$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ increase + bounded
+$$
+$$ S_{2n} = (a_1  - a_2) + (a_3 - a_4) + \ldots +(a_{2n - 1} - a_{2n})
+$$
+$$ = a_1 - (a_2 - a_3) - \ldots - a_{2n} &amp;lt; a_1
+$$
+$$ S_{2n + 1}, S_{2n} \ both \ converges
 $$&lt;/p&gt;
-&lt;p&gt;$$ (1) \lim_{n \rarr \infty}a_n = L \rArr a_n \ converge \ to \ L
-$$
-$$ (2) f(x): a_n = f(n), if \lim_{x \rarr \infty} = L, a_n \ converge \ to \ L
-$$
-$$ (-1)^n: divergent
-$$
-$$ when \ a_n, b_n \ convergent \rArr \lim{a + / \cdot b} = \lim{a} + \cdot \lim{b}; \lim{a \cdot ^\ c} = \lim{a} \cdot ^\ c
-$$
-$$ a_n \leq b_n \leq c_n \rArr \lim{b_n} = L
-$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alternating Series Estimation Theorem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
 </description>
         </item>
@@ -115,19 +198,7 @@ $$
 $$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
 $$&lt;/p&gt;
 &lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;HOW: How to integral - Technique&lt;/h2&gt;
-&lt;h3 id=&#34;why-why-we-use-techniques-to-solve-the-integral-problems&#34;&gt;WHY: Why we use techniques to solve the integral problems?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The function cannot be antiderivatived directly.&lt;/li&gt;
-&lt;li&gt;The process of original function to integral is too challenging.&lt;/li&gt;
-&lt;li&gt;Direct integral cannot give us the answer.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;what-what-is-the-techniques-of-integral&#34;&gt;WHAT: What is the techniques of integral&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;It could turn one function which cannot or is challenging to integral to a simple function&lt;/li&gt;
-&lt;li&gt;The tricks that we can use in the process of integral.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-use-the-techniques-to-integral&#34;&gt;HOW: How to use the techniques to integral&lt;/h3&gt;
-&lt;h4 id=&#34;if-the-function-combines-with-its-derivative-substitution&#34;&gt;If the function combines with its derivative: Substitution&lt;/h4&gt;
+&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;Substitution: If the function combines with its derivative&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Rules: $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -151,23 +222,19 @@ $$&lt;/p&gt;
 $$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;E.g.
-$$ \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}dx: \ Be \ brave!
-$$
-$$ \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx: \ Domain!
-$$
-$$ \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx
-$$
-$$ \int{\frac{x^5 - x}{x^8 + 1}}dx
+&lt;p&gt;Exercise:&lt;/p&gt;
+&lt;p&gt;$$ \int{\frac{x}{\sqrt{1 - x^2}}}, \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}dx, \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx, \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx, \int{\frac{x^5 - x}{x^8 + 1}}dx
 $$&lt;/p&gt;
-&lt;h4 id=&#34;if-the-function-combines-with-a-simple-functions-derivative-int-by-part&#34;&gt;If the function combines with a simple function&amp;rsquo;s derivative: Int by part&lt;/h4&gt;
+&lt;h3 id=&#34;integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34;&gt;Integration by part: If the function combines with a simple function&amp;rsquo;s derivative&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Reduce Power: $\int{x \cdot \sin x}dx$&lt;/li&gt;
-&lt;li&gt;Eliminate complex function: $\int{\ln x}dx$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;E.P. Find every function integral then int by part: $\int{\arcsin x \cdot \ln x}dx$&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;*$\int{\frac{1}{\tan^n{x}}}dx$
+&lt;li&gt;
+&lt;p&gt;Reduce Power: $\int{x \cdot \sin x}dx$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eliminate complex function: $\int{\ln x}dx$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;*$\int{\frac{1}{\tan^n{x}}}dx$
 $$ \sec^2 - \tan^2 = 1 \rArr \int{\frac{\sec^2 - \tan^2}{\tan^n{x}}}dx = \int{\frac{\sec^2{x}}{\tan^n{x}}}dx - \int{\frac{1}{\tan^{n - 2}{x}}}dx
 $$
 $$ \rArr \int{\frac{1}{u^n}}du - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}dx = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}dx + \int{\frac{1}{\tan^{n - 4}{x}}}dx
@@ -175,13 +242,13 @@ $$
 $$ = \frac{1}{(1 - n)u^{n - 1}} - \frac{1}{(3 - n)u^{n - 3}} + \frac{1}{(5 - n)u^{n - 5}} - \frac{1}{(7 - n)u^{n - 7}} + \ldots (\pm \int{\frac{1}{\tan{x}}}dx) + C
 $$
 $$ \rArr \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \rArr \int{\frac{1}{v}}dv = \ln{|v|} + C
-$$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;E.g.&lt;/p&gt;
-&lt;p&gt;$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2})
 $$&lt;/p&gt;
-&lt;h3 id=&#34;other-techniques-not-belongs-to-integral&#34;&gt;Other techniques (Not belongs to Integral)&lt;/h3&gt;
-&lt;h4 id=&#34;partial-fractions&#34;&gt;Partial Fractions&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exercise:&lt;/p&gt;
+&lt;p&gt;$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}dx
+$$&lt;/p&gt;
+&lt;h3 id=&#34;eg-partial-fractions&#34;&gt;E.g. Partial Fractions&lt;/h3&gt;
 &lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
 $$
 $$ D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
@@ -221,15 +288,15 @@ $$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x
 $$
 $$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}dx + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
 $$&lt;/p&gt;
-&lt;p&gt;E.g.
-$$ \int{ln{(x^2 - x + 3)}}dx
-$$
-$$ \int{\sec{x}}dx
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \int{ln{(x^2 - x + 3)}}dx, \int{\sec{x}}dx
 $$&lt;/p&gt;
-&lt;h4 id=&#34;approx-to-limit-improper-integral&#34;&gt;Approx to limit: Improper Integral&lt;/h4&gt;
-&lt;p&gt;For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Notice. Approx to limit - Improper Integral:
+For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)}dx = \lim_{t \rarr b}\int_a^t{f(x)}dx
 $$&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality&lt;/h2&gt;
 &lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations&lt;/h3&gt;
 &lt;p&gt;$$ Informal: \frac{dy}{dx} = \frac{x}{y} \rArr ydy = xdx \rArr \int{y}dy = \int{x}dx
@@ -250,13 +317,14 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \rArr \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \rArr x\frac{dy}{dx} = -x
 $$&lt;/p&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = aN^2\ln(bN)
+$$&lt;/p&gt;
 &lt;h3 id=&#34;arc-length&#34;&gt;Arc Length&lt;/h3&gt;
 &lt;p&gt;$$ L = \lim_{x_2 \rarr x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
-$$
-$$ * \int{\sqrt{(x^2 + 1)^2 + b}}dx
 $$&lt;/p&gt;
-&lt;p&gt;E.g.&lt;/p&gt;
-&lt;p&gt;$$ Find \ curve \ length \ of \ y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ Find \ curve \ length \ of \ y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4, * \int{\sqrt{(x^2 + 1)^2 + b}}dx
 $$&lt;/p&gt;
 &lt;h3 id=&#34;areas&#34;&gt;Areas&lt;/h3&gt;
 &lt;p&gt;$$ A = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy
@@ -328,7 +396,7 @@ $$
 g(x) = \lim_{h \rarr 0}\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}
 $$&lt;/p&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;h3 id=&#34;how-to-differenciate&#34;&gt;How to differenciate?&lt;/h3&gt;
+&lt;h3 id=&#34;how-to-differentiate&#34;&gt;How to differentiate?&lt;/h3&gt;
 &lt;h4 id=&#34;basic-rules&#34;&gt;Basic rules&lt;/h4&gt;
 &lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \ or \ (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
 $$

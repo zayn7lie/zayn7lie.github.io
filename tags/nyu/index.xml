@@ -298,15 +298,28 @@
 &lt;p&gt;&lt;code&gt;&amp;lt;?&amp;gt;&lt;/code&gt;: we need not actually type is the same.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;stacke&#34;&gt;&lt;code&gt;Stack&amp;lt;E&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;stacke--queueeinterface&#34;&gt;&lt;code&gt;Stack&amp;lt;E&amp;gt;&lt;/code&gt; &amp;amp; &lt;code&gt;Queue&amp;lt;E&amp;gt;&lt;/code&gt;(interface)&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;LinkedList&lt;/code&gt;: top at the head: &lt;code&gt;O(1)&lt;/code&gt; (pop), top at the tail: &lt;code&gt;O(N)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;queuee-interface&#34;&gt;&lt;code&gt;Queue&amp;lt;E&amp;gt;&lt;/code&gt;: interface&lt;/h4&gt;
 &lt;p&gt;$$ Negative \ Modulo: -6 = (8 - 6) \equiv 2 \pmod{8}
 $$&lt;/p&gt;
-&lt;h2 id=&#34;ques&#34;&gt;Ques&lt;/h2&gt;
+&lt;h4 id=&#34;binary-search-tree&#34;&gt;&lt;code&gt;Binary Search Tree&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Recursive: base case first + recursive call
+&lt;ul&gt;
+&lt;li&gt;Memory: stack frame + 1&lt;/li&gt;
+&lt;li&gt;Indirect recursion: A -&amp;gt; B -&amp;gt; A -&amp;gt; &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Recursive structure &amp;amp; Recursive function
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;LinkedList&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Check the initial situation (empty, null, etc): create a new function that check the condition containing recursive function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

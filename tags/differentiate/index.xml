@@ -61,7 +61,7 @@ $$
 g(x) = \lim_{h \rarr 0}\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}
 $$&lt;/p&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;h3 id=&#34;how-to-differenciate&#34;&gt;How to differenciate?&lt;/h3&gt;
+&lt;h3 id=&#34;how-to-differentiate&#34;&gt;How to differentiate?&lt;/h3&gt;
 &lt;h4 id=&#34;basic-rules&#34;&gt;Basic rules&lt;/h4&gt;
 &lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \ or \ (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
 $$

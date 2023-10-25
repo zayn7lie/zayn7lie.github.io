@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.
-Making Linear to Discrete.
-WHAT Sequences: A list of number written in a definite order
-Series
-Convergence of a Series WHAT: What is convergence $$ \forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ l $$
-E.g. $\frac{1}{x}$
-$$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0 $$'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Sequence: 3 - squeeze theorem, con and con theorem, bounded
+WHY Making Linear to Discrete.
+A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.
+WHAT Sequence Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$
+Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$ E.'>
 <title>Calculus - Series</title>
 
 <link rel='canonical' href='https://zayn7lie.github.io/posts/math/cal-ser/'>
 
 <link rel="stylesheet" href="/scss/style.min.21dd04c9bdb63d4e8435c2d96c8458fb0397cd7ac2b2f69521767054761cf0ca.css"><meta property='og:title' content='Calculus - Series'>
-<meta property='og:description' content='WHY A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.
-Making Linear to Discrete.
-WHAT Sequences: A list of number written in a definite order
-Series
-Convergence of a Series WHAT: What is convergence $$ \forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ l $$
-E.g. $\frac{1}{x}$
-$$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0 $$'>
+<meta property='og:description' content='Sequence: 3 - squeeze theorem, con and con theorem, bounded
+WHY Making Linear to Discrete.
+A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.
+WHAT Sequence Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$
+Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$ E.'>
 <meta property='og:url' content='https://zayn7lie.github.io/posts/math/cal-ser/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='AP' /><meta property='article:tag' content='University' /><meta property='article:tag' content='Sequense' /><meta property='article:tag' content='Series' /><meta property='article:published_time' content='2023-10-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-19T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus - Series">
-<meta name="twitter:description" content="WHY A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.
-Making Linear to Discrete.
-WHAT Sequences: A list of number written in a definite order
-Series
-Convergence of a Series WHAT: What is convergence $$ \forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ l $$
-E.g. $\frac{1}{x}$
-$$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0 $$">
+<meta name="twitter:description" content="Sequence: 3 - squeeze theorem, con and con theorem, bounded
+WHY Making Linear to Discrete.
+A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.
+WHAT Sequence Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$
+Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$ E.">
     <link rel="shortcut icon" href="/favicon.png" />
 
         
@@ -258,7 +252,8 @@ $$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; 
     <li><a href="#why">WHY</a></li>
     <li><a href="#what">WHAT</a>
       <ul>
-        <li><a href="#convergence-of-a-series">Convergence of a Series</a></li>
+        <li><a href="#sequence">Sequence</a></li>
+        <li><a href="#series">Series</a></li>
       </ul>
     </li>
     <li><a href="#how">HOW</a></li>
@@ -418,7 +413,7 @@ $$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; 
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    3 minute read
                 </time>
             </div>
         
@@ -433,50 +428,133 @@ $$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; 
     <section class="article-content">
     
     
-    <h2 id="why">WHY</h2>
-<p>A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.</p>
-<p>Making Linear to Discrete.</p>
-<h2 id="what">WHAT</h2>
-<p>Sequences: A list of number written in a definite order</p>
-<p>Series</p>
-<h3 id="convergence-of-a-series">Convergence of a Series</h3>
-<h4 id="what-what-is-convergence">WHAT: What is convergence</h4>
-<p>$$ \forall \epsilon, \exist N, \forall n &gt; N, |a_n - l| &lt; \epsilon \rArr a_n \ convergent \ to \ l
-$$</p>
-<p>E.g. $\frac{1}{x}$</p>
-<p>$$ for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &gt; N, |a_n - 0| &lt; \epsilon \rArr a_n \ convergent \ to \ 0
-$$</p>
-<p>Convergent = Bounded in both sides + Monotonically increasing or decreasing</p>
+    <p>Sequence: 3 - squeeze theorem, con and con theorem, bounded</p>
+<h2 id="why">WHY</h2>
 <ul>
 <li>
-<p>Bounded in both sides</p>
-<ul>
-<li>$\forall n, a_n \leq M$ and $\forall n, a_n \geq N$</li>
-</ul>
+<p>Making Linear to Discrete.</p>
 </li>
 <li>
-<p>Monotonically increasing or decreasing</p>
-<ul>
-<li>$\forall n, a_n &lt; a_{n+1}$ or $\forall n, a_n &gt; a_{n+1}$</li>
+<p>A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.</p>
+</li>
 </ul>
+<h2 id="what">WHAT</h2>
+<h3 id="sequence">Sequence</h3>
+<p>Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$</p>
+<h4 id="convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l">Convergence: $\forall \epsilon, \exist N, \forall n &gt; N, |a_n - l| &lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$</h4>
+<p>E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &gt; N, |a_n - 0| &lt; \epsilon \rArr a_n \ convergent \ to \ 0$</p>
+<ul>
+<li>
+<p>Test</p>
+<ul>
+<li>
+<p>Bounded by lines: Bounded in both sides + Monotonically increasing or decreasing (the continuous decreasing of distance) = Convergent</p>
+<ul>
+<li>Bounded in both sides: $\forall n, a_n \leq M$ and $\forall n, a_n \geq N$</li>
+<li>Monotonically increasing or decreasing: $\forall n, a_n &lt; a_{n+1}$ or $\forall n, a_n &gt; a_{n+1}$
 <blockquote>
 <p>Note. Identifying between decreasing and non-increasing</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="how-continuity-and-convergence-theorem">HOW: Continuity and convergence theorem</h4>
-<p>$$ if \ \lim_{n \rarr \infty}a_n = L, \lim_{n \rarr \infty}f(a_n) = f(L) (f \ is \ continuous \ at \ x = L)
+</li>
+<li>
+<p>Bounded by functions (Squeeze Theorem): $a_n \leq b_n \leq c_n \rArr \lim{b_n} = L$</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Usage</p>
+<ul>
+<li>Continuity and Convergence theorem: $\lim_{x \rarr L}f \exist, \lim_{n \rarr \infty}a_n = L \rArr \lim_{n \rarr \infty}f$
+<ul>
+<li>$f(x): a_n = f(n), \lim_{x \rarr \infty}f = L \rArr a_n \rarr L$</li>
+<li>$a_n, b_n, d_n \rarr C \rArr \lim{(a^C + b \cdot d)} = (\lim{a})^C + \lim{b} \cdot \lim{d}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="arbitrary-sequence">Arbitrary Sequence</h4>
+<ul>
+<li>
+<p>Arithmetic sequence</p>
+</li>
+<li>
+<p>Geometric progression</p>
+</li>
+</ul>
+<h3 id="series">Series</h3>
+<p>Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &ldquo;The Intergral of a Sequence&rdquo;</p>
+<h4 id="convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges">Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges</h4>
+<ul>
+<li>
+<p>Test for Series</p>
+<ul>
+<li>Direct Test
+<ul>
+<li>Overall elements (Integral Test): $f(x)$ is continuous and $a_n = f(n)$, $\sum a_n \rarr/\nrightarrow C \lrArr \int_1^\infty f(x)dx \rarr/\nrightarrow C$</li>
+<li>Adjacent elements (Ratio test): $\lim_{n \rarr \infty}|\frac{a_{n + 1}}{a_n}| = l &lt; 1 \rArr$ absolute converge (prove using geometric series) (&gt; 1 - diverge, = 1 - inconclusive)</li>
+<li>Single elements (Root Test): $\lim_{n \rarr \infty}\sqrt[n]{|a_n|}$</li>
+</ul>
+</li>
+<li>Non-direct Test: Compare with another
+<ul>
+<li>Limit Comparison test: $\sum a_n, \sum b_n &gt; 0, \lim_{n \rarr \infty}\frac{a_n}{b_n} = C \rArr \sum a_n, \sum b_n$ both di/converge.</li>
+<li>Comparison test(&ldquo;Squeeze Theorem&rdquo;): $\sum a_n, \sum b_n &gt; 0, \sum b_n$ converges and $a_n \leq b_n$ $\rArr$ $\sum a_n$ converges, vice versa (con to di, $\leq$ to $\geq$).
+<ul>
+<li>Absolutely converge $\sum|a_n|$ is converges (Conditionally = the condition is not plug in absolute value): $0 \leq \sum a_n + \sum|a_n| \leq 2 \sum|a_n|$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Usage</p>
+<ul>
+<li>$\sum a_n, \sum b_n$ converge, $\sum a_n + \sum b_n = \sum (a_n + b_n)$ and $\sum Ca_n = C \sum a_n$</li>
+</ul>
+</li>
+<li>
+<p>The relationship of Sequence and Series</p>
+<ul>
+<li>
+<p>series $\sum_{n = 1}^\infty$ converges $\rArr$ $\lim_{n \rarr \infty}a_n = 0$, or series $\sum_{n = 1}^\infty$ diverges $\rArr$ $\lim_{n \rarr \infty}a_n \neq 0$</p>
+<ul>
+<li>minus prove: $ S_{n} - S_{n - 1}$</li>
+<li>integral prove</li>
+</ul>
+</li>
+<li>
+<p>$\lim_{n \rarr \infty}a_n = 0$ $\nRightarrow$ series $\sum_{n = 1}^\infty$ converges, e.g. $\sum_{i = 1}^\infty\frac{1}{i} &gt; \ln{(n + 1)}$</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="arbitrary-series">Arbitrary Series</h4>
+<ul>
+<li>
+<p>Geometric Series</p>
+</li>
+<li>
+<p>Alternating Series $\sum(-1)^{n - 1} a_n$</p>
+<ul>
+<li>$a_{n + 1} \leq a_n, \lim_{n \rarr \infty}a_n = 0 \rArr converge$</li>
+</ul>
+<p>$$ increase + bounded
+$$
+$$ S_{2n} = (a_1  - a_2) + (a_3 - a_4) + \ldots +(a_{2n - 1} - a_{2n})
+$$
+$$ = a_1 - (a_2 - a_3) - \ldots - a_{2n} &lt; a_1
+$$
+$$ S_{2n + 1}, S_{2n} \ both \ converges
 $$</p>
-<p>$$ (1) \lim_{n \rarr \infty}a_n = L \rArr a_n \ converge \ to \ L
-$$
-$$ (2) f(x): a_n = f(n), if \lim_{x \rarr \infty} = L, a_n \ converge \ to \ L
-$$
-$$ (-1)^n: divergent
-$$
-$$ when \ a_n, b_n \ convergent \rArr \lim{a + / \cdot b} = \lim{a} + \cdot \lim{b}; \lim{a \cdot ^\ c} = \lim{a} \cdot ^\ c
-$$
-$$ a_n \leq b_n \leq c_n \rArr \lim{b_n} = L
-$$</p>
+<ul>
+<li>Alternating Series Estimation Theorem</li>
+</ul>
+</li>
+</ul>
 <h2 id="how">HOW</h2>
 
 </section>
