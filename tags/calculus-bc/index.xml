@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Calculus BC on zayn_lie&#39;s blog</title>
+        <link>https://zayn7lie.github.io/tags/calculus-bc/</link>
+        <description>Recent content in Calculus BC on zayn_lie&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/calculus-bc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Calculus - Series</title>
+        <link>https://zayn7lie.github.io/posts/math/cal-ser/</link>
+        <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/cal-ser/</guid>
+        <description>&lt;p&gt;Sequence: 3 - squeeze theorem, con and con theorem, bounded&lt;/p&gt;
+&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
+&lt;h3 id=&#34;sequence&#34;&gt;Sequence&lt;/h3&gt;
+&lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
+&lt;h4 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h4&gt;
+&lt;p&gt;E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Test&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bounded by lines: Bounded in both sides + Monotonically increasing or decreasing (the continuous decreasing of distance) = Convergent&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bounded in both sides: $\forall n, a_n \leq M$ and $\forall n, a_n \geq N$&lt;/li&gt;
+&lt;li&gt;Monotonically increasing or decreasing: $\forall n, a_n &amp;lt; a_{n+1}$ or $\forall n, a_n &amp;gt; a_{n+1}$
+&lt;blockquote&gt;
+&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bounded by functions (Squeeze Theorem): $a_n \leq b_n \leq c_n \rArr \lim{b_n} = L$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Continuity and Convergence theorem: $\lim_{x \rarr L}f \exist, \lim_{n \rarr \infty}a_n = L \rArr \lim_{n \rarr \infty}f$
+&lt;ul&gt;
+&lt;li&gt;$f(x): a_n = f(n), \lim_{x \rarr \infty}f = L \rArr a_n \rarr L$&lt;/li&gt;
+&lt;li&gt;$a_n, b_n, d_n \rarr C \rArr \lim{(a^C + b \cdot d)} = (\lim{a})^C + \lim{b} \cdot \lim{d}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Arithmetic sequence&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Geometric progression&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;series&#34;&gt;Series&lt;/h3&gt;
+&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Intergral of a Sequence&amp;rdquo;&lt;/p&gt;
+&lt;h4 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Test for Series&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Direct Test
+&lt;ul&gt;
+&lt;li&gt;Overall elements (Integral Test): $f(x)$ is continuous and $a_n = f(n)$, $\sum a_n \rarr/\nrightarrow C \lrArr \int_1^\infty f(x)dx \rarr/\nrightarrow C$&lt;/li&gt;
+&lt;li&gt;Adjacent elements (Ratio test): $\lim_{n \rarr \infty}|\frac{a_{n + 1}}{a_n}| = l &amp;lt; 1 \rArr$ absolute converge (prove using geometric series) (&amp;gt; 1 - diverge, = 1 - inconclusive)&lt;/li&gt;
+&lt;li&gt;Single elements (Root Test): $\lim_{n \rarr \infty}\sqrt[n]{|a_n|}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Non-direct Test: Compare with another
+&lt;ul&gt;
+&lt;li&gt;Limit Comparison test: $\sum a_n, \sum b_n &amp;gt; 0, \lim_{n \rarr \infty}\frac{a_n}{b_n} = C \rArr \sum a_n, \sum b_n$ both di/converge.&lt;/li&gt;
+&lt;li&gt;Comparison test(&amp;ldquo;Squeeze Theorem&amp;rdquo;): $\sum a_n, \sum b_n &amp;gt; 0, \sum b_n$ converges and $a_n \leq b_n$ $\rArr$ $\sum a_n$ converges, vice versa (con to di, $\leq$ to $\geq$).
+&lt;ul&gt;
+&lt;li&gt;Absolutely converge $\sum|a_n|$ is converges (Conditionally = the condition is not plug in absolute value): $0 \leq \sum a_n + \sum|a_n| \leq 2 \sum|a_n|$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sum a_n, \sum b_n$ converge, $\sum a_n + \sum b_n = \sum (a_n + b_n)$ and $\sum Ca_n = C \sum a_n$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The relationship of Sequence and Series&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;series $\sum_{n = 1}^\infty$ converges $\rArr$ $\lim_{n \rarr \infty}a_n = 0$, or series $\sum_{n = 1}^\infty$ diverges $\rArr$ $\lim_{n \rarr \infty}a_n \neq 0$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minus prove: $ S_{n} - S_{n - 1}$&lt;/li&gt;
+&lt;li&gt;integral prove&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\lim_{n \rarr \infty}a_n = 0$ $\nRightarrow$ series $\sum_{n = 1}^\infty$ converges, e.g. $\sum_{i = 1}^\infty\frac{1}{i} &amp;gt; \ln{(n + 1)}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Geometric Series&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternating Series $\sum(-1)^{n - 1} a_n$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$a_{n + 1} \leq a_n, \lim_{n \rarr \infty}a_n = 0 \rArr \sum(-1)^{n - 1} a_n \rarr C$ (decrease + bounded): $S_{2n} = (a_1  - a_2) + (a_3 - a_4) + \ldots +(a_{2n - 1} - a_{2n}) &amp;gt; 0; S_{2n} = a_1 - (a_2 - a_3) - \ldots - a_{2n} &amp;lt; a_1$, then same as $S_{2n + 1} \rArr$ whether n is odd or even, series converges.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternating Series Estimation Theorem: As the same way as above, we also could derive that $S_{2n} = (a_1  - a_2) + (a_3 - a_4) + \ldots +(a_{2n - 1} - a_{2n}) &amp;gt; (a_1  - a_2) + (a_3 - a_4) + \ldots; S_{2n} = S_{2n} = a_1 - (a_2 - a_3) - \ldots - a_{2n} &amp;lt; a_1 - (a_2 - a_3) - \ldots$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+</description>
+        </item>
+        <item>
+        <title>Calculus - Integral</title>
+        <link>https://zayn7lie.github.io/posts/math/cal-int/</link>
+        <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/cal-int/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;WHY: Why do we want to find out the integral&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Find out the area&lt;/li&gt;
+&lt;li&gt;Find out some physics parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;&lt;/h2&gt;
+&lt;h3 id=&#34;approx-integral&#34;&gt;Approx. Integral&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Equaling space is not necessary&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
+&lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rarr \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
+$$&lt;/p&gt;
+&lt;p&gt;E.g.
+$$ 1. prove\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$
+$$ 2. prove\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$&lt;/li&gt;
+&lt;li&gt;Trapezoidal = (left + right)/2&lt;/li&gt;
+&lt;li&gt;Simpson&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ y = \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)}y_0 + \frac{(x - x_2)(x - x_0)}{(x_1 - x_2)(x_1 - x_0)}y_1 + \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)}y_2
+$$
+$$ if \ (-h, y_0) (0, y_1) (h, y_2) \rArr \int_{-h}^{h}ydx = \frac{h}{3}(y_0 + 4y_1 + y_2)
+$$
+$$ \rArr S = \frac{h}{3}((y_0 + 4y_1 + y_2) + (y_2 + 4y_3 + y_4) + \ldots + (y_{n - 2} + 4y_{n - 1} + y_n)) (n \ is \ even)
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Error Bond&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$
+Riemann - \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;em&gt;{max}(x)|) \newline
+Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;/em&gt;{max}(x)|) \newline
+Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
+$$&lt;/p&gt;
+&lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
+&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \rArr \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+$$
+$$ Taking \ derivative \ in \ both \ sides: \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
+$$
+$$ F&amp;rsquo;(x) = f(x), F(C) \ is \ constant \rArr F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) - 0 = f(g(x)) \cdot g&amp;rsquo;(x)
+$$
+$$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
+$$&lt;/p&gt;
+&lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;HOW: How to integral - Technique&lt;/h2&gt;
+&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;Substitution: If the function combines with its derivative&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Rules: $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{dx}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ u = g(x), du = g&amp;rsquo;(x) dx \rArr \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{\frac{1}{x(x^2 + 1)}}{dx}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ u = \arctan{x}, du = \frac{1}{x^2 + 1}dx, x = \tan{u} \rArr \int{\frac{1}{\tan{u}}}{du}
+$$
+$$ v = \sin{u}, dv = \cos{u}du \rArr \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{dx}$
+$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exercise:&lt;/p&gt;
+&lt;p&gt;$$ \int{\frac{x}{\sqrt{1 - x^2}}}, \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}dx, \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx, \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx, \int{\frac{x^5 - x}{x^8 + 1}}dx
+$$&lt;/p&gt;
+&lt;h3 id=&#34;integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34;&gt;Integration by part: If the function combines with a simple function&amp;rsquo;s derivative&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reduce Power: $\int{x \cdot \sin x}dx$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eliminate complex function: $\int{\ln x}dx$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;*$\int{\frac{1}{\tan^n{x}}}dx$
+$$ \sec^2 - \tan^2 = 1 \rArr \int{\frac{\sec^2 - \tan^2}{\tan^n{x}}}dx = \int{\frac{\sec^2{x}}{\tan^n{x}}}dx - \int{\frac{1}{\tan^{n - 2}{x}}}dx
+$$
+$$ \rArr \int{\frac{1}{u^n}}du - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}dx = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}dx + \int{\frac{1}{\tan^{n - 4}{x}}}dx
+$$
+$$ = \frac{1}{(1 - n)u^{n - 1}} - \frac{1}{(3 - n)u^{n - 3}} + \frac{1}{(5 - n)u^{n - 5}} - \frac{1}{(7 - n)u^{n - 7}} + \ldots (\pm \int{\frac{1}{\tan{x}}}dx) + C
+$$
+$$ \rArr \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \rArr \int{\frac{1}{v}}dv = \ln{|v|} + C
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exercise:&lt;/p&gt;
+&lt;p&gt;$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}dx
+$$&lt;/p&gt;
+&lt;h3 id=&#34;eg-partial-fractions&#34;&gt;E.g. Partial Fractions&lt;/h3&gt;
+&lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
+$$
+$$ D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
+$$
+$$ \rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+$$&lt;/p&gt;
+&lt;p&gt;then Integral:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{\frac{c}{(ax + b)^n}}dx$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \int{\frac{c}{(ax + b)^n}}dx = \frac{c}{a} \cdot \frac{1}{(1 - n)(ax+b)^{n-1}} + C \ or \ = \frac{c}{a} \cdot \ln{|ax + b|} + C \ when \ n = 1
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx = \int{\frac{gx + h}{(a(x + \frac{b}{2a})^2 + c - \frac{b^2}{4a})^n}}dx, u = x + \frac{b}{2a} \rArr \int{\frac{iu + j}{(au^2 + k^2)^n}}du
+$$
+$$ (1)
+$$
+$$ \int{\frac{iu}{(au^2+k^2)^n}}du, v = au^2 + k^2, \frac{1}{2a}dv = udu
+$$
+$$ \rArr \frac{i}{2a}\int{\frac{1}{v^n}}dv \rArr \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ when \ n = 1
+$$
+$$ (2)
+$$
+$$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
+$$
+$$ *when \ n \neq 1:
+$$
+$$ \int{\frac{1}{(x^2 + 1)^n}}dx, x = \tan{u}, dx = \sec^2{u}du \rArr \int{\frac{1}{\sec^{2n - 2}{u}}}du = \int{\frac{\sec^2{u} - \tan^2{u}}{\sec^{2n - 2}{u}}}du
+$$
+$$ = \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{\tan{u}\sec{u}\tan{u}}{\sec^{2n - 1}{u}}}du, i&amp;rsquo; = \frac{\tan{u}\sec{u}}{\sec^{2n - 1}{u}}, i = \frac{-1}{(2n - 2)\sec^{2n - 2}u}
+$$
+$$ \rArr \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{sec^2{u}}{(2n - 2)\sec^{2n - 2}{u}}}
+$$
+$$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x^2 + 1)^{n - 1}}}
+$$
+$$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}dx + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
+$$&lt;/p&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \int{ln{(x^2 - x + 3)}}dx, \int{\sec{x}}dx
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Notice. Approx to limit - Improper Integral:
+For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points&lt;/p&gt;
+&lt;p&gt;$$ \int_a^b{f(x)}dx = \lim_{t \rarr b}\int_a^t{f(x)}dx
+$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality&lt;/h2&gt;
+&lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations&lt;/h3&gt;
+&lt;p&gt;$$ Informal: \frac{dy}{dx} = \frac{x}{y} \rArr ydy = xdx \rArr \int{y}dy = \int{x}dx
+$$
+$$ *Formal \ Solution: \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \lrArr \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Carrying Capacity:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \frac{dN}{dt} = rN(1 - \frac{N}{K})
+$$
+$$ \rArr \frac{1}{N(K - N)} \frac{dN}{dt} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{dt} = \frac{r}{K} \rArr \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{dt}}dt = \int{r}dt
+$$
+$$ \ln{N} - \ln{(K - N)} = rt \rArr N = \frac{K}{1 + e^{-rt}}
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/dt$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \rArr \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \rArr x\frac{dy}{dx} = -x
+$$&lt;/p&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = aN^2\ln(bN)
+$$&lt;/p&gt;
+&lt;h3 id=&#34;arc-length&#34;&gt;Arc Length&lt;/h3&gt;
+&lt;p&gt;$$ L = \lim_{x_2 \rarr x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
+$$&lt;/p&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ Find \ curve \ length \ of \ y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4, * \int{\sqrt{(x^2 + 1)^2 + b}}dx
+$$&lt;/p&gt;
+&lt;h3 id=&#34;areas&#34;&gt;Areas&lt;/h3&gt;
+&lt;p&gt;$$ A = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy
+$$&lt;/p&gt;
+&lt;h3 id=&#34;surface&#34;&gt;Surface&lt;/h3&gt;
+&lt;p&gt;$$ S = \int{2\pi f(x)\sqrt{1 + f&amp;rsquo;^2}}dx
+$$&lt;/p&gt;
+&lt;h3 id=&#34;volume&#34;&gt;Volume&lt;/h3&gt;
+&lt;p&gt;$$ V = \int{A(z)}dz
+$$
+$$ Cylindrical \ Shells(y-axis): V = \lim_{\Delta{x} \rarr 0}{\sum{h(x) \cdot \pi ((x + \Delta{x})^2 - x^2)}}
+$$
+$$ = \lim_{\Delta{x} \rarr 0}{\sum{h(x) \cdot \pi (2x \Delta{x} + \Delta^2{x})}} = \int{h(x) 2 \pi x}dx
+$$&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Calculus - Differentiate</title>
+        <link>https://zayn7lie.github.io/posts/math/cal-dif/</link>
+        <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/cal-dif/</guid>
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h3 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h3&gt;
+&lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzing function&lt;/li&gt;
+&lt;li&gt;Analyzing points&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
+&lt;ul&gt;
+&lt;li&gt;MVT (Mean Value Theorem): If $f(x)$ is &lt;em&gt;differentiable&lt;/em&gt; on $[a, b]$, then $\exist c, f&amp;rsquo;(c) = \frac{f(b) - f(a)}{b - a}$&lt;/li&gt;
+&lt;li&gt;EVT (Extreme Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on &lt;em&gt;closed&lt;/em&gt; interval $[a, b]$, then $\exist c_1, c_2, f_{max}(x) = f(c_1), f_{min}(x) = f(c_2)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Discontinuous points (Discontinuity)
+&lt;ul&gt;
+&lt;li&gt;Removable ~: $\lim_{x \rarr a}f(x) \neq f(a)$&lt;/li&gt;
+&lt;li&gt;Jump ~: $\lim_{x \rarr a+}f(x) \neq \lim_{x \rarr a-}f(x)$&lt;/li&gt;
+&lt;li&gt;Infinite (Essential) ~: $\lim_{x \rarr a^+}f(x)$ or $\lim_{x \rarr a^-}f(x)$ equals $\pm \infin$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Limit: L&amp;rsquo;hospital rule&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;E.g.
+$$ \lim_{x \rarr 0^+}{x\ln{x}}, \lim_{x \rarr 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{dy}{dx}$ differentiate is a method to cut source function to know the tendency&lt;/li&gt;
+&lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \frac{d}{dx}f(x_1) = f&amp;rsquo;(x_1) = \lim_{x_2 \rarr x_1}\frac{f(x_2) - f(x_1)}{x_2 - x_1}
+$$&lt;/p&gt;
+&lt;p&gt;E.g. Derive:
+$$
+g(x) = \lim_{h \rarr 0}\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;h3 id=&#34;how-to-differentiate&#34;&gt;How to differentiate?&lt;/h3&gt;
+&lt;h4 id=&#34;basic-rules&#34;&gt;Basic rules&lt;/h4&gt;
+&lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \ or \ (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
+$$
+$$ \frac{d}{dx}(f(x) \cdot g(x)) = \frac{d}{dx}f(x) \cdot g(x) + f(x) \cdot \frac{d}{dx}g(x) \ or \ (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
+$$
+$$ \frac{d}{dx}f(g(x)) = f&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) = \frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{dx}g(x)
+$$
+$$ * Inverse \ function: y(x) \lrArr x(y) \rArr \frac{d}{dx}y(x_1) \cdot \frac{d}{dx}x(y_1) = 1
+$$&lt;/p&gt;
+&lt;h4 id=&#34;basic-function&#34;&gt;Basic function&lt;/h4&gt;
+&lt;p&gt;$$ \frac{d}{dx}x^n = n \cdot x^{n - 1}, \frac{d}{dx}Constant = 0, \frac{d}{dx}\ln{x} = \frac{1}{x}, \frac{d}{dx}e^x = e^x
+$$
+$$ \frac{d}{dx}\sin{x} = \cos{x}, \frac{d}{dx}\cos{x} = -\sin{x}, \frac{d}{dx}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
+$$
+$$ \frac{d}{dx}\sin^{-1}{x} = \frac{d}{dx}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\cos^{-1}{x} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\tan^{-1}{x} = \frac{1}{1 + x^2}
+$$&lt;/p&gt;
+&lt;p&gt;E.g. Derive $a^x$ and $\log_ax$&lt;/p&gt;
+&lt;p&gt;E.g. Differential Equations: $x^2 + y^2 = 25$, derive $\frac{d}{dx}y$&lt;/p&gt;
+&lt;h3 id=&#34;how-to-apply-differentiation-to-reality&#34;&gt;How to apply differentiation to reality&lt;/h3&gt;
+&lt;h4 id=&#34;finding-rates&#34;&gt;Finding Rates&lt;/h4&gt;
+&lt;p&gt;E.g. A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
+&lt;p&gt;E.g. The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{d}{dt}x = \frac{d}{dt}z$ and the rate of the diagonal $z$ has $\frac{d}{dt}z = \frac{d}{dt}y$. Derive the value of $k$.&lt;/p&gt;
+&lt;h4 id=&#34;curve-sketching&#34;&gt;Curve Sketching&lt;/h4&gt;
+&lt;p&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/p&gt;
+&lt;p&gt;Analyzing points ($x = a$)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$&lt;/li&gt;
+&lt;li&gt;Stationary point: $f&amp;rsquo;(x) = 0$&lt;/li&gt;
+&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
+&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ and $f^{(3)}(x) \neq 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
