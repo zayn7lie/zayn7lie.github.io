@@ -759,7 +759,7 @@ for any purpose, even commercially.&lt;/li&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rarr \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
-&lt;p&gt;E.g.
+&lt;p&gt;Exercise.
 $$ 1. prove\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
 $$
 $$ 2. prove\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1
