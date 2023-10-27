@@ -233,7 +233,29 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;total-energy-epsilon--k_epsilon--u&#34;&gt;Total Energy $\epsilon = K_\epsilon + U$&lt;/h4&gt;
-&lt;h3 id=&#34;power-p-p-watt--jsec--n-cdot-m--sec--fracdwdt-w--intvecf-cdot-dvecr-rarr-fracdwdt--vecf-vecv&#34;&gt;Power $P ([P] =Watt = J/sec = N \cdot m / sec) = \frac{dW}{dt}, W = \int{\vec{F} \cdot d\vec{r}} \rArr \frac{dW}{dt} = \vec{F} \vec{v}$&lt;/h3&gt;
+&lt;h4 id=&#34;power-p-p-watt--jsec--n-cdot-m--sec--fracdwdt-w--intvecf-cdot-dvecr-rarr-fracdwdt--vecf-vecv&#34;&gt;Power $P ([P] =Watt = J/sec = N \cdot m / sec) = \frac{dW}{dt}, W = \int{\vec{F} \cdot d\vec{r}} \rArr \frac{dW}{dt} = \vec{F} \vec{v}$&lt;/h4&gt;
+&lt;h3 id=&#34;momentum-vecp--mvecv--impulse-i--intvecfdt&#34;&gt;Momentum $\vec{P} = m\vec{v}$ &amp;amp; Impulse $I = \int{\vec{F}}dt$&lt;/h3&gt;
+&lt;p&gt;$$ \Delta{\vec{P}} = \int_{t_1}^{t_2}{\vec{F}}dt = I $$&lt;/p&gt;
+&lt;h4 id=&#34;energy-conservation&#34;&gt;Energy Conservation&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$E \ cons \nLeftrightarrow \vec{P} \ conservation$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$E = P^2/2m$&lt;/p&gt;
+&lt;p&gt;$$ v_1 = \frac{m_1 - m_2}{m_1 + m_2}v_0, v_2 = \frac{2m_1}{m_1 + m_2}v_0
+$$&lt;/p&gt;
+&lt;h4 id=&#34;inelastic-collision&#34;&gt;Inelastic Collision&lt;/h4&gt;
+&lt;h4 id=&#34;irf-inertial-reference-frame&#34;&gt;IRF: Inertial Reference Frame&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;non-accelerating RF&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ \vec{v}&amp;rsquo; = \vec{v}_0 - \vec{v}_f $$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;COM frame: Center of momentum mass:&lt;/p&gt;
+&lt;p&gt;$$ \vec{R} = \frac{\sum m_i \vec{r}&lt;em&gt;i}{\sum m_i} \rArr M&lt;/em&gt;{tot}R = \vec{P}_{tot} = \sum \vec{P}_i
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

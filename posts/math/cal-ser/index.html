@@ -413,7 +413,7 @@ Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;l
 
 
                 <time class="article-time--reading">
-                    3 minute read
+                    4 minute read
                 </time>
             </div>
         
@@ -463,8 +463,21 @@ Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;l
 </li>
 </ul>
 </li>
-<li>
-<p>Usage</p>
+</ul>
+<p>Exercise.</p>
+<p>$$ find \ if \ (a) \ a_n = \frac{n!}{n^n} (a &gt; 0), (b) \ a_n = \frac{a^n}{n!} (a &gt; 0), (c) \ a_n = \frac{n^b}{a^n}, (d) \ a_n = \frac{\ln n}{n^b} \ converges
+$$</p>
+<blockquote>
+<p>$n^n &raquo; n! &raquo; a^n &raquo; n^b &raquo; \ln{n}$
+$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
+$$
+$$ Hint \ 1: known \ (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
+$$
+$$ Hint \ 2: a_n &lt; b_n = (1 + \frac{1}{n})^{n + 1}
+$$</p>
+</blockquote>
+<ul>
+<li>Usage
 <ul>
 <li>Continuity and Convergence theorem: $\lim_{x \rarr L}f \exist, \lim_{n \rarr \infty}a_n = L \rArr \lim_{n \rarr \infty}f$
 <ul>
@@ -485,11 +498,10 @@ Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;l
 </li>
 </ul>
 <h3 id="series">Series</h3>
-<p>Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &ldquo;The Intergral of a Sequence&rdquo;</p>
+<p>Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &ldquo;The Integral of a Sequence&rdquo;</p>
 <h4 id="convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges">Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges</h4>
 <ul>
-<li>
-<p>Test for Series</p>
+<li>Test for Series
 <ul>
 <li>Direct Test
 <ul>
@@ -510,6 +522,13 @@ Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;l
 </li>
 </ul>
 </li>
+</ul>
+<p>Exercise.</p>
+<p>$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rarr \infty}{n^{\frac{1}{n}}} = 1), \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
+$$
+$$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2} (Hint: Root \ Test)
+$$</p>
+<ul>
 <li>
 <p>Usage</p>
 <ul>
@@ -522,7 +541,7 @@ Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;l
 <li>
 <p>series $\sum_{n = 1}^\infty$ converges $\rArr$ $\lim_{n \rarr \infty}a_n = 0$, or series $\sum_{n = 1}^\infty$ diverges $\rArr$ $\lim_{n \rarr \infty}a_n \neq 0$</p>
 <ul>
-<li>minus prove: $ S_{n} - S_{n - 1}$</li>
+<li>minus prove: $S_{n} - S_{n - 1}$</li>
 <li>integral prove</li>
 </ul>
 </li>

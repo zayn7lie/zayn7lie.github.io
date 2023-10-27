@@ -7,14 +7,97 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/categories/math/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Calculus in Multi-Dimension</title>
+        <title>Calculus - Multi-dimension</title>
         <link>https://zayn7lie.github.io/posts/math/cal-mul/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/math/cal-mul/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;p&gt;More applicable in the real world.&lt;/p&gt;
 &lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;h3 id=&#34;function-in-multi-dimension&#34;&gt;Function in Multi-dimension&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Express: $f(x, y, z, \ldots)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visualize&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Domain &amp;amp; range&lt;/li&gt;
+&lt;li&gt;Graphs: Level curves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;differentiate-partial-derivatives&#34;&gt;Differentiate: Partial Derivatives&lt;/h3&gt;
+&lt;h4 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Limit&lt;/p&gt;
+&lt;p&gt;$$ \lim_{(x, y) \rarr (a, b)}f(x, y) = L
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When $f \rarr L$ no matter what direction $(x, y) \rarr (a, b)$, the limit of $f$ in $(a, b)$ exists.&lt;/p&gt;
+&lt;p&gt;If $f(x, y) \rarr L_1$ as $(x, y) \rarr (a, b)$ along a path $C_1$ and $f(x, y) \rarr L_2$ as $(x, y) \rarr (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rarr (a, b)}f(x, y)$ does not exist.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Limit along axis: let $y = 0$ or $x = 0$&lt;/li&gt;
+&lt;li&gt;Limit along specific line: $y = x$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Continuity: $\lim_{(x, y) \rarr (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Algebra: Definition
+$$ \frac{\partial}{\partial x}f = f_x(a, b) = \lim_{h \rarr 0}\frac{f(a + h, b) - f(a, b)}{h} = g&amp;rsquo;(a) \ (g(x) = g(x, b)) = \lim_{h \rarr 0}\frac{g(a + h) - g(a)}{h}
+$$
+$$ \frac{\partial}{\partial y}f = f_y(a, b) = \lim_{h \rarr 0}\frac{f(a, b + h) - f(a, b)}{h} = g&amp;rsquo;(b) \ (g(y) = g(a, y)) = \lim_{h \rarr 0}\frac{g(b + h) - g(b)}{h}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\epsilon_1, \epsilon_2) \rarr (0, 0) \rArr (\Delta{x}, \Delta{y}) \rarr (0, 0)$&lt;/li&gt;
+&lt;li&gt;Differentials: $dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Geometry: Tangent Planes
+$$ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \rArr z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linear Approximations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Chain Rule
+$$ (1) \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
+$$
+$$ (2) \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}, \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}
+$$
+$$ (3) General: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h4&gt;
+&lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$D_u{f(x, y)} = \vec{P&amp;rsquo;Q&amp;rsquo;}$:\ - Gradient Vector: moving in a tangent plant with a specific direction
+&lt;ul&gt;
+&lt;li&gt;$\nabla{f(x, y)}$ represents tangent plant&lt;/li&gt;
+&lt;li&gt;$\vec{u}$ represents a direction (in unit), or $\vec{u} = &amp;lt;\hat{a}, \hat{b}&amp;gt;$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;SECOND DERIVATIVES TEST&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;lagrange-multipliers&#34;&gt;LAGRANGE MULTIPLIERS&lt;/h4&gt;
+&lt;h3 id=&#34;integral-multiple-integrals&#34;&gt;Integral: Multiple Integrals&lt;/h3&gt;
+&lt;h2 id=&#34;how-vector-calculus&#34;&gt;HOW: Vector Calculus&lt;/h2&gt;
 </description>
         </item>
         <item>
@@ -58,8 +141,21 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Usage&lt;/p&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ find \ if \ (a) \ a_n = \frac{n!}{n^n} (a &amp;gt; 0), (b) \ a_n = \frac{a^n}{n!} (a &amp;gt; 0), (c) \ a_n = \frac{n^b}{a^n}, (d) \ a_n = \frac{\ln n}{n^b} \ converges
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$n^n &amp;raquo; n! &amp;raquo; a^n &amp;raquo; n^b &amp;raquo; \ln{n}$
+$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
+$$
+$$ Hint \ 1: known \ (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
+$$
+$$ Hint \ 2: a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
+$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Usage
 &lt;ul&gt;
 &lt;li&gt;Continuity and Convergence theorem: $\lim_{x \rarr L}f \exist, \lim_{n \rarr \infty}a_n = L \rArr \lim_{n \rarr \infty}f$
 &lt;ul&gt;
@@ -80,11 +176,10 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;series&#34;&gt;Series&lt;/h3&gt;
-&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Intergral of a Sequence&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
 &lt;h4 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Test for Series&lt;/p&gt;
+&lt;li&gt;Test for Series
 &lt;ul&gt;
 &lt;li&gt;Direct Test
 &lt;ul&gt;
@@ -105,6 +200,13 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rarr \infty}{n^{\frac{1}{n}}} = 1), \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
+$$
+$$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2} (Hint: Root \ Test)
+$$&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Usage&lt;/p&gt;
 &lt;ul&gt;
@@ -117,7 +219,7 @@
 &lt;li&gt;
 &lt;p&gt;series $\sum_{n = 1}^\infty$ converges $\rArr$ $\lim_{n \rarr \infty}a_n = 0$, or series $\sum_{n = 1}^\infty$ diverges $\rArr$ $\lim_{n \rarr \infty}a_n \neq 0$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;minus prove: $ S_{n} - S_{n - 1}$&lt;/li&gt;
+&lt;li&gt;minus prove: $S_{n} - S_{n - 1}$&lt;/li&gt;
 &lt;li&gt;integral prove&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -329,7 +431,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ L = \lim_{x_2 \rarr x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
 $$&lt;/p&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
-&lt;p&gt;$$ Find \ curve \ length \ of \ y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4, * \int{\sqrt{(x^2 + 1)^2 + b}}dx
+&lt;p&gt;$$ Find \ curve \ length \ of \ y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4
 $$&lt;/p&gt;
 &lt;h3 id=&#34;areas&#34;&gt;Areas&lt;/h3&gt;
 &lt;p&gt;$$ A = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy

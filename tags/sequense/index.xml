@@ -47,8 +47,21 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Usage&lt;/p&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ find \ if \ (a) \ a_n = \frac{n!}{n^n} (a &amp;gt; 0), (b) \ a_n = \frac{a^n}{n!} (a &amp;gt; 0), (c) \ a_n = \frac{n^b}{a^n}, (d) \ a_n = \frac{\ln n}{n^b} \ converges
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$n^n &amp;raquo; n! &amp;raquo; a^n &amp;raquo; n^b &amp;raquo; \ln{n}$
+$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
+$$
+$$ Hint \ 1: known \ (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
+$$
+$$ Hint \ 2: a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
+$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Usage
 &lt;ul&gt;
 &lt;li&gt;Continuity and Convergence theorem: $\lim_{x \rarr L}f \exist, \lim_{n \rarr \infty}a_n = L \rArr \lim_{n \rarr \infty}f$
 &lt;ul&gt;
@@ -69,11 +82,10 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;series&#34;&gt;Series&lt;/h3&gt;
-&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Intergral of a Sequence&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
 &lt;h4 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Test for Series&lt;/p&gt;
+&lt;li&gt;Test for Series
 &lt;ul&gt;
 &lt;li&gt;Direct Test
 &lt;ul&gt;
@@ -94,6 +106,13 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rarr \infty}{n^{\frac{1}{n}}} = 1), \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
+$$
+$$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2} (Hint: Root \ Test)
+$$&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Usage&lt;/p&gt;
 &lt;ul&gt;
@@ -106,7 +125,7 @@
 &lt;li&gt;
 &lt;p&gt;series $\sum_{n = 1}^\infty$ converges $\rArr$ $\lim_{n \rarr \infty}a_n = 0$, or series $\sum_{n = 1}^\infty$ diverges $\rArr$ $\lim_{n \rarr \infty}a_n \neq 0$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;minus prove: $ S_{n} - S_{n - 1}$&lt;/li&gt;
+&lt;li&gt;minus prove: $S_{n} - S_{n - 1}$&lt;/li&gt;
 &lt;li&gt;integral prove&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
