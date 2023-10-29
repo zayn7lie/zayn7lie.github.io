@@ -7,11 +7,11 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>How to Create a Minecraft Server with AWS</title>
-        <link>https://zayn7lie.github.io/posts/misc/minecraft_server/</link>
+        <title>How to Create a Game (Minecraft/Terraria) Server with AWS</title>
+        <link>https://zayn7lie.github.io/posts/ettm/server/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/misc/minecraft_server/</guid>
+        <guid>https://zayn7lie.github.io/posts/ettm/server/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -41,11 +41,16 @@
 &lt;li&gt;&lt;code&gt;Application and OS Images (Amazon Machine Image)&lt;/code&gt;: Define which types of CPU and System you would use
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;Amazon Machine Image (AMI)&lt;/code&gt;: Select a system for your instance. Amazon Linux &lt;code&gt;Amazon Machine Image (AMI)&lt;/code&gt; is recommended for its cheapness (CPU under Linux Base System is cheaper) and lightweight (we do not need lots of functions to run Minecraft Server)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Architecture&lt;/code&gt;: &lt;code&gt;64-bit (Arm)&lt;/code&gt; is recommended because it has more CPUs with cheaper price.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Architecture&lt;/code&gt;: &lt;code&gt;64-bit (Arm)&lt;/code&gt; is recommended because it has more CPUs with cheaper price. (Note. Terraria only support x86_64)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Instance type&lt;/code&gt;: Choose a CPU for running Minecraft Server, here is a list of price for every CPU: &lt;a class=&#34;link&#34; href=&#34;https://calculator.aws/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;AWS Price Calculator&lt;/a&gt;. Remind that a pure Minecraft server (No mod) with two people server needs at least 1 GiB RAM&lt;/li&gt;
+    &gt;AWS Price Calculator&lt;/a&gt;. Remind that a pure Minecraft server (No mod) with two people server needs at least 1 GiB RAM
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;r7g.medium&lt;/code&gt; for modded Minecraft&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;t2.micro&lt;/code&gt; for Terraria&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Key pair (login)&lt;/code&gt;: Define how can you login to the instance safely.
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;Create new key pair&lt;/code&gt; if you do not have one, otherwise you could choose one you know.&lt;/li&gt;
@@ -136,10 +141,10 @@
         </item>
         <item>
         <title>How to play Arknights on Linux, using MAA and key mapping</title>
-        <link>https://zayn7lie.github.io/posts/misc/arknights/</link>
+        <link>https://zayn7lie.github.io/posts/ettm/arknights/</link>
         <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/misc/arknights/</guid>
+        <guid>https://zayn7lie.github.io/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -288,11 +293,15 @@
 &lt;li&gt;
 &lt;p&gt;Terminal: &lt;code&gt;kitty&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;~/.config/kitty/kitty.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~/.config/kitty/kitty.conf&lt;/code&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;font_family      Fira Code&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;scrollback_lines 8192&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;foreground green&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;background_opacity 0.7&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BUG: Not display properly while using SSH: Add &lt;code&gt;[ &amp;quot;$TERM&amp;quot; = &amp;quot;xterm-kitty&amp;quot; ] &amp;amp;&amp;amp; alias ssh=&amp;quot;kitty +kitten ssh&amp;quot;&lt;/code&gt; to &lt;code&gt;~/.bashrc&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

@@ -7,15 +7,14 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/multiple-integrals/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Calculus - Multi-dimension</title>
+        <title>Calculus - Multi-dimensions</title>
         <link>https://zayn7lie.github.io/posts/math/cal-mul/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/math/cal-mul/</guid>
-        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-calculus-in-multi-dimensions&#34;&gt;WHY: Why should we learn calculus in multi-dimensions?&lt;/h2&gt;
 &lt;p&gt;More applicable in the real world.&lt;/p&gt;
-&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;h3 id=&#34;function-in-multi-dimension&#34;&gt;Function in Multi-dimension&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-function-in-multi-dimension&#34;&gt;WHAT: What is function in Multi-dimension&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Express: $f(x, y, z, \ldots)$&lt;/p&gt;
@@ -28,8 +27,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;differentiate-partial-derivatives&#34;&gt;Differentiate: Partial Derivatives&lt;/h3&gt;
-&lt;h4 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h4&gt;
+&lt;h2 id=&#34;what-what-is-differentiation---partial-derivatives&#34;&gt;WHAT: What is differentiation - Partial Derivatives&lt;/h2&gt;
+&lt;h3 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Limit&lt;/p&gt;
@@ -48,7 +47,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Continuity: $\lim_{(x, y) \rarr (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h4&gt;
+&lt;h3 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Algebra: Definition
@@ -70,7 +69,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h4&gt;
+&lt;h3 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Chain Rule
 $$ (1) \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
@@ -80,7 +79,7 @@ $$
 $$ (3) General: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h4&gt;
+&lt;h3 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h3&gt;
 &lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
 $$&lt;/p&gt;
 &lt;ul&gt;
@@ -91,12 +90,22 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum&lt;/h4&gt;
+&lt;h3 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;SECOND DERIVATIVES TEST&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;lagrange-multipliers&#34;&gt;LAGRANGE MULTIPLIERS&lt;/h4&gt;
-&lt;h3 id=&#34;integral-multiple-integrals&#34;&gt;Integral: Multiple Integrals&lt;/h3&gt;
+&lt;h3 id=&#34;how-lagrange-multipliers&#34;&gt;HOW: LAGRANGE MULTIPLIERS&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-integral---multiple-integrals&#34;&gt;WHAT: What is integral - Multiple Integrals&lt;/h2&gt;
+&lt;h3 id=&#34;what-what-is-double-integral&#34;&gt;WHAT: What is double integral&lt;/h3&gt;
+&lt;p&gt;$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rarr 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^&lt;em&gt;, y_{ij}^&lt;/em&gt;) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^&lt;em&gt;,y^&lt;/em&gt; \rarr \bar{x}, \bar{y})
+$$&lt;/p&gt;
+&lt;h3 id=&#34;how-how-to-calculate-iterated-integrals&#34;&gt;HOW: How to calculate iterated integrals?&lt;/h3&gt;
+&lt;p&gt;$$ \int_a^b\int_c^d{f(x, y)}dA = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
+$$&lt;/p&gt;
+&lt;h3 id=&#34;how-how-to-apply-to-reality&#34;&gt;HOW: How to apply to reality&lt;/h3&gt;
+&lt;h4 id=&#34;volume&#34;&gt;Volume&lt;/h4&gt;
+&lt;p&gt;Region of $x_1, x_2, y_1(x), y_2(x), Assume \ x_1 \leq x_2, y_1 \leq y_2$:&lt;/p&gt;
+&lt;p&gt;$$ V = \int_{y_1(x)}^{y_2(x)}\int_{x_1}^{x_2}f(x, y)dA = \int_{x_1}^{x_2}[\int_{y_1(x)}^{y_2(x)}f(x, y)dy]dx$$&lt;/p&gt;
 &lt;h2 id=&#34;how-vector-calculus&#34;&gt;HOW: Vector Calculus&lt;/h2&gt;
 </description>
         </item>

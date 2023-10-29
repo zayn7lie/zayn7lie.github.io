@@ -406,7 +406,7 @@
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    3 minute read
                 </time>
             </div>
         
@@ -476,11 +476,15 @@
 <li>
 <p>Terminal: <code>kitty</code></p>
 <ul>
-<li><code>~/.config/kitty/kitty.conf</code></li>
+<li><code>~/.config/kitty/kitty.conf</code>
+<ul>
 <li><code>font_family      Fira Code</code></li>
 <li><code>scrollback_lines 8192</code></li>
 <li><code>foreground green</code></li>
 <li><code>background_opacity 0.7</code></li>
+</ul>
+</li>
+<li>BUG: Not display properly while using SSH: Add <code>[ &quot;$TERM&quot; = &quot;xterm-kitty&quot; ] &amp;&amp; alias ssh=&quot;kitty +kitten ssh&quot;</code> to <code>~/.bashrc</code></li>
 </ul>
 </li>
 </ul>

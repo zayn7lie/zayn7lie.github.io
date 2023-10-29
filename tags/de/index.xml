@@ -67,11 +67,15 @@
 &lt;li&gt;
 &lt;p&gt;Terminal: &lt;code&gt;kitty&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;~/.config/kitty/kitty.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~/.config/kitty/kitty.conf&lt;/code&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;font_family      Fira Code&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;scrollback_lines 8192&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;foreground green&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;background_opacity 0.7&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BUG: Not display properly while using SSH: Add &lt;code&gt;[ &amp;quot;$TERM&amp;quot; = &amp;quot;xterm-kitty&amp;quot; ] &amp;amp;&amp;amp; alias ssh=&amp;quot;kitty +kitten ssh&amp;quot;&lt;/code&gt; to &lt;code&gt;~/.bashrc&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
