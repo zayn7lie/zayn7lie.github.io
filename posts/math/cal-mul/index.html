@@ -271,7 +271,12 @@ When $f \rarr L$ no matter what direction $(x, y) \rarr (a, b)$, the limit of $f
         <li><a href="#how-how-to-apply-to-reality">HOW: How to apply to reality</a></li>
       </ul>
     </li>
-    <li><a href="#how-vector-calculus">HOW: Vector Calculus</a></li>
+    <li><a href="#how-how-to-apply-to-vector-calculus">HOW: How to apply to Vector Calculus</a>
+      <ul>
+        <li><a href="#what-what-is-fields">WHAT: What is Fields</a></li>
+        <li><a href="#how-how-to-integrate-along-the-line---line-integrals">HOW: How to integrate along the line - Line Integrals</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </div>
@@ -428,7 +433,7 @@ When $f \rarr L$ no matter what direction $(x, y) \rarr (a, b)$, the limit of $f
 
 
                 <time class="article-time--reading">
-                    3 minute read
+                    4 minute read
                 </time>
             </div>
         
@@ -514,10 +519,10 @@ $$</li>
 <p>$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
 $$</p>
 <ul>
-<li>$D_u{f(x, y)} = \vec{P&rsquo;Q&rsquo;}$:\ - Gradient Vector: moving in a tangent plant with a specific direction
+<li>$D_u{f(x, y)} = \vec{P&rsquo;Q&rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
 <ul>
 <li>$\nabla{f(x, y)}$ represents tangent plant</li>
-<li>$\vec{u}$ represents a direction (in unit), or $\vec{u} = &lt;\hat{a}, \hat{b}&gt;$</li>
+<li>$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$</li>
 </ul>
 </li>
 </ul>
@@ -537,7 +542,33 @@ $$</p>
 <h4 id="volume">Volume</h4>
 <p>Region of $x_1, x_2, y_1(x), y_2(x), Assume \ x_1 \leq x_2, y_1 \leq y_2$:</p>
 <p>$$ V = \int_{y_1(x)}^{y_2(x)}\int_{x_1}^{x_2}f(x, y)dA = \int_{x_1}^{x_2}[\int_{y_1(x)}^{y_2(x)}f(x, y)dy]dx$$</p>
-<h2 id="how-vector-calculus">HOW: Vector Calculus</h2>
+<h2 id="how-how-to-apply-to-vector-calculus">HOW: How to apply to Vector Calculus</h2>
+<h3 id="what-what-is-fields">WHAT: What is Fields</h3>
+<ul>
+<li>
+<p>Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$</p>
+</li>
+<li>
+<p>Gradient Fields: $\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$</p>
+</li>
+</ul>
+<h3 id="how-how-to-integrate-along-the-line---line-integrals">HOW: How to integrate along the line - Line Integrals</h3>
+<p>$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}<em>i \rarr 0}\sum</em>{i = 1}^{n}f(x_i^<em>, y_i^</em>)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$
+$$ \rArr \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$</p>
+<ul>
+<li>
+<p>Vector Fields
+$$ W = \int_C \vec{F} \cdot d\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r&rsquo;}(t)dt} \ (Substitution: \vec{r}(t) = \vec{r}) = \int_C \vec{F} \cdot \vec{T} ds
+$$</p>
+</li>
+<li>
+<p>Independent of path
+$$ \forall C_1, C_2 \ with \ same \ initial \ and \ final \ points, \int_{C_1} \vec{F} \cdot d\vec{r} = \int_{C_2} \vec{F} \cdot d\vec{r}
+$$</p>
+</li>
+</ul>
 
 </section>
 

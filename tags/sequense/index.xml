@@ -13,7 +13,7 @@
         
         <guid>https://zayn7lie.github.io/posts/math/cal-ser/</guid>
         <description>&lt;p&gt;Sequence: 3 - squeeze theorem, con and con theorem, bounded&lt;/p&gt;
-&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
@@ -22,10 +22,9 @@
 &lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;h3 id=&#34;sequence&#34;&gt;Sequence&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence&lt;/h2&gt;
 &lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h4 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h4&gt;
+&lt;h3 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h3&gt;
 &lt;p&gt;E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -52,14 +51,14 @@
 &lt;p&gt;$$ find \ if \ (a) \ a_n = \frac{n!}{n^n} (a &amp;gt; 0), (b) \ a_n = \frac{a^n}{n!} (a &amp;gt; 0), (c) \ a_n = \frac{n^b}{a^n}, (d) \ a_n = \frac{\ln n}{n^b} \ converges
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$n^n &amp;raquo; n! &amp;raquo; a^n &amp;raquo; n^b &amp;raquo; \ln{n}$
-$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
+&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
 $$
 $$ Hint \ 1: known \ (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
 $$
 $$ Hint \ 2: a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
 $$&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Usage
 &lt;ul&gt;
@@ -72,7 +71,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h4&gt;
+&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Arithmetic sequence&lt;/p&gt;
@@ -81,9 +80,9 @@ $$&lt;/p&gt;
 &lt;p&gt;Geometric progression&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;series&#34;&gt;Series&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-series&#34;&gt;WHAT: What is Series&lt;/h2&gt;
 &lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
-&lt;h4 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h4&gt;
+&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Test for Series
 &lt;ul&gt;
@@ -135,7 +134,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h4&gt;
+&lt;h3 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Geometric Series&lt;/p&gt;

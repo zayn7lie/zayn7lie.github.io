@@ -83,10 +83,10 @@ $$&lt;/li&gt;
 &lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$D_u{f(x, y)} = \vec{P&amp;rsquo;Q&amp;rsquo;}$:\ - Gradient Vector: moving in a tangent plant with a specific direction
+&lt;li&gt;$D_u{f(x, y)} = \vec{P&amp;rsquo;Q&amp;rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
 &lt;ul&gt;
 &lt;li&gt;$\nabla{f(x, y)}$ represents tangent plant&lt;/li&gt;
-&lt;li&gt;$\vec{u}$ represents a direction (in unit), or $\vec{u} = &amp;lt;\hat{a}, \hat{b}&amp;gt;$&lt;/li&gt;
+&lt;li&gt;$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -106,7 +106,33 @@ $$&lt;/p&gt;
 &lt;h4 id=&#34;volume&#34;&gt;Volume&lt;/h4&gt;
 &lt;p&gt;Region of $x_1, x_2, y_1(x), y_2(x), Assume \ x_1 \leq x_2, y_1 \leq y_2$:&lt;/p&gt;
 &lt;p&gt;$$ V = \int_{y_1(x)}^{y_2(x)}\int_{x_1}^{x_2}f(x, y)dA = \int_{x_1}^{x_2}[\int_{y_1(x)}^{y_2(x)}f(x, y)dy]dx$$&lt;/p&gt;
-&lt;h2 id=&#34;how-vector-calculus&#34;&gt;HOW: Vector Calculus&lt;/h2&gt;
+&lt;h2 id=&#34;how-how-to-apply-to-vector-calculus&#34;&gt;HOW: How to apply to Vector Calculus&lt;/h2&gt;
+&lt;h3 id=&#34;what-what-is-fields&#34;&gt;WHAT: What is Fields&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gradient Fields: $\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-how-to-integrate-along-the-line---line-integrals&#34;&gt;HOW: How to integrate along the line - Line Integrals&lt;/h3&gt;
+&lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}&lt;em&gt;i \rarr 0}\sum&lt;/em&gt;{i = 1}^{n}f(x_i^&lt;em&gt;, y_i^&lt;/em&gt;)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$
+$$ \rArr \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vector Fields
+$$ W = \int_C \vec{F} \cdot d\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r&amp;rsquo;}(t)dt} \ (Substitution: \vec{r}(t) = \vec{r}) = \int_C \vec{F} \cdot \vec{T} ds
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Independent of path
+$$ \forall C_1, C_2 \ with \ same \ initial \ and \ final \ points, \int_{C_1} \vec{F} \cdot d\vec{r} = \int_{C_2} \vec{F} \cdot d\vec{r}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -116,7 +142,7 @@ $$&lt;/p&gt;
         
         <guid>https://zayn7lie.github.io/posts/math/cal-ser/</guid>
         <description>&lt;p&gt;Sequence: 3 - squeeze theorem, con and con theorem, bounded&lt;/p&gt;
-&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
@@ -125,10 +151,9 @@ $$&lt;/p&gt;
 &lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;h3 id=&#34;sequence&#34;&gt;Sequence&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence&lt;/h2&gt;
 &lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h4 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h4&gt;
+&lt;h3 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h3&gt;
 &lt;p&gt;E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -155,14 +180,14 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ find \ if \ (a) \ a_n = \frac{n!}{n^n} (a &amp;gt; 0), (b) \ a_n = \frac{a^n}{n!} (a &amp;gt; 0), (c) \ a_n = \frac{n^b}{a^n}, (d) \ a_n = \frac{\ln n}{n^b} \ converges
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$n^n &amp;raquo; n! &amp;raquo; a^n &amp;raquo; n^b &amp;raquo; \ln{n}$
-$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
+&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
 $$
 $$ Hint \ 1: known \ (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
 $$
 $$ Hint \ 2: a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
 $$&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Usage
 &lt;ul&gt;
@@ -175,7 +200,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h4&gt;
+&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Arithmetic sequence&lt;/p&gt;
@@ -184,9 +209,9 @@ $$&lt;/p&gt;
 &lt;p&gt;Geometric progression&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;series&#34;&gt;Series&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-series&#34;&gt;WHAT: What is Series&lt;/h2&gt;
 &lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
-&lt;h4 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h4&gt;
+&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Test for Series
 &lt;ul&gt;
@@ -238,7 +263,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h4&gt;
+&lt;h3 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Geometric Series&lt;/p&gt;
@@ -1058,7 +1083,7 @@ $$&lt;/p&gt;
         <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/</guid>
-        <description>&lt;h2 id=&#34;how-java-runs&#34;&gt;How Java runs&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;how-how-java-runs&#34;&gt;HOW: How Java runs&lt;/h2&gt;
 &lt;p&gt;Source Code -&lt;code&gt;javac SOURCE_CODE_FILE&lt;/code&gt;-&amp;gt; bytecode -&lt;code&gt;java CLASS_FILE&lt;/code&gt;-&amp;gt; machine instructions (in Java Virtual Machine or JVM)&lt;/p&gt;
 &lt;h3 id=&#34;jvm&#34;&gt;JVM&lt;/h3&gt;
 &lt;p&gt;pros: run in different machine&lt;/p&gt;
@@ -1105,7 +1130,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;void swap(d1, d2)&lt;/code&gt; does not work in Java&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;why-should-we-learn-algorithm&#34;&gt;Why should we learn algorithm&lt;/h2&gt;
+&lt;h2 id=&#34;why-why-should-we-learn-algorithm&#34;&gt;WHY: Why should we learn algorithm&lt;/h2&gt;
 &lt;p&gt;Be CORRECT and EFFICIENT&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Be CORRECT first then EFFICIENT.&lt;/p&gt;
@@ -1113,8 +1138,7 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Binary Search - O($\log{N}$)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;h3 id=&#34;array&#34;&gt;Array&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-array&#34;&gt;WHAT: What is Array&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Search
 &lt;ul&gt;
@@ -1135,7 +1159,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;linked-list&#34;&gt;Linked List&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-linked-list&#34;&gt;WHAT: What is Linked List&lt;/h2&gt;
 &lt;p&gt;Storing - &lt;code&gt;class Node {int data; Node next;}&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;head&lt;/code&gt; is a reference to the first node, &lt;code&gt;tail&lt;/code&gt; is a reference to the last node (they are not nodes)&lt;/p&gt;
@@ -1149,7 +1173,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;stacks&#34;&gt;Stacks&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-stacks&#34;&gt;WHAT: What is Stacks&lt;/h2&gt;
 &lt;p&gt;FILO: First In Last Out&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Add: &lt;code&gt;push&lt;/code&gt;(only one)&lt;/li&gt;
@@ -1160,7 +1184,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;queue&#34;&gt;Queue&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-queue&#34;&gt;WHAT: What is Queue&lt;/h2&gt;
 &lt;p&gt;FIFO: First In First Out&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Add: enqueue&lt;/li&gt;
@@ -1172,7 +1196,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;binary-trees&#34;&gt;Binary Trees&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-binary-trees&#34;&gt;WHAT: What is Binary Trees&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Connect Array(Binary Search) and Linked List&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1180,16 +1204,15 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Root&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;hash-tables&#34;&gt;Hash Tables&lt;/h3&gt;
-&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;h3 id=&#34;how-to-read-the-code-of-programs&#34;&gt;How to read the code of programs?&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-hash-tables&#34;&gt;WHAT: What is Hash Tables&lt;/h2&gt;
+&lt;h2 id=&#34;how-how-to-read-the-code-of-programs&#34;&gt;HOW: How to read the code of programs?&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;javadoc 17&lt;/code&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Read &lt;code&gt;README.md&lt;/code&gt; &amp;amp; try to run the program(build class with package name &lt;code&gt;$ javac packageName/foo.java&lt;/code&gt;, then run code &lt;code&gt;$ java packageName.foo&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;Find the &lt;code&gt;main&lt;/code&gt; function then &lt;code&gt;debug&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;how-to-create-a-data-structure&#34;&gt;How to create a data structure?&lt;/h3&gt;
-&lt;h4 id=&#34;a-list-adt&#34;&gt;A List ADT&lt;/h4&gt;
+&lt;h2 id=&#34;how-how-to-create-a-data-structure&#34;&gt;HOW: How to create a data structure?&lt;/h2&gt;
+&lt;h3 id=&#34;a-list-adt&#34;&gt;A List ADT&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;(ADT) Abstract Data Type&lt;/p&gt;
@@ -1310,7 +1333,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Circular Linked List&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;arrayliste&#34;&gt;&lt;code&gt;ArrayList&amp;lt;E&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;arrayliste&#34;&gt;&lt;code&gt;ArrayList&amp;lt;E&amp;gt;&lt;/code&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Add Last: &lt;code&gt;O(N)&lt;/code&gt;, but faster than do it by ourselves - use &lt;code&gt;arraycopy()&lt;/code&gt;&lt;/p&gt;
@@ -1344,26 +1367,26 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;?&amp;gt;&lt;/code&gt;: we need not actually type is the same.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;stacke--queueeinterface&#34;&gt;&lt;code&gt;Stack&amp;lt;E&amp;gt;&lt;/code&gt; &amp;amp; &lt;code&gt;Queue&amp;lt;E&amp;gt;&lt;/code&gt;(interface)&lt;/h4&gt;
+&lt;h3 id=&#34;stacke--queueeinterface&#34;&gt;&lt;code&gt;Stack&amp;lt;E&amp;gt;&lt;/code&gt; &amp;amp; &lt;code&gt;Queue&amp;lt;E&amp;gt;&lt;/code&gt;(interface)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;LinkedList&lt;/code&gt;: top at the head: &lt;code&gt;O(1)&lt;/code&gt; (pop), top at the tail: &lt;code&gt;O(N)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$ Negative \ Modulo: -6 = (8 - 6) \equiv 2 \pmod{8}
 $$&lt;/p&gt;
-&lt;h4 id=&#34;binary-search-tree&#34;&gt;&lt;code&gt;Binary Search Tree&lt;/code&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;binary-search-tree&#34;&gt;&lt;code&gt;Binary Search Tree&lt;/code&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;recursive-base-case-first--recursive-call&#34;&gt;Recursive: base case first + recursive call&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Recursive: base case first + recursive call
+&lt;li&gt;
+&lt;p&gt;Memory: stack frame + 1&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Memory: stack frame + 1&lt;/li&gt;
+&lt;li&gt;Check the initial situation (empty, null, etc): create a new function that check the condition containing recursive function&lt;/li&gt;
 &lt;li&gt;Indirect recursion: A -&amp;gt; B -&amp;gt; A -&amp;gt; &amp;hellip;&lt;/li&gt;
-&lt;li&gt;Recursive structure &amp;amp; Recursive function
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;LinkedList&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Recursive structure &amp;amp; Recursive function: &lt;code&gt;LinkedList&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Check the initial situation (empty, null, etc): create a new function that check the condition containing recursive function&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;p&gt;Backtracking &amp;amp; Storing without repeated calls&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -1768,7 +1791,7 @@ $$&lt;/p&gt;
         
         <guid>https://zayn7lie.github.io/posts/linux/hyprland/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;This is a records of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
+&lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
 &lt;p&gt;Dot files could be found in &lt;a class=&#34;link&#34; href=&#34;https://github.com/zayn7lie/dot-files&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/zayn7lie/dot-files&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;

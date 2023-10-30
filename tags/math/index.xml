@@ -83,10 +83,10 @@ $$&lt;/li&gt;
 &lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$D_u{f(x, y)} = \vec{P&amp;rsquo;Q&amp;rsquo;}$:\ - Gradient Vector: moving in a tangent plant with a specific direction
+&lt;li&gt;$D_u{f(x, y)} = \vec{P&amp;rsquo;Q&amp;rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
 &lt;ul&gt;
 &lt;li&gt;$\nabla{f(x, y)}$ represents tangent plant&lt;/li&gt;
-&lt;li&gt;$\vec{u}$ represents a direction (in unit), or $\vec{u} = &amp;lt;\hat{a}, \hat{b}&amp;gt;$&lt;/li&gt;
+&lt;li&gt;$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -106,7 +106,33 @@ $$&lt;/p&gt;
 &lt;h4 id=&#34;volume&#34;&gt;Volume&lt;/h4&gt;
 &lt;p&gt;Region of $x_1, x_2, y_1(x), y_2(x), Assume \ x_1 \leq x_2, y_1 \leq y_2$:&lt;/p&gt;
 &lt;p&gt;$$ V = \int_{y_1(x)}^{y_2(x)}\int_{x_1}^{x_2}f(x, y)dA = \int_{x_1}^{x_2}[\int_{y_1(x)}^{y_2(x)}f(x, y)dy]dx$$&lt;/p&gt;
-&lt;h2 id=&#34;how-vector-calculus&#34;&gt;HOW: Vector Calculus&lt;/h2&gt;
+&lt;h2 id=&#34;how-how-to-apply-to-vector-calculus&#34;&gt;HOW: How to apply to Vector Calculus&lt;/h2&gt;
+&lt;h3 id=&#34;what-what-is-fields&#34;&gt;WHAT: What is Fields&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gradient Fields: $\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-how-to-integrate-along-the-line---line-integrals&#34;&gt;HOW: How to integrate along the line - Line Integrals&lt;/h3&gt;
+&lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}&lt;em&gt;i \rarr 0}\sum&lt;/em&gt;{i = 1}^{n}f(x_i^&lt;em&gt;, y_i^&lt;/em&gt;)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$
+$$ \rArr \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vector Fields
+$$ W = \int_C \vec{F} \cdot d\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r&amp;rsquo;}(t)dt} \ (Substitution: \vec{r}(t) = \vec{r}) = \int_C \vec{F} \cdot \vec{T} ds
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Independent of path
+$$ \forall C_1, C_2 \ with \ same \ initial \ and \ final \ points, \int_{C_1} \vec{F} \cdot d\vec{r} = \int_{C_2} \vec{F} \cdot d\vec{r}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -116,7 +142,7 @@ $$&lt;/p&gt;
         
         <guid>https://zayn7lie.github.io/posts/math/cal-ser/</guid>
         <description>&lt;p&gt;Sequence: 3 - squeeze theorem, con and con theorem, bounded&lt;/p&gt;
-&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
+&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
@@ -125,10 +151,9 @@ $$&lt;/p&gt;
 &lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;h3 id=&#34;sequence&#34;&gt;Sequence&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence&lt;/h2&gt;
 &lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h4 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h4&gt;
+&lt;h3 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h3&gt;
 &lt;p&gt;E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -155,14 +180,14 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ find \ if \ (a) \ a_n = \frac{n!}{n^n} (a &amp;gt; 0), (b) \ a_n = \frac{a^n}{n!} (a &amp;gt; 0), (c) \ a_n = \frac{n^b}{a^n}, (d) \ a_n = \frac{\ln n}{n^b} \ converges
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$n^n &amp;raquo; n! &amp;raquo; a^n &amp;raquo; n^b &amp;raquo; \ln{n}$
-$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
+&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
 $$
 $$ Hint \ 1: known \ (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
 $$
 $$ Hint \ 2: a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
 $$&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Usage
 &lt;ul&gt;
@@ -175,7 +200,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h4&gt;
+&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Arithmetic sequence&lt;/p&gt;
@@ -184,9 +209,9 @@ $$&lt;/p&gt;
 &lt;p&gt;Geometric progression&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;series&#34;&gt;Series&lt;/h3&gt;
+&lt;h2 id=&#34;what-what-is-series&#34;&gt;WHAT: What is Series&lt;/h2&gt;
 &lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
-&lt;h4 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h4&gt;
+&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Test for Series
 &lt;ul&gt;
@@ -238,7 +263,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h4&gt;
+&lt;h3 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Geometric Series&lt;/p&gt;

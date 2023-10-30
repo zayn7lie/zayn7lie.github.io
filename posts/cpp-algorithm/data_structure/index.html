@@ -237,27 +237,26 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#how-java-runs">How Java runs</a>
+    <li><a href="#how-how-java-runs">HOW: How Java runs</a>
       <ul>
         <li><a href="#jvm">JVM</a></li>
         <li><a href="#programs-memory-heap-and-stack">Program&rsquo;s Memory: Heap and Stack</a></li>
       </ul>
     </li>
-    <li><a href="#why-should-we-learn-algorithm">Why should we learn algorithm</a></li>
-    <li><a href="#what">WHAT</a>
+    <li><a href="#why-why-should-we-learn-algorithm">WHY: Why should we learn algorithm</a></li>
+    <li><a href="#what-what-is-array">WHAT: What is Array</a></li>
+    <li><a href="#what-what-is-linked-list">WHAT: What is Linked List</a></li>
+    <li><a href="#what-what-is-stacks">WHAT: What is Stacks</a></li>
+    <li><a href="#what-what-is-queue">WHAT: What is Queue</a></li>
+    <li><a href="#what-what-is-binary-trees">WHAT: What is Binary Trees</a></li>
+    <li><a href="#what-what-is-hash-tables">WHAT: What is Hash Tables</a></li>
+    <li><a href="#how-how-to-read-the-code-of-programs">HOW: How to read the code of programs?</a></li>
+    <li><a href="#how-how-to-create-a-data-structure">HOW: How to create a data structure?</a>
       <ul>
-        <li><a href="#array">Array</a></li>
-        <li><a href="#linked-list">Linked List</a></li>
-        <li><a href="#stacks">Stacks</a></li>
-        <li><a href="#queue">Queue</a></li>
-        <li><a href="#binary-trees">Binary Trees</a></li>
-        <li><a href="#hash-tables">Hash Tables</a></li>
-      </ul>
-    </li>
-    <li><a href="#how">HOW</a>
-      <ul>
-        <li><a href="#how-to-read-the-code-of-programs">How to read the code of programs?</a></li>
-        <li><a href="#how-to-create-a-data-structure">How to create a data structure?</a></li>
+        <li><a href="#a-list-adt">A List ADT</a></li>
+        <li><a href="#arrayliste"><code>ArrayList&lt;E&gt;</code></a></li>
+        <li><a href="#stacke--queueeinterface"><code>Stack&lt;E&gt;</code> &amp; <code>Queue&lt;E&gt;</code>(interface)</a></li>
+        <li><a href="#binary-search-tree"><code>Binary Search Tree</code></a></li>
       </ul>
     </li>
   </ul>
@@ -435,7 +434,7 @@
     <section class="article-content">
     
     
-    <h2 id="how-java-runs">How Java runs</h2>
+    <h2 id="how-how-java-runs">HOW: How Java runs</h2>
 <p>Source Code -<code>javac SOURCE_CODE_FILE</code>-&gt; bytecode -<code>java CLASS_FILE</code>-&gt; machine instructions (in Java Virtual Machine or JVM)</p>
 <h3 id="jvm">JVM</h3>
 <p>pros: run in different machine</p>
@@ -482,7 +481,7 @@
 <blockquote>
 <p><code>void swap(d1, d2)</code> does not work in Java</p>
 </blockquote>
-<h2 id="why-should-we-learn-algorithm">Why should we learn algorithm</h2>
+<h2 id="why-why-should-we-learn-algorithm">WHY: Why should we learn algorithm</h2>
 <p>Be CORRECT and EFFICIENT</p>
 <blockquote>
 <p>Be CORRECT first then EFFICIENT.</p>
@@ -490,8 +489,7 @@
 <ul>
 <li>Binary Search - O($\log{N}$)</li>
 </ul>
-<h2 id="what">WHAT</h2>
-<h3 id="array">Array</h3>
+<h2 id="what-what-is-array">WHAT: What is Array</h2>
 <ul>
 <li>Search
 <ul>
@@ -512,7 +510,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="linked-list">Linked List</h3>
+<h2 id="what-what-is-linked-list">WHAT: What is Linked List</h2>
 <p>Storing - <code>class Node {int data; Node next;}</code></p>
 <blockquote>
 <p><code>head</code> is a reference to the first node, <code>tail</code> is a reference to the last node (they are not nodes)</p>
@@ -526,7 +524,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="stacks">Stacks</h3>
+<h2 id="what-what-is-stacks">WHAT: What is Stacks</h2>
 <p>FILO: First In Last Out</p>
 <ul>
 <li>Add: <code>push</code>(only one)</li>
@@ -537,7 +535,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="queue">Queue</h3>
+<h2 id="what-what-is-queue">WHAT: What is Queue</h2>
 <p>FIFO: First In First Out</p>
 <ul>
 <li>Add: enqueue</li>
@@ -549,7 +547,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="binary-trees">Binary Trees</h3>
+<h2 id="what-what-is-binary-trees">WHAT: What is Binary Trees</h2>
 <blockquote>
 <p>Connect Array(Binary Search) and Linked List</p>
 </blockquote>
@@ -557,16 +555,15 @@
 <ul>
 <li>Root</li>
 </ul>
-<h3 id="hash-tables">Hash Tables</h3>
-<h2 id="how">HOW</h2>
-<h3 id="how-to-read-the-code-of-programs">How to read the code of programs?</h3>
+<h2 id="what-what-is-hash-tables">WHAT: What is Hash Tables</h2>
+<h2 id="how-how-to-read-the-code-of-programs">HOW: How to read the code of programs?</h2>
 <p><code>javadoc 17</code></p>
 <ol>
 <li>Read <code>README.md</code> &amp; try to run the program(build class with package name <code>$ javac packageName/foo.java</code>, then run code <code>$ java packageName.foo</code>)</li>
 <li>Find the <code>main</code> function then <code>debug</code></li>
 </ol>
-<h3 id="how-to-create-a-data-structure">How to create a data structure?</h3>
-<h4 id="a-list-adt">A List ADT</h4>
+<h2 id="how-how-to-create-a-data-structure">HOW: How to create a data structure?</h2>
+<h3 id="a-list-adt">A List ADT</h3>
 <ul>
 <li>
 <p>(ADT) Abstract Data Type</p>
@@ -687,7 +684,7 @@
 <p>Circular Linked List</p>
 </li>
 </ul>
-<h4 id="arrayliste"><code>ArrayList&lt;E&gt;</code></h4>
+<h3 id="arrayliste"><code>ArrayList&lt;E&gt;</code></h3>
 <ul>
 <li>
 <p>Add Last: <code>O(N)</code>, but faster than do it by ourselves - use <code>arraycopy()</code></p>
@@ -721,26 +718,26 @@
 <p><code>&lt;?&gt;</code>: we need not actually type is the same.</p>
 </li>
 </ul>
-<h4 id="stacke--queueeinterface"><code>Stack&lt;E&gt;</code> &amp; <code>Queue&lt;E&gt;</code>(interface)</h4>
+<h3 id="stacke--queueeinterface"><code>Stack&lt;E&gt;</code> &amp; <code>Queue&lt;E&gt;</code>(interface)</h3>
 <ul>
 <li><code>Array</code></li>
 <li><code>LinkedList</code>: top at the head: <code>O(1)</code> (pop), top at the tail: <code>O(N)</code></li>
 </ul>
 <p>$$ Negative \ Modulo: -6 = (8 - 6) \equiv 2 \pmod{8}
 $$</p>
-<h4 id="binary-search-tree"><code>Binary Search Tree</code></h4>
+<h3 id="binary-search-tree"><code>Binary Search Tree</code></h3>
+<h4 id="recursive-base-case-first--recursive-call">Recursive: base case first + recursive call</h4>
 <ul>
-<li>Recursive: base case first + recursive call
+<li>
+<p>Memory: stack frame + 1</p>
 <ul>
-<li>Memory: stack frame + 1</li>
+<li>Check the initial situation (empty, null, etc): create a new function that check the condition containing recursive function</li>
 <li>Indirect recursion: A -&gt; B -&gt; A -&gt; &hellip;</li>
-<li>Recursive structure &amp; Recursive function
-<ul>
-<li><code>LinkedList</code></li>
+<li>Recursive structure &amp; Recursive function: <code>LinkedList</code></li>
 </ul>
 </li>
-<li>Check the initial situation (empty, null, etc): create a new function that check the condition containing recursive function</li>
-</ul>
+<li>
+<p>Backtracking &amp; Storing without repeated calls</p>
 </li>
 </ul>
 
