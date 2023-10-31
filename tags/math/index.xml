@@ -107,7 +107,7 @@ P &amp;amp; Q &amp;amp; R
 &lt;h3 id=&#34;how-lagrange-multipliers&#34;&gt;HOW: LAGRANGE MULTIPLIERS&lt;/h3&gt;
 &lt;h2 id=&#34;what-what-is-integral---multiple-integrals&#34;&gt;WHAT: What is integral - Multiple Integrals&lt;/h2&gt;
 &lt;h3 id=&#34;what-what-is-double-integral&#34;&gt;WHAT: What is double integral&lt;/h3&gt;
-&lt;p&gt;$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rarr 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^&lt;em&gt;, y_{ij}^&lt;/em&gt;) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^* , y^ * \rarr \bar{x}, \bar{y})
+&lt;p&gt;$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rarr 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^* , y^ * \rarr \bar{x}, \bar{y})
 $$&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-calculate-iterated-integrals&#34;&gt;HOW: How to calculate iterated integrals?&lt;/h3&gt;
 &lt;p&gt;$$ \int_a^b\int_c^d{f(x, y)}dA = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
