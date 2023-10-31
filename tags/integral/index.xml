@@ -85,7 +85,17 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$D_u{f(x, y)} = \vec{P&amp;rsquo;Q&amp;rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
 &lt;ul&gt;
-&lt;li&gt;$\nabla{f(x, y)}$ represents tangent plant&lt;/li&gt;
+&lt;li&gt;$\nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
+&lt;ul&gt;
+&lt;li&gt;$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$&lt;/li&gt;
+&lt;li&gt;$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
+\hat{i} &amp;amp; \hat{j} &amp;amp; \vec{k} \
+\frac{\partial}{\partial x} &amp;amp; \frac{\partial}{\partial y} &amp;amp; \frac{\partial}{\partial z} \
+P &amp;amp; Q &amp;amp; R
+\end{vmatrix} = (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z})\hat{i} + (\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x})\hat{j} + (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})\hat{k}$&lt;/li&gt;
+&lt;li&gt;$\text{div curl } \textbf{F} = 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -97,7 +107,7 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;how-lagrange-multipliers&#34;&gt;HOW: LAGRANGE MULTIPLIERS&lt;/h3&gt;
 &lt;h2 id=&#34;what-what-is-integral---multiple-integrals&#34;&gt;WHAT: What is integral - Multiple Integrals&lt;/h2&gt;
 &lt;h3 id=&#34;what-what-is-double-integral&#34;&gt;WHAT: What is double integral&lt;/h3&gt;
-&lt;p&gt;$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rarr 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^&lt;em&gt;, y_{ij}^&lt;/em&gt;) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^&lt;em&gt;,y^&lt;/em&gt; \rarr \bar{x}, \bar{y})
+&lt;p&gt;$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rarr 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^&lt;em&gt;, y_{ij}^&lt;/em&gt;) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^* , y^ * \rarr \bar{x}, \bar{y})
 $$&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-calculate-iterated-integrals&#34;&gt;HOW: How to calculate iterated integrals?&lt;/h3&gt;
 &lt;p&gt;$$ \int_a^b\int_c^d{f(x, y)}dA = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
@@ -117,7 +127,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;how-how-to-integrate-along-the-line---line-integrals&#34;&gt;HOW: How to integrate along the line - Line Integrals&lt;/h3&gt;
-&lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_ i \rarr 0}\sum_{i = 1}^{n}f(x_i^&lt;em&gt;, y_i^&lt;/em&gt;)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+&lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_ i \rarr 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$
 $$ \rArr \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$&lt;/p&gt;
@@ -194,9 +204,9 @@ $$&lt;/p&gt;
 &lt;p&gt;Error Bond&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$
-Riemann - \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;em&gt;{max}(x)|) \newline
-Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;/em&gt;{max}(x)|) \newline
-Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
+Riemann - \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;_ {max}(x)|) \newline
+Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;_ {max}(x)|) \newline
+Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_ {max}(x)|)
 $$&lt;/p&gt;
 &lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
 &lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \rArr \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
