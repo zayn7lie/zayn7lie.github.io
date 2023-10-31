@@ -117,7 +117,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;how-how-to-integrate-along-the-line---line-integrals&#34;&gt;HOW: How to integrate along the line - Line Integrals&lt;/h3&gt;
-&lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}&lt;em&gt;i \rarr 0}\sum&lt;/em&gt;{i = 1}^{n}f(x_i^&lt;em&gt;, y_i^&lt;/em&gt;)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+&lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_ i \rarr 0}\sum_{i = 1}^{n}f(x_i^&lt;em&gt;, y_i^&lt;/em&gt;)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$
 $$ \rArr \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$&lt;/p&gt;
@@ -128,9 +128,26 @@ $$ W = \int_C \vec{F} \cdot d\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Independent of path
-$$ \forall C_1, C_2 \ with \ same \ initial \ and \ final \ points, \int_{C_1} \vec{F} \cdot d\vec{r} = \int_{C_2} \vec{F} \cdot d\vec{r}
+&lt;p&gt;Conservative
+$$ F(x, y) = P\hat{i} + Q\hat{j}, F \text{ is conservative} \lrArr \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \text{ thoughout } D
 $$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;independent of path: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \lrArr \forall C \in D, \int_C \vec{F} \cdot d \vec{r} = 0$
+&lt;ul&gt;
+&lt;li&gt;$C$: Closed Path - its terminal point coincides with its initial point&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;conservative vector field: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \lrArr F \text{ is a conservative vector field}$ ($\nabla{f} = F$)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Relationship with double integral: Green&amp;rsquo;s Theorem
+$$ \oint_C \vec{F} \cdot d\vec{r} = \oint_C P dx + Q dy = \iint_D(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})dA = \int_{\partial D}{P dx + Q dy}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Positive orientation: a simple closed curve $C$ refers to a single counterclockwise traversal of $C$&lt;/li&gt;
+&lt;li&gt;$\oint_C P dx = \oint_{g_2(x)}^{g_1(x)} P dx = - \oint_{g_1(x)}^{g_2(x)} P dx = -\int_{g_1(x)}^{g_2(x)} \int_a^b \frac{\partial P}{\partial y} dy dx = \iint_D(-\frac{\partial P}{\partial y}) dA$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
