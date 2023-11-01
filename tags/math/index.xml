@@ -160,6 +160,17 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;how-how-to-integral-with-surface&#34;&gt;HOW: How to integral with Surface&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Parametric Surface: $\vec{r}(u, v) = x(u, v)\hat{i} + y(u, v)\hat{j} + z(u, v)\hat{k}$
+&lt;ul&gt;
+&lt;li&gt;Surfaces of Revolution: $x = x, y = f(x)\cos\theta, z = f(x)\sin\theta$&lt;/li&gt;
+&lt;li&gt;Tangent Planes: $\vec{r}_ v = \frac{\partial x(u, v)}{\partial v}\hat{i} + \frac{\partial y(u, v)}{\partial v}\hat{j} + \frac{\partial z(u, v)}{\partial v}\hat{k}$&lt;/li&gt;
+&lt;li&gt;Surface Area: $A(S) = \iint_D |\vec{r}_u \times \vec{r}_v|dA$&lt;/li&gt;
+&lt;li&gt;Integral Along the Surface: Stokes&amp;rsquo; Theorem - $\int_C \vec{F} \cdot d\vec{r} = \iint_S \text{curl} \vec{F} \cdot d\vec{S}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -266,6 +277,8 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rarr \infty}{n^{\frac{1}{n}}} = 1), \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
 $$
 $$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2} (Hint: Root \ Test)
+$$
+$$ \sum{\ln(1 + \frac{1}{n})}, \sum \ln(1 + \frac{1}{n^p})
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -308,6 +321,35 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;h3 id=&#34;power-series&#34;&gt;Power Series&lt;/h3&gt;
+&lt;p&gt;$$ f(x) = \sum c(x - a)^n \text{ is called a power series centered at $a$, domain of $f(x)$ is the set that series converge.}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;only converge at $x = a$&lt;/li&gt;
+&lt;li&gt;converge for all $x \in R$&lt;/li&gt;
+&lt;li&gt;$\exist R &amp;gt; 0, |x - a| &amp;lt; R the series converge, R: radius of convergence$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;HOW: Ratio Test + Two sides&lt;/h4&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \text{Find the domain of } f(x) = \sum \frac{(x - 3)^n}{n} (ANS: [2,4))
+$$&lt;/p&gt;
+&lt;h4 id=&#34;how-how-to-apply&#34;&gt;HOW: How to apply&lt;/h4&gt;
+&lt;p&gt;if the power series has a convergent radius R &amp;gt; 0, the f(x) is both differentiatable and integrable on the interval (a - R, a + R), and&lt;/p&gt;
+&lt;p&gt;$$ f\prime(x) = \sum n c_n (x - a)^{n - 1}
+$$
+$$ \int f(x)dx = c + \sum \frac{c_n}{n + 1}(x - a)^{n + 1}
+$$&lt;/p&gt;
+&lt;p&gt;E.g.&lt;/p&gt;
+&lt;p&gt;$$ |x| &amp;lt; 1, \frac{1}{1 - x} = \sum x^n \rArr (\frac{1}{1 - x})^2 = \sum nx^{n - 1} \rArr -\ln{(1 - x)} = \sum \frac{x^{n + 1}}{n + 1}
+$$
+$$ f(x) = \frac{1}{1 - x} \rArr f^{(10)}(x)|_ {x = 0} = 10!
+$$&lt;/p&gt;
+&lt;h4 id=&#34;what-find-if-the-function-could-present-as-series-taylor-series&#34;&gt;WHAT: find if the function could present as series: Taylor Series&lt;/h4&gt;
+&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \rArr f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R, \text{when $a = 0$, it is called maclo&amp;hellip; series - unique}
+$$&lt;/p&gt;
+&lt;p&gt;E.g.&lt;/p&gt;
+&lt;p&gt;$$ e^x = \sum \frac{1}{n!}x^n
+$$&lt;/p&gt;
 </description>
         </item>
         <item>

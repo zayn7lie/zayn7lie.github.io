@@ -160,6 +160,17 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;how-how-to-integral-with-surface&#34;&gt;HOW: How to integral with Surface&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Parametric Surface: $\vec{r}(u, v) = x(u, v)\hat{i} + y(u, v)\hat{j} + z(u, v)\hat{k}$
+&lt;ul&gt;
+&lt;li&gt;Surfaces of Revolution: $x = x, y = f(x)\cos\theta, z = f(x)\sin\theta$&lt;/li&gt;
+&lt;li&gt;Tangent Planes: $\vec{r}_ v = \frac{\partial x(u, v)}{\partial v}\hat{i} + \frac{\partial y(u, v)}{\partial v}\hat{j} + \frac{\partial z(u, v)}{\partial v}\hat{k}$&lt;/li&gt;
+&lt;li&gt;Surface Area: $A(S) = \iint_D |\vec{r}_u \times \vec{r}_v|dA$&lt;/li&gt;
+&lt;li&gt;Integral Along the Surface: Stokes&amp;rsquo; Theorem - $\int_C \vec{F} \cdot d\vec{r} = \iint_S \text{curl} \vec{F} \cdot d\vec{S}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

@@ -275,6 +275,7 @@ When $f \rarr L$ no matter what direction $(x, y) \rarr (a, b)$, the limit of $f
       <ul>
         <li><a href="#what-what-is-fields">WHAT: What is Fields</a></li>
         <li><a href="#how-how-to-integrate-along-the-line---line-integrals">HOW: How to integrate along the line - Line Integrals</a></li>
+        <li><a href="#how-how-to-integral-with-surface">HOW: How to integral with Surface</a></li>
       </ul>
     </li>
   </ul>
@@ -593,6 +594,17 @@ $$</p>
 <ul>
 <li>Positive orientation: a simple closed curve $C$ refers to a single counterclockwise traversal of $C$</li>
 <li>$\oint_C P dx = \oint_{g_2(x)}^{g_1(x)} P dx = - \oint_{g_1(x)}^{g_2(x)} P dx = -\int_{g_1(x)}^{g_2(x)} \int_a^b \frac{\partial P}{\partial y} dy dx = \iint_D(-\frac{\partial P}{\partial y}) dA$</li>
+</ul>
+</li>
+</ul>
+<h3 id="how-how-to-integral-with-surface">HOW: How to integral with Surface</h3>
+<ul>
+<li>Parametric Surface: $\vec{r}(u, v) = x(u, v)\hat{i} + y(u, v)\hat{j} + z(u, v)\hat{k}$
+<ul>
+<li>Surfaces of Revolution: $x = x, y = f(x)\cos\theta, z = f(x)\sin\theta$</li>
+<li>Tangent Planes: $\vec{r}_ v = \frac{\partial x(u, v)}{\partial v}\hat{i} + \frac{\partial y(u, v)}{\partial v}\hat{j} + \frac{\partial z(u, v)}{\partial v}\hat{k}$</li>
+<li>Surface Area: $A(S) = \iint_D |\vec{r}_u \times \vec{r}_v|dA$</li>
+<li>Integral Along the Surface: Stokes&rsquo; Theorem - $\int_C \vec{F} \cdot d\vec{r} = \iint_S \text{curl} \vec{F} \cdot d\vec{S}$</li>
 </ul>
 </li>
 </ul>
