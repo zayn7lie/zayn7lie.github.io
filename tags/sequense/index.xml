@@ -154,7 +154,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;h3 id=&#34;power-series&#34;&gt;Power Series&lt;/h3&gt;
+&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;WHAT: What is the applycation of series - Power Series&lt;/h3&gt;
 &lt;p&gt;$$ f(x) = \sum c(x - a)^n \text{ is called a power series centered at $a$, domain of $f(x)$ is the set that series converge.}
 $$&lt;/p&gt;
 &lt;ul&gt;
@@ -175,13 +175,35 @@ $$&lt;/p&gt;
 &lt;p&gt;E.g.&lt;/p&gt;
 &lt;p&gt;$$ |x| &amp;lt; 1, \frac{1}{1 - x} = \sum x^n \rArr (\frac{1}{1 - x})^2 = \sum nx^{n - 1} \rArr -\ln{(1 - x)} = \sum \frac{x^{n + 1}}{n + 1}
 $$
-$$ f(x) = \frac{1}{1 - x} \rArr f^{(10)}(x)|_ {x = 0} = 10!
+$$ f(x) = \frac{1}{1 - x} \rArr f^{(10)}(x)|_{x = 0} = 10!
 $$&lt;/p&gt;
-&lt;h4 id=&#34;what-find-if-the-function-could-present-as-series-taylor-series&#34;&gt;WHAT: find if the function could present as series: Taylor Series&lt;/h4&gt;
-&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \rArr f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R, \text{when $a = 0$, it is called maclo&amp;hellip; series - unique}
+&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;HOW: How to apply for graphing - Taylor Series&lt;/h3&gt;
+&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \rArr f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
-&lt;p&gt;E.g.&lt;/p&gt;
-&lt;p&gt;$$ e^x = \sum \frac{1}{n!}x^n
+&lt;blockquote&gt;
+&lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;1--x-format&#34;&gt;$1 + x$ Format&lt;/h4&gt;
+&lt;p&gt;$$ \frac{1}{1 - x}, |x| &amp;lt; 1 = 1 + x + x^2 + x^3 \ldots
+$$
+$$ \ln(1 + x) = \int \frac{1}{1 + x}dx = \sum \frac{(-1)^nx^{n + 1}}{n + 1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} \ldots
+$$
+$$ (1 + x)^k = \sum \frac{k!}{(k - n)!n!}x^n \left{ \begin{array}{}
+|x| &amp;lt; 1, k \in \R: \text{abc} \\
+|x| = 1, k \geq 0: \text{abc}, k \geq -1: \text{con} \\
+|x| = -1, k \geq 0: \text{con} \\
+|x| &amp;gt; 1: \text{di unless $k$ is non negint}&lt;/p&gt;
+&lt;p&gt;\end{array}\right.
+$$&lt;/p&gt;
+&lt;h4 id=&#34;trigonometrical-format&#34;&gt;Trigonometrical Format&lt;/h4&gt;
+&lt;p&gt;$$ \sin{x} = \sum(-1)^{n}\frac{x^{2n + 1}}{(2n + 1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \ldots
+$$
+$$ \cos{x} = \frac{d}{dx}\sin{x} = \sum (-1)^n \frac{x^{2n}}{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots
+$$&lt;/p&gt;
+&lt;h4 id=&#34;special-format&#34;&gt;Special Format&lt;/h4&gt;
+&lt;p&gt;$$ e^x = \sum \frac{1}{n!}x^n = \sum\frac{e^a}{n!}(x - a)^n = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \ldots
+$$
+$$ \arctan{x} = \int \frac{1}{1 + x^2} dx = \sum \frac{(-1)^nx^{2n + 1}}{2n +1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \ldots
 $$&lt;/p&gt;
 </description>
         </item>

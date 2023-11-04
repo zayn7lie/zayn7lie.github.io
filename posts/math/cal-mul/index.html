@@ -526,8 +526,8 @@ $$</p>
 <ul>
 <li>$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$</li>
 <li>$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
-\hat{i} &amp; \hat{j} &amp; \vec{k} \
-\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \
+\hat{i} &amp; \hat{j} &amp; \vec{k} \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\
 P &amp; Q &amp; R
 \end{vmatrix} = (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z})\hat{i} + (\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x})\hat{j} + (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})\hat{k}$</li>
 <li>$\text{div curl } \textbf{F} = 0$</li>
@@ -564,7 +564,7 @@ $$</p>
 </li>
 </ul>
 <h3 id="how-how-to-integrate-along-the-line---line-integrals">HOW: How to integrate along the line - Line Integrals</h3>
-<p>$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_ i \rarr 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+<p>$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_i \rarr 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$
 $$ \rArr \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$</p>
@@ -602,7 +602,7 @@ $$</p>
 <li>Parametric Surface: $\vec{r}(u, v) = x(u, v)\hat{i} + y(u, v)\hat{j} + z(u, v)\hat{k}$
 <ul>
 <li>Surfaces of Revolution: $x = x, y = f(x)\cos\theta, z = f(x)\sin\theta$</li>
-<li>Tangent Planes: $\vec{r}_ v = \frac{\partial x(u, v)}{\partial v}\hat{i} + \frac{\partial y(u, v)}{\partial v}\hat{j} + \frac{\partial z(u, v)}{\partial v}\hat{k}$</li>
+<li>Tangent Planes: $\vec{r}_v = \frac{\partial x(u, v)}{\partial v}\hat{i} + \frac{\partial y(u, v)}{\partial v}\hat{j} + \frac{\partial z(u, v)}{\partial v}\hat{k}$</li>
 <li>Surface Area: $A(S) = \iint_D |\vec{r}_u \times \vec{r}_v|dA$</li>
 <li>Integral Along the Surface: Stokes&rsquo; Theorem - $\int_C \vec{F} \cdot d\vec{r} = \iint_S \text{curl} \vec{F} \cdot d\vec{S}$</li>
 </ul>

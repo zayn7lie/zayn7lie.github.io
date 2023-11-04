@@ -318,6 +318,24 @@ $$&lt;/p&gt;
 &lt;p&gt;Backtracking &amp;amp; Storing without repeated calls&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h4 id=&#34;searching-and-sorting&#34;&gt;Searching and Sorting&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Binary Search&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Iterative: &lt;code&gt;leftCur || rightCur = midCur&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Recursive: &lt;code&gt;return binSearchRecursive(points, p, left, right)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sorting&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Quadratic Sorts&lt;/li&gt;
+&lt;li&gt;Merge Sort: Split with Middle - Recurse left &amp;amp; right - Merge with Sorting (double pointers)&lt;/li&gt;
+&lt;li&gt;Quick Sort: Split with Pivot - Heap larger / smaller with left / right - Do the same with Left and Right&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
