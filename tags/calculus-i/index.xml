@@ -22,43 +22,43 @@
 &lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Continuous: $\lim_{x \rarr a}{f(x)} = f(a)$ ($\lim_{x \rarr a}{f(x)} = \lim_{x \rarr a^+}{f(x)} = \lim_{x \rarr a^-}{f(x)}$)&lt;/p&gt;
+&lt;p&gt;Continuous: $\lim_{x \rightarrow a}{f(x)} = f(a)$ ($\lim_{x \rightarrow a}{f(x)} = \lim_{x \rightarrow a^+}{f(x)} = \lim_{x \rightarrow a^-}{f(x)}$)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exist c \in [a,b], f(c) \in [f(a), f(b)]$
+&lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exists c \in [a,b], f(c) \in [f(a), f(b)]$
 &lt;ul&gt;
-&lt;li&gt;MVT (Mean Value Theorem): If $f(x)$ is &lt;em&gt;differentiable&lt;/em&gt; on $[a, b]$, then $\exist c, f&amp;rsquo;(c) = \frac{f(b) - f(a)}{b - a}$&lt;/li&gt;
-&lt;li&gt;EVT (Extreme Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on &lt;em&gt;closed&lt;/em&gt; interval $[a, b]$, then $\exist c_1, c_2, f_{max}(x) = f(c_1), f_{min}(x) = f(c_2)$&lt;/li&gt;
+&lt;li&gt;MVT (Mean Value Theorem): If $f(x)$ is &lt;em&gt;differentiable&lt;/em&gt; on $[a, b]$, then $\exists c, f&amp;rsquo;(c) = \frac{f(b) - f(a)}{b - a}$&lt;/li&gt;
+&lt;li&gt;EVT (Extreme Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on &lt;em&gt;closed&lt;/em&gt; interval $[a, b]$, then $\exists c_1, c_2, f_{max}(x) = f(c_1), f_{min}(x) = f(c_2)$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Discontinuous points (Discontinuity)
 &lt;ul&gt;
-&lt;li&gt;Removable ~: $\lim_{x \rarr a}f(x) \neq f(a)$&lt;/li&gt;
-&lt;li&gt;Jump ~: $\lim_{x \rarr a+}f(x) \neq \lim_{x \rarr a-}f(x)$&lt;/li&gt;
-&lt;li&gt;Infinite (Essential) ~: $\lim_{x \rarr a^+}f(x)$ or $\lim_{x \rarr a^-}f(x)$ equals $\pm \infin$&lt;/li&gt;
+&lt;li&gt;Removable ~: $\lim_{x \rightarrow a}f(x) \neq f(a)$&lt;/li&gt;
+&lt;li&gt;Jump ~: $\lim_{x \rightarrow a+}f(x) \neq \lim_{x \rightarrow a-}f(x)$&lt;/li&gt;
+&lt;li&gt;Infinite (Essential) ~: $\lim_{x \rightarrow a^+}f(x)$ or $\lim_{x \rightarrow a^-}f(x)$ equals $\pm \infty$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Smooth: $\lim_{c \rarr 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rarr 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
+&lt;p&gt;Smooth: $\lim_{c \rightarrow 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rightarrow 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Limit: L&amp;rsquo;hospital rule&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;E.g.
-$$ \lim_{x \rarr 0^+}{x\ln{x}}, \lim_{x \rarr 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
+$$ \lim_{x \rightarrow 0^+}{x\ln{x}}, \lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
 $$&lt;/p&gt;
 &lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;$\frac{dy}{dx}$ differentiate is a method to cut source function to know the tendency&lt;/li&gt;
 &lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;$$ \frac{d}{dx}f(x_1) = f&amp;rsquo;(x_1) = \lim_{x_2 \rarr x_1}\frac{f(x_2) - f(x_1)}{x_2 - x_1}
+&lt;p&gt;$$ \frac{d}{dx}f(x_1) = f&amp;rsquo;(x_1) = \lim_{x_2 \rightarrow x_1}\frac{f(x_2) - f(x_1)}{x_2 - x_1}
 $$&lt;/p&gt;
 &lt;p&gt;E.g. Derive:
 $$
-g(x) = \lim_{h \rarr 0}\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}
+g(x) = \lim_{h \rightarrow 0}\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}
 $$&lt;/p&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
 &lt;h3 id=&#34;how-to-differentiate&#34;&gt;How to differentiate?&lt;/h3&gt;
@@ -69,7 +69,7 @@ $$ \frac{d}{dx}(f(x) \cdot g(x)) = \frac{d}{dx}f(x) \cdot g(x) + f(x) \cdot \fra
 $$
 $$ \frac{d}{dx}f(g(x)) = f&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) = \frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{dx}g(x)
 $$
-$$ * Inverse \ function: y(x) \lrArr x(y) \rArr \frac{d}{dx}y(x_1) \cdot \frac{d}{dx}x(y_1) = 1
+$$ * Inverse \ function: y(x) \Leftrightarrow x(y) \Rightarrow \frac{d}{dx}y(x_1) \cdot \frac{d}{dx}x(y_1) = 1
 $$&lt;/p&gt;
 &lt;h4 id=&#34;basic-function&#34;&gt;Basic function&lt;/h4&gt;
 &lt;p&gt;$$ \frac{d}{dx}x^n = n \cdot x^{n - 1}, \frac{d}{dx}Constant = 0, \frac{d}{dx}\ln{x} = \frac{1}{x}, \frac{d}{dx}e^x = e^x

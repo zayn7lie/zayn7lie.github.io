@@ -24,8 +24,8 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence&lt;/h2&gt;
 &lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h3 id=&#34;convergence-forall-epsilon-exist-n-forall-n--n-a_n---l--epsilon-rarr-a_n-rarr-l-or-lim_n-rarr-inftya_n--l-rarr-a_n-rarr-l&#34;&gt;Convergence: $\forall \epsilon, \exist N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \rArr a_n \rarr l$ OR $\lim_{n \rarr \infty}a_n = L \rArr a_n \rarr L$&lt;/h3&gt;
-&lt;p&gt;E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \rArr a_n \ convergent \ to \ 0$&lt;/p&gt;
+&lt;h3 id=&#34;convergence-forall-epsilon-exists-n-forall-n--n-a_n---l--epsilon-rightarrow-a_n-rightarrow-l-or-lim_n-rightarrow-inftya_n--l-rightarrow-a_n-rightarrow-l&#34;&gt;Convergence: $\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/h3&gt;
+&lt;p&gt;E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n \ convergent \ to \ 0$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Test&lt;/p&gt;
@@ -42,7 +42,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Bounded by functions (Squeeze Theorem): $a_n \leq b_n \leq c_n \rArr \lim{b_n} = L$&lt;/p&gt;
+&lt;p&gt;Bounded by functions (Squeeze Theorem): $a_n \leq b_n \leq c_n \Rightarrow \lim{b_n} = L$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -62,10 +62,10 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Usage
 &lt;ul&gt;
-&lt;li&gt;Continuity and Convergence theorem: $\lim_{x \rarr L}f \exist, \lim_{n \rarr \infty}a_n = L \rArr \lim_{n \rarr \infty}f$
+&lt;li&gt;Continuity and Convergence theorem: $\lim_{x \rightarrow L}f \exists, \lim_{n \rightarrow \infty}a_n = L \Rightarrow \lim_{n \rightarrow \infty}f$
 &lt;ul&gt;
-&lt;li&gt;$f(x): a_n = f(n), \lim_{x \rarr \infty}f = L \rArr a_n \rarr L$&lt;/li&gt;
-&lt;li&gt;$a_n, b_n, d_n \rarr C \rArr \lim{(a^C + b \cdot d)} = (\lim{a})^C + \lim{b} \cdot \lim{d}$&lt;/li&gt;
+&lt;li&gt;$f(x): a_n = f(n), \lim_{x \rightarrow \infty}f = L \Rightarrow a_n \rightarrow L$&lt;/li&gt;
+&lt;li&gt;$a_n, b_n, d_n \rightarrow C \Rightarrow \lim{(a^C + b \cdot d)} = (\lim{a})^C + \lim{b} \cdot \lim{d}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -82,21 +82,21 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-series&#34;&gt;WHAT: What is Series&lt;/h2&gt;
 &lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-lrarr-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \lrArr Series$ diverges or converges&lt;/h3&gt;
+&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Test for Series
 &lt;ul&gt;
 &lt;li&gt;Direct Test
 &lt;ul&gt;
-&lt;li&gt;Overall elements (Integral Test): $f(x)$ is continuous and $a_n = f(n)$, $\sum a_n \rarr/\nrightarrow C \lrArr \int_1^\infty f(x)dx \rarr/\nrightarrow C$&lt;/li&gt;
-&lt;li&gt;Adjacent elements (Ratio test): $\lim_{n \rarr \infty}|\frac{a_{n + 1}}{a_n}| = l &amp;lt; 1 \rArr$ absolute converge (prove using geometric series) (&amp;gt; 1 - diverge, = 1 - inconclusive)&lt;/li&gt;
-&lt;li&gt;Single elements (Root Test): $\lim_{n \rarr \infty}\sqrt[n]{|a_n|}$&lt;/li&gt;
+&lt;li&gt;Overall elements (Integral Test): $f(x)$ is continuous and $a_n = f(n)$, $\sum a_n \rightarrow/\nrightarrow C \Leftrightarrow \int_1^\infty f(x)dx \rightarrow/\nrightarrow C$&lt;/li&gt;
+&lt;li&gt;Adjacent elements (Ratio test): $\lim_{n \rightarrow \infty}|\frac{a_{n + 1}}{a_n}| = l &amp;lt; 1 \Rightarrow$ absolute converge (prove using geometric series) (&amp;gt; 1 - diverge, = 1 - inconclusive)&lt;/li&gt;
+&lt;li&gt;Single elements (Root Test): $\lim_{n \rightarrow \infty}\sqrt[n]{|a_n|}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Non-direct Test: Compare with another
 &lt;ul&gt;
-&lt;li&gt;Limit Comparison test: $\sum a_n, \sum b_n &amp;gt; 0, \lim_{n \rarr \infty}\frac{a_n}{b_n} = C \rArr \sum a_n, \sum b_n$ both di/converge.&lt;/li&gt;
-&lt;li&gt;Comparison test(&amp;ldquo;Squeeze Theorem&amp;rdquo;): $\sum a_n, \sum b_n &amp;gt; 0, \sum b_n$ converges and $a_n \leq b_n$ $\rArr$ $\sum a_n$ converges, vice versa (con to di, $\leq$ to $\geq$).
+&lt;li&gt;Limit Comparison test: $\sum a_n, \sum b_n &amp;gt; 0, \lim_{n \rightarrow \infty}\frac{a_n}{b_n} = C &amp;gt; 0 \Rightarrow \sum a_n, \sum b_n$ both di/converge.&lt;/li&gt;
+&lt;li&gt;Comparison test(&amp;ldquo;Squeeze Theorem&amp;rdquo;): $\sum a_n, \sum b_n &amp;gt; 0, \sum b_n$ converges and $a_n \leq b_n$ $\Rightarrow$ $\sum a_n$ converges, vice versa (con to di, $\leq$ to $\geq$).
 &lt;ul&gt;
 &lt;li&gt;Absolutely converge $\sum|a_n|$ is converges (Conditionally = the condition is not plug in absolute value): $0 \leq \sum a_n + \sum|a_n| \leq 2 \sum|a_n|$&lt;/li&gt;
 &lt;/ul&gt;
@@ -107,7 +107,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
-&lt;p&gt;$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rarr \infty}{n^{\frac{1}{n}}} = 1), \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
+&lt;p&gt;$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rightarrow \infty}{n^{\frac{1}{n}}} = 1), \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
 $$
 $$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2} (Hint: Root \ Test)
 $$
@@ -124,14 +124,14 @@ $$&lt;/p&gt;
 &lt;p&gt;The relationship of Sequence and Series&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;series $\sum_{n = 1}^\infty$ converges $\rArr$ $\lim_{n \rarr \infty}a_n = 0$, or series $\sum_{n = 1}^\infty$ diverges $\rArr$ $\lim_{n \rarr \infty}a_n \neq 0$&lt;/p&gt;
+&lt;p&gt;series $\sum_{n = 1}^\infty$ converges $\Rightarrow$ $\lim_{n \rightarrow \infty}a_n = 0$, or series $\sum_{n = 1}^\infty$ diverges $\Rightarrow$ $\lim_{n \rightarrow \infty}a_n \neq 0$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;minus prove: $S_{n} - S_{n - 1}$&lt;/li&gt;
 &lt;li&gt;integral prove&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;$\lim_{n \rarr \infty}a_n = 0$ $\nRightarrow$ series $\sum_{n = 1}^\infty$ converges, e.g. $\sum_{i = 1}^\infty\frac{1}{i} &amp;gt; \ln{(n + 1)}$&lt;/p&gt;
+&lt;p&gt;$\lim_{n \rightarrow \infty}a_n = 0$ $\nRightarrow$ series $\sum_{n = 1}^\infty$ converges, e.g. $\sum_{i = 1}^\infty\frac{1}{i} &amp;gt; \ln{(n + 1)}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -145,7 +145,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Alternating Series $\sum(-1)^{n - 1} a_n$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;$a_{n + 1} \leq a_n, \lim_{n \rarr \infty}a_n = 0 \rArr \sum(-1)^{n - 1} a_n \rarr C$ (decrease + bounded): $S_{2n} = (a_1  - a_2) + (a_3 - a_4) + \ldots +(a_{2n - 1} - a_{2n}) &amp;gt; 0; S_{2n} = a_1 - (a_2 - a_3) - \ldots - a_{2n} &amp;lt; a_1$, then same as $S_{2n + 1} \rArr$ whether n is odd or even, series converges.&lt;/p&gt;
+&lt;p&gt;$a_{n + 1} \leq a_n, \lim_{n \rightarrow \infty}a_n = 0 \Rightarrow \sum(-1)^{n - 1} a_n \rightarrow C$ (decrease + bounded): $S_{2n} = (a_1  - a_2) + (a_3 - a_4) + \ldots +(a_{2n - 1} - a_{2n}) &amp;gt; 0; S_{2n} = a_1 - (a_2 - a_3) - \ldots - a_{2n} &amp;lt; a_1$, then same as $S_{2n + 1} \Rightarrow$ whether n is odd or even, series converges.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Alternating Series Estimation Theorem: As the same way as above, we also could derive that $S_{2n} = (a_1  - a_2) + (a_3 - a_4) + \ldots +(a_{2n - 1} - a_{2n}) &amp;gt; (a_1  - a_2) + (a_3 - a_4) + \ldots; S_{2n} = S_{2n} = a_1 - (a_2 - a_3) - \ldots - a_{2n} &amp;lt; a_1 - (a_2 - a_3) - \ldots$&lt;/p&gt;
@@ -160,7 +160,7 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;only converge at $x = a$&lt;/li&gt;
 &lt;li&gt;converge for all $x \in R$&lt;/li&gt;
-&lt;li&gt;$\exist R &amp;gt; 0, |x - a| &amp;lt; R the series converge, R: radius of convergence$&lt;/li&gt;
+&lt;li&gt;$\exists R &amp;gt; 0, |x - a| &amp;lt; R \text{ the series converge}, R: \text{radius of convergence}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;HOW: Ratio Test + Two sides&lt;/h4&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
@@ -173,12 +173,12 @@ $$
 $$ \int f(x)dx = c + \sum \frac{c_n}{n + 1}(x - a)^{n + 1}
 $$&lt;/p&gt;
 &lt;p&gt;E.g.&lt;/p&gt;
-&lt;p&gt;$$ |x| &amp;lt; 1, \frac{1}{1 - x} = \sum x^n \rArr (\frac{1}{1 - x})^2 = \sum nx^{n - 1} \rArr -\ln{(1 - x)} = \sum \frac{x^{n + 1}}{n + 1}
+&lt;p&gt;$$ |x| &amp;lt; 1, \frac{1}{1 - x} = \sum x^n \Rightarrow (\frac{1}{1 - x})^2 = \sum nx^{n - 1} \Rightarrow -\ln{(1 - x)} = \sum \frac{x^{n + 1}}{n + 1}
 $$
-$$ f(x) = \frac{1}{1 - x} \rArr f^{(10)}(x)|_{x = 0} = 10!
+$$ f(x) = \frac{1}{1 - x} \Rightarrow f^{(10)}(x)|_{x = 0} = 10!
 $$&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;HOW: How to apply for graphing - Taylor Series&lt;/h3&gt;
-&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \rArr f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
+&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;
@@ -188,12 +188,12 @@ $$&lt;/p&gt;
 $$
 $$ \ln(1 + x) = \int \frac{1}{1 + x}dx = \sum \frac{(-1)^nx^{n + 1}}{n + 1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} \ldots
 $$
-$$ (1 + x)^k = \sum \frac{k!}{(k - n)!n!}x^n \left{ \begin{array}{}
-|x| &amp;lt; 1, k \in \R: \text{abc} \\
+$$ (1 + x)^k = \sum \frac{k!}{(k - n)!n!}x^n \left{ \begin{array}{c}
+|x| &amp;lt; 1, k \in \mathbb{R}: \text{abc} \\
 |x| = 1, k \geq 0: \text{abc}, k \geq -1: \text{con} \\
 |x| = -1, k \geq 0: \text{con} \\
-|x| &amp;gt; 1: \text{di unless $k$ is non negint}&lt;/p&gt;
-&lt;p&gt;\end{array}\right.
+|x| &amp;gt; 1: \text{di unless $k$ is non negint}
+\end{array}\right.
 $$&lt;/p&gt;
 &lt;h4 id=&#34;trigonometrical-format&#34;&gt;Trigonometrical Format&lt;/h4&gt;
 &lt;p&gt;$$ \sin{x} = \sum(-1)^{n}\frac{x^{2n + 1}}{(2n + 1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \ldots

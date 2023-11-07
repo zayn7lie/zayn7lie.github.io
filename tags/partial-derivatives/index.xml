@@ -32,11 +32,11 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Limit&lt;/p&gt;
-&lt;p&gt;$$ \lim_{(x, y) \rarr (a, b)}f(x, y) = L
+&lt;p&gt;$$ \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;When $f \rarr L$ no matter what direction $(x, y) \rarr (a, b)$, the limit of $f$ in $(a, b)$ exists.&lt;/p&gt;
-&lt;p&gt;If $f(x, y) \rarr L_1$ as $(x, y) \rarr (a, b)$ along a path $C_1$ and $f(x, y) \rarr L_2$ as $(x, y) \rarr (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rarr (a, b)}f(x, y)$ does not exist.&lt;/p&gt;
+&lt;p&gt;When $f \rightarrow L$ no matter what direction $(x, y) \rightarrow (a, b)$, the limit of $f$ in $(a, b)$ exists.&lt;/p&gt;
+&lt;p&gt;If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Limit along axis: let $y = 0$ or $x = 0$&lt;/li&gt;
@@ -44,25 +44,25 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Continuity: $\lim_{(x, y) \rarr (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
+&lt;p&gt;Continuity: $\lim_{(x, y) \rightarrow (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Algebra: Definition
-$$ \frac{\partial}{\partial x}f = f_x(a, b) = \lim_{h \rarr 0}\frac{f(a + h, b) - f(a, b)}{h} = g&amp;rsquo;(a) \ (g(x) = g(x, b)) = \lim_{h \rarr 0}\frac{g(a + h) - g(a)}{h}
+$$ \frac{\partial}{\partial x}f = f_x(a, b) = \lim_{h \rightarrow 0}\frac{f(a + h, b) - f(a, b)}{h} = g&amp;rsquo;(a) \ (g(x) = g(x, b)) = \lim_{h \rightarrow 0}\frac{g(a + h) - g(a)}{h}
 $$
-$$ \frac{\partial}{\partial y}f = f_y(a, b) = \lim_{h \rarr 0}\frac{f(a, b + h) - f(a, b)}{h} = g&amp;rsquo;(b) \ (g(y) = g(a, y)) = \lim_{h \rarr 0}\frac{g(b + h) - g(b)}{h}
+$$ \frac{\partial}{\partial y}f = f_y(a, b) = \lim_{h \rightarrow 0}\frac{f(a, b + h) - f(a, b)}{h} = g&amp;rsquo;(b) \ (g(y) = g(a, y)) = \lim_{h \rightarrow 0}\frac{g(b + h) - g(b)}{h}
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\epsilon_1, \epsilon_2) \rarr (0, 0) \rArr (\Delta{x}, \Delta{y}) \rarr (0, 0)$&lt;/li&gt;
+&lt;li&gt;Differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\epsilon_1, \epsilon_2) \rightarrow (0, 0) \Rightarrow (\Delta{x}, \Delta{y}) \rightarrow (0, 0)$&lt;/li&gt;
 &lt;li&gt;Differentials: $dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Geometry: Tangent Planes
-$$ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \rArr z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)
+$$ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \Rightarrow z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Linear Approximations&lt;/li&gt;
@@ -107,7 +107,7 @@ P &amp;amp; Q &amp;amp; R
 &lt;h3 id=&#34;how-lagrange-multipliers&#34;&gt;HOW: LAGRANGE MULTIPLIERS&lt;/h3&gt;
 &lt;h2 id=&#34;what-what-is-integral---multiple-integrals&#34;&gt;WHAT: What is integral - Multiple Integrals&lt;/h2&gt;
 &lt;h3 id=&#34;what-what-is-double-integral&#34;&gt;WHAT: What is double integral&lt;/h3&gt;
-&lt;p&gt;$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rarr 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^* , y^ * \rarr \bar{x}, \bar{y})
+&lt;p&gt;$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^* , y^ * \rightarrow \bar{x}, \bar{y})
 $$&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-calculate-iterated-integrals&#34;&gt;HOW: How to calculate iterated integrals?&lt;/h3&gt;
 &lt;p&gt;$$ \int_a^b\int_c^d{f(x, y)}dA = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
@@ -127,9 +127,9 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;how-how-to-integrate-along-the-line---line-integrals&#34;&gt;HOW: How to integrate along the line - Line Integrals&lt;/h3&gt;
-&lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_i \rarr 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+&lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$
-$$ \rArr \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$ \Rightarrow \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -139,15 +139,15 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Conservative
-$$ F(x, y) = P\hat{i} + Q\hat{j}, F \text{ is conservative} \lrArr \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \text{ thoughout } D
+$$ F(x, y) = P\hat{i} + Q\hat{j}, F \text{ is conservative} \Leftrightarrow \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \text{ thoughout } D
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;independent of path: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \lrArr \forall C \in D, \int_C \vec{F} \cdot d \vec{r} = 0$
+&lt;li&gt;independent of path: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \Leftrightarrow \forall C \in D, \int_C \vec{F} \cdot d \vec{r} = 0$
 &lt;ul&gt;
 &lt;li&gt;$C$: Closed Path - its terminal point coincides with its initial point&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;conservative vector field: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \lrArr F \text{ is a conservative vector field}$ ($\nabla{f} = F$)&lt;/li&gt;
+&lt;li&gt;conservative vector field: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \Leftrightarrow F \text{ is a conservative vector field}$ ($\nabla{f} = F$)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;

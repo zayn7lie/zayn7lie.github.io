@@ -449,7 +449,7 @@
 <p>Equaling space is not necessary</p>
 </blockquote>
 <p>Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:</p>
-<p>$$ S (\int_a^b{f(x)}dx) = \lim_{n \rarr \infin} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rarr \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
+<p>$$ S (\int_a^b{f(x)}dx) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$</p>
 <p>Exercise.
 $$ 1. prove\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
@@ -463,9 +463,9 @@ $$</p>
 </ul>
 <p>$$ y = \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)}y_0 + \frac{(x - x_2)(x - x_0)}{(x_1 - x_2)(x_1 - x_0)}y_1 + \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)}y_2
 $$
-$$ if \ (-h, y_0) (0, y_1) (h, y_2) \rArr \int_{-h}^{h}ydx = \frac{h}{3}(y_0 + 4y_1 + y_2)
+$$ if \ (-h, y_0) (0, y_1) (h, y_2) \Rightarrow \int_{-h}^{h}ydx = \frac{h}{3}(y_0 + 4y_1 + y_2)
 $$
-$$ \rArr S = \frac{h}{3}((y_0 + 4y_1 + y_2) + (y_2 + 4y_3 + y_4) + \ldots + (y_{n - 2} + 4y_{n - 1} + y_n)) (n \ is \ even)
+$$ \Rightarrow S = \frac{h}{3}((y_0 + 4y_1 + y_2) + (y_2 + 4y_3 + y_4) + \ldots + (y_{n - 2} + 4y_{n - 1} + y_n)) (n \ is \ even)
 $$</p>
 <blockquote>
 <p>Error Bond</p>
@@ -476,11 +476,11 @@ Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \newline
 Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 $$</p>
 <h3 id="trans-between-different-variables">Trans between different variables</h3>
-<p>$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \rArr \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+<p>$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
 $$ Taking \ derivative \ in \ both \ sides: \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
 $$
-$$ F&rsquo;(x) = f(x), F(C) \ is \ constant \rArr F&rsquo;(g(x)) \cdot g&rsquo;(x) - 0 = f(g(x)) \cdot g&rsquo;(x)
+$$ F&rsquo;(x) = f(x), F(C) \ is \ constant \Rightarrow F&rsquo;(g(x)) \cdot g&rsquo;(x) - 0 = f(g(x)) \cdot g&rsquo;(x)
 $$
 $$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
 $$</p>
@@ -492,7 +492,7 @@ $$</p>
 <ul>
 <li>$\int{F&rsquo;(g(x)) \cdot g&rsquo;(x)}{dx}$</li>
 </ul>
-<p>$$ u = g(x), du = g&rsquo;(x) dx \rArr \int{F&rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
+<p>$$ u = g(x), du = g&rsquo;(x) dx \Rightarrow \int{F&rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
 $$</p>
 <blockquote>
 <p>Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$</p>
@@ -500,9 +500,9 @@ $$</p>
 <ul>
 <li>$\int{\frac{1}{x(x^2 + 1)}}{dx}$</li>
 </ul>
-<p>$$ u = \arctan{x}, du = \frac{1}{x^2 + 1}dx, x = \tan{u} \rArr \int{\frac{1}{\tan{u}}}{du}
+<p>$$ u = \arctan{x}, du = \frac{1}{x^2 + 1}dx, x = \tan{u} \Rightarrow \int{\frac{1}{\tan{u}}}{du}
 $$
-$$ v = \sin{u}, dv = \cos{u}du \rArr \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
+$$ v = \sin{u}, dv = \cos{u}du \Rightarrow \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$</p>
 <ul>
 <li>$\int{\sec^4{x} \tan^3{x}}{dx}$
@@ -522,13 +522,13 @@ $$</p>
 </li>
 <li>
 <p>*$\int{\frac{1}{\tan^n{x}}}dx$
-$$ \sec^2 - \tan^2 = 1 \rArr \int{\frac{\sec^2 - \tan^2}{\tan^n{x}}}dx = \int{\frac{\sec^2{x}}{\tan^n{x}}}dx - \int{\frac{1}{\tan^{n - 2}{x}}}dx
+$$ \sec^2 - \tan^2 = 1 \Rightarrow \int{\frac{\sec^2 - \tan^2}{\tan^n{x}}}dx = \int{\frac{\sec^2{x}}{\tan^n{x}}}dx - \int{\frac{1}{\tan^{n - 2}{x}}}dx
 $$
-$$ \rArr \int{\frac{1}{u^n}}du - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}dx = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}dx + \int{\frac{1}{\tan^{n - 4}{x}}}dx
+$$ \Rightarrow \int{\frac{1}{u^n}}du - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}dx = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}dx + \int{\frac{1}{\tan^{n - 4}{x}}}dx
 $$
 $$ = \frac{1}{(1 - n)u^{n - 1}} - \frac{1}{(3 - n)u^{n - 3}} + \frac{1}{(5 - n)u^{n - 5}} - \frac{1}{(7 - n)u^{n - 7}} + \ldots (\pm \int{\frac{1}{\tan{x}}}dx) + C
 $$
-$$ \rArr \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \rArr \int{\frac{1}{v}}dv = \ln{|v|} + C
+$$ \Rightarrow \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \Rightarrow \int{\frac{1}{v}}dv = \ln{|v|} + C
 $$</p>
 </li>
 </ul>
@@ -540,7 +540,7 @@ $$</p>
 $$
 $$ D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&hellip;(u_jx^2 + v_jx + w_j)^{r_j}
 $$
-$$ \rArr \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+$$ \Rightarrow \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
 $$</p>
 <p>then Integral:</p>
 <ul>
@@ -551,25 +551,25 @@ $$</p>
 <ul>
 <li>$\int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx$</li>
 </ul>
-<p>$$ \int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx = \int{\frac{gx + h}{(a(x + \frac{b}{2a})^2 + c - \frac{b^2}{4a})^n}}dx, u = x + \frac{b}{2a} \rArr \int{\frac{iu + j}{(au^2 + k^2)^n}}du
+<p>$$ \int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx = \int{\frac{gx + h}{(a(x + \frac{b}{2a})^2 + c - \frac{b^2}{4a})^n}}dx, u = x + \frac{b}{2a} \Rightarrow \int{\frac{iu + j}{(au^2 + k^2)^n}}du
 $$
 $$ (1)
 $$
 $$ \int{\frac{iu}{(au^2+k^2)^n}}du, v = au^2 + k^2, \frac{1}{2a}dv = udu
 $$
-$$ \rArr \frac{i}{2a}\int{\frac{1}{v^n}}dv \rArr \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ when \ n = 1
+$$ \Rightarrow \frac{i}{2a}\int{\frac{1}{v^n}}dv \Rightarrow \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ when \ n = 1
 $$
 $$ (2)
 $$
-$$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \rArr \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
+$$ when \ n = 1: v = \frac{u\sqrt{a}}{k} \Rightarrow \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
 $$
 $$ *when \ n \neq 1:
 $$
-$$ \int{\frac{1}{(x^2 + 1)^n}}dx, x = \tan{u}, dx = \sec^2{u}du \rArr \int{\frac{1}{\sec^{2n - 2}{u}}}du = \int{\frac{\sec^2{u} - \tan^2{u}}{\sec^{2n - 2}{u}}}du
+$$ \int{\frac{1}{(x^2 + 1)^n}}dx, x = \tan{u}, dx = \sec^2{u}du \Rightarrow \int{\frac{1}{\sec^{2n - 2}{u}}}du = \int{\frac{\sec^2{u} - \tan^2{u}}{\sec^{2n - 2}{u}}}du
 $$
 $$ = \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{\tan{u}\sec{u}\tan{u}}{\sec^{2n - 1}{u}}}du, i&rsquo; = \frac{\tan{u}\sec{u}}{\sec^{2n - 1}{u}}, i = \frac{-1}{(2n - 2)\sec^{2n - 2}u}
 $$
-$$ \rArr \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{sec^2{u}}{(2n - 2)\sec^{2n - 2}{u}}}
+$$ \Rightarrow \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{sec^2{u}}{(2n - 2)\sec^{2n - 2}{u}}}
 $$
 $$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x^2 + 1)^{n - 1}}}
 $$
@@ -581,40 +581,40 @@ $$</p>
 <blockquote>
 <p>Notice. Approx to limit - Improper Integral:
 For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points</p>
-<p>$$ \int_a^b{f(x)}dx = \lim_{t \rarr b}\int_a^t{f(x)}dx
+<p>$$ \int_a^b{f(x)}dx = \lim_{t \rightarrow b}\int_a^t{f(x)}dx
 $$</p>
 </blockquote>
 <h2 id="how-how-to-apply-integral-to-reality">HOW: How to apply integral to reality</h2>
 <h3 id="rate---differential-equations">Rate - Differential Equations</h3>
-<p>$$ Informal: \frac{dy}{dx} = \frac{x}{y} \rArr ydy = xdx \rArr \int{y}dy = \int{x}dx
+<p>$$ Informal: \frac{dy}{dx} = \frac{x}{y} \Rightarrow ydy = xdx \Rightarrow \int{y}dy = \int{x}dx
 $$
-$$ *Formal \ Solution: \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \lrArr \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
+$$ *Formal \ Solution: \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \Leftrightarrow \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
 $$</p>
 <ul>
 <li>Carrying Capacity:</li>
 </ul>
 <p>$$ \frac{dN}{dt} = rN(1 - \frac{N}{K})
 $$
-$$ \rArr \frac{1}{N(K - N)} \frac{dN}{dt} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{dt} = \frac{r}{K} \rArr \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{dt}}dt = \int{r}dt
+$$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{dt} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{dt} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{dt}}dt = \int{r}dt
 $$
-$$ \ln{N} - \ln{(K - N)} = rt \rArr N = \frac{K}{1 + e^{-rt}}
+$$ \ln{N} - \ln{(K - N)} = rt \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$</p>
 <blockquote>
 <p>$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/dt$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.</p>
 </blockquote>
-<p>$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \rArr \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \rArr x\frac{dy}{dx} = -x
+<p>$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \Rightarrow \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \Rightarrow x\frac{dy}{dx} = -x
 $$</p>
 <p>Exercise.</p>
 <p>$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = aN^2\ln(bN)
 $$</p>
 <h3 id="arc-length">Arc Length</h3>
-<p>$$ L = \lim_{x_2 \rarr x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&rsquo;^2}}dx
+<p>$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&rsquo;^2}}dx
 $$</p>
 <p>Exercise.</p>
 <p>$$ Find \ curve \ length \ of \ y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4
 $$</p>
 <h3 id="areas">Areas</h3>
-<p>$$ A = \lim_{n \rarr \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy
+<p>$$ A = \lim_{n \rightarrow \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy
 $$</p>
 <h3 id="surface">Surface</h3>
 <p>$$ S = \int{2\pi f(x)\sqrt{1 + f&rsquo;^2}}dx
@@ -622,9 +622,9 @@ $$</p>
 <h3 id="volume">Volume</h3>
 <p>$$ V = \int{A(z)}dz
 $$
-$$ Cylindrical \ Shells(y-axis): V = \lim_{\Delta{x} \rarr 0}{\sum{h(x) \cdot \pi ((x + \Delta{x})^2 - x^2)}}
+$$ Cylindrical \ Shells(y-axis): V = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi ((x + \Delta{x})^2 - x^2)}}
 $$
-$$ = \lim_{\Delta{x} \rarr 0}{\sum{h(x) \cdot \pi (2x \Delta{x} + \Delta^2{x})}} = \int{h(x) 2 \pi x}dx
+$$ = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi (2x \Delta{x} + \Delta^2{x})}} = \int{h(x) 2 \pi x}dx
 $$</p>
 
 </section>
