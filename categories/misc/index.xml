@@ -586,7 +586,7 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Circular: if $|\vec{r}| = Constant$ then $\vec{r} \perp \vec{v}$; if $\vec{v} = Constant$ then $\vec{a} \perp \vec{v}$ ($\vec{w}$ is constant $\rArr \vec{w} \cdot \vec{v} = 0$)&lt;/p&gt;
+&lt;p&gt;Circular: if $|\vec{r}| = Constant$ then $\vec{r} \perp \vec{v}$; if $\vec{v} = Constant$ then $\vec{a} \perp \vec{v}$ ($\vec{w}$ is constant $\Rightarrow \vec{w} \cdot \vec{v} = 0$)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Ballistic: $\frac{d\vec{v}}{dt} = -g\hat{z}, \frac{dv_z}{dt} = -g$ -&amp;gt; $x = \frac{v_0^2}{g}\sin2\theta$&lt;/p&gt;
@@ -595,7 +595,7 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;dynamics---causes-of-motion--changes&#34;&gt;Dynamics - Causes of motion + changes&lt;/h3&gt;
 &lt;h4 id=&#34;n2l-veca--fracvecfm-or-vecf_tot--sumvecf--m-veca&#34;&gt;N2L: $\vec{a} = \frac{\vec{F}}{m}$ or $\vec{F}_{TOT} = \sum\vec{F} = m \vec{a}$&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;N1L: $\vec{F} \rArr \frac{d\vec{v}}{dt} = 0$&lt;/p&gt;
+&lt;p&gt;N1L: $\vec{F} \Rightarrow \frac{d\vec{v}}{dt} = 0$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -648,15 +648,15 @@ $$&lt;/p&gt;
 &lt;li&gt;Simple Harmonic Oscillator (SHO) Springs: $U_S = \frac{k}{2}x^2, x = A\cos{(\omega t + \phi)}$
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Hooke&amp;rsquo;s Law: $F_{spring} = -k x \rArr W = \frac{1}{2}k\Delta{x}^2$&lt;/p&gt;
-&lt;p&gt;$$ F = -kx = ma = m\ddot{x} \rArr \ddot{x} = \frac{k}{m}x \rArr x = \sin{\sqrt{\frac{k}{m}}t} \ or \ \cos{\sqrt{\frac{k}{m}}}, \omega = \sqrt{\frac{k}{m}}
+&lt;p&gt;Hooke&amp;rsquo;s Law: $F_{spring} = -k x \Rightarrow W = \frac{1}{2}k\Delta{x}^2$&lt;/p&gt;
+&lt;p&gt;$$ F = -kx = ma = m\ddot{x} \Rightarrow \ddot{x} = \frac{k}{m}x \Rightarrow x = \sin{\sqrt{\frac{k}{m}}t} \ or \ \cos{\sqrt{\frac{k}{m}}}, \omega = \sqrt{\frac{k}{m}}
 $$
-$$ \rArr x(t) = a_1\cos{\omega t} + a_2\sin{\omega t} = A\cos(\omega t - \phi) \ (A = \sqrt{a_1^2 + a_2^2}, \phi = \tan^{-1}\frac{a_2}{a_1})
+$$ \Rightarrow x(t) = a_1\cos{\omega t} + a_2\sin{\omega t} = A\cos(\omega t - \phi) \ (A = \sqrt{a_1^2 + a_2^2}, \phi = \tan^{-1}\frac{a_2}{a_1})
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Oscillations: two approx - $\sin\theta \approx \theta \ or \cos\theta \approx 1 - \frac{x^2}{2}$ and $\theta \approx \frac{x}{l}$ $\rArr \ddot{x} = -\frac{g}{l}x$&lt;/p&gt;
-&lt;p&gt;$$ U = mg\Delta{z} \approx mgl\frac{\theta^2}{2} = \frac{mg}{2l}x^2 \rArr k = \frac{mg}{l}, \omega^2 = \frac{k}{m} \rArr \omega = \sqrt{\frac{g}{l}}
+&lt;p&gt;Oscillations: two approx - $\sin\theta \approx \theta \ or \cos\theta \approx 1 - \frac{x^2}{2}$ and $\theta \approx \frac{x}{l}$ $\Rightarrow \ddot{x} = -\frac{g}{l}x$&lt;/p&gt;
+&lt;p&gt;$$ U = mg\Delta{z} \approx mgl\frac{\theta^2}{2} = \frac{mg}{2l}x^2 \Rightarrow k = \frac{mg}{l}, \omega^2 = \frac{k}{m} \Rightarrow \omega = \sqrt{\frac{g}{l}}
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -668,14 +668,14 @@ $$&lt;/p&gt;
 &lt;p&gt;Energy Conservation&lt;/p&gt;
 &lt;p&gt;$$ E = \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2A^2\sin^2 + \frac{1}{2}KA^2\cos^2 = \frac{1}{2}kA^2
 $$
-$$ \rArr \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2
+$$ \Rightarrow \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;total-energy-epsilon--k_epsilon--u&#34;&gt;Total Energy $\epsilon = K_\epsilon + U$&lt;/h4&gt;
-&lt;h4 id=&#34;power-p-p-watt--jsec--n-cdot-m--sec--fracdwdt-w--intvecf-cdot-dvecr-rarr-fracdwdt--vecf-vecv&#34;&gt;Power $P ([P] =Watt = J/sec = N \cdot m / sec) = \frac{dW}{dt}, W = \int{\vec{F} \cdot d\vec{r}} \rArr \frac{dW}{dt} = \vec{F} \vec{v}$&lt;/h4&gt;
+&lt;h4 id=&#34;power-p-p-watt--jsec--n-cdot-m--sec--fracdwdt-w--intvecf-cdot-dvecr-rightarrow-fracdwdt--vecf-vecv&#34;&gt;Power $P ([P] =Watt = J/sec = N \cdot m / sec) = \frac{dW}{dt}, W = \int{\vec{F} \cdot d\vec{r}} \Rightarrow \frac{dW}{dt} = \vec{F} \vec{v}$&lt;/h4&gt;
 &lt;h3 id=&#34;momentum-vecp--mvecv--impulse-i--intvecfdt&#34;&gt;Momentum $\vec{P} = m\vec{v}$ &amp;amp; Impulse $I = \int{\vec{F}}dt$&lt;/h3&gt;
 &lt;p&gt;$$ \Delta{\vec{P}} = \int_{t_1}^{t_2}{\vec{F}}dt = I $$&lt;/p&gt;
 &lt;h4 id=&#34;elastic-collision&#34;&gt;Elastic Collision&lt;/h4&gt;
@@ -699,7 +699,7 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;COM frame: Center of momentum mass:&lt;/p&gt;
-&lt;p&gt;$$ \vec{R} = \frac{\sum m_i \vec{r}&lt;em&gt;i}{\sum m_i} \rArr M&lt;/em&gt;{tot}\frac{d}{dt}\vec{R} (\vec{v}_ {center}) = \vec{P}_{tot} = \sum \vec{P}_i
+&lt;p&gt;$$ \vec{R} = \frac{\sum m_i \vec{r}&lt;em&gt;i}{\sum m_i} \Rightarrow M&lt;/em&gt;{tot}\frac{d}{dt}\vec{R} (\vec{v}_ {center}) = \vec{P}_{tot} = \sum \vec{P}_i
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -708,6 +708,14 @@ $$&lt;/p&gt;
 &lt;p&gt;Review of Galilean Relativity&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$\vec{x}_i = \vec{x}_o + \vec{x}_r$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reference of light&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$T_{observer} = \gamma T_{proper}$ Proper time between two events is the time interval where they happen in same place &amp;amp; is the minimal time separation for any observer.&lt;/li&gt;
+&lt;li&gt;$L_{observer} = \frac{L_{proper}}{\gamma}$ Proper length of an object is its length in a frame where it is at rest &amp;amp; is the maximal length observed for any observer.&lt;/li&gt;
+&lt;li&gt;Lorentz Transformation Equas&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
