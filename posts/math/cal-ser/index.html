@@ -538,7 +538,7 @@ $$</p>
 $$
 $$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2} (Hint: Root \ Test)
 $$
-$$ \sum{\ln(1 + \frac{1}{n})}, \sum \ln(1 + \frac{1}{n^p})
+$$ \sum{\ln(1 + \frac{1}{n})}, \sum \ln(1 + \frac{1}{f(x)}), \text{Known $b_n \rightarrow \frac{2}{5}$}\sum_1\frac{(-1)^nn!}{n^nb_1b_2\ldots b_n}
 $$</p>
 <ul>
 <li>
@@ -592,10 +592,12 @@ $$</p>
 <h4 id="how-ratio-test--two-sides">HOW: Ratio Test + Two sides</h4>
 <p>Exercise.</p>
 <p>$$ \text{Find the domain of } f(x) = \sum \frac{(x - 3)^n}{n} (ANS: [2,4))
+$$
+$$ \text{}
 $$</p>
 <h4 id="how-how-to-apply">HOW: How to apply</h4>
 <p>if the power series has a convergent radius R &gt; 0, the f(x) is both differentiatable and integrable on the interval (a - R, a + R), and</p>
-<p>$$ f\prime(x) = \sum n c_n (x - a)^{n - 1}
+<p>$$ f&rsquo;(x) = \sum n c_n (x - a)^{n - 1}
 $$
 $$ \int f(x)dx = c + \sum \frac{c_n}{n + 1}(x - a)^{n + 1}
 $$</p>
@@ -604,14 +606,23 @@ $$</p>
 $$
 $$ f(x) = \frac{1}{1 - x} \Rightarrow f^{(10)}(x)|_{x = 0} = 10!
 $$</p>
+<p>Exercise.</p>
+<p>$$ \text{Expand $\int{\frac{x}{8+x^3}}dx$ into power series}
+$$
+$$ \text{If $f(x) = \sum c_n x^n$, where $c_{n + 4} = c_n$ for all $n \geq 0$,}
+$$
+$$ \text{find the interval of convergence of the series and the formula for f(x)}
+$$</p>
 <h3 id="how-how-to-apply-for-graphing---taylor-series">HOW: How to apply for graphing - Taylor Series</h3>
 <p>$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &lt; R
 $$</p>
 <blockquote>
 <p>when $a = 0$, it is called Maclaurin series</p>
 </blockquote>
-<h4 id="1--x-format">$1 + x$ Format</h4>
-<p>$$ \frac{1}{1 - x}, |x| &lt; 1 = 1 + x + x^2 + x^3 \ldots
+<ul>
+<li>
+<p>$1 + x$ Format
+$$ \frac{1}{1 - x}, |x| &lt; 1 = 1 + x + x^2 + x^3 \ldots
 $$
 $$ \ln(1 + x) = \int \frac{1}{1 + x}dx = \sum \frac{(-1)^nx^{n + 1}}{n + 1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} \ldots
 $$
@@ -622,15 +633,24 @@ $$ (1 + x)^k = \sum \frac{k!}{(k - n)!n!}x^n \left{ \begin{array}{l}
 |x| &gt; 1: \text{di unless $k$ is non negint}
 \end{array}\right.
 $$</p>
-<h4 id="trigonometrical-format">Trigonometrical Format</h4>
-<p>$$ \sin{x} = \sum(-1)^{n}\frac{x^{2n + 1}}{(2n + 1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \ldots
+</li>
+<li>
+<p>Trigonometrical Format
+$$ \sin{x} = \sum(-1)^{n}\frac{x^{2n + 1}}{(2n + 1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \ldots
 $$
 $$ \cos{x} = \frac{d}{dx}\sin{x} = \sum (-1)^n \frac{x^{2n}}{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots
 $$</p>
-<h4 id="special-format">Special Format</h4>
-<p>$$ e^x = \sum \frac{1}{n!}x^n = \sum\frac{e^a}{n!}(x - a)^n = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \ldots
+</li>
+<li>
+<p>Special Format
+$$ e^x = \sum \frac{1}{n!}x^n = \sum\frac{e^a}{n!}(x - a)^n = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \ldots
 $$
 $$ \arctan{x} = \int \frac{1}{1 + x^2} dx = \sum \frac{(-1)^nx^{2n + 1}}{2n +1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \ldots
+$$</p>
+</li>
+</ul>
+<p>Exercise.</p>
+<p>$$ \text{Known $\int_0^\infty e^{-x} x^n dx = n!$, derive $\frac{1}{\pi}\int_0^1\frac{\sin{\ln{x}}}{\ln{x}}dx$}
 $$</p>
 
 </section>
