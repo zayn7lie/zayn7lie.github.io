@@ -6,10 +6,10 @@
         <description>Recent content in Math on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 31 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/categories/math/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/categories/math/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linear Algebra - Intro</title>
         <link>https://zayn7lie.github.io/posts/math/la-intro/</link>
-        <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.github.io/posts/math/la-intro/</guid>
         <description>&lt;h2 id=&#34;why-why-we-should-learn-linear-algebra&#34;&gt;WHY: Why we should learn Linear Algebra&lt;/h2&gt;
@@ -387,12 +387,12 @@ $$ \frac{1}{1 - x}, |x| &amp;lt; 1 = 1 + x + x^2 + x^3 \ldots
 $$
 $$ \ln(1 + x) = \int \frac{1}{1 + x}dx = \sum \frac{(-1)^nx^{n + 1}}{n + 1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} \ldots
 $$
-$$ (1 + x)^k = \sum \frac{k!}{(k - n)!n!}x^n \left{ \begin{array}{l}
-|x| &amp;lt; 1, k \in \mathbb{R}: \text{abc} \\
-|x| = 1, k \geq 0: \text{abc}, k \geq -1: \text{con} \\
-|x| = -1, k \geq 0: \text{con} \\
-|x| &amp;gt; 1: \text{di unless $k$ is non negint}
-\end{array}\right.
+$$ (1 + x)^k = \sum \frac{k!}{(k - n)!n!}x^n \begin{cases}
+|x| &amp;lt; 1 &amp;amp; k \in \mathbb{R}: \text{abc} \\
+|x| = 1 &amp;amp; k \geq 0: \text{abc}, k \geq -1: \text{con} \\
+|x| = -1 &amp;amp; k \geq 0: \text{con} \\
+|x| &amp;gt; 1 &amp;amp; \text{di unless $k$ is non negint}
+\end{cases}
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
