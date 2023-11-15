@@ -19,10 +19,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-scalars-vectors-and-matrices&#34;&gt;WHAT: What is Scalars, Vectors, and Matrices&lt;/h2&gt;
 &lt;h3 id=&#34;matrix&#34;&gt;Matrix&lt;/h3&gt;
-&lt;p&gt;$$ 2x - y = 0, -x + 2y = 0 \Rightarrow \begin{pmatrix}
-2 &amp;amp; -1 \\
--1 &amp;amp; 2
-\end{pmatrix}
+&lt;p&gt;$$ 2x - y = 0, -x + 2y = 0 \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 $$&lt;/p&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
 </description>
