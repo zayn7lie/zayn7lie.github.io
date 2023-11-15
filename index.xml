@@ -6,7 +6,28 @@
         <description>Recent content on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 31 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linear Algebra - Intro</title>
+        <link>https://zayn7lie.github.io/posts/math/la-intro/</link>
+        <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.github.io/posts/math/la-intro/</guid>
+        <description>&lt;h2 id=&#34;why-why-we-should-learn-linear-algebra&#34;&gt;WHY: Why we should learn Linear Algebra&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;It could help us better understand and solve Calculus in multi-dimentions&lt;/li&gt;
+&lt;li&gt;It is needed for Machine Learning especially Deep Learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-what-is-scalars-vectors-and-matrices&#34;&gt;WHAT: What is Scalars, Vectors, and Matrices&lt;/h2&gt;
+&lt;h3 id=&#34;matrix&#34;&gt;Matrix&lt;/h3&gt;
+&lt;p&gt;$$ 2x - y = 0, -x + 2y = 0 \Rightarrow \begin{pmatrix}
+2 &amp;amp; -1 \\
+-1 &amp;amp; 2
+\end{pmatrix}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+</description>
+        </item>
+        <item>
         <title>Calculus - Multi-dimensions</title>
         <link>https://zayn7lie.github.io/posts/math/cal-mul/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
