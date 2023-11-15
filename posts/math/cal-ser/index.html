@@ -85,7 +85,7 @@ Convergence: $\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;
         
         <div class="site-meta">
             <h1 class="site-name"><a href="/">zayn_lie&#39;s blog</a></h1>
-            <h2 class="site-description">Notice: Blog site switch from &lt;zayn7lie.github.io&gt; to &lt;zayn7lie.ber7.org&gt;. Algorithm&amp;Mathematics, Music_Theory&amp;Rhythm_Game, Rationality&amp;Logicism, Peace&amp;Open_Source</h2>
+            <h2 class="site-description">Notice: Blog site is switched from &lt;zayn7lie.github.io&gt; to &lt;zayn7lie.ber7.org&gt;. Algorithm&amp;Mathematics, Music_Theory&amp;Rhythm_Game, Rationality&amp;Logicism, Peace&amp;Open_Source</h2>
         </div>
     </header><ol class="menu" id="main-menu">
         
@@ -358,7 +358,7 @@ Convergence: $\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;
                     <a href="/page/archives/#2023">
                         
                             <span class="year">2023</span>
-                            <span class="count">18</span>
+                            <span class="count">17</span>
                         
                     </a> 
                 </div>
@@ -424,7 +424,7 @@ Convergence: $\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;
 
 
                 <time class="article-time--reading">
-                    6 minute read
+                    7 minute read
                 </time>
             </div>
         
@@ -534,9 +534,9 @@ $$</p>
 </li>
 </ul>
 <p>Exercise.</p>
-<p>$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rightarrow \infty}{n^{\frac{1}{n}}} = 1), \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
+<p>$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rightarrow \infty}{n^{\frac{1}{n}}} = 1), \sum \frac{1}{n^{1 + f(n)}}, \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
 $$
-$$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2} (Hint: Root \ Test)
+$$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2}, \sum \frac{x^n}{\ln^p x}
 $$
 $$ \sum{\ln(1 + \frac{1}{n})}, \sum \ln(1 + \frac{1}{f(x)}), \text{Known $b_n \rightarrow \frac{2}{5}$}\sum_1\frac{(-1)^nn!}{n^nb_1b_2\ldots b_n}
 $$</p>
@@ -651,6 +651,21 @@ $$</p>
 </ul>
 <p>Exercise.</p>
 <p>$$ \text{Known $\int_0^\infty e^{-x} x^n dx = n!$, derive $\frac{1}{\pi}\int_0^1\frac{\sin{\ln{x}}}{\ln{x}}dx$}
+$$
+$$ \text{Find if and how the series is convergent: } \sum(-1)^n \frac{\tan^{-1}n}{n}
+$$
+$$ \text{Expend $f(t) = \frac{1 - tx}{1 - 2tx - t^2}$ to power series}
+$$
+$$ \text{Find the compact for of $\sum \frac{(\frac{1}{2})^n x^n}{(n + 1)!}$}
+$$</p>
+<blockquote>
+<p>What about the Error Bond if the series finite?</p>
+</blockquote>
+<p>$$ f(x) = \sum_0^N\frac{f^{n}(a)}{n!}(x - a)^n + \sum_{N + 1}^\infty\frac{f^{n}(a)}{n!}(x - a)^n = T_N(x) + R_N(x)
+$$
+$$ \text{Accordint to MVT, } \exists z \in [x, a], \frac{f^{N + 1}(z)}{(N + 1)!}(x - a)^{N + 1} = R_N(x)
+$$
+$$ \Rightarrow \exists z \in [x, a], [\frac{f^{N + 1}(z)}{(N + 1)!}(x - a)^{N + 1}]_{max} \geq R_N(x)
 $$</p>
 
 </section>
