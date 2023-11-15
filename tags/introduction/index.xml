@@ -18,9 +18,57 @@
 &lt;li&gt;It is needed for Machine Learning especially Deep Learning&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-scalars-vectors-and-matrices&#34;&gt;WHAT: What is Scalars, Vectors, and Matrices&lt;/h2&gt;
-&lt;h3 id=&#34;matrix&#34;&gt;Matrix&lt;/h3&gt;
-&lt;p&gt;$$ 2x - y = 0, -x + 2y = 0 \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+&lt;h3 id=&#34;vector-vecv&#34;&gt;Vector $\vec{v}$&lt;/h3&gt;
+&lt;h3 id=&#34;matrix-a&#34;&gt;Matrix $A$&lt;/h3&gt;
+&lt;h4 id=&#34;why-why-should-we-know-about-matrix&#34;&gt;WHY: Why should we know about Matrix&lt;/h4&gt;
+&lt;p&gt;$$ \begin{cases} 2x - y = 0 \\ -x + 2y = 0 \end{cases} \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow Ax = b
 $$&lt;/p&gt;
+&lt;h4 id=&#34;what-what-is-matrix&#34;&gt;WHAT: What is Matrix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;It is an &amp;ldquo;arragement&amp;rdquo; of vectors
+$$ A = \begin{pmatrix} \vec{v} &amp;amp; \vec{w} &amp;amp; \ldots \end{pmatrix} = \begin{pmatrix} v_1 &amp;amp; w_1 &amp;amp; \ldots  \\ v_2 &amp;amp; w_2 &amp;amp; \ldots \\ \ldots &amp;amp; \ldots &amp;amp; \ldots\end{pmatrix}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It is an &amp;ldquo;arragement&amp;rdquo; of rows and columns
+$$ A = \begin{pmatrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \\ 5 &amp;amp; 6 \end{pmatrix} \text{is a 3 by 2 matrix: m = 3 rows and n = 2 columns. Rank 2.}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;what-what-is-the-rank-of-a-matrix&#34;&gt;WHAT: What is the rank of a Matrix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;Indepnedence&lt;/strong&gt; and the &lt;strong&gt;dependence&lt;/strong&gt; of the vectors in a metrix (column).
+$$ \exists \vec{x} \neq 0, Ax = 0 \Rightarrow \exists \vec{v} \in A, \vec{v} \text{ is not independent, or dependent to others vector (or columns)}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;Column Space&lt;/strong&gt; of a matrix
+$$ C(A) \text{: All combinations of the columns}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-how-to-do-calculations-with-matrices&#34;&gt;HOW: How to do calculations with Matrices&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Multiple Matrices&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Addition&lt;/li&gt;
+&lt;li&gt;Combination&lt;/li&gt;
+&lt;li&gt;Multiplication: $A_{i \times k} B_{k \times j} = C_{i \times j}$&lt;/li&gt;
+&lt;li&gt;Elimination: $EA = U$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Single Matrix&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inverse: $A A^{-1} = I$&lt;/li&gt;
+&lt;li&gt;Transposes: $A A^T \text{symmetric}$&lt;/li&gt;
+&lt;li&gt;Derivative&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
 </description>
         </item>

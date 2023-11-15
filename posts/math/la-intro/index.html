@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: Why we should learn Linear Algebra It could help us better understand and solve Calculus in multi-dimentions It is needed for Machine Learning especially Deep Learning WHAT: What is Scalars, Vectors, and Matrices Matrix $$ 2x - y = 0, -x &#43; 2y = 0 \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} $$
-HOW '>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: Why we should learn Linear Algebra It could help us better understand and solve Calculus in multi-dimentions It is needed for Machine Learning especially Deep Learning WHAT: What is Scalars, Vectors, and Matrices Vector $\vec{v}$ Matrix $A$ WHY: Why should we know about Matrix $$ \begin{cases} 2x - y = 0 \\ -x &#43; 2y = 0 \end{cases} \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow Ax = b $$'>
 <title>Linear Algebra - Intro</title>
 
 <link rel='canonical' href='https://zayn7lie.github.io/posts/math/la-intro/'>
 
 <link rel="stylesheet" href="/scss/style.min.21dd04c9bdb63d4e8435c2d96c8458fb0397cd7ac2b2f69521767054761cf0ca.css"><meta property='og:title' content='Linear Algebra - Intro'>
-<meta property='og:description' content='WHY: Why we should learn Linear Algebra It could help us better understand and solve Calculus in multi-dimentions It is needed for Machine Learning especially Deep Learning WHAT: What is Scalars, Vectors, and Matrices Matrix $$ 2x - y = 0, -x &#43; 2y = 0 \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} $$
-HOW '>
+<meta property='og:description' content='WHY: Why we should learn Linear Algebra It could help us better understand and solve Calculus in multi-dimentions It is needed for Machine Learning especially Deep Learning WHAT: What is Scalars, Vectors, and Matrices Vector $\vec{v}$ Matrix $A$ WHY: Why should we know about Matrix $$ \begin{cases} 2x - y = 0 \\ -x &#43; 2y = 0 \end{cases} \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow Ax = b $$'>
 <meta property='og:url' content='https://zayn7lie.github.io/posts/math/la-intro/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Linear Algebra' /><meta property='article:tag' content='Introduction' /><meta property='article:published_time' content='2023-11-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-15T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Linear Algebra - Intro">
-<meta name="twitter:description" content="WHY: Why we should learn Linear Algebra It could help us better understand and solve Calculus in multi-dimentions It is needed for Machine Learning especially Deep Learning WHAT: What is Scalars, Vectors, and Matrices Matrix $$ 2x - y = 0, -x &#43; 2y = 0 \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} $$
-HOW ">
+<meta name="twitter:description" content="WHY: Why we should learn Linear Algebra It could help us better understand and solve Calculus in multi-dimentions It is needed for Machine Learning especially Deep Learning WHAT: What is Scalars, Vectors, and Matrices Vector $\vec{v}$ Matrix $A$ WHY: Why should we know about Matrix $$ \begin{cases} 2x - y = 0 \\ -x &#43; 2y = 0 \end{cases} \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow Ax = b $$">
     <link rel="shortcut icon" href="/favicon.png" />
 
         
@@ -243,7 +240,8 @@ HOW ">
     <li><a href="#why-why-we-should-learn-linear-algebra">WHY: Why we should learn Linear Algebra</a></li>
     <li><a href="#what-what-is-scalars-vectors-and-matrices">WHAT: What is Scalars, Vectors, and Matrices</a>
       <ul>
-        <li><a href="#matrix">Matrix</a></li>
+        <li><a href="#vector-vecv">Vector $\vec{v}$</a></li>
+        <li><a href="#matrix-a">Matrix $A$</a></li>
       </ul>
     </li>
     <li><a href="#how">HOW</a></li>
@@ -403,7 +401,7 @@ HOW ">
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    2 minute read
                 </time>
             </div>
         
@@ -424,9 +422,57 @@ HOW ">
 <li>It is needed for Machine Learning especially Deep Learning</li>
 </ul>
 <h2 id="what-what-is-scalars-vectors-and-matrices">WHAT: What is Scalars, Vectors, and Matrices</h2>
-<h3 id="matrix">Matrix</h3>
-<p>$$ 2x - y = 0, -x + 2y = 0 \Rightarrow \begin{pmatrix} 2 &amp; -1 \\ -1 &amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+<h3 id="vector-vecv">Vector $\vec{v}$</h3>
+<h3 id="matrix-a">Matrix $A$</h3>
+<h4 id="why-why-should-we-know-about-matrix">WHY: Why should we know about Matrix</h4>
+<p>$$ \begin{cases} 2x - y = 0 \\ -x + 2y = 0 \end{cases} \Rightarrow \begin{pmatrix} 2 &amp; -1 \\ -1 &amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow Ax = b
 $$</p>
+<h4 id="what-what-is-matrix">WHAT: What is Matrix</h4>
+<ul>
+<li>
+<p>It is an &ldquo;arragement&rdquo; of vectors
+$$ A = \begin{pmatrix} \vec{v} &amp; \vec{w} &amp; \ldots \end{pmatrix} = \begin{pmatrix} v_1 &amp; w_1 &amp; \ldots  \\ v_2 &amp; w_2 &amp; \ldots \\ \ldots &amp; \ldots &amp; \ldots\end{pmatrix}
+$$</p>
+</li>
+<li>
+<p>It is an &ldquo;arragement&rdquo; of rows and columns
+$$ A = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ 5 &amp; 6 \end{pmatrix} \text{is a 3 by 2 matrix: m = 3 rows and n = 2 columns. Rank 2.}
+$$</p>
+</li>
+</ul>
+<h4 id="what-what-is-the-rank-of-a-matrix">WHAT: What is the rank of a Matrix</h4>
+<ul>
+<li>
+<p>The <strong>Indepnedence</strong> and the <strong>dependence</strong> of the vectors in a metrix (column).
+$$ \exists \vec{x} \neq 0, Ax = 0 \Rightarrow \exists \vec{v} \in A, \vec{v} \text{ is not independent, or dependent to others vector (or columns)}
+$$</p>
+</li>
+<li>
+<p>The <strong>Column Space</strong> of a matrix
+$$ C(A) \text{: All combinations of the columns}
+$$</p>
+</li>
+</ul>
+<h4 id="how-how-to-do-calculations-with-matrices">HOW: How to do calculations with Matrices</h4>
+<ul>
+<li>
+<p>Multiple Matrices</p>
+<ul>
+<li>Addition</li>
+<li>Combination</li>
+<li>Multiplication: $A_{i \times k} B_{k \times j} = C_{i \times j}$</li>
+<li>Elimination: $EA = U$</li>
+</ul>
+</li>
+<li>
+<p>Single Matrix</p>
+<ul>
+<li>Inverse: $A A^{-1} = I$</li>
+<li>Transposes: $A A^T \text{symmetric}$</li>
+<li>Derivative</li>
+</ul>
+</li>
+</ul>
 <h2 id="how">HOW</h2>
 
 </section>
