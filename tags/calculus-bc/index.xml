@@ -24,8 +24,9 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence&lt;/h2&gt;
 &lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h3 id=&#34;convergence-forall-epsilon-exists-n-forall-n--n-a_n---l--epsilon-rightarrow-a_n-rightarrow-l-or-lim_n-rightarrow-inftya_n--l-rightarrow-a_n-rightarrow-l&#34;&gt;Convergence: $\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/h3&gt;
-&lt;p&gt;E.g. $1/x$: $for \ all \ \epsilon, exist \ N = \frac{1}{\epsilon}, for \ all \ n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n \ convergent \ to \ 0$&lt;/p&gt;
+&lt;h3 id=&#34;convergence&#34;&gt;Convergence&lt;/h3&gt;
+&lt;p&gt;$\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/p&gt;
+&lt;p&gt;E.g. $1/x$: for all $\epsilon$, exist $N = \frac{1}{\epsilon}$, for all $n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n$ convergent to 0&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Test&lt;/p&gt;
@@ -46,21 +47,8 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Exercise.&lt;/p&gt;
-&lt;p&gt;$$ find \ if \ (a) \ a_n = \frac{n!}{n^n} (a &amp;gt; 0), (b) \ a_n = \frac{a^n}{n!} (a &amp;gt; 0), (c) \ a_n = \frac{n^b}{a^n}, (d) \ a_n = \frac{\ln n}{n^b} \ converges
-$$&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n}$&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;$$ find \ if \ (a) \ a_n = (1 + \frac{1}{n})^n, (b) \ a_n = (\frac{n}{n+1})^{2n} converges
-$$
-$$ Hint \ 1: known \ (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
-$$
-$$ Hint \ 2: a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
-$$&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Usage
+&lt;li&gt;
+&lt;p&gt;Usage&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Continuity and Convergence theorem: $\lim_{x \rightarrow L}f \exists, \lim_{n \rightarrow \infty}a_n = L \Rightarrow \lim_{n \rightarrow \infty}f$
 &lt;ul&gt;
@@ -71,6 +59,18 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \text{Find if (a) $a_n = \frac{n!}{n^n} (a &amp;gt; 0)$, (b) $a_n = \frac{a^n}{n!} (a &amp;gt; 0)$, (c) $a_n = \frac{n^b}{a^n}$, (d) $a_n = \frac{\ln n}{n^b}$ converges}
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ \text{(a) $a_n = (1 + \frac{1}{n})^n$, (b) $a_n = (\frac{n}{n+1})^{2n}$ converges}
+$$
+$$ \text{Hint 1: } (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
+$$
+$$ \text{Hint 2: } a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
+$$&lt;/p&gt;
 &lt;h3 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -84,7 +84,8 @@ $$&lt;/p&gt;
 &lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
 &lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Test for Series
+&lt;li&gt;
+&lt;p&gt;Test for Series&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Direct Test
 &lt;ul&gt;
@@ -105,15 +106,6 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Exercise.&lt;/p&gt;
-&lt;p&gt;$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}} (Hint: \lim_{n \rightarrow \infty}{n^{\frac{1}{n}}} = 1), \sum \frac{1}{n^{1 + f(n)}}, \sum{\sin{\frac{1}{n}}} (Hint: \frac{\sin(x)}{x} \leq 1)
-$$
-$$ \sum(1 - \frac{1}{n})^n (Hint: \lim(1 + \frac{1}{n})^n = e), \sum(1 - \frac{1}{n})^{n^2}, \sum \frac{x^n}{\ln^p x}
-$$
-$$ \sum{\ln(1 + \frac{1}{n})}, \sum \ln(1 + \frac{1}{f(x)}), \text{Known $b_n \rightarrow \frac{2}{5}$}\sum_1\frac{(-1)^nn!}{n^nb_1b_2\ldots b_n}
-$$&lt;/p&gt;
-&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Usage&lt;/p&gt;
 &lt;ul&gt;
@@ -136,6 +128,13 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;p&gt;$$ \sum{\frac{1}{n^{1+\frac{1}{n}}}}, \sum \frac{1}{n^{1 + f(n)}}, \sum{\sin{\frac{1}{n}}}
+$$
+$$ \sum(1 - \frac{1}{n})^n, \sum(1 - \frac{1}{n})^{n^2}, \sum{\ln(1 + \frac{1}{n})}, \sum \ln(1 + \frac{1}{f(x)})
+$$
+$$ \sum \frac{x^n}{\ln^p x}, \text{Known $b_n \rightarrow \frac{2}{5}$, }\sum_1\frac{(-1)^nn!}{n^nb_1b_2\ldots b_n}
+$$&lt;/p&gt;
 &lt;h3 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -229,7 +228,7 @@ $$ \text{Find if and how the series is convergent: } \sum(-1)^n \frac{\tan^{-1}n
 $$
 $$ \text{Expend $f(t) = \frac{1 - tx}{1 - 2tx - t^2}$ to power series}
 $$
-$$ \text{Find the compact for of $\sum \frac{(\frac{1}{2})^n x^n}{(n + 1)!}$}
+$$ \text{Find the compact form for of $\sum \frac{(\frac{1}{2})^n x^{2n}}{(n + 1)!}$}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;What about the Error Bond if the series finite?&lt;/p&gt;
@@ -481,8 +480,8 @@ $$&lt;/p&gt;
 &lt;p&gt;Limit: L&amp;rsquo;hospital rule&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;E.g.
-$$ \lim_{x \rightarrow 0^+}{x\ln{x}}, \lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
+&lt;p&gt;Exercise.
+$$ \lim(1 + \frac{1}{x})^x \text{(Please Remember This One)}, \lim_{x \rightarrow 0^+}{x\ln{x}}, \lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
 $$&lt;/p&gt;
 &lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
 &lt;ul&gt;

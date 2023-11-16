@@ -46,8 +46,8 @@
 &lt;p&gt;Limit: L&amp;rsquo;hospital rule&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;E.g.
-$$ \lim_{x \rightarrow 0^+}{x\ln{x}}, \lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
+&lt;p&gt;Exercise.
+$$ \lim(1 + \frac{1}{x})^x \text{(Please Remember This One)}, \lim_{x \rightarrow 0^+}{x\ln{x}}, \lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
 $$&lt;/p&gt;
 &lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
 &lt;ul&gt;
