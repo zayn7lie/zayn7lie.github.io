@@ -452,9 +452,9 @@
 <p>$$ S (\int_a^b{f(x)}dx) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$</p>
 <p>Exercise.
-$$ 1. prove\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$ \text{Prove }\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
 $$
-$$ 2. prove\ln(n + 1) &lt; \sum_{i = 1}^{n}\frac{1}{i} &lt; \ln{n} + 1
+$$ \text{Prove }\ln(n + 1) &lt; \sum_{i = 1}^{n}\frac{1}{i} &lt; \ln{n} + 1
 $$</p>
 <ul>
 <li>Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$</li>
@@ -467,14 +467,16 @@ $$ if \ (-h, y_0) (0, y_1) (h, y_2) \Rightarrow \int_{-h}^{h}ydx = \frac{h}{3}(y
 $$
 $$ \Rightarrow S = \frac{h}{3}((y_0 + 4y_1 + y_2) + (y_2 + 4y_3 + y_4) + \ldots + (y_{n - 2} + 4y_{n - 1} + y_n)) (n \ is \ even)
 $$</p>
-<blockquote>
-<p>Error Bond</p>
-</blockquote>
-<p>$$
-Riemann - \frac{K(b - a)^3}{24n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \newline
-Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \newline
-Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
-$$</p>
+<ul>
+<li>Error Bond
+$$
+E = \begin{cases}
+\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \\
+\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \\
+\text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
+\end{cases}
+$$</li>
+</ul>
 <h3 id="trans-between-different-variables">Trans between different variables</h3>
 <p>$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
@@ -533,7 +535,7 @@ $$</p>
 </li>
 </ul>
 <p>Exercise:</p>
-<p>$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}dx
+<p>$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}dx, \int(4x^4 + 1)e^{x^4}dx
 $$</p>
 <h3 id="eg-partial-fractions">E.g. Partial Fractions</h3>
 <p>$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &gt;= deg(B) \ or \ deg(C) &lt; deg(D)

@@ -431,7 +431,7 @@ $$ \frac{1}{1 - x}, |x| &amp;lt; 1 = 1 + x + x^2 + x^3 \ldots
 $$
 $$ \ln(1 + x) = \int \frac{1}{1 + x}dx = \sum \frac{(-1)^nx^{n + 1}}{n + 1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} \ldots
 $$
-$$ (1 + x)^k = \sum \frac{k!}{(k - n)!n!}x^n \begin{cases}
+$$ (1 + x)^k = \sum \begin{pmatrix}k \\ n\end{pmatrix}x^n \begin{cases}
 |x| &amp;lt; 1 &amp;amp; k \in \mathbb{R}: \text{abc} \\
 |x| = 1 &amp;amp; k \geq 0: \text{abc}, k \geq -1: \text{con} \\
 |x| = -1 &amp;amp; k \geq 0: \text{con} \\
@@ -1092,9 +1092,9 @@ for any purpose, even commercially.&lt;/li&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
 &lt;p&gt;Exercise.
-$$ 1. prove\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
+$$ \text{Prove }\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
 $$
-$$ 2. prove\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1
+$$ \text{Prove }\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$&lt;/li&gt;
@@ -1107,14 +1107,16 @@ $$ if \ (-h, y_0) (0, y_1) (h, y_2) \Rightarrow \int_{-h}^{h}ydx = \frac{h}{3}(y
 $$
 $$ \Rightarrow S = \frac{h}{3}((y_0 + 4y_1 + y_2) + (y_2 + 4y_3 + y_4) + \ldots + (y_{n - 2} + 4y_{n - 1} + y_n)) (n \ is \ even)
 $$&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Error Bond&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;$$
-Riemann - \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \newline
-Trapezoidal - \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \newline
-Simpson - \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
-$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Error Bond
+$$
+E = \begin{cases}
+\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \\
+\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \\
+\text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
+\end{cases}
+$$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
 &lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
@@ -1173,7 +1175,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
-&lt;p&gt;$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}dx
+&lt;p&gt;$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}dx, \int(4x^4 + 1)e^{x^4}dx
 $$&lt;/p&gt;
 &lt;h3 id=&#34;eg-partial-fractions&#34;&gt;E.g. Partial Fractions&lt;/h3&gt;
 &lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
