@@ -388,6 +388,9 @@ $$ \arctan{x} = \int \frac{1}{1 + x^2} dx = \sum \frac{(-1)^nx^{2n + 1}}{2n +1} 
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Notice. $\int$ and $\sum$ cannot always exchange the places for some specific infinite sum.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Known $\int_0^\infty e^{-x} x^n dx = n!$, derive $\frac{1}{\pi}\int_0^1\frac{\sin{\ln{x}}}{\ln{x}}dx$}
 $$
