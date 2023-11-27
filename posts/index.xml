@@ -17,7 +17,7 @@
 &lt;li&gt;It could help us better understand and solve Calculus in multi-dimentions&lt;/li&gt;
 &lt;li&gt;It is needed for Machine Learning especially Deep Learning&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-scalars-vectors-and-matrices&#34;&gt;WHAT: What is Scalars, Vectors, and Matrices&lt;/h2&gt;
+&lt;h2 id=&#34;what-what-is-scalars-vectors-matrices-and-spaces&#34;&gt;WHAT: What is Scalars, Vectors, Matrices, and Spaces&lt;/h2&gt;
 &lt;h3 id=&#34;vector-vecv&#34;&gt;Vector $\vec{v}$&lt;/h3&gt;
 &lt;h3 id=&#34;matrix-a&#34;&gt;Matrix $A$&lt;/h3&gt;
 &lt;h4 id=&#34;why-why-should-we-know-about-matrix&#34;&gt;WHY: Why should we know about Matrix&lt;/h4&gt;
@@ -54,8 +54,8 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;Multiple Matrices&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Addition&lt;/li&gt;
-&lt;li&gt;Combination&lt;/li&gt;
+&lt;li&gt;Addition $A_{i \times j} + B_{i \times j} = C_{i \times j}$&lt;/li&gt;
+&lt;li&gt;Combination $A_{i \times j} x = b$&lt;/li&gt;
 &lt;li&gt;Multiplication: $A_{i \times k} B_{k \times j} = C_{i \times j}$&lt;/li&gt;
 &lt;li&gt;Elimination: $EA = U$&lt;/li&gt;
 &lt;/ul&gt;
@@ -65,11 +65,11 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Inverse: $A A^{-1} = I$&lt;/li&gt;
 &lt;li&gt;Transposes: $A A^T \text{symmetric}$&lt;/li&gt;
-&lt;li&gt;Derivative&lt;/li&gt;
+&lt;li&gt;*Derivative&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
+&lt;p&gt;Exercise.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;$\mathrm{r}(\boldsymbol{A}+\boldsymbol{B}) \leqslant \mathrm{r}(\boldsymbol{A})+\mathrm{r}(\boldsymbol{B})$&lt;/p&gt;
@@ -78,12 +78,13 @@ $$&lt;/p&gt;
 &lt;p&gt;$\mathrm{r}(\boldsymbol{A B}) \leq \min (\mathrm{r}(\boldsymbol{A}), \mathrm{r}(\boldsymbol{B}))$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;$\mathrm{r}(\boldsymbol{A})=r(\boldsymbol{P A})=\mathrm{r}(\boldsymbol{A} Q)=\mathrm{r}(\boldsymbol{P A} Q)$ if P and Q are invertible matrix&lt;/p&gt;
+&lt;p&gt;$\mathrm{r}(\boldsymbol{A})=r(\boldsymbol{P A})=\mathrm{r}(\boldsymbol{A Q})=\mathrm{r}(\boldsymbol{P A Q})$ if P and Q are invertible matrix&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;证明: 若 $n$ 阶方阵 $\boldsymbol{A}$ 的为 $r$, 则必有为 $n-r$ 的 $n$ 阶方阵 $\boldsymbol{B}$. 使 $\boldsymbol{B A}=\mathbf{0}$.&lt;/p&gt;
+&lt;p&gt;Prove: $\exists n \times n \text{ matrix }\boldsymbol{A}, \mathrm{r}(\boldsymbol{A}) = r \Rightarrow \exists n \times n \text{ matrix }\boldsymbol{B}, \mathrm{r}(\boldsymbol{A}) = n - r, \boldsymbol{B A}=\mathbf{0}$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;spaces-r&#34;&gt;Spaces $R$&lt;/h3&gt;
 </description>
         </item>
         <item>
@@ -1135,11 +1136,11 @@ E = \begin{cases}
 $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
-&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, \text{assume } F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
-$$ Taking \ derivative \ in \ both \ sides: \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
+$$ \text{Taking derivative in both sides:} \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
 $$
-$$ F&amp;rsquo;(x) = f(x), F(C) \ is \ constant \Rightarrow F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) - 0 = f(g(x)) \cdot g&amp;rsquo;(x)
+$$ F&amp;rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) - 0 = f(g(x)) \cdot g&amp;rsquo;(x)
 $$
 $$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
 $$&lt;/p&gt;
@@ -1245,9 +1246,9 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality&lt;/h2&gt;
 &lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations&lt;/h3&gt;
-&lt;p&gt;$$ Informal: \frac{dy}{dx} = \frac{x}{y} \Rightarrow ydy = xdx \Rightarrow \int{y}dy = \int{x}dx
+&lt;p&gt;$$ \text{Informal:} \frac{dy}{dx} = \frac{x}{y} \Rightarrow ydy = xdx \Rightarrow \int{y}dy = \int{x}dx
 $$
-$$ *Formal \ Solution: \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \Leftrightarrow \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
+$$ \text{*Formal Solution:} \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \Leftrightarrow \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Carrying Capacity:&lt;/li&gt;
@@ -1256,15 +1257,15 @@ $$&lt;/p&gt;
 $$
 $$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{dt} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{dt} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{dt}}dt = \int{r}dt
 $$
-$$ \ln{N} - \ln{(K - N)} = rt \Rightarrow N = \frac{K}{1 + e^{-rt}}
+$$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/dt$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \Rightarrow \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \Rightarrow x\frac{dy}{dx} = -x
+&lt;p&gt;$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \Rightarrow \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \Rightarrow x\frac{dy}{dx} = -y
 $$&lt;/p&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
-&lt;p&gt;$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = aN^2\ln(bN)
+&lt;p&gt;$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{dt^2}
 $$&lt;/p&gt;
 &lt;h3 id=&#34;arc-length&#34;&gt;Arc Length&lt;/h3&gt;
 &lt;p&gt;$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
@@ -1858,6 +1859,7 @@ $$&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;rog-control-center&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;wlogout&lt;/code&gt;AUR: logout menu&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;btop&lt;/code&gt;: resource monitor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ntp&lt;/code&gt;: time synchronization&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;appearance&#34;&gt;Appearance&lt;/h4&gt;
 &lt;ul&gt;

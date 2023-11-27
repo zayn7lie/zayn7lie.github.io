@@ -460,11 +460,11 @@ E = \begin{cases}
 $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
-&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, assume \ F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, \text{assume } F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
-$$ Taking \ derivative \ in \ both \ sides: \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
+$$ \text{Taking derivative in both sides:} \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
 $$
-$$ F&amp;rsquo;(x) = f(x), F(C) \ is \ constant \Rightarrow F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) - 0 = f(g(x)) \cdot g&amp;rsquo;(x)
+$$ F&amp;rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) - 0 = f(g(x)) \cdot g&amp;rsquo;(x)
 $$
 $$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
 $$&lt;/p&gt;
@@ -570,9 +570,9 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality&lt;/h2&gt;
 &lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations&lt;/h3&gt;
-&lt;p&gt;$$ Informal: \frac{dy}{dx} = \frac{x}{y} \Rightarrow ydy = xdx \Rightarrow \int{y}dy = \int{x}dx
+&lt;p&gt;$$ \text{Informal:} \frac{dy}{dx} = \frac{x}{y} \Rightarrow ydy = xdx \Rightarrow \int{y}dy = \int{x}dx
 $$
-$$ *Formal \ Solution: \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \Leftrightarrow \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
+$$ \text{*Formal Solution:} \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \Leftrightarrow \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Carrying Capacity:&lt;/li&gt;
@@ -581,15 +581,15 @@ $$&lt;/p&gt;
 $$
 $$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{dt} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{dt} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{dt}}dt = \int{r}dt
 $$
-$$ \ln{N} - \ln{(K - N)} = rt \Rightarrow N = \frac{K}{1 + e^{-rt}}
+$$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/dt$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \Rightarrow \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \Rightarrow x\frac{dy}{dx} = -x
+&lt;p&gt;$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \Rightarrow \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \Rightarrow x\frac{dy}{dx} = -y
 $$&lt;/p&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
-&lt;p&gt;$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = aN^2\ln(bN)
+&lt;p&gt;$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{dt^2}
 $$&lt;/p&gt;
 &lt;h3 id=&#34;arc-length&#34;&gt;Arc Length&lt;/h3&gt;
 &lt;p&gt;$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
