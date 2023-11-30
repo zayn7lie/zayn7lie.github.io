@@ -63,7 +63,7 @@
 &lt;p&gt;$$ \text{Find if (a) $a_n = \frac{n!}{n^n} (a &amp;gt; 0)$, (b) $a_n = \frac{a^n}{n!} (a &amp;gt; 0)$, (c) $a_n = \frac{n^b}{a^n}$, (d) $a_n = \frac{\ln n}{n^b}$ converges}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n}$&lt;/p&gt;
+&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n} \gg C$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$ \text{(a) $a_n = (1 + \frac{1}{n})^n$, (b) $a_n = (\frac{n}{n+1})^{2n}$ converges}
 $$

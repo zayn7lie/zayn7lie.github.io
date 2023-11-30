@@ -83,6 +83,9 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;Prove: $\exists n \times n \text{ matrix }\boldsymbol{A}, \mathrm{r}(\boldsymbol{A}) = r \Rightarrow \exists n \times n \text{ matrix }\boldsymbol{B}, \mathrm{r}(\boldsymbol{A}) = n - r, \boldsymbol{B A}=\mathbf{0}$.&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If A has indep col, then AT A is invertible&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;spaces-r&#34;&gt;Spaces $R$&lt;/h3&gt;
 </description>

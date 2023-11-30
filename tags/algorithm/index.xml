@@ -406,6 +406,13 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h4 id=&#34;graph&#34;&gt;Graph&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Nodes, Edges&lt;/li&gt;
+&lt;li&gt;Path, length, cycle, adjacent&lt;/li&gt;
+&lt;li&gt;Graph with no cycle - tree&lt;/li&gt;
+&lt;li&gt;Directed graph&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

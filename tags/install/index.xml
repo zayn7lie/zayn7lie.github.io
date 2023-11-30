@@ -29,12 +29,18 @@
 &lt;/ul&gt;
 &lt;h4 id=&#34;system&#34;&gt;System&lt;/h4&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;linux-flowx13&lt;/code&gt; specific kernel for ROG Flow X13&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;SWAPFILE&lt;/code&gt; creation: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Swap#Swap_file&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/Swap#Swap_file&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;rog-control-center&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;wlogout&lt;/code&gt;AUR: logout menu&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;btop&lt;/code&gt;: resource monitor&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;ntp&lt;/code&gt;: time synchronization&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;firefox&lt;/code&gt;: browser
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;betterfox&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;appearance&#34;&gt;Appearance&lt;/h4&gt;
 &lt;ul&gt;
