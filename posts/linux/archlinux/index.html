@@ -262,7 +262,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
         <li><a href="#post-installation">Post-installation</a></li>
       </ul>
     </li>
-    <li><a href="#quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part">Quick Ref e.g. for me (Do NOT read this part if first installation, look at the <code>HOW</code> part)</a></li>
+    <li><a href="#quick-ref">Quick Ref</a></li>
   </ul>
 </nav>
         </div>
@@ -489,7 +489,8 @@ I am able to fully customize my system. Windows have limited a large amount of o
 <li>Select one release from <a class="link" href="https://geo.mirror.pkgbuild.com/iso/"  target="_blank" rel="noopener"
     >https://geo.mirror.pkgbuild.com/iso/</a> that is ending with <code>.iso</code> or just download the standard release from <a class="link" href="https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso"  target="_blank" rel="noopener"
     >https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso</a></li>
-<li><code># dd bs=4M if=?{path/to/archlinux-version-x86_64.iso} of=?{/dev/disk/by-id/usb-My_flash_drive} conv=fsync oflag=direct status=progress</code></li>
+<li>Burn ISO to your medium: <code># cat ?{path/to/archlinux-version-x86_64.iso} &gt; ?{/dev/disk/by-id/usb-My_flash_drive}</code> (<a class="link" href="https://unix.stackexchange.com/questions/224277/is-it-better-to-use-cat-dd-pv-or-another-procedure-to-copy-a-cd-dvd/224314#224314"  target="_blank" rel="noopener"
+    >Why I prefer to use <code>cat</code></a>)</li>
 <li>Reboot with your medium and enter BIOS or UEFI.</li>
 <li>Select the installation medium and get into Arch Linux installation and select the first option.</li>
 </ol>
@@ -515,7 +516,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
 <li><code># mkfs.ext4 /dev/?{nvme0n1p4}</code> to format a partition to ext4 file system for your main Arch Linux System Installation. If you want to install Dual-systems, do not run the following commands: <code># mkfs.vfat -F32 /dev/?{nvme0n1p1}</code> to format a partition to fat32 file system for the boot partition.</li>
 <li><code># mount /dev/?{nvme0n1p4} /mnt</code>, <code># mkdir -p /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code> to connect disk partitions to the installation medium.</li>
 <li><code># lsblk</code> to check your mounting situation. If this not meet your condition, you could modify by <code># unmount /dev/?{nvme0n1p4} /mnt</code> command.</li>
-<li><code># pacstrap /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim} !{linux-headers}</code> to install basis Arch Linux. <code>base-devel</code> contains <code>makepkg</code> that is necessary for installing AUR packages. You can install the Linux kernels that you want through <a class="link" href="https://wiki.archlinux.org/title/kernel"  target="_blank" rel="noopener"
+<li><code># pacstrap -K /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim} !{linux-headers}</code> to install basis Arch Linux. <code>base-devel</code> contains <code>makepkg</code> that is necessary for installing AUR packages. You can install the Linux kernels that you want through <a class="link" href="https://wiki.archlinux.org/title/kernel"  target="_blank" rel="noopener"
     >https://wiki.archlinux.org/title/kernel</a>. <code>linux-firmware</code> is necessary Linux kernel firmware. <code>e2fsprogs</code> is for configuration of ext4 file system. <code>ntfs-3g</code> is for configuration of NTFS (Windows File System) file system. <code>vim</code> if for latter file editing.</li>
 <li><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code> to generate a <code>fstab</code> file for Linux file tree viewing. It is safer to <code># cat /mnt/etc/fstab</code> to check whether file is generated properly. P.S. Difference between &raquo; and &gt;: &raquo; is appending (add) to the end of the file, &gt; is replacing the file.</li>
 </ol>
@@ -555,13 +556,13 @@ I am able to fully customize my system. Windows have limited a large amount of o
     >googling</a> (<a class="link" href="https://duckduckgo.com/"  target="_blank" rel="noopener"
     >DDG</a> is a better option with high privacy protection), searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in <a class="link" href="http://www.catb.org/~esr/faqs/smart-questions.html"  target="_blank" rel="noopener"
     >a smart way</a>. That’s all, it is my best hope that you could join and enjoy our open-source communities!</p>
-<h2 id="quick-ref-eg-for-me-do-not-read-this-part-if-first-installation-look-at-the-how-part">Quick Ref e.g. for me (Do NOT read this part if first installation, look at the <code>HOW</code> part)</h2>
+<h2 id="quick-ref">Quick Ref</h2>
 <ul>
 <li>installation medium:
 <ul>
 <li><code>$ ls -l /dev/disk/by-id/usb-*</code></li>
 <li><code>$ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0</code></li>
-<li><code>$ dd bs=4M if=/home/zayn7lie/Downloads/archlinux-2023.08.01-x86_64.iso of=/dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0 conv=fsync oflag=direct status=progress</code></li>
+<li><code>$ sudo cat ?{path/to/archlinux-version-x86_64.iso} &gt; ?{/dev/disk/by-id/usb-My_flash_drive}</code></li>
 </ul>
 </li>
 </ul>
