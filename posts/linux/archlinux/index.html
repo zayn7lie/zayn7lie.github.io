@@ -573,7 +573,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
 <li><code># iwctl</code></li>
 <li><code>[iwd]# station wlan0 get-networks</code>, <code>[iwd]# station wlan0 connect ${SSID}</code></li>
 <li><code>[iwd]# exit</code></li>
-<li><code># hwclock --systohc --utc</code>, <code># timedatectl set-ntp true</code></li>
+<li><code># timedatectl set-ntp true</code>, <code># hwclock --systohc --utc</code></li>
 </ol>
 </li>
 <li>
@@ -581,7 +581,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
 <ol>
 <li><code># fdisk -l</code></li>
 <li><code># mkfs.ext4 /dev/?{nvme0n1p4}</code>, <code># mount /dev/?{nvme0n1p4} /mnt</code></li>
-<li><code># mkdir -p /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code></li>
+<li><code># mkdir /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code></li>
 <li><code># lsblk</code></li>
 <li><code># pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim</code></li>
 <li><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code>, <code># cat /mnt/etc/fstab</code></li>
@@ -619,7 +619,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
 <p>Launch Setting</p>
 <ol>
 <li><code># pacman -S amd-ucode grub efibootmgr</code></li>
-<li><code># grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=&quot;Arch Linux&quot; --recheck</code></li>
+<li><code># grub-install --target=x86_64-efi --efi-directory=/boot --recheck</code></li>
 <li><code># grub-mkconfig -o /boot/grub/grub.cfg</code></li>
 </ol>
 </li>

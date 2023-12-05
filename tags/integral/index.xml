@@ -382,8 +382,8 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ \frac{dy}{d\theta} = \frac{dy}{dx}\frac{dx}{d\theta} \Rightarrow \frac{dy}{dx} = \frac{dy/d\theta}{dx/d\theta}, \frac{d^2y}{dx} = \frac{d}{dx}(\frac{dy}{dx}) = \frac{\frac{d}{d\theta}(\frac{dy}{dx})}{\frac{dx}{d\theta}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Why $d^2y/dx^2 \neq \frac{d^2y/d\theta^2}{d^2x/d\theta^2}?$
-If you remember &amp;ldquo;$y$ and $x$ are in different stages&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
+&lt;p&gt;Why $d^2y/dx^2 \neq \frac{d^2y/d\theta^2}{d^2x/d\theta^2}?$&lt;/p&gt;
+&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are in different stages&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{dy^2}{dx^2}}}dx = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{dy/dt}{dx/dt})^2}}\frac{dx}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{dx^2}{dt^2} + \frac{dy^2}{dt^2}}}dt
 $$&lt;/p&gt;

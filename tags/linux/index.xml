@@ -239,6 +239,7 @@
         
         <guid>https://zayn7lie.github.io/posts/linux/hyprland/</guid>
         <description>&lt;blockquote&gt;
+&lt;p&gt;12/05/2023-Updated: I have written a script for auto configuration. Uploaded to dot files below.&lt;/p&gt;
 &lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
 &lt;p&gt;Dot files could be found in &lt;a class=&#34;link&#34; href=&#34;https://github.com/zayn7lie/dot-files&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/zayn7lie/dot-files&lt;/a&gt;&lt;/p&gt;
@@ -824,7 +825,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;# iwctl&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# station wlan0 get-networks&lt;/code&gt;, &lt;code&gt;[iwd]# station wlan0 connect ${SSID}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# exit&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# hwclock --systohc --utc&lt;/code&gt;, &lt;code&gt;# timedatectl set-ntp true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# timedatectl set-ntp true&lt;/code&gt;, &lt;code&gt;# hwclock --systohc --utc&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -832,7 +833,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# fdisk -l&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p4}&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# mkdir -p /mnt/boot&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p1} /mnt/boot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mkdir /mnt/boot&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p1} /mnt/boot&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# lsblk&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt;, &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt;&lt;/li&gt;
@@ -870,7 +871,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Launch Setting&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# pacman -S amd-ucode grub efibootmgr&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=&amp;quot;Arch Linux&amp;quot; --recheck&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# grub-install --target=x86_64-efi --efi-directory=/boot --recheck&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
