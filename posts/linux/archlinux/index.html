@@ -543,7 +543,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
 <h3 id="7-launch-setting">7. Launch Setting</h3>
 <ol>
 <li><code># pacman -S ?{amd-ucode} grub efibootmgr</code> to install necessary boot package. If you are using Intel CPU, change <code>?{amd-ucode}</code> to <code>intel-ucode</code></li>
-<li><code># grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&quot;Arch Linux&quot;} --recheck</code> to install grub file. <code>!{--removable}</code> determines whether you are able to remove it from UEFI, <code>?{&quot;Arch Linux&quot;}</code> is your system name in grub.</li>
+<li><code># grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&quot;GRUB&quot;} --recheck</code> to install grub file. <code>!{--removable}</code> determines whether you are able to remove it from UEFI, <code>?{&quot;Arch Linux&quot;}</code> is your system name in grub.</li>
 <li><code># grub-mkconfig -o /boot/grub/grub.cfg</code> to generate config file.</li>
 </ol>
 <h3 id="8-misc">8. Misc</h3>
@@ -619,7 +619,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
 <p>Launch Setting</p>
 <ol>
 <li><code># pacman -S amd-ucode grub efibootmgr</code></li>
-<li><code># grub-install --target=x86_64-efi --efi-directory=/boot --recheck</code></li>
+<li><code># grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --recheck</code></li>
 <li><code># grub-mkconfig -o /boot/grub/grub.cfg</code></li>
 </ol>
 </li>
