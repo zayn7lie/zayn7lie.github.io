@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>NYU on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.github.io/tags/nyu/</link>
+        <link>https://zayn7lie.ber7.org/tags/nyu/</link>
         <description>Recent content in NYU on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/nyu/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/nyu/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Data Structure (with Java)</title>
-        <link>https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/</link>
+        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/data_structure/</link>
         <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/cpp-algorithm/data_structure/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/data_structure/</guid>
         <description>&lt;h2 id=&#34;how-how-java-runs&#34;&gt;HOW: How Java runs&lt;/h2&gt;
 &lt;p&gt;Source Code -&lt;code&gt;javac SOURCE_CODE_FILE&lt;/code&gt;-&amp;gt; bytecode -&lt;code&gt;java CLASS_FILE&lt;/code&gt;-&amp;gt; machine instructions (in Java Virtual Machine or JVM)&lt;/p&gt;
 &lt;h3 id=&#34;jvm&#34;&gt;JVM&lt;/h3&gt;

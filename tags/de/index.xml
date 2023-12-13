@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>DE on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.github.io/tags/de/</link>
+        <link>https://zayn7lie.ber7.org/tags/de/</link>
         <description>Recent content in DE on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/de/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/de/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hyprland (Wayland)</title>
-        <link>https://zayn7lie.github.io/posts/linux/hyprland/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/hyprland/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/linux/hyprland/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/hyprland/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;12/05/2023-Updated: I have written a script for auto configuration. Uploaded to dot files below.&lt;/p&gt;
 &lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
@@ -221,10 +221,10 @@
         </item>
         <item>
         <title>XFCE (X11)</title>
-        <link>https://zayn7lie.github.io/posts/linux/xfce/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/linux/xfce/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/xfce/</guid>
         <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
 &lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
 &lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;

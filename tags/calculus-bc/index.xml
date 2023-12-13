@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Calculus BC on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.github.io/tags/calculus-bc/</link>
+        <link>https://zayn7lie.ber7.org/tags/calculus-bc/</link>
         <description>Recent content in Calculus BC on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.github.io/tags/calculus-bc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus-bc/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus - Series</title>
-        <link>https://zayn7lie.github.io/posts/math/cal-ser/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-ser/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/math/cal-ser/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -244,10 +244,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus - Integral</title>
-        <link>https://zayn7lie.github.io/posts/math/cal-int/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/math/cal-int/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -466,10 +466,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus - Differentiate</title>
-        <link>https://zayn7lie.github.io/posts/math/cal-dif/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.github.io/posts/math/cal-dif/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
 &lt;h3 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h3&gt;
 &lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
