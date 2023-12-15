@@ -632,19 +632,30 @@ $$&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Calculus - Differentiate</title>
+        <title>Calculus - Differentiation</title>
         <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
-        <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
-&lt;h3 id=&#34;why-should-we-learn-differentiation&#34;&gt;Why should we learn differentiation?&lt;/h3&gt;
-&lt;p&gt;Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;WHY: Why should we learn differentiation?&lt;/h2&gt;
+&lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
+&lt;p&gt;How to sketch a function? - Find the tendency of a function, knowning &lt;em&gt;monotonicity&lt;/em&gt; and &lt;em&gt;concavity&lt;/em&gt;. (&amp;amp; Optimization)&lt;/p&gt;
+&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;WHAT: What is differentiation?&lt;/h2&gt;
+&lt;p&gt;$$ \lim_{l \rightarrow x}\frac{f(x) - f(l)}{x - l} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ #2} = \frac{df(x)}{dx} \textbf{ #3} \Rightarrow f&amp;rsquo;(x) \textbf{ #4}
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Notice. When transform from $\textbf{#2} \rightarrow \textbf{#3}$, we make two changes: Change $\Delta$ to $d$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{df(x)}{dx} \neq df(x) \div dx$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{df(x)}{dx}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{dx}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Difference between differentiation and derivative?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Analyzing function&lt;/li&gt;
-&lt;li&gt;Analyzing points&lt;/li&gt;
+&lt;li&gt;$\frac{df(x)}{dx}$ differentiation is a method to crop source function to small range for knowing the tendency&lt;/li&gt;
+&lt;li&gt;$f&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-a-function-could-be-differentiated---differentiability&#34;&gt;Why a function could be differentiated? - Differentiability&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-01&lt;/code&gt;: $g(x) = \lim_{h \rightarrow 0}\Large{\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}}$&lt;/p&gt;
+&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Continuous: $\lim_{x \rightarrow a}{f(x)} = f(a)$ ($\lim_{x \rightarrow a}{f(x)} = \lim_{x \rightarrow a^+}{f(x)} = \lim_{x \rightarrow a^-}{f(x)}$)&lt;/p&gt;
@@ -668,55 +679,53 @@ $$&lt;/p&gt;
 &lt;p&gt;Smooth: $\lim_{c \rightarrow 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rightarrow 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Limit: L&amp;rsquo;hospital rule&lt;/p&gt;
+&lt;p&gt;Limit: L&amp;rsquo;hopital rule&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Exercise.
-$$ \lim(1 + \frac{1}{x})^x \text{(Please Remember This One)}, \lim_{x \rightarrow 0^+}{x\ln{x}}, \lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}
-$$&lt;/p&gt;
-&lt;h2 id=&#34;what-difference-between-differentiate-and-derivative&#34;&gt;WHAT: Difference between differentiate and derivative&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;$\frac{dy}{dx}$ differentiate is a method to cut source function to know the tendency&lt;/li&gt;
-&lt;li&gt;$y&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$$ \frac{d}{dx}f(x_1) = f&amp;rsquo;(x_1) = \lim_{x_2 \rightarrow x_1}\frac{f(x_2) - f(x_1)}{x_2 - x_1}
-$$&lt;/p&gt;
-&lt;p&gt;E.g. Derive:
-$$
-g(x) = \lim_{h \rightarrow 0}\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}
-$$&lt;/p&gt;
-&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;h3 id=&#34;how-to-differentiate&#34;&gt;How to differentiate?&lt;/h3&gt;
-&lt;h4 id=&#34;basic-rules&#34;&gt;Basic rules&lt;/h4&gt;
-&lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \ or \ (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
-$$
-$$ \frac{d}{dx}(f(x) \cdot g(x)) = \frac{d}{dx}f(x) \cdot g(x) + f(x) \cdot \frac{d}{dx}g(x) \ or \ (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
-$$
-$$ \frac{d}{dx}f(g(x)) = f&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) = \frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{dx}g(x)
-$$
-$$ * Inverse \ function: y(x) \Leftrightarrow x(y) \Rightarrow \frac{d}{dx}y(x_1) \cdot \frac{d}{dx}x(y_1) = 1
-$$&lt;/p&gt;
-&lt;h4 id=&#34;basic-function&#34;&gt;Basic function&lt;/h4&gt;
+&lt;p&gt;Does &lt;code&gt;EX-CAL-DIF-01&lt;/code&gt; have an easier way to solve?&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-01&lt;/code&gt;: $\lim_{x \rightarrow \pm\infty}(1 + \frac{1}{x})^x$ (Important one, that&amp;rsquo;s the definition of $e$)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-02&lt;/code&gt;: $\lim_{x \rightarrow 0^+}{x\ln{x}}$, $\lim_{x \rightarrow 0^+}{x^x}$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-03&lt;/code&gt;: $\lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}$&lt;/p&gt;
+&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;WHAT: What is the derivative for basic function&lt;/h3&gt;
 &lt;p&gt;$$ \frac{d}{dx}x^n = n \cdot x^{n - 1}, \frac{d}{dx}Constant = 0, \frac{d}{dx}\ln{x} = \frac{1}{x}, \frac{d}{dx}e^x = e^x
 $$
 $$ \frac{d}{dx}\sin{x} = \cos{x}, \frac{d}{dx}\cos{x} = -\sin{x}, \frac{d}{dx}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
 $$
 $$ \frac{d}{dx}\sin^{-1}{x} = \frac{d}{dx}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\cos^{-1}{x} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\tan^{-1}{x} = \frac{1}{1 + x^2}
 $$&lt;/p&gt;
-&lt;p&gt;E.g. Derive $a^x$ and $\log_ax$&lt;/p&gt;
-&lt;p&gt;E.g. Differential Equations: $x^2 + y^2 = 25$, derive $\frac{d}{dx}y$&lt;/p&gt;
-&lt;h3 id=&#34;how-to-apply-differentiation-to-reality&#34;&gt;How to apply differentiation to reality&lt;/h3&gt;
-&lt;h4 id=&#34;finding-rates&#34;&gt;Finding Rates&lt;/h4&gt;
-&lt;p&gt;E.g. A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
-&lt;p&gt;E.g. The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{d}{dt}x = \frac{d}{dt}z$ and the rate of the diagonal $z$ has $\frac{d}{dt}z = \frac{d}{dt}y$. Derive the value of $k$.&lt;/p&gt;
-&lt;h4 id=&#34;curve-sketching&#34;&gt;Curve Sketching&lt;/h4&gt;
-&lt;p&gt;Analyzing function $f(x)$ is increasing/decreasing/constant on $(a, b)$&lt;/p&gt;
-&lt;p&gt;Analyzing points ($x = a$)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-03&lt;/code&gt;: Try to use definition to derive the first two lines.&lt;/p&gt;
+&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;HOW: How to differentiate? - Basic rules&lt;/h3&gt;
+&lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \Leftrightarrow (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
+$$
+$$ \frac{d}{dx}(f(x) \cdot g(x)) = \frac{d}{dx}f(x) \cdot g(x) + f(x) \cdot \frac{d}{dx}g(x) \Leftrightarrow (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
+$$
+$$ \text{Chain rule: } \frac{d}{dx}f(g(x)) = f&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) = \frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{dx}g(x)
+$$
+$$ \text{Inverse function: }y(x) \Leftrightarrow x(y) \Rightarrow \frac{d}{dx}y(x_1) \cdot \frac{d}{dx}x(y_1) = 1
+$$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-01&lt;/code&gt;: Try to use the basic rule to derive the third line in &lt;code&gt;WHAT: What is the derivative for basic function&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-02&lt;/code&gt;: Differentiate $a^x$ and $\log_ax$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-03&lt;/code&gt;: Known $x^2 + y^2 = 25$, derive $\frac{d}{dx}y$&lt;/p&gt;
+&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;HOW: How to apply differentiation in solving problem?&lt;/h2&gt;
+&lt;h3 id=&#34;finding-rates&#34;&gt;Finding Rates&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-01&lt;/code&gt;: A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-02&lt;/code&gt;: The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{d}{dt}x = \frac{d}{dt}z$ and the rate of the diagonal $z$ has $\frac{d}{dt}z = \frac{d}{dt}y$. Derive the value of $k$.&lt;/p&gt;
+&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;Curve Sketching &amp;amp; Optimization&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$&lt;/li&gt;
-&lt;li&gt;Stationary point: $f&amp;rsquo;(x) = 0$&lt;/li&gt;
-&lt;li&gt;Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
-&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ and $f^{(3)}(x) \neq 0$ - concave upward(&amp;gt;0)/downward(&amp;lt;0)&lt;/li&gt;
+&lt;li&gt;Monotonicity with $dy/dx$
+&lt;ul&gt;
+&lt;li&gt;Monotonic increasing - $dy/dx &amp;gt; 0$&lt;/li&gt;
+&lt;li&gt;Monotonic decreasing: $dy/dx &amp;lt; 0$&lt;/li&gt;
+&lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$, Stationary point: $f&amp;rsquo;(x) = 0$, Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Concavity with $d^2y/dx^2$
+&lt;ul&gt;
+&lt;li&gt;Concave upward: $d^2y/dx^2 &amp;gt; 0$&lt;/li&gt;
+&lt;li&gt;Concave downward: $d^2y/dx^2 &amp;lt; 0$&lt;/li&gt;
+&lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ and $f^{(3)}(x) \neq 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
