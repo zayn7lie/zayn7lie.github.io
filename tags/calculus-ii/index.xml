@@ -264,11 +264,8 @@ $$&lt;/p&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
-&lt;p&gt;Exercise.
-$$ \text{Prove }\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
-$$
-$$ \text{Prove }\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1
-$$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-INT-01-01&lt;/code&gt;: Prove $\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-INT-01-02&lt;/code&gt;: Prove $\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$&lt;/li&gt;
 &lt;li&gt;Trapezoidal = (left + right)/2&lt;/li&gt;
@@ -452,7 +449,7 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Why $d^2y/dx^2 \neq \frac{d^2y/d\theta^2}{d^2x/d\theta^2}?$&lt;/p&gt;
-&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are in different stages&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
+&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{dy^2}{dx^2}}}dx = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{dy/dt}{dx/dt})^2}}\frac{dx}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{dx^2}{dt^2} + \frac{dy^2}{dt^2}}}dt
 $$&lt;/p&gt;

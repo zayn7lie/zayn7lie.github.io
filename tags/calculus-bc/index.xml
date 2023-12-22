@@ -264,11 +264,8 @@ $$&lt;/p&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)}dx) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
-&lt;p&gt;Exercise.
-$$ \text{Prove }\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)
-$$
-$$ \text{Prove }\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1
-$$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-INT-01-01&lt;/code&gt;: Prove $\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-INT-01-02&lt;/code&gt;: Prove $\ln(n + 1) &amp;lt; \sum_{i = 1}^{n}\frac{1}{i} &amp;lt; \ln{n} + 1$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$&lt;/li&gt;
 &lt;li&gt;Trapezoidal = (left + right)/2&lt;/li&gt;
@@ -452,7 +449,7 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Why $d^2y/dx^2 \neq \frac{d^2y/d\theta^2}{d^2x/d\theta^2}?$&lt;/p&gt;
-&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are in different stages&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
+&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{dy^2}{dx^2}}}dx = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{dy/dt}{dx/dt})^2}}\frac{dx}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{dx^2}{dt^2} + \frac{dy^2}{dt^2}}}dt
 $$&lt;/p&gt;
@@ -474,10 +471,11 @@ $$&lt;/p&gt;
 &lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;p&gt;How to sketch a function? - Find the tendency of a function, knowning &lt;em&gt;monotonicity&lt;/em&gt; and &lt;em&gt;concavity&lt;/em&gt;. (&amp;amp; Optimization)&lt;/p&gt;
 &lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;WHAT: What is differentiation?&lt;/h2&gt;
-&lt;p&gt;$$ \lim_{l \rightarrow x}\frac{f(x) - f(l)}{x - l} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ #2} = \frac{df(x)}{dx} \textbf{ #3} \Rightarrow f&amp;rsquo;(x) \textbf{ #4}
+&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{
+#2} = \frac{df(x)}{dx} \textbf{ #3} \Rightarrow f&amp;rsquo;(x) \textbf{ #4}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Notice. When transform from $\textbf{#2} \rightarrow \textbf{#3}$, we make two changes: Change $\Delta$ to $d$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{df(x)}{dx} \neq df(x) \div dx$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{df(x)}{dx}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{dx}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
+&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $d$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{df(x)}{dx} \neq df(x) \div dx$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{df(x)}{dx}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{dx}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Difference between differentiation and derivative?&lt;/p&gt;
 &lt;ul&gt;
@@ -512,12 +510,12 @@ $$&lt;/p&gt;
 &lt;p&gt;Smooth: $\lim_{c \rightarrow 0^+}{\frac{f(a + c) - f(c)}{c}} = \lim_{c \rightarrow 0^-}{\frac{f(a + c) - f(c)}{c}}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Limit: L&amp;rsquo;hopital rule&lt;/p&gt;
+&lt;p&gt;Limit: L&amp;rsquo;Hôpital&amp;rsquo;s rule&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Does &lt;code&gt;EX-CAL-DIF-01&lt;/code&gt; have an easier way to solve?&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-01&lt;/code&gt;: $\lim_{x \rightarrow \pm\infty}(1 + \frac{1}{x})^x$ (Important one, that&amp;rsquo;s the definition of $e$)&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-02&lt;/code&gt;: $\lim_{x \rightarrow 0^+}{x\ln{x}}$, $\lim_{x \rightarrow 0^+}{x^x}$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-01&lt;/code&gt;: $\lim_{x \rightarrow 0^+}{x\ln{x}}$, $\lim_{x \rightarrow 0^+}{x^x}$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-02&lt;/code&gt;: $\lim_{x \rightarrow \pm\infty}(1 + \frac{1}{x})^x$ (Important one, that&amp;rsquo;s the definition of $e$)&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-03&lt;/code&gt;: $\lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}$&lt;/p&gt;
 &lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;WHAT: What is the derivative for basic function&lt;/h3&gt;
 &lt;p&gt;$$ \frac{d}{dx}x^n = n \cdot x^{n - 1}, \frac{d}{dx}Constant = 0, \frac{d}{dx}\ln{x} = \frac{1}{x}, \frac{d}{dx}e^x = e^x
