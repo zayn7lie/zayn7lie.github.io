@@ -3,31 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zayn7lie.ber7.org/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/categories/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/introduction/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/linear-algebra/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/posts/math/la-intro/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/math/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/categories/math/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/posts/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/calculus/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
@@ -38,13 +14,28 @@
     <loc>https://zayn7lie.ber7.org/tags/calculus-iii/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://zayn7lie.ber7.org/categories/</loc>
+    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://zayn7lie.ber7.org/tags/integral/</loc>
+    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/tags/math/</loc>
+    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/categories/math/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/multiple-integrals/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/partial-derivatives/</loc>
+    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/posts/</loc>
+    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/tags/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/vector-calculus/</loc>
@@ -118,21 +109,6 @@
   </url><url>
     <loc>https://zayn7lie.ber7.org/posts/math/cal-int/</loc>
     <lastmod>2023-09-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/algorithm/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/categories/cpp-algorithm/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/posts/cpp-algorithm/data_structure/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/java/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/nyu/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/arknights/</loc>
     <lastmod>2023-08-06T00:00:00+00:00</lastmod>
@@ -219,6 +195,9 @@
     <lastmod>2023-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-02/</loc>
+    <lastmod>2023-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/categories/cpp-algorithm/</loc>
     <lastmod>2023-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/csci/</loc>
