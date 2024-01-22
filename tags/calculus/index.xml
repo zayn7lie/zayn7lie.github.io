@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Calculus - Multi-dimensions</title>
+        <title>Calculus: Multi-dimensions</title>
         <link>https://zayn7lie.ber7.org/posts/math/cal-mul/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
@@ -39,23 +39,8 @@
 &lt;p&gt;$f_1$ and $f_2$ is independent&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Planes: ${(x, y, z) | f_1(x, y, z) = a_1}$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-find-the-direction-of-the-coordinate---left-first-rule&#34;&gt;HOW: How to find the direction of the coordinate? - Left-First Rule&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Right-hand rule? Left-fist rule!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h5 id=&#34;why-why-use-left-fist-rule&#34;&gt;WHY: Why use left-fist rule?&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;I do not want to put down my pen when I am thinking and writing.&lt;/li&gt;
-&lt;li&gt;The thumb is in the fist which is more lively to some situation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;what-what-is-the-left-fist-rule&#34;&gt;WHAT: What is the left-fist rule?&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;Raise your left fist with thumb in your palm&lt;/li&gt;
-&lt;li&gt;Point your rest four fingers to $x$ direction&lt;/li&gt;
-&lt;li&gt;Scroll your fingers to $y$ direction to form a fist&lt;/li&gt;
-&lt;li&gt;the direction of your thumb is $z$ direction&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h5 id=&#34;how-how-to-apply-the-left-fist-rule&#34;&gt;HOW: How to apply the left-fist rule?&lt;/h5&gt;
+&lt;h4 id=&#34;how-how-to-find-the-direction-of-the-coordinate---left-fist-rulehttpszayn7lieber7orgpostsmathgeo-left_fist&#34;&gt;HOW: How to find the direction of the coordinate? - &lt;a class=&#34;link&#34; href=&#34;https://zayn7lie.ber7.org/posts/math/geo-left_fist/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Left-Fist Rule&lt;/a&gt;&lt;/h4&gt;
 &lt;h2 id=&#34;what-what-is-differentiation---partial-derivatives&#34;&gt;WHAT: What is differentiation - Partial Derivatives&lt;/h2&gt;
 &lt;h3 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h3&gt;
 &lt;ul&gt;
