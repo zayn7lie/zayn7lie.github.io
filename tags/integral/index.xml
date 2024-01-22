@@ -27,6 +27,35 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;eg-x-y-z-coordinate&#34;&gt;E.g. X-Y-Z coordinate&lt;/h3&gt;
+&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;WHY: Why should we use X-Y-Z coordinate&lt;/h4&gt;
+&lt;h4 id=&#34;what-what-is-points-lines-planes-in-the-coordinate&#34;&gt;WHAT: What is points, lines, planes in the coordinate&lt;/h4&gt;
+&lt;p&gt;Points: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$f_1$, $f_2$, and $f_3$ is &lt;em&gt;independent&lt;/em&gt; (&lt;em&gt;independent&lt;/em&gt;: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Lines: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$f_1$ and $f_2$ is independent&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Planes: ${(x, y, z) | f_1(x, y, z) = a_1}$&lt;/p&gt;
+&lt;h4 id=&#34;how-how-to-find-the-direction-of-the-coordinate---left-first-rule&#34;&gt;HOW: How to find the direction of the coordinate? - Left-First Rule&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Right-hand rule? Left-fist rule!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;why-why-use-left-fist-rule&#34;&gt;WHY: Why use left-fist rule?&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;I do not want to put down my pen when I am thinking and writing.&lt;/li&gt;
+&lt;li&gt;The thumb is in the fist which is more lively to some situation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;what-what-is-the-left-fist-rule&#34;&gt;WHAT: What is the left-fist rule?&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Raise your left fist with thumb in your palm&lt;/li&gt;
+&lt;li&gt;Point your rest four fingers to $x$ direction&lt;/li&gt;
+&lt;li&gt;Scroll your fingers to $y$ direction to form a fist&lt;/li&gt;
+&lt;li&gt;the direction of your thumb is $z$ direction&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;how-how-to-apply-the-left-fist-rule&#34;&gt;HOW: How to apply the left-fist rule?&lt;/h5&gt;
 &lt;h2 id=&#34;what-what-is-differentiation---partial-derivatives&#34;&gt;WHAT: What is differentiation - Partial Derivatives&lt;/h2&gt;
 &lt;h3 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h3&gt;
 &lt;ul&gt;
@@ -76,7 +105,7 @@ $$ (1) \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\part
 $$
 $$ (2) \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}, \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}
 $$
-$$ (3) General: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
+$$ (3) \text{General}: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
 $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h3&gt;
@@ -89,7 +118,7 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$&lt;/li&gt;
 &lt;li&gt;$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
-\hat{i} &amp;amp; \hat{j} &amp;amp; \vec{k} \\
+\hat{i} &amp;amp; \hat{j} &amp;amp; \hat{k} \\
 \frac{\partial}{\partial x} &amp;amp; \frac{\partial}{\partial y} &amp;amp; \frac{\partial}{\partial z} \\
 P &amp;amp; Q &amp;amp; R
 \end{vmatrix} = (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z})\hat{i} + (\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x})\hat{j} + (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})\hat{k}$&lt;/li&gt;
@@ -174,7 +203,7 @@ $$&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Calculus - Integral</title>
+        <title>Calculus: Integral</title>
         <link>https://zayn7lie.ber7.org/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
