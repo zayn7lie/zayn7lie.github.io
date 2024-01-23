@@ -7,40 +7,54 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/math/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Calculus: Multi-dimensions</title>
+        <title>Calculus: Vectors</title>
         <link>https://zayn7lie.ber7.org/posts/math/cal-mul/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-mul/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-calculus-in-multi-dimensions&#34;&gt;WHY: Why should we learn calculus in multi-dimensions?&lt;/h2&gt;
-&lt;p&gt;More applicable in the real world.&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-function-in-multi-dimension&#34;&gt;WHAT: What is function in Multi-dimension&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;why-why-should-we-apply-calculus-to-vector&#34;&gt;WHY: Why should we apply calculus to vector?&lt;/h2&gt;
+&lt;p&gt;More applicable in the real world, like 3D real world, linear algebra, etc.&lt;/p&gt;
+&lt;h2 id=&#34;what-what-is-vector--function-with-multiple-variables&#34;&gt;WHAT: What is vector / function with multiple variables?&lt;/h2&gt;
+&lt;p&gt;Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;eg-x-y-z-coordinate&#34;&gt;E.g. X-Y-Z coordinate&lt;/h3&gt;
+&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;WHY: Why should we use X-Y-Z coordinate&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;It is the generalization of X-Y coordinate that is easy to learn and understand&lt;/li&gt;
+&lt;li&gt;It is more visualizable using some graphic software or even drew by hand&lt;/li&gt;
+&lt;li&gt;The process of the generalization from X-Y to X-Y-Z is the same to the generalization from X-Y-Z to higher dimensions. In the higher dimensions, the meaning of &lt;em&gt;vector&lt;/em&gt; is generalized to just a set of points: $\vec{v} = (x_1, x_2, \ldots)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;what-what-is-points-lines-planes-in-the-coordinate&#34;&gt;WHAT: What is points, lines, planes in the coordinate&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Points/Vectors(3 variables - 3 constraints = 0 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$
+E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$f_1$, $f_2$, and $f_3$ is &lt;em&gt;independent&lt;/em&gt; (&lt;em&gt;independent&lt;/em&gt;: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Express: $f(x, y, z, \ldots)$&lt;/p&gt;
+&lt;p&gt;Lines/Curves(3 variables - 2 constraints = 1 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Visualize&lt;/p&gt;
+&lt;p&gt;Planes/Surfaces(3 variables - 1 constraints = 2 dimensions): ${(x, y, z) | f_1(x, y, z) = a}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cubes/Volumes(3 variables - 0 constraints (only partial constraints) = 3 dimensions): ${(x, y, z) | f(x, y, z) \lessgtr a}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;how-how-to-find-the-direction-of-the-coordinate---left-fist-rulehttpszayn7lieber7orgpostsmathgeo-left_fist&#34;&gt;HOW: How to find the direction of the coordinate? - &lt;a class=&#34;link&#34; href=&#34;https://zayn7lie.ber7.org/posts/math/geo-left_fist/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Left-Fist Rule&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;how-how-to-virtualize-a-surface&#34;&gt;HOW: How to virtualize a surface?&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Domain &amp;amp; range&lt;/li&gt;
 &lt;li&gt;Graphs: Level curves&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;eg-x-y-z-coordinate&#34;&gt;E.g. X-Y-Z coordinate&lt;/h3&gt;
-&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;WHY: Why should we use X-Y-Z coordinate&lt;/h4&gt;
-&lt;h4 id=&#34;what-what-is-points-lines-planes-in-the-coordinate&#34;&gt;WHAT: What is points, lines, planes in the coordinate&lt;/h4&gt;
-&lt;p&gt;Points: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$f_1$, $f_2$, and $f_3$ is &lt;em&gt;independent&lt;/em&gt; (&lt;em&gt;independent&lt;/em&gt;: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Lines: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$f_1$ and $f_2$ is independent&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Planes: ${(x, y, z) | f_1(x, y, z) = a_1}$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-find-the-direction-of-the-coordinate---left-fist-rulehttpszayn7lieber7orgpostsmathgeo-left_fist&#34;&gt;HOW: How to find the direction of the coordinate? - &lt;a class=&#34;link&#34; href=&#34;https://zayn7lie.ber7.org/posts/math/geo-left_fist/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Left-Fist Rule&lt;/a&gt;&lt;/h4&gt;
 &lt;h2 id=&#34;what-what-is-differentiation---partial-derivatives&#34;&gt;WHAT: What is differentiation - Partial Derivatives&lt;/h2&gt;
 &lt;h3 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h3&gt;
 &lt;ul&gt;

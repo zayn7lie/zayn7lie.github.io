@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: Why should we learn calculus in multi-dimensions? More applicable in the real world.
-WHAT: What is function in Multi-dimension Express: $f(x, y, z, \ldots)$
-Visualize
-Domain &amp;amp; range Graphs: Level curves E.g. X-Y-Z coordinate WHY: Why should we use X-Y-Z coordinate WHAT: What is points, lines, planes in the coordinate Points: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$'>
-<title>Calculus: Multi-dimensions</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc.
+WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$
+$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b &#43; kx_1$), $\frac{x_1^2}{a^2} &#43; \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 &#43; (x_2 - b)^2 &#43; (x_3 - c)^2 - R^2 = 0$, etc.'>
+<title>Calculus: Vectors</title>
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/math/cal-mul/'>
 
-<link rel="stylesheet" href="/scss/style.min.21dd04c9bdb63d4e8435c2d96c8458fb0397cd7ac2b2f69521767054761cf0ca.css"><meta property='og:title' content='Calculus: Multi-dimensions'>
-<meta property='og:description' content='WHY: Why should we learn calculus in multi-dimensions? More applicable in the real world.
-WHAT: What is function in Multi-dimension Express: $f(x, y, z, \ldots)$
-Visualize
-Domain &amp;amp; range Graphs: Level curves E.g. X-Y-Z coordinate WHY: Why should we use X-Y-Z coordinate WHAT: What is points, lines, planes in the coordinate Points: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$'>
+<link rel="stylesheet" href="/scss/style.min.21dd04c9bdb63d4e8435c2d96c8458fb0397cd7ac2b2f69521767054761cf0ca.css"><meta property='og:title' content='Calculus: Vectors'>
+<meta property='og:description' content='WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc.
+WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$
+$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b &#43; kx_1$), $\frac{x_1^2}{a^2} &#43; \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 &#43; (x_2 - b)^2 &#43; (x_3 - c)^2 - R^2 = 0$, etc.'>
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/math/cal-mul/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='Calculus III' /><meta property='article:tag' content='Integral' /><meta property='article:tag' content='Partial Derivatives' /><meta property='article:tag' content='Multiple Integrals' /><meta property='article:tag' content='Vector Calculus' /><meta property='article:published_time' content='2023-10-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-25T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="Calculus: Multi-dimensions">
-<meta name="twitter:description" content="WHY: Why should we learn calculus in multi-dimensions? More applicable in the real world.
-WHAT: What is function in Multi-dimension Express: $f(x, y, z, \ldots)$
-Visualize
-Domain &amp;amp; range Graphs: Level curves E.g. X-Y-Z coordinate WHY: Why should we use X-Y-Z coordinate WHAT: What is points, lines, planes in the coordinate Points: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$">
+<meta name="twitter:title" content="Calculus: Vectors">
+<meta name="twitter:description" content="WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc.
+WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$
+$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b &#43; kx_1$), $\frac{x_1^2}{a^2} &#43; \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 &#43; (x_2 - b)^2 &#43; (x_3 - c)^2 - R^2 = 0$, etc.">
     <link rel="shortcut icon" href="/favicon.png" />
 
         
@@ -246,8 +243,8 @@ Domain &amp;amp; range Graphs: Level curves E.g. X-Y-Z coordinate WHY: Why shoul
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#why-why-should-we-learn-calculus-in-multi-dimensions">WHY: Why should we learn calculus in multi-dimensions?</a></li>
-    <li><a href="#what-what-is-function-in-multi-dimension">WHAT: What is function in Multi-dimension</a>
+    <li><a href="#why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</a></li>
+    <li><a href="#what-what-is-vector--function-with-multiple-variables">WHAT: What is vector / function with multiple variables?</a>
       <ul>
         <li><a href="#eg-x-y-z-coordinate">E.g. X-Y-Z coordinate</a></li>
       </ul>
@@ -403,7 +400,7 @@ Domain &amp;amp; range Graphs: Level curves E.g. X-Y-Z coordinate WHY: Why shoul
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/posts/math/cal-mul/">Calculus: Multi-dimensions</a>
+            <a href="/posts/math/cal-mul/">Calculus: Vectors</a>
         </h2>
     
         
@@ -440,7 +437,7 @@ Domain &amp;amp; range Graphs: Level curves E.g. X-Y-Z coordinate WHY: Why shoul
 
 
                 <time class="article-time--reading">
-                    6 minute read
+                    7 minute read
                 </time>
             </div>
         
@@ -455,35 +452,49 @@ Domain &amp;amp; range Graphs: Level curves E.g. X-Y-Z coordinate WHY: Why shoul
     <section class="article-content">
     
     
-    <h2 id="why-why-should-we-learn-calculus-in-multi-dimensions">WHY: Why should we learn calculus in multi-dimensions?</h2>
-<p>More applicable in the real world.</p>
-<h2 id="what-what-is-function-in-multi-dimension">WHAT: What is function in Multi-dimension</h2>
+    <h2 id="why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</h2>
+<p>More applicable in the real world, like 3D real world, linear algebra, etc.</p>
+<h2 id="what-what-is-vector--function-with-multiple-variables">WHAT: What is vector / function with multiple variables?</h2>
+<p>Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$</p>
+<blockquote>
+<p>$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.</p>
+</blockquote>
+<h3 id="eg-x-y-z-coordinate">E.g. X-Y-Z coordinate</h3>
+<h4 id="why-why-should-we-use-x-y-z-coordinate">WHY: Why should we use X-Y-Z coordinate</h4>
+<ul>
+<li>It is the generalization of X-Y coordinate that is easy to learn and understand</li>
+<li>It is more visualizable using some graphic software or even drew by hand</li>
+<li>The process of the generalization from X-Y to X-Y-Z is the same to the generalization from X-Y-Z to higher dimensions. In the higher dimensions, the meaning of <em>vector</em> is generalized to just a set of points: $\vec{v} = (x_1, x_2, \ldots)$</li>
+</ul>
+<h4 id="what-what-is-points-lines-planes-in-the-coordinate">WHAT: What is points, lines, planes in the coordinate</h4>
+<ul>
+<li>Points/Vectors(3 variables - 3 constraints = 0 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$
+E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$</li>
+</ul>
+<blockquote>
+<p>$f_1$, $f_2$, and $f_3$ is <em>independent</em> (<em>independent</em>: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)</p>
+</blockquote>
 <ul>
 <li>
-<p>Express: $f(x, y, z, \ldots)$</p>
+<p>Lines/Curves(3 variables - 2 constraints = 1 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$</p>
 </li>
 <li>
-<p>Visualize</p>
+<p>Planes/Surfaces(3 variables - 1 constraints = 2 dimensions): ${(x, y, z) | f_1(x, y, z) = a}$</p>
+</li>
+<li>
+<p>Cubes/Volumes(3 variables - 0 constraints (only partial constraints) = 3 dimensions): ${(x, y, z) | f(x, y, z) \lessgtr a}$</p>
+</li>
+</ul>
+<blockquote>
+<p>Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.</p>
+</blockquote>
+<h4 id="how-how-to-find-the-direction-of-the-coordinate---left-fist-rulehttpszayn7lieber7orgpostsmathgeo-left_fist">HOW: How to find the direction of the coordinate? - <a class="link" href="https://zayn7lie.ber7.org/posts/math/geo-left_fist/"  target="_blank" rel="noopener"
+    >Left-Fist Rule</a></h4>
+<h4 id="how-how-to-virtualize-a-surface">HOW: How to virtualize a surface?</h4>
 <ul>
 <li>Domain &amp; range</li>
 <li>Graphs: Level curves</li>
 </ul>
-</li>
-</ul>
-<h3 id="eg-x-y-z-coordinate">E.g. X-Y-Z coordinate</h3>
-<h4 id="why-why-should-we-use-x-y-z-coordinate">WHY: Why should we use X-Y-Z coordinate</h4>
-<h4 id="what-what-is-points-lines-planes-in-the-coordinate">WHAT: What is points, lines, planes in the coordinate</h4>
-<p>Points: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$</p>
-<blockquote>
-<p>$f_1$, $f_2$, and $f_3$ is <em>independent</em> (<em>independent</em>: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)</p>
-</blockquote>
-<p>Lines: ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$</p>
-<blockquote>
-<p>$f_1$ and $f_2$ is independent</p>
-</blockquote>
-<p>Planes: ${(x, y, z) | f_1(x, y, z) = a_1}$</p>
-<h4 id="how-how-to-find-the-direction-of-the-coordinate---left-fist-rulehttpszayn7lieber7orgpostsmathgeo-left_fist">HOW: How to find the direction of the coordinate? - <a class="link" href="https://zayn7lie.ber7.org/posts/math/geo-left_fist/"  target="_blank" rel="noopener"
-    >Left-Fist Rule</a></h4>
 <h2 id="what-what-is-differentiation---partial-derivatives">WHAT: What is differentiation - Partial Derivatives</h2>
 <h3 id="why-limit--continuity---differentiable">WHY: Limit &amp; Continuity - Differentiable</h3>
 <ul>
@@ -756,7 +767,7 @@ $$</p>
     data-app-id="21afa2aa-6f2f-47a0-b7dd-16a0bb7a5b81"
     data-page-id="f28f876e641be1d904ca5ef2387c98bf"
     data-page-url="https://zayn7lie.ber7.org/posts/math/cal-mul/"
-    data-page-title="Calculus: Multi-dimensions"></div>
+    data-page-title="Calculus: Vectors"></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <script>
