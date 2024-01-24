@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc.
+WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$
+$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b &#43; kx_1$), $\frac{x_1^2}{a^2} &#43; \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 &#43; (x_2 - b)^2 &#43; (x_3 - c)^2 - R^2 = 0$, etc.'>
+<title>Calculus: Vectors</title>
+
+<link rel='canonical' href='https://zayn7lie.ber7.org/posts/math/cal-vec/'>
+
+<link rel="stylesheet" href="/scss/style.min.21dd04c9bdb63d4e8435c2d96c8458fb0397cd7ac2b2f69521767054761cf0ca.css"><meta property='og:title' content='Calculus: Vectors'>
+<meta property='og:description' content='WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc.
+WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$
+$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b &#43; kx_1$), $\frac{x_1^2}{a^2} &#43; \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 &#43; (x_2 - b)^2 &#43; (x_3 - c)^2 - R^2 = 0$, etc.'>
+<meta property='og:url' content='https://zayn7lie.ber7.org/posts/math/cal-vec/'>
+<meta property='og:site_name' content='zayn_lie&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='Calculus III' /><meta property='article:tag' content='Integral' /><meta property='article:tag' content='Partial Derivatives' /><meta property='article:tag' content='Multiple Integrals' /><meta property='article:tag' content='Vector Calculus' /><meta property='article:published_time' content='2023-10-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-25T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Calculus: Vectors">
+<meta name="twitter:description" content="WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc.
+WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$
+$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b &#43; kx_1$), $\frac{x_1^2}{a^2} &#43; \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 &#43; (x_2 - b)^2 &#43; (x_3 - c)^2 - R^2 = 0$, etc.">
+    <link rel="shortcut icon" href="/favicon.png" />
+
+        
+        <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
+        
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu82b799b075fce224917976c46abb1b25_217862_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">zayn_lie&#39;s blog</a></h1>
+            <h2 class="site-description">Algorithm&amp;Mathematics, Music_Theory&amp;Rhythm_Game, Rationality&amp;Logicism, Peace&amp;Open_Source</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/sponsor/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px" fill-rule="nonzero"><g fill="#c7c7c7" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-11.02793,0 -20,8.97207 -20,20c0,11.02793 8.97207,20 20,20c11.02793,0 20,-8.97207 20,-20c0,-11.02793 -8.97207,-20 -20,-20zM24,7c9.40662,0 17,7.59339 17,17c0,9.40661 -7.59338,17 -17,17c-9.40661,0 -17,-7.59339 -17,-17c0,-9.40661 7.59339,-17 17,-17zM23.47656,10.97852c-0.82766,0.01293 -1.48843,0.69381 -1.47656,1.52148v1.15234c-2.79221,0.386 -5,2.70524 -5,5.59766c0,3.15782 2.59218,5.75 5.75,5.75h2c1.8121,0 3.25,1.4379 3.25,3.25c0,1.8121 -1.4379,3.25 -3.25,3.25h-2.25c-1.17774,0 -2.14106,-0.79655 -2.41992,-1.86719c-0.12291,-0.53182 -0.52499,-0.95491 -1.04987,-1.10473c-0.52488,-0.14982 -1.08971,-0.00272 -1.47483,0.38409c-0.38512,0.38681 -0.52975,0.95228 -0.37764,1.4765c0.57468,2.20636 2.50862,3.80911 4.82227,4.02734v1.08398c-0.00765,0.54095 0.27656,1.04412 0.74381,1.31683c0.46725,0.27271 1.04514,0.27271 1.51238,0c0.46725,-0.27271 0.75146,-0.77588 0.74381,-1.31683v-1.05078c3.31301,-0.13994 6,-2.85378 6,-6.19922c0,-3.4339 -2.8161,-6.25 -6.25,-6.25h-2c-1.53618,0 -2.75,-1.21382 -2.75,-2.75c0,-1.53618 1.21382,-2.75 2.75,-2.75h0.50391c0.16103,0.02645 0.3253,0.02645 0.48633,0h0.75977c1.16914,0 2.12787,0.78679 2.41406,1.8457c0.13982,0.5175 0.54514,0.92108 1.06324,1.05868c0.5181,0.13759 1.07025,-0.01171 1.44841,-0.39165c0.37816,-0.37994 0.52486,-0.93279 0.38484,-1.45023c-0.58996,-2.18285 -2.51356,-3.76217 -4.81055,-3.97852v-1.08398c0.00582,-0.40562 -0.15288,-0.7963 -0.43991,-1.08296c-0.28703,-0.28666 -0.67792,-0.44486 -1.08353,-0.43852z"></path></g></g></svg>
+                
+                <span>Sponsor</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</a></li>
+    <li><a href="#what-what-is-vector--function-with-multiple-variables">WHAT: What is vector / function with multiple variables?</a>
+      <ul>
+        <li><a href="#eg-x-y-z-coordinate">E.g. X-Y-Z coordinate</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-what-is-differentiation---partial-derivatives">WHAT: What is differentiation - Partial Derivatives</a>
+      <ul>
+        <li><a href="#why-limit--continuity---differentiable">WHY: Limit &amp; Continuity - Differentiable</a></li>
+        <li><a href="#what-what-is-partial-derivatives">WHAT: What is Partial Derivatives</a></li>
+        <li><a href="#how-how-to-do-partial-derivatives">HOW: How to do Partial Derivatives</a></li>
+        <li><a href="#how-how-to-apply-to-vector">HOW: How to Apply to Vector</a></li>
+        <li><a href="#how-how-to-apply-to-finding-maximum-and-minimum">HOW: How to Apply to Finding Maximum and Minimum</a></li>
+        <li><a href="#how-lagrange-multipliers">HOW: LAGRANGE MULTIPLIERS</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-what-is-integral---multiple-integrals">WHAT: What is integral - Multiple Integrals</a>
+      <ul>
+        <li><a href="#what-what-is-double-integral">WHAT: What is double integral</a></li>
+        <li><a href="#how-how-to-calculate-iterated-integrals">HOW: How to calculate iterated integrals?</a></li>
+        <li><a href="#how-how-to-apply-to-reality">HOW: How to apply to reality</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-how-to-apply-to-vector-calculus">HOW: How to apply to Vector Calculus</a>
+      <ul>
+        <li><a href="#what-what-is-fields">WHAT: What is Fields</a></li>
+        <li><a href="#how-how-to-integrate-along-the-line---line-integrals">HOW: How to integrate along the line - Line Integrals</a></li>
+        <li><a href="#how-how-to-integral-with-surface">HOW: How to integral with Surface</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Tags</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/linux/" class="font_size_6">
+                Linux
+            </a>
+        
+            <a href="/tags/calculus/" class="font_size_4">
+                Calculus
+            </a>
+        
+            <a href="/tags/install/" class="font_size_4">
+                install
+            </a>
+        
+            <a href="/tags/math/" class="font_size_4">
+                Math
+            </a>
+        
+            <a href="/tags/ap/" class="font_size_3">
+                AP
+            </a>
+        
+            <a href="/tags/arch-linux/" class="font_size_3">
+                Arch Linux
+            </a>
+        
+            <a href="/tags/c&#43;&#43;/" class="font_size_3">
+                C&#43;&#43;
+            </a>
+        
+            <a href="/tags/calculus-bc/" class="font_size_3">
+                Calculus BC
+            </a>
+        
+            <a href="/tags/config/" class="font_size_3">
+                config
+            </a>
+        
+            <a href="/tags/calculus-ii/" class="font_size_2">
+                Calculus II
+            </a>
+        
+    </div>
+</section>
+            
+        
+            
+                <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Archives</h2>
+
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/page/archives/#2024">
+                        
+                            <span class="year">2024</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
+                    <a href="/page/archives/#2023">
+                        
+                            <span class="year">2023</span>
+                            <span class="count">16</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/math/" style="background-color: #5a6f66; color: #ffffff;">
+                Math
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/math/cal-vec/">Calculus: Vectors</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">10/25/2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    7 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</h2>
+<p>More applicable in the real world, like 3D real world, linear algebra, etc.</p>
+<h2 id="what-what-is-vector--function-with-multiple-variables">WHAT: What is vector / function with multiple variables?</h2>
+<p>Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$</p>
+<blockquote>
+<p>$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.</p>
+</blockquote>
+<h3 id="eg-x-y-z-coordinate">E.g. X-Y-Z coordinate</h3>
+<h4 id="why-why-should-we-use-x-y-z-coordinate">WHY: Why should we use X-Y-Z coordinate</h4>
+<ul>
+<li>It is the generalization of X-Y coordinate that is easy to learn and understand</li>
+<li>It is more visualizable using some graphic software or even drew by hand</li>
+<li>The process of the generalization from X-Y to X-Y-Z is the same to the generalization from X-Y-Z to higher dimensions. In the higher dimensions, the meaning of <em>vector</em> is generalized to just a set of points: $\vec{v} = (x_1, x_2, \ldots)$</li>
+</ul>
+<h4 id="what-what-is-points-lines-planes-in-the-coordinate">WHAT: What is points, lines, planes in the coordinate</h4>
+<ul>
+<li>Points/Vectors(3 variables - 3 constraints = 0 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$
+E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$</li>
+</ul>
+<blockquote>
+<p>$f_1$, $f_2$, and $f_3$ is <em>independent</em> (<em>independent</em>: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)</p>
+</blockquote>
+<ul>
+<li>
+<p>Lines/Curves(3 variables - 2 constraints = 1 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$</p>
+</li>
+<li>
+<p>Planes/Surfaces(3 variables - 1 constraints = 2 dimensions): ${(x, y, z) | f_1(x, y, z) = a}$</p>
+</li>
+<li>
+<p>Cubes/Volumes(3 variables - 0 constraints (only partial constraints) = 3 dimensions): ${(x, y, z) | f(x, y, z) \lessgtr a}$</p>
+</li>
+</ul>
+<blockquote>
+<p>Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.</p>
+</blockquote>
+<h4 id="how-how-to-find-the-direction-of-the-coordinate---left-fist-rulehttpszayn7lieber7orgpostsmathgeo-left_fist">HOW: How to find the direction of the coordinate? - <a class="link" href="https://zayn7lie.ber7.org/posts/math/geo-left_fist/"  target="_blank" rel="noopener"
+    >Left-Fist Rule</a></h4>
+<h4 id="how-how-to-virtualize-a-surface">HOW: How to virtualize a surface?</h4>
+<ul>
+<li>Domain &amp; range</li>
+<li>Graphs: Level curves</li>
+</ul>
+<h2 id="what-what-is-differentiation---partial-derivatives">WHAT: What is differentiation - Partial Derivatives</h2>
+<h3 id="why-limit--continuity---differentiable">WHY: Limit &amp; Continuity - Differentiable</h3>
+<ul>
+<li>
+<p>Limit</p>
+<p>$$ \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L
+$$</p>
+<blockquote>
+<p>When $f \rightarrow L$ no matter what direction $(x, y) \rightarrow (a, b)$, the limit of $f$ in $(a, b)$ exists.</p>
+<p>If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.</p>
+</blockquote>
+<ul>
+<li>Limit along axis: let $y = 0$ or $x = 0$</li>
+<li>Limit along specific line: $y = x$</li>
+</ul>
+</li>
+<li>
+<p>Continuity: $\lim_{(x, y) \rightarrow (a, b)}f(x, y) = f(a, b)$</p>
+</li>
+</ul>
+<h3 id="what-what-is-partial-derivatives">WHAT: What is Partial Derivatives</h3>
+<ul>
+<li>
+<p>Algebra: Definition
+$$ \frac{\partial}{\partial x}f = f_x(a, b) = \lim_{h \rightarrow 0}\frac{f(a + h, b) - f(a, b)}{h} = g&rsquo;(a) \ (g(x) = g(x, b)) = \lim_{h \rightarrow 0}\frac{g(a + h) - g(a)}{h}
+$$
+$$ \frac{\partial}{\partial y}f = f_y(a, b) = \lim_{h \rightarrow 0}\frac{f(a, b + h) - f(a, b)}{h} = g&rsquo;(b) \ (g(y) = g(a, y)) = \lim_{h \rightarrow 0}\frac{g(b + h) - g(b)}{h}
+$$</p>
+<ul>
+<li>Differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\epsilon_1, \epsilon_2) \rightarrow (0, 0) \Rightarrow (\Delta{x}, \Delta{y}) \rightarrow (0, 0)$</li>
+<li>Differentials: $dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy$</li>
+</ul>
+</li>
+<li>
+<p>Geometry: Tangent Planes
+$$ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \Rightarrow z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)
+$$</p>
+<ul>
+<li>Linear Approximations</li>
+</ul>
+</li>
+</ul>
+<h3 id="how-how-to-do-partial-derivatives">HOW: How to do Partial Derivatives</h3>
+<ul>
+<li>Chain Rule
+$$ (1) \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
+$$
+$$ (2) \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}, \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}
+$$
+$$ (3) \text{General}: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
+$$</li>
+</ul>
+<h3 id="how-how-to-apply-to-vector">HOW: How to Apply to Vector</h3>
+<p>$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
+$$</p>
+<ul>
+<li>$D_u{f(x, y)} = \vec{P&rsquo;Q&rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
+<ul>
+<li>$\nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
+<ul>
+<li>$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$</li>
+<li>$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\
+P &amp; Q &amp; R
+\end{vmatrix} = (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z})\hat{i} + (\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x})\hat{j} + (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})\hat{k}$</li>
+<li>$\text{div curl } \textbf{F} = 0$</li>
+</ul>
+</li>
+<li>$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$</li>
+</ul>
+</li>
+</ul>
+<h3 id="how-how-to-apply-to-finding-maximum-and-minimum">HOW: How to Apply to Finding Maximum and Minimum</h3>
+<ul>
+<li>SECOND DERIVATIVES TEST</li>
+</ul>
+<h3 id="how-lagrange-multipliers">HOW: LAGRANGE MULTIPLIERS</h3>
+<h2 id="what-what-is-integral---multiple-integrals">WHAT: What is integral - Multiple Integrals</h2>
+<h3 id="what-what-is-double-integral">WHAT: What is double integral</h3>
+<p>$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^* , y^ * \rightarrow \bar{x}, \bar{y})
+$$</p>
+<h3 id="how-how-to-calculate-iterated-integrals">HOW: How to calculate iterated integrals?</h3>
+<p>$$ \int_a^b\int_c^d{f(x, y)}dA = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
+$$</p>
+<h3 id="how-how-to-apply-to-reality">HOW: How to apply to reality</h3>
+<h4 id="volume">Volume</h4>
+<p>Region of $x_1, x_2, y_1(x), y_2(x), Assume \ x_1 \leq x_2, y_1 \leq y_2$:</p>
+<p>$$ V = \int_{y_1(x)}^{y_2(x)}\int_{x_1}^{x_2}f(x, y)dA = \int_{x_1}^{x_2}[\int_{y_1(x)}^{y_2(x)}f(x, y)dy]dx$$</p>
+<h2 id="how-how-to-apply-to-vector-calculus">HOW: How to apply to Vector Calculus</h2>
+<h3 id="what-what-is-fields">WHAT: What is Fields</h3>
+<ul>
+<li>
+<p>Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$</p>
+</li>
+<li>
+<p>Gradient Fields: $\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$</p>
+</li>
+</ul>
+<h3 id="how-how-to-integrate-along-the-line---line-integrals">HOW: How to integrate along the line - Line Integrals</h3>
+<p>$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$
+$$ \Rightarrow \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
+$$</p>
+<ul>
+<li>
+<p>Vector Fields
+$$ W = \int_C \vec{F} \cdot d\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r&rsquo;}(t)dt} \ (Substitution: \vec{r}(t) = \vec{r}) = \int_C \vec{F} \cdot \vec{T} ds
+$$</p>
+</li>
+<li>
+<p>Conservative
+$$ F(x, y) = P\hat{i} + Q\hat{j}, F \text{ is conservative} \Leftrightarrow \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \text{ thoughout } D
+$$</p>
+<ul>
+<li>independent of path: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \Leftrightarrow \forall C \in D, \int_C \vec{F} \cdot d \vec{r} = 0$
+<ul>
+<li>$C$: Closed Path - its terminal point coincides with its initial point</li>
+</ul>
+</li>
+<li>conservative vector field: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \Leftrightarrow F \text{ is a conservative vector field}$ ($\nabla{f} = F$)</li>
+</ul>
+</li>
+<li>
+<p>Relationship with double integral: Green&rsquo;s Theorem
+$$ \oint_C \vec{F} \cdot d\vec{r} = \oint_C P dx + Q dy = \iint_D(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})dA = \int_{\partial D}{P dx + Q dy}
+$$</p>
+<ul>
+<li>Positive orientation: a simple closed curve $C$ refers to a single counterclockwise traversal of $C$</li>
+<li>$\oint_C P dx = \oint_{g_2(x)}^{g_1(x)} P dx = - \oint_{g_1(x)}^{g_2(x)} P dx = -\int_{g_1(x)}^{g_2(x)} \int_a^b \frac{\partial P}{\partial y} dy dx = \iint_D(-\frac{\partial P}{\partial y}) dA$</li>
+</ul>
+</li>
+</ul>
+<h3 id="how-how-to-integral-with-surface">HOW: How to integral with Surface</h3>
+<ul>
+<li>Parametric Surface: $\vec{r}(u, v) = x(u, v)\hat{i} + y(u, v)\hat{j} + z(u, v)\hat{k}$
+<ul>
+<li>Surfaces of Revolution: $x = x, y = f(x)\cos\theta, z = f(x)\sin\theta$</li>
+<li>Tangent Planes: $\vec{r}_v = \frac{\partial x(u, v)}{\partial v}\hat{i} + \frac{\partial y(u, v)}{\partial v}\hat{j} + \frac{\partial z(u, v)}{\partial v}\hat{k}$</li>
+<li>Surface Area: $A(S) = \iint_D |\vec{r}_u \times \vec{r}_v|dA$</li>
+<li>Integral Along the Surface: Stokes&rsquo; Theorem - $\int_C \vec{F} \cdot d\vec{r} = \iint_S \text{curl} \vec{F} \cdot d\vec{S}$</li>
+</ul>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/math/">Math</a>
+        
+            <a href="/tags/calculus/">Calculus</a>
+        
+            <a href="/tags/calculus-iii/">Calculus III</a>
+        
+            <a href="/tags/integral/">Integral</a>
+        
+            <a href="/tags/partial-derivatives/">Partial Derivatives</a>
+        
+            <a href="/tags/multiple-integrals/">Multiple Integrals</a>
+        
+            <a href="/tags/vector-calculus/">Vector Calculus</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://zayn7lie.ber7.org/posts/misc/license/"  target="_blank" rel="noopener"
+    >CC BY 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/posts/math/cal-int/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Calculus: Integral</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/math/cal-ser/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Calculus: Series</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/math/cal-dif/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Calculus: Differentiation</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="21afa2aa-6f2f-47a0-b7dd-16a0bb7a5b81"
+    data-page-id="7400a16ca5cc3c52bc92fb5d1c8fd2b1"
+    data-page-url="https://zayn7lie.ber7.org/posts/math/cal-vec/"
+    data-page-title="Calculus: Vectors"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
+        }
+    }
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 zayn_lie&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.20.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+        
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "407bf5c0c80b4ec98f0e15deba4ee174"}'></script>
+        
+    </body>
+</html>
