@@ -246,7 +246,7 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
     <li><a href="#why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</a></li>
     <li><a href="#what-what-is-vector--function-with-multiple-variables">WHAT: What is vector / function with multiple variables?</a>
       <ul>
-        <li><a href="#eg-x-y-z-coordinate">E.g. X-Y-Z coordinate</a></li>
+        <li><a href="#eg-from-x-y-z-coordinate-to-vectors">E.g. from X-Y-Z coordinate to vectors</a></li>
       </ul>
     </li>
     <li><a href="#what-what-is-differentiation---partial-derivatives">WHAT: What is differentiation - Partial Derivatives</a>
@@ -437,7 +437,7 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
 
 
                 <time class="article-time--reading">
-                    7 minute read
+                    8 minute read
                 </time>
             </div>
         
@@ -459,7 +459,7 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
 <blockquote>
 <p>$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.</p>
 </blockquote>
-<h3 id="eg-x-y-z-coordinate">E.g. X-Y-Z coordinate</h3>
+<h3 id="eg-from-x-y-z-coordinate-to-vectors">E.g. from X-Y-Z coordinate to vectors</h3>
 <h4 id="why-why-should-we-use-x-y-z-coordinate">WHY: Why should we use X-Y-Z coordinate</h4>
 <ul>
 <li>It is the generalization of X-Y coordinate that is easy to learn and understand</li>
@@ -472,7 +472,10 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
 E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$</li>
 </ul>
 <blockquote>
-<p>$f_1$, $f_2$, and $f_3$ is <em>independent</em> (<em>independent</em>: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)</p>
+<ol>
+<li>$f_1$, $f_2$, and $f_3$ is <em>independent</em> (<em>independent</em>: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)</li>
+<li>Vector is just a set of numbers, it could be used for showing direction(vectors in three dimensions), matrix(computer science programming), etc.</li>
+</ol>
 </blockquote>
 <ul>
 <li>
@@ -488,12 +491,40 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 <blockquote>
 <p>Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.</p>
 </blockquote>
-<h4 id="how-how-to-find-the-direction-of-the-coordinate---left-fist-rulehttpszayn7lieber7orgpostsmathgeo-left_fist">HOW: How to find the direction of the coordinate? - <a class="link" href="https://zayn7lie.ber7.org/posts/math/geo-left_fist/"  target="_blank" rel="noopener"
-    >Left-Fist Rule</a></h4>
-<h4 id="how-how-to-virtualize-a-surface">HOW: How to virtualize a surface?</h4>
+<h4 id="how-how-to-find-the-direction-of-the-coordinate-and-virtualize-a-surface">HOW: How to find the direction of the coordinate and virtualize a surface?</h4>
+<p>USE LEFT FIST RULE TO FIND THE DIRECTION: <a class="link" href="https://zayn7lie.ber7.org/posts/math/geo-left_fist/"  target="_blank" rel="noopener"
+    >Left-Fist Rule</a></p>
 <ul>
 <li>Domain &amp; range</li>
 <li>Graphs: Level curves</li>
+</ul>
+<h4 id="how-how-to-use-vectors">HOW: How to use vectors?</h4>
+<ul>
+<li>Vector addition / subtraction: $\vec{v} + \vec{u} = \vec{u} + \vec{v} = \sum_D (v_i + u_i)\hat{D_i} = (v_x + u_x)\hat{i} + (v_y + u_y)\hat{j} + \ldots = \langle v_x + u_x, v_y + u_y, \ldots \rangle$ ($-\vec{u} = \langle -u_x, -u_y, \ldots \rangle$); $(\vec{v}_1 + \vec{v}_2) + \vec{v}_3 = \vec{v}_1 + (\vec{v}_2 + \vec{v}_3)$</li>
+<li>Vector multiplication (no division)
+<ul>
+<li>Scalar multiplication: $c\vec{v} = \langle cv_x, cv_y, \ldots \rangle$</li>
+<li>Dot product: $\vec{v} \cdot \vec{u} = \sum_D v_i u_i = |\vec{v}||\vec{u}| \cos\langle\vec{v}, \vec{u}\rangle \Rightarrow \cos\langle\vec{v}, \vec{u}\rangle = \hat{v} \cdot \hat{u}$
+<blockquote>
+<p>As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: <em>duality</em> - <a class="link" href="https://www.3blue1brown.com/lessons/dot-products#linear-transformations"  target="_blank" rel="noopener"
+    >Dot Product in Linear transformations</a></p>
+</blockquote>
+<ul>
+<li>$\text{comp}_{\vec{a}}{\vec{b}} = |\vec{b}|\cos\theta = \vec{b} \cdot \hat{a}$</li>
+</ul>
+</li>
+<li>Cross product: $\vec{v} \times \vec{u} = \begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+v_x &amp; v_y &amp; v_z \\
+u_x &amp; u_y &amp; u_z
+\end{vmatrix} = (v_yu_z - v_zu_y)\hat{i} + (v_zu_x - v_xu_z)\hat{j} + (v_xu_y - v_yu_x)\hat{k}$, Area: $|\vec{v} \times \vec{u}|$, Volume: $|\vec{v} \cdot (\vec{u} \times \vec{w})| = \begin{vmatrix}
+v_x &amp; v_y &amp; v_z \\
+u_x &amp; u_y &amp; u_z \\
+w_x &amp; w_y &amp; w_z
+\end{vmatrix}$</li>
+</ul>
+</li>
+<li>Vector unitization: $\vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$</li>
 </ul>
 <h2 id="what-what-is-differentiation---partial-derivatives">WHAT: What is differentiation - Partial Derivatives</h2>
 <h3 id="why-limit--continuity---differentiable">WHY: Limit &amp; Continuity - Differentiable</h3>
