@@ -95,7 +95,7 @@
 &lt;li&gt;Copy2Clipboard: &lt;code&gt;wl-clipboard&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Edit: &lt;code&gt;krita inkscape&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit: &lt;code&gt;krita&lt;/code&gt;(hand draw friendly) &lt;code&gt;inkscape&lt;/code&gt;(vectorize image friendly, especially for researcher who need &lt;code&gt;.svg&lt;/code&gt; image) &lt;code&gt;gimp&lt;/code&gt;(editor friendly)&lt;/li&gt;
 &lt;li&gt;view: &lt;code&gt;nsxiv&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Preview: &lt;code&gt;tumbler ffmpegthumbnailer&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -153,6 +153,10 @@
 &lt;p&gt;Bluetooth: &lt;code&gt;bluez bluez-utils blueman&lt;/code&gt;, then add &lt;code&gt;blueman-applet&lt;/code&gt; to config&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h4 id=&#34;video&#34;&gt;Video&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Editor: &lt;code&gt;blender&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
 &lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
 &lt;ul&gt;
@@ -194,6 +198,7 @@
 &lt;/li&gt;
 &lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Dictionary: &lt;code&gt;goldendict-ng-git&lt;/code&gt;AUR&lt;/li&gt;
+&lt;li&gt;PDF Notation: &lt;code&gt;mupdf (tesseract-data-eng)&lt;/code&gt; &lt;code&gt;xournalpp&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
 &lt;ul&gt;

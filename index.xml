@@ -51,6 +51,39 @@
 &lt;blockquote&gt;
 &lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Vector addition / subtraction: $\vec{v} + \vec{u} = \vec{u} + \vec{v} = \sum_D (v_i + u_i)\hat{D_i} = (v_x + u_x)\hat{i} + (v_y + u_y)\hat{j} + \ldots = \langle v_x + u_x, v_y + u_y, \ldots \rangle$ ($-\vec{u} = \langle -u_x, -u_y, \ldots \rangle$); $(\vec{v}_1 + \vec{v}_2) + \vec{v}_3 = \vec{v}_1 + (\vec{v}_2 + \vec{v}_3)$&lt;/li&gt;
+&lt;li&gt;Vector multiplication
+&lt;ul&gt;
+&lt;li&gt;Scalar multiplication: $c\vec{v} = \langle cv_x, cv_y, \ldots \rangle$&lt;/li&gt;
+&lt;li&gt;Dot product: $\vec{v} \cdot \vec{u} = \sum_D v_i u_i = |\vec{v}||\vec{u}| \cos\langle\vec{v}, \vec{u}\rangle \Rightarrow \cos\langle\vec{v}, \vec{u}\rangle = \hat{v} \cdot \hat{u}$
+&lt;blockquote&gt;
+&lt;p&gt;As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: &lt;em&gt;duality&lt;/em&gt; - &lt;a class=&#34;link&#34; href=&#34;https://www.3blue1brown.com/lessons/dot-products#linear-transformations&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Dot Product in Linear transformations&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Component: $\text{comp}_{\vec{a}}{\vec{b}} = |\vec{b}|\cos\theta = \vec{b} \cdot \hat{a}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cross product(USE LEFT FIST RULE TO FIND THE DIRECTION &lt;a class=&#34;link&#34; href=&#34;https://zayn7lie.ber7.org/posts/math/geo-left_fist/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Left-Fist Rule&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;$\vec{v} \times \vec{u} = \begin{vmatrix}
+\hat{i} &amp;amp; \hat{j} &amp;amp; \hat{k} \\
+v_x &amp;amp; v_y &amp;amp; v_z \\
+u_x &amp;amp; u_y &amp;amp; u_z
+\end{vmatrix} = (v_yu_z - v_zu_y)\hat{i} + (v_zu_x - v_xu_z)\hat{j} + (v_xu_y - v_yu_x)\hat{k}$&lt;/li&gt;
+&lt;li&gt;Area: $|\vec{v} \times \vec{u}|$, Volume(scalar triple profuct): $|\vec{v} \cdot (\vec{u} \times \vec{w}) = |(\vec{v} \times \vec{u}) \cdot \vec{w}| = \begin{vmatrix}
+v_x &amp;amp; v_y &amp;amp; v_z \\
+u_x &amp;amp; u_y &amp;amp; u_z \\
+w_x &amp;amp; w_y &amp;amp; w_z
+\end{vmatrix}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vector unitization: $\vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;eg-from-x-y-z-coordinate-to-vectors&#34;&gt;E.g. from X-Y-Z coordinate to vectors&lt;/h3&gt;
 &lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;WHY: Why should we use X-Y-Z coordinate&lt;/h4&gt;
 &lt;ul&gt;
@@ -83,40 +116,18 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;blockquote&gt;
 &lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;how-how-to-find-the-direction-of-the-coordinate-and-virtualize-a-surface&#34;&gt;HOW: How to find the direction of the coordinate and virtualize a surface?&lt;/h4&gt;
-&lt;p&gt;USE LEFT FIST RULE TO FIND THE DIRECTION: &lt;a class=&#34;link&#34; href=&#34;https://zayn7lie.ber7.org/posts/math/geo-left_fist/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Left-Fist Rule&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;how-how-to-present-in-the-coordinate&#34;&gt;HOW: How to present in the coordinate&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Domain &amp;amp; range&lt;/li&gt;
-&lt;li&gt;Graphs: Level curves&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-use-vectors&#34;&gt;HOW: How to use vectors?&lt;/h4&gt;
+&lt;li&gt;
+&lt;p&gt;lines: $\vec{r} = \vec{r}_0 + t\vec{v}$ (from original point to go along the line)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Vector addition / subtraction: $\vec{v} + \vec{u} = \vec{u} + \vec{v} = \sum_D (v_i + u_i)\hat{D_i} = (v_x + u_x)\hat{i} + (v_y + u_y)\hat{j} + \ldots = \langle v_x + u_x, v_y + u_y, \ldots \rangle$ ($-\vec{u} = \langle -u_x, -u_y, \ldots \rangle$); $(\vec{v}_1 + \vec{v}_2) + \vec{v}_3 = \vec{v}_1 + (\vec{v}_2 + \vec{v}_3)$&lt;/li&gt;
-&lt;li&gt;Vector multiplication (no division)
-&lt;ul&gt;
-&lt;li&gt;Scalar multiplication: $c\vec{v} = \langle cv_x, cv_y, \ldots \rangle$&lt;/li&gt;
-&lt;li&gt;Dot product: $\vec{v} \cdot \vec{u} = \sum_D v_i u_i = |\vec{v}||\vec{u}| \cos\langle\vec{v}, \vec{u}\rangle \Rightarrow \cos\langle\vec{v}, \vec{u}\rangle = \hat{v} \cdot \hat{u}$
-&lt;blockquote&gt;
-&lt;p&gt;As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: &lt;em&gt;duality&lt;/em&gt; - &lt;a class=&#34;link&#34; href=&#34;https://www.3blue1brown.com/lessons/dot-products#linear-transformations&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Dot Product in Linear transformations&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;$\text{comp}_{\vec{a}}{\vec{b}} = |\vec{b}|\cos\theta = \vec{b} \cdot \hat{a}$&lt;/li&gt;
+&lt;li&gt;$x = x_0 + v_xt, y = y_0 + v_yt, z = z_0 + v_zt$&lt;/li&gt;
+&lt;li&gt;$t = (x - x_0)/v_x = (y - y_0)/v_y = (z - z_0)/v_z$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Cross product: $\vec{v} \times \vec{u} = \begin{vmatrix}
-\hat{i} &amp;amp; \hat{j} &amp;amp; \hat{k} \\
-v_x &amp;amp; v_y &amp;amp; v_z \\
-u_x &amp;amp; u_y &amp;amp; u_z
-\end{vmatrix} = (v_yu_z - v_zu_y)\hat{i} + (v_zu_x - v_xu_z)\hat{j} + (v_xu_y - v_yu_x)\hat{k}$, Area: $|\vec{v} \times \vec{u}|$, Volume: $|\vec{v} \cdot (\vec{u} \times \vec{w})| = \begin{vmatrix}
-v_x &amp;amp; v_y &amp;amp; v_z \\
-u_x &amp;amp; u_y &amp;amp; u_z \\
-w_x &amp;amp; w_y &amp;amp; w_z
-\end{vmatrix}$&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;p&gt;planes: $\vec{n} \cdot (\vec{r} - \vec{r}_0)$ (from original direction to go perpendicularly the direction) $\Rightarrow ax + by + cz + d = 0$&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;Vector unitization: $\vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-differentiation---partial-derivatives&#34;&gt;WHAT: What is differentiation - Partial Derivatives&lt;/h2&gt;
 &lt;h3 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h3&gt;
@@ -1544,7 +1555,7 @@ $$&lt;/p&gt;
 &lt;li&gt;Copy2Clipboard: &lt;code&gt;wl-clipboard&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Edit: &lt;code&gt;krita inkscape&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit: &lt;code&gt;krita&lt;/code&gt;(hand draw friendly) &lt;code&gt;inkscape&lt;/code&gt;(vectorize image friendly, especially for researcher who need &lt;code&gt;.svg&lt;/code&gt; image) &lt;code&gt;gimp&lt;/code&gt;(editor friendly)&lt;/li&gt;
 &lt;li&gt;view: &lt;code&gt;nsxiv&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Preview: &lt;code&gt;tumbler ffmpegthumbnailer&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1602,6 +1613,10 @@ $$&lt;/p&gt;
 &lt;p&gt;Bluetooth: &lt;code&gt;bluez bluez-utils blueman&lt;/code&gt;, then add &lt;code&gt;blueman-applet&lt;/code&gt; to config&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h4 id=&#34;video&#34;&gt;Video&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Editor: &lt;code&gt;blender&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
 &lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
 &lt;ul&gt;
@@ -1643,6 +1658,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Dictionary: &lt;code&gt;goldendict-ng-git&lt;/code&gt;AUR&lt;/li&gt;
+&lt;li&gt;PDF Notation: &lt;code&gt;mupdf (tesseract-data-eng)&lt;/code&gt; &lt;code&gt;xournalpp&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
 &lt;ul&gt;
