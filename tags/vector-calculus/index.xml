@@ -127,10 +127,29 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;planes: $\vec{n} \cdot (\vec{r} - \vec{r}_0)$ (from original direction to go perpendicularly the direction) $\Rightarrow ax + by + cz + d = 0$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cylinder: Circular ~ $x^2 + y^2 = 1$; Parabolic ~ $z = x^2$; Elliptic ~ $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$&lt;/li&gt;
+&lt;li&gt;Sphere $(x - a)^2 + (y - b)^2 + (z - c)^2 = R^2$; Ellipsoid $\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$; Elliptic paraboloid $\frac{z}{c} = \frac{x^2}{a^2} + \frac{y^2}{b^2}$; Hyperbolic paraboloid(saddle) $\frac{z}{c} = \frac{x^2}{a^2} - \frac{y^2}{b^2}$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-differentiation---partial-derivatives&#34;&gt;WHAT: What is differentiation - Partial Derivatives&lt;/h2&gt;
-&lt;h3 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h3&gt;
+&lt;h4 id=&#34;how-how-to-introduce-calculus&#34;&gt;HOW: How to introduce calculus&lt;/h4&gt;
+&lt;p&gt;$\vec{r}(t) = \langle F(t), G(t), H(t) \rangle = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k}$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Derivative: $\vec{v}(t) = \vec{r}&amp;rsquo;(t) = \langle F&amp;rsquo;(t), G&amp;rsquo;(t), H&amp;rsquo;(t) \rangle = F&amp;rsquo;(t)\hat{i} + G&amp;rsquo;(t)\hat{j} + H&amp;rsquo;(t)\hat{k}$
+&lt;ul&gt;
+&lt;li&gt;$\frac{d}{dt}(f(t)\vec{u}(t)) = f&amp;rsquo;(t)\vec{u}(t) + f(t)\vec{u}&amp;rsquo;(t)$($f$ could be either scalar or vector function, while it is vector, both dot and cross product could be applied)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Integral: $\vec{r}(t) = \int\vec{v}(t)dt = \langle \int f(t) dt, \int g(t) dt, \int h(t) dt \rangle = \int f(t) dt \hat{i} + \int g(t) dt \hat{j} + \int h(t) dt \hat{k}$
+&lt;ul&gt;
+&lt;li&gt;Arc Length: $\displaystyle l = \int \sqrt{\frac{dF^2}{dt^2} + \frac{dG^2}{dt^2} + \frac{dH^2}{dt^2}} dt$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-what-is-calculus-with-vector&#34;&gt;WHAT: What is Calculus with Vector&lt;/h2&gt;
+&lt;h3 id=&#34;calculus-with-dependent-component---partial-derivatives&#34;&gt;Calculus with DEPENDENT component - Partial Derivatives&lt;/h3&gt;
+&lt;h4 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Limit&lt;/p&gt;
@@ -149,7 +168,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Continuity: $\lim_{(x, y) \rightarrow (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h3&gt;
+&lt;h4 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Algebra: Definition
@@ -171,7 +190,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h3&gt;
+&lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Chain Rule
 $$ (1) \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
@@ -181,7 +200,7 @@ $$
 $$ (3) \text{General}: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h3&gt;
+&lt;h4 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h4&gt;
 &lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
 $$&lt;/p&gt;
 &lt;ul&gt;
@@ -202,7 +221,7 @@ P &amp;amp; Q &amp;amp; R
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum&lt;/h3&gt;
+&lt;h4 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;SECOND DERIVATIVES TEST&lt;/li&gt;
 &lt;/ul&gt;
