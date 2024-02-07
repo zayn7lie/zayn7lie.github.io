@@ -247,9 +247,10 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
     <li><a href="#what-what-is-vector--function-with-multiple-variables">WHAT: What is vector / function with multiple variables?</a>
       <ul>
         <li><a href="#eg-from-x-y-z-coordinate-to-vectors">E.g. from X-Y-Z coordinate to vectors</a></li>
+        <li><a href="#how-how-to-visualize-vectors-in-dimensions">HOW: How to visualize vectors in dimensions?</a></li>
       </ul>
     </li>
-    <li><a href="#what-what-is-calculus-with-vector">WHAT: What is Calculus with Vector</a>
+    <li><a href="#what-what-is-calculus-in-vector-fields">WHAT: What is Calculus in vector fields</a>
       <ul>
         <li><a href="#calculus-with-dependent-component---partial-derivatives">Calculus with DEPENDENT component - Partial Derivatives</a></li>
         <li><a href="#how-lagrange-multipliers">HOW: LAGRANGE MULTIPLIERS</a></li>
@@ -547,11 +548,19 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 </li>
 <li>Integral: $\vec{r}(t) = \int\vec{v}(t)dt = \langle \int f(t) dt, \int g(t) dt, \int h(t) dt \rangle = \int f(t) dt \hat{i} + \int g(t) dt \hat{j} + \int h(t) dt \hat{k}$
 <ul>
-<li>Arc Length: $\displaystyle l = \int \sqrt{\frac{dF^2}{dt^2} + \frac{dG^2}{dt^2} + \frac{dH^2}{dt^2}} dt$</li>
+<li>Arc Length: $\displaystyle l = \int 1 ds = \int \frac{ds}{dt} dt = \int |\vec{r}&rsquo;(t)| dt = \int \sqrt{\frac{dF^2}{dt^2} + \frac{dG^2}{dt^2} + \frac{dH^2}{dt^2}} dt$</li>
+<li>Curvature: $\displaystyle \kappa(t) = |\frac{d\vec{T}}{ds}| = \frac{d\vec{T}/dt}{ds/dt} = \frac{|\vec{T}&rsquo;(t)|}{|\vec{r}&rsquo;(t)|}, \vec{T} = \frac{\vec{r}&rsquo;}{|\vec{r}&rsquo;|} \Rightarrow \kappa(t) = \frac{|\vec{r}&rsquo; \times \vec{r}&rsquo;&rsquo;|}{|\vec{r}&rsquo;|^3}$</li>
 </ul>
 </li>
 </ul>
-<h2 id="what-what-is-calculus-with-vector">WHAT: What is Calculus with Vector</h2>
+<h3 id="how-how-to-visualize-vectors-in-dimensions">HOW: How to visualize vectors in dimensions?</h3>
+<blockquote>
+<p>From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$</p>
+</blockquote>
+<ul>
+<li>Contour map, or Level curves: slice along the $z$ (or $y$ above)</li>
+</ul>
+<h2 id="what-what-is-calculus-in-vector-fields">WHAT: What is Calculus in vector fields</h2>
 <h3 id="calculus-with-dependent-component---partial-derivatives">Calculus with DEPENDENT component - Partial Derivatives</h3>
 <h4 id="why-limit--continuity---differentiable">WHY: Limit &amp; Continuity - Differentiable</h4>
 <ul>
