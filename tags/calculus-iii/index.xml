@@ -121,9 +121,22 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Contour map, or Level curves: slice along the $z$ (or $y$ above)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Contour map, or Level curves: slice along the $z$ (or $y$ above)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &amp;hellip;)&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-calculus-in-vector-fields&#34;&gt;WHAT: What is Calculus in vector fields&lt;/h2&gt;
+&lt;h2 id=&#34;what-what-is-calculus-in-vectors-fields&#34;&gt;WHAT: What is Calculus in vectors fields&lt;/h2&gt;
+&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Limit &amp;amp; Continuity: $\displaystyle \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L$ (no matter any directions approaching to $(a, b)$, f(x, y) is continuous at $(a, b)$ if and only if those values are the same)
+&lt;ul&gt;
+&lt;li&gt;The existence of the Limit: common directions - along y-axis ($x = 0$), x-axis, $x = y$, $r^2 = x^2 + y^2, x = r\cos\theta, y = r\sin\theta$, etc. (e.i. using L&amp;rsquo;Hôpital&amp;rsquo;s rule after fixing one dimension)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;calculus-with-dependent-component---partial-derivatives&#34;&gt;Calculus with DEPENDENT component - Partial Derivatives&lt;/h3&gt;
 &lt;h4 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h4&gt;
 &lt;ul&gt;
