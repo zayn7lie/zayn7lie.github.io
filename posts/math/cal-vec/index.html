@@ -550,10 +550,24 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 <li>Integral: $\vec{r}(t) = \int\vec{v}(t)dt = \langle \int f(t) dt, \int g(t) dt, \int h(t) dt \rangle = \int f(t) dt \hat{i} + \int g(t) dt \hat{j} + \int h(t) dt \hat{k}$
 <ul>
 <li>Arc Length: $\displaystyle l = \int 1 ds = \int \frac{ds}{dt} dt = \int |\vec{r}&rsquo;(t)| dt = \int \sqrt{\frac{dF^2}{dt^2} + \frac{dG^2}{dt^2} + \frac{dH^2}{dt^2}} dt$</li>
-<li>Curvature: $\displaystyle \kappa(t) = |\frac{d\vec{T}}{ds}| = \frac{d\vec{T}/dt}{ds/dt} = \frac{|\vec{T}&rsquo;(t)|}{|\vec{r}&rsquo;(t)|}, \vec{T} = \frac{\vec{r}&rsquo;}{|\vec{r}&rsquo;|} \Rightarrow \kappa(t) = \frac{|\vec{r}&rsquo; \times \vec{r}&rsquo;&rsquo;|}{|\vec{r}&rsquo;|^3}$</li>
+<li>Curvature: $\displaystyle \kappa(t) = |\frac{d\hat{T}}{ds}| = \frac{d\hat{T}/dt}{ds/dt} = \frac{|\hat{T}&rsquo;(t)|}{|\vec{r}&rsquo;(t)|}, \hat{T} = \frac{\vec{r}&rsquo;}{|\vec{r}&rsquo;|} \Rightarrow \kappa(t) = \frac{|\vec{r}&rsquo; \times \vec{r}&rsquo;&rsquo;|}{|\vec{r}&rsquo;|^3}$ (relate to determinant)</li>
 </ul>
 </li>
 </ul>
+<h4 id="how-how-to-apply-to-space">HOW: How to apply to space?</h4>
+<ul>
+<li>Tangent vector to a space curve: $\hat{T} = \vec{r}&rsquo;/|\vec{r}&rsquo;|$</li>
+<li>Normal vector to a tangent vector: $\hat{N} = \hat{T}&rsquo;/|\hat{T}&rsquo;| = \hat{T}&rsquo;/|\kappa \vec{r}&rsquo;|$</li>
+<li>Binormal vector to the vectors: $\hat{B} = \hat{N} \times \hat{T}$</li>
+</ul>
+<blockquote>
+<p>Build the coordinate with $\hat{T}, \hat{N}, \hat{B}$: $\vec{r} \Rightarrow \hat{T} \Rightarrow \hat{N} \Rightarrow \hat{B}$</p>
+</blockquote>
+<p>$\vec{a} = \vec{v}&rsquo; = (v\hat{T}) = v&rsquo;\hat{T} + v\hat{T}&rsquo; = v&rsquo;\hat{T} + v^2\kappa\hat{N}$</p>
+<p>$\Rightarrow \vec{a} = a_T\hat{T} + a_N\hat{N}, a_T = v&rsquo;, a_N = \kappa v^2$</p>
+<blockquote>
+<p>Note. How to understand $\frac{d}{dt} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.</p>
+</blockquote>
 <h3 id="how-how-to-visualize-vectors-in-dimensions">HOW: How to visualize vectors in dimensions?</h3>
 <blockquote>
 <p>From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$</p>
