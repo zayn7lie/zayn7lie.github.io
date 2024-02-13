@@ -109,10 +109,19 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;li&gt;$\frac{d}{dt}(f(t)\vec{u}(t)) = f&amp;rsquo;(t)\vec{u}(t) + f(t)\vec{u}&amp;rsquo;(t)$($f$ could be either scalar or vector function, while it is vector, both dot and cross product could be applied)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why the rule of product could be applied to dot and cross product? As for dot product, we regard it as multiple independent product process, and combine it after the product.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
 &lt;li&gt;Integral: $\vec{r}(t) = \int\vec{v}(t)dt = \langle \int f(t) dt, \int g(t) dt, \int h(t) dt \rangle = \int f(t) dt \hat{i} + \int g(t) dt \hat{j} + \int h(t) dt \hat{k}$
 &lt;ul&gt;
 &lt;li&gt;Arc Length: $\displaystyle l = \int 1 ds = \int \frac{ds}{dt} dt = \int |\vec{r}&amp;rsquo;(t)| dt = \int \sqrt{\frac{dF^2}{dt^2} + \frac{dG^2}{dt^2} + \frac{dH^2}{dt^2}} dt$&lt;/li&gt;
-&lt;li&gt;Curvature: $\displaystyle \kappa(t) = |\frac{d\hat{T}}{ds}| = \frac{d\hat{T}/dt}{ds/dt} = \frac{|\hat{T}&amp;rsquo;(t)|}{|\vec{r}&amp;rsquo;(t)|}, \hat{T} = \frac{\vec{r}&amp;rsquo;}{|\vec{r}&amp;rsquo;|} \Rightarrow \kappa(t) = \frac{|\vec{r}&amp;rsquo; \times \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|^3}$ (relate to determinant)&lt;/li&gt;
+&lt;li&gt;Curvature: $\displaystyle \kappa(t) = |\frac{d\hat{T}}{ds}| = \frac{d\hat{T}/dt}{ds/dt} = \frac{|\hat{T}&amp;rsquo;(t)|}{|\vec{r}&amp;rsquo;(t)|}, \hat{T} = \frac{\vec{r}&amp;rsquo;}{|\vec{r}&amp;rsquo;|} \Rightarrow \kappa(t) = \frac{|\vec{r}&amp;rsquo; \times \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|^3}$ (relate to determinant)
+&lt;ul&gt;
+&lt;li&gt;proof of $\displaystyle |\hat{T}&amp;rsquo;| = |\frac{\vec{r}&amp;rsquo;&amp;rsquo; \times \vec{r}&amp;rsquo;}{\mathrm{d}s^2/\mathrm{d}t^2}|: \hat{T}&amp;rsquo; = \frac{\vec{r}&amp;rsquo;&amp;rsquo;\mathrm{d}s/\mathrm{d}t - \vec{r}&amp;rsquo;\mathrm{d}^2s/\mathrm{d}t^2}{\mathrm{d}s^2/\mathrm{d}t^2} \Rightarrow |\hat{T}&amp;rsquo;| = |\hat{T} \times \hat{T}&amp;rsquo;|$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -126,7 +135,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;Build the coordinate with $\hat{T}, \hat{N}, \hat{B}$: $\vec{r} \Rightarrow \hat{T} \Rightarrow \hat{N} \Rightarrow \hat{B}$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$\vec{a} = \vec{v}&amp;rsquo; = (v\hat{T}) = v&amp;rsquo;\hat{T} + v\hat{T}&amp;rsquo; = v&amp;rsquo;\hat{T} + v^2\kappa\hat{N}$&lt;/p&gt;
-&lt;p&gt;$\Rightarrow \vec{a} = a_T\hat{T} + a_N\hat{N}, a_T = v&amp;rsquo;, a_N = \kappa v^2$&lt;/p&gt;
+&lt;p&gt;$\Rightarrow \vec{a} = a_T\hat{T} + a_N\hat{N}, a_T = v&amp;rsquo; = \frac{|\vec{r}&amp;rsquo; \cdot \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}, a_N = \kappa v^2 = \frac{|\vec{r}&amp;rsquo; \times \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note. How to understand $\frac{d}{dt} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -151,7 +160,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;calculus-with-dependent-component---partial-derivatives&#34;&gt;Calculus with DEPENDENT component - Partial Derivatives&lt;/h3&gt;
+&lt;h3 id=&#34;calculus-with-independent-component---partial-derivatives&#34;&gt;Calculus with INDEPENDENT component - Partial Derivatives&lt;/h3&gt;
 &lt;h4 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -181,22 +190,21 @@ $$ \frac{\partial}{\partial y}f = f_y(a, b) = \lim_{h \rightarrow 0}\frac{f(a, b
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\epsilon_1, \epsilon_2) \rightarrow (0, 0) \Rightarrow (\Delta{x}, \Delta{y}) \rightarrow (0, 0)$&lt;/li&gt;
-&lt;li&gt;Differentials: $dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy$&lt;/li&gt;
+&lt;li&gt;Differentials: $\displaystyle dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy \Leftarrow \frac{dz}{dt} = \frac{\partial z}{\partial x}\frac{dx}{dt} + \frac{\partial z}{\partial y}\frac{dy}{dt}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Geometry: Tangent Planes
-$$ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \Rightarrow z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)
-$$&lt;/p&gt;
+&lt;p&gt;Geometry&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Linear Approximations&lt;/li&gt;
+&lt;li&gt;Geometry interpretation: Monotonicity - $f_x$, $f_y$; Concativity - $f_{xx}, f_{yy}$; &amp;ldquo;Twistivity&amp;rdquo; - $f_{xy}, f_{yx}$&lt;/li&gt;
+&lt;li&gt;Tangent Planes &amp;amp; Linear Approximations: $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \Rightarrow z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)$ (normal vector with cross product of the x component and y component)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Chain Rule
-$$ (1) \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
+&lt;li&gt;*Chain Rule
+$$ (1) z = f(x, y): \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
 $$
 $$ (2) \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}, \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}
 $$
