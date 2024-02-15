@@ -186,22 +186,16 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;h2 id=&#34;what-what-is-calculus-in-vectors-fields&#34;&gt;WHAT: What is Calculus in vectors fields&lt;/h2&gt;
 &lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Limit &amp;amp; Continuity: $\displaystyle \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L$ (no matter any directions approaching to $(a, b)$, f(x, y) is continuous at $(a, b)$ if and only if those values are the same)
-&lt;ul&gt;
-&lt;li&gt;The existence of the Limit: common directions - along y-axis ($x = 0$), x-axis, $x = y$, $r^2 = x^2 + y^2, x = r\cos\theta, y = r\sin\theta$, etc. (e.i. using L&amp;rsquo;Hôpital&amp;rsquo;s rule after fixing one dimension)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;calculus-with-independent-component---partial-derivatives&#34;&gt;Calculus with INDEPENDENT component - Partial Derivatives&lt;/h3&gt;
-&lt;h4 id=&#34;why-limit--continuity---differentiable&#34;&gt;WHY: Limit &amp;amp; Continuity - Differentiable&lt;/h4&gt;
-&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Limit&lt;/p&gt;
-&lt;p&gt;$$ \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L
-$$&lt;/p&gt;
+&lt;p&gt;Limit &amp;amp; Continuity: $\displaystyle \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L$ (no matter any directions approaching to $(a, b)$, f(x, y) is continuous at $(a, b)$ if and only if those values are the same)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The existence of the Limit: common directions - along y-axis ($x = 0$), x-axis, $x = y$, $r^2 = x^2 + y^2, x = r\cos\theta, y = r\sin\theta$, etc. (e.i. using L&amp;rsquo;Hôpital&amp;rsquo;s rule after fixing one dimension)
+$$ \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L
+$$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When $f \rightarrow L$ no matter what direction $(x, y) \rightarrow (a, b)$, the limit of $f$ in $(a, b)$ exists.&lt;/p&gt;
-&lt;p&gt;If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.&lt;/p&gt;
+&lt;p&gt;It is easy to prove the limit is &lt;strong&gt;not&lt;/strong&gt; exists. If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Limit along axis: let $y = 0$ or $x = 0$&lt;/li&gt;
@@ -212,7 +206,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Continuity: $\lim_{(x, y) \rightarrow (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h4&gt;
+&lt;h3 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Algebra: Definition
@@ -221,7 +215,7 @@ $$
 $$ \frac{\partial}{\partial y}f = f_y(a, b) = \lim_{h \rightarrow 0}\frac{f(a, b + h) - f(a, b)}{h} = g&amp;rsquo;(b) \ (g(y) = g(a, y)) = \lim_{h \rightarrow 0}\frac{g(b + h) - g(b)}{h}
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\epsilon_1, \epsilon_2) \rightarrow (0, 0) \Rightarrow (\Delta{x}, \Delta{y}) \rightarrow (0, 0)$&lt;/li&gt;
+&lt;li&gt;Increment: $\Delta y = f(x_0 + dx, y_0 + dx) - f(x_0, y_0) \Rightarrow$ differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\Delta{x}, \Delta{y}) \rightarrow (0, 0) \Rightarrow (\epsilon_1, \epsilon_2) \rightarrow (0, 0)$&lt;/li&gt;
 &lt;li&gt;Differentials: $\displaystyle dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy \Leftarrow \frac{dz}{dt} = \frac{\partial z}{\partial x}\frac{dx}{dt} + \frac{\partial z}{\partial y}\frac{dy}{dt}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -233,7 +227,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h4&gt;
+&lt;h3 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;*Chain Rule
 $$ (1) z = f(x, y): \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
@@ -243,13 +237,13 @@ $$
 $$ (3) \text{General}: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h4&gt;
-&lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
+&lt;h3 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h3&gt;
+&lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \hat{u}
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$D_u{f(x, y)} = \vec{P&amp;rsquo;Q&amp;rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
 &lt;ul&gt;
-&lt;li&gt;$\nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
+&lt;li&gt;$\mathrm{grad}f(x, y) = \nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
 &lt;ul&gt;
 &lt;li&gt;$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$&lt;/li&gt;
 &lt;li&gt;$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
@@ -1401,7 +1395,7 @@ $$&lt;/p&gt;
 &lt;li&gt;Emulator
 &lt;ul&gt;
 &lt;li&gt;Pros: Safety from good separation with system, cross-platform, user-friendly.&lt;/li&gt;
-&lt;li&gt;Cons: High system resources usage, easily stuck.&lt;/li&gt;
+&lt;li&gt;Cons: High system resource usage, easily stuck.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Container

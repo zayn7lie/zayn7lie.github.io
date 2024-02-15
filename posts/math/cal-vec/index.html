@@ -253,7 +253,9 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
     <li><a href="#what-what-is-calculus-in-vectors-fields">WHAT: What is Calculus in vectors fields</a>
       <ul>
         <li><a href="#why-why-a-function-could-be-differentiated---differentiability">WHY: Why a function could be differentiated? - Differentiability</a></li>
-        <li><a href="#calculus-with-independent-component---partial-derivatives">Calculus with INDEPENDENT component - Partial Derivatives</a></li>
+        <li><a href="#what-what-is-partial-derivatives">WHAT: What is Partial Derivatives</a></li>
+        <li><a href="#how-how-to-do-partial-derivatives">HOW: How to do Partial Derivatives</a></li>
+        <li><a href="#how-how-to-apply-to-vector">HOW: How to Apply to Vector</a></li>
         <li><a href="#how-lagrange-multipliers">HOW: LAGRANGE MULTIPLIERS</a></li>
       </ul>
     </li>
@@ -592,22 +594,16 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 <h2 id="what-what-is-calculus-in-vectors-fields">WHAT: What is Calculus in vectors fields</h2>
 <h3 id="why-why-a-function-could-be-differentiated---differentiability">WHY: Why a function could be differentiated? - Differentiability</h3>
 <ul>
-<li>Limit &amp; Continuity: $\displaystyle \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L$ (no matter any directions approaching to $(a, b)$, f(x, y) is continuous at $(a, b)$ if and only if those values are the same)
-<ul>
-<li>The existence of the Limit: common directions - along y-axis ($x = 0$), x-axis, $x = y$, $r^2 = x^2 + y^2, x = r\cos\theta, y = r\sin\theta$, etc. (e.i. using L&rsquo;Hôpital&rsquo;s rule after fixing one dimension)</li>
-</ul>
-</li>
-</ul>
-<h3 id="calculus-with-independent-component---partial-derivatives">Calculus with INDEPENDENT component - Partial Derivatives</h3>
-<h4 id="why-limit--continuity---differentiable">WHY: Limit &amp; Continuity - Differentiable</h4>
-<ul>
 <li>
-<p>Limit</p>
-<p>$$ \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L
-$$</p>
+<p>Limit &amp; Continuity: $\displaystyle \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L$ (no matter any directions approaching to $(a, b)$, f(x, y) is continuous at $(a, b)$ if and only if those values are the same)</p>
+<ul>
+<li>The existence of the Limit: common directions - along y-axis ($x = 0$), x-axis, $x = y$, $r^2 = x^2 + y^2, x = r\cos\theta, y = r\sin\theta$, etc. (e.i. using L&rsquo;Hôpital&rsquo;s rule after fixing one dimension)
+$$ \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L
+$$</li>
+</ul>
 <blockquote>
 <p>When $f \rightarrow L$ no matter what direction $(x, y) \rightarrow (a, b)$, the limit of $f$ in $(a, b)$ exists.</p>
-<p>If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.</p>
+<p>It is easy to prove the limit is <strong>not</strong> exists. If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.</p>
 </blockquote>
 <ul>
 <li>Limit along axis: let $y = 0$ or $x = 0$</li>
@@ -618,7 +614,7 @@ $$</p>
 <p>Continuity: $\lim_{(x, y) \rightarrow (a, b)}f(x, y) = f(a, b)$</p>
 </li>
 </ul>
-<h4 id="what-what-is-partial-derivatives">WHAT: What is Partial Derivatives</h4>
+<h3 id="what-what-is-partial-derivatives">WHAT: What is Partial Derivatives</h3>
 <ul>
 <li>
 <p>Algebra: Definition
@@ -627,7 +623,7 @@ $$
 $$ \frac{\partial}{\partial y}f = f_y(a, b) = \lim_{h \rightarrow 0}\frac{f(a, b + h) - f(a, b)}{h} = g&rsquo;(b) \ (g(y) = g(a, y)) = \lim_{h \rightarrow 0}\frac{g(b + h) - g(b)}{h}
 $$</p>
 <ul>
-<li>Differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\epsilon_1, \epsilon_2) \rightarrow (0, 0) \Rightarrow (\Delta{x}, \Delta{y}) \rightarrow (0, 0)$</li>
+<li>Increment: $\Delta y = f(x_0 + dx, y_0 + dx) - f(x_0, y_0) \Rightarrow$ differentiable: $\Delta{z} = f_x(a, b)\Delta{x} + f_y(a, b)\Delta{y} + \epsilon_1\Delta{x} + \epsilon_2\Delta{y}, (\Delta{x}, \Delta{y}) \rightarrow (0, 0) \Rightarrow (\epsilon_1, \epsilon_2) \rightarrow (0, 0)$</li>
 <li>Differentials: $\displaystyle dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy \Leftarrow \frac{dz}{dt} = \frac{\partial z}{\partial x}\frac{dx}{dt} + \frac{\partial z}{\partial y}\frac{dy}{dt}$</li>
 </ul>
 </li>
@@ -639,7 +635,7 @@ $$</p>
 </ul>
 </li>
 </ul>
-<h4 id="how-how-to-do-partial-derivatives">HOW: How to do Partial Derivatives</h4>
+<h3 id="how-how-to-do-partial-derivatives">HOW: How to do Partial Derivatives</h3>
 <ul>
 <li>*Chain Rule
 $$ (1) z = f(x, y): \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
@@ -649,13 +645,13 @@ $$
 $$ (3) \text{General}: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
 $$</li>
 </ul>
-<h4 id="how-how-to-apply-to-vector">HOW: How to Apply to Vector</h4>
-<p>$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \vec{u}
+<h3 id="how-how-to-apply-to-vector">HOW: How to Apply to Vector</h3>
+<p>$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \hat{u}
 $$</p>
 <ul>
 <li>$D_u{f(x, y)} = \vec{P&rsquo;Q&rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
 <ul>
-<li>$\nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
+<li>$\mathrm{grad}f(x, y) = \nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
 <ul>
 <li>$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$</li>
 <li>$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
