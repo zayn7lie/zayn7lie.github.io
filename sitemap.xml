@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zayn7lie.ber7.org/</loc>
-    <lastmod>2024-01-22T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/posts/</loc>
+    <lastmod>2024-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/categories/</loc>
     <lastmod>2024-01-22T00:00:00+00:00</lastmod>
@@ -24,9 +27,6 @@
     <lastmod>2024-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/partial-derivatives/</loc>
-    <lastmod>2024-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/posts/</loc>
     <lastmod>2024-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/right-hand-rule/</loc>
@@ -99,6 +99,9 @@
     <lastmod>2023-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/re-compose/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/tags/sheet/score/</loc>
     <lastmod>2023-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/touhou/</loc>
@@ -247,8 +250,6 @@
     <loc>https://zayn7lie.ber7.org/categories/py-ml/</loc>
   </url><url>
     <loc>https://zayn7lie.ber7.org/page/search/</loc>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/sheet/score/</loc>
   </url><url>
     <loc>https://zayn7lie.ber7.org/page/sponsor/</loc>
   </url>

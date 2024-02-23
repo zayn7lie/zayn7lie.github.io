@@ -192,6 +192,25 @@ I am able to fully customize my system. Windows have limited a large amount of o
         
 
         <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://zayn7lie.ber7.org/" selected></option>
+                        
+                    </select>
+                </li>
+            
             
             
                 <li id="dark-mode-toggle">
@@ -295,7 +314,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
             </a>
         
             <a href="/tags/install/" class="font_size_4">
-                install
+                Install
             </a>
         
             <a href="/tags/math/" class="font_size_4">
@@ -319,7 +338,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
             </a>
         
             <a href="/tags/config/" class="font_size_3">
-                config
+                Config
             </a>
         
             <a href="/tags/calculus-ii/" class="font_size_2">
@@ -543,7 +562,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
 </code></pre><p>Replace <code>?{zayn7lie-acl}</code> with your machine name.</p>
 <h3 id="6-language--time">6. Language &amp; Time</h3>
 <ol>
-<li><code># vim /etc/locale.gen</code> to enter language config file, then uncomment <code>en-US.UTF-8 UTF-8</code> and the language you want use, then save the file. # locale-gen to generate and install language files.</li>
+<li><code># vim /etc/locale.gen</code> to enter language config file, then uncomment <code>en-US.UTF-8 UTF-8</code> and the language you want use, then save the file. <code># locale-gen</code> to generate and install language files.</li>
 <li><code># echo LANG=C.UTF-8 &gt; /etc/locale.conf</code> make system default characters to characters in C.</li>
 <li><code># hwclock --systohc --utc</code> and <code># timedatectl set-ntp true</code> to update your system time to installation medium time.</li>
 <li><code># ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime</code> to config your local time. <code>?{EST}</code> Could be change based on your region. You can use <code># ls /usr/share/zoneinfo/</code> to check which option could be used. Some folder like ./Asia might have subfolders that you need to choose in more specific way. E.G. <code># ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime</code>. P.S. s meaning soft link which will not actually copy all file to the target folder, f meaning force to do it.</li>
@@ -664,7 +683,7 @@ I am able to fully customize my system. Windows have limited a large amount of o
         
             <a href="/tags/arch-linux/">Arch Linux</a>
         
-            <a href="/tags/install/">install</a>
+            <a href="/tags/install/">Install</a>
         
     </section>
 

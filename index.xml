@@ -6,7 +6,7 @@
         <description>Recent content on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Geometry: Left Fist Rule</title>
         <link>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
@@ -2090,7 +2090,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace &lt;code&gt;?{zayn7lie-acl}&lt;/code&gt; with your machine name.&lt;/p&gt;
 &lt;h3 id=&#34;6-language--time&#34;&gt;6. Language &amp;amp; Time&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;# vim /etc/locale.gen&lt;/code&gt; to enter language config file, then uncomment &lt;code&gt;en-US.UTF-8 UTF-8&lt;/code&gt; and the language you want use, then save the file. # locale-gen to generate and install language files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# vim /etc/locale.gen&lt;/code&gt; to enter language config file, then uncomment &lt;code&gt;en-US.UTF-8 UTF-8&lt;/code&gt; and the language you want use, then save the file. &lt;code&gt;# locale-gen&lt;/code&gt; to generate and install language files.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# echo LANG=C.UTF-8 &amp;gt; /etc/locale.conf&lt;/code&gt; make system default characters to characters in C.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# hwclock --systohc --utc&lt;/code&gt; and &lt;code&gt;# timedatectl set-ntp true&lt;/code&gt; to update your system time to installation medium time.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime&lt;/code&gt; to config your local time. &lt;code&gt;?{EST}&lt;/code&gt; Could be change based on your region. You can use &lt;code&gt;# ls /usr/share/zoneinfo/&lt;/code&gt; to check which option could be used. Some folder like ./Asia might have subfolders that you need to choose in more specific way. E.G. &lt;code&gt;# ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime&lt;/code&gt;. P.S. s meaning soft link which will not actually copy all file to the target folder, f meaning force to do it.&lt;/li&gt;
