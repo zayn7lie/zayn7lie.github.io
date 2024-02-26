@@ -269,7 +269,7 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
         <li><a href="#how-how-to-visualize-vectors-in-dimensions">HOW: How to visualize vectors in dimensions?</a></li>
       </ul>
     </li>
-    <li><a href="#what-what-is-calculus-in-vectors-fields">WHAT: What is Calculus in vectors fields</a>
+    <li><a href="#what-what-is-differentiation-of-vectors">WHAT: What is differentiation of vectors</a>
       <ul>
         <li><a href="#why-why-a-function-could-be-differentiated---differentiability">WHY: Why a function could be differentiated? - Differentiability</a></li>
         <li><a href="#what-what-is-partial-derivatives">WHAT: What is Partial Derivatives</a></li>
@@ -456,7 +456,7 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
 
 
                 <time class="article-time--reading">
-                    11 minute read
+                    12 minute read
                 </time>
             </div>
         
@@ -610,7 +610,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 <p>e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &hellip;)</p>
 </li>
 </ul>
-<h2 id="what-what-is-calculus-in-vectors-fields">WHAT: What is Calculus in vectors fields</h2>
+<h2 id="what-what-is-differentiation-of-vectors">WHAT: What is differentiation of vectors</h2>
 <h3 id="why-why-a-function-could-be-differentiated---differentiability">WHY: Why a function could be differentiated? - Differentiability</h3>
 <ul>
 <li>
@@ -672,22 +672,49 @@ $$</p>
 <ul>
 <li>$\mathrm{grad}f(x, y) = \nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
 <ul>
+<li>$f(x_1, x_2, \ldots) \Rightarrow \mathbb{R}^n \rightarrow \mathbb{R}$</li>
+<li>$\nabla{f} \Rightarrow \mathbb{R} \rightarrow \mathbb{R}^n$</li>
 <li>$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$</li>
 <li>$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
 \hat{i} &amp; \hat{j} &amp; \hat{k} \\
 \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\
 P &amp; Q &amp; R
 \end{vmatrix} = (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z})\hat{i} + (\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x})\hat{j} + (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})\hat{k}$</li>
-<li>$\text{div curl } \textbf{F} = 0$</li>
+<li>$\text{div curl } \textbf{F} = 0$  &amp; $\text{curl div } \textbf{F} = 0$</li>
 </ul>
 </li>
 <li>$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$</li>
+<li>$\nabla{f(x, y)}$ present the fastest increasing direction / perpendicular to the contour line.</li>
 </ul>
 </li>
 </ul>
 <h4 id="how-how-to-apply-to-finding-maximum-and-minimum">HOW: How to Apply to Finding Maximum and Minimum</h4>
+<ol>
+<li>
+<p>$\displaystyle \frac{\partial f}{\partial x} = 0, \frac{\partial f}{\partial y} = 0 \Leftarrow \frac{\partial}{\partial t} = a\frac{\partial}{\partial x} + b\frac{\partial}{\partial y}, \frac{\partial f}{\partial \forall t} = 0$</p>
+</li>
+<li>
+<p>SECOND DERIVATIVES TEST: The relationship between $\displaystyle D(x_0, y_0) = \begin{vmatrix}
+\frac{\partial^2}{\partial x^2} &amp; \frac{\partial^2}{\partial x \partial y} \\
+\frac{\partial^2}{\partial y \partial x} &amp; \frac{\partial^2}{\partial y^2}
+\end{vmatrix}f = \mathbf{H}f = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - f^2_{xy}(x_0, y_0)$ and $f_{xx}(x_0, y_0)$ (or second derivatives in any direction)</p>
 <ul>
-<li>SECOND DERIVATIVES TEST</li>
+<li>$\mathbf{H}f(x_0, y_0) &gt; 0 \Rightarrow$ concavity find local extremum
+<ul>
+<li>$f_{xx} &gt; 0$: local minimum</li>
+<li>$f_{xx} &gt; 0$: local maximum</li>
+</ul>
+</li>
+<li>$\mathbf{H}f(x_0, y_0) &lt; 0 \Rightarrow$ concavity find sadle point</li>
+<li>$\mathbf{H}f(x_0, y_0) = 0 \Rightarrow$ second derivative provides not enough info</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>A geometry interpretation of it: <a class="link" href="https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/optimizing-multivariable-functions/a/second-partial-derivative-test"  target="_blank" rel="noopener"
+    >Khan Academy: Second partial derivative test</a></li>
+<li>Hessian matrix: <a class="link" href="https://en.wikipedia.org/wiki/Hessian_matrix"  target="_blank" rel="noopener"
+    >Wikipedia: Hessian matrix</a></li>
 </ul>
 <h3 id="how-lagrange-multipliers">HOW: LAGRANGE MULTIPLIERS</h3>
 <h2 id="what-what-is-integral---multiple-integrals">WHAT: What is integral - Multiple Integrals</h2>

@@ -183,7 +183,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &amp;hellip;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-calculus-in-vectors-fields&#34;&gt;WHAT: What is Calculus in vectors fields&lt;/h2&gt;
+&lt;h2 id=&#34;what-what-is-differentiation-of-vectors&#34;&gt;WHAT: What is differentiation of vectors&lt;/h2&gt;
 &lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -245,22 +245,49 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$\mathrm{grad}f(x, y) = \nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
 &lt;ul&gt;
+&lt;li&gt;$f(x_1, x_2, \ldots) \Rightarrow \mathbb{R}^n \rightarrow \mathbb{R}$&lt;/li&gt;
+&lt;li&gt;$\nabla{f} \Rightarrow \mathbb{R} \rightarrow \mathbb{R}^n$&lt;/li&gt;
 &lt;li&gt;$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$&lt;/li&gt;
 &lt;li&gt;$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
 \hat{i} &amp;amp; \hat{j} &amp;amp; \hat{k} \\
 \frac{\partial}{\partial x} &amp;amp; \frac{\partial}{\partial y} &amp;amp; \frac{\partial}{\partial z} \\
 P &amp;amp; Q &amp;amp; R
 \end{vmatrix} = (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z})\hat{i} + (\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x})\hat{j} + (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})\hat{k}$&lt;/li&gt;
-&lt;li&gt;$\text{div curl } \textbf{F} = 0$&lt;/li&gt;
+&lt;li&gt;$\text{div curl } \textbf{F} = 0$  &amp;amp; $\text{curl div } \textbf{F} = 0$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$&lt;/li&gt;
+&lt;li&gt;$\nabla{f(x, y)}$ present the fastest increasing direction / perpendicular to the contour line.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$\displaystyle \frac{\partial f}{\partial x} = 0, \frac{\partial f}{\partial y} = 0 \Leftarrow \frac{\partial}{\partial t} = a\frac{\partial}{\partial x} + b\frac{\partial}{\partial y}, \frac{\partial f}{\partial \forall t} = 0$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SECOND DERIVATIVES TEST: The relationship between $\displaystyle D(x_0, y_0) = \begin{vmatrix}
+\frac{\partial^2}{\partial x^2} &amp;amp; \frac{\partial^2}{\partial x \partial y} \\
+\frac{\partial^2}{\partial y \partial x} &amp;amp; \frac{\partial^2}{\partial y^2}
+\end{vmatrix}f = \mathbf{H}f = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - f^2_{xy}(x_0, y_0)$ and $f_{xx}(x_0, y_0)$ (or second derivatives in any direction)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;SECOND DERIVATIVES TEST&lt;/li&gt;
+&lt;li&gt;$\mathbf{H}f(x_0, y_0) &amp;gt; 0 \Rightarrow$ concavity find local extremum
+&lt;ul&gt;
+&lt;li&gt;$f_{xx} &amp;gt; 0$: local minimum&lt;/li&gt;
+&lt;li&gt;$f_{xx} &amp;gt; 0$: local maximum&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$\mathbf{H}f(x_0, y_0) &amp;lt; 0 \Rightarrow$ concavity find sadle point&lt;/li&gt;
+&lt;li&gt;$\mathbf{H}f(x_0, y_0) = 0 \Rightarrow$ second derivative provides not enough info&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;A geometry interpretation of it: &lt;a class=&#34;link&#34; href=&#34;https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/optimizing-multivariable-functions/a/second-partial-derivative-test&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Khan Academy: Second partial derivative test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hessian matrix: &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Hessian_matrix&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wikipedia: Hessian matrix&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;how-lagrange-multipliers&#34;&gt;HOW: LAGRANGE MULTIPLIERS&lt;/h3&gt;
 &lt;h2 id=&#34;what-what-is-integral---multiple-integrals&#34;&gt;WHAT: What is integral - Multiple Integrals&lt;/h2&gt;
