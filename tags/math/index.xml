@@ -151,7 +151,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &amp;hellip;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-differentiation-of-vectors&#34;&gt;WHAT: What is differentiation of vectors&lt;/h2&gt;
+&lt;h2 id=&#34;what-what-is-differentiation-of-vectors---paerial-derivatives&#34;&gt;WHAT: What is differentiation of vectors - Paerial Derivatives&lt;/h2&gt;
 &lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -235,7 +235,7 @@ P &amp;amp; Q &amp;amp; R
 &lt;p&gt;$\displaystyle \frac{\partial f}{\partial x} = 0, \frac{\partial f}{\partial y} = 0 \Leftarrow \frac{\partial}{\partial t} = a\frac{\partial}{\partial x} + b\frac{\partial}{\partial y}, \frac{\partial f}{\partial \forall t} = 0$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;SECOND DERIVATIVES TEST: The relationship between $\displaystyle D(x_0, y_0) = \begin{vmatrix}
+&lt;p&gt;Second Derivative Test: The relationship between $\displaystyle D(x_0, y_0) = \begin{vmatrix}
 \frac{\partial^2}{\partial x^2} &amp;amp; \frac{\partial^2}{\partial x \partial y} \\
 \frac{\partial^2}{\partial y \partial x} &amp;amp; \frac{\partial^2}{\partial y^2}
 \end{vmatrix}f = \mathbf{H}f = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - f^2_{xy}(x_0, y_0)$ and $f_{xx}(x_0, y_0)$ (or second derivatives in any direction)&lt;/p&gt;
@@ -252,13 +252,22 @@ P &amp;amp; Q &amp;amp; R
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;A geometry interpretation of it: &lt;a class=&#34;link&#34; href=&#34;https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/optimizing-multivariable-functions/a/second-partial-derivative-test&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Khan Academy: Second partial derivative test&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Hessian matrix: &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Hessian_matrix&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Wikipedia: Hessian matrix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A geometry interpretation of it: &lt;a class=&#34;link&#34; href=&#34;https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/optimizing-multivariable-functions/a/second-partial-derivative-test&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Khan Academy: Second partial derivative test&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;*Hessian matrix: &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Hessian_matrix&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wikipedia: Hessian matrix&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lagrange Multipliers $\lambda$: $\nabla f = \lambda \nabla g$ (Simple idea: the highest point of the path is tangent to the highest contour)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generalization: $\nabla f(x_1, x_2, x_3, \ldots) = \lambda \nabla g(x_1, x_2, x_3, \ldots) + \mu \nabla h(x_1, x_2, x_3, \ldots) + \ldots$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-lagrange-multipliers&#34;&gt;HOW: LAGRANGE MULTIPLIERS&lt;/h3&gt;
-&lt;h2 id=&#34;what-what-is-integral---multiple-integrals&#34;&gt;WHAT: What is integral - Multiple Integrals&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-what-is-integral-of-vectors---multiple-integrals&#34;&gt;WHAT: What is integral of vectors - Multiple Integrals&lt;/h2&gt;
 &lt;h3 id=&#34;what-what-is-double-integral&#34;&gt;WHAT: What is double integral&lt;/h3&gt;
 &lt;p&gt;$$ \iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}(Double \ Riemann \ Sum, Midpoint: x^* , y^ * \rightarrow \bar{x}, \bar{y})
 $$&lt;/p&gt;
