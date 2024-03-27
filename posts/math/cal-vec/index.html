@@ -282,6 +282,7 @@ $f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is 
         <li><a href="#what-what-is-double-integral">WHAT: What is double integral</a></li>
         <li><a href="#how-how-to-calculate-iterated-integrals">HOW: How to calculate iterated integrals?</a></li>
         <li><a href="#how-how-to-apply-to-reality">HOW: How to apply to reality</a></li>
+        <li><a href="#how-how-to-apply-to-different-coordinate">HOW: How to apply to different coordinate</a></li>
       </ul>
     </li>
     <li><a href="#how-how-to-apply-to-vector-calculus">HOW: How to apply to Vector Calculus</a>
@@ -729,12 +730,29 @@ P &amp; Q &amp; R
 <h3 id="what-what-is-double-integral">WHAT: What is double integral</h3>
 <p>$\iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}$ (Double Riemann Sum, Midpoint: $x^* , y^ * \rightarrow \bar{x}, \bar{y}$)</p>
 <h3 id="how-how-to-calculate-iterated-integrals">HOW: How to calculate iterated integrals?</h3>
-<p>$$ \int_a^b\int_c^d{f(x, y)}dA = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
+<h4 id="switching-iterating-order">Switching iterating order</h4>
+<p>$$ \int\int{f(x, y)}dA (A =[a, b] \times [c, d]) = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
 $$</p>
+<h4 id="upper-bound-and-lower-bound-could-be-turned">Upper bound and lower bound could be turned</h4>
+<p>$$ \int\int{f(x, y)}dA (A =[a, b] \times [c, d]) = \int_a^b[\int_{c(x)}^{d(x)}f(x, y)dy]dx = \int_c^d[\int_{a(y)}^{b(y)}f(x, y)dx]dy
+$$</p>
+<p>$$ \iiint f(x, y, z) ,\mathrm{d}V (V = [0, 1] \times [\sqrt{x}, 1] \times [0, 1 - y]) \\</p>
+<p>=\int_0^1\int_{\sqrt{x}}^1\int_0^{1-y} f(x, y, z) ,\mathrm{d}z,\mathrm{d}y,\mathrm{d}x = \int_0^1\int_0^{y^2}\int_0^{1-y} f(x, y, z) ,\mathrm{d}z,\mathrm{d}x,\mathrm{d}y \\
+= \int_0^1\int_0^{1 - \sqrt{x}}\int_{\sqrt{x}}^{1 - z} f(x, y, z) ,\mathrm{d}y,\mathrm{d}z,\mathrm{d}x = \int_0^1\int_0^{(1 - z)^2}\int_{\sqrt{x}}^{1 - z} f(x, y, z) ,\mathrm{d}y,\mathrm{d}x,\mathrm{d}z \\
+= \int_0^1\int_0^{1 - z}\int_0^{y^2} f(x, y, z) ,\mathrm{d}x,\mathrm{d}y,\mathrm{d}z = \int_0^1\int_0^{1 - y}\int_0^{y^2} f(x, y, z) ,\mathrm{d}x,\mathrm{d}z,\mathrm{d}y
+$$</p>
+<h4 id="variables-could-be-turned">Variables could be turned</h4>
 <h3 id="how-how-to-apply-to-reality">HOW: How to apply to reality</h3>
 <h4 id="volume">Volume</h4>
-<p>Region of $x_1, x_2, y_1(x), y_2(x), Assume \ x_1 \leq x_2, y_1 \leq y_2$:</p>
+<p>Region of $x_1, x_2, y_1(x), y_2(x)$, Assume $x_1 \leq x_2, y_1 \leq y_2$:</p>
 <p>$$ V = \int_{y_1(x)}^{y_2(x)}\int_{x_1}^{x_2}f(x, y)dA = \int_{x_1}^{x_2}[\int_{y_1(x)}^{y_2(x)}f(x, y)dy]dx$$</p>
+<h4 id="density-and-mass">Density and Mass</h4>
+<p>Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:</p>
+<p>$$M = \iiint\rho(x, y, z),\mathrm{d}V$$</p>
+<h3 id="how-how-to-apply-to-different-coordinate">HOW: How to apply to different coordinate</h3>
+<blockquote>
+<p>from polar coordinate, to cylindar, then to sphere</p>
+</blockquote>
 <h2 id="how-how-to-apply-to-vector-calculus">HOW: How to apply to Vector Calculus</h2>
 <h3 id="what-what-is-fields">WHAT: What is Fields</h3>
 <ul>

@@ -271,12 +271,29 @@ P &amp;amp; Q &amp;amp; R
 &lt;h3 id=&#34;what-what-is-double-integral&#34;&gt;WHAT: What is double integral&lt;/h3&gt;
 &lt;p&gt;$\iint\limits_R{f(x, y)}dA = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}$ (Double Riemann Sum, Midpoint: $x^* , y^ * \rightarrow \bar{x}, \bar{y}$)&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-calculate-iterated-integrals&#34;&gt;HOW: How to calculate iterated integrals?&lt;/h3&gt;
-&lt;p&gt;$$ \int_a^b\int_c^d{f(x, y)}dA = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
+&lt;h4 id=&#34;switching-iterating-order&#34;&gt;Switching iterating order&lt;/h4&gt;
+&lt;p&gt;$$ \int\int{f(x, y)}dA (A =[a, b] \times [c, d]) = \int_a^b[\int_c^df(x, y)dy]dx = \int_c^d[\int_a^bf(x, y)dx]dy
 $$&lt;/p&gt;
+&lt;h4 id=&#34;upper-bound-and-lower-bound-could-be-turned&#34;&gt;Upper bound and lower bound could be turned&lt;/h4&gt;
+&lt;p&gt;$$ \int\int{f(x, y)}dA (A =[a, b] \times [c, d]) = \int_a^b[\int_{c(x)}^{d(x)}f(x, y)dy]dx = \int_c^d[\int_{a(y)}^{b(y)}f(x, y)dx]dy
+$$&lt;/p&gt;
+&lt;p&gt;$$ \iiint f(x, y, z) ,\mathrm{d}V (V = [0, 1] \times [\sqrt{x}, 1] \times [0, 1 - y]) \\&lt;/p&gt;
+&lt;p&gt;=\int_0^1\int_{\sqrt{x}}^1\int_0^{1-y} f(x, y, z) ,\mathrm{d}z,\mathrm{d}y,\mathrm{d}x = \int_0^1\int_0^{y^2}\int_0^{1-y} f(x, y, z) ,\mathrm{d}z,\mathrm{d}x,\mathrm{d}y \\
+= \int_0^1\int_0^{1 - \sqrt{x}}\int_{\sqrt{x}}^{1 - z} f(x, y, z) ,\mathrm{d}y,\mathrm{d}z,\mathrm{d}x = \int_0^1\int_0^{(1 - z)^2}\int_{\sqrt{x}}^{1 - z} f(x, y, z) ,\mathrm{d}y,\mathrm{d}x,\mathrm{d}z \\
+= \int_0^1\int_0^{1 - z}\int_0^{y^2} f(x, y, z) ,\mathrm{d}x,\mathrm{d}y,\mathrm{d}z = \int_0^1\int_0^{1 - y}\int_0^{y^2} f(x, y, z) ,\mathrm{d}x,\mathrm{d}z,\mathrm{d}y
+$$&lt;/p&gt;
+&lt;h4 id=&#34;variables-could-be-turned&#34;&gt;Variables could be turned&lt;/h4&gt;
 &lt;h3 id=&#34;how-how-to-apply-to-reality&#34;&gt;HOW: How to apply to reality&lt;/h3&gt;
 &lt;h4 id=&#34;volume&#34;&gt;Volume&lt;/h4&gt;
-&lt;p&gt;Region of $x_1, x_2, y_1(x), y_2(x), Assume \ x_1 \leq x_2, y_1 \leq y_2$:&lt;/p&gt;
+&lt;p&gt;Region of $x_1, x_2, y_1(x), y_2(x)$, Assume $x_1 \leq x_2, y_1 \leq y_2$:&lt;/p&gt;
 &lt;p&gt;$$ V = \int_{y_1(x)}^{y_2(x)}\int_{x_1}^{x_2}f(x, y)dA = \int_{x_1}^{x_2}[\int_{y_1(x)}^{y_2(x)}f(x, y)dy]dx$$&lt;/p&gt;
+&lt;h4 id=&#34;density-and-mass&#34;&gt;Density and Mass&lt;/h4&gt;
+&lt;p&gt;Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
+&lt;p&gt;$$M = \iiint\rho(x, y, z),\mathrm{d}V$$&lt;/p&gt;
+&lt;h3 id=&#34;how-how-to-apply-to-different-coordinate&#34;&gt;HOW: How to apply to different coordinate&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from polar coordinate, to cylindar, then to sphere&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-apply-to-vector-calculus&#34;&gt;HOW: How to apply to Vector Calculus&lt;/h2&gt;
 &lt;h3 id=&#34;what-what-is-fields&#34;&gt;WHAT: What is Fields&lt;/h3&gt;
 &lt;ul&gt;
