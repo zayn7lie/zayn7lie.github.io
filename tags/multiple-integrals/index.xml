@@ -340,7 +340,17 @@ $$&lt;/p&gt;
 &lt;p&gt;Gradient Fields: $\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-integrate-along-the-line---line-integrals&#34;&gt;HOW: How to integrate along the line - Line Integrals&lt;/h3&gt;
+&lt;h4 id=&#34;conservative-vector-fields&#34;&gt;Conservative vector fields&lt;/h4&gt;
+&lt;p&gt;$$\forall C_1, C_2 \in D, \int_{C_1} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = \int_{C_2} \mathbf{F} \cdot \mathrm{d} \mathbf{r} \Leftrightarrow \exists f, \vec\nabla{f} = \mathbf{F}$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$D$: an &lt;strong&gt;open&lt;/strong&gt;($\forall P \in D,\exists \circ P \in D$) &lt;strong&gt;connected&lt;/strong&gt;($\forall P_1, P_2 \in D, \exists C = {P_1P_2} \in D$) region; the right side means $\mathbf{F}$ is a &lt;strong&gt;conservative vector field&lt;/strong&gt;; under this situation, we call $\int_{C} \mathbf{F} \cdot \mathrm{d} \mathbf{r}$ is &lt;strong&gt;independent of path&lt;/strong&gt;, or &lt;em&gt;line integrals of conservative vector fields are independent of path.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Clairaut&amp;rsquo;s Theorem: $f_{xy} = f_{yx}$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;how-how-to-integrate-along-the-line---linepathcontour-integrals&#34;&gt;HOW: How to integrate along the line - Line(Path/Contour) Integrals&lt;/h3&gt;
+&lt;p&gt;$$\displaystyle \int_C \vec{F} \cdot \mathrm{d}\vec{r} = \int \vec{F}(\vec{r}(t)) \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t},\mathrm{d}t$$&lt;/p&gt;
 &lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$
 $$ \Rightarrow \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
