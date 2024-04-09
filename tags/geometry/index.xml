@@ -27,6 +27,7 @@
 &lt;h2 id=&#34;how-how-to-apply-the-left-fist-rule&#34;&gt;HOW: How to apply the left-fist rule?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;X-Y-Z direction: point fingers to $x$, find a way scroll to $y$, your thumb in your fist is pointing at $z$&lt;/li&gt;
+&lt;li&gt;Cross Product $\vec{A} \times \vec{B}$: pointing four fingers to the direction of $\vec{A}$ with thumb in the palm, then curling four finger to the direction of $\vec{B}$, thumb in the fist is the direction of $\vec{A} \times \vec{B}$&lt;/li&gt;
 &lt;li&gt;Torque direction: point fingers to the radius $R$, scroll with the force direction $F$, your thumb in your fist is pointing at the torque direction.&lt;/li&gt;
 &lt;li&gt;Ampere’s Law
 &lt;ul&gt;
