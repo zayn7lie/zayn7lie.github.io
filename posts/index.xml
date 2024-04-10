@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://zayn7lie.ber7.org/posts/</link>
         <description>Recent content in Posts on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/posts/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Geometry: Left Fist Rule</title>
-        <link>http://localhost:1313/posts/math/geo-left_fist/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/geo-left_fist/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-use-left-fist-rule&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-use-left-fist-rule&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we use left-fist rule?
@@ -47,10 +47,10 @@
         </item>
         <item>
         <title>Calculus: Vectors</title>
-        <link>http://localhost:1313/posts/math/cal-vec/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-vec/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-vec/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-vec/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-apply-calculus-to-vector&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-apply-calculus-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we apply calculus to vector?
@@ -454,6 +454,14 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;stokes-theorem&#34;&gt;
+    &lt;a href=&#34;#stokes-theorem&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Stokes&amp;rsquo; Theorem
+&lt;/h3&gt;&lt;h4 id=&#34;2---1-dimension&#34;&gt;
+    &lt;a href=&#34;#2---1-dimension&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    2 - 1 Dimension
+&lt;/h4&gt;&lt;p&gt;C is the edge of D: $C = \partial D$&lt;/p&gt;
+&lt;p&gt;$\Rightarrow \oint_{\partial D} \langle Q(x, y), P(x, y) \rangle \cdot \mathrm{d} \langle x, y \rangle = \iint_D Q_x - P_y ,\mathrm{d}A$&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-integral-with-surface&#34;&gt;
     &lt;a href=&#34;#how-how-to-integral-with-surface&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to integral with Surface
@@ -471,10 +479,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Series</title>
-        <link>http://localhost:1313/posts/math/cal-ser/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-ser/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-ser/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-learn-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we learn Series
@@ -731,10 +739,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>How to Create a Game (Minecraft/Terraria) Server with AWS</title>
-        <link>http://localhost:1313/posts/ettm/server/</link>
+        <link>https://zayn7lie.ber7.org/posts/ettm/server/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/ettm/server/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/ettm/server/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -880,10 +888,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Touhou - 01 EOSD - 01 A Dream that is more Scarlet than Red</title>
-        <link>http://localhost:1313/posts/music/touhou-01-01/</link>
+        <link>https://zayn7lie.ber7.org/posts/music/touhou-01-01/</link>
         <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/music/touhou-01-01/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/music/touhou-01-01/</guid>
         <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://musescore.com/user/36493639/scores/12442168&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Listen in MuseScore&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/zayn7lie/zayn7lie.github.io/master/posts/music-sheet/touhou-01-01.png&#34;
@@ -900,10 +908,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>LICENSE Changing Announcement</title>
-        <link>http://localhost:1313/posts/misc/license/</link>
+        <link>https://zayn7lie.ber7.org/posts/misc/license/</link>
         <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/misc/license/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1354,10 +1362,10 @@ for any purpose, even commercially.&lt;/li&gt;
         </item>
         <item>
         <title>Calculus: Integral</title>
-        <link>http://localhost:1313/posts/math/cal-int/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-int/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1607,10 +1615,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>How to play Arknights on Linux, using MAA and key mapping</title>
-        <link>http://localhost:1313/posts/ettm/arknights/</link>
+        <link>https://zayn7lie.ber7.org/posts/ettm/arknights/</link>
         <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/ettm/arknights/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1722,10 +1730,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Reading</title>
-        <link>http://localhost:1313/posts/english/reading/</link>
+        <link>https://zayn7lie.ber7.org/posts/english/reading/</link>
         <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/english/reading/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/english/reading/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;
     &lt;a href=&#34;#why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY
@@ -1786,10 +1794,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Hyprland (Wayland)</title>
-        <link>http://localhost:1313/posts/linux/hyprland/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/hyprland/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/hyprland/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/hyprland/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;12/05/2023-Updated: I have written a script for autoconfiguration. Uploaded to dot files below.&lt;/p&gt;
 &lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
@@ -2042,10 +2050,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>VSCode All in One</title>
-        <link>http://localhost:1313/posts/linux/vscode/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/vscode/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/vscode/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/vscode/</guid>
         <description>&lt;h2 id=&#34;installation&#34;&gt;
     &lt;a href=&#34;#installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Installation
@@ -2106,10 +2114,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>XFCE (X11)</title>
-        <link>http://localhost:1313/posts/linux/xfce/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/xfce/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/xfce/</guid>
         <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
 &lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
 &lt;h2 id=&#34;install&#34;&gt;
@@ -2309,10 +2317,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Arch Linux Installation</title>
-        <link>http://localhost:1313/posts/linux/archlinux/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/archlinux/</link>
         <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/archlinux/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/archlinux/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;
     &lt;a href=&#34;#why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY
@@ -2561,10 +2569,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Differentiation</title>
-        <link>http://localhost:1313/posts/math/cal-dif/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-dif/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-learn-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we learn differentiation?
@@ -2673,10 +2681,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>C&#43;&#43; Basic - 02 Header Files</title>
-        <link>http://localhost:1313/posts/cpp-algorithm/00-02/</link>
+        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-02/</link>
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/cpp-algorithm/00-02/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-02/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-use-header-files&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-use-header-files&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we use header files?
@@ -2697,10 +2705,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>C&#43;&#43; Basic - 01 Function</title>
-        <link>http://localhost:1313/posts/cpp-algorithm/00-01/</link>
+        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/cpp-algorithm/00-01/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/</guid>
         <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;
     &lt;a href=&#34;#why-why-shouldnt-we-learn-from-hello-world-first&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?
@@ -2912,10 +2920,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Blog Constructing</title>
-        <link>http://localhost:1313/posts/misc/blog/</link>
+        <link>https://zayn7lie.ber7.org/posts/misc/blog/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/misc/blog/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/misc/blog/</guid>
         <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;
     &lt;a href=&#34;#why-why-do-i-want-to-construct-my-blog-site&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why do I want to construct my blog site?

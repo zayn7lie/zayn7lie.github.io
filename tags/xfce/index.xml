@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>XFCE on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/xfce/</link>
+        <link>https://zayn7lie.ber7.org/tags/xfce/</link>
         <description>Recent content in XFCE on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/xfce/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/xfce/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>XFCE (X11)</title>
-        <link>http://localhost:1313/posts/linux/xfce/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/xfce/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/xfce/</guid>
         <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
 &lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
 &lt;h2 id=&#34;install&#34;&gt;

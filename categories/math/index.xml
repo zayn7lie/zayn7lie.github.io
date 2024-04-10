@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Math on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/categories/math/</link>
+        <link>https://zayn7lie.ber7.org/categories/math/</link>
         <description>Recent content in Math on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/math/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/categories/math/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Geometry: Left Fist Rule</title>
-        <link>http://localhost:1313/posts/math/geo-left_fist/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/geo-left_fist/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-use-left-fist-rule&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-use-left-fist-rule&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we use left-fist rule?
@@ -47,10 +47,10 @@
         </item>
         <item>
         <title>Calculus: Vectors</title>
-        <link>http://localhost:1313/posts/math/cal-vec/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-vec/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-vec/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-vec/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-apply-calculus-to-vector&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-apply-calculus-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we apply calculus to vector?
@@ -454,6 +454,14 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;stokes-theorem&#34;&gt;
+    &lt;a href=&#34;#stokes-theorem&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Stokes&amp;rsquo; Theorem
+&lt;/h3&gt;&lt;h4 id=&#34;2---1-dimension&#34;&gt;
+    &lt;a href=&#34;#2---1-dimension&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    2 - 1 Dimension
+&lt;/h4&gt;&lt;p&gt;C is the edge of D: $C = \partial D$&lt;/p&gt;
+&lt;p&gt;$\Rightarrow \oint_{\partial D} \langle Q(x, y), P(x, y) \rangle \cdot \mathrm{d} \langle x, y \rangle = \iint_D Q_x - P_y ,\mathrm{d}A$&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-integral-with-surface&#34;&gt;
     &lt;a href=&#34;#how-how-to-integral-with-surface&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to integral with Surface
@@ -471,10 +479,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Series</title>
-        <link>http://localhost:1313/posts/math/cal-ser/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-ser/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-ser/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-learn-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we learn Series
@@ -731,10 +739,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Integral</title>
-        <link>http://localhost:1313/posts/math/cal-int/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-int/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -984,10 +992,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Differentiation</title>
-        <link>http://localhost:1313/posts/math/cal-dif/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-dif/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-learn-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we learn differentiation?
