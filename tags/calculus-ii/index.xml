@@ -22,7 +22,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence&lt;/h2&gt;
-&lt;p&gt;Sequences: A list of number written in a definite order $\{a_n\}_{n = 1}^\infty$&lt;/p&gt;
+&lt;p&gt;Sequences: A list of number written in a definite order $\{a_n\}_{n = 1}^\infty\bra{test}$&lt;/p&gt;
 &lt;h3 id=&#34;convergence&#34;&gt;Convergence&lt;/h3&gt;
 &lt;p&gt;$\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/p&gt;
 &lt;p&gt;E.g. $1/x$: for all $\epsilon$, exist $N = \frac{1}{\epsilon}$, for all $n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n$ convergent to 0&lt;/p&gt;
