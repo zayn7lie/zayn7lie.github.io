@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Linux on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.ber7.org/categories/linux/</link>
+        <link>http://localhost:1313/categories/linux/</link>
         <description>Recent content in Linux on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hyprland (Wayland)</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/hyprland/</link>
+        <link>http://localhost:1313/posts/linux/hyprland/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/hyprland/</guid>
+        <guid>http://localhost:1313/posts/linux/hyprland/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;12/05/2023-Updated: I have written a script for autoconfiguration. Uploaded to dot files below.&lt;/p&gt;
 &lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
@@ -234,10 +234,10 @@
         </item>
         <item>
         <title>VSCode All in One</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/vscode/</link>
+        <link>http://localhost:1313/posts/linux/vscode/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/vscode/</guid>
+        <guid>http://localhost:1313/posts/linux/vscode/</guid>
         <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;: &lt;code&gt;Preferences: Configure Runtime Arguments&lt;/code&gt;: &lt;code&gt;&amp;quot;password-store&amp;quot;:&amp;quot;gnome&amp;quot;&lt;/code&gt; or &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/p&gt;
@@ -290,10 +290,10 @@
         </item>
         <item>
         <title>XFCE (X11)</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/xfce/</link>
+        <link>http://localhost:1313/posts/linux/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/xfce/</guid>
+        <guid>http://localhost:1313/posts/linux/xfce/</guid>
         <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
 &lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
 &lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
@@ -469,10 +469,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Arch Linux Installation</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/archlinux/</link>
+        <link>http://localhost:1313/posts/linux/archlinux/</link>
         <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/archlinux/</guid>
+        <guid>http://localhost:1313/posts/linux/archlinux/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
 &lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;Why do I want to switch from Windows to Linux?&lt;/h3&gt;
 &lt;p&gt;First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.&lt;/p&gt;

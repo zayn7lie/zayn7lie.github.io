@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Calculus III on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.ber7.org/tags/calculus-iii/</link>
+        <link>http://localhost:1313/tags/calculus-iii/</link>
         <description>Recent content in Calculus III on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus-iii/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/calculus-iii/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus: Vectors</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-vec/</link>
+        <link>http://localhost:1313/posts/math/cal-vec/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-vec/</guid>
+        <guid>http://localhost:1313/posts/math/cal-vec/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-apply-calculus-to-vector&#34;&gt;WHY: Why should we apply calculus to vector?&lt;/h2&gt;
 &lt;p&gt;More applicable in the real world, like 3D real world, linear algebra, etc.&lt;/p&gt;
 &lt;h2 id=&#34;what-what-is-vector--function-with-multiple-variables&#34;&gt;WHAT: What is vector / function with multiple variables?&lt;/h2&gt;

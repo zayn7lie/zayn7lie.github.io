@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.ber7.org/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>Recent content in Posts on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Geometry: Left Fist Rule</title>
-        <link>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</link>
+        <link>http://localhost:1313/posts/math/geo-left_fist/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</guid>
+        <guid>http://localhost:1313/posts/math/geo-left_fist/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-use-left-fist-rule&#34;&gt;WHY: Why should we use left-fist rule?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The thumb is in the fist which is more lively to some situation. (More in HOW section)&lt;/li&gt;
@@ -41,10 +41,10 @@
         </item>
         <item>
         <title>Calculus: Vectors</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-vec/</link>
+        <link>http://localhost:1313/posts/math/cal-vec/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-vec/</guid>
+        <guid>http://localhost:1313/posts/math/cal-vec/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-apply-calculus-to-vector&#34;&gt;WHY: Why should we apply calculus to vector?&lt;/h2&gt;
 &lt;p&gt;More applicable in the real world, like 3D real world, linear algebra, etc.&lt;/p&gt;
 &lt;h2 id=&#34;what-what-is-vector--function-with-multiple-variables&#34;&gt;WHAT: What is vector / function with multiple variables?&lt;/h2&gt;
@@ -404,10 +404,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Series</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-ser/</link>
+        <link>http://localhost:1313/posts/math/cal-ser/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
+        <guid>http://localhost:1313/posts/math/cal-ser/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -640,10 +640,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>How to Create a Game (Minecraft/Terraria) Server with AWS</title>
-        <link>https://zayn7lie.ber7.org/posts/ettm/server/</link>
+        <link>http://localhost:1313/posts/ettm/server/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/ettm/server/</guid>
+        <guid>http://localhost:1313/posts/ettm/server/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -773,10 +773,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Touhou - 01 EOSD - 01 A Dream that is more Scarlet than Red</title>
-        <link>https://zayn7lie.ber7.org/posts/music/touhou-01-01/</link>
+        <link>http://localhost:1313/posts/music/touhou-01-01/</link>
         <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/music/touhou-01-01/</guid>
+        <guid>http://localhost:1313/posts/music/touhou-01-01/</guid>
         <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://musescore.com/user/36493639/scores/12442168&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Listen in MuseScore&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/zayn7lie/zayn7lie.github.io/master/posts/music-sheet/touhou-01-01.png&#34;
@@ -793,10 +793,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>LICENSE Changing Announcement</title>
-        <link>https://zayn7lie.ber7.org/posts/misc/license/</link>
+        <link>http://localhost:1313/posts/misc/license/</link>
         <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
+        <guid>http://localhost:1313/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1235,10 +1235,10 @@ for any purpose, even commercially.&lt;/li&gt;
         </item>
         <item>
         <title>Calculus: Integral</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-int/</link>
+        <link>http://localhost:1313/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
+        <guid>http://localhost:1313/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1454,10 +1454,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>How to play Arknights on Linux, using MAA and key mapping</title>
-        <link>https://zayn7lie.ber7.org/posts/ettm/arknights/</link>
+        <link>http://localhost:1313/posts/ettm/arknights/</link>
         <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
+        <guid>http://localhost:1313/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1547,10 +1547,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Reading</title>
-        <link>https://zayn7lie.ber7.org/posts/english/reading/</link>
+        <link>http://localhost:1313/posts/english/reading/</link>
         <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/english/reading/</guid>
+        <guid>http://localhost:1313/posts/english/reading/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
 &lt;h3 id=&#34;why-should-we-use-verb-and-logic-to-read-a-passage&#34;&gt;Why should we use verb and logic to read a passage?&lt;/h3&gt;
 &lt;ul&gt;
@@ -1595,10 +1595,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Hyprland (Wayland)</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/hyprland/</link>
+        <link>http://localhost:1313/posts/linux/hyprland/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/hyprland/</guid>
+        <guid>http://localhost:1313/posts/linux/hyprland/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;12/05/2023-Updated: I have written a script for autoconfiguration. Uploaded to dot files below.&lt;/p&gt;
 &lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
@@ -1821,10 +1821,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>VSCode All in One</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/vscode/</link>
+        <link>http://localhost:1313/posts/linux/vscode/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/vscode/</guid>
+        <guid>http://localhost:1313/posts/linux/vscode/</guid>
         <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;: &lt;code&gt;Preferences: Configure Runtime Arguments&lt;/code&gt;: &lt;code&gt;&amp;quot;password-store&amp;quot;:&amp;quot;gnome&amp;quot;&lt;/code&gt; or &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/p&gt;
@@ -1877,10 +1877,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>XFCE (X11)</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/xfce/</link>
+        <link>http://localhost:1313/posts/linux/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/xfce/</guid>
+        <guid>http://localhost:1313/posts/linux/xfce/</guid>
         <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
 &lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
 &lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
@@ -2056,10 +2056,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Arch Linux Installation</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/archlinux/</link>
+        <link>http://localhost:1313/posts/linux/archlinux/</link>
         <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/archlinux/</guid>
+        <guid>http://localhost:1313/posts/linux/archlinux/</guid>
         <description>&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
 &lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;Why do I want to switch from Windows to Linux?&lt;/h3&gt;
 &lt;p&gt;First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.&lt;/p&gt;
@@ -2274,10 +2274,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Differentiation</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
+        <link>http://localhost:1313/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
+        <guid>http://localhost:1313/posts/math/cal-dif/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;WHY: Why should we learn differentiation?&lt;/h2&gt;
 &lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;p&gt;How to sketch a function? - Find the tendency of a function, knowning &lt;em&gt;monotonicity&lt;/em&gt; and &lt;em&gt;concavity&lt;/em&gt;. (&amp;amp; Optimization)&lt;/p&gt;
@@ -2370,10 +2370,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>C&#43;&#43; Basic - 02 Header Files</title>
-        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-02/</link>
+        <link>http://localhost:1313/posts/cpp-algorithm/00-02/</link>
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-02/</guid>
+        <guid>http://localhost:1313/posts/cpp-algorithm/00-02/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-use-header-files&#34;&gt;WHY: Why should we use header files?&lt;/h2&gt;
 &lt;p&gt;In &lt;code&gt;C++ Basic - 01 Function&lt;/code&gt;, we have learned about function. But there are numerous which have been already written, like print function &lt;code&gt;printf()&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-h&#34; data-lang=&#34;h&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;__format, ...){
@@ -2390,10 +2390,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>C&#43;&#43; Basic - 01 Function</title>
-        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/</link>
+        <link>http://localhost:1313/posts/cpp-algorithm/00-01/</link>
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/</guid>
+        <guid>http://localhost:1313/posts/cpp-algorithm/00-01/</guid>
         <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?&lt;/h2&gt;
 &lt;p&gt;I believe many people are confused about the reason we start from function instead of popular &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt;. It is because &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; program is too difficult to beginner.&lt;/p&gt;
 &lt;p&gt;Some people might still be confused with &lt;em&gt;difficult&lt;/em&gt;, then let&amp;rsquo;s have a review of the program first:&lt;/p&gt;
@@ -2581,10 +2581,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Blog Constructing</title>
-        <link>https://zayn7lie.ber7.org/posts/misc/blog/</link>
+        <link>http://localhost:1313/posts/misc/blog/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/misc/blog/</guid>
+        <guid>http://localhost:1313/posts/misc/blog/</guid>
         <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;WHY: Why do I want to construct my blog site?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Contributing to and being involved in the open-source community&lt;/li&gt;

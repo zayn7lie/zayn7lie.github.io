@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Calculus AB on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.ber7.org/tags/calculus-ab/</link>
+        <link>http://localhost:1313/tags/calculus-ab/</link>
         <description>Recent content in Calculus AB on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus-ab/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/calculus-ab/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus: Differentiation</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
+        <link>http://localhost:1313/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
+        <guid>http://localhost:1313/posts/math/cal-dif/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;WHY: Why should we learn differentiation?&lt;/h2&gt;
 &lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;p&gt;How to sketch a function? - Find the tendency of a function, knowning &lt;em&gt;monotonicity&lt;/em&gt; and &lt;em&gt;concavity&lt;/em&gt;. (&amp;amp; Optimization)&lt;/p&gt;
