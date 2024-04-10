@@ -21,8 +21,10 @@ Android Emulator or Container? Emulator Pros: Safety from good separation with s
 Emulator Note. Arknights needs about 3G &#43; 7G storage, above 24G is recommended.">
     <link rel="shortcut icon" href="/favicon.png" />
 
+
         
         <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
+        
         
     </head>
     <body class="
@@ -454,6 +456,102 @@ Emulator Note. Arknights needs about 3G &#43; 7G storage, above 24G is recommend
 </header>
 
     <section class="article-content">
+    
+
+
+
+ 
+
+
+
+
+
+<blockquote>
+<p>Note. This guide is written under Arch Linux</p>
+</blockquote>
+<h2 id="android-emulator-or-container">Android Emulator or Container?</h2>
+<ul>
+<li>Emulator
+<ul>
+<li>Pros: Safety from good separation with system, cross-platform, user-friendly.</li>
+<li>Cons: High system resource usage, easily stuck.</li>
+</ul>
+</li>
+<li>Container
+<ul>
+<li>Pros: Good mosaic with system, less resource usage, running fluently.</li>
+<li>Cons: Complex dependents, more bugs, fewer options</li>
+</ul>
+</li>
+</ul>
+<p>Have a clear mind about the needs and choose one option for running Arknights.</p>
+<h3 id="emulator">Emulator</h3>
+<blockquote>
+<p>Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.</p>
+</blockquote>
+<h4 id="avd-android-virtual-device-the-project-under-android-studiohttpsdeveloperandroidcomstudio"><a class="link" href="https://developer.android.com/studio"  target="_blank" rel="noopener"
+    ><code>AVD</code> (<code>Android Virtual Device</code>, the project under <code>Android Studio</code>)</a></h4>
+<p>AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.</p>
+<p>Download and Install <a class="link" href="https://developer.android.com/studio"  target="_blank" rel="noopener"
+    ><code>Android Studio</code></a> (<code>$ yay -S android-studio</code> in Arch Linux), <code>More Actions</code> &gt; <code>Virtual Device Manager</code>, <code>Create device</code>, and then you could modify emulator by yourself. Android 11 with 16:9 resolution is recommended for <code>MAA</code>.</p>
+<h4 id="genymotionhttpswwwgenymotioncomdownload"><a class="link" href="https://www.genymotion.com/download/"  target="_blank" rel="noopener"
+    ><code>Genymotion</code></a></h4>
+<blockquote>
+<p>Note. Arknights of Bilibili version always break while using <code>Genymotion</code>, you could have a try in your device.</p>
+</blockquote>
+<p><a class="link" href="https://www.genymotion.com/download/"  target="_blank" rel="noopener"
+    ><code>Genymotion</code> offers AppImage (Installer) version</a> that can run directly.</p>
+<p><code>Genymotion</code> is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)</p>
+<h3 id="container">Container</h3>
+<p><code>Waydroid</code> is highly recommended. It is not recommended to use container while using WM that is not run on <code>Wayland</code>. After fixing several bugs of <code>Anbox</code>, I found that numerous API have changed. And Xdroid is too buggy.</p>
+<ul>
+<li>
+<p><code>Waydroid</code> dependence installation</p>
+<ul>
+<li><code>linux-zen</code> kernel: Highly recommend for desktop computer for the kernel has several optimizations for gaming. But it will increase battery usage.</li>
+<li><code>dkms</code> only: Recommend for laptop. <code>$ yay -S binder_linux-dkms</code>. If missing headers, install <code>$ sudo pacman -S linux-headers</code></li>
+</ul>
+</li>
+<li>
+<p><code>Waydroid</code> installation</p>
+<ul>
+<li>Follow <a class="link" href="https://docs.waydro.id/usage/install-on-desktops"  target="_blank" rel="noopener"
+    >this instruction</a> and install depending on your distro. Then <code>$ waydroid init</code>. If report RE, check dependence installation.</li>
+<li><code>waydroid show-full-ui</code> enter Android directly.</li>
+</ul>
+</li>
+</ul>
+<h3 id="arknights-installation">Arknights Installation</h3>
+<p>Although most emulators and containers are able to install directly through dragging <code>.apk</code> to UI, we could also install it using <code>adb</code> which is required by <code>MAA</code>:</p>
+<ul>
+<li><code>adb</code> installation
+<ul>
+<li>If you use <code>Android Studio</code>, you could find <code>adb</code> under <code>~/Android/emulator/platform-tools</code>. You could run shell under the path directly. As for others, <code>$ sudo pacman -S android-tools</code> or install <code>adb</code> in other distros.</li>
+<li><code>$ adb devices</code> check your emulator or container is in the list. If not, please check <code>Android Debug Bridge</code> is enable in <code>Developer Options</code> in Android.</li>
+</ul>
+</li>
+<li>Install Arknights using <code>adb</code>
+<ul>
+<li><code>$ adb install foo</code>, foo is the path of <code>.apk</code> package.</li>
+</ul>
+</li>
+</ul>
+<h2 id="key-mapping">Key Mapping</h2>
+<p>The logic of pause deployment is that click back 🔙 will change the statue of Pause or Unpause. Thus, after dragging out operator, we pass the pause command then we could deploy while game is pause.</p>
+<h3 id="keymapper-android-apphttpsgithubcomkeymapperorgkeymapperreleases"><a class="link" href="https://github.com/keymapperorg/KeyMapper/releases"  target="_blank" rel="noopener"
+    >KeyMapper Android App</a></h3>
+<p>After concerning a lot about how to achieve key mapping on PC, why don&rsquo;t we try to do this on our Android? There are a huge bunch of software, but KeyMapper is the most lightweight and compatible though it pauses developing.</p>
+<h3 id="qtscrcpyhttpsgithubcombarry-ranqtscrcpyreleases"><a class="link" href="https://github.com/barry-ran/QtScrcpy/releases"  target="_blank" rel="noopener"
+    >QtScrcpy</a></h3>
+<p>Origins from <a class="link" href="https://github.com/Genymobile/scrcpy"  target="_blank" rel="noopener"
+    ><code>scrcpy</code></a> of Genymobile, an open-source software copy screen from Android to PC. <code>QtScrcpy</code> add key mapping function from it.</p>
+<h3 id="python-script-using-apis-of-pynput">Python Script (Using APIs of <code>pynput</code>)</h3>
+<p><a class="link" href="https://github.com/Genymobile/scrcpy/issues/712#issuecomment-536564578"  target="_blank" rel="noopener"
+    >Sample</a></p>
+<h2 id="maa">MAA</h2>
+<p>We have described in <a class="link" href="https://maa.plus/docs/en-us/1.5-EMULATOR_SUPPORTS_FOR_LINUX.html"  target="_blank" rel="noopener"
+    >this link</a> clearly. If you want to add something you could make comment or PR directly.</p>
+
     
     
     <blockquote>

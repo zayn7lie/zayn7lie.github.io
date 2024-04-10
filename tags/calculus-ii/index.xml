@@ -22,7 +22,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence&lt;/h2&gt;
-&lt;p&gt;Sequences: A list of number written in a definite order $\{a_n\}_{n = 1}^\infty$&lt;/p&gt;
+&lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
 &lt;h3 id=&#34;convergence&#34;&gt;Convergence&lt;/h3&gt;
 &lt;p&gt;$\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/p&gt;
 &lt;p&gt;E.g. $1/x$: for all $\epsilon$, exist $N = \frac{1}{\epsilon}$, for all $n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n$ convergent to 0&lt;/p&gt;
@@ -196,10 +196,10 @@ $$ \frac{1}{1 - x}, |x| &amp;lt; 1 = 1 + x + x^2 + x^3 \ldots
 $$
 $$ \ln(1 + x) = \int \frac{1}{1 + x}dx = \sum \frac{(-1)^nx^{n + 1}}{n + 1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} \ldots
 $$
-$$ (1 + x)^k = \sum \begin{pmatrix}k \\ n\end{pmatrix}x^n \begin{cases}
-|x| &amp;lt; 1 &amp;amp; k \in \mathbb{R}: \text{abc} \\
-|x| = 1 &amp;amp; k \geq 0: \text{abc}, k \geq -1: \text{con} \\
-|x| = -1 &amp;amp; k \geq 0: \text{con} \\
+$$ (1 + x)^k = \sum \begin{pmatrix}k \ n\end{pmatrix}x^n \begin{cases}
+|x| &amp;lt; 1 &amp;amp; k \in \mathbb{R}: \text{abc} \
+|x| = 1 &amp;amp; k \geq 0: \text{abc}, k \geq -1: \text{con} \
+|x| = -1 &amp;amp; k \geq 0: \text{con} \
 |x| &amp;gt; 1 &amp;amp; \text{di unless $k$ is non negint}
 \end{cases}
 $$&lt;/p&gt;
@@ -282,8 +282,8 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$
 E = \begin{cases}
-\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \\
-\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \\
+\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \
+\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \
 \text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 \end{cases}
 $$&lt;/p&gt;
@@ -441,7 +441,7 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;how-how-to-apply-in-polar-coordinate&#34;&gt;HOW: How to apply in Polar Coordinate&lt;/h2&gt;
 &lt;h3 id=&#34;why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34;&gt;WHY: Why we should learn about Polar Coordinate - Cycloid &amp;amp; Parametric Curves&lt;/h3&gt;
 &lt;p&gt;$$ \begin{cases}
-x = r(\theta - \sin\theta) \\
+x = r(\theta - \sin\theta) \
 y = r(1 - \cos\theta)
 \end{cases}
 $$&lt;/p&gt;

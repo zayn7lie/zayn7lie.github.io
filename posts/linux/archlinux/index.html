@@ -18,8 +18,10 @@ I am able to fully customize my system. Windows have limited a large amount of o
 I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want.">
     <link rel="shortcut icon" href="/favicon.png" />
 
+
         
         <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
+        
         
     </head>
     <body class="
@@ -459,6 +461,227 @@ I am able to fully customize my system. Windows have limited a large amount of o
 </header>
 
     <section class="article-content">
+    
+
+
+
+ 
+
+
+
+
+
+<h2 id="why">WHY</h2>
+<h3 id="why-do-i-want-to-switch-from-windows-to-linux">Why do I want to switch from Windows to Linux?</h3>
+<p>First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.</p>
+<ul>
+<li>I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want. But in Windows, we have to deal with lots of random and unknown services to change only a system font, and then we will get a number of bugs that we cannot solve for the unknown source code.</li>
+<li>I am able to fully maximize my efficiency. If I want to install tools, I could just simply type <code>$ sudo pacman -S ${pachage}</code> or $ <code>sudo apt install ${pachage}</code>, and those packages’ licenses like MIT, GNU are easy to follow. But in Windows, it is time-consuming to download, depackage, install, agree to license, pay for the software, etc.</li>
+<li>I am able to debug by my self. If we encounter a bug, we could just look at the source code and fix the bug. We could also PR to the repos and improve the software together. But for some software in Windows, it is hard to figure out how the software runs.</li>
+<li>We have a large community to solve problems. In Linux, I have solved all bugs and run system smoothly without asking for any help - almost all problems and questions I encountered have been solved in Linux communities or forums.</li>
+<li>I am able to uninstall the services I do not want. In Linux, we are able to install whatever we want and uninstall (remove) whatever we do not want. But in Windows, there are so many services like SMB file transfer that I might not want to use for entire life! The total storage of Pure Arch Linux with Xfce and daily working and gaming software is below 8 G!</li>
+</ul>
+<h3 id="why-do-i-want-to-switch-from-ubuntu-to-arch">Why do I want to switch from Ubuntu to Arch?</h3>
+<ul>
+<li>After using Ubuntu for several months, I have the ability to work smoothly with terminals and have basis understanding of Linux. I want to step in further, and installing Arch Linux is a good approach to that.</li>
+<li>Arch have the most complete wiki that we might be able to solve all problems there!</li>
+<li>Arch Linux has more universal package manager and various packages from different system (it might be <a class="link" href="https://wiki.archlinux.org/title/Arch_User_Repository"  target="_blank" rel="noopener"
+    >AUR</a>).</li>
+<li>Ubuntu still have lots of services I do not know. And gnome is an anti-lightweight desktop environment which could be very annoying.</li>
+<li>Ubuntu with gnome is stepping in commercial and be less community-friendly. And there are some ads of Ubuntu Pro appear in the system.</li>
+</ul>
+<h3 id="why-do-i-want-to-install-arch-linux-without-the-script">Why do I want to install Arch Linux without the script?</h3>
+<p>Learn more about Linux and fully customize for myself.</p>
+<h2 id="what">WHAT</h2>
+<p>Here is an introduction of Arch Linux from its wiki: <a class="link" href="https://wiki.archlinux.org/title/Arch_Linux"  target="_blank" rel="noopener"
+    >https://wiki.archlinux.org/title/Arch_Linux</a></p>
+<h2 id="how">HOW</h2>
+<blockquote>
+<p>Note. This guide is just a simplification, clarification and modification based <a class="link" href="https://wiki.archlinux.org/title/Installation_guide"  target="_blank" rel="noopener"
+    >Arch Linux-Installation Guide</a>. If you have any questions or if I not mention or skip about some necessary steps, you could just read the wiki and find out the answer. By the way, this guide is more focusing on understanding Linux system and how a system could be installed in a machine.</p>
+<p>Every command begin with <code>#</code> meaning it is a shell command. <code>#</code> is always input automatically that you do not need to type it again. E.g. <code># mount /dev/?{nvme0n1p4} /mnt</code> you might only need to type in <code>mount /dev/?{nvme0n1p4} /mnt</code>. <code>$</code>, <code>[iwd]#</code>, etc. is also similar to <code>$</code>.</p>
+<p>Everything with <code>?{ }</code> meaning that you could modify it based on your situation, for example <code># mount /dev/?{nvme0n1p4} /mnt</code> might be <code># mount /dev/sd1 /mnt</code> for you. Everything with <code>!{ }</code> meaning that you could not to type this based on your situation. E.g. <code># arch-chroot /mnt !{/bin/bash}</code> you might only need to run <code># arch-chroot /mnt</code>.</p>
+</blockquote>
+<h3 id="1-preparation">1. Preparation</h3>
+<p>A target machine that you want to install system to. A computer with 16 GB or above disk and AMD or Intel CPU is recommended. (P.S. High RAM is highly recommended. In this guide, I would not introduce how to create SWAP partition because my 16 GB RAM is enough for daily use.)</p>
+<p>A USB flash drive (storage device) that could be modified. A USB with 8 GB or larger is recommended.</p>
+<p>An available network that is able to access to Arch Linux packages. (If you are a Chinese User, this post is recommended to use.) An unhidden network is recommended.</p>
+<h3 id="2-making-an-installation-medium">2. Making an Installation Medium</h3>
+<ul>
+<li>
+<p>Windows User</p>
+<ol>
+<li>Select one release from <a class="link" href="https://geo.mirror.pkgbuild.com/iso/"  target="_blank" rel="noopener"
+    >https://geo.mirror.pkgbuild.com/iso/</a> that is ending with <code>.iso</code> or just download the standard release from <a class="link" href="https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso"  target="_blank" rel="noopener"
+    >https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso</a></li>
+<li>Install Rufus for installing installation image.</li>
+<li>Plug in your medium and using Rufus to install.</li>
+<li>Reboot with your medium and enter BIOS or UEFI.</li>
+<li>Select the installation medium and get into Arch Linux installation and select the first option.</li>
+</ol>
+</li>
+<li>
+<p>Linux User</p>
+<ol>
+<li>Select one release from <a class="link" href="https://geo.mirror.pkgbuild.com/iso/"  target="_blank" rel="noopener"
+    >https://geo.mirror.pkgbuild.com/iso/</a> that is ending with <code>.iso</code> or just download the standard release from <a class="link" href="https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso"  target="_blank" rel="noopener"
+    >https://geo.mirror.pkgbuild.com/iso/2023.06.01/archlinux-x86_64.iso</a></li>
+<li>Burn ISO to your medium: <code># cat ?{path/to/archlinux-version-x86_64.iso} &gt; ?{/dev/disk/by-id/usb-My_flash_drive}</code> (<a class="link" href="https://unix.stackexchange.com/questions/224277/is-it-better-to-use-cat-dd-pv-or-another-procedure-to-copy-a-cd-dvd/224314#224314"  target="_blank" rel="noopener"
+    >Why I prefer to use <code>cat</code></a>)</li>
+<li>Reboot with your medium and enter BIOS or UEFI.</li>
+<li>Select the installation medium and get into Arch Linux installation and select the first option.</li>
+</ol>
+</li>
+</ul>
+<h3 id="3-network-configuration">3. Network Configuration</h3>
+<blockquote>
+<p>Note. The installation medium have installed <code>iwd</code> tool. Although <code>networkmanager</code> is more popular in Arch Linux network settings, <code>iwd</code> is the default network settings tool for installation.</p>
+</blockquote>
+<ol>
+<li><code># iwctl</code> to enter iwd tool.</li>
+<li><code>[iwd]# device list</code> to check your network device. You need to remember your device name and type into ?{wlan0} in the following commands.</li>
+<li><code>[iwd]# station ?{wlan0} get-networks</code> to check your networks and remember your SSID to type into following ${SSID}</li>
+<li><code>[iwd]# station ?{wlan0} connect ${SSID}</code> to connect to SSID, you might need to type password after connect to it.</li>
+<li><code>[iwd]# exit</code> to exit the network tool.</li>
+</ol>
+<h3 id="4-disk-mounting-and-installation">4. Disk Mounting and Installation</h3>
+<blockquote>
+<p>Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.</p>
+</blockquote>
+<ol>
+<li><code># fdisk -l</code> to check your partitions of disk.</li>
+<li><code># mkfs.ext4 /dev/?{nvme0n1p4}</code> to format a partition to ext4 file system for your main Arch Linux System Installation. If you want to install Dual-systems, do not run the following commands: <code># mkfs.vfat -F32 /dev/?{nvme0n1p1}</code> to format a partition to fat32 file system for the boot partition.</li>
+<li><code># mount /dev/?{nvme0n1p4} /mnt</code>, <code># mkdir -p /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code> to connect disk partitions to the installation medium.</li>
+<li><code># lsblk</code> to check your mounting situation. If this not meet your condition, you could modify by <code># unmount /dev/?{nvme0n1p4} /mnt</code> command.</li>
+<li><code># pacstrap -K /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim} !{linux-headers}</code> to install basis Arch Linux. <code>base-devel</code> contains <code>makepkg</code> that is necessary for installing AUR packages. You can install the Linux kernels that you want through <a class="link" href="https://wiki.archlinux.org/title/kernel"  target="_blank" rel="noopener"
+    >https://wiki.archlinux.org/title/kernel</a>. <code>linux-firmware</code> is necessary Linux kernel firmware. <code>e2fsprogs</code> is for configuration of ext4 file system. <code>ntfs-3g</code> is for configuration of NTFS (Windows File System) file system. <code>vim</code> if for latter file editing.</li>
+<li><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code> to generate a <code>fstab</code> file for Linux file tree viewing. It is safer to <code># cat /mnt/etc/fstab</code> to check whether file is generated properly. P.S. Difference between &raquo; and &gt;: &raquo; is appending (add) to the end of the file, &gt; is replacing the file.</li>
+</ol>
+<h3 id="5-user-setting">5. User Setting</h3>
+<ol>
+<li><code># arch-chroot /mnt /bin/bash</code> to change root to <code>/mnt</code> (root user path) using shell in <code>/bin/bash</code>.</li>
+<li><code># passwd</code> to reset the root user password.</li>
+<li><code># echo ?{zayn7lie-acl} &gt; /etc/hostname</code> to reset your machine name.</li>
+<li><code># useradd -m -G wheel -s /bin/bash ${zayn7lie}</code> set up a new user <code>${zayn7lie}</code>, set it log in directory and add to wheel group. <code># passwd ${zayn7lie}</code> to set user’s password. P.S. Wheel group users are used to update system (like a wheel to update continuously)</li>
+<li><code># vim /etc/sudoers</code> to open config file using vim. Type i to enter insert(edit) mode for vim and then find and uncomment (delete <code>#</code>) before <code>%wheel ALL=(ALL:ALL) ALL</code>. Then <code>esc</code> to escape from insert mode and <code>:wq</code> to write in (save) and quit. P.S. <code>:wq!</code> and <code>:q!</code> the <code>!</code> means force. <code>:wq!</code> will force writing in (If the file is unchangeable, it will create a new file and replace it.), and <code>:q!</code> will force you to quite without any change of the file.</li>
+<li><code># vim /etc/hosts</code> to config localhost settings. Insert:</li>
+</ol>
+<pre tabindex="0"><code class="language-hosts" data-lang="hosts">127.0.0.1 localhost
+::1 localhost
+127.0.1.1 ?{zayn7lie-acl}.localdomain ?{zayn7lie-acl}
+</code></pre><p>Replace <code>?{zayn7lie-acl}</code> with your machine name.</p>
+<h3 id="6-language--time">6. Language &amp; Time</h3>
+<ol>
+<li><code># vim /etc/locale.gen</code> to enter language config file, then uncomment <code>en-US.UTF-8 UTF-8</code> and the language you want use, then save the file. <code># locale-gen</code> to generate and install language files.</li>
+<li><code># echo LANG=C.UTF-8 &gt; /etc/locale.conf</code> make system default characters to characters in C.</li>
+<li><code># hwclock --systohc --utc</code> and <code># timedatectl set-ntp true</code> to update your system time to installation medium time.</li>
+<li><code># ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime</code> to config your local time. <code>?{EST}</code> Could be change based on your region. You can use <code># ls /usr/share/zoneinfo/</code> to check which option could be used. Some folder like ./Asia might have subfolders that you need to choose in more specific way. E.G. <code># ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime</code>. P.S. s meaning soft link which will not actually copy all file to the target folder, f meaning force to do it.</li>
+</ol>
+<h3 id="7-launch-setting">7. Launch Setting</h3>
+<ol>
+<li><code># pacman -S ?{amd-ucode} grub efibootmgr</code> to install necessary boot package. If you are using Intel CPU, change <code>?{amd-ucode}</code> to <code>intel-ucode</code></li>
+<li><code># grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&quot;GRUB&quot;} --recheck</code> to install grub file. <code>!{--removable}</code> determines whether you are able to remove it from UEFI, <code>?{&quot;Arch Linux&quot;}</code> is your system name in grub.</li>
+<li><code># grub-mkconfig -o /boot/grub/grub.cfg</code> to generate config file.</li>
+</ol>
+<h3 id="8-misc">8. Misc</h3>
+<p><code># pacman -S networkmanager</code> to install NetworkManager tool, then <code># systemctl enable NetworkManager</code> to let <code>NetworkManager</code> start automatically when you boot your system. As I have mentioned above, <code>networkmanager</code> is more popular than <code>iwd</code>. And <code>iwd</code> is only installed in your installation medium but not your system. You still have to install a network manager tool for your <code>Arch Linux</code>.</p>
+<h3 id="finish-installation">Finish Installation</h3>
+<p>Congratulation! You have installed Arch Linux in your machine. Now you can <code># exit</code> to exit your root user account, <code># reboot</code> and remove installation medium when computer is completely closed. Now, start your journey to <code>Arch Linux</code>!</p>
+<h3 id="post-installation">Post-installation</h3>
+<p>If you encounter any problems or bugs, reading <a class="link" href="https://archlinux.org/"  target="_blank" rel="noopener"
+    >Wiki</a>, <a class="link" href="https://www.google.com/"  target="_blank" rel="noopener"
+    >googling</a> (<a class="link" href="https://duckduckgo.com/"  target="_blank" rel="noopener"
+    >DDG</a> is a better option with high privacy protection), searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in <a class="link" href="http://www.catb.org/~esr/faqs/smart-questions.html"  target="_blank" rel="noopener"
+    >a smart way</a>. That’s all, it is my best hope that you could join and enjoy our open-source communities!</p>
+<h2 id="quick-ref">Quick Ref</h2>
+<ul>
+<li>installation medium:
+<ul>
+<li><code>$ ls -l /dev/disk/by-id/usb-*</code></li>
+<li><code>$ sudo wipefs --all /dev/disk/by-id/usb-SanDisk_Cruzer_Force_4C531000491008113131-0:0</code></li>
+<li><code>$ sudo cat ?{path/to/archlinux-version-x86_64.iso} &gt; ?{/dev/disk/by-id/usb-My_flash_drive}</code></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<p>Network</p>
+<ol>
+<li><code># iwctl</code></li>
+<li><code>[iwd]# station wlan0 get-networks</code>, <code>[iwd]# station wlan0 connect ${SSID}</code></li>
+<li><code>[iwd]# exit</code></li>
+<li><code># timedatectl set-ntp true</code>, <code># hwclock --systohc --utc</code></li>
+</ol>
+</li>
+<li>
+<p>Disk Mounting and Installation</p>
+<ol>
+<li><code># fdisk -l</code></li>
+<li><code># mkfs.ext4 /dev/?{nvme0n1p4}</code>, <code># mount /dev/?{nvme0n1p4} /mnt</code></li>
+<li><code># mkdir /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code></li>
+<li><code># lsblk</code></li>
+<li><code># pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim</code></li>
+<li><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code>, <code># cat /mnt/etc/fstab</code></li>
+</ol>
+</li>
+<li>
+<p>User Setting</p>
+<ol>
+<li>
+<p><code># arch-chroot /mnt /bin/bash</code>, <code># passwd</code>, <code># echo zayn7lie-acl &gt; /etc/hostname</code></p>
+</li>
+<li>
+<p><code># useradd -m -G wheel -s /bin/bash zayn7lie</code>, <code># passwd zayn7lie</code></p>
+</li>
+<li>
+<p><code># vim /etc/sudoers</code> uncomment <code>%wheel ALL=(ALL:ALL)</code></p>
+</li>
+<li>
+<p><code>vim /etc/hosts</code>:</p>
+<pre tabindex="0"><code class="language-hosts" data-lang="hosts">127.0.0.1 localhost
+::1 localhost
+127.0.1.1 zayn7lie-acl.localdomain zayn7lie-acl
+</code></pre></li>
+</ol>
+</li>
+<li>
+<p>Language &amp; Time</p>
+<ol>
+<li><code># vim /etc/locale.gen</code> uncomment <code>en-US.UTF-8 UTF-8</code>, <code># locale-gen</code></li>
+<li><code># echo LANG=C.UTF-8 &gt; /etc/locale.conf</code></li>
+<li><code># ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime</code></li>
+</ol>
+</li>
+<li>
+<p>Launch Setting</p>
+<ol>
+<li><code># pacman -S amd-ucode grub efibootmgr</code></li>
+<li><code># grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --recheck</code></li>
+<li><code># grub-mkconfig -o /boot/grub/grub.cfg</code></li>
+</ol>
+</li>
+<li>
+<p>Final</p>
+<ol>
+<li><code># pacman -S networkmanager</code>, <code># systemctl enable NetworkManager</code></li>
+<li><code># exit</code>, <code># reboot</code></li>
+<li><code>NetworkManager</code>
+<ol>
+<li><code>$ nmcli device wifi list</code></li>
+<li><code>$ nmcli device wifi connect ?{SSID_or_BSSID} password ?{password}</code></li>
+</ol>
+</li>
+<li><code>pacman</code>
+<ol>
+<li>Remove: <code>$ sudo pacman -Run(c or s) package</code></li>
+<li>Auto-clean: <code>$ sudo pacman -Runc $(pacman -Qdtq)</code></li>
+<li>Clean Cache: <code>$ sudo pacman -Sc</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
     
     
     <h2 id="why">WHY</h2>

@@ -15,8 +15,10 @@
 <meta name="twitter:description" content="The end of DE is WM">
     <link rel="shortcut icon" href="/favicon.png" />
 
+
         
         <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
+        
         
     </head>
     <body class="
@@ -446,6 +448,235 @@
 </header>
 
     <section class="article-content">
+    
+
+
+
+ 
+
+
+
+
+
+<blockquote>
+<p>12/05/2023-Updated: I have written a script for autoconfiguration. Uploaded to dot files below.</p>
+<p>This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.</p>
+<p>Dot files could be found in <a class="link" href="https://github.com/zayn7lie/dot-files"  target="_blank" rel="noopener"
+    >https://github.com/zayn7lie/dot-files</a></p>
+</blockquote>
+<h2 id="install">Install</h2>
+<p>Easy to install: <code>$ sudo pacman -S hyprland</code></p>
+<h2 id="config">Config</h2>
+<h3 id="basic">Basic</h3>
+<h4 id="io">IO</h4>
+<ul>
+<li>Disable Mouse Acceleration: add <code>force_no_accel = true</code> to <code>input{}</code> in <code>~/.config/hypr/hyprland.conf</code></li>
+<li>Authorization: <code>polkit-gnome</code>, then add <code>exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</code> to <code>~/.config/hypr/hyprland.conf</code></li>
+<li>Desktop Manager (Could this be called Desktop?): <code>sddm</code>, then <code>$ sudo systemctl enable sddm</code></li>
+</ul>
+<h4 id="system">System</h4>
+<ul>
+<li><code>linux-flowx13</code> specific kernel for ROG Flow X13</li>
+<li><code>SWAPFILE</code> creation: <a class="link" href="https://wiki.archlinux.org/title/Swap#Swap_file"  target="_blank" rel="noopener"
+    >https://wiki.archlinux.org/title/Swap#Swap_file</a></li>
+<li><code>rog-control-center</code></li>
+<li><code>wlogout</code>AUR: logout menu</li>
+<li><code>btop</code>: resource monitor</li>
+<li><code>ntp</code>: time synchronization</li>
+<li><code>firefox</code>: browser
+<ul>
+<li><code>betterfox</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="appearance">Appearance</h4>
+<ul>
+<li>
+<p>Theme Control: <code>qt5ct qt6ct</code> <code>xfce4-settings</code></p>
+<ul>
+<li>Set <code>/etc/environment</code>: <code>QT_QPA_PLATFORMTHEME=qt5ct</code></li>
+</ul>
+</li>
+<li>
+<p>Screen Lock: <code>swaylock-effect</code>, then bind hotkey using <code>bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect</code> in <code>~/.config/hypr/hyprland.conf</code></p>
+<ul>
+<li><code>Swaylock-effect</code> configuration: <code>~/.config/swaylock/config</code></li>
+</ul>
+</li>
+<li>
+<p>background/Wallpaper: <code>swaybg</code>, then add <code>exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png}</code> to <code>~/.config/hypr/hyprland.conf</code> (<code>?{}</code> is the path to your background picture)</p>
+</li>
+<li>
+<p><code>Topbar</code>: <code>waybar</code>, then add <code>exec-once = waybar</code> to <code>~/.config/hypr/hyprland.conf</code></p>
+<ul>
+<li><code>waybar</code> configuration file: <code>~/.config/waybar/config</code></li>
+</ul>
+</li>
+<li>
+<p>Fonts: <code>ttf-ubuntu-font-family</code>, <code>ttf-fira-code</code>, <code>noto-fonts noto-fonts-cjk noto-fonts-emoji</code>, <code>ttf-nerd-fonts-symbols-mono</code></p>
+</li>
+<li>
+<p>Icons: <code>papirus-icon-theme</code></p>
+</li>
+<li>
+<p>Terminal: <code>kitty</code></p>
+<ul>
+<li><code>~/.config/kitty/kitty.conf</code>
+<ul>
+<li><code>font_family      Fira Code</code></li>
+<li><code>scrollback_lines 8192</code></li>
+<li><code>foreground green</code></li>
+<li><code>background_opacity 0.7</code></li>
+</ul>
+</li>
+<li>BUG: Not display properly while using SSH: Add <code>[ &quot;$TERM&quot; = &quot;xterm-kitty&quot; ] &amp;&amp; alias ssh=&quot;kitty +kitten ssh&quot;</code> to <code>~/.bashrc</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="media">Media</h3>
+<h4 id="image">Image</h4>
+<ul>
+<li>Screenshot: AUR<code>grimblast-git</code>, then bind hotkey: <code>bind = $mainMod SHIFT, S, exec, env XDG_SCREENSHOTS_DIR=$HOME/Pictures/Screenshot grimblast copysave area</code> in <code>~/.config/hypr/hyprland.conf</code>
+<ul>
+<li>Copy2Clipboard: <code>wl-clipboard</code></li>
+</ul>
+</li>
+<li>Edit: <code>krita</code>(hand draw friendly) <code>inkscape</code>(vectorize image friendly, especially for researcher who need <code>.svg</code> image) <code>gimp</code>(editor friendly)</li>
+<li>view: <code>nsxiv</code></li>
+<li>Preview: <code>tumbler ffmpegthumbnailer</code></li>
+</ul>
+<h4 id="audio">Audio</h4>
+<ul>
+<li>
+<p>Basis: <code>pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils</code></p>
+</li>
+<li>
+<p>Music Player: <code>audacious</code></p>
+</li>
+<li>
+<p>Music editing: <code>audacity</code></p>
+</li>
+<li>
+<p>Noise suppression: <a class="link" href="https://github.com/werman/noise-suppression-for-voice"  target="_blank" rel="noopener"
+    ><code>noise-suppression-for-voice</code></a>:</p>
+<ul>
+<li>
+<p><code>~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf</code>, then <code>$ systemctl restart --user pipewire.service</code>:</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">context.modules = [
+{   name = libpipewire-module-filter-chain
+    args = {
+        node.description =  &#34;Noise Canceling source&#34;
+        media.name =  &#34;Noise Canceling source&#34;
+        filter.graph = {
+            nodes = [
+                {
+                    type = ladspa
+                    name = rnnoise
+                    plugin = /usr/lib/ladspa/librnnoise_ladspa.so
+                    label = noise_suppressor_mono
+                    control = {
+                        &#34;VAD Threshold (%)&#34; = 50.0
+                        &#34;VAD Grace Period (ms)&#34; = 200
+                        &#34;Retroactive VAD Grace (ms)&#34; = 0
+                    }
+                }
+            ]
+        }
+        capture.props = {
+            node.name =  &#34;capture.rnnoise_source&#34;
+            node.passive = true
+            audio.rate = 48000
+        }
+        playback.props = {
+            node.name =  &#34;rnnoise_source&#34;
+            media.class = Audio/Source
+            audio.rate = 48000
+        }
+    }
+}
+]
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>Bluetooth: <code>bluez bluez-utils blueman</code>, then add <code>blueman-applet</code> to config</p>
+</li>
+</ul>
+<h4 id="video">Video</h4>
+<ul>
+<li>Editor: <code>blender</code></li>
+</ul>
+<h3 id="work">Work</h3>
+<h4 id="input">Input</h4>
+<ul>
+<li>Method: <code>fcitx5</code>
+<ul>
+<li>
+<p>Basis: <code>fcitx5-im fcitx5-chinese-addons</code></p>
+</li>
+<li>
+<p>GUI: <code>fcitx5-nord</code></p>
+</li>
+<li>
+<p><code>/etc/environment</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-env" data-lang="env"><span style="display:flex;"><span>GTK_IM_MODULE<span style="color:#f92672">=</span>fcitx
+</span></span><span style="display:flex;"><span>QT_IM_MODULE<span style="color:#f92672">=</span>fcitx
+</span></span><span style="display:flex;"><span>XMODIFIERS<span style="color:#f92672">=</span>@im<span style="color:#f92672">=</span>fcitx
+</span></span><span style="display:flex;"><span>SDL_IM_MODULE<span style="color:#f92672">=</span>fcitx
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h4 id="writing">Writing</h4>
+<ul>
+<li>Code: <code>code</code>
+<ul>
+<li>GitHub Login: install <code>gnome-keyring</code>, <code>/usr/share/applications/code-oss.desktop</code>: <code>Exec=/usr/bin/code-oss --unity-launch --password-store=&quot;gnome&quot; %F</code></li>
+</ul>
+</li>
+<li>Paper: <code>zotero</code>AUR
+<ul>
+<li><a class="link" href="https://retorque.re/zotero-better-bibtex/"  target="_blank" rel="noopener"
+    ><code>Better BibTeX for Zotero</code>Oth</a>
+<ul>
+<li>Google Style Cite Key: <code>Citation Key Formula</code>: <code>auth.lower + year + shorttitle(1).lower</code></li>
+<li><code>Fields to omit from export</code>: <code>month, abstract, langid, file</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Blog: <code>hugo</code></li>
+<li>Dictionary: <code>goldendict-ng-git</code>AUR</li>
+<li>PDF Notation: <code>mupdf (tesseract-data-eng)</code> <code>xournalpp</code></li>
+</ul>
+<h4 id="social">Social</h4>
+<ul>
+<li>Email: <code>thunderbird</code> <code># evolution evolution-on</code>
+<ul>
+<li><a class="link" href="https://addons.thunderbird.net/en-US/thunderbird/addon/provider-for-google-calendar/"  target="_blank" rel="noopener"
+    >Provider for Google Calendar</a></li>
+</ul>
+</li>
+<li>Chat: <code>telegram-desktop discord</code></li>
+<li>Meeting: <code>zoom</code>AUR</li>
+<li>Discord: <code>webcord</code>AUR</li>
+</ul>
+<h3 id="game">Game</h3>
+<ul>
+<li>
+<p>Steam: <code>steam</code></p>
+<ul>
+<li>enable <code>multilib</code>: <code>/etc/pacman.conf</code> - <code>[multilib]</code> - uncomment <code>Include = /etc/pacman.d/mirrorlist</code>, then refresh: <code>$ sudo pacman -Syy</code></li>
+</ul>
+</li>
+<li>
+<p><code>osu-lazer</code>AUR</p>
+</li>
+<li>
+<p><code>prismlauncher</code>AUR</p>
+</li>
+</ul>
+
     
     
     <blockquote>

@@ -15,8 +15,10 @@
 <meta name="twitter:description" content="Calculus II, Professor: Wenzheng Shi">
     <link rel="shortcut icon" href="/favicon.png" />
 
+
         
         <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
+        
         
     </head>
     <body class="
@@ -467,8 +469,16 @@
 
     <section class="article-content">
     
-    
-    <blockquote>
+
+
+
+ 
+
+
+
+
+
+<blockquote>
 <p>The knowledge marked with * is not necessary in Calculus II</p>
 </blockquote>
 <h2 id="why-why-do-we-want-to-find-out-the-integral">WHY: Why do we want to find out the integral</h2>
@@ -502,9 +512,9 @@ $$</p>
 </ul>
 <p>$$
 E = \begin{cases}
-\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \\
-\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \\
-\text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
+\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&rsquo;&rsquo;\<em>{max}(x)|) \\
+\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&rsquo;&rsquo;\</em>{max}(x)|) \\
+\text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}\_{max}(x)|)
 \end{cases}
 $$</p>
 <h3 id="trans-between-different-variables">Trans between different variables</h3>
@@ -662,6 +672,220 @@ $$</p>
 <h3 id="why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves">WHY: Why we should learn about Polar Coordinate - Cycloid &amp; Parametric Curves</h3>
 <p>$$ \begin{cases}
 x = r(\theta - \sin\theta) \\
+y = r(1 - \cos\theta)
+\end{cases}
+$$</p>
+<p>$$ \frac{dy}{d\theta} = \frac{dy}{dx}\frac{dx}{d\theta} \Rightarrow \frac{dy}{dx} = \frac{dy/d\theta}{dx/d\theta}, \frac{d^2y}{dx^2} = \frac{d}{dx}(\frac{dy}{dx}) = \frac{\frac{d}{d\theta}(\frac{dy}{dx})}{\frac{dx}{d\theta}}
+$$</p>
+<blockquote>
+<p>Why $d^2y/dx^2 \neq \frac{d^2y/d\theta^2}{d^2x/d\theta^2}?$</p>
+<p>If you remember &ldquo;$y$ and $x$ are not in the same manner&rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.</p>
+</blockquote>
+<p>$$ L = \int_{a}^{b}{\sqrt{1 + \frac{dy^2}{dx^2}}}dx = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{dy/dt}{dx/dt})^2}}\frac{dx}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{dx^2}{dt^2} + \frac{dy^2}{dt^2}}}dt
+$$</p>
+<h3 id="what-what-is-polar-coordinates">WHAT: What is Polar Coordinates</h3>
+<p>$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
+$$</p>
+<blockquote>
+<p>$(r, \theta) = (-r, \theta + (2k + 1)\pi) = (r, \theta + 2k\pi)$</p>
+</blockquote>
+
+    
+    
+    <blockquote>
+<p>The knowledge marked with * is not necessary in Calculus II</p>
+</blockquote>
+<h2 id="why-why-do-we-want-to-find-out-the-integral">WHY: Why do we want to find out the integral</h2>
+<ul>
+<li>Find out the area</li>
+<li>Find out some physics parameters</li>
+</ul>
+<h2 id="what-what-is-integral---area-with-positive-and-negative">WHAT: What is integral - &ldquo;Area (with positive and negative)&rdquo;</h2>
+<h3 id="approx-integral">Approx. Integral</h3>
+<blockquote>
+<p>Equaling space is not necessary</p>
+</blockquote>
+<p>Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:</p>
+<p>$$ S (\int_a^b{f(x)}dx) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
+$$</p>
+<p><code>EX-CAL-INT-01-01</code>: Prove $\int_0^1{x^9} = \frac{1}{n}((\frac{1}{n})^9 + (\frac{2}{n})^9 + \ldots + (\frac{n}{n})^9)$</p>
+<p><code>EX-CAL-INT-01-02</code>: Prove $\ln(n + 1) &lt; \sum_{i = 1}^{n}\frac{1}{i} &lt; \ln{n} + 1$</p>
+<ul>
+<li>Riemann integral: left, right, midpoint = $f((x_1 + x_2)/2)$</li>
+<li>Trapezoidal = (left + right)/2</li>
+<li>Simpson</li>
+</ul>
+<p>$$ y = \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)}y_0 + \frac{(x - x_2)(x - x_0)}{(x_1 - x_2)(x_1 - x_0)}y_1 + \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)}y_2
+$$
+$$ if \ (-h, y_0) (0, y_1) (h, y_2) \Rightarrow \int_{-h}^{h}ydx = \frac{h}{3}(y_0 + 4y_1 + y_2)
+$$
+$$ \Rightarrow S = \frac{h}{3}((y_0 + 4y_1 + y_2) + (y_2 + 4y_3 + y_4) + \ldots + (y_{n - 2} + 4y_{n - 1} + y_n)) (n \ is \ even)
+$$</p>
+<ul>
+<li>Error Bond</li>
+</ul>
+<p>$$
+E = \begin{cases}
+\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \
+\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&rsquo;&rsquo;_{max}(x)|) \
+\text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
+\end{cases}
+$$</p>
+<h3 id="trans-between-different-variables">Trans between different variables</h3>
+<p>$$ \int_{C}^{g(x)}{f(t)}dt, \text{assume } F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+$$
+$$ \text{Taking derivative in both sides:} \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
+$$
+$$ F&rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&rsquo;(g(x)) \cdot g&rsquo;(x) - 0 = f(g(x)) \cdot g&rsquo;(x)
+$$
+$$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
+$$</p>
+<h2 id="how-how-to-integral---technique">HOW: How to integral - Technique</h2>
+<h3 id="substitution-if-the-function-combines-with-its-derivative">Substitution: If the function combines with its derivative</h3>
+<blockquote>
+<p>Rules: $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$</p>
+</blockquote>
+<ul>
+<li>$\int{F&rsquo;(g(x)) \cdot g&rsquo;(x)}{dx}$</li>
+</ul>
+<p>$$ u = g(x), du = g&rsquo;(x) dx \Rightarrow \int{F&rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
+$$</p>
+<blockquote>
+<p>Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$</p>
+</blockquote>
+<ul>
+<li>$\int{\frac{1}{x(x^2 + 1)}}{dx}$</li>
+</ul>
+<p>$$ u = \arctan{x}, du = \frac{1}{x^2 + 1}dx, x = \tan{u} \Rightarrow \int{\frac{1}{\tan{u}}}{du}
+$$
+$$ v = \sin{u}, dv = \cos{u}du \Rightarrow \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
+$$</p>
+<ul>
+<li>$\int{\sec^4{x} \tan^3{x}}{dx}$</li>
+</ul>
+<p>$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
+$$</p>
+<p>Exercise:</p>
+<p>$$ \int{\frac{x}{\sqrt{1 - x^2}}}, \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}dx, \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx, \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx, \int{\frac{x^5 - x}{x^8 + 1}}dx
+$$</p>
+<h3 id="integration-by-part-if-the-function-combines-with-a-simple-functions-derivative">Integration by part: If the function combines with a simple function&rsquo;s derivative</h3>
+<ul>
+<li>
+<p>Reduce Power: $\int{x \cdot \sin x}dx$</p>
+</li>
+<li>
+<p>Eliminate complex function: $\int{\ln x}dx$</p>
+</li>
+<li>
+<p>*$\int{\frac{1}{\tan^n{x}}}dx$</p>
+</li>
+</ul>
+<p>$$ \sec^2 - \tan^2 = 1 \Rightarrow \int{\frac{\sec^2 - \tan^2}{\tan^n{x}}}dx = \int{\frac{\sec^2{x}}{\tan^n{x}}}dx - \int{\frac{1}{\tan^{n - 2}{x}}}dx
+$$
+$$ \Rightarrow \int{\frac{1}{u^n}}du - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}dx = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}dx + \int{\frac{1}{\tan^{n - 4}{x}}}dx
+$$
+$$ = \frac{1}{(1 - n)u^{n - 1}} - \frac{1}{(3 - n)u^{n - 3}} + \frac{1}{(5 - n)u^{n - 5}} - \frac{1}{(7 - n)u^{n - 7}} + \ldots (\pm \int{\frac{1}{\tan{x}}}dx) + C
+$$
+$$ \Rightarrow \int{\frac{1}{\tan{x}}}dx, v = \sin{x}, dv = \cos{x}dx \Rightarrow \int{\frac{1}{v}}dv = \ln{|v|} + C
+$$</p>
+<p>Exercise:</p>
+<p>$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}dx, \int(4x^4 + 1)e^{x^4}dx
+$$</p>
+<h3 id="eg-partial-fractions">E.g. Partial Fractions</h3>
+<p>$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &gt;= deg(B) \ or \ deg(C) &lt; deg(D)
+$$
+$$ D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&hellip;(u_jx^2 + v_jx + w_j)^{r_j}
+$$
+$$ \Rightarrow \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g_{j, h}x + h_{j, h}}{(u_jx^2 + v_jx + w_j)^{r_h}}
+$$</p>
+<p>then Integral:</p>
+<ul>
+<li>$\int{\frac{c}{(ax + b)^n}}dx$</li>
+</ul>
+<p>$$ \int{\frac{c}{(ax + b)^n}}dx = \frac{c}{a} \cdot \frac{1}{(1 - n)(ax+b)^{n-1}} + C \ or \ = \frac{c}{a} \cdot \ln{|ax + b|} + C \ when \ n = 1
+$$</p>
+<ul>
+<li>$\int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx$</li>
+</ul>
+<p>$$ \int{\frac{gx + h}{(ax^2 + bx + c)^n}}dx = \int{\frac{gx + h}{(a(x + \frac{b}{2a})^2 + c - \frac{b^2}{4a})^n}}dx, u = x + \frac{b}{2a} \Rightarrow \int{\frac{iu + j}{(au^2 + k^2)^n}}du
+$$
+$$ (1)
+$$
+$$ \int{\frac{iu}{(au^2+k^2)^n}}du, v = au^2 + k^2, \frac{1}{2a}dv = udu
+$$
+$$ \Rightarrow \frac{i}{2a}\int{\frac{1}{v^n}}dv \Rightarrow \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ when \ n = 1
+$$
+$$ (2)
+$$
+$$ \ n = 1: v = \frac{u\sqrt{a}}{k} \Rightarrow \frac{j}{\sqrt{a}}\int{\frac{1}{v^2 + 1}dv} = \frac{j}{\sqrt{a}}\arctan{v} + C
+$$
+$$ *n \neq 1:
+$$
+$$ \int{\frac{1}{(x^2 + 1)^n}}dx, x = \tan{u}, dx = \sec^2{u}du \Rightarrow \int{\frac{1}{\sec^{2n - 2}{u}}}du = \int{\frac{\sec^2{u} - \tan^2{u}}{\sec^{2n - 2}{u}}}du
+$$
+$$ = \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{\tan{u}\sec{u}\tan{u}}{\sec^{2n - 1}{u}}}du, i&rsquo; = \frac{\tan{u}\sec{u}}{\sec^{2n - 1}{u}}, i = \frac{-1}{(2n - 2)\sec^{2n - 2}u}
+$$
+$$ \Rightarrow \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{sec^2{u}}{(2n - 2)\sec^{2n - 2}{u}}}
+$$
+$$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x^2 + 1)^{n - 1}}}
+$$
+$$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}dx + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
+$$</p>
+<p>Exercise.</p>
+<p>$$ \int{ln{(x^2 - x + 3)}}dx, \int{\sec{x}}dx
+$$</p>
+<blockquote>
+<p>Notice. Approx to limit - Improper Integral:
+For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined, we use $t$ to approx. the limit of those points</p>
+<p>$$ \int_a^b{f(x)}dx = \lim_{t \rightarrow b}\int_a^t{f(x)}dx
+$$</p>
+</blockquote>
+<h2 id="how-how-to-apply-integral-to-reality">HOW: How to apply integral to reality</h2>
+<h3 id="rate---differential-equations">Rate - Differential Equations</h3>
+<p>$$ \text{Informal:} \frac{dy}{dx} = \frac{x}{y} \Rightarrow ydy = xdx \Rightarrow \int{y}dy = \int{x}dx
+$$
+$$ \text{*Formal Solution:} \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \Leftrightarrow \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
+$$</p>
+<ul>
+<li>Carrying Capacity:</li>
+</ul>
+<p>$$ \frac{dN}{dt} = rN(1 - \frac{N}{K})
+$$
+$$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{dt} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{dt} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{dt}}dt = \int{r}dt
+$$
+$$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
+$$</p>
+<blockquote>
+<p>$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/dt$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.</p>
+</blockquote>
+<p>$$ x\frac{d^2y}{dx^2} + 2\frac{dy}{dx} = 0 \Rightarrow \int{(x\frac{d^2y}{dx} + \frac{dy}{dx})}dx = \int{-\frac{dy}{dx}}dx \Rightarrow x\frac{dy}{dx} = -y
+$$</p>
+<p>Exercise.</p>
+<p>$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{dt^2}
+$$</p>
+<h3 id="arc-length">Arc Length</h3>
+<p>$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&rsquo;^2}}dx
+$$</p>
+<p>Exercise.</p>
+<p>$$ \text{Find curve length of } y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4
+$$</p>
+<h3 id="areas">Areas</h3>
+<p>$$ A = \lim_{n \rightarrow \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy
+$$</p>
+<h3 id="surface">Surface</h3>
+<p>$$ S = \int{2\pi f(x)\sqrt{1 + f&rsquo;^2}}dx
+$$</p>
+<h3 id="volume">Volume</h3>
+<p>$$ V = \int{A(z)}dz
+$$
+$$ \text{Cylindrical Shells (y-axis): } V = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi ((x + \Delta{x})^2 - x^2)}}
+$$
+$$ = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi (2x \Delta{x} + \Delta^2{x})}} = \int{h(x) 2 \pi x}dx
+$$</p>
+<h2 id="how-how-to-apply-in-polar-coordinate">HOW: How to apply in Polar Coordinate</h2>
+<h3 id="why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves">WHY: Why we should learn about Polar Coordinate - Cycloid &amp; Parametric Curves</h3>
+<p>$$ \begin{cases}
+x = r(\theta - \sin\theta) \
 y = r(1 - \cos\theta)
 \end{cases}
 $$</p>

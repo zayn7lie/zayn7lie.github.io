@@ -15,8 +15,10 @@
 <meta name="twitter:description" content="Using vscode as complier, editor, writer">
     <link rel="shortcut icon" href="/favicon.png" />
 
+
         
         <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
+        
         
     </head>
     <body class="
@@ -441,6 +443,65 @@
 </header>
 
     <section class="article-content">
+    
+
+
+
+ 
+
+
+
+
+
+<h2 id="installation">Installation</h2>
+<p>Code: <code>code</code></p>
+<p>GitHub Login: install <code>gnome-keyring</code>, <code>Ctrl+Shift+P</code>: <code>Preferences: Configure Runtime Arguments</code>: <code>&quot;password-store&quot;:&quot;gnome&quot;</code> or <code>/usr/share/applications/code-oss.desktop</code>: <code>Exec=/usr/bin/code-oss --unity-launch --password-store=&quot;gnome&quot; %F</code></p>
+<p>Word Count: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=kirozen.wordcounter"  target="_blank" rel="noopener"
+    ><code>WordCounter</code>MS</a></p>
+<p>Vim: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim"  target="_blank" rel="noopener"
+    ><code>Vim</code>OOS</a></p>
+<h2 id="latex">Latex</h2>
+<p><a class="link" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"  target="_blank" rel="noopener"
+    ><code>LaTeX Workshop</code>OOS</a></p>
+<ul>
+<li>
+<p>Latex Compiler: There are two popular option for Linux compilers: TexLive <code>texlive</code>arch and MikTex <code>miktex</code>AUR.</p>
+<ul>
+<li>TexLive: Already contains several popular packages for math, music, etc. paper writing, and it is maintained by a group. But it is huge which up to 2 GiB</li>
+<li>MikTex: Only contains core packages, it is needed to install other package through a pop-up windows while it find some packages are using in the content. It is small but only maintained by one person.</li>
+</ul>
+</li>
+<li>
+<p><code>pandoc-bin</code> &amp; <a class="link" href="https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc"  target="_blank" rel="noopener"
+    ><code>vscode-pandoc</code>OOS</a></p>
+</li>
+</ul>
+<h2 id="c">C++</h2>
+<ol>
+<li>
+<p>Install debug tool <code>gdb</code>: <code>$ sudo pacman -S gdb</code></p>
+</li>
+<li>
+<p>Install extension <code>C/C++</code>OOS, then create a file <code>test.cpp</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Hello,</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;world</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+<li>
+<p><code>Terminal</code> -&gt; <code>Config Default Build Task...</code> -&gt; <code>C/C++: g++ build active file</code>; then turn back to <code>test.cpp</code>, click the <code>gear</code> icon: <code>&quot;C/C++: g++ build and debug active file&quot;</code></p>
+</li>
+</ol>
+<h2 id="misc">Misc</h2>
+<ul>
+<li>Excalidraw</li>
+<li>SSH: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh"  target="_blank" rel="noopener"
+    ><code>Remote - SSH</code>MS</a></li>
+</ul>
+
     
     
     <h2 id="installation">Installation</h2>
