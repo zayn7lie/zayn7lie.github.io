@@ -2,416 +2,416 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.ber7.org/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Recent content in Tags on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Geometry</title>
-        <link>https://zayn7lie.ber7.org/tags/geometry/</link>
+        <link>http://localhost:1313/tags/geometry/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/geometry/</guid>
+        <guid>http://localhost:1313/tags/geometry/</guid>
         <description></description>
         </item>
         <item>
         <title>Left Fist Rule</title>
-        <link>https://zayn7lie.ber7.org/tags/left-fist-rule/</link>
+        <link>http://localhost:1313/tags/left-fist-rule/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/left-fist-rule/</guid>
+        <guid>http://localhost:1313/tags/left-fist-rule/</guid>
         <description></description>
         </item>
         <item>
         <title>Multiple Integrals</title>
-        <link>https://zayn7lie.ber7.org/tags/multiple-integrals/</link>
+        <link>http://localhost:1313/tags/multiple-integrals/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/multiple-integrals/</guid>
+        <guid>http://localhost:1313/tags/multiple-integrals/</guid>
         <description></description>
         </item>
         <item>
         <title>Partial Derivatives</title>
-        <link>https://zayn7lie.ber7.org/tags/partial-derivatives/</link>
+        <link>http://localhost:1313/tags/partial-derivatives/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/partial-derivatives/</guid>
+        <guid>http://localhost:1313/tags/partial-derivatives/</guid>
         <description></description>
         </item>
         <item>
         <title>Right Hand Rule</title>
-        <link>https://zayn7lie.ber7.org/tags/right-hand-rule/</link>
+        <link>http://localhost:1313/tags/right-hand-rule/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/right-hand-rule/</guid>
+        <guid>http://localhost:1313/tags/right-hand-rule/</guid>
         <description></description>
         </item>
         <item>
         <title>Vector Calculus</title>
-        <link>https://zayn7lie.ber7.org/tags/vector-calculus/</link>
+        <link>http://localhost:1313/tags/vector-calculus/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/vector-calculus/</guid>
+        <guid>http://localhost:1313/tags/vector-calculus/</guid>
         <description></description>
         </item>
         <item>
         <title>Calculus</title>
-        <link>https://zayn7lie.ber7.org/tags/calculus/</link>
+        <link>http://localhost:1313/tags/calculus/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/calculus/</guid>
+        <guid>http://localhost:1313/tags/calculus/</guid>
         <description></description>
         </item>
         <item>
         <title>Calculus III</title>
-        <link>https://zayn7lie.ber7.org/tags/calculus-iii/</link>
+        <link>http://localhost:1313/tags/calculus-iii/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/calculus-iii/</guid>
+        <guid>http://localhost:1313/tags/calculus-iii/</guid>
         <description></description>
         </item>
         <item>
         <title>Integral</title>
-        <link>https://zayn7lie.ber7.org/tags/integral/</link>
+        <link>http://localhost:1313/tags/integral/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/integral/</guid>
+        <guid>http://localhost:1313/tags/integral/</guid>
         <description></description>
         </item>
         <item>
         <title>Math</title>
-        <link>https://zayn7lie.ber7.org/tags/math/</link>
+        <link>http://localhost:1313/tags/math/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/math/</guid>
+        <guid>http://localhost:1313/tags/math/</guid>
         <description></description>
         </item>
         <item>
         <title>AP</title>
-        <link>https://zayn7lie.ber7.org/tags/ap/</link>
+        <link>http://localhost:1313/tags/ap/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/ap/</guid>
+        <guid>http://localhost:1313/tags/ap/</guid>
         <description></description>
         </item>
         <item>
         <title>Calculus BC</title>
-        <link>https://zayn7lie.ber7.org/tags/calculus-bc/</link>
+        <link>http://localhost:1313/tags/calculus-bc/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/calculus-bc/</guid>
+        <guid>http://localhost:1313/tags/calculus-bc/</guid>
         <description></description>
         </item>
         <item>
         <title>Calculus II</title>
-        <link>https://zayn7lie.ber7.org/tags/calculus-ii/</link>
+        <link>http://localhost:1313/tags/calculus-ii/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/calculus-ii/</guid>
+        <guid>http://localhost:1313/tags/calculus-ii/</guid>
         <description></description>
         </item>
         <item>
         <title>Sequense</title>
-        <link>https://zayn7lie.ber7.org/tags/sequense/</link>
+        <link>http://localhost:1313/tags/sequense/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/sequense/</guid>
+        <guid>http://localhost:1313/tags/sequense/</guid>
         <description></description>
         </item>
         <item>
         <title>Series</title>
-        <link>https://zayn7lie.ber7.org/tags/series/</link>
+        <link>http://localhost:1313/tags/series/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/series/</guid>
+        <guid>http://localhost:1313/tags/series/</guid>
         <description></description>
         </item>
         <item>
         <title>AWS</title>
-        <link>https://zayn7lie.ber7.org/tags/aws/</link>
+        <link>http://localhost:1313/tags/aws/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/aws/</guid>
+        <guid>http://localhost:1313/tags/aws/</guid>
         <description></description>
         </item>
         <item>
         <title>Linux</title>
-        <link>https://zayn7lie.ber7.org/tags/linux/</link>
+        <link>http://localhost:1313/tags/linux/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/linux/</guid>
+        <guid>http://localhost:1313/tags/linux/</guid>
         <description></description>
         </item>
         <item>
         <title>Minecraft</title>
-        <link>https://zayn7lie.ber7.org/tags/minecraft/</link>
+        <link>http://localhost:1313/tags/minecraft/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/minecraft/</guid>
+        <guid>http://localhost:1313/tags/minecraft/</guid>
         <description></description>
         </item>
         <item>
         <title>Server</title>
-        <link>https://zayn7lie.ber7.org/tags/server/</link>
+        <link>http://localhost:1313/tags/server/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/server/</guid>
+        <guid>http://localhost:1313/tags/server/</guid>
         <description></description>
         </item>
         <item>
         <title>EOSD</title>
-        <link>https://zayn7lie.ber7.org/tags/eosd/</link>
+        <link>http://localhost:1313/tags/eosd/</link>
         <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/eosd/</guid>
+        <guid>http://localhost:1313/tags/eosd/</guid>
         <description></description>
         </item>
         <item>
         <title>Music</title>
-        <link>https://zayn7lie.ber7.org/tags/music/</link>
+        <link>http://localhost:1313/tags/music/</link>
         <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/music/</guid>
+        <guid>http://localhost:1313/tags/music/</guid>
         <description></description>
         </item>
         <item>
         <title>Re-Compose</title>
-        <link>https://zayn7lie.ber7.org/tags/re-compose/</link>
+        <link>http://localhost:1313/tags/re-compose/</link>
         <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/re-compose/</guid>
+        <guid>http://localhost:1313/tags/re-compose/</guid>
         <description></description>
         </item>
         <item>
         <title>Sheet/Score</title>
-        <link>https://zayn7lie.ber7.org/tags/sheet/score/</link>
+        <link>http://localhost:1313/tags/sheet/score/</link>
         <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/sheet/score/</guid>
+        <guid>http://localhost:1313/tags/sheet/score/</guid>
         <description></description>
         </item>
         <item>
         <title>Touhou</title>
-        <link>https://zayn7lie.ber7.org/tags/touhou/</link>
+        <link>http://localhost:1313/tags/touhou/</link>
         <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/touhou/</guid>
+        <guid>http://localhost:1313/tags/touhou/</guid>
         <description></description>
         </item>
         <item>
         <title>LICENSE</title>
-        <link>https://zayn7lie.ber7.org/tags/license/</link>
+        <link>http://localhost:1313/tags/license/</link>
         <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/license/</guid>
+        <guid>http://localhost:1313/tags/license/</guid>
         <description></description>
         </item>
         <item>
         <title>Misc</title>
-        <link>https://zayn7lie.ber7.org/tags/misc/</link>
+        <link>http://localhost:1313/tags/misc/</link>
         <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/misc/</guid>
+        <guid>http://localhost:1313/tags/misc/</guid>
         <description></description>
         </item>
         <item>
         <title>Arknights</title>
-        <link>https://zayn7lie.ber7.org/tags/arknights/</link>
+        <link>http://localhost:1313/tags/arknights/</link>
         <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/arknights/</guid>
+        <guid>http://localhost:1313/tags/arknights/</guid>
         <description></description>
         </item>
         <item>
         <title>English</title>
-        <link>https://zayn7lie.ber7.org/tags/english/</link>
+        <link>http://localhost:1313/tags/english/</link>
         <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/english/</guid>
+        <guid>http://localhost:1313/tags/english/</guid>
         <description></description>
         </item>
         <item>
         <title>Reading</title>
-        <link>https://zayn7lie.ber7.org/tags/reading/</link>
+        <link>http://localhost:1313/tags/reading/</link>
         <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/reading/</guid>
+        <guid>http://localhost:1313/tags/reading/</guid>
         <description></description>
         </item>
         <item>
         <title>TOEFL</title>
-        <link>https://zayn7lie.ber7.org/tags/toefl/</link>
+        <link>http://localhost:1313/tags/toefl/</link>
         <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/toefl/</guid>
+        <guid>http://localhost:1313/tags/toefl/</guid>
         <description></description>
         </item>
         <item>
         <title>Arch Linux</title>
-        <link>https://zayn7lie.ber7.org/tags/arch-linux/</link>
+        <link>http://localhost:1313/tags/arch-linux/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/arch-linux/</guid>
+        <guid>http://localhost:1313/tags/arch-linux/</guid>
         <description></description>
         </item>
         <item>
         <title>C&#43;&#43;</title>
-        <link>https://zayn7lie.ber7.org/tags/c&#43;&#43;/</link>
+        <link>http://localhost:1313/tags/c&#43;&#43;/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/c&#43;&#43;/</guid>
+        <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
         <description></description>
         </item>
         <item>
         <title>Config</title>
-        <link>https://zayn7lie.ber7.org/tags/config/</link>
+        <link>http://localhost:1313/tags/config/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/config/</guid>
+        <guid>http://localhost:1313/tags/config/</guid>
         <description></description>
         </item>
         <item>
         <title>DE</title>
-        <link>https://zayn7lie.ber7.org/tags/de/</link>
+        <link>http://localhost:1313/tags/de/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/de/</guid>
+        <guid>http://localhost:1313/tags/de/</guid>
         <description></description>
         </item>
         <item>
         <title>Hyprland</title>
-        <link>https://zayn7lie.ber7.org/tags/hyprland/</link>
+        <link>http://localhost:1313/tags/hyprland/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/hyprland/</guid>
+        <guid>http://localhost:1313/tags/hyprland/</guid>
         <description></description>
         </item>
         <item>
         <title>Install</title>
-        <link>https://zayn7lie.ber7.org/tags/install/</link>
+        <link>http://localhost:1313/tags/install/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/install/</guid>
+        <guid>http://localhost:1313/tags/install/</guid>
         <description></description>
         </item>
         <item>
         <title>Latex</title>
-        <link>https://zayn7lie.ber7.org/tags/latex/</link>
+        <link>http://localhost:1313/tags/latex/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/latex/</guid>
+        <guid>http://localhost:1313/tags/latex/</guid>
         <description></description>
         </item>
         <item>
         <title>Markdown</title>
-        <link>https://zayn7lie.ber7.org/tags/markdown/</link>
+        <link>http://localhost:1313/tags/markdown/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/markdown/</guid>
+        <guid>http://localhost:1313/tags/markdown/</guid>
         <description></description>
         </item>
         <item>
         <title>Python</title>
-        <link>https://zayn7lie.ber7.org/tags/python/</link>
+        <link>http://localhost:1313/tags/python/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/python/</guid>
+        <guid>http://localhost:1313/tags/python/</guid>
         <description></description>
         </item>
         <item>
         <title>VSCode</title>
-        <link>https://zayn7lie.ber7.org/tags/vscode/</link>
+        <link>http://localhost:1313/tags/vscode/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/vscode/</guid>
+        <guid>http://localhost:1313/tags/vscode/</guid>
         <description></description>
         </item>
         <item>
         <title>WM</title>
-        <link>https://zayn7lie.ber7.org/tags/wm/</link>
+        <link>http://localhost:1313/tags/wm/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/wm/</guid>
+        <guid>http://localhost:1313/tags/wm/</guid>
         <description></description>
         </item>
         <item>
         <title>XFCE</title>
-        <link>https://zayn7lie.ber7.org/tags/xfce/</link>
+        <link>http://localhost:1313/tags/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/xfce/</guid>
+        <guid>http://localhost:1313/tags/xfce/</guid>
         <description></description>
         </item>
         <item>
         <title>Calculus AB</title>
-        <link>https://zayn7lie.ber7.org/tags/calculus-ab/</link>
+        <link>http://localhost:1313/tags/calculus-ab/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/calculus-ab/</guid>
+        <guid>http://localhost:1313/tags/calculus-ab/</guid>
         <description></description>
         </item>
         <item>
         <title>Calculus I</title>
-        <link>https://zayn7lie.ber7.org/tags/calculus-i/</link>
+        <link>http://localhost:1313/tags/calculus-i/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/calculus-i/</guid>
+        <guid>http://localhost:1313/tags/calculus-i/</guid>
         <description></description>
         </item>
         <item>
         <title>Differentiation</title>
-        <link>https://zayn7lie.ber7.org/tags/differentiation/</link>
+        <link>http://localhost:1313/tags/differentiation/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/differentiation/</guid>
+        <guid>http://localhost:1313/tags/differentiation/</guid>
         <description></description>
         </item>
         <item>
         <title>CSCI</title>
-        <link>https://zayn7lie.ber7.org/tags/csci/</link>
+        <link>http://localhost:1313/tags/csci/</link>
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/csci/</guid>
+        <guid>http://localhost:1313/tags/csci/</guid>
         <description></description>
         </item>
         <item>
         <title>Program Language</title>
-        <link>https://zayn7lie.ber7.org/tags/program-language/</link>
+        <link>http://localhost:1313/tags/program-language/</link>
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/program-language/</guid>
+        <guid>http://localhost:1313/tags/program-language/</guid>
         <description></description>
         </item>
         <item>
         <title>Blog</title>
-        <link>https://zayn7lie.ber7.org/tags/blog/</link>
+        <link>http://localhost:1313/tags/blog/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/blog/</guid>
+        <guid>http://localhost:1313/tags/blog/</guid>
         <description></description>
         </item>
         <item>
         <title>GitHub Page</title>
-        <link>https://zayn7lie.ber7.org/tags/github-page/</link>
+        <link>http://localhost:1313/tags/github-page/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/github-page/</guid>
+        <guid>http://localhost:1313/tags/github-page/</guid>
         <description></description>
         </item>
         <item>
         <title>Hugo</title>
-        <link>https://zayn7lie.ber7.org/tags/hugo/</link>
+        <link>http://localhost:1313/tags/hugo/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/hugo/</guid>
+        <guid>http://localhost:1313/tags/hugo/</guid>
         <description></description>
         </item>
         <item>
         <title>Stack</title>
-        <link>https://zayn7lie.ber7.org/tags/stack/</link>
+        <link>http://localhost:1313/tags/stack/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/tags/stack/</guid>
+        <guid>http://localhost:1313/tags/stack/</guid>
         <description></description>
         </item>
         

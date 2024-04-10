@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>AP on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.ber7.org/tags/ap/</link>
+        <link>http://localhost:1313/tags/ap/</link>
         <description>Recent content in AP on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/ap/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ap/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus: Series</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-ser/</link>
+        <link>http://localhost:1313/posts/math/cal-ser/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
+        <guid>http://localhost:1313/posts/math/cal-ser/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-learn-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we learn Series
@@ -268,10 +268,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Integral</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-int/</link>
+        <link>http://localhost:1313/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
+        <guid>http://localhost:1313/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -322,11 +322,11 @@ $$&lt;/p&gt;
     Trans between different variables
 &lt;/h3&gt;&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, \text{assume } F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
-$$ \text{Taking derivative in both sides:} \frac{d}{,\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{,\mathrm{d}x}F(g(x)) - \frac{d}{,\mathrm{d}x}F(C)
+$$ \text{Taking derivative in both sides:} \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{\mathrm{d}x}F(g(x)) - \frac{d}{\mathrm{d}x}F(C)
 $$
 $$ F&amp;rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) - 0 = f(g(x)) \cdot g&amp;rsquo;(x)
 $$
-$$ \therefore \frac{d}{,\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{d}{,\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
+$$ \therefore \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{d}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
 $$&lt;/p&gt;
 &lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;
     &lt;a href=&#34;#how-how-to-integral---technique&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
@@ -335,10 +335,10 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#substitution-if-the-function-combines-with-its-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Substitution: If the function combines with its derivative
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Rules: $\frac{df}{,\mathrm{d}x} = \frac{df}{dh} \cdot \frac{dh}{,\mathrm{d}x}$&lt;/p&gt;
+&lt;p&gt;Rules: $\frac{df}{\mathrm{d}x} = \frac{df}{dh} \cdot \frac{dh}{\mathrm{d}x}$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{,\mathrm{d}x}$&lt;/li&gt;
+&lt;li&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$ u = g(x), du = g&amp;rsquo;(x) ,\mathrm{d}x \Rightarrow \int{F&amp;rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
 $$&lt;/p&gt;
@@ -346,14 +346,14 @@ $$&lt;/p&gt;
 &lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;$\int{\frac{1}{x(x^2 + 1)}}{,\mathrm{d}x}$&lt;/li&gt;
+&lt;li&gt;$\int{\frac{1}{x(x^2 + 1)}}{\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$ u = \arctan{x}, du = \frac{1}{x^2 + 1},\mathrm{d}x, x = \tan{u} \Rightarrow \int{\frac{1}{\tan{u}}}{du}
 $$
 $$ v = \sin{u}, dv = \cos{u}du \Rightarrow \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{,\mathrm{d}x}$&lt;/li&gt;
+&lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
 $$&lt;/p&gt;
@@ -442,9 +442,9 @@ $$&lt;/p&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;rate---differential-equations&#34;&gt;
     &lt;a href=&#34;#rate---differential-equations&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Rate - Differential Equations
-&lt;/h3&gt;&lt;p&gt;$$ \text{Informal:} \frac{,\mathrm{d}y}{,\mathrm{d}x} = \frac{x}{y} \Rightarrow y,\mathrm{d}y = x,\mathrm{d}x \Rightarrow \int{y},\mathrm{d}y = \int{x},\mathrm{d}x
+&lt;/h3&gt;&lt;p&gt;$$ \text{Informal:} \frac{,\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y,\mathrm{d}y = x,\mathrm{d}x \Rightarrow \int{y},\mathrm{d}y = \int{x},\mathrm{d}x
 $$
-$$ \text{*Formal Solution:} \frac{d}{,\mathrm{d}x}{y(t(x))} = \frac{,\mathrm{d}y}{dt} \cdot \frac{dt}{,\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{dt}{,\mathrm{d}x})},\mathrm{d}x = \int{(y \frac{dt}{,\mathrm{d}x})},\mathrm{d}x = \frac{y^2}{2}
+$$ \text{*Formal Solution:} \frac{d}{\mathrm{d}x}{y(t(x))} = \frac{,\mathrm{d}y}{dt} \cdot \frac{dt}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{dt}{\mathrm{d}x})},\mathrm{d}x = \int{(y \frac{dt}{\mathrm{d}x})},\mathrm{d}x = \frac{y^2}{2}
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Carrying Capacity:&lt;/li&gt;
@@ -458,7 +458,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/dt$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;$$ x\frac{d^2y}{,\mathrm{d}x^2} + 2\frac{,\mathrm{d}y}{,\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{,\mathrm{d}x} + \frac{,\mathrm{d}y}{,\mathrm{d}x})},\mathrm{d}x = \int{-\frac{,\mathrm{d}y}{,\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{,\mathrm{d}y}{,\mathrm{d}x} = -y
+&lt;p&gt;$$ x\frac{d^2y}{,\mathrm{d}x^2} + 2\frac{,\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{\mathrm{d}x} + \frac{,\mathrm{d}y}{\mathrm{d}x})},\mathrm{d}x = \int{-\frac{,\mathrm{d}y}{\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{,\mathrm{d}y}{\mathrm{d}x} = -y
 $$&lt;/p&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{dt^2}
@@ -501,13 +501,13 @@ x = r(\theta - \sin\theta) \
 y = r(1 - \cos\theta)
 \end{cases}
 $$&lt;/p&gt;
-&lt;p&gt;$$ \frac{,\mathrm{d}y}{d\theta} = \frac{,\mathrm{d}y}{,\mathrm{d}x}\frac{,\mathrm{d}x}{d\theta} \Rightarrow \frac{,\mathrm{d}y}{,\mathrm{d}x} = \frac{,\mathrm{d}y/d\theta}{,\mathrm{d}x/d\theta}, \frac{d^2y}{,\mathrm{d}x^2} = \frac{d}{,\mathrm{d}x}(\frac{,\mathrm{d}y}{,\mathrm{d}x}) = \frac{\frac{d}{d\theta}(\frac{,\mathrm{d}y}{,\mathrm{d}x})}{\frac{,\mathrm{d}x}{d\theta}}
+&lt;p&gt;$$ \frac{,\mathrm{d}y}{d\theta} = \frac{,\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{d\theta} \Rightarrow \frac{,\mathrm{d}y}{\mathrm{d}x} = \frac{,\mathrm{d}y/d\theta}{\mathrm{d}x/d\theta}, \frac{d^2y}{,\mathrm{d}x^2} = \frac{d}{\mathrm{d}x}(\frac{,\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{d}{d\theta}(\frac{,\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{d\theta}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Why $d^2y/,\mathrm{d}x^2 \neq \frac{d^2y/d\theta^2}{d^2x/d\theta^2}?$&lt;/p&gt;
 &lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{,\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{,\mathrm{d}y/dt}{,\mathrm{d}x/dt})^2}}\frac{,\mathrm{d}x}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{,\mathrm{d}x^2}{dt^2} + \frac{,\mathrm{d}y^2}{dt^2}}}dt
+&lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{,\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{,\mathrm{d}y/dt}{\mathrm{d}x/dt})^2}}\frac{\mathrm{d}x}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{,\mathrm{d}x^2}{dt^2} + \frac{,\mathrm{d}y^2}{dt^2}}}dt
 $$&lt;/p&gt;
 &lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;
     &lt;a href=&#34;#what-what-is-polar-coordinates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
@@ -521,10 +521,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Differentiation</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
+        <link>http://localhost:1313/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
+        <guid>http://localhost:1313/posts/math/cal-dif/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-learn-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we learn differentiation?
