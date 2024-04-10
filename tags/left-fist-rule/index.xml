@@ -2,30 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Left Fist Rule on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/left-fist-rule/</link>
+        <link>https://zayn7lie.ber7.org/tags/left-fist-rule/</link>
         <description>Recent content in Left Fist Rule on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/left-fist-rule/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/left-fist-rule/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Geometry: Left Fist Rule</title>
-        <link>http://localhost:1313/posts/math/geo-left_fist/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/geo-left_fist/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-use-left-fist-rule&#34;&gt;WHY: Why should we use left-fist rule?&lt;/h2&gt;
-&lt;ul&gt;
+        <guid>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</guid>
+        <description>&lt;h2 id=&#34;why-why-should-we-use-left-fist-rule&#34;&gt;
+    &lt;a href=&#34;#why-why-should-we-use-left-fist-rule&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why should we use left-fist rule?
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;The thumb is in the fist which is more lively to some situation. (More in HOW section)&lt;/li&gt;
 &lt;li&gt;I do not want to put down my pen when I am thinking and writing. (Sorry for the left-handed)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-left-fist-rule&#34;&gt;WHAT: What is the left-fist rule?&lt;/h2&gt;
-&lt;ol&gt;
+&lt;h2 id=&#34;what-what-is-the-left-fist-rule&#34;&gt;
+    &lt;a href=&#34;#what-what-is-the-left-fist-rule&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is the left-fist rule?
+&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Raise your left hand with thumb in your palm&lt;/li&gt;
 &lt;li&gt;Point your rest four fingers to $x$ OR one of the radius direction&lt;/li&gt;
 &lt;li&gt;Find a way so that you could scroll your fingers to $y$ direction to form a fist OR along the spin direction&lt;/li&gt;
 &lt;li&gt;the direction of your thumb is $z$ direction&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;how-how-to-apply-the-left-fist-rule&#34;&gt;HOW: How to apply the left-fist rule?&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;how-how-to-apply-the-left-fist-rule&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-the-left-fist-rule&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply the left-fist rule?
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;X-Y-Z direction: point fingers to $x$, find a way scroll to $y$, your thumb in your fist is pointing at $z$&lt;/li&gt;
 &lt;li&gt;Cross Product $\vec{A} \times \vec{B}$: pointing four fingers to the direction of $\vec{A}$ with thumb in the palm, then curling four finger to the direction of $\vec{B}$, thumb in the fist is the direction of $\vec{A} \times \vec{B}$&lt;/li&gt;
 &lt;li&gt;Torque direction: point fingers to the radius $R$, scroll with the force direction $F$, your thumb in your fist is pointing at the torque direction.&lt;/li&gt;

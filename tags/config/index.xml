@@ -2,34 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Config on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/config/</link>
+        <link>https://zayn7lie.ber7.org/tags/config/</link>
         <description>Recent content in Config on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/config/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/config/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hyprland (Wayland)</title>
-        <link>http://localhost:1313/posts/linux/hyprland/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/hyprland/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/hyprland/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/hyprland/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;12/05/2023-Updated: I have written a script for autoconfiguration. Uploaded to dot files below.&lt;/p&gt;
 &lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
 &lt;p&gt;Dot files could be found in &lt;a class=&#34;link&#34; href=&#34;https://github.com/zayn7lie/dot-files&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/zayn7lie/dot-files&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;Easy to install: &lt;code&gt;$ sudo pacman -S hyprland&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;config&#34;&gt;Config&lt;/h2&gt;
-&lt;h3 id=&#34;basic&#34;&gt;Basic&lt;/h3&gt;
-&lt;h4 id=&#34;io&#34;&gt;IO&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;install&#34;&gt;
+    &lt;a href=&#34;#install&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Install
+&lt;/h2&gt;&lt;p&gt;Easy to install: &lt;code&gt;$ sudo pacman -S hyprland&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;config&#34;&gt;
+    &lt;a href=&#34;#config&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Config
+&lt;/h2&gt;&lt;h3 id=&#34;basic&#34;&gt;
+    &lt;a href=&#34;#basic&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Basic
+&lt;/h3&gt;&lt;h4 id=&#34;io&#34;&gt;
+    &lt;a href=&#34;#io&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    IO
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Disable Mouse Acceleration: add &lt;code&gt;force_no_accel = true&lt;/code&gt; to &lt;code&gt;input{}&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Authorization: &lt;code&gt;polkit-gnome&lt;/code&gt;, then add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Desktop Manager (Could this be called Desktop?): &lt;code&gt;sddm&lt;/code&gt;, then &lt;code&gt;$ sudo systemctl enable sddm&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;system&#34;&gt;System&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;system&#34;&gt;
+    &lt;a href=&#34;#system&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    System
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;linux-flowx13&lt;/code&gt; specific kernel for ROG Flow X13&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;SWAPFILE&lt;/code&gt; creation: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Swap#Swap_file&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/Swap#Swap_file&lt;/a&gt;&lt;/li&gt;
@@ -43,8 +53,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;appearance&#34;&gt;Appearance&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;appearance&#34;&gt;
+    &lt;a href=&#34;#appearance&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Appearance
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Theme Control: &lt;code&gt;qt5ct qt6ct&lt;/code&gt; &lt;code&gt;xfce4-settings&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -87,9 +99,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
-&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;media&#34;&gt;
+    &lt;a href=&#34;#media&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Media
+&lt;/h3&gt;&lt;h4 id=&#34;image&#34;&gt;
+    &lt;a href=&#34;#image&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Image
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Screenshot: AUR&lt;code&gt;grimblast-git&lt;/code&gt;, then bind hotkey: &lt;code&gt;bind = $mainMod SHIFT, S, exec, env XDG_SCREENSHOTS_DIR=$HOME/Pictures/Screenshot grimblast copysave area&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;Copy2Clipboard: &lt;code&gt;wl-clipboard&lt;/code&gt;&lt;/li&gt;
@@ -99,8 +115,10 @@
 &lt;li&gt;view: &lt;code&gt;nsxiv&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Preview: &lt;code&gt;tumbler ffmpegthumbnailer&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;audio&#34;&gt;Audio&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;audio&#34;&gt;
+    &lt;a href=&#34;#audio&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Audio
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -156,13 +174,19 @@
 &lt;p&gt;Bluetooth: &lt;code&gt;bluez bluez-utils blueman&lt;/code&gt;, then add &lt;code&gt;blueman-applet&lt;/code&gt; to config&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;video&#34;&gt;Video&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;video&#34;&gt;
+    &lt;a href=&#34;#video&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Video
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Editor: &lt;code&gt;blender&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
-&lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;work&#34;&gt;
+    &lt;a href=&#34;#work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Work
+&lt;/h3&gt;&lt;h4 id=&#34;input&#34;&gt;
+    &lt;a href=&#34;#input&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Input
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -181,8 +205,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;writing&#34;&gt;Writing&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;writing&#34;&gt;
+    &lt;a href=&#34;#writing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Writing
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Code: &lt;code&gt;code&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/li&gt;
@@ -203,8 +229,10 @@
 &lt;li&gt;Dictionary: &lt;code&gt;goldendict-ng-git&lt;/code&gt;AUR&lt;/li&gt;
 &lt;li&gt;PDF Notation: &lt;code&gt;mupdf (tesseract-data-eng)&lt;/code&gt; &lt;code&gt;xournalpp&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;social&#34;&gt;
+    &lt;a href=&#34;#social&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Social
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Email: &lt;code&gt;thunderbird&lt;/code&gt; &lt;code&gt;# evolution evolution-on&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://addons.thunderbird.net/en-US/thunderbird/addon/provider-for-google-calendar/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -215,8 +243,10 @@
 &lt;li&gt;Meeting: &lt;code&gt;zoom&lt;/code&gt;AUR&lt;/li&gt;
 &lt;li&gt;Discord: &lt;code&gt;webcord&lt;/code&gt;AUR&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;game&#34;&gt;Game&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;game&#34;&gt;
+    &lt;a href=&#34;#game&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Game
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -234,22 +264,28 @@
         </item>
         <item>
         <title>XFCE (X11)</title>
-        <link>http://localhost:1313/posts/linux/xfce/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/xfce/</link>
         <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/xfce/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/xfce/</guid>
         <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
 &lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;blockquote&gt;
+&lt;h2 id=&#34;install&#34;&gt;
+    &lt;a href=&#34;#install&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Install
+&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install XFCE. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start &lt;code&gt;xfce4&lt;/code&gt; in the next boot and ignore step 3. It is highly recommended installing a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DM&lt;/a&gt;, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your DM. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/p&gt;
-&lt;h2 id=&#34;config&#34;&gt;Config&lt;/h2&gt;
-&lt;h3 id=&#34;system&#34;&gt;System&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;config&#34;&gt;
+    &lt;a href=&#34;#config&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Config
+&lt;/h2&gt;&lt;h3 id=&#34;system&#34;&gt;
+    &lt;a href=&#34;#system&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    System
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;AUR manager: &lt;code&gt;yay&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -301,9 +337,13 @@ xft-rgba=none
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
-&lt;h4 id=&#34;sound&#34;&gt;Sound&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;media&#34;&gt;
+    &lt;a href=&#34;#media&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Media
+&lt;/h3&gt;&lt;h4 id=&#34;sound&#34;&gt;
+    &lt;a href=&#34;#sound&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Sound
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -356,21 +396,29 @@ xft-rgba=none
 &lt;p&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;video&#34;&gt;Video&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;video&#34;&gt;
+    &lt;a href=&#34;#video&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Video
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Video Player: &lt;code&gt;vlc&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Recording &amp;amp; Steaming: &lt;code&gt;obs-studio&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Edit: &lt;code&gt;flowblade&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;image&#34;&gt;
+    &lt;a href=&#34;#image&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Image
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Screenshot: &lt;code&gt;flameshot&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Edit: &lt;code&gt;krita inkscape&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;View: &lt;code&gt;ristretto&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
-&lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;work&#34;&gt;
+    &lt;a href=&#34;#work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Work
+&lt;/h3&gt;&lt;h4 id=&#34;input&#34;&gt;
+    &lt;a href=&#34;#input&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Input
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -389,20 +437,26 @@ xft-rgba=none
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;writing&#34;&gt;Writing&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;writing&#34;&gt;
+    &lt;a href=&#34;#writing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Writing
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Paper: &lt;code&gt;zotero&lt;/code&gt;AUR&lt;/li&gt;
 &lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;social&#34;&gt;
+    &lt;a href=&#34;#social&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Social
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Email: &lt;code&gt;evolution evolution-on&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Chat: &lt;code&gt;telegram-desktop discord&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Meeting: &lt;code&gt;zoom&lt;/code&gt;AUR&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;game&#34;&gt;Game&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;game&#34;&gt;
+    &lt;a href=&#34;#game&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Game
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;enable &lt;code&gt;multilib&lt;/code&gt;: &lt;code&gt;/etc/pacman.conf&lt;/code&gt; - &lt;code&gt;[multilib]&lt;/code&gt; - uncomment &lt;code&gt;Include = /etc/pacman.d/mirrorlist&lt;/code&gt;
@@ -413,40 +467,56 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         </item>
         <item>
         <title>Blog Constructing</title>
-        <link>http://localhost:1313/posts/misc/blog/</link>
+        <link>https://zayn7lie.ber7.org/posts/misc/blog/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/misc/blog/</guid>
-        <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;WHY: Why do I want to construct my blog site?&lt;/h2&gt;
-&lt;ul&gt;
+        <guid>https://zayn7lie.ber7.org/posts/misc/blog/</guid>
+        <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;
+    &lt;a href=&#34;#why-why-do-i-want-to-construct-my-blog-site&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why do I want to construct my blog site?
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Contributing to and being involved in the open-source community&lt;/li&gt;
 &lt;li&gt;Sharing some knowledge with my own understanding way and logic&lt;/li&gt;
 &lt;li&gt;I am a tech-geek who loves to learn some new tech&lt;/li&gt;
 &lt;li&gt;Increasing my popularity to make more people know about me and accept my ideal.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;h3 id=&#34;what-is-the-blog-site&#34;&gt;What is the Blog Site&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;what&#34;&gt;
+    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT
+&lt;/h2&gt;&lt;h3 id=&#34;what-is-the-blog-site&#34;&gt;
+    &lt;a href=&#34;#what-is-the-blog-site&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    What is the Blog Site
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;A unique site that runs your blog, people could directly gain access to your blog through website address or searching engines&lt;/li&gt;
 &lt;li&gt;A place that you could post your own idea, share your thinking, help others, and introduce yourself&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34;&gt;What is the difference between constructing own site and use others services of other companies? (WHY I do not want to use other companies service directly?)&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34;&gt;
+    &lt;a href=&#34;#what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    What is the difference between constructing own site and use others services of other companies? (WHY I do not want to use other companies service directly?)
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;More freedom in configuring your webpage, customizing your appearance, and fewer limitations from companies&lt;/li&gt;
 &lt;li&gt;Cheaper price (even no price) running the whole service (you could choose every service you want)&lt;/li&gt;
 &lt;li&gt;Less worry of your posts will be deleted or modified by the services&amp;rsquo; runner&lt;/li&gt;
 &lt;li&gt;You will learn more things about constructing a blog, like &lt;code&gt;hugo&lt;/code&gt; usage, IP allocating, etc.&lt;/li&gt;
 &lt;li&gt;The site constructed by your own is more appealing to geeks, companies, and educational facilities which means you would gain more opportunities from them.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;h3 id=&#34;basic-constructing&#34;&gt;Basic Constructing&lt;/h3&gt;
-&lt;h4 id=&#34;pre-request&#34;&gt;Pre-request&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;how&#34;&gt;
+    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW
+&lt;/h2&gt;&lt;h3 id=&#34;basic-constructing&#34;&gt;
+    &lt;a href=&#34;#basic-constructing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Basic Constructing
+&lt;/h3&gt;&lt;h4 id=&#34;pre-request&#34;&gt;
+    &lt;a href=&#34;#pre-request&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Pre-request
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;A valid GitHub account&lt;/li&gt;
 &lt;li&gt;Already installing &lt;code&gt;Hugo&lt;/code&gt; on your machine: &lt;code&gt;$ sudo pacman -S hugo&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;create-a-new-github-page&#34;&gt;Create a new GitHub Page&lt;/h4&gt;
-&lt;ol&gt;
+&lt;h4 id=&#34;create-a-new-github-page&#34;&gt;
+    &lt;a href=&#34;#create-a-new-github-page&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Create a new GitHub Page
+&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;Create a new repo with Repository name &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;, then your repo will look like this: &lt;code&gt;YOUR_GITHUB_NAME/YOUR_GITHUB_NAME.github.io&lt;/code&gt;, e.g. Mine is &lt;code&gt;zayn7lie/zayn7lie.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Connect the repo to your local computer
 &lt;ol&gt;
@@ -457,8 +527,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;In the repo, turn to &lt;code&gt;Setting&lt;/code&gt; - &lt;code&gt;Code and automation&lt;/code&gt; - &lt;code&gt;Pages&lt;/code&gt;, check &lt;code&gt;Build and deployment&lt;/code&gt; - &lt;code&gt;Source&lt;/code&gt; is &lt;code&gt;Deploy from a branch&lt;/code&gt;, and &lt;code&gt;Branch&lt;/code&gt; is &lt;code&gt;master&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;setting-up-source-code-for-blog&#34;&gt;Setting up source code for blog&lt;/h4&gt;
-&lt;ol&gt;
+&lt;h4 id=&#34;setting-up-source-code-for-blog&#34;&gt;
+    &lt;a href=&#34;#setting-up-source-code-for-blog&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Setting up source code for blog
+&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;Turn to your local machine, &lt;code&gt;$ hugo new site YOUR_SITE_NAME&lt;/code&gt; to create and initial your new blog site, add &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt; in &lt;code&gt;baseURL&lt;/code&gt; in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Turn to the folder you just connect with your &lt;code&gt;GitHub Page&lt;/code&gt;, rename it as &lt;code&gt;public&lt;/code&gt; with moving it to your site folder you just have generated.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;$ hugo new content posts/my-first-post.md&lt;/code&gt; to generate a new post for your blog (Remember to use &lt;a class=&#34;link&#34; href=&#34;https://www.markdownguide.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -469,12 +541,16 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;After checking, &lt;code&gt;$ hugo&lt;/code&gt; to generate the final &lt;code&gt;html&lt;/code&gt; to &lt;code&gt;public&lt;/code&gt; folder, then commit it to your &lt;code&gt;GitHub&lt;/code&gt; repo.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;GitHub&lt;/code&gt; will automatically run &lt;code&gt;Action&lt;/code&gt; to build your blog website with &lt;code&gt;Jekyll&lt;/code&gt;(you do not need to know anything about &lt;code&gt;Jekyll&lt;/code&gt;), after compiling, you could see your public website in &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;advanced-configuration&#34;&gt;Advanced Configuration&lt;/h3&gt;
-&lt;blockquote&gt;
+&lt;h3 id=&#34;advanced-configuration&#34;&gt;
+    &lt;a href=&#34;#advanced-configuration&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Advanced Configuration
+&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;The global config file is in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;theme-setting&#34;&gt;Theme Setting&lt;/h4&gt;
-&lt;blockquote&gt;
+&lt;h4 id=&#34;theme-setting&#34;&gt;
+    &lt;a href=&#34;#theme-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Theme Setting
+&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;I am using &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Stack&lt;/a&gt;, it has a &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;doc&lt;/a&gt; for fully configuration that you could read.&lt;/p&gt;
@@ -523,9 +599,13 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tag-cloud&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}},
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;archives&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;github-limitation-with-github-page&#34;&gt;GitHub Limitation with &lt;code&gt;GitHub Page&lt;/code&gt;&lt;/h4&gt;
-&lt;h4 id=&#34;domain-configuration-using-custom-domain&#34;&gt;Domain Configuration (Using custom domain)&lt;/h4&gt;
-</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;github-limitation-with-github-page&#34;&gt;
+    &lt;a href=&#34;#github-limitation-with-github-page&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    GitHub Limitation with &lt;code&gt;GitHub Page&lt;/code&gt;
+&lt;/h4&gt;&lt;h4 id=&#34;domain-configuration-using-custom-domain&#34;&gt;
+    &lt;a href=&#34;#domain-configuration-using-custom-domain&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Domain Configuration (Using custom domain)
+&lt;/h4&gt;</description>
         </item>
         
     </channel>

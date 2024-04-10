@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='The end of DE is WM'>
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="The end of DE is WM">
 <title>Hyprland (Wayland)</title>
 
-<link rel='canonical' href='http://localhost:1313/posts/linux/hyprland/'>
+<link rel='canonical' href='https://zayn7lie.ber7.org/posts/linux/hyprland/'>
 
-<link rel="stylesheet" href="/scss/style.min.21dd04c9bdb63d4e8435c2d96c8458fb0397cd7ac2b2f69521767054761cf0ca.css"><meta property='og:title' content='Hyprland (Wayland)'>
-<meta property='og:description' content='The end of DE is WM'>
-<meta property='og:url' content='http://localhost:1313/posts/linux/hyprland/'>
+<link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="Hyprland (Wayland)">
+<meta property='og:description' content="The end of DE is WM">
+<meta property='og:url' content='https://zayn7lie.ber7.org/posts/linux/hyprland/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='Hyprland' /><meta property='article:tag' content='DE' /><meta property='article:tag' content='WM' /><meta property='article:tag' content='install' /><meta property='article:tag' content='config' /><meta property='article:published_time' content='2023-07-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-07-22T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Hyprland (Wayland)">
@@ -189,31 +189,12 @@
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-                <li id="i18n-switch">  
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
-                        
-                            <option value="http://localhost:1313/" selected></option>
-                        
-                    </select>
-                </li>
-            
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -221,7 +202,7 @@
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -229,10 +210,11 @@
 
 
 
-                    <span>Dark Mode</span>
-                </li>
-            
-        </div>
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -467,18 +449,28 @@
 <p>Dot files could be found in <a class="link" href="https://github.com/zayn7lie/dot-files"  target="_blank" rel="noopener"
     >https://github.com/zayn7lie/dot-files</a></p>
 </blockquote>
-<h2 id="install">Install</h2>
-<p>Easy to install: <code>$ sudo pacman -S hyprland</code></p>
-<h2 id="config">Config</h2>
-<h3 id="basic">Basic</h3>
-<h4 id="io">IO</h4>
-<ul>
+<h2 id="install">
+    <a href="#install" class="header-anchor">#</a>
+    Install
+</h2><p>Easy to install: <code>$ sudo pacman -S hyprland</code></p>
+<h2 id="config">
+    <a href="#config" class="header-anchor">#</a>
+    Config
+</h2><h3 id="basic">
+    <a href="#basic" class="header-anchor">#</a>
+    Basic
+</h3><h4 id="io">
+    <a href="#io" class="header-anchor">#</a>
+    IO
+</h4><ul>
 <li>Disable Mouse Acceleration: add <code>force_no_accel = true</code> to <code>input{}</code> in <code>~/.config/hypr/hyprland.conf</code></li>
 <li>Authorization: <code>polkit-gnome</code>, then add <code>exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</code> to <code>~/.config/hypr/hyprland.conf</code></li>
 <li>Desktop Manager (Could this be called Desktop?): <code>sddm</code>, then <code>$ sudo systemctl enable sddm</code></li>
 </ul>
-<h4 id="system">System</h4>
-<ul>
+<h4 id="system">
+    <a href="#system" class="header-anchor">#</a>
+    System
+</h4><ul>
 <li><code>linux-flowx13</code> specific kernel for ROG Flow X13</li>
 <li><code>SWAPFILE</code> creation: <a class="link" href="https://wiki.archlinux.org/title/Swap#Swap_file"  target="_blank" rel="noopener"
     >https://wiki.archlinux.org/title/Swap#Swap_file</a></li>
@@ -492,8 +484,10 @@
 </ul>
 </li>
 </ul>
-<h4 id="appearance">Appearance</h4>
-<ul>
+<h4 id="appearance">
+    <a href="#appearance" class="header-anchor">#</a>
+    Appearance
+</h4><ul>
 <li>
 <p>Theme Control: <code>qt5ct qt6ct</code> <code>xfce4-settings</code></p>
 <ul>
@@ -536,9 +530,13 @@
 </ul>
 </li>
 </ul>
-<h3 id="media">Media</h3>
-<h4 id="image">Image</h4>
-<ul>
+<h3 id="media">
+    <a href="#media" class="header-anchor">#</a>
+    Media
+</h3><h4 id="image">
+    <a href="#image" class="header-anchor">#</a>
+    Image
+</h4><ul>
 <li>Screenshot: AUR<code>grimblast-git</code>, then bind hotkey: <code>bind = $mainMod SHIFT, S, exec, env XDG_SCREENSHOTS_DIR=$HOME/Pictures/Screenshot grimblast copysave area</code> in <code>~/.config/hypr/hyprland.conf</code>
 <ul>
 <li>Copy2Clipboard: <code>wl-clipboard</code></li>
@@ -548,8 +546,10 @@
 <li>view: <code>nsxiv</code></li>
 <li>Preview: <code>tumbler ffmpegthumbnailer</code></li>
 </ul>
-<h4 id="audio">Audio</h4>
-<ul>
+<h4 id="audio">
+    <a href="#audio" class="header-anchor">#</a>
+    Audio
+</h4><ul>
 <li>
 <p>Basis: <code>pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils</code></p>
 </li>
@@ -605,13 +605,19 @@
 <p>Bluetooth: <code>bluez bluez-utils blueman</code>, then add <code>blueman-applet</code> to config</p>
 </li>
 </ul>
-<h4 id="video">Video</h4>
-<ul>
+<h4 id="video">
+    <a href="#video" class="header-anchor">#</a>
+    Video
+</h4><ul>
 <li>Editor: <code>blender</code></li>
 </ul>
-<h3 id="work">Work</h3>
-<h4 id="input">Input</h4>
-<ul>
+<h3 id="work">
+    <a href="#work" class="header-anchor">#</a>
+    Work
+</h3><h4 id="input">
+    <a href="#input" class="header-anchor">#</a>
+    Input
+</h4><ul>
 <li>Method: <code>fcitx5</code>
 <ul>
 <li>
@@ -630,8 +636,10 @@
 </ul>
 </li>
 </ul>
-<h4 id="writing">Writing</h4>
-<ul>
+<h4 id="writing">
+    <a href="#writing" class="header-anchor">#</a>
+    Writing
+</h4><ul>
 <li>Code: <code>code</code>
 <ul>
 <li>GitHub Login: install <code>gnome-keyring</code>, <code>/usr/share/applications/code-oss.desktop</code>: <code>Exec=/usr/bin/code-oss --unity-launch --password-store=&quot;gnome&quot; %F</code></li>
@@ -652,8 +660,10 @@
 <li>Dictionary: <code>goldendict-ng-git</code>AUR</li>
 <li>PDF Notation: <code>mupdf (tesseract-data-eng)</code> <code>xournalpp</code></li>
 </ul>
-<h4 id="social">Social</h4>
-<ul>
+<h4 id="social">
+    <a href="#social" class="header-anchor">#</a>
+    Social
+</h4><ul>
 <li>Email: <code>thunderbird</code> <code># evolution evolution-on</code>
 <ul>
 <li><a class="link" href="https://addons.thunderbird.net/en-US/thunderbird/addon/provider-for-google-calendar/"  target="_blank" rel="noopener"
@@ -664,8 +674,10 @@
 <li>Meeting: <code>zoom</code>AUR</li>
 <li>Discord: <code>webcord</code>AUR</li>
 </ul>
-<h3 id="game">Game</h3>
-<ul>
+<h3 id="game">
+    <a href="#game" class="header-anchor">#</a>
+    Game
+</h3><ul>
 <li>
 <p>Steam: <code>steam</code></p>
 <ul>
@@ -686,18 +698,28 @@
 <p>Dot files could be found in <a class="link" href="https://github.com/zayn7lie/dot-files"  target="_blank" rel="noopener"
     >https://github.com/zayn7lie/dot-files</a></p>
 </blockquote>
-<h2 id="install">Install</h2>
-<p>Easy to install: <code>$ sudo pacman -S hyprland</code></p>
-<h2 id="config">Config</h2>
-<h3 id="basic">Basic</h3>
-<h4 id="io">IO</h4>
-<ul>
+<h2 id="install">
+    <a href="#install" class="header-anchor">#</a>
+    Install
+</h2><p>Easy to install: <code>$ sudo pacman -S hyprland</code></p>
+<h2 id="config">
+    <a href="#config" class="header-anchor">#</a>
+    Config
+</h2><h3 id="basic">
+    <a href="#basic" class="header-anchor">#</a>
+    Basic
+</h3><h4 id="io">
+    <a href="#io" class="header-anchor">#</a>
+    IO
+</h4><ul>
 <li>Disable Mouse Acceleration: add <code>force_no_accel = true</code> to <code>input{}</code> in <code>~/.config/hypr/hyprland.conf</code></li>
 <li>Authorization: <code>polkit-gnome</code>, then add <code>exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</code> to <code>~/.config/hypr/hyprland.conf</code></li>
 <li>Desktop Manager (Could this be called Desktop?): <code>sddm</code>, then <code>$ sudo systemctl enable sddm</code></li>
 </ul>
-<h4 id="system">System</h4>
-<ul>
+<h4 id="system">
+    <a href="#system" class="header-anchor">#</a>
+    System
+</h4><ul>
 <li><code>linux-flowx13</code> specific kernel for ROG Flow X13</li>
 <li><code>SWAPFILE</code> creation: <a class="link" href="https://wiki.archlinux.org/title/Swap#Swap_file"  target="_blank" rel="noopener"
     >https://wiki.archlinux.org/title/Swap#Swap_file</a></li>
@@ -711,8 +733,10 @@
 </ul>
 </li>
 </ul>
-<h4 id="appearance">Appearance</h4>
-<ul>
+<h4 id="appearance">
+    <a href="#appearance" class="header-anchor">#</a>
+    Appearance
+</h4><ul>
 <li>
 <p>Theme Control: <code>qt5ct qt6ct</code> <code>xfce4-settings</code></p>
 <ul>
@@ -755,9 +779,13 @@
 </ul>
 </li>
 </ul>
-<h3 id="media">Media</h3>
-<h4 id="image">Image</h4>
-<ul>
+<h3 id="media">
+    <a href="#media" class="header-anchor">#</a>
+    Media
+</h3><h4 id="image">
+    <a href="#image" class="header-anchor">#</a>
+    Image
+</h4><ul>
 <li>Screenshot: AUR<code>grimblast-git</code>, then bind hotkey: <code>bind = $mainMod SHIFT, S, exec, env XDG_SCREENSHOTS_DIR=$HOME/Pictures/Screenshot grimblast copysave area</code> in <code>~/.config/hypr/hyprland.conf</code>
 <ul>
 <li>Copy2Clipboard: <code>wl-clipboard</code></li>
@@ -767,8 +795,10 @@
 <li>view: <code>nsxiv</code></li>
 <li>Preview: <code>tumbler ffmpegthumbnailer</code></li>
 </ul>
-<h4 id="audio">Audio</h4>
-<ul>
+<h4 id="audio">
+    <a href="#audio" class="header-anchor">#</a>
+    Audio
+</h4><ul>
 <li>
 <p>Basis: <code>pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils</code></p>
 </li>
@@ -824,13 +854,19 @@
 <p>Bluetooth: <code>bluez bluez-utils blueman</code>, then add <code>blueman-applet</code> to config</p>
 </li>
 </ul>
-<h4 id="video">Video</h4>
-<ul>
+<h4 id="video">
+    <a href="#video" class="header-anchor">#</a>
+    Video
+</h4><ul>
 <li>Editor: <code>blender</code></li>
 </ul>
-<h3 id="work">Work</h3>
-<h4 id="input">Input</h4>
-<ul>
+<h3 id="work">
+    <a href="#work" class="header-anchor">#</a>
+    Work
+</h3><h4 id="input">
+    <a href="#input" class="header-anchor">#</a>
+    Input
+</h4><ul>
 <li>Method: <code>fcitx5</code>
 <ul>
 <li>
@@ -849,8 +885,10 @@
 </ul>
 </li>
 </ul>
-<h4 id="writing">Writing</h4>
-<ul>
+<h4 id="writing">
+    <a href="#writing" class="header-anchor">#</a>
+    Writing
+</h4><ul>
 <li>Code: <code>code</code>
 <ul>
 <li>GitHub Login: install <code>gnome-keyring</code>, <code>/usr/share/applications/code-oss.desktop</code>: <code>Exec=/usr/bin/code-oss --unity-launch --password-store=&quot;gnome&quot; %F</code></li>
@@ -871,8 +909,10 @@
 <li>Dictionary: <code>goldendict-ng-git</code>AUR</li>
 <li>PDF Notation: <code>mupdf (tesseract-data-eng)</code> <code>xournalpp</code></li>
 </ul>
-<h4 id="social">Social</h4>
-<ul>
+<h4 id="social">
+    <a href="#social" class="header-anchor">#</a>
+    Social
+</h4><ul>
 <li>Email: <code>thunderbird</code> <code># evolution evolution-on</code>
 <ul>
 <li><a class="link" href="https://addons.thunderbird.net/en-US/thunderbird/addon/provider-for-google-calendar/"  target="_blank" rel="noopener"
@@ -883,8 +923,10 @@
 <li>Meeting: <code>zoom</code>AUR</li>
 <li>Discord: <code>webcord</code>AUR</li>
 </ul>
-<h3 id="game">Game</h3>
-<ul>
+<h3 id="game">
+    <a href="#game" class="header-anchor">#</a>
+    Game
+</h3><ul>
 <li>
 <p>Steam: <code>steam</code></p>
 <ul>
@@ -942,18 +984,18 @@
     
         <link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
             ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
                 defer
                 >
             </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
                 defer
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.querySelector(`.article-content`), {
+        renderMathInElement(document.body, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -1038,7 +1080,7 @@
     data-host="https://cusdis.com"
     data-app-id="21afa2aa-6f2f-47a0-b7dd-16a0bb7a5b81"
     data-page-id="0da73e605082e7e2556ccecf94f9c022"
-    data-page-url="http://localhost:1313/posts/linux/hyprland/"
+    data-page-url="https://zayn7lie.ber7.org/posts/linux/hyprland/"
     data-page-title="Hyprland (Wayland)"></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
@@ -1067,7 +1109,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.20.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 

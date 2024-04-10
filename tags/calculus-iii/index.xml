@@ -2,20 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Calculus III on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/calculus-iii/</link>
+        <link>https://zayn7lie.ber7.org/tags/calculus-iii/</link>
         <description>Recent content in Calculus III on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/calculus-iii/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus-iii/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus: Vectors</title>
-        <link>http://localhost:1313/posts/math/cal-vec/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-vec/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-vec/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-apply-calculus-to-vector&#34;&gt;WHY: Why should we apply calculus to vector?&lt;/h2&gt;
-&lt;p&gt;More applicable in the real world, like 3D real world, linear algebra, etc.&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-vector--function-with-multiple-variables&#34;&gt;WHAT: What is vector / function with multiple variables?&lt;/h2&gt;
-&lt;p&gt;Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$&lt;/p&gt;
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-vec/</guid>
+        <description>&lt;h2 id=&#34;why-why-should-we-apply-calculus-to-vector&#34;&gt;
+    &lt;a href=&#34;#why-why-should-we-apply-calculus-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why should we apply calculus to vector?
+&lt;/h2&gt;&lt;p&gt;More applicable in the real world, like 3D real world, linear algebra, etc.&lt;/p&gt;
+&lt;h2 id=&#34;what-what-is-vector--function-with-multiple-variables&#34;&gt;
+    &lt;a href=&#34;#what-what-is-vector--function-with-multiple-variables&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is vector / function with multiple variables?
+&lt;/h2&gt;&lt;p&gt;Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -53,15 +57,21 @@ w_x &amp;amp; w_y &amp;amp; w_z
 &lt;/li&gt;
 &lt;li&gt;Vector unitization: $\vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;eg-from-x-y-z-coordinate-to-vectors&#34;&gt;E.g. from X-Y-Z coordinate to vectors&lt;/h3&gt;
-&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;WHY: Why should we use X-Y-Z coordinate&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;eg-from-x-y-z-coordinate-to-vectors&#34;&gt;
+    &lt;a href=&#34;#eg-from-x-y-z-coordinate-to-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    E.g. from X-Y-Z coordinate to vectors
+&lt;/h3&gt;&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;
+    &lt;a href=&#34;#why-why-should-we-use-x-y-z-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why should we use X-Y-Z coordinate
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;It is the generalization of X-Y coordinate that is easy to learn and understand&lt;/li&gt;
 &lt;li&gt;It is more visualizable using some graphic software or even drew by hand&lt;/li&gt;
 &lt;li&gt;The process of the generalization from X-Y to X-Y-Z is the same to the generalization from X-Y-Z to higher dimensions. In the higher dimensions, the meaning of &lt;em&gt;vector&lt;/em&gt; is generalized to just a set of points: $\vec{v} = (x_1, x_2, \ldots)$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;what-what-is-points-lines-planes-in-the-coordinate&#34;&gt;WHAT: What is points, lines, planes in the coordinate&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;what-what-is-points-lines-planes-in-the-coordinate&#34;&gt;
+    &lt;a href=&#34;#what-what-is-points-lines-planes-in-the-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is points, lines, planes in the coordinate
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Points/Vectors(3 variables - 3 constraints = 0 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$
 E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$&lt;/li&gt;
 &lt;/ul&gt;
@@ -85,8 +95,10 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;blockquote&gt;
 &lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;how-how-to-present-in-the-coordinate&#34;&gt;HOW: How to present in the coordinate&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;how-how-to-present-in-the-coordinate&#34;&gt;
+    &lt;a href=&#34;#how-how-to-present-in-the-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to present in the coordinate
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;lines: $\vec{r} = \vec{r}_0 + t\vec{v}$ (from original point to go along the line)&lt;/p&gt;
 &lt;ul&gt;
@@ -102,8 +114,10 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-introduce-calculus&#34;&gt;HOW: How to introduce calculus&lt;/h4&gt;
-&lt;p&gt;$\vec{r}(t) = \langle F(t), G(t), H(t) \rangle = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k}$&lt;/p&gt;
+&lt;h4 id=&#34;how-how-to-introduce-calculus&#34;&gt;
+    &lt;a href=&#34;#how-how-to-introduce-calculus&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to introduce calculus
+&lt;/h4&gt;&lt;p&gt;$\vec{r}(t) = \langle F(t), G(t), H(t) \rangle = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k}$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Derivative: $\vec{v}(t) = \vec{r}&amp;rsquo;(t) = \langle F&amp;rsquo;(t), G&amp;rsquo;(t), H&amp;rsquo;(t) \rangle = F&amp;rsquo;(t)\hat{i} + G&amp;rsquo;(t)\hat{j} + H&amp;rsquo;(t)\hat{k}$
 &lt;ul&gt;
@@ -126,8 +140,10 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-space&#34;&gt;HOW: How to apply to space?&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;how-how-to-apply-to-space&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-to-space&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply to space?
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Tangent vector to a space curve: $\hat{T} = \vec{r}&amp;rsquo;/|\vec{r}&amp;rsquo;|$&lt;/li&gt;
 &lt;li&gt;Normal vector to a tangent vector: $\hat{N} = \hat{T}&amp;rsquo;/|\hat{T}&amp;rsquo;| = \hat{T}&amp;rsquo;/|\kappa \vec{r}&amp;rsquo;|$&lt;/li&gt;
 &lt;li&gt;Binormal vector to the vectors: $\hat{B} = \hat{N} \times \hat{T}$&lt;/li&gt;
@@ -140,8 +156,10 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;blockquote&gt;
 &lt;p&gt;Note. How to understand $\frac{d}{dt} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;how-how-to-visualize-vectors-in-dimensions&#34;&gt;HOW: How to visualize vectors in dimensions?&lt;/h3&gt;
-&lt;blockquote&gt;
+&lt;h3 id=&#34;how-how-to-visualize-vectors-in-dimensions&#34;&gt;
+    &lt;a href=&#34;#how-how-to-visualize-vectors-in-dimensions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to visualize vectors in dimensions?
+&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
@@ -152,9 +170,13 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &amp;hellip;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-differentiation-of-vectors---paerial-derivatives&#34;&gt;WHAT: What is differentiation of vectors - Paerial Derivatives&lt;/h2&gt;
-&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;what-what-is-differentiation-of-vectors---paerial-derivatives&#34;&gt;
+    &lt;a href=&#34;#what-what-is-differentiation-of-vectors---paerial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is differentiation of vectors - Paerial Derivatives
+&lt;/h2&gt;&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
+    &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why a function could be differentiated? - Differentiability
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Limit &amp;amp; Continuity: $\displaystyle \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L$ (no matter any directions approaching to $(a, b)$, f(x, y) is continuous at $(a, b)$ if and only if those values are the same)&lt;/p&gt;
 &lt;ul&gt;
@@ -175,8 +197,10 @@ $$&lt;/li&gt;
 &lt;p&gt;Continuity: $\lim_{(x, y) \rightarrow (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-what-is-partial-derivatives&#34;&gt;WHAT: What is Partial Derivatives&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;what-what-is-partial-derivatives&#34;&gt;
+    &lt;a href=&#34;#what-what-is-partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Partial Derivatives
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Algebra: Definition
 $$ \frac{\partial}{\partial x}f = f_x(a, b) = \lim_{h \rightarrow 0}\frac{f(a + h, b) - f(a, b)}{h} = g&amp;rsquo;(a) \ (g(x) = g(x, b)) = \lim_{h \rightarrow 0}\frac{g(a + h) - g(a)}{h}
@@ -196,8 +220,10 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;
+    &lt;a href=&#34;#how-how-to-do-partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to do Partial Derivatives
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;*Chain Rule
 $$ (1) z = f(x, y): \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
 $$
@@ -206,8 +232,10 @@ $$
 $$ (3) \text{General}: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector&lt;/h3&gt;
-&lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \hat{u}
+&lt;h3 id=&#34;how-how-to-apply-to-vector&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to Apply to Vector
+&lt;/h3&gt;&lt;p&gt;$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \hat{u}
 $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$D_u{f(x, y)} = \vec{P&amp;rsquo;Q&amp;rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
@@ -230,8 +258,10 @@ P &amp;amp; Q &amp;amp; R
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum&lt;/h4&gt;
-&lt;ol&gt;
+&lt;h4 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-to-finding-maximum-and-minimum&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to Apply to Finding Maximum and Minimum
+&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;$\displaystyle \frac{\partial f}{\partial x} = 0, \frac{\partial f}{\partial y} = 0 \Leftarrow \frac{\partial}{\partial t} = a\frac{\partial}{\partial x} + b\frac{\partial}{\partial y}, \frac{\partial f}{\partial \forall t} = 0$&lt;/p&gt;
 &lt;/li&gt;
@@ -269,42 +299,66 @@ P &amp;amp; Q &amp;amp; R
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-integral-of-vectors---multiple-integrals&#34;&gt;WHAT: What is integral of vectors - Multiple Integrals&lt;/h2&gt;
-&lt;h3 id=&#34;what-what-is-double-integral&#34;&gt;WHAT: What is double integral&lt;/h3&gt;
-&lt;p&gt;$\iint\limits_R{f(x, y)}\mathrm{d}A = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}$ (Double Riemann Sum, Midpoint: $x^* , y^ * \rightarrow \bar{x}, \bar{y}$)&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-calculate-iterated-integrals&#34;&gt;HOW: How to calculate iterated integrals?&lt;/h3&gt;
-&lt;h4 id=&#34;switching-iterating-order&#34;&gt;Switching iterating order&lt;/h4&gt;
-&lt;p&gt;$$ \int\int{f(x, y)}\mathrm{d}A (A =[a, b] \times [c, d]) = \int_a^b[\int_c^df(x, y)\mathrm{d}y]\mathrm{d}x = \int_c^d[\int_a^bf(x, y)\mathrm{d}x]\mathrm{d}y
+&lt;h2 id=&#34;what-what-is-integral-of-vectors---multiple-integrals&#34;&gt;
+    &lt;a href=&#34;#what-what-is-integral-of-vectors---multiple-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is integral of vectors - Multiple Integrals
+&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-double-integral&#34;&gt;
+    &lt;a href=&#34;#what-what-is-double-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is double integral
+&lt;/h3&gt;&lt;p&gt;$\iint\limits_R{f(x, y)}\mathrm{d}A = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}$ (Double Riemann Sum, Midpoint: $x^* , y^ * \rightarrow \bar{x}, \bar{y}$)&lt;/p&gt;
+&lt;h3 id=&#34;how-how-to-calculate-iterated-integrals&#34;&gt;
+    &lt;a href=&#34;#how-how-to-calculate-iterated-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to calculate iterated integrals?
+&lt;/h3&gt;&lt;h4 id=&#34;switching-iterating-order&#34;&gt;
+    &lt;a href=&#34;#switching-iterating-order&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Switching iterating order
+&lt;/h4&gt;&lt;p&gt;$$ \int\int{f(x, y)}\mathrm{d}A (A =[a, b] \times [c, d]) = \int_a^b[\int_c^df(x, y)\mathrm{d}y]\mathrm{d}x = \int_c^d[\int_a^bf(x, y)\mathrm{d}x]\mathrm{d}y
 $$&lt;/p&gt;
-&lt;h4 id=&#34;upper-bound-and-lower-bound-could-be-turned&#34;&gt;Upper bound and lower bound could be turned&lt;/h4&gt;
-&lt;p&gt;$$ \int\int{f(x, y)}\mathrm{d}A (A =[a, b] \times [c, d]) = \int_a^b[\int_{c(x)}^{d(x)}f(x, y)dy]dx = \int_c^d[\int_{a(y)}^{b(y)}f(x, y)dx]dy
+&lt;h4 id=&#34;upper-bound-and-lower-bound-could-be-turned&#34;&gt;
+    &lt;a href=&#34;#upper-bound-and-lower-bound-could-be-turned&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Upper bound and lower bound could be turned
+&lt;/h4&gt;&lt;p&gt;$$ \int\int{f(x, y)}\mathrm{d}A (A =[a, b] \times [c, d]) = \int_a^b[\int_{c(x)}^{d(x)}f(x, y)dy]dx = \int_c^d[\int_{a(y)}^{b(y)}f(x, y)dx]dy
 $$&lt;/p&gt;
 &lt;p&gt;$$ \iiint f(x, y, z) \mathrm{d}V (V = [0, 1] \times [\sqrt{x}, 1] \times [0, 1 - y]) \\
 =\int_0^1\int_{\sqrt{x}}^1\int_0^{1-y} f(x, y, z) \mathrm{d}z\mathrm{d}y\mathrm{d}x = \int_0^1\int_0^{y^2}\int_0^{1-y} f(x, y, z) \mathrm{d}z\mathrm{d}x\mathrm{d}y \\
 = \int_0^1\int_0^{1 - \sqrt{x}}\int_{\sqrt{x}}^{1 - z} f(x, y, z) \mathrm{d}y\mathrm{d}z\mathrm{d}x = \int_0^1\int_0^{(1 - z)^2}\int_{\sqrt{x}}^{1 - z} f(x, y, z) \mathrm{d}y\mathrm{d}x\mathrm{d}z \\
 = \int_0^1\int_0^{1 - z}\int_0^{y^2} f(x, y, z) \mathrm{d}x\mathrm{d}y\mathrm{d}z = \int_0^1\int_0^{1 - y}\int_0^{y^2} f(x, y, z) \mathrm{d}x\mathrm{d}z\mathrm{d}y
 $$&lt;/p&gt;
-&lt;h4 id=&#34;variables-could-be-turned&#34;&gt;Variables could be turned&lt;/h4&gt;
-&lt;p&gt;$$\iint_\mathbb{R} f(x, y) \partial x \partial y = \iint_\mathbb{R} f(u, v) |\frac{\partial(x, y)}{\partial(u, v)}| \partial u \partial v, |\frac{\partial(x, y)}{\partial(u, v)}| = \begin{vmatrix}
+&lt;h4 id=&#34;variables-could-be-turned&#34;&gt;
+    &lt;a href=&#34;#variables-could-be-turned&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Variables could be turned
+&lt;/h4&gt;&lt;p&gt;$$\iint_\mathbb{R} f(x, y) \partial x \partial y = \iint_\mathbb{R} f(u, v) |\frac{\partial(x, y)}{\partial(u, v)}| \partial u \partial v, |\frac{\partial(x, y)}{\partial(u, v)}| = \begin{vmatrix}
 \partial x / \partial u &amp;amp; \partial x / \partial v \\
 \partial y / \partial u &amp;amp; \partial y / \partial v
 \end{vmatrix}$$&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-apply-to-reality&#34;&gt;HOW: How to apply to reality&lt;/h3&gt;
-&lt;h4 id=&#34;volume&#34;&gt;Volume&lt;/h4&gt;
-&lt;p&gt;Region of $x_1, x_2, y_1(x), y_2(x)$, Assume $x_1 \leq x_2, y_1 \leq y_2$:&lt;/p&gt;
+&lt;h3 id=&#34;how-how-to-apply-to-reality&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-to-reality&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply to reality
+&lt;/h3&gt;&lt;h4 id=&#34;volume&#34;&gt;
+    &lt;a href=&#34;#volume&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Volume
+&lt;/h4&gt;&lt;p&gt;Region of $x_1, x_2, y_1(x), y_2(x)$, Assume $x_1 \leq x_2, y_1 \leq y_2$:&lt;/p&gt;
 &lt;p&gt;$$ V = \iiint\mathrm{d}V = \int_{y_1(x)}^{y_2(x)}\int_{x_1}^{x_2}\int_0^{f(x, y)}\mathrm{d}V = \int_{x_1}^{x_2}[\int_{y_1(x)}^{y_2(x)}f(x, y)\mathrm{d}y]\mathrm{d}x$$&lt;/p&gt;
-&lt;h4 id=&#34;density-and-mass&#34;&gt;Density and Mass&lt;/h4&gt;
-&lt;p&gt;Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
+&lt;h4 id=&#34;density-and-mass&#34;&gt;
+    &lt;a href=&#34;#density-and-mass&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Density and Mass
+&lt;/h4&gt;&lt;p&gt;Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
 &lt;p&gt;$$M = \iiint\int_0^{\rho(x, y, z)} \mathrm{d}\rho\mathrm{d}V = \iiint\rho(x, y, z)\mathrm{d}V$$&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-apply-to-different-coordinate&#34;&gt;HOW: How to apply to different coordinate&lt;/h3&gt;
-&lt;blockquote&gt;
+&lt;h3 id=&#34;how-how-to-apply-to-different-coordinate&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-to-different-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply to different coordinate
+&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;from polar coordinate, to cylindar, then to sphere&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$\iint f(x, y) \mathrm{d}x\mathrm{d}y = \iint f(r\cos\theta, r\sin\theta) \cdot r \mathrm{d} r \mathrm{d}\theta$$&lt;/p&gt;
 &lt;p&gt;$$\iiint f(x, y, z) \mathrm{d}x\mathrm{d}y\mathrm{d}z = \iiint f(r\cos\theta, r\sin\theta, z) \cdot r \mathrm{d} r \mathrm{d}\theta \mathrm{d}z \= \iiint f(\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi) \cdot \rho^2\sin\phi \mathrm{d} \rho \mathrm{d}\theta \mathrm{d}\phi$$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-apply-to-vector-calculus&#34;&gt;HOW: How to apply to Vector Calculus&lt;/h2&gt;
-&lt;h3 id=&#34;what-what-is-fields&#34;&gt;WHAT: What is Fields&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;how-how-to-apply-to-vector-calculus&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-to-vector-calculus&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply to Vector Calculus
+&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-fields&#34;&gt;
+    &lt;a href=&#34;#what-what-is-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Fields
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$&lt;/p&gt;
 &lt;/li&gt;
@@ -312,8 +366,10 @@ $$&lt;/p&gt;
 &lt;p&gt;Gradient Fields: $\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;conservative-vector-fields&#34;&gt;Conservative vector fields&lt;/h4&gt;
-&lt;p&gt;$$\forall C_1, C_2 = (P_1 \rightarrow P_2) \in D, \int_{C_1} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = \int_{C_2} \mathbf{F} \cdot \mathrm{d} \mathbf{r} \Leftrightarrow \exists f, \vec\nabla{f} = \mathbf{F}$$&lt;/p&gt;
+&lt;h4 id=&#34;conservative-vector-fields&#34;&gt;
+    &lt;a href=&#34;#conservative-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Conservative vector fields
+&lt;/h4&gt;&lt;p&gt;$$\forall C_1, C_2 = (P_1 \rightarrow P_2) \in D, \int_{C_1} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = \int_{C_2} \mathbf{F} \cdot \mathrm{d} \mathbf{r} \Leftrightarrow \exists f, \vec\nabla{f} = \mathbf{F}$$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$D$: an &lt;strong&gt;open&lt;/strong&gt;($\forall P \in D,\exists \circ P \in D$) &lt;strong&gt;connected&lt;/strong&gt;($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a &lt;strong&gt;conservative vector field&lt;/strong&gt;; under this situation, we call $\int_{C} \mathbf{F} \cdot \mathrm{d} \mathbf{r}$ is &lt;strong&gt;independent of path&lt;/strong&gt;, or &lt;em&gt;line integrals of conservative vector fields are independent of path.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -321,8 +377,10 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Clairaut&amp;rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;how-how-to-integrate-along-the-line---linepathcontour-integrals&#34;&gt;HOW: How to integrate along the line - Line(Path/Contour) Integrals&lt;/h3&gt;
-&lt;p&gt;$$\displaystyle \int_C \vec{F} \cdot \mathrm{d}\vec{r} = \int \vec{F}(\vec{r}(t)) \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t},\mathrm{d}t$$&lt;/p&gt;
+&lt;h3 id=&#34;how-how-to-integrate-along-the-line---linepathcontour-integrals&#34;&gt;
+    &lt;a href=&#34;#how-how-to-integrate-along-the-line---linepathcontour-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to integrate along the line - Line(Path/Contour) Integrals
+&lt;/h3&gt;&lt;p&gt;$$\displaystyle \int_C \vec{F} \cdot \mathrm{d}\vec{r} = \int \vec{F}(\vec{r}(t)) \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t},\mathrm{d}t$$&lt;/p&gt;
 &lt;p&gt;$$ \int_{curve \ C}f(x, y)ds = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
 $$
 $$ \Rightarrow \int_C f(x, y)ds = \int_a^b f(x(t), y(t))\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2}dt
@@ -356,8 +414,10 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-integral-with-surface&#34;&gt;HOW: How to integral with Surface&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;how-how-to-integral-with-surface&#34;&gt;
+    &lt;a href=&#34;#how-how-to-integral-with-surface&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to integral with Surface
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Parametric Surface: $\vec{r}(u, v) = x(u, v)\hat{i} + y(u, v)\hat{j} + z(u, v)\hat{k}$
 &lt;ul&gt;
 &lt;li&gt;Surfaces of Revolution: $x = x, y = f(x)\cos\theta, z = f(x)\sin\theta$&lt;/li&gt;

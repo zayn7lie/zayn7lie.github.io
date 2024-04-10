@@ -2,33 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Minecraft on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/minecraft/</link>
+        <link>https://zayn7lie.ber7.org/tags/minecraft/</link>
         <description>Recent content in Minecraft on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/minecraft/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/minecraft/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>How to Create a Game (Minecraft/Terraria) Server with AWS</title>
-        <link>http://localhost:1313/posts/ettm/server/</link>
+        <link>https://zayn7lie.ber7.org/posts/ettm/server/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/ettm/server/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/ettm/server/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;why&#34;&gt;WHY&lt;/h2&gt;
-&lt;p&gt;Learning something about &lt;code&gt;AWS&lt;/code&gt;, &lt;code&gt;SSH&lt;/code&gt; remote connection (&lt;code&gt;ip&lt;/code&gt;, &lt;code&gt;port&lt;/code&gt;, &lt;code&gt;domain&lt;/code&gt;), and &lt;code&gt;java&lt;/code&gt; usage.&lt;/p&gt;
+&lt;h2 id=&#34;why&#34;&gt;
+    &lt;a href=&#34;#why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY
+&lt;/h2&gt;&lt;p&gt;Learning something about &lt;code&gt;AWS&lt;/code&gt;, &lt;code&gt;SSH&lt;/code&gt; remote connection (&lt;code&gt;ip&lt;/code&gt;, &lt;code&gt;port&lt;/code&gt;, &lt;code&gt;domain&lt;/code&gt;), and &lt;code&gt;java&lt;/code&gt; usage.&lt;/p&gt;
 &lt;p&gt;Playing Minecraft with my friends when not under &lt;code&gt;LAN&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;what&#34;&gt;WHAT&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://aws.amazon.com/what-is-aws/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h2 id=&#34;what&#34;&gt;
+    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://aws.amazon.com/what-is-aws/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AWS Introduction&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Secure_Shell&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;SSH&lt;/code&gt; Intro&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;blockquote&gt;
+&lt;h2 id=&#34;how&#34;&gt;
+    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW
+&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;*&lt;/code&gt; means Optional Operation&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;1-create-an-aws-ec2-instance&#34;&gt;1. Create an AWS EC2 Instance&lt;/h3&gt;
-&lt;blockquote&gt;
+&lt;h3 id=&#34;1-create-an-aws-ec2-instance&#34;&gt;
+    &lt;a href=&#34;#1-create-an-aws-ec2-instance&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    1. Create an AWS EC2 Instance
+&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. There is a free x86_64 CPU &amp;ldquo;&lt;code&gt;Free tier: In your first year includes 750 hours of t2.micro (or t3.micro in the Regions in which t2.micro is unavailable) instance usage on free tier AMIs per month, 30 GiB of EBS storage, 2 million IOs, 1 GB of snapshots, and 100 GB of bandwidth to the internet.&lt;/code&gt;&amp;rdquo; for new user, but it is not very good for running Minecraft Server. But if you want to use it, you could follow the tutor, but you need to change the &lt;code&gt;Architecture&lt;/code&gt; to &lt;code&gt;64-bit (x86)&lt;/code&gt; in &lt;code&gt;Application and OS Images (Amazon Machine Image)&lt;/code&gt; and choose &lt;code&gt;t2.micro&lt;/code&gt; in &lt;code&gt;Instance type&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
@@ -82,16 +90,20 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;2-connect-linux-to-the-instance-with-ssh&#34;&gt;2. Connect Linux to the Instance with SSH&lt;/h3&gt;
-&lt;ol&gt;
+&lt;h3 id=&#34;2-connect-linux-to-the-instance-with-ssh&#34;&gt;
+    &lt;a href=&#34;#2-connect-linux-to-the-instance-with-ssh&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    2. Connect Linux to the Instance with SSH
+&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;Turn back to &lt;code&gt;instances&lt;/code&gt;, select the &lt;code&gt;instance id&lt;/code&gt; you just created&lt;/li&gt;
 &lt;li&gt;Then you open a new panel which lists all the detailed information for your instance. If the instance is not open, select &lt;code&gt;Instance state&lt;/code&gt; - &lt;code&gt;Start Instance&lt;/code&gt; to start it.&lt;/li&gt;
 &lt;li&gt;Record &lt;code&gt;Public IPv4 address&lt;/code&gt; or &lt;code&gt;Public IPv4 DNS&lt;/code&gt; as your instance &lt;code&gt;IPv4&lt;/code&gt; that would help you to connect to your instance&lt;/li&gt;
 &lt;li&gt;Use &lt;code&gt;OpenSSH&lt;/code&gt; command &lt;code&gt;$ ssh -i PATH_TO_PEM.pem ec2-user@IPv4&lt;/code&gt; to connect to your instance.&lt;/li&gt;
 &lt;li&gt;*Before step 2.4, you might already have Minecraft Server file, you could transfer your file through &lt;code&gt;$ scp -i PATH_TO_PEM.pem -r SOURCE_FILE_OR_FOLDER ec2-user@IPv4:PATH_YOU_WANT_TO_STORE&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance&#34;&gt;3. Install Java &amp;amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)&lt;/h3&gt;
-&lt;ol&gt;
+&lt;h3 id=&#34;3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance&#34;&gt;
+    &lt;a href=&#34;#3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    3. Install Java &amp;amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)
+&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install &lt;code&gt;Java 8&lt;/code&gt;: &lt;code&gt;$ sudo yum install java-1.8.0&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -113,8 +125,10 @@
     &gt;&lt;code&gt;EULA&lt;/code&gt;&lt;/a&gt;: 1. Open &lt;code&gt;eula.txt&lt;/code&gt;: &lt;code&gt;$ vim eula.txt&lt;/code&gt;, 2. Change &lt;code&gt;eula=false&lt;/code&gt; to &lt;code&gt;eula=true&lt;/code&gt; to indicate acceptance of the &lt;code&gt;EULA&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;4-launch-the-server--commands&#34;&gt;4. Launch the Server &amp;amp; Commands&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;4-launch-the-server--commands&#34;&gt;
+    &lt;a href=&#34;#4-launch-the-server--commands&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    4. Launch the Server &amp;amp; Commands
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Launch Pure or Forge version &lt;code&gt;$ java -Xmx1536M -Xms512M -jar SERVER_NAME.jar --nogui&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;-Xmx1024M&lt;/code&gt; is maximum RAM allow server to use&lt;/li&gt;
@@ -133,8 +147,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Stop the Server: &lt;code&gt;/stop&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;5-adding-mods-and-worlds&#34;&gt;5*. Adding mods and worlds&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;5-adding-mods-and-worlds&#34;&gt;
+    &lt;a href=&#34;#5-adding-mods-and-worlds&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    5*. Adding mods and worlds
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Before the second launch, create a new folder &lt;code&gt;world&lt;/code&gt; or &lt;code&gt;mod&lt;/code&gt; then put the data into the folder&lt;/li&gt;
 &lt;/ul&gt;
 </description>

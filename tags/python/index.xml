@@ -2,25 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Python on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/python/</link>
+        <link>https://zayn7lie.ber7.org/tags/python/</link>
         <description>Recent content in Python on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>VSCode All in One</title>
-        <link>http://localhost:1313/posts/linux/vscode/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/vscode/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/vscode/</guid>
-        <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-&lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
+        <guid>https://zayn7lie.ber7.org/posts/linux/vscode/</guid>
+        <description>&lt;h2 id=&#34;installation&#34;&gt;
+    &lt;a href=&#34;#installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Installation
+&lt;/h2&gt;&lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;: &lt;code&gt;Preferences: Configure Runtime Arguments&lt;/code&gt;: &lt;code&gt;&amp;quot;password-store&amp;quot;:&amp;quot;gnome&amp;quot;&lt;/code&gt; or &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Word Count: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=kirozen.wordcounter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;WordCounter&lt;/code&gt;MS&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vim: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Vim&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;latex&#34;&gt;Latex&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h2 id=&#34;latex&#34;&gt;
+    &lt;a href=&#34;#latex&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Latex
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;LaTeX Workshop&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -35,8 +39,10 @@
     &gt;&lt;code&gt;vscode-pandoc&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;c&#34;&gt;C++&lt;/h2&gt;
-&lt;ol&gt;
+&lt;h2 id=&#34;c&#34;&gt;
+    &lt;a href=&#34;#c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    C++
+&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install debug tool &lt;code&gt;gdb&lt;/code&gt;: &lt;code&gt;$ sudo pacman -S gdb&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -54,8 +60,10 @@
 &lt;p&gt;&lt;code&gt;Terminal&lt;/code&gt; -&amp;gt; &lt;code&gt;Config Default Build Task...&lt;/code&gt; -&amp;gt; &lt;code&gt;C/C++: g++ build active file&lt;/code&gt;; then turn back to &lt;code&gt;test.cpp&lt;/code&gt;, click the &lt;code&gt;gear&lt;/code&gt; icon: &lt;code&gt;&amp;quot;C/C++: g++ build and debug active file&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;misc&#34;&gt;
+    &lt;a href=&#34;#misc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Misc
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Excalidraw&lt;/li&gt;
 &lt;li&gt;SSH: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Remote - SSH&lt;/code&gt;MS&lt;/a&gt;&lt;/li&gt;

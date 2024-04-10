@@ -2,18 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Calculus BC on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/calculus-bc/</link>
+        <link>https://zayn7lie.ber7.org/tags/calculus-bc/</link>
         <description>Recent content in Calculus BC on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/calculus-bc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus-bc/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus: Series</title>
-        <link>http://localhost:1313/posts/math/cal-ser/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-ser/</link>
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-ser/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series&lt;/h2&gt;
-&lt;ul&gt;
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;
+    &lt;a href=&#34;#why-why-should-we-learn-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why should we learn Series
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
 &lt;/li&gt;
@@ -21,10 +23,14 @@
 &lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence&lt;/h2&gt;
-&lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h3 id=&#34;convergence&#34;&gt;Convergence&lt;/h3&gt;
-&lt;p&gt;$\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/p&gt;
+&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;
+    &lt;a href=&#34;#what-what-is-sequence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Sequence
+&lt;/h2&gt;&lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
+&lt;h3 id=&#34;convergence&#34;&gt;
+    &lt;a href=&#34;#convergence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Convergence
+&lt;/h3&gt;&lt;p&gt;$\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/p&gt;
 &lt;p&gt;E.g. $1/x$: for all $\epsilon$, exist $N = \frac{1}{\epsilon}$, for all $n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n$ convergent to 0&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -70,8 +76,10 @@ $$ \text{Hint 1: } (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
 $$
 $$ \text{Hint 2: } a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;
+    &lt;a href=&#34;#arbitrary-sequence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Arbitrary Sequence
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Arithmetic sequence&lt;/p&gt;
 &lt;/li&gt;
@@ -79,10 +87,14 @@ $$&lt;/p&gt;
 &lt;p&gt;Geometric progression&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-series&#34;&gt;WHAT: What is Series&lt;/h2&gt;
-&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;what-what-is-series&#34;&gt;
+    &lt;a href=&#34;#what-what-is-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Series
+&lt;/h2&gt;&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
+&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;
+    &lt;a href=&#34;#convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Test for Series&lt;/p&gt;
 &lt;ul&gt;
@@ -134,8 +146,10 @@ $$ \sum(1 - \frac{1}{n})^n, \sum(1 - \frac{1}{n})^{n^2}, \sum{\ln(1 + \frac{1}{n
 $$
 $$ \sum \frac{x^n}{\ln^p x}, \text{Known $b_n \rightarrow \frac{2}{5}$, }\sum_1\frac{(-1)^nn!}{n^nb_1b_2\ldots b_n}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;arbitrary-series&#34;&gt;
+    &lt;a href=&#34;#arbitrary-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Arbitrary Series
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Geometric Series&lt;/p&gt;
 &lt;/li&gt;
@@ -151,22 +165,30 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how&#34;&gt;HOW&lt;/h2&gt;
-&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;WHAT: What is the applycation of series - Power Series&lt;/h3&gt;
-&lt;p&gt;$f(x) = \sum c(x - a)^n$ is called a power series centered at $a$, domain of $f(x)$ is the set that series converge.&lt;/p&gt;
+&lt;h2 id=&#34;how&#34;&gt;
+    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW
+&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;
+    &lt;a href=&#34;#what-what-is-the-applycation-of-series---power-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is the applycation of series - Power Series
+&lt;/h3&gt;&lt;p&gt;$f(x) = \sum c(x - a)^n$ is called a power series centered at $a$, domain of $f(x)$ is the set that series converge.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;only converge at $x = a$&lt;/li&gt;
 &lt;li&gt;converge for all $x \in R$&lt;/li&gt;
 &lt;li&gt;$\exists R &amp;gt; 0, |x - a| &amp;lt; R \text{ the series converge}, R: \text{radius of convergence}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;HOW: Ratio Test + Two sides&lt;/h4&gt;
-&lt;p&gt;Exercise.&lt;/p&gt;
+&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;
+    &lt;a href=&#34;#how-ratio-test--two-sides&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: Ratio Test + Two sides
+&lt;/h4&gt;&lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Find the domain of } f(x) = \sum \frac{(x - 3)^n}{n} (ANS: [2,4))
 $$
 $$ \text{}
 $$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-apply&#34;&gt;HOW: How to apply&lt;/h4&gt;
-&lt;p&gt;if the power series has a convergent radius R &amp;gt; 0, the f(x) is both differentiatable and integrable on the interval (a - R, a + R), and&lt;/p&gt;
+&lt;h4 id=&#34;how-how-to-apply&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply
+&lt;/h4&gt;&lt;p&gt;if the power series has a convergent radius R &amp;gt; 0, the f(x) is both differentiatable and integrable on the interval (a - R, a + R), and&lt;/p&gt;
 &lt;p&gt;$$ f&amp;rsquo;(x) = \sum n c_n (x - a)^{n - 1}
 $$
 $$ \int f(x)dx = c + \sum \frac{c_n}{n + 1}(x - a)^{n + 1}
@@ -183,8 +205,10 @@ $$ \text{If $f(x) = \sum c_n x^n$, where $c_{n + 4} = c_n$ for all $n \geq 0$,}
 $$
 $$ \text{find the interval of convergence of the series and the formula for f(x)}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;HOW: How to apply for graphing - Taylor Series&lt;/h3&gt;
-&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
+&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-for-graphing---taylor-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply for graphing - Taylor Series
+&lt;/h3&gt;&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;
@@ -244,21 +268,27 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Integral</title>
-        <link>http://localhost:1313/posts/math/cal-int/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-int/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;WHY: Why do we want to find out the integral&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;
+    &lt;a href=&#34;#why-why-do-we-want-to-find-out-the-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why do we want to find out the integral
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Find out the area&lt;/li&gt;
 &lt;li&gt;Find out some physics parameters&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;&lt;/h2&gt;
-&lt;h3 id=&#34;approx-integral&#34;&gt;Approx. Integral&lt;/h3&gt;
-&lt;blockquote&gt;
+&lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;
+    &lt;a href=&#34;#what-what-is-integral---area-with-positive-and-negative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;
+&lt;/h2&gt;&lt;h3 id=&#34;approx-integral&#34;&gt;
+    &lt;a href=&#34;#approx-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Approx. Integral
+&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Equaling space is not necessary&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
@@ -287,8 +317,10 @@ E = \begin{cases}
 \text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 \end{cases}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;trans-between-different-variables&#34;&gt;Trans between different variables&lt;/h3&gt;
-&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, \text{assume } F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+&lt;h3 id=&#34;trans-between-different-variables&#34;&gt;
+    &lt;a href=&#34;#trans-between-different-variables&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Trans between different variables
+&lt;/h3&gt;&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)}dt, \text{assume } F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
 $$
 $$ \text{Taking derivative in both sides:} \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{dx}F(g(x)) - \frac{d}{dx}F(C)
 $$
@@ -296,9 +328,13 @@ $$ F&amp;rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&amp;rsquo;(g(x
 $$
 $$ \therefore \frac{d}{dx}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{d}{dx}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
 $$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;HOW: How to integral - Technique&lt;/h2&gt;
-&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;Substitution: If the function combines with its derivative&lt;/h3&gt;
-&lt;blockquote&gt;
+&lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;
+    &lt;a href=&#34;#how-how-to-integral---technique&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to integral - Technique
+&lt;/h2&gt;&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;
+    &lt;a href=&#34;#substitution-if-the-function-combines-with-its-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Substitution: If the function combines with its derivative
+&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Rules: $\frac{df}{dx} = \frac{df}{dh} \cdot \frac{dh}{dx}$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
@@ -324,8 +360,10 @@ $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
 &lt;p&gt;$$ \int{\frac{x}{\sqrt{1 - x^2}}}, \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}dx, \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}dx, \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}dx, \int{\frac{x^5 - x}{x^8 + 1}}dx
 $$&lt;/p&gt;
-&lt;h3 id=&#34;integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34;&gt;Integration by part: If the function combines with a simple function&amp;rsquo;s derivative&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34;&gt;
+    &lt;a href=&#34;#integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Integration by part: If the function combines with a simple function&amp;rsquo;s derivative
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Reduce Power: $\int{x \cdot \sin x}dx$&lt;/p&gt;
 &lt;/li&gt;
@@ -347,8 +385,10 @@ $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
 &lt;p&gt;$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}dx \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}dx = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}dx, \int(4x^4 + 1)e^{x^4}dx
 $$&lt;/p&gt;
-&lt;h3 id=&#34;eg-partial-fractions&#34;&gt;E.g. Partial Fractions&lt;/h3&gt;
-&lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
+&lt;h3 id=&#34;eg-partial-fractions&#34;&gt;
+    &lt;a href=&#34;#eg-partial-fractions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    E.g. Partial Fractions
+&lt;/h3&gt;&lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
 $$
 $$ D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
 $$
@@ -396,9 +436,13 @@ For integral $\int_a^b{f(x)}dx$, when there are some points that are not defined
 &lt;p&gt;$$ \int_a^b{f(x)}dx = \lim_{t \rightarrow b}\int_a^t{f(x)}dx
 $$&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality&lt;/h2&gt;
-&lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations&lt;/h3&gt;
-&lt;p&gt;$$ \text{Informal:} \frac{dy}{dx} = \frac{x}{y} \Rightarrow ydy = xdx \Rightarrow \int{y}dy = \int{x}dx
+&lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-integral-to-reality&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply integral to reality
+&lt;/h2&gt;&lt;h3 id=&#34;rate---differential-equations&#34;&gt;
+    &lt;a href=&#34;#rate---differential-equations&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Rate - Differential Equations
+&lt;/h3&gt;&lt;p&gt;$$ \text{Informal:} \frac{dy}{dx} = \frac{x}{y} \Rightarrow ydy = xdx \Rightarrow \int{y}dy = \int{x}dx
 $$
 $$ \text{*Formal Solution:} \frac{d}{dx}{y(t(x))} = \frac{dy}{dt} \cdot \frac{dt}{dx} \Leftrightarrow \int{(y(t(x)) \frac{dt}{dx})}dx = \int{(y \frac{dt}{dx})}dx = \frac{y^2}{2}
 $$&lt;/p&gt;
@@ -419,28 +463,40 @@ $$&lt;/p&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{dt^2}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arc-length&#34;&gt;Arc Length&lt;/h3&gt;
-&lt;p&gt;$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
+&lt;h3 id=&#34;arc-length&#34;&gt;
+    &lt;a href=&#34;#arc-length&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Arc Length
+&lt;/h3&gt;&lt;p&gt;$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}}dx
 $$&lt;/p&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Find curve length of } y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4
 $$&lt;/p&gt;
-&lt;h3 id=&#34;areas&#34;&gt;Areas&lt;/h3&gt;
-&lt;p&gt;$$ A = \lim_{n \rightarrow \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy
+&lt;h3 id=&#34;areas&#34;&gt;
+    &lt;a href=&#34;#areas&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Areas
+&lt;/h3&gt;&lt;p&gt;$$ A = \lim_{n \rightarrow \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}dx = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}dy
 $$&lt;/p&gt;
-&lt;h3 id=&#34;surface&#34;&gt;Surface&lt;/h3&gt;
-&lt;p&gt;$$ S = \int{2\pi f(x)\sqrt{1 + f&amp;rsquo;^2}}dx
+&lt;h3 id=&#34;surface&#34;&gt;
+    &lt;a href=&#34;#surface&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Surface
+&lt;/h3&gt;&lt;p&gt;$$ S = \int{2\pi f(x)\sqrt{1 + f&amp;rsquo;^2}}dx
 $$&lt;/p&gt;
-&lt;h3 id=&#34;volume&#34;&gt;Volume&lt;/h3&gt;
-&lt;p&gt;$$ V = \int{A(z)}dz
+&lt;h3 id=&#34;volume&#34;&gt;
+    &lt;a href=&#34;#volume&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Volume
+&lt;/h3&gt;&lt;p&gt;$$ V = \int{A(z)}dz
 $$
 $$ \text{Cylindrical Shells (y-axis): } V = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi ((x + \Delta{x})^2 - x^2)}}
 $$
 $$ = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi (2x \Delta{x} + \Delta^2{x})}} = \int{h(x) 2 \pi x}dx
 $$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-apply-in-polar-coordinate&#34;&gt;HOW: How to apply in Polar Coordinate&lt;/h2&gt;
-&lt;h3 id=&#34;why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34;&gt;WHY: Why we should learn about Polar Coordinate - Cycloid &amp;amp; Parametric Curves&lt;/h3&gt;
-&lt;p&gt;$$ \begin{cases}
+&lt;h2 id=&#34;how-how-to-apply-in-polar-coordinate&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-in-polar-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply in Polar Coordinate
+&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34;&gt;
+    &lt;a href=&#34;#why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why we should learn about Polar Coordinate - Cycloid &amp;amp; Parametric Curves
+&lt;/h3&gt;&lt;p&gt;$$ \begin{cases}
 x = r(\theta - \sin\theta) \
 y = r(1 - \cos\theta)
 \end{cases}
@@ -453,8 +509,10 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{dy^2}{dx^2}}}dx = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{dy/dt}{dx/dt})^2}}\frac{dx}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{dx^2}{dt^2} + \frac{dy^2}{dt^2}}}dt
 $$&lt;/p&gt;
-&lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;WHAT: What is Polar Coordinates&lt;/h3&gt;
-&lt;p&gt;$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
+&lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;
+    &lt;a href=&#34;#what-what-is-polar-coordinates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Polar Coordinates
+&lt;/h3&gt;&lt;p&gt;$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$(r, \theta) = (-r, \theta + (2k + 1)\pi) = (r, \theta + 2k\pi)$&lt;/p&gt;
@@ -463,15 +521,19 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Differentiation</title>
-        <link>http://localhost:1313/posts/math/cal-dif/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-dif/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;WHY: Why should we learn differentiation?&lt;/h2&gt;
-&lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;
+    &lt;a href=&#34;#why-why-should-we-learn-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why should we learn differentiation?
+&lt;/h2&gt;&lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;p&gt;How to sketch a function? - Find the tendency of a function, knowning &lt;em&gt;monotonicity&lt;/em&gt; and &lt;em&gt;concavity&lt;/em&gt;. (&amp;amp; Optimization)&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;WHAT: What is differentiation?&lt;/h2&gt;
-&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ #2} = \frac{df(x)}{dx} \textbf{ #3} \Rightarrow f&amp;rsquo;(x) \textbf{ #4}
+&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;
+    &lt;a href=&#34;#what-what-is-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is differentiation?
+&lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ #2} = \frac{df(x)}{dx} \textbf{ #3} \Rightarrow f&amp;rsquo;(x) \textbf{ #4}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $d$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{df(x)}{dx} \neq df(x) \div dx$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{df(x)}{dx}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{dx}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
@@ -485,8 +547,10 @@ $$&lt;/p&gt;
 &lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-01&lt;/code&gt;: Use the derivative way to present $g(x)$: $g(x) = \lim_{h \rightarrow 0}\Large{\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}}$&lt;/p&gt;
-&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
+    &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why a function could be differentiated? - Differentiability
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Limit &amp;amp; Continuity: $\lim_{x \rightarrow a}{f(x)} = f(a)$ ($\lim_{x \rightarrow a}{f(x)} = \lim_{x \rightarrow a^+}{f(x)} = \lim_{x \rightarrow a^-}{f(x)}$)
 &lt;ul&gt;
 &lt;li&gt;IVT (Intermediate Value Theorem): If $f(x)$ is &lt;em&gt;continuous&lt;/em&gt; on $[a, b]$, then $\exists c \in [a,b], f(c) \in [f(a), f(b)]$
@@ -514,16 +578,20 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-01&lt;/code&gt;: $\lim_{x \rightarrow 0^+}{x\ln{x}}$, $\lim_{x \rightarrow 0^+}{x^x}$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-02&lt;/code&gt;: $\lim_{x \rightarrow \pm\infty}(1 + \frac{1}{x})^x$ (Important one, that&amp;rsquo;s the definition of $e$)&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-03&lt;/code&gt;: $\lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}$&lt;/p&gt;
-&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;WHAT: What is the derivative for basic function&lt;/h3&gt;
-&lt;p&gt;$$ \frac{d}{dx}x^n = n \cdot x^{n - 1}, \frac{d}{dx}Constant = 0, \frac{d}{dx}\ln{x} = \frac{1}{x}, \frac{d}{dx}e^x = e^x
+&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;
+    &lt;a href=&#34;#what-what-is-the-derivative-for-basic-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is the derivative for basic function
+&lt;/h3&gt;&lt;p&gt;$$ \frac{d}{dx}x^n = n \cdot x^{n - 1}, \frac{d}{dx}Constant = 0, \frac{d}{dx}\ln{x} = \frac{1}{x}, \frac{d}{dx}e^x = e^x
 $$
 $$ \frac{d}{dx}\sin{x} = \cos{x}, \frac{d}{dx}\cos{x} = -\sin{x}, \frac{d}{dx}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
 $$
 $$ \frac{d}{dx}\sin^{-1}{x} = \frac{d}{dx}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\cos^{-1}{x} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\tan^{-1}{x} = \frac{1}{1 + x^2}
 $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-03&lt;/code&gt;: Try to use definition to derive the first two lines.&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;HOW: How to differentiate? - Basic rules&lt;/h3&gt;
-&lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \Leftrightarrow (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
+&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;
+    &lt;a href=&#34;#how-how-to-differentiate---basic-rules&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to differentiate? - Basic rules
+&lt;/h3&gt;&lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \Leftrightarrow (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
 $$
 $$ \frac{d}{dx}(f(x) \cdot g(x)) = \frac{d}{dx}f(x) \cdot g(x) + f(x) \cdot \frac{d}{dx}g(x) \Leftrightarrow (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
 $$
@@ -534,12 +602,18 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-01&lt;/code&gt;: Try to use the basic rule to derive the third line in &lt;code&gt;WHAT: What is the derivative for basic function&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-02&lt;/code&gt;: Differentiate $a^x$ and $\log_ax$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-03&lt;/code&gt;: Known $x^2 + y^2 = 25$, derive $\frac{d}{dx}y$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;HOW: How to apply differentiation in solving problem?&lt;/h2&gt;
-&lt;h3 id=&#34;finding-rates&#34;&gt;Finding Rates&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-01&lt;/code&gt;: A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
+&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;
+    &lt;a href=&#34;#how-how-to-apply-differentiation-in-solving-problem&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to apply differentiation in solving problem?
+&lt;/h2&gt;&lt;h3 id=&#34;finding-rates&#34;&gt;
+    &lt;a href=&#34;#finding-rates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Finding Rates
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-01&lt;/code&gt;: A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-02&lt;/code&gt;: The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{d}{dt}x = \frac{d}{dt}z$ and the rate of the diagonal $z$ has $\frac{d}{dt}z = \frac{d}{dt}y$. Derive the value of $k$.&lt;/p&gt;
-&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;Curve Sketching &amp;amp; Optimization&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;
+    &lt;a href=&#34;#curve-sketching--optimization&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Curve Sketching &amp;amp; Optimization
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Monotonicity with $dy/dx$
 &lt;ul&gt;
 &lt;li&gt;Monotonic increasing - $dy/dx &amp;gt; 0$&lt;/li&gt;

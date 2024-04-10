@@ -2,34 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hyprland on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/hyprland/</link>
+        <link>https://zayn7lie.ber7.org/tags/hyprland/</link>
         <description>Recent content in Hyprland on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/hyprland/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/hyprland/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hyprland (Wayland)</title>
-        <link>http://localhost:1313/posts/linux/hyprland/</link>
+        <link>https://zayn7lie.ber7.org/posts/linux/hyprland/</link>
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/linux/hyprland/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/linux/hyprland/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;12/05/2023-Updated: I have written a script for autoconfiguration. Uploaded to dot files below.&lt;/p&gt;
 &lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
 &lt;p&gt;Dot files could be found in &lt;a class=&#34;link&#34; href=&#34;https://github.com/zayn7lie/dot-files&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/zayn7lie/dot-files&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;Easy to install: &lt;code&gt;$ sudo pacman -S hyprland&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;config&#34;&gt;Config&lt;/h2&gt;
-&lt;h3 id=&#34;basic&#34;&gt;Basic&lt;/h3&gt;
-&lt;h4 id=&#34;io&#34;&gt;IO&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;install&#34;&gt;
+    &lt;a href=&#34;#install&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Install
+&lt;/h2&gt;&lt;p&gt;Easy to install: &lt;code&gt;$ sudo pacman -S hyprland&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;config&#34;&gt;
+    &lt;a href=&#34;#config&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Config
+&lt;/h2&gt;&lt;h3 id=&#34;basic&#34;&gt;
+    &lt;a href=&#34;#basic&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Basic
+&lt;/h3&gt;&lt;h4 id=&#34;io&#34;&gt;
+    &lt;a href=&#34;#io&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    IO
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Disable Mouse Acceleration: add &lt;code&gt;force_no_accel = true&lt;/code&gt; to &lt;code&gt;input{}&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Authorization: &lt;code&gt;polkit-gnome&lt;/code&gt;, then add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Desktop Manager (Could this be called Desktop?): &lt;code&gt;sddm&lt;/code&gt;, then &lt;code&gt;$ sudo systemctl enable sddm&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;system&#34;&gt;System&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;system&#34;&gt;
+    &lt;a href=&#34;#system&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    System
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;linux-flowx13&lt;/code&gt; specific kernel for ROG Flow X13&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;SWAPFILE&lt;/code&gt; creation: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Swap#Swap_file&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/Swap#Swap_file&lt;/a&gt;&lt;/li&gt;
@@ -43,8 +53,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;appearance&#34;&gt;Appearance&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;appearance&#34;&gt;
+    &lt;a href=&#34;#appearance&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Appearance
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Theme Control: &lt;code&gt;qt5ct qt6ct&lt;/code&gt; &lt;code&gt;xfce4-settings&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -87,9 +99,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
-&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;media&#34;&gt;
+    &lt;a href=&#34;#media&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Media
+&lt;/h3&gt;&lt;h4 id=&#34;image&#34;&gt;
+    &lt;a href=&#34;#image&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Image
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Screenshot: AUR&lt;code&gt;grimblast-git&lt;/code&gt;, then bind hotkey: &lt;code&gt;bind = $mainMod SHIFT, S, exec, env XDG_SCREENSHOTS_DIR=$HOME/Pictures/Screenshot grimblast copysave area&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;Copy2Clipboard: &lt;code&gt;wl-clipboard&lt;/code&gt;&lt;/li&gt;
@@ -99,8 +115,10 @@
 &lt;li&gt;view: &lt;code&gt;nsxiv&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Preview: &lt;code&gt;tumbler ffmpegthumbnailer&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;audio&#34;&gt;Audio&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;audio&#34;&gt;
+    &lt;a href=&#34;#audio&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Audio
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -156,13 +174,19 @@
 &lt;p&gt;Bluetooth: &lt;code&gt;bluez bluez-utils blueman&lt;/code&gt;, then add &lt;code&gt;blueman-applet&lt;/code&gt; to config&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;video&#34;&gt;Video&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;video&#34;&gt;
+    &lt;a href=&#34;#video&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Video
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Editor: &lt;code&gt;blender&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;work&#34;&gt;Work&lt;/h3&gt;
-&lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;work&#34;&gt;
+    &lt;a href=&#34;#work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Work
+&lt;/h3&gt;&lt;h4 id=&#34;input&#34;&gt;
+    &lt;a href=&#34;#input&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Input
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -181,8 +205,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;writing&#34;&gt;Writing&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;writing&#34;&gt;
+    &lt;a href=&#34;#writing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Writing
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Code: &lt;code&gt;code&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/li&gt;
@@ -203,8 +229,10 @@
 &lt;li&gt;Dictionary: &lt;code&gt;goldendict-ng-git&lt;/code&gt;AUR&lt;/li&gt;
 &lt;li&gt;PDF Notation: &lt;code&gt;mupdf (tesseract-data-eng)&lt;/code&gt; &lt;code&gt;xournalpp&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;social&#34;&gt;Social&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;social&#34;&gt;
+    &lt;a href=&#34;#social&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Social
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Email: &lt;code&gt;thunderbird&lt;/code&gt; &lt;code&gt;# evolution evolution-on&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://addons.thunderbird.net/en-US/thunderbird/addon/provider-for-google-calendar/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -215,8 +243,10 @@
 &lt;li&gt;Meeting: &lt;code&gt;zoom&lt;/code&gt;AUR&lt;/li&gt;
 &lt;li&gt;Discord: &lt;code&gt;webcord&lt;/code&gt;AUR&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;game&#34;&gt;Game&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;game&#34;&gt;
+    &lt;a href=&#34;#game&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Game
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
