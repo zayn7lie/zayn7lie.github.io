@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why shouldn&rsquo;t we learn from &quot;Hello, world&quot; first? I believe many people are confused about the reason we start from function instead of popular &quot;Hello, world&quot;. It is because &quot;Hello, world&quot; program is too difficult to beginner. Some people might still be confused with difficult, then let&rsquo;s have a review of the program first: #include &lt;cstdio&gt; int main() { printf(&#34;Hello, world!\\n&#34;); return 0; } or #include &lt;iostream&gt; using namespace std; int main() { cout &lt;&lt; &#34;Hello, world!">
 <title>C&#43;&#43; Basic - 01 Function</title>
 
-<link rel='canonical' href='http://localhost:1313/posts/cpp-algorithm/00-01/'>
+<link rel='canonical' href='https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/'>
 
 <link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="C++ Basic - 01 Function">
 <meta property='og:description' content="# WHY: Why shouldn&rsquo;t we learn from &quot;Hello, world&quot; first? I believe many people are confused about the reason we start from function instead of popular &quot;Hello, world&quot;. It is because &quot;Hello, world&quot; program is too difficult to beginner. Some people might still be confused with difficult, then let&rsquo;s have a review of the program first: #include &lt;cstdio&gt; int main() { printf(&#34;Hello, world!\\n&#34;); return 0; } or #include &lt;iostream&gt; using namespace std; int main() { cout &lt;&lt; &#34;Hello, world!">
-<meta property='og:url' content='http://localhost:1313/posts/cpp-algorithm/00-01/'>
+<meta property='og:url' content='https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='CSCI' /><meta property='article:tag' content='Program Language' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2023-02-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-02-20T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="C++ Basic - 01 Function">
@@ -451,6 +451,215 @@
 
 
 
+
+<h2 id="why-why-shouldnt-we-learn-from-hello-world-first">
+    <a href="#why-why-shouldnt-we-learn-from-hello-world-first" class="header-anchor">#</a>
+    WHY: Why shouldn&rsquo;t we learn from <code>&quot;Hello, world&quot;</code> first?
+</h2><p>I believe many people are confused about the reason we start from function instead of popular <code>&quot;Hello, world&quot;</code>. It is because <code>&quot;Hello, world&quot;</code> program is too difficult to beginner.</p>
+<p>Some people might still be confused with <em>difficult</em>, then let&rsquo;s have a review of the program first:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;Hello, world!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Hello, world!&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>At the first sight of these, you possibly confused about what <code>include</code> is, what is included in <code>namespace</code>, why we should add <code>int main()</code>, etc. But your professor would possibly reply that don&rsquo;t ask, remember first?</p>
+<p>As a science subject that is focusing on logic, I am opposed with such an unlogical way to study. What is more, <code>&quot;Hello, world&quot;</code> program is used for testing compiler instead of learning. Thus, I prefer to start with an easier program with less confusing things:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span> x) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>To be more accurate, this is not a <em>program</em> but a <em>function</em> that is supposed to be the beginning for beginner.</p>
+<h2 id="what">
+    <a href="#what" class="header-anchor">#</a>
+    WHAT
+</h2><h3 id="what-is-function">
+    <a href="#what-is-function" class="header-anchor">#</a>
+    What is function?
+</h3><p>Ref. <a class="link" href="https://en.wikipedia.org/wiki/Function_%28mathematics%29"  target="_blank" rel="noopener"
+    >Wikipedia</a>: In mathematics, a <strong>function</strong> from a set $X$ to a set $Y$ assigns to each element of $X$ exactly one element of $Y$.</p>
+<p>Too abstract? Just understand that <code>Function</code> is a &ldquo;machine&rdquo; containing some functions. E.g. $f(x) = x + 1$ machine $f(x)$ contains a function that could help to add 1 to input.</p>
+<p>Then, you might find that all math or cs questions could be turned into functions with different complexity like $f(g(x) + h(y) \cdot u(z))$. And if we turn this into a language that computer could understand, it is a <em>program</em>.</p>
+<p>Now, you might understand why should we start from function. Function, is the most basic logic under program. Or, <em>all programs are consisted by functions</em>.</p>
+<h3 id="what-is-the-components-of-function">
+    <a href="#what-is-the-components-of-function" class="header-anchor">#</a>
+    What is the components of function?
+</h3><p>Let&rsquo;s have a review of the previous function: <code>int f(int x){return x + 1;}</code>, which equals to $f(x) = x + 1$ in mathematics. It&rsquo;s time to fully understand this function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span> x) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li><code>int</code>: tell computer (declare) that the output ($f(x)$) and input ($x$) are integers. We have to tell computer every variable&rsquo;s type so that the computer could store it properly.</li>
+<li><code>(int x)</code>: input value. In the following program we could call this function by just using <code>f(1)</code>, <code>f(2)</code></li>
+<li><code>return</code>: tell computer that the function next is to output the value followed by <code>return</code> and then function would be terminated.</li>
+<li><code>;</code>: separate different commends in the function.</li>
+<li><code>{ }</code>: to &ldquo;pack&rdquo; the function.</li>
+</ul>
+<p>You might have an overview of function now, then let&rsquo;s move to a more complex function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">function</span>(<span style="color:#66d9ef">int</span> a) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> bestNum;
+</span></span><span style="display:flex;"><span>    bestNum <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> bestNum;
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> a;
+</span></span><span style="display:flex;"><span>    bestNum <span style="color:#f92672">=</span> a;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> bestNum;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Line 1: At this time, we declare two things, <code>function()</code> and <code>a</code>, as integers. You might find that we do not use <code>f()</code> this time, we use <code>function()</code> instead. Right, and <code>function</code> is better than <code>f</code> because while reading code, people could easier to get programmers&rsquo; points.</p>
+<p>Line 2 &amp; 3: <code>int bestNum = 7</code> in short (and preferred). As I have mentioned above, <code>bestNum</code> is better than <code>bn</code> or just <code>b</code> because we could understand it better. In this point, we declare <code>bestNum</code> is an integer and <em>assign</em> <code>7</code> to <code>bestNum</code>. Let me describe two things: how do the name of <code>bestNum</code> come and what is <em>assign</em>:</p>
+<ul>
+<li><code>camelCase</code>: while writing a variable, we cannot divide the terms into separated words for computer cannot recognize it correctly like we cannot write <code>camelCase</code> to <code>camel case</code>. In this case, we have several ways to name this like <code>camel_case</code>, <code>camel-case</code>, <code>CamelCase</code>. But <code>camelCase</code> is one of the wide-use approach for its high efficiency. And the name of the naming method is <em>Camel Case</em>. And <code>num</code> is <code>number</code> in short. There is also some abbr like <code>ans</code> refer to <code>answer</code>, <code>cnt</code> refer to <code>counter</code>, etc.</li>
+<li><code>=</code>: <code>=</code> does not mean <em>equal</em>, but <em>assign</em>. <em>Equal</em> is a kind of <em>judgement</em> (We will learn it later about <code>==</code>), but <em>Assign</em> is a kind of <em>calculation</em>. To fully understand this, let&rsquo;s look deeper into computer memory. When we declare variables, the computer will give every variable some memory for store number like computer will give <code>int</code> 32 bits (4 bytes) to store and give <code>long long int</code> 64 bits to store which means <code>long long int</code> is able to store larger integer. Every type use only <code>0</code> and <code>1</code> to store number thus when we assign, many <code>0</code> and <code>1</code> change to store the number when we assign to the variable.</li>
+</ul>
+<p>Line 4: We assign the number store in <code>bestNum</code> to <code>a</code>. And remember, <code>a</code> is not a preferred name. When we write program, please make it more specific.</p>
+<p>Line 5: We assign the number that store in <code>a</code> and then times two to <code>a</code>. We calculate the number at the right of <code>=</code> first and then assign the number we calculated to the left variable.</p>
+<p>Line 6: We assign the number store in <code>a</code> to <code>bestNum</code></p>
+<p>Line 7: The overall function <code>function()</code> returns an integer number <code>bestNum</code>.</p>
+<p>In a nutshell, the function of <code>function()</code> is that first assigning $7$ to <code>bestNum</code> that we declare as an integer, then assign <code>bestNum</code> to <code>a</code>, then assign the number that <code>a</code> times $2$ to <code>a</code>, then assign <code>a</code> back to <code>bestNum</code>, finally returns <code>bestNum</code>.</p>
+<p>You might find that there is no point to input <code>a</code> for it will be &lsquo;refreshed&rsquo; or assigned with another number <code>bestNum</code> in line 4. So we could rewrite line 1: <code>int function() {</code></p>
+<p>If you could get the points in the nutshell, then congratulation that you stepped in c++ now. But you might still be confused about although there is no CE (Compile-time Error) but RE (Runtime Error). Which the function that the overall program start with?</p>
+<h3 id="the-main-function-of-a-program---main-function">
+    <a href="#the-main-function-of-a-program---main-function" class="header-anchor">#</a>
+    The main function of a program - <code>main()</code> function
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> y;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> f(a, b);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This is a program without input and output (We will take about how to input and output in terminal next course). Let&rsquo;s have an analysis of this function:</p>
+<ul>
+<li>The program begins from <code>main()</code>, but why do we write from <code>f()</code>? It is because every function is supposed to be known before usage (When solving math problems, we are also supposed to clarify the function of every function before usage).</li>
+<li><code>return 0</code> of the <code>main()</code> does not mean that the whole program would return 0 after running - <code>0</code> in C++ means that the whole program runs without problem.</li>
+<li>You might notice that in this time, <code>f()</code> have two parameters, it is valid. (It is also valid in mathematics)</li>
+</ul>
+<p>If you could get the point, let&rsquo;s forward to a more .complicated program:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">h</span>(<span style="color:#66d9ef">int</span> i) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> i;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span> i) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> h(i);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> ...;
+</span></span><span style="display:flex;"><span>    f(i);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Could you tell the sequence of this program?</p>
+<p><code>main</code> -&gt; <code>f</code> -&gt; <code>h</code> (return) -&gt; <code>f</code> -&gt; <code>main</code></p>
+<p>It is a <code>stack</code> structure, which we put <code>main</code> in the bottom first, then <code>f</code>, then <code>h</code>. When we want to return, we also have to pick from the top first: <code>h</code>, <code>f</code> then <code>main</code>.</p>
+<p>The <code>stack</code> structure, which is defined as LIFO, Last In First Out, is widely use in algorithm, computer hardware, etc. We will gain a deeper sight of this in the following courses.</p>
+<h2 id="how-how-to-write-a-program">
+    <a href="#how-how-to-write-a-program" class="header-anchor">#</a>
+    HOW: How to write a Program?
+</h2><h3 id="begin-with-main-is-a-good-habit">
+    <a href="#begin-with-main-is-a-good-habit" class="header-anchor">#</a>
+    Begin with <code>main()</code> is a good habit
+</h3><p>From the knowledge we have learned above, every program contains a <code>main()</code> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">*</span>sentence<span style="color:#f92672">*</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We know that the return value of <code>main()</code> is not important. But why do we declare <code>main</code> as integer instead of other type like boolean <code>bool</code>?</p>
+<p>At the beginning, I hope to improve the <em>answer searching ability</em> for everyone.</p>
+<ol>
+<li>For the question <em>why do we declare main function as int in c++?</em>, we abstract the keywords: <code>why declare</code>(question) <code>main</code>(target 1) <code>int</code>(target 2) <code>c++</code>(field)</li>
+<li>Choose a platform for searching: <a class="link" href="https://www.google.com/"  target="_blank" rel="noopener"
+    >Google</a>, <a class="link" href="https://duckduckgo.com/"  target="_blank" rel="noopener"
+    >DuckDuckGo</a>, <a class="link" href="https://stackoverflow.com/"  target="_blank" rel="noopener"
+    >Stack Overflow</a>, and other forums.</li>
+<li>Type in the keywords and search.</li>
+</ol>
+<ul>
+<li>More about how to get the answer: <a class="link" href="http://www.catb.org/~esr/faqs/smart-questions.html"  target="_blank" rel="noopener"
+    >How To Ask Questions The Smart Way</a></li>
+</ul>
+<p>After several searching, you might find the answer: <code>The short answer, is because the C++ standard requires main() to return int . As you probably know, the return value from the main() function is used by the runtime library as the exit code for the process. Both Unix and Win32 support the concept of a (small) integer returned from a process after it has finished.</code></p>
+<p>In short, this is a regulation when C++ was created. When program return 0 everything goes well.</p>
+<p>I use this case to emphasize that the purpose of my blog is not <em>finding answer</em> but <em>getting better understanding and logic for specific knowledge</em>. I hope everyone could follow <a class="link" href="http://www.catb.org/~esr/faqs/smart-questions.html"  target="_blank" rel="noopener"
+    >How To Ask Questions The Smart Way</a> before asking questions.</p>
+<blockquote>
+<p>The first thing to understand is that hackers actually like hard problems and good, thought-provoking questions about them. If we didn&rsquo;t, we wouldn&rsquo;t be here. If you give us an interesting question to chew on we&rsquo;ll be grateful to you; good questions are a stimulus and a gift. Good questions help us develop our understanding, and often reveal problems we might not have noticed or thought about otherwise. Among hackers, “Good question!” is a strong and sincere compliment.</p>
+</blockquote>
+<p>Now, we know how to create a structure of a program, then what about calculation?</p>
+<h3 id="arithmetic">
+    <a href="#arithmetic" class="header-anchor">#</a>
+    Arithmetic
+</h3><ul>
+<li>Basic <code>+ - * /</code> could be use directly. E.g. <code>int a = 5 - 3;</code>, <code>float b = 3 / 6</code> (float is a type could store float number). But notice that <code>/</code> still cannot divide with <code>0</code>. Although there is no CE, but RE will happen while running the program.</li>
+<li><code>=</code> We have clarified that <code>=</code> is not <em>equal</em> but <em>assign</em> as an arithmetic.</li>
+<li>Mod calculation: <code>%</code>. E.g. <code>int a = 8 % 3; // a equals 2</code> (<code>//</code> is a comment sign. The content after <code>//</code> will not be compiled and run. <code>/*content*/</code> is similar to <code>//</code>, but you can comment for several lines.)</li>
+</ul>
+<h2 id="practice">
+    <a href="#practice" class="header-anchor">#</a>
+    Practice
+</h2><p>As the first practice, I will declare that how to use <code>practice</code> to improve ourselves.</p>
+<p><code>Practice</code> has three levels: <code>KNOW</code>, <code>UNDERSTAND</code>, <code>MASTER</code></p>
+<ul>
+<li><code>KNOW</code> focuses on the content itself of the posts, which is necessary for basis. Figuring out <code>KNOW</code> means that you fully read the post in this course. If you cannot solve <code>KNOW</code>, please read the post carefully again without distraction.</li>
+<li><code>UNDERSTAND</code> makes some modification with content itself and parameters, which is necessary for next learning. Figuring out <code>UNDERSTAND</code> means that you gain your own understanding while reading the post. If you cannot solve <code>UNDERSTAND</code>, please conclude the post and find out what you miss in this course, you could ask search engine for help as well.</li>
+<li><code>MASTER</code> explores deeper into knowledge and content, which is necessary for mastering C++ and next learning for algorithm. Figuring out <code>MASTER</code> means that you get every point of the post and build your would logical system of learning C++. If you cannot solve <code>MASTER</code>, you could read the answer directly and then understand how the answer works. After that, re-answer the question again.</li>
+</ul>
+<h3 id="know">
+    <a href="#know" class="header-anchor">#</a>
+    KNOW
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span> x) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> f(a);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Find the value of <code>a</code>.</p>
+<hr>
+<p><code>a</code> equals 2.</p>
+<h3 id="understand">
+    <a href="#understand" class="header-anchor">#</a>
+    UNDERSTAND
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">h</span>(<span style="color:#66d9ef">int</span> x){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">g</span>(<span style="color:#66d9ef">int</span> x){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> h(x);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">int</span> x){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> g(h(x));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> f(a);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Find the sequence of the functions and value of <code>a</code></p>
+<hr>
+<ol>
+<li>
+<p><code>main</code> -&gt; <code>f</code> -&gt; <code>h</code>(brackets have a higher privilege for calculation) -&gt; <code>g</code> -&gt; <code>h</code>(return) -&gt; <code>g</code> -&gt; <code>f</code> -&gt; <code>main</code></p>
+</li>
+<li>
+<p><code>a</code> equals 1.</p>
+</li>
+</ol>
+<h3 id="master">
+    <a href="#master" class="header-anchor">#</a>
+    MASTER
+</h3><p>Write a function <code>switch(int a, int b)</code> that could switch the value stored in <code>a</code> and <code>b</code>, then returns <code>a</code>.</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">switch</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> a;
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> b;
+</span></span><span style="display:flex;"><span>    b <span style="color:#f92672">=</span> c;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
     
     <h2 id="why-why-shouldnt-we-learn-from-hello-world-first">
     <a href="#why-why-shouldnt-we-learn-from-hello-world-first" class="header-anchor">#</a>
@@ -730,7 +939,7 @@
     data-host="https://cusdis.com"
     data-app-id="21afa2aa-6f2f-47a0-b7dd-16a0bb7a5b81"
     data-page-id="b954ef3e0bb0f10a6a0578a5af5ed213"
-    data-page-url="http://localhost:1313/posts/cpp-algorithm/00-01/"
+    data-page-url="https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/"
     data-page-title="C&#43;&#43; Basic - 01 Function"></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 

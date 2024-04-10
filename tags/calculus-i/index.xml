@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Calculus I on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/calculus-i/</link>
+        <link>https://zayn7lie.ber7.org/tags/calculus-i/</link>
         <description>Recent content in Calculus I on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/calculus-i/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus-i/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus: Differentiation</title>
-        <link>http://localhost:1313/posts/math/cal-dif/</link>
+        <link>https://zayn7lie.ber7.org/posts/math/cal-dif/</link>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/math/cal-dif/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-learn-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we learn differentiation?
@@ -20,14 +20,14 @@
 &lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;
     &lt;a href=&#34;#what-what-is-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHAT: What is differentiation?
-&lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ #2} = \frac{df(x)}{dx} \textbf{ #3} \Rightarrow f&amp;rsquo;(x) \textbf{ #4}
+&lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ #2} = \frac{df(x)}{\mathrm{d}x} \textbf{ #3} \Rightarrow f&amp;rsquo;(x) \textbf{ #4}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $d$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{df(x)}{dx} \neq df(x) \div dx$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{df(x)}{dx}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{dx}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
+&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $d$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{df(x)}{\mathrm{d}x} \neq df(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{df(x)}{\mathrm{d}x}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Difference between differentiation and derivative?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$\frac{df(x)}{dx}$ differentiation is a method to crop source function to small range for knowing the tendency&lt;/li&gt;
+&lt;li&gt;$\frac{df(x)}{\mathrm{d}x}$ differentiation is a method to crop source function to small range for knowing the tendency&lt;/li&gt;
 &lt;li&gt;$f&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
@@ -68,27 +68,27 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;
     &lt;a href=&#34;#what-what-is-the-derivative-for-basic-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHAT: What is the derivative for basic function
-&lt;/h3&gt;&lt;p&gt;$$ \frac{d}{dx}x^n = n \cdot x^{n - 1}, \frac{d}{dx}Constant = 0, \frac{d}{dx}\ln{x} = \frac{1}{x}, \frac{d}{dx}e^x = e^x
+&lt;/h3&gt;&lt;p&gt;$$ \frac{d}{\mathrm{d}x}x^n = n \cdot x^{n - 1}, \frac{d}{\mathrm{d}x}Constant = 0, \frac{d}{\mathrm{d}x}\ln{x} = \frac{1}{x}, \frac{d}{\mathrm{d}x}e^x = e^x
 $$
-$$ \frac{d}{dx}\sin{x} = \cos{x}, \frac{d}{dx}\cos{x} = -\sin{x}, \frac{d}{dx}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
+$$ \frac{d}{\mathrm{d}x}\sin{x} = \cos{x}, \frac{d}{\mathrm{d}x}\cos{x} = -\sin{x}, \frac{d}{\mathrm{d}x}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
 $$
-$$ \frac{d}{dx}\sin^{-1}{x} = \frac{d}{dx}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\cos^{-1}{x} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{dx}\tan^{-1}{x} = \frac{1}{1 + x^2}
+$$ \frac{d}{\mathrm{d}x}\sin^{-1}{x} = \frac{d}{\mathrm{d}x}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{\mathrm{d}x}\cos^{-1}{x} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{\mathrm{d}x}\tan^{-1}{x} = \frac{1}{1 + x^2}
 $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-03&lt;/code&gt;: Try to use definition to derive the first two lines.&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;
     &lt;a href=&#34;#how-how-to-differentiate---basic-rules&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to differentiate? - Basic rules
-&lt;/h3&gt;&lt;p&gt;$$ \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x) \Leftrightarrow (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
+&lt;/h3&gt;&lt;p&gt;$$ \frac{d}{\mathrm{d}x}(f(x) + g(x)) = \frac{d}{\mathrm{d}x}f(x) + \frac{d}{\mathrm{d}x}g(x) \Leftrightarrow (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
 $$
-$$ \frac{d}{dx}(f(x) \cdot g(x)) = \frac{d}{dx}f(x) \cdot g(x) + f(x) \cdot \frac{d}{dx}g(x) \Leftrightarrow (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
+$$ \frac{d}{\mathrm{d}x}(f(x) \cdot g(x)) = \frac{d}{\mathrm{d}x}f(x) \cdot g(x) + f(x) \cdot \frac{d}{\mathrm{d}x}g(x) \Leftrightarrow (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
 $$
-$$ \text{Chain rule: } \frac{d}{dx}f(g(x)) = f&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) = \frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{dx}g(x)
+$$ \text{Chain rule: } \frac{d}{\mathrm{d}x}f(g(x)) = f&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x) = \frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{\mathrm{d}x}g(x)
 $$
-$$ \text{Inverse function: }y(x) \Leftrightarrow x(y) \Rightarrow \frac{d}{dx}y(x_1) \cdot \frac{d}{dx}x(y_1) = 1
+$$ \text{Inverse function: }y(x) \Leftrightarrow x(y) \Rightarrow \frac{d}{\mathrm{d}x}y(x_1) \cdot \frac{d}{\mathrm{d}x}x(y_1) = 1
 $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-01&lt;/code&gt;: Try to use the basic rule to derive the third line in &lt;code&gt;WHAT: What is the derivative for basic function&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-02&lt;/code&gt;: Differentiate $a^x$ and $\log_ax$&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-03&lt;/code&gt;: Known $x^2 + y^2 = 25$, derive $\frac{d}{dx}y$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-02&lt;/code&gt;: Differentiate: $a^x$; $\log_ax$; $x^x$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-03&lt;/code&gt;: Known $x^2 + y^2 = 25$, derive $\frac{d}{\mathrm{d}x}y$&lt;/p&gt;
 &lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;
     &lt;a href=&#34;#how-how-to-apply-differentiation-in-solving-problem&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to apply differentiation in solving problem?
@@ -101,17 +101,17 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#curve-sketching--optimization&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Curve Sketching &amp;amp; Optimization
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Monotonicity with $dy/dx$
+&lt;li&gt;Monotonicity with $dy/\mathrm{d}x$
 &lt;ul&gt;
-&lt;li&gt;Monotonic increasing - $dy/dx &amp;gt; 0$&lt;/li&gt;
-&lt;li&gt;Monotonic decreasing: $dy/dx &amp;lt; 0$&lt;/li&gt;
+&lt;li&gt;Monotonic increasing - $dy/\mathrm{d}x &amp;gt; 0$&lt;/li&gt;
+&lt;li&gt;Monotonic decreasing: $dy/\mathrm{d}x &amp;lt; 0$&lt;/li&gt;
 &lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$, Stationary point: $f&amp;rsquo;(x) = 0$, Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Concavity with $d^2y/dx^2$
+&lt;li&gt;Concavity with $d^2y/\mathrm{d}x^2$
 &lt;ul&gt;
-&lt;li&gt;Concave upward: $d^2y/dx^2 &amp;gt; 0$&lt;/li&gt;
-&lt;li&gt;Concave downward: $d^2y/dx^2 &amp;lt; 0$&lt;/li&gt;
+&lt;li&gt;Concave upward: $d^2y/\mathrm{d}x^2 &amp;gt; 0$&lt;/li&gt;
+&lt;li&gt;Concave downward: $d^2y/\mathrm{d}x^2 &amp;lt; 0$&lt;/li&gt;
 &lt;li&gt;Inflected point: $f&amp;rsquo;&amp;rsquo;(x) = 0$ and $f^{(3)}(x) \neq 0$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
