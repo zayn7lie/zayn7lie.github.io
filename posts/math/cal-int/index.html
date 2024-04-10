@@ -514,13 +514,13 @@ $$</p>
 <h3 id="trans-between-different-variables">
     <a href="#trans-between-different-variables" class="header-anchor">#</a>
     Trans between different variables
-</h3><p>$$ \int_{C}^{g(x)}{f(t)}dt, \text{assume } F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+</h3><p>$$ \int_{C}^{g(x)}{f(t)}\mathrm{d}t, \text{assume } F(t) = \int{f(t)}\mathrm{d}t \Rightarrow \int_{C}^{g(x)}{f(t)}\mathrm{d}t = F(g(x)) - F(C)
 $$
-$$ \text{Taking derivative in both sides:} \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{\mathrm{d}x}F(g(x)) - \frac{d}{\mathrm{d}x}F(C)
+$$ \text{Taking derivative in both sides:} \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\mathrm{d}t} = \frac{d}{\mathrm{d}x}F(g(x)) - \frac{d}{\mathrm{d}x}F(C)
 $$
 $$ F&rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&rsquo;(g(x)) \cdot g&rsquo;(x) - 0 = f(g(x)) \cdot g&rsquo;(x)
 $$
-$$ \therefore \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x), \frac{d}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
+$$ \therefore \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x), \frac{d}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
 $$</p>
 <h2 id="how-how-to-integral---technique">
     <a href="#how-how-to-integral---technique" class="header-anchor">#</a>
@@ -549,7 +549,7 @@ $$</p>
 <ul>
 <li>$\int{\sec^4{x} \tan^3{x}}{\mathrm{d}x}$</li>
 </ul>
-<p>$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
+<p>$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}\,\mathrm{d}\theta
 $$</p>
 <p>Exercise:</p>
 <p>$$ \int{\frac{x}{\sqrt{1 - x^2}}}, \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}\,\mathrm{d}x, \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}\,\mathrm{d}x, \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}\,\mathrm{d}x, \int{\frac{x^5 - x}{x^8 + 1}}\,\mathrm{d}x
@@ -636,26 +636,26 @@ $$</p>
 </h2><h3 id="rate---differential-equations">
     <a href="#rate---differential-equations" class="header-anchor">#</a>
     Rate - Differential Equations
-</h3><p>$$ \text{Informal:} \frac{\,\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y\,\mathrm{d}y = x\,\mathrm{d}x \Rightarrow \int{y}\,\mathrm{d}y = \int{x}\,\mathrm{d}x
+</h3><p>$$ \text{Informal:} \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y\,\mathrm{d}y = x\,\mathrm{d}x \Rightarrow \int{y}\,\mathrm{d}y = \int{x}\,\mathrm{d}x
 $$
-$$ \text{*Formal Solution:} \frac{d}{\mathrm{d}x}{y(t(x))} = \frac{\,\mathrm{d}y}{dt} \cdot \frac{dt}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{dt}{\mathrm{d}x})}\,\mathrm{d}x = \int{(y \frac{dt}{\mathrm{d}x})}\,\mathrm{d}x = \frac{y^2}{2}
+$$ \text{*Formal Solution:} \frac{d}{\mathrm{d}x}{y(t(x))} = \frac{\mathrm{d}y}{\mathrm{d}t} \cdot \frac{\mathrm{d}t}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{\mathrm{d}t}{\mathrm{d}x})}\,\mathrm{d}x = \int{(y \frac{\mathrm{d}t}{\mathrm{d}x})}\,\mathrm{d}x = \frac{y^2}{2}
 $$</p>
 <ul>
 <li>Carrying Capacity:</li>
 </ul>
-<p>$$ \frac{dN}{dt} = rN(1 - \frac{N}{K})
+<p>$$ \frac{dN}{\mathrm{d}t} = rN(1 - \frac{N}{K})
 $$
-$$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{dt} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{dt} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{dt}}dt = \int{r}dt
+$$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{\mathrm{d}t} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{\mathrm{d}t} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{\mathrm{d}t}}\mathrm{d}t = \int{r}\mathrm{d}t
 $$
 $$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$</p>
 <blockquote>
-<p>$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/dt$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.</p>
+<p>$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.</p>
 </blockquote>
-<p>$$ x\frac{d^2y}{\,\mathrm{d}x^2} + 2\frac{\,\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{\mathrm{d}x} + \frac{\,\mathrm{d}y}{\mathrm{d}x})}\,\mathrm{d}x = \int{-\frac{\,\mathrm{d}y}{\mathrm{d}x}}\,\mathrm{d}x \Rightarrow x\frac{\,\mathrm{d}y}{\mathrm{d}x} = -y
+<p>$$ x\frac{d^2y}{\,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})}\,\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}}\,\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
 $$</p>
 <p>Exercise.</p>
-<p>$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{dt^2}
+<p>$$ \frac{dN}{\mathrm{d}t} = -aN\ln(bN), *\frac{d^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{\mathrm{d}t^2}
 $$</p>
 <h3 id="arc-length">
     <a href="#arc-length" class="header-anchor">#</a>
@@ -695,13 +695,13 @@ x = r(\theta - \sin\theta) \\
 y = r(1 - \cos\theta)
 \end{cases}
 $$</p>
-<p>$$ \frac{\,\mathrm{d}y}{d\theta} = \frac{\,\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{d\theta} \Rightarrow \frac{\,\mathrm{d}y}{\mathrm{d}x} = \frac{\,\mathrm{d}y/d\theta}{\mathrm{d}x/d\theta}, \frac{d^2y}{\,\mathrm{d}x^2} = \frac{d}{\mathrm{d}x}(\frac{\,\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{d}{d\theta}(\frac{\,\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{d\theta}}
+<p>$$ \frac{\mathrm{d}y}{\mathrm{d}\theta} = \frac{\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}\theta} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}, \frac{d^2y}{\,\mathrm{d}x^2} = \frac{d}{\mathrm{d}x}(\frac{\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{d}{\mathrm{d}\theta}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
 $$</p>
 <blockquote>
-<p>Why $d^2y/\,\mathrm{d}x^2 \neq \frac{d^2y/d\theta^2}{d^2x/d\theta^2}?$</p>
+<p>Why $d^2y/\,\mathrm{d}x^2 \neq \frac{d^2y/\mathrm{d}\theta^2}{d^2x/\mathrm{d}\theta^2}?$</p>
 <p>If you remember &ldquo;$y$ and $x$ are not in the same manner&rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.</p>
 </blockquote>
-<p>$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\,\mathrm{d}y^2}{\,\mathrm{d}x^2}}}\,\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\,\mathrm{d}y/dt}{\mathrm{d}x/dt})^2}}\frac{\mathrm{d}x}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{\,\mathrm{d}x^2}{dt^2} + \frac{\,\mathrm{d}y^2}{dt^2}}}dt
+<p>$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{\,\mathrm{d}x^2}}}\,\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
 $$</p>
 <h3 id="what-what-is-polar-coordinates">
     <a href="#what-what-is-polar-coordinates" class="header-anchor">#</a>
@@ -761,13 +761,13 @@ $$</p>
 <h3 id="trans-between-different-variables">
     <a href="#trans-between-different-variables" class="header-anchor">#</a>
     Trans between different variables
-</h3><p>$$ \int_{C}^{g(x)}{f(t)}dt, \text{assume } F(t) = \int{f(t)}dt \Rightarrow \int_{C}^{g(x)}{f(t)}dt = F(g(x)) - F(C)
+</h3><p>$$ \int_{C}^{g(x)}{f(t)}\mathrm{d}t, \text{assume } F(t) = \int{f(t)}\mathrm{d}t \Rightarrow \int_{C}^{g(x)}{f(t)}\mathrm{d}t = F(g(x)) - F(C)
 $$
-$$ \text{Taking derivative in both sides:} \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}dt} = \frac{d}{\mathrm{d}x}F(g(x)) - \frac{d}{\mathrm{d}x}F(C)
+$$ \text{Taking derivative in both sides:} \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\mathrm{d}t} = \frac{d}{\mathrm{d}x}F(g(x)) - \frac{d}{\mathrm{d}x}F(C)
 $$
 $$ F&rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&rsquo;(g(x)) \cdot g&rsquo;(x) - 0 = f(g(x)) \cdot g&rsquo;(x)
 $$
-$$ \therefore \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x), \frac{d}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}dt} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
+$$ \therefore \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x), \frac{d}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
 $$</p>
 <h2 id="how-how-to-integral---technique">
     <a href="#how-how-to-integral---technique" class="header-anchor">#</a>
@@ -796,7 +796,7 @@ $$</p>
 <ul>
 <li>$\int{\sec^4{x} \tan^3{x}}{\mathrm{d}x}$</li>
 </ul>
-<p>$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}d\theta
+<p>$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta},\mathrm{d}\theta
 $$</p>
 <p>Exercise:</p>
 <p>$$ \int{\frac{x}{\sqrt{1 - x^2}}}, \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}},\mathrm{d}x, \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}},\mathrm{d}x, \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}},\mathrm{d}x, \int{\frac{x^5 - x}{x^8 + 1}},\mathrm{d}x
@@ -883,26 +883,26 @@ $$</p>
 </h2><h3 id="rate---differential-equations">
     <a href="#rate---differential-equations" class="header-anchor">#</a>
     Rate - Differential Equations
-</h3><p>$$ \text{Informal:} \frac{,\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y,\mathrm{d}y = x,\mathrm{d}x \Rightarrow \int{y},\mathrm{d}y = \int{x},\mathrm{d}x
+</h3><p>$$ \text{Informal:} \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y,\mathrm{d}y = x,\mathrm{d}x \Rightarrow \int{y},\mathrm{d}y = \int{x},\mathrm{d}x
 $$
-$$ \text{*Formal Solution:} \frac{d}{\mathrm{d}x}{y(t(x))} = \frac{,\mathrm{d}y}{dt} \cdot \frac{dt}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{dt}{\mathrm{d}x})},\mathrm{d}x = \int{(y \frac{dt}{\mathrm{d}x})},\mathrm{d}x = \frac{y^2}{2}
+$$ \text{*Formal Solution:} \frac{d}{\mathrm{d}x}{y(t(x))} = \frac{\mathrm{d}y}{\mathrm{d}t} \cdot \frac{\mathrm{d}t}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{\mathrm{d}t}{\mathrm{d}x})},\mathrm{d}x = \int{(y \frac{\mathrm{d}t}{\mathrm{d}x})},\mathrm{d}x = \frac{y^2}{2}
 $$</p>
 <ul>
 <li>Carrying Capacity:</li>
 </ul>
-<p>$$ \frac{dN}{dt} = rN(1 - \frac{N}{K})
+<p>$$ \frac{dN}{\mathrm{d}t} = rN(1 - \frac{N}{K})
 $$
-$$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{dt} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{dt} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{dt}}dt = \int{r}dt
+$$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{\mathrm{d}t} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{\mathrm{d}t} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{\mathrm{d}t}}\mathrm{d}t = \int{r}\mathrm{d}t
 $$
 $$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$</p>
 <blockquote>
-<p>$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/dt$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.</p>
+<p>$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.</p>
 </blockquote>
-<p>$$ x\frac{d^2y}{,\mathrm{d}x^2} + 2\frac{,\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{\mathrm{d}x} + \frac{,\mathrm{d}y}{\mathrm{d}x})},\mathrm{d}x = \int{-\frac{,\mathrm{d}y}{\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{,\mathrm{d}y}{\mathrm{d}x} = -y
+<p>$$ x\frac{d^2y}{,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})},\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
 $$</p>
 <p>Exercise.</p>
-<p>$$ \frac{dN}{dt} = -aN\ln(bN), *\frac{d^2N}{dt^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{dt^2}
+<p>$$ \frac{dN}{\mathrm{d}t} = -aN\ln(bN), *\frac{d^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{\mathrm{d}t^2}
 $$</p>
 <h3 id="arc-length">
     <a href="#arc-length" class="header-anchor">#</a>
@@ -942,13 +942,13 @@ x = r(\theta - \sin\theta) \
 y = r(1 - \cos\theta)
 \end{cases}
 $$</p>
-<p>$$ \frac{,\mathrm{d}y}{d\theta} = \frac{,\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{d\theta} \Rightarrow \frac{,\mathrm{d}y}{\mathrm{d}x} = \frac{,\mathrm{d}y/d\theta}{\mathrm{d}x/d\theta}, \frac{d^2y}{,\mathrm{d}x^2} = \frac{d}{\mathrm{d}x}(\frac{,\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{d}{d\theta}(\frac{,\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{d\theta}}
+<p>$$ \frac{\mathrm{d}y}{\mathrm{d}\theta} = \frac{\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}\theta} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}, \frac{d^2y}{,\mathrm{d}x^2} = \frac{d}{\mathrm{d}x}(\frac{\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{d}{\mathrm{d}\theta}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
 $$</p>
 <blockquote>
-<p>Why $d^2y/,\mathrm{d}x^2 \neq \frac{d^2y/d\theta^2}{d^2x/d\theta^2}?$</p>
+<p>Why $d^2y/,\mathrm{d}x^2 \neq \frac{d^2y/\mathrm{d}\theta^2}{d^2x/\mathrm{d}\theta^2}?$</p>
 <p>If you remember &ldquo;$y$ and $x$ are not in the same manner&rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.</p>
 </blockquote>
-<p>$$ L = \int_{a}^{b}{\sqrt{1 + \frac{,\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{,\mathrm{d}y/dt}{\mathrm{d}x/dt})^2}}\frac{\mathrm{d}x}{dt}dt = \int_{\alpha}^{\beta}{\sqrt{\frac{,\mathrm{d}x^2}{dt^2} + \frac{,\mathrm{d}y^2}{dt^2}}}dt
+<p>$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
 $$</p>
 <h3 id="what-what-is-polar-coordinates">
     <a href="#what-what-is-polar-coordinates" class="header-anchor">#</a>

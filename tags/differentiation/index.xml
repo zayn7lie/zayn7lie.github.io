@@ -96,15 +96,15 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#finding-rates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Finding Rates
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-01&lt;/code&gt;: A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-02&lt;/code&gt;: The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{d}{dt}x = \frac{d}{dt}z$ and the rate of the diagonal $z$ has $\frac{d}{dt}z = \frac{d}{dt}y$. Derive the value of $k$.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-02&lt;/code&gt;: The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{\mathrm{d}}{\mathrm{d}t}x = \frac{\mathrm{d}}{\mathrm{d}t}z$ and the rate of the diagonal $z$ has $\frac{\mathrm{d}}{\mathrm{d}t}z = \frac{\mathrm{d}}{\mathrm{d}t}y$. Derive the value of $k$.&lt;/p&gt;
 &lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;
     &lt;a href=&#34;#curve-sketching--optimization&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Curve Sketching &amp;amp; Optimization
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Monotonicity with $dy/\mathrm{d}x$
+&lt;li&gt;Monotonicity with $\mathrm{d}y/\mathrm{d}x$
 &lt;ul&gt;
-&lt;li&gt;Monotonic increasing - $dy/\mathrm{d}x &amp;gt; 0$&lt;/li&gt;
-&lt;li&gt;Monotonic decreasing: $dy/\mathrm{d}x &amp;lt; 0$&lt;/li&gt;
+&lt;li&gt;Monotonic increasing - $\mathrm{d}y/\mathrm{d}x &amp;gt; 0$&lt;/li&gt;
+&lt;li&gt;Monotonic decreasing: $\mathrm{d}y/\mathrm{d}x &amp;lt; 0$&lt;/li&gt;
 &lt;li&gt;Critical point: $f&amp;rsquo;(x) = 0$ or $\nexists f&amp;rsquo;(x)$, Stationary point: $f&amp;rsquo;(x) = 0$, Relative/Local Extrema: $f&amp;rsquo;(x) = 0$ and $f&amp;rsquo;&amp;rsquo;(x) \neq 0$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
