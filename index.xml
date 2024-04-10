@@ -95,8 +95,8 @@ w_x &amp;amp; w_y &amp;amp; w_z
 &lt;/ul&gt;
 &lt;h4 id=&#34;what-what-is-points-lines-planes-in-the-coordinate&#34;&gt;WHAT: What is points, lines, planes in the coordinate&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Points/Vectors(3 variables - 3 constraints = 0 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$
-E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$&lt;/li&gt;
+&lt;li&gt;Points/Vectors(3 variables - 3 constraints = 0 dimensions): $\{(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c\}$
+E.g. $O = (0, 0, 0)$ OR $O: \{(x, y, z) | x = 0, y = 0, z = 0\}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
@@ -106,13 +106,13 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Lines/Curves(3 variables - 2 constraints = 1 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$&lt;/p&gt;
+&lt;p&gt;Lines/Curves(3 variables - 2 constraints = 1 dimensions): $\{(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b\}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Planes/Surfaces(3 variables - 1 constraints = 2 dimensions): ${(x, y, z) | f_1(x, y, z) = a}$&lt;/p&gt;
+&lt;p&gt;Planes/Surfaces(3 variables - 1 constraints = 2 dimensions): $\{(x, y, z) | f_1(x, y, z) = a\}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Cubes/Volumes(3 variables - 0 constraints (only partial constraints) = 3 dimensions): ${(x, y, z) | f(x, y, z) \lessgtr a}$&lt;/p&gt;
+&lt;p&gt;Cubes/Volumes(3 variables - 0 constraints (only partial constraints) = 3 dimensions): $\{(x, y, z) | f(x, y, z) \lessgtr a\}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
