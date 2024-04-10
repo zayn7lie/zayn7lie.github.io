@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Misc on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/tags/misc/</link>
+        <link>https://zayn7lie.ber7.org/tags/misc/</link>
         <description>Recent content in Misc on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/misc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/misc/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>LICENSE Changing Announcement</title>
-        <link>http://localhost:1313/posts/misc/license/</link>
+        <link>https://zayn7lie.ber7.org/posts/misc/license/</link>
         <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/misc/license/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -462,10 +462,10 @@ for any purpose, even commercially.&lt;/li&gt;
         </item>
         <item>
         <title>How to play Arknights on Linux, using MAA and key mapping</title>
-        <link>http://localhost:1313/posts/ettm/arknights/</link>
+        <link>https://zayn7lie.ber7.org/posts/ettm/arknights/</link>
         <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/ettm/arknights/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
 &lt;/blockquote&gt;

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Entertainment on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/categories/ettm/</link>
+        <link>https://zayn7lie.ber7.org/categories/ettm/</link>
         <description>Recent content in Entertainment on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/ettm/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/categories/ettm/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>How to Create a Game (Minecraft/Terraria) Server with AWS</title>
-        <link>http://localhost:1313/posts/ettm/server/</link>
+        <link>https://zayn7lie.ber7.org/posts/ettm/server/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/ettm/server/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/ettm/server/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -157,10 +157,10 @@
         </item>
         <item>
         <title>How to play Arknights on Linux, using MAA and key mapping</title>
-        <link>http://localhost:1313/posts/ettm/arknights/</link>
+        <link>https://zayn7lie.ber7.org/posts/ettm/arknights/</link>
         <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/ettm/arknights/</guid>
+        <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
 &lt;/blockquote&gt;
