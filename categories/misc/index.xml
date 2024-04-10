@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Misc on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.ber7.org/categories/misc/</link>
+        <link>http://localhost:1313/categories/misc/</link>
         <description>Recent content in Misc on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/categories/misc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/misc/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>LICENSE Changing Announcement</title>
-        <link>https://zayn7lie.ber7.org/posts/misc/license/</link>
+        <link>http://localhost:1313/posts/misc/license/</link>
         <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
+        <guid>http://localhost:1313/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -462,10 +462,10 @@ for any purpose, even commercially.&lt;/li&gt;
         </item>
         <item>
         <title>Blog Constructing</title>
-        <link>https://zayn7lie.ber7.org/posts/misc/blog/</link>
+        <link>http://localhost:1313/posts/misc/blog/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/misc/blog/</guid>
+        <guid>http://localhost:1313/posts/misc/blog/</guid>
         <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;
     &lt;a href=&#34;#why-why-do-i-want-to-construct-my-blog-site&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why do I want to construct my blog site?
