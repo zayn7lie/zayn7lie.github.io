@@ -267,7 +267,7 @@
       <ul>
         <li><a href="#what-what-is-fields">WHAT: What is Fields</a></li>
         <li><a href="#how-how-to-integrate-along-the-line---linepathcontour-integrals">HOW: How to integrate along the line - Line(Path/Contour) Integrals</a></li>
-        <li><a href="#stokes-theorem">Stokes&rsquo; Theorem</a></li>
+        <li><a href="#greens-theorem-to-stokes-theorem-and-divergence-theorem">Greens&rsquo; Theorem to Stokes&rsquo; Theorem, and Divergence Theorem</a></li>
         <li><a href="#how-how-to-integral-with-surface">HOW: How to integral with Surface</a></li>
       </ul>
     </li>
@@ -687,26 +687,26 @@ $$</li>
 <h3 id="how-how-to-apply-to-vector">
     <a href="#how-how-to-apply-to-vector" class="header-anchor">#</a>
     HOW: How to Apply to Vector
-</h3><p>$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \hat{u}
+</h3><p>$$ D_u{f(x, y)} = \vec\nabla{f(x, y)} \cdot \hat{u}
 $$</p>
 <ul>
 <li>$D_u{f(x, y)} = \vec{P&rsquo;Q&rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
 <ul>
-<li>$\mathrm{grad}f(x, y) = \nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
+<li>$\mathrm{grad}f(x, y) = \vec\nabla{f(x, y)}$ represents tangent plant: $\vec\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
 <ul>
 <li>$f(x_1, x_2, \ldots) \Rightarrow \mathbb{R}^n \rightarrow \mathbb{R}$</li>
-<li>$\nabla{f} \Rightarrow \mathbb{R} \rightarrow \mathbb{R}^n$</li>
-<li>$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$</li>
-<li>$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
+<li>$\vec\nabla{f} \Rightarrow \mathbb{R} \rightarrow \mathbb{R}^n$</li>
+<li>$\text{div } f = \vec\nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$</li>
+<li>$\text{curl } \vec{F} = \vec\nabla \times \vec{F} = \begin{vmatrix}
 \hat{i} &amp; \hat{j} &amp; \hat{k} \\\
 \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\\
 P &amp; Q &amp; R
 \end{vmatrix} = (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z})\hat{i} + (\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x})\hat{j} + (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})\hat{k}$</li>
-<li>$\text{div curl } \textbf{F} = 0$  &amp; $\text{curl div } \textbf{F} = 0$</li>
+<li>$\mathrm{div}\,\mathrm{curl}\,\textbf{F} = \mathbf{0}$, $\mathrm{curl}\,\mathrm{grad}\,f = 0$</li>
 </ul>
 </li>
 <li>$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$</li>
-<li>$\nabla{f(x, y)}$ present the fastest increasing direction / perpendicular to the contour line.</li>
+<li>$\vec\nabla{f(x, y)}$ present the fastest increasing direction / perpendicular to the contour line.</li>
 </ul>
 </li>
 </ul>
@@ -744,9 +744,9 @@ P &amp; Q &amp; R
     >Wikipedia: Hessian matrix</a></p>
 </li>
 <li>
-<p>Lagrange Multipliers $\lambda$: $\nabla f = \lambda \nabla g$ (Simple idea: the highest point of the path is tangent to the highest contour)</p>
+<p>Lagrange Multipliers $\lambda$: $\vec\nabla f = \lambda \vec\nabla g$ (Simple idea: the highest point of the path is tangent to the highest contour)</p>
 <ul>
-<li>Generalization: $\nabla f(x_1, x_2, x_3, \ldots) = \lambda \nabla g(x_1, x_2, x_3, \ldots) + \mu \nabla h(x_1, x_2, x_3, \ldots) + \ldots$</li>
+<li>Generalization: $\vec\nabla f(x_1, x_2, x_3, \ldots) = \lambda \vec\nabla g(x_1, x_2, x_3, \ldots) + \mu \vec\nabla h(x_1, x_2, x_3, \ldots) + \ldots$</li>
 <li>Or, finding local max/min of $f$ under $L(x_1, x_2, \ldots) = 0$ is equivalant to finding local max/min of $g(x_1, x_2 \ldots, x_n, \lambda) = f - \lambda L$</li>
 </ul>
 </li>
@@ -816,7 +816,7 @@ $$</p>
 <p>Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$</p>
 </li>
 <li>
-<p>Gradient Fields: $\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$</p>
+<p>Gradient Fields: $\vec\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$</p>
 </li>
 </ul>
 <h4 id="conservative-vector-fields">
@@ -826,7 +826,7 @@ $$</p>
 <blockquote>
 <p>$D$: an <strong>open</strong>($\forall P \in D,\exists \circ P \in D$) <strong>connected</strong>($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a <strong>conservative vector field</strong>; under this situation, we call $\int_{C} \mathbf{F} \cdot \,\mathrm{d} \mathbf{r}$ is <strong>independent of path</strong>, or <em>line integrals of conservative vector fields are independent of path.</em></p>
 </blockquote>
-<p>$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x$$</p>
+<p>$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x \,\mathbf{or}\, \vec\nabla \times \mathbf{F} = \mathbf{0}$$</p>
 <blockquote>
 <p>Clairaut&rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$</p>
 </blockquote>
@@ -834,15 +834,16 @@ $$</p>
     <a href="#how-how-to-integrate-along-the-line---linepathcontour-integrals" class="header-anchor">#</a>
     HOW: How to integrate along the line - Line(Path/Contour) Integrals
 </h3><p>$$\displaystyle \int_C \vec{F} \cdot \,\mathrm{d}\vec{r} = \int \vec{F}(\vec{r}(t)) \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t}\,\mathrm{d}t$$</p>
-<p>$$ \int_{curve \ C}f(x, y)\,\mathrm{d}s = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{\mathrm{d}x}{dt})^2 + (\frac{\mathrm{d}y}{dt})^2}dt
+<p>$$ \int_{\mathrm{curve}\,C}f(x, y)\,\mathrm{d}s = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, \mathrm{curve}\, C: s = \int_a^b\sqrt{(\frac{\mathrm{d}x}{dt})^2 + (\frac{\mathrm{d}y}{dt})^2}dt
 $$
 $$ \Rightarrow \int_C f(x, y)\,\mathrm{d}s = \int_a^b f(x(t), y(t))\sqrt{(\frac{\mathrm{d}x}{dt})^2 + (\frac{\mathrm{d}y}{dt})^2}dt
 $$</p>
 <ul>
 <li>
 <p>Vector Fields
-$$ W = \int_C \vec{F} \cdot \,\mathrm{d}\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r&rsquo;}(t)dt} \ (Substitution: \vec{r}(t) = \vec{r}) = \int_C \vec{F} \cdot \vec{T} \,\mathrm{d}s
+$$ W = \int_C \vec{F} \cdot \,\mathrm{d}\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r&rsquo;}(t)dt}
 $$</p>
+<p>(Substitution: $\vec{r}(t) = \vec{r} = \int_C \vec{F} \cdot \vec{T} \,\mathrm{d}s$)</p>
 </li>
 <li>
 <p>Conservative
@@ -854,7 +855,7 @@ $$</p>
 <li>$C$: Closed Path - its terminal point coincides with its initial point</li>
 </ul>
 </li>
-<li>conservative vector field: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \Leftrightarrow F \text{ is a conservative vector field}$ ($\nabla{f} = F$)</li>
+<li>conservative vector field: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \Leftrightarrow F \text{ is a conservative vector field}$ ($\vec\nabla{f} = \mathbf{F}$)</li>
 </ul>
 </li>
 <li>
@@ -867,14 +868,12 @@ $$</p>
 </ul>
 </li>
 </ul>
-<h3 id="stokes-theorem">
-    <a href="#stokes-theorem" class="header-anchor">#</a>
-    Stokes&rsquo; Theorem
-</h3><h4 id="2---1-dimension">
-    <a href="#2---1-dimension" class="header-anchor">#</a>
-    2 - 1 Dimension
-</h4><p>C is the edge of D: $C = \partial D$</p>
-<p>$\Rightarrow \oint_{\partial D} \langle Q(x, y), P(x, y) \rangle \cdot \mathrm{d} \langle x, y \rangle = \iint_D Q_x - P_y \,\mathrm{d}A$</p>
+<h3 id="greens-theorem-to-stokes-theorem-and-divergence-theorem">
+    <a href="#greens-theorem-to-stokes-theorem-and-divergence-theorem" class="header-anchor">#</a>
+    Greens&rsquo; Theorem to Stokes&rsquo; Theorem, and Divergence Theorem
+</h3><p>$$\int_{\partial D}\omega = \int_D \partial\omega$$</p>
+<p>$$\Rightarrow \oint_{C(\partial{S})}\mathbf{F} \cdot \mathrm{d}\mathbf{r} = \iint_S \vec\nabla \times \mathbf{F} \cdot \,\mathrm{d}\mathbf{S} = \iint_S \vec\nabla \times \mathbf{F} \cdot \mathbf{n} \,\mathrm{d}A = \iint_S |\vec\nabla \times \mathbf{F}| \,\mathrm{d}A \text{ in $\mathbb{R}^2$}$$</p>
+<p>$$\Rightarrow \oint_C \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_D \vec\nabla \mathbf{F} \,\mathrm{d}A, \iint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iiint_E \vec\nabla \cdot \mathbf{F} \,\mathrm{d}V$$</p>
 <h3 id="how-how-to-integral-with-surface">
     <a href="#how-how-to-integral-with-surface" class="header-anchor">#</a>
     HOW: How to integral with Surface
@@ -1113,26 +1112,26 @@ $$</li>
 <h3 id="how-how-to-apply-to-vector">
     <a href="#how-how-to-apply-to-vector" class="header-anchor">#</a>
     HOW: How to Apply to Vector
-</h3><p>$$ D_u{f(x, y)} = \nabla{f(x, y)} \cdot \hat{u}
+</h3><p>$$ D_u{f(x, y)} = \vec\nabla{f(x, y)} \cdot \hat{u}
 $$</p>
 <ul>
 <li>$D_u{f(x, y)} = \vec{P&rsquo;Q&rsquo;}$ - Gradient Vector: moving in a tangent plant with a specific direction
 <ul>
-<li>$\mathrm{grad}f(x, y) = \nabla{f(x, y)}$ represents tangent plant: $\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
+<li>$\mathrm{grad}f(x, y) = \vec\nabla{f(x, y)}$ represents tangent plant: $\vec\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z} + \ldots$
 <ul>
 <li>$f(x_1, x_2, \ldots) \Rightarrow \mathbb{R}^n \rightarrow \mathbb{R}$</li>
-<li>$\nabla{f} \Rightarrow \mathbb{R} \rightarrow \mathbb{R}^n$</li>
-<li>$\text{div } f = \nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$</li>
-<li>$\text{curl } \vec{F} = \nabla \times \vec{F} = \begin{vmatrix}
+<li>$\vec\nabla{f} \Rightarrow \mathbb{R} \rightarrow \mathbb{R}^n$</li>
+<li>$\text{div } f = \vec\nabla{f} = \frac{\partial f}{\partial x}\hat{i} + \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$</li>
+<li>$\text{curl } \vec{F} = \vec\nabla \times \vec{F} = \begin{vmatrix}
 \hat{i} &amp; \hat{j} &amp; \hat{k} \\
 \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\
 P &amp; Q &amp; R
 \end{vmatrix} = (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z})\hat{i} + (\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x})\hat{j} + (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})\hat{k}$</li>
-<li>$\text{div curl } \textbf{F} = 0$  &amp; $\text{curl div } \textbf{F} = 0$</li>
+<li>$\mathrm{div},\mathrm{curl},\textbf{F} = \mathbf{0}$, $\mathrm{curl},\mathrm{grad},f = 0$</li>
 </ul>
 </li>
 <li>$\vec{u}$ represents a direction (in unit), or $\vec{u} = \langle \hat{a}, \hat{b} \rangle$</li>
-<li>$\nabla{f(x, y)}$ present the fastest increasing direction / perpendicular to the contour line.</li>
+<li>$\vec\nabla{f(x, y)}$ present the fastest increasing direction / perpendicular to the contour line.</li>
 </ul>
 </li>
 </ul>
@@ -1170,9 +1169,9 @@ P &amp; Q &amp; R
     >Wikipedia: Hessian matrix</a></p>
 </li>
 <li>
-<p>Lagrange Multipliers $\lambda$: $\nabla f = \lambda \nabla g$ (Simple idea: the highest point of the path is tangent to the highest contour)</p>
+<p>Lagrange Multipliers $\lambda$: $\vec\nabla f = \lambda \vec\nabla g$ (Simple idea: the highest point of the path is tangent to the highest contour)</p>
 <ul>
-<li>Generalization: $\nabla f(x_1, x_2, x_3, \ldots) = \lambda \nabla g(x_1, x_2, x_3, \ldots) + \mu \nabla h(x_1, x_2, x_3, \ldots) + \ldots$</li>
+<li>Generalization: $\vec\nabla f(x_1, x_2, x_3, \ldots) = \lambda \vec\nabla g(x_1, x_2, x_3, \ldots) + \mu \vec\nabla h(x_1, x_2, x_3, \ldots) + \ldots$</li>
 <li>Or, finding local max/min of $f$ under $L(x_1, x_2, \ldots) = 0$ is equivalant to finding local max/min of $g(x_1, x_2 \ldots, x_n, \lambda) = f - \lambda L$</li>
 </ul>
 </li>
@@ -1242,7 +1241,7 @@ $$</p>
 <p>Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$</p>
 </li>
 <li>
-<p>Gradient Fields: $\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$</p>
+<p>Gradient Fields: $\vec\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$</p>
 </li>
 </ul>
 <h4 id="conservative-vector-fields">
@@ -1252,7 +1251,7 @@ $$</p>
 <blockquote>
 <p>$D$: an <strong>open</strong>($\forall P \in D,\exists \circ P \in D$) <strong>connected</strong>($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a <strong>conservative vector field</strong>; under this situation, we call $\int_{C} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r}$ is <strong>independent of path</strong>, or <em>line integrals of conservative vector fields are independent of path.</em></p>
 </blockquote>
-<p>$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x$$</p>
+<p>$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x ,\mathbf{or}, \vec\nabla \times \mathbf{F} = \mathbf{0}$$</p>
 <blockquote>
 <p>Clairaut&rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$</p>
 </blockquote>
@@ -1260,15 +1259,16 @@ $$</p>
     <a href="#how-how-to-integrate-along-the-line---linepathcontour-integrals" class="header-anchor">#</a>
     HOW: How to integrate along the line - Line(Path/Contour) Integrals
 </h3><p>$$\displaystyle \int_C \vec{F} \cdot ,\mathrm{d}\vec{r} = \int \vec{F}(\vec{r}(t)) \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t},\mathrm{d}t$$</p>
-<p>$$ \int_{curve \ C}f(x, y),\mathrm{d}s = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, curve \ C: s = \int_a^b\sqrt{(\frac{\mathrm{d}x}{dt})^2 + (\frac{\mathrm{d}y}{dt})^2}dt
+<p>$$ \int_{\mathrm{curve},C}f(x, y),\mathrm{d}s = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, \mathrm{curve}, C: s = \int_a^b\sqrt{(\frac{\mathrm{d}x}{dt})^2 + (\frac{\mathrm{d}y}{dt})^2}dt
 $$
 $$ \Rightarrow \int_C f(x, y),\mathrm{d}s = \int_a^b f(x(t), y(t))\sqrt{(\frac{\mathrm{d}x}{dt})^2 + (\frac{\mathrm{d}y}{dt})^2}dt
 $$</p>
 <ul>
 <li>
 <p>Vector Fields
-$$ W = \int_C \vec{F} \cdot ,\mathrm{d}\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r&rsquo;}(t)dt} \ (Substitution: \vec{r}(t) = \vec{r}) = \int_C \vec{F} \cdot \vec{T} ,\mathrm{d}s
+$$ W = \int_C \vec{F} \cdot ,\mathrm{d}\vec{r} = \int_a^b{\vec{F}(\vec{r}(t)) \cdot \vec{r&rsquo;}(t)dt}
 $$</p>
+<p>(Substitution: $\vec{r}(t) = \vec{r} = \int_C \vec{F} \cdot \vec{T} ,\mathrm{d}s$)</p>
 </li>
 <li>
 <p>Conservative
@@ -1280,7 +1280,7 @@ $$</p>
 <li>$C$: Closed Path - its terminal point coincides with its initial point</li>
 </ul>
 </li>
-<li>conservative vector field: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \Leftrightarrow F \text{ is a conservative vector field}$ ($\nabla{f} = F$)</li>
+<li>conservative vector field: $\int_C \vec{F} \cdot d \vec{r} \text{ is independent of path} \in D \Leftrightarrow F \text{ is a conservative vector field}$ ($\vec\nabla{f} = \mathbf{F}$)</li>
 </ul>
 </li>
 <li>
@@ -1293,14 +1293,12 @@ $$</p>
 </ul>
 </li>
 </ul>
-<h3 id="stokes-theorem">
-    <a href="#stokes-theorem" class="header-anchor">#</a>
-    Stokes&rsquo; Theorem
-</h3><h4 id="2---1-dimension">
-    <a href="#2---1-dimension" class="header-anchor">#</a>
-    2 - 1 Dimension
-</h4><p>C is the edge of D: $C = \partial D$</p>
-<p>$\Rightarrow \oint_{\partial D} \langle Q(x, y), P(x, y) \rangle \cdot \mathrm{d} \langle x, y \rangle = \iint_D Q_x - P_y ,\mathrm{d}A$</p>
+<h3 id="greens-theorem-to-stokes-theorem-and-divergence-theorem">
+    <a href="#greens-theorem-to-stokes-theorem-and-divergence-theorem" class="header-anchor">#</a>
+    Greens&rsquo; Theorem to Stokes&rsquo; Theorem, and Divergence Theorem
+</h3><p>$$\int_{\partial D}\omega = \int_D \partial\omega$$</p>
+<p>$$\Rightarrow \oint_{C(\partial{S})}\mathbf{F} \cdot \mathrm{d}\mathbf{r} = \iint_S \vec\nabla \times \mathbf{F} \cdot ,\mathrm{d}\mathbf{S} = \iint_S \vec\nabla \times \mathbf{F} \cdot \mathbf{n} ,\mathrm{d}A = \iint_S |\vec\nabla \times \mathbf{F}| ,\mathrm{d}A \text{ in $\mathbb{R}^2$}$$</p>
+<p>$$\Rightarrow \oint_C \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_D \vec\nabla \mathbf{F} ,\mathrm{d}A, \iint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iiint_E \vec\nabla \cdot \mathbf{F} ,\mathrm{d}V$$</p>
 <h3 id="how-how-to-integral-with-surface">
     <a href="#how-how-to-integral-with-surface" class="header-anchor">#</a>
     HOW: How to integral with Surface
