@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on zayn_lie&#39;s blog</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://zayn7lie.ber7.org/page/</link>
         <description>Recent content in Pages on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language><atom:link href="https://zayn7lie.ber7.org/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>About</title>
-        <link>http://localhost:1313/page/about/</link>
+        <link>https://zayn7lie.ber7.org/page/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/page/about/</guid>
+        <guid>https://zayn7lie.ber7.org/page/about/</guid>
         <description>&lt;h2 id=&#34;zayn-lie&#34;&gt;
     &lt;a href=&#34;#zayn-lie&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Zayn Lie
@@ -37,18 +37,18 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>http://localhost:1313/page/archives/</link>
+        <link>https://zayn7lie.ber7.org/page/archives/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/page/archives/</guid>
+        <guid>https://zayn7lie.ber7.org/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Links</title>
-        <link>http://localhost:1313/page/links/</link>
+        <link>https://zayn7lie.ber7.org/page/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/page/links/</guid>
+        <guid>https://zayn7lie.ber7.org/page/links/</guid>
         <description>&lt;p&gt;Note. The Friend Connections section aims at connecting and expanding different open-source communities. I am happy to share links mutually with anyone having created their own posts with high quality. If you want to create friend connections mutually with me, please contact me with Blog Email in About section using following format (Please remove the example comments after completion):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Blog Name&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Blog Description&amp;#34;&lt;/span&gt;
@@ -63,18 +63,18 @@
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/page/search/</link>
+        <link>https://zayn7lie.ber7.org/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/page/search/</guid>
+        <guid>https://zayn7lie.ber7.org/page/search/</guid>
         <description></description>
         </item>
         <item>
         <title>Sponsor</title>
-        <link>http://localhost:1313/page/sponsor/</link>
+        <link>https://zayn7lie.ber7.org/page/sponsor/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/page/sponsor/</guid>
+        <guid>https://zayn7lie.ber7.org/page/sponsor/</guid>
         <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.buymeacoffee.com/zayn7lie&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;img src=&#34;https://cdn.buymeacoffee.com/buttons/default-orange.png&#34;
 	

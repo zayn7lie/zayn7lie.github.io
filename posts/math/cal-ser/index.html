@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why should we learn Series Making Linear to Discrete. A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation. # WHAT: What is Sequence Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\\infty$ # Convergence $\\forall \\epsilon, \\exists N, \\forall n &gt; N, |a_n - l| &lt; \\epsilon \\Rightarrow a_n \\rightarrow l$ OR $\\lim_{n \\rightarrow \\infty}a_n = L \\Rightarrow a_n \\rightarrow L$">
 <title>Calculus: Series</title>
 
-<link rel='canonical' href='http://localhost:1313/posts/math/cal-ser/'>
+<link rel='canonical' href='https://zayn7lie.ber7.org/posts/math/cal-ser/'>
 
 <link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="Calculus: Series">
 <meta property='og:description' content="# WHY: Why should we learn Series Making Linear to Discrete. A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation. # WHAT: What is Sequence Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\\infty$ # Convergence $\\forall \\epsilon, \\exists N, \\forall n &gt; N, |a_n - l| &lt; \\epsilon \\Rightarrow a_n \\rightarrow l$ OR $\\lim_{n \\rightarrow \\infty}a_n = L \\Rightarrow a_n \\rightarrow L$">
-<meta property='og:url' content='http://localhost:1313/posts/math/cal-ser/'>
+<meta property='og:url' content='https://zayn7lie.ber7.org/posts/math/cal-ser/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='AP' /><meta property='article:tag' content='Calculus BC' /><meta property='article:tag' content='Calculus II' /><meta property='article:tag' content='Sequense' /><meta property='article:tag' content='Series' /><meta property='article:published_time' content='2023-10-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-19T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus: Series">
@@ -438,20 +438,26 @@
     <section class="article-content">
     
     
+
     
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
 
+    
+    
 
-
-
-
-
-
-
-
-
-
-
+    
     
     <h2 id="why-why-should-we-learn-series">
     <a href="#why-why-should-we-learn-series" class="header-anchor">#</a>
@@ -467,7 +473,7 @@
 <h2 id="what-what-is-sequence">
     <a href="#what-what-is-sequence" class="header-anchor">#</a>
     WHAT: What is Sequence
-</h2><p>Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$</p>
+</h2><p>Sequences: A list of number written in a definite order $\{a_n\}_{n = 1}^\infty$</p>
 <h3 id="convergence">
     <a href="#convergence" class="header-anchor">#</a>
     Convergence
@@ -541,7 +547,7 @@ $$</p>
 <ul>
 <li>Direct Test
 <ul>
-<li>Overall elements (Integral Test): $f(x)$ is continuous and $a_n = f(n)$, $\sum a_n \rightarrow/\nrightarrow C \Leftrightarrow \int_1^\infty f(x),\mathrm{d}x \rightarrow/\nrightarrow C$</li>
+<li>Overall elements (Integral Test): $f(x)$ is continuous and $a_n = f(n)$, $\sum a_n \rightarrow/\nrightarrow C \Leftrightarrow \int_1^\infty f(x)\,\mathrm{d}x \rightarrow/\nrightarrow C$</li>
 <li>Adjacent elements (Ratio test): $\lim_{n \rightarrow \infty}|\frac{a_{n + 1}}{a_n}| = l &lt; 1 \Rightarrow$ absolute converge (prove using geometric series) (&gt; 1 - diverge, = 1 - inconclusive)</li>
 <li>Single elements (Root Test): $\lim_{n \rightarrow \infty}\sqrt[n]{|a_n|}$</li>
 </ul>
@@ -632,15 +638,15 @@ $$</p>
 </h4><p>if the power series has a convergent radius R &gt; 0, the f(x) is both differentiatable and integrable on the interval (a - R, a + R), and</p>
 <p>$$ f&rsquo;(x) = \sum n c_n (x - a)^{n - 1}
 $$
-$$ \int f(x),\mathrm{d}x = c + \sum \frac{c_n}{n + 1}(x - a)^{n + 1}
+$$ \int f(x)\,\mathrm{d}x = c + \sum \frac{c_n}{n + 1}(x - a)^{n + 1}
 $$</p>
 <p>E.g.</p>
 <p>$$ |x| &lt; 1, \frac{1}{1 - x} = \sum x^n \Rightarrow (\frac{1}{1 - x})^2 = \sum nx^{n - 1} \Rightarrow -\ln{(1 - x)} = \sum \frac{x^{n + 1}}{n + 1}
 $$
-$$ f(x) = \frac{1}{1 - x} \Rightarrow f^{(10)}(x)|_{x = 0} = 10!
+$$ f(x) = \frac{1}{1 - x} \Rightarrow f^{(10)}(x)|\_{x = 0} = 10!
 $$</p>
 <p>Exercise.</p>
-<p>$$ \text{Expand $\int{\frac{x}{8+x^3}},\mathrm{d}x$ into power series}
+<p>$$ \text{Expand $\int{\frac{x}{8+x^3}}\,\mathrm{d}x$ into power series}
 $$
 $$ \text{If $f(x) = \sum c_n x^n$, where $c_{n + 4} = c_n$ for all $n \geq 0$,}
 $$
@@ -659,12 +665,12 @@ $$</p>
 <p>$1 + x$ Format
 $$ \frac{1}{1 - x}, |x| &lt; 1 = 1 + x + x^2 + x^3 \ldots
 $$
-$$ \ln(1 + x) = \int \frac{1}{1 + x},\mathrm{d}x = \sum \frac{(-1)^nx^{n + 1}}{n + 1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} \ldots
+$$ \ln(1 + x) = \int \frac{1}{1 + x}\,\mathrm{d}x = \sum \frac{(-1)^nx^{n + 1}}{n + 1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} \ldots
 $$
-$$ (1 + x)^k = \sum \begin{pmatrix}k \ n\end{pmatrix}x^n \begin{cases}
-|x| &lt; 1 &amp; k \in \mathbb{R}: \text{abc} \
-|x| = 1 &amp; k \geq 0: \text{abc}, k \geq -1: \text{con} \
-|x| = -1 &amp; k \geq 0: \text{con} \
+$$ (1 + x)^k = \sum \begin{pmatrix}k \\ n\end{pmatrix}x^n \begin{cases}
+|x| &lt; 1 &amp; k \in \mathbb{R}: \text{abc} \\
+|x| = 1 &amp; k \geq 0: \text{abc}, k \geq -1: \text{con} \\
+|x| = -1 &amp; k \geq 0: \text{con} \\
 |x| &gt; 1 &amp; \text{di unless $k$ is non negint}
 \end{cases}
 $$</p>
@@ -680,7 +686,7 @@ $$</p>
 <p>Special Format
 $$ e^x = \sum \frac{1}{n!}x^n = \sum\frac{e^a}{n!}(x - a)^n = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \ldots
 $$
-$$ \arctan{x} = \int \frac{1}{1 + x^2} ,\mathrm{d}x = \sum \frac{(-1)^nx^{2n + 1}}{2n +1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \ldots
+$$ \arctan{x} = \int \frac{1}{1 + x^2} \,\mathrm{d}x = \sum \frac{(-1)^nx^{2n + 1}}{2n +1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \ldots
 $$</p>
 </li>
 </ul>
@@ -688,7 +694,7 @@ $$</p>
 <p>Notice. $\int$ and $\sum$ cannot always exchange the places for some specific infinite sum.</p>
 </blockquote>
 <p>Exercise.</p>
-<p>$$ \text{Known $\int_0^\infty e^{-x} x^n ,\mathrm{d}x = n!$, derive $\frac{1}{\pi}\int_0^1\frac{\sin{\ln{x}}}{\ln{x}},\mathrm{d}x$}
+<p>$$ \text{Known $\int_0^\infty e^{-x} x^n \,\mathrm{d}x = n!$, derive $\frac{1}{\pi}\int_0^1\frac{\sin{\ln{x}}}{\ln{x}}\,\mathrm{d}x$}
 $$
 $$ \text{Find if and how the series is convergent: } \sum(-1)^n \frac{\tan^{-1}n}{n}
 $$
@@ -705,6 +711,7 @@ $$ \text{Accordint to MVT, } \exists z \in [x, a], \frac{f^{N + 1}(z)}{(N + 1)!}
 $$
 $$ \Rightarrow \exists z \in [x, a], [\frac{f^{N + 1}(z)}{(N + 1)!}(x - a)^{N + 1}]_{max} \geq R_N(x)
 $$</p>
+
 
 </section>
 
@@ -819,7 +826,7 @@ $$</p>
     data-host="https://cusdis.com"
     data-app-id="21afa2aa-6f2f-47a0-b7dd-16a0bb7a5b81"
     data-page-id="72f42f5b785afd09bb1ff803216e1a82"
-    data-page-url="http://localhost:1313/posts/math/cal-ser/"
+    data-page-url="https://zayn7lie.ber7.org/posts/math/cal-ser/"
     data-page-title="Calculus: Series"></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
