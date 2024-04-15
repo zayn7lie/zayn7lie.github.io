@@ -266,9 +266,11 @@ $$&lt;/p&gt;
 &lt;li&gt;*Chain Rule
 $$ (1) z = f(x, y): \frac{\mathrm{d}z}{\mathrm{d}t} = \frac{\partial f}{\partial x} \frac{\mathrm{d}x}{\mathrm{d}t} + \frac{\partial f}{\partial y} \frac{\mathrm{d}y}{\mathrm{d}t}
 $$
-$$ (2) \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}, \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}
+$$ (2) \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}, \frac{\partial z}{\partial t} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial t}
 $$
 $$ (3) \text{General}: \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial t_i} + \ldots
+$$
+$$ *(3): \frac{\partial u}{\partial x_1} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial x_1} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial x_1} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial x_1} + \ldots \ \text{since $x_1, x_2, x_3, \ldots$ are independent} \Rightarrow \frac{\partial x_n}{\partial x_1} = 0, \frac{\partial x_1}{\partial x_1} = 1 \Rightarrow \frac{\partial u}{\partial x_1} = \frac{\partial u}{\partial x_1}
 $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;how-how-to-apply-to-vector&#34;&gt;
