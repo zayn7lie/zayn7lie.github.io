@@ -435,23 +435,6 @@
 
 
 
-<h2 id="why-why-should-we-use-header-files">
-    <a href="#why-why-should-we-use-header-files" class="header-anchor">#</a>
-    WHY: Why should we use header files?
-</h2><p>In <code>C++ Basic - 01 Function</code>, we have learned about function. But there are numerous which have been already written, like print function <code>printf()</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-h" data-lang="h"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">printf</span> (<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>__format, ...){
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> __retval;
-</span></span><span style="display:flex;"><span>    __builtin_va_list __local_argv; <span style="color:#a6e22e">__builtin_va_start</span>( __local_argv, __format );
-</span></span><span style="display:flex;"><span>    __retval <span style="color:#f92672">=</span> <span style="color:#a6e22e">__mingw_vfprintf</span>( stdout, __format, __local_argv );
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">__builtin_va_end</span>( __local_argv );
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> __retval;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The function of function is <em>output</em> or <em>print</em> something. This is only the main part of the function, and the function involves a huge amount of APIs and parameters.</p>
-<p>Thus, if we write the function by ourselves, it would be extremely inefficient. So C++ or C has written for us already, and the only thing we are supposed to do is using header files.</p>
-<h2 id="what-what-is-header-files">
-    <a href="#what-what-is-header-files" class="header-anchor">#</a>
-    WHAT: What is header files?
-</h2>
     
     <h2 id="why-why-should-we-use-header-files">
     <a href="#why-why-should-we-use-header-files" class="header-anchor">#</a>
