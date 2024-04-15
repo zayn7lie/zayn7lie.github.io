@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Integral on zayn_lie&#39;s blog</title>
-        <link>https://zayn7lie.ber7.org/tags/integral/</link>
+        <link>http://localhost:1313/tags/integral/</link>
         <description>Recent content in Integral on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/integral/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/integral/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Calculus: Vectors</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-vec/</link>
+        <link>http://localhost:1313/posts/math/cal-vec/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-vec/</guid>
+        <guid>http://localhost:1313/posts/math/cal-vec/</guid>
         <description>&lt;h2 id=&#34;why-why-should-we-apply-calculus-to-vector&#34;&gt;
     &lt;a href=&#34;#why-why-should-we-apply-calculus-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we apply calculus to vector?
@@ -441,10 +441,10 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Calculus: Integral</title>
-        <link>https://zayn7lie.ber7.org/posts/math/cal-int/</link>
+        <link>http://localhost:1313/posts/math/cal-int/</link>
         <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
+        <guid>http://localhost:1313/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
 &lt;/blockquote&gt;
