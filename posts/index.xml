@@ -1407,8 +1407,8 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$
 E = \begin{cases}
-\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \
-\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;_{max}(x)|) \
+\text{Riemann} \frac{K(b - a)^3}{24n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;em&gt;{max}(x)|) \
+\text{Trapezoidal} \frac{K(b - a)^3}{12n^2} (K = |f&amp;rsquo;&amp;rsquo;&lt;/em&gt;{max}(x)|) \
 \text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 \end{cases}
 $$&lt;/p&gt;
