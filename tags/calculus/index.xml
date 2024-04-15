@@ -170,9 +170,9 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &amp;hellip;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-differentiation-of-vectors---paerial-derivatives&#34;&gt;
-    &lt;a href=&#34;#what-what-is-differentiation-of-vectors---paerial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is differentiation of vectors - Paerial Derivatives
+&lt;h2 id=&#34;what-what-is-differentiation-of-vectors---partial-derivatives&#34;&gt;
+    &lt;a href=&#34;#what-what-is-differentiation-of-vectors---partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is differentiation of vectors - Partial Derivatives
 &lt;/h2&gt;&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
     &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why a function could be differentiated? - Differentiability
@@ -421,7 +421,7 @@ $$&lt;/p&gt;
     Greens&amp;rsquo; Theorem to Stokes&amp;rsquo; Theorem, and Divergence Theorem
 &lt;/h3&gt;&lt;p&gt;$$\int_{\partial D}\omega = \int_D \partial\omega$$&lt;/p&gt;
 &lt;p&gt;$$\Rightarrow \oint_{C(\partial{S})}\mathbf{F} \cdot \mathrm{d}\mathbf{r} = \iint_S \vec\nabla \times \mathbf{F} \cdot ,\mathrm{d}\mathbf{S} = \iint_S \vec\nabla \times \mathbf{F} \cdot \mathbf{n} ,\mathrm{d}A = \iint_S |\vec\nabla \times \mathbf{F}| ,\mathrm{d}A \text{ in $\mathbb{R}^2$}$$&lt;/p&gt;
-&lt;p&gt;$$\Rightarrow \oint_C \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_D \vec\nabla \mathbf{F} ,\mathrm{d}A, \iint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iiint_E \vec\nabla \cdot \mathbf{F} ,\mathrm{d}V$$&lt;/p&gt;
+&lt;p&gt;$$\Rightarrow \oint_C \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_D \vec\nabla \mathbf{F} ,\mathrm{d}A, \oiint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iiint_E \vec\nabla \cdot \mathbf{F} ,\mathrm{d}V$$&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-integral-with-surface&#34;&gt;
     &lt;a href=&#34;#how-how-to-integral-with-surface&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to integral with Surface
