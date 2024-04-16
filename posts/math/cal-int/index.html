@@ -244,14 +244,14 @@
     <li><a href="#what-what-is-integral---area-with-positive-and-negative">WHAT: What is integral - &ldquo;Area (with positive and negative)&rdquo;</a>
       <ul>
         <li><a href="#approx-integral">Approx. Integral</a></li>
-        <li><a href="#trans-between-different-variables">Trans between different variables</a></li>
       </ul>
     </li>
     <li><a href="#how-how-to-integral---technique">HOW: How to integral - Technique</a>
       <ul>
         <li><a href="#substitution-if-the-function-combines-with-its-derivative">Substitution: If the function combines with its derivative</a></li>
         <li><a href="#integration-by-part-if-the-function-combines-with-a-simple-functions-derivative">Integration by part: If the function combines with a simple function&rsquo;s derivative</a></li>
-        <li><a href="#eg-partial-fractions">E.g. Partial Fractions</a></li>
+        <li><a href="#eg1-trans-between-different-variables">E.g.1. Trans between different variables</a></li>
+        <li><a href="#eg2-partial-fractions">E.g.2. Partial Fractions</a></li>
       </ul>
     </li>
     <li><a href="#how-how-to-apply-integral-to-reality">HOW: How to apply integral to reality</a>
@@ -518,77 +518,82 @@ E = \begin{cases}
 \text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 \end{cases}
 $$</p>
-<h3 id="trans-between-different-variables">
-    <a href="#trans-between-different-variables" class="header-anchor">#</a>
-    Trans between different variables
-</h3><p>$$ \int_{C}^{g(x)}{f(t)}\mathrm{d}t, \text{assume } F(t) = \int{f(t)}\mathrm{d}t \Rightarrow \int_{C}^{g(x)}{f(t)}\mathrm{d}t = F(g(x)) - F(C)
-$$
-$$ \text{Taking derivative in both sides:} \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\mathrm{d}t} = \frac{d}{\mathrm{d}x}F(g(x)) - \frac{d}{\mathrm{d}x}F(C)
-$$
-$$ F&rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&rsquo;(g(x)) \cdot g&rsquo;(x) - 0 = f(g(x)) \cdot g&rsquo;(x)
-$$
-$$ \therefore \frac{d}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x), \frac{d}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
-$$</p>
 <h2 id="how-how-to-integral---technique">
     <a href="#how-how-to-integral---technique" class="header-anchor">#</a>
     HOW: How to integral - Technique
 </h2><h3 id="substitution-if-the-function-combines-with-its-derivative">
     <a href="#substitution-if-the-function-combines-with-its-derivative" class="header-anchor">#</a>
     Substitution: If the function combines with its derivative
-</h3><blockquote>
-<p>Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{dh} \cdot \frac{dh}{\mathrm{d}x}$</p>
+</h3><p>Based on Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \Rightarrow \int_{x_1}^{x_2} f(x) \frac{\mathrm{d}u}{\mathrm{d}x}\,\mathrm{d}x = \int_{u(x_1)}^{u(x_2)}f(u)\,\mathrm{d}u$</p>
+<blockquote>
+<p>The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$</p>
 </blockquote>
 <ul>
-<li>$\int{F&rsquo;(g(x)) \cdot g&rsquo;(x)}{\mathrm{d}x}$</li>
+<li>$\displaystyle \int{F&rsquo;(g(x)) \cdot g&rsquo;(x)}{\,\mathrm{d}x}$</li>
 </ul>
-<p>$$ u = g(x), du = g&rsquo;(x) \,\mathrm{d}x \Rightarrow \int{F&rsquo;(u)}{du} = F(u) + C = F(g(x)) + C
+<p>$$ u = g(x), \frac{\mathrm{d}u}{\mathrm{d}x} = g&rsquo;(x) \int F&rsquo;(u)\frac{\mathrm{d}u}{\mathrm{d}x}\,\mathrm{d}x = \int{F&rsquo;(u)}\,\mathrm{d}u = F(u) + C = F(g(x)) + C
+$$</p>
+<ul>
+<li>$\displaystyle \int{\frac{1}{x(x^2 + 1)}}{\mathrm{d}x}$</li>
+</ul>
+<p>$$ u = \arctan{x}, \frac{\mathrm{d}u}{\mathrm{d}x} = \frac{1}{x^2 + 1}, x = \tan{u} \Rightarrow \int{\frac{1}{\tan{u}}}\frac{\mathrm{d}u}{\mathrm{d}x}\,\mathrm{d}x = \int{\frac{1}{\tan{u}}}\,\mathrm{d}u
+$$</p>
+<p>$$ v = \sin{u}, \frac{\mathrm{d}v}{\mathrm{d}u} = \cos{u} \Rightarrow \int{\frac{1}{v}}{\,\mathrm{d}v} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$</p>
 <blockquote>
 <p>Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$</p>
 </blockquote>
-<ul>
-<li>$\int{\frac{1}{x(x^2 + 1)}}{\mathrm{d}x}$</li>
-</ul>
-<p>$$ u = \arctan{x}, du = \frac{1}{x^2 + 1}\,\mathrm{d}x, x = \tan{u} \Rightarrow \int{\frac{1}{\tan{u}}}{du}
-$$
-$$ v = \sin{u}, dv = \cos{u}du \Rightarrow \int{\frac{1}{v}}{dv} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
-$$</p>
 <ul>
 <li>$\int{\sec^4{x} \tan^3{x}}{\mathrm{d}x}$</li>
 </ul>
 <p>$$ \tan{\theta} = \sec^2{\theta} - 1 = \int\sec^2{\theta}\,\mathrm{d}\theta
 $$</p>
 <p>Exercise:</p>
-<p>$$ \int{\frac{x}{\sqrt{1 - x^2}}}, \int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}\,\mathrm{d}x, \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}\,\mathrm{d}x, \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}\,\mathrm{d}x, \int{\frac{x^5 - x}{x^8 + 1}}\,\mathrm{d}x
-$$</p>
+<p><code>EX-CAL-INT-02-01</code>: $\displaystyle \int{\frac{x}{\sqrt{1 - x^2}}}\,\mathrm{d}x$</p>
+<p><code>EX-CAL-INT-02-02</code>: $\displaystyle\int{\frac{\sqrt{\tan{x}}}{\sin{2x}}}\,\mathrm{d}x$</p>
+<p><code>EX-CAL-INT-02-03</code>: $\displaystyle \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}\,\mathrm{d}x$</p>
+<p><code>EX-CAL-INT-02-04</code>: $\displaystyle \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}\,\mathrm{d}x$</p>
+<p><code>EX-CAL-INT-02-05</code>: $\displaystyle \int{\frac{x^5 - x}{x^8 + 1}}\,\mathrm{d}x$</p>
 <h3 id="integration-by-part-if-the-function-combines-with-a-simple-functions-derivative">
     <a href="#integration-by-part-if-the-function-combines-with-a-simple-functions-derivative" class="header-anchor">#</a>
     Integration by part: If the function combines with a simple function&rsquo;s derivative
 </h3><ul>
 <li>
-<p>Reduce Power: $\int{x \cdot \sin x}\,\mathrm{d}x$</p>
+<p>Re\mathrm{d}uce Power: $\int{x \cdot \sin x}\,\mathrm{d}x$</p>
 </li>
 <li>
 <p>Eliminate complex function: $\int{\ln x}\,\mathrm{d}x$</p>
 </li>
 <li>
-<p>*$\int{\frac{1}{\tan^n{x}}}\,\mathrm{d}x$</p>
+<p>*$\displaystyle \int{\frac{1}{\tan^n{x}}}\,\mathrm{d}x$</p>
 </li>
 </ul>
 <p>$$ \sec^2 - \tan^2 = 1 \Rightarrow \int{\frac{\sec^2 - \tan^2}{\tan^n{x}}}\,\mathrm{d}x = \int{\frac{\sec^2{x}}{\tan^n{x}}}\,\mathrm{d}x - \int{\frac{1}{\tan^{n - 2}{x}}}\,\mathrm{d}x
 $$
-$$ \Rightarrow \int{\frac{1}{u^n}}du - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}\,\mathrm{d}x = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}\,\mathrm{d}x + \int{\frac{1}{\tan^{n - 4}{x}}}\,\mathrm{d}x
+$$ \Rightarrow \int{\frac{1}{u^n}}\,\mathrm{d}u - \int{\frac{\sec^2 - \tan^2}{\tan^{n - 2}{x}}}\,\mathrm{d}x = \frac{1}{(1 - n)u^{n - 1}} - \int{\frac{\sec^2{x}}{\tan^{n - 2}{x}}}\,\mathrm{d}x + \int{\frac{1}{\tan^{n - 4}{x}}}\,\mathrm{d}x
 $$
 $$ = \frac{1}{(1 - n)u^{n - 1}} - \frac{1}{(3 - n)u^{n - 3}} + \frac{1}{(5 - n)u^{n - 5}} - \frac{1}{(7 - n)u^{n - 7}} + \ldots (\pm \int{\frac{1}{\tan{x}}}\,\mathrm{d}x) + C
 $$
 $$ \Rightarrow \int{\frac{1}{\tan{x}}}\,\mathrm{d}x, v = \sin{x}, dv = \cos{x}\,\mathrm{d}x \Rightarrow \int{\frac{1}{v}}dv = \ln{|v|} + C
 $$</p>
 <p>Exercise:</p>
-<p>$$ \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}\,\mathrm{d}x \ (Known \ \int_0^{\infty}{\frac{\sin{x}}{x}}\,\mathrm{d}x = \frac{\pi}{2}), \int{\arcsin x \cdot \ln x}\,\mathrm{d}x, \int(4x^4 + 1)e^{x^4}\,\mathrm{d}x
+<p><code>EX-CAL-INT-03-01</code>: Known $\displaystyle \int_0^{\infty}{\frac{\sin{x}}{x}}\,\mathrm{d}x = \frac{\pi}{2}$, derive $\displaystyle \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}\,\mathrm{d}x$</p>
+<p><code>EX-CAL-INT-03-02</code>: $\int{\arcsin x \cdot \ln x}\,\mathrm{d}x$</p>
+<p><code>EX-CAL-INT-03-03</code>: $\int(4x^4 + 1)e^{x^4}\,\mathrm{d}x$</p>
+<h3 id="eg1-trans-between-different-variables">
+    <a href="#eg1-trans-between-different-variables" class="header-anchor">#</a>
+    E.g.1. Trans between different variables
+</h3><p>$$ \int_{C}^{g(x)}{f(t)}\,\mathrm{d}t, \text{assume } F(t) = \int{f(t)}\,\mathrm{d}t \Rightarrow \int_{C}^{g(x)}{f(t)}\,\mathrm{d}t = F(g(x)) - F(C)
+$$
+$$ \text{Taking derivative in both sides:} \frac{\mathrm{d}}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\,\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}x}F(g(x)) - \frac{\mathrm{d}}{\mathrm{d}x}F(C)
+$$
+$$ F&rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&rsquo;(g(x)) \cdot g&rsquo;(x) - 0 = f(g(x)) \cdot g&rsquo;(x)
+$$
+$$ \therefore \frac{\mathrm{d}}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\,\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x), \frac{\mathrm{d}}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}\,\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
 $$</p>
-<h3 id="eg-partial-fractions">
-    <a href="#eg-partial-fractions" class="header-anchor">#</a>
-    E.g. Partial Fractions
+<h3 id="eg2-partial-fractions">
+    <a href="#eg2-partial-fractions" class="header-anchor">#</a>
+    E.g.2. Partial Fractions
 </h3><p>$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &gt;= deg(B) \ or \ deg(C) &lt; deg(D)
 $$
 $$ D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&hellip;(u_jx^2 + v_jx + w_j)^{r_j}
@@ -597,18 +602,18 @@ $$ \Rightarrow \sum_{i, k}\frac{C_{i, k}}{(a_ix+b_i)^{p_k}} + \sum_{j, h}\frac{g
 $$</p>
 <p>then Integral:</p>
 <ul>
-<li>$\int{\frac{c}{(ax + b)^n}}\,\mathrm{d}x$</li>
+<li>$\displaystyle\int{\frac{c}{(ax + b)^n}}\,\mathrm{d}x$</li>
 </ul>
 <p>$$ \int{\frac{c}{(ax + b)^n}}\,\mathrm{d}x = \frac{c}{a} \cdot \frac{1}{(1 - n)(ax+b)^{n-1}} + C \ or \ = \frac{c}{a} \cdot \ln{|ax + b|} + C \ when \ n = 1
 $$</p>
 <ul>
-<li>$\int{\frac{gx + h}{(ax^2 + bx + c)^n}}\,\mathrm{d}x$</li>
+<li>$\displaystyle\int{\frac{gx + h}{(ax^2 + bx + c)^n}}\,\mathrm{d}x$</li>
 </ul>
-<p>$$ \int{\frac{gx + h}{(ax^2 + bx + c)^n}}\,\mathrm{d}x = \int{\frac{gx + h}{(a(x + \frac{b}{2a})^2 + c - \frac{b^2}{4a})^n}}\,\mathrm{d}x, u = x + \frac{b}{2a} \Rightarrow \int{\frac{iu + j}{(au^2 + k^2)^n}}du
+<p>$$ \int{\frac{gx + h}{(ax^2 + bx + c)^n}}\,\mathrm{d}x = \int{\frac{gx + h}{(a(x + \frac{b}{2a})^2 + c - \frac{b^2}{4a})^n}}\,\mathrm{d}x, u = x + \frac{b}{2a} \Rightarrow \int{\frac{iu + j}{(au^2 + k^2)^n}}\,\mathrm{d}u
 $$
 $$ (1)
 $$
-$$ \int{\frac{iu}{(au^2+k^2)^n}}du, v = au^2 + k^2, \frac{1}{2a}dv = udu
+$$ \int{\frac{iu}{(au^2+k^2)^n}}\,\mathrm{d}u, v = au^2 + k^2, \frac{1}{2a}dv = u\mathrm{d}u
 $$
 $$ \Rightarrow \frac{i}{2a}\int{\frac{1}{v^n}}dv \Rightarrow \frac{i}{2a} \cdot \frac{1}{(1 - n)(au^2 + k^2)^{n - 1}} + C \ or \ \frac{i}{2a}\ln{|au^2 + k^2|} + C \ when \ n = 1
 $$
@@ -618,19 +623,19 @@ $$ \ n = 1: v = \frac{u\sqrt{a}}{k} \Rightarrow \frac{j}{\sqrt{a}}\int{\frac{1}{
 $$
 $$ *n \neq 1:
 $$
-$$ \int{\frac{1}{(x^2 + 1)^n}}\,\mathrm{d}x, x = \tan{u}, \,\mathrm{d}x = \sec^2{u}du \Rightarrow \int{\frac{1}{\sec^{2n - 2}{u}}}du = \int{\frac{\sec^2{u} - \tan^2{u}}{\sec^{2n - 2}{u}}}du
+$$ \int{\frac{1}{(x^2 + 1)^n}}\,\mathrm{d}x, x = \tan{u}, \,\mathrm{d}x = \sec^2{u}\,\mathrm{d}u \Rightarrow \int{\frac{1}{\sec^{2n - 2}{u}}}\,\mathrm{d}u = \int{\frac{\sec^2{u} - \tan^2{u}}{\sec^{2n - 2}{u}}}\,\mathrm{d}u
 $$
-$$ = \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{\tan{u}\sec{u}\tan{u}}{\sec^{2n - 1}{u}}}du, i&rsquo; = \frac{\tan{u}\sec{u}}{\sec^{2n - 1}{u}}, i = \frac{-1}{(2n - 2)\sec^{2n - 2}u}
+$$ = \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}\,\mathrm{d}u - \int{\frac{\tan{u}\sec{u}\tan{u}}{\sec^{2n - 1}{u}}}\,\mathrm{d}u, i&rsquo; = \frac{\tan{u}\sec{u}}{\sec^{2n - 1}{u}}, i = \frac{-1}{(2n - 2)\sec^{2n - 2}u}
 $$
-$$ \Rightarrow \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}du - \int{\frac{sec^2{u}}{(2n - 2)\sec^{2n - 2}{u}}}
+$$ \Rightarrow \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \int{\frac{\sec^2{u}}{\sec^{2n - 2}{u}}}\,\mathrm{d}u - \int{\frac{sec^2{u}}{(2n - 2)\sec^{2n - 2}{u}}}
 $$
 $$ = \frac{x}{(2n - 2)(x^2 + 1)^{n - 1}} + \frac{2n - 3}{2n - 2}\int{\frac{1}{(x^2 + 1)^{n - 1}}}
 $$
 $$ \int\frac{1}{(ax^2 + b)^n} = \frac{2n - 3}{2b(n - 1)}\int\frac{1}{(ax^2 + b)^{n - 1}}\,\mathrm{d}x + \frac{x}{2b(n - 1)(ax^2 + b)^{n - 1}}
 $$</p>
-<p>Exercise.</p>
-<p>$$ \int{ln{(x^2 - x + 3)}}\,\mathrm{d}x, \int{\sec{x}}\,\mathrm{d}x
-$$</p>
+<p>Exercise:</p>
+<p><code>EX-CAL-INT-04-01</code>: $\int{\ln{(x^2 - x + 3)}}\,\mathrm{d}x$</p>
+<p><code>EX-CAL-INT-04-02</code>: $\int{\sec{x}}\,\mathrm{d}x$</p>
 <blockquote>
 <p>Notice. Approx to limit - Improper Integral:
 For integral $\int_a^b{f(x)}\,\mathrm{d}x$, when there are some points that are not defined, we use $t$ to approx. the limit of those points</p>
@@ -645,7 +650,7 @@ $$</p>
     Rate - Differential Equations
 </h3><p>$$ \text{Informal:} \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y\,\mathrm{d}y = x\,\mathrm{d}x \Rightarrow \int{y}\,\mathrm{d}y = \int{x}\,\mathrm{d}x
 $$
-$$ \text{*Formal Solution:} \frac{d}{\mathrm{d}x}{y(t(x))} = \frac{\mathrm{d}y}{\mathrm{d}t} \cdot \frac{\mathrm{d}t}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{\mathrm{d}t}{\mathrm{d}x})}\,\mathrm{d}x = \int{(y \frac{\mathrm{d}t}{\mathrm{d}x})}\,\mathrm{d}x = \frac{y^2}{2}
+$$ \text{*Formal Solution:} \frac{\mathrm{d}}{\mathrm{d}x}{y(t(x))} = \frac{\mathrm{d}y}{\mathrm{d}t} \cdot \frac{\mathrm{d}t}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{\mathrm{d}t}{\mathrm{d}x})}\,\mathrm{d}x = \int{(y \frac{\mathrm{d}t}{\mathrm{d}x})}\,\mathrm{d}x = \frac{y^2}{2}
 $$</p>
 <ul>
 <li>Carrying Capacity:</li>
@@ -661,17 +666,16 @@ $$</p>
 </blockquote>
 <p>$$ x\frac{d^2y}{\,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})}\,\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}}\,\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
 $$</p>
-<p>Exercise.</p>
-<p>$$ \frac{dN}{\mathrm{d}t} = -aN\ln(bN), *\frac{d^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{dN^2}{\mathrm{d}t^2}
-$$</p>
+<p>Exercise:</p>
+<p><code>EX-CAL-INT-05-01</code>: $\frac{dN}{\mathrm{d}t} = -aN\ln(bN)$</p>
+<p>*<code>EX-CAL-INT-05-02</code>: $\displaystyle \frac{d^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{\mathrm{d}N^2}{\mathrm{d}t^2}$</p>
 <h3 id="arc-length">
     <a href="#arc-length" class="header-anchor">#</a>
     Arc Length
 </h3><p>$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&rsquo;^2}}\,\mathrm{d}x
 $$</p>
-<p>Exercise.</p>
-<p>$$ \text{Find curve length of } y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4
-$$</p>
+<p>Exercise:</p>
+<p><code>EX-CAL-INT-06-01</code>: Find curve length of $y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4$</p>
 <h3 id="areas">
     <a href="#areas" class="header-anchor">#</a>
     Areas
@@ -702,10 +706,10 @@ x = r(\theta - \sin\theta) \\
 y = r(1 - \cos\theta)
 \end{cases}
 $$</p>
-<p>$$ \frac{\mathrm{d}y}{\mathrm{d}\theta} = \frac{\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}\theta} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}, \frac{d^2y}{\,\mathrm{d}x^2} = \frac{d}{\mathrm{d}x}(\frac{\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{d}{\mathrm{d}\theta}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
+<p>$$ \frac{\mathrm{d}y}{\mathrm{d}\theta} = \frac{\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}\theta} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}, \frac{d^2y}{\,\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}(\frac{\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{\mathrm{d}}{\mathrm{d}\theta}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
 $$</p>
 <blockquote>
-<p>Why $d^2y/\,\mathrm{d}x^2 \neq \frac{d^2y/\mathrm{d}\theta^2}{d^2x/\mathrm{d}\theta^2}?$</p>
+<p>Why $\displaystyle d^2y/\,\mathrm{d}x^2 \neq \frac{d^2y/\mathrm{d}\theta^2}{d^2x/\mathrm{d}\theta^2}?$</p>
 <p>If you remember &ldquo;$y$ and $x$ are not in the same manner&rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.</p>
 </blockquote>
 <p>$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{\,\mathrm{d}x^2}}}\,\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
