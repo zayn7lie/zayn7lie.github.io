@@ -508,7 +508,7 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#substitution-if-the-function-combines-with-its-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Substitution: If the function combines with its derivative
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Rules: $\frac{df}{\mathrm{d}x} = \frac{df}{dh} \cdot \frac{dh}{\mathrm{d}x}$&lt;/p&gt;
+&lt;p&gt;Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{dh} \cdot \frac{dh}{\mathrm{d}x}$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{\mathrm{d}x}$&lt;/li&gt;

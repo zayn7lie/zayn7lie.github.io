@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why should we learn differentiation? How to find the speed? How to find the acceleration? - Find the rate: At (when), the rate at which (how) is increasing/decreasing by (what) (unit). How to sketch a function? - Find the tendency of a function, knowning monotonicity and concavity. (&amp; Optimization) # WHAT: What is differentiation? $$ \\lim_{h \\rightarrow 0}\\frac{f(x + h) - f(x)}{h} \\textbf{ #1} = \\lim_{\\Delta{x} \\rightarrow 0}\\frac{\\Delta{f(x)}}{\\Delta{x}} \\textbf{ #2} = \\frac{df(x)}{\\mathrm{d}x} \\textbf{ #3} \\Rightarrow f&rsquo;(x) \\textbf{ #4} $$">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why should we learn differentiation? How to find the speed? How to find the acceleration? - Find the rate: At (when), the rate at which (how) is increasing/decreasing by (what) (unit). How to sketch a function? - Find the tendency of a function, knowning monotonicity and concavity. (&amp; Optimization) # WHAT: What is differentiation? $$ \\lim_{h \\rightarrow 0}\\frac{f(x + h) - f(x)}{h} \\textbf{ (1)} = \\lim_{\\Delta{x} \\rightarrow 0}\\frac{\\Delta{f(x)}}{\\Delta{x}} \\textbf{ (2)} = \\frac{\\mathrm{d}f(x)}{\\mathrm{d}x} \\textbf{ (3)} \\Rightarrow f&rsquo;(x) \\textbf{ (4)} $$">
 <title>Calculus: Differentiation</title>
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/math/cal-dif/'>
 
 <link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="Calculus: Differentiation">
-<meta property='og:description' content="# WHY: Why should we learn differentiation? How to find the speed? How to find the acceleration? - Find the rate: At (when), the rate at which (how) is increasing/decreasing by (what) (unit). How to sketch a function? - Find the tendency of a function, knowning monotonicity and concavity. (&amp; Optimization) # WHAT: What is differentiation? $$ \\lim_{h \\rightarrow 0}\\frac{f(x + h) - f(x)}{h} \\textbf{ #1} = \\lim_{\\Delta{x} \\rightarrow 0}\\frac{\\Delta{f(x)}}{\\Delta{x}} \\textbf{ #2} = \\frac{df(x)}{\\mathrm{d}x} \\textbf{ #3} \\Rightarrow f&rsquo;(x) \\textbf{ #4} $$">
+<meta property='og:description' content="# WHY: Why should we learn differentiation? How to find the speed? How to find the acceleration? - Find the rate: At (when), the rate at which (how) is increasing/decreasing by (what) (unit). How to sketch a function? - Find the tendency of a function, knowning monotonicity and concavity. (&amp; Optimization) # WHAT: What is differentiation? $$ \\lim_{h \\rightarrow 0}\\frac{f(x + h) - f(x)}{h} \\textbf{ (1)} = \\lim_{\\Delta{x} \\rightarrow 0}\\frac{\\Delta{f(x)}}{\\Delta{x}} \\textbf{ (2)} = \\frac{\\mathrm{d}f(x)}{\\mathrm{d}x} \\textbf{ (3)} \\Rightarrow f&rsquo;(x) \\textbf{ (4)} $$">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/math/cal-dif/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='AP' /><meta property='article:tag' content='Calculus AB' /><meta property='article:tag' content='Calculus BC' /><meta property='article:tag' content='Calculus I' /><meta property='article:tag' content='Differentiation' /><meta property='article:published_time' content='2023-04-16T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-04-16T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus: Differentiation">
-<meta name="twitter:description" content="# WHY: Why should we learn differentiation? How to find the speed? How to find the acceleration? - Find the rate: At (when), the rate at which (how) is increasing/decreasing by (what) (unit). How to sketch a function? - Find the tendency of a function, knowning monotonicity and concavity. (&amp; Optimization) # WHAT: What is differentiation? $$ \\lim_{h \\rightarrow 0}\\frac{f(x + h) - f(x)}{h} \\textbf{ #1} = \\lim_{\\Delta{x} \\rightarrow 0}\\frac{\\Delta{f(x)}}{\\Delta{x}} \\textbf{ #2} = \\frac{df(x)}{\\mathrm{d}x} \\textbf{ #3} \\Rightarrow f&rsquo;(x) \\textbf{ #4} $$">
+<meta name="twitter:description" content="# WHY: Why should we learn differentiation? How to find the speed? How to find the acceleration? - Find the rate: At (when), the rate at which (how) is increasing/decreasing by (what) (unit). How to sketch a function? - Find the tendency of a function, knowning monotonicity and concavity. (&amp; Optimization) # WHAT: What is differentiation? $$ \\lim_{h \\rightarrow 0}\\frac{f(x + h) - f(x)}{h} \\textbf{ (1)} = \\lim_{\\Delta{x} \\rightarrow 0}\\frac{\\Delta{f(x)}}{\\Delta{x}} \\textbf{ (2)} = \\frac{\\mathrm{d}f(x)}{\\mathrm{d}x} \\textbf{ (3)} \\Rightarrow f&rsquo;(x) \\textbf{ (4)} $$">
     <link rel="shortcut icon" href="/favicon.png" />
 
 
@@ -462,14 +462,14 @@
 <h2 id="what-what-is-differentiation">
     <a href="#what-what-is-differentiation" class="header-anchor">#</a>
     WHAT: What is differentiation?
-</h2><p>$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ #2} = \frac{df(x)}{\mathrm{d}x} \textbf{ #3} \Rightarrow f&rsquo;(x) \textbf{ #4}
+</h2><p>$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ (1)} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ (2)} = \frac{\mathrm{d}f(x)}{\mathrm{d}x} \textbf{ (3)} \Rightarrow f&rsquo;(x) \textbf{ (4)}
 $$</p>
 <blockquote>
-<p>Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $d$; <strong>Leave out $\lim_{\Delta{x} \rightarrow 0}$</strong>. So that is a reason why $\frac{df(x)}{\mathrm{d}x} \neq df(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are <strong>not in the same manner</strong>, or $\frac{df(x)}{\mathrm{d}x}$ is <strong>respected to $x$</strong>. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&rsquo;(x)$ for reminding which is respected.</p>
+<p>Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $\mathrm{d}$; <strong>Leave out $\lim_{\Delta{x} \rightarrow 0}$</strong>. So that is a reason why $\frac{\mathrm{d}f(x)}{\mathrm{d}x} \neq \mathrm{d}f(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are <strong>not in the same manner</strong>, or $\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ is <strong>respected to $x$</strong>. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&rsquo;(x)$ for reminding which is respected.</p>
 </blockquote>
 <p>Difference between differentiation and derivative?</p>
 <ul>
-<li>$\frac{df(x)}{\mathrm{d}x}$ differentiation is a method to crop source function to small range for knowing the tendency</li>
+<li>$\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ differentiation is a method to crop source function to small range for knowing the tendency</li>
 <li>$f&rsquo;(x)$ derivative is that kinds of tendency.</li>
 </ul>
 <blockquote>

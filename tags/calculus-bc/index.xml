@@ -335,7 +335,7 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#substitution-if-the-function-combines-with-its-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Substitution: If the function combines with its derivative
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Rules: $\frac{df}{\mathrm{d}x} = \frac{df}{dh} \cdot \frac{dh}{\mathrm{d}x}$&lt;/p&gt;
+&lt;p&gt;Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{dh} \cdot \frac{dh}{\mathrm{d}x}$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{\mathrm{d}x}$&lt;/li&gt;
@@ -533,14 +533,14 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;
     &lt;a href=&#34;#what-what-is-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHAT: What is differentiation?
-&lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ #1} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ #2} = \frac{df(x)}{\mathrm{d}x} \textbf{ #3} \Rightarrow f&amp;rsquo;(x) \textbf{ #4}
+&lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ (1)} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ (2)} = \frac{\mathrm{d}f(x)}{\mathrm{d}x} \textbf{ (3)} \Rightarrow f&amp;rsquo;(x) \textbf{ (4)}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $d$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{df(x)}{\mathrm{d}x} \neq df(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{df(x)}{\mathrm{d}x}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
+&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $\mathrm{d}$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{\mathrm{d}f(x)}{\mathrm{d}x} \neq \mathrm{d}f(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Difference between differentiation and derivative?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$\frac{df(x)}{\mathrm{d}x}$ differentiation is a method to crop source function to small range for knowing the tendency&lt;/li&gt;
+&lt;li&gt;$\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ differentiation is a method to crop source function to small range for knowing the tendency&lt;/li&gt;
 &lt;li&gt;$f&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
