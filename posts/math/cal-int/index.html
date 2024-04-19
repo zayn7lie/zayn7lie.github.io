@@ -15,6 +15,9 @@
 <meta name="twitter:description" content="Calculus II, special thanks to professor [Wenzheng Shi](https://sites.google.com/view/wenzhengshi/) who provided me with excellent exercises!">
     <link rel="shortcut icon" href="/favicon.png" />
 
+  
+
+
 
         
         <meta name="google-site-verification" content="SpdfQhPs0dBU_hZ-m0h_qC57AxJ9_IDtvoz_aairUMc" />
@@ -559,7 +562,7 @@ $$</p>
     Integration by part: If the function combines with a simple function&rsquo;s derivative
 </h3><ul>
 <li>
-<p>Re\mathrm{d}uce Power: $\int{x \cdot \sin x}\,\mathrm{d}x$</p>
+<p>Reduce Power: $\int{x \cdot \sin x}\,\mathrm{d}x$</p>
 </li>
 <li>
 <p>Eliminate complex function: $\int{\ln x}\,\mathrm{d}x$</p>
@@ -655,20 +658,20 @@ $$</p>
 <ul>
 <li>Carrying Capacity:</li>
 </ul>
-<p>$$ \frac{dN}{\mathrm{d}t} = rN(1 - \frac{N}{K})
+<p>$$ \frac{\mathrm{d}N}{\mathrm{d}t} = rN(1 - \frac{N}{K})
 $$
-$$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{\mathrm{d}t} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{\mathrm{d}t} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{\mathrm{d}t}}\mathrm{d}t = \int{r}\mathrm{d}t
+$$ \Rightarrow \frac{1}{N(K - N)} \frac{\mathrm{d}N}{\mathrm{d}t} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{\mathrm{d}N}{\mathrm{d}t} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{\mathrm{d}N}{\mathrm{d}t}}\mathrm{d}t = \int{r}\mathrm{d}t
 $$
 $$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$</p>
 <blockquote>
-<p>$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.</p>
+<p>$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $\mathrm{d}N/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.</p>
 </blockquote>
-<p>$$ x\frac{d^2y}{\,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})}\,\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}}\,\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
+<p>$$ x\frac{\mathrm{d}^2y}{\,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{\mathrm{d}^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})}\,\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}}\,\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
 $$</p>
 <p>Exercise:</p>
-<p><code>EX-CAL-INT-05-01</code>: $\frac{dN}{\mathrm{d}t} = -aN\ln(bN)$</p>
-<p>*<code>EX-CAL-INT-05-02</code>: $\displaystyle \frac{d^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{\mathrm{d}N^2}{\mathrm{d}t^2}$</p>
+<p><code>EX-CAL-INT-05-01</code>: $\displaystyle \frac{\mathrm{d}N}{\mathrm{d}t} = -aN\ln(bN)$</p>
+<p>*<code>EX-CAL-INT-05-02</code>: $\displaystyle \frac{\mathrm{d}^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{\mathrm{d}N^2}{\mathrm{d}t^2}$</p>
 <h3 id="arc-length">
     <a href="#arc-length" class="header-anchor">#</a>
     Arc Length
@@ -706,10 +709,10 @@ x = r(\theta - \sin\theta) \\
 y = r(1 - \cos\theta)
 \end{cases}
 $$</p>
-<p>$$ \frac{\mathrm{d}y}{\mathrm{d}\theta} = \frac{\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}\theta} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}, \frac{d^2y}{\,\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}(\frac{\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{\mathrm{d}}{\mathrm{d}\theta}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
+<p>$$ \frac{\mathrm{d}y}{\mathrm{d}\theta} = \frac{\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}\theta} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}, \frac{\mathrm{d}^2y}{\,\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}(\frac{\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{\mathrm{d}}{\mathrm{d}\theta}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
 $$</p>
 <blockquote>
-<p>Why $\displaystyle d^2y/\,\mathrm{d}x^2 \neq \frac{d^2y/\mathrm{d}\theta^2}{d^2x/\mathrm{d}\theta^2}?$</p>
+<p>Why $\displaystyle \mathrm{d}^2y/\,\mathrm{d}x^2 \neq \frac{\mathrm{d}^2y/\mathrm{d}\theta^2}{\mathrm{d}^2x/\mathrm{d}\theta^2}?$</p>
 <p>If you remember &ldquo;$y$ and $x$ are not in the same manner&rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.</p>
 </blockquote>
 <p>$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{\,\mathrm{d}x^2}}}\,\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t

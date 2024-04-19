@@ -1437,7 +1437,7 @@ $$&lt;/p&gt;
     Integration by part: If the function combines with a simple function&amp;rsquo;s derivative
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Re\mathrm{d}uce Power: $\int{x \cdot \sin x},\mathrm{d}x$&lt;/p&gt;
+&lt;p&gt;Reduce Power: $\int{x \cdot \sin x},\mathrm{d}x$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Eliminate complex function: $\int{\ln x},\mathrm{d}x$&lt;/p&gt;
@@ -1533,20 +1533,20 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Carrying Capacity:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;$$ \frac{dN}{\mathrm{d}t} = rN(1 - \frac{N}{K})
+&lt;p&gt;$$ \frac{\mathrm{d}N}{\mathrm{d}t} = rN(1 - \frac{N}{K})
 $$
-$$ \Rightarrow \frac{1}{N(K - N)} \frac{dN}{\mathrm{d}t} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{dN}{\mathrm{d}t} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{dN}{\mathrm{d}t}}\mathrm{d}t = \int{r}\mathrm{d}t
+$$ \Rightarrow \frac{1}{N(K - N)} \frac{\mathrm{d}N}{\mathrm{d}t} = \frac{1}{K} (\frac{1}{N} + \frac{1}{K - N}) \frac{\mathrm{d}N}{\mathrm{d}t} = \frac{r}{K} \Rightarrow \int{(\frac{1}{N} + \frac{1}{K - N})\frac{\mathrm{d}N}{\mathrm{d}t}}\mathrm{d}t = \int{r}\mathrm{d}t
 $$
 $$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $dN/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
+&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $\mathrm{d}N/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;$$ x\frac{d^2y}{,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{d^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})},\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
+&lt;p&gt;$$ x\frac{\mathrm{d}^2y}{,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{\mathrm{d}^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})},\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
 $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;EX-CAL-INT-05-01&lt;/code&gt;: $\frac{dN}{\mathrm{d}t} = -aN\ln(bN)$&lt;/p&gt;
-&lt;p&gt;*&lt;code&gt;EX-CAL-INT-05-02&lt;/code&gt;: $\displaystyle \frac{d^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{\mathrm{d}N^2}{\mathrm{d}t^2}$&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EX-CAL-INT-05-01&lt;/code&gt;: $\displaystyle \frac{\mathrm{d}N}{\mathrm{d}t} = -aN\ln(bN)$&lt;/p&gt;
+&lt;p&gt;*&lt;code&gt;EX-CAL-INT-05-02&lt;/code&gt;: $\displaystyle \frac{\mathrm{d}^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{\mathrm{d}N^2}{\mathrm{d}t^2}$&lt;/p&gt;
 &lt;h3 id=&#34;arc-length&#34;&gt;
     &lt;a href=&#34;#arc-length&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Arc Length
@@ -1584,10 +1584,10 @@ x = r(\theta - \sin\theta) \
 y = r(1 - \cos\theta)
 \end{cases}
 $$&lt;/p&gt;
-&lt;p&gt;$$ \frac{\mathrm{d}y}{\mathrm{d}\theta} = \frac{\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}\theta} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}, \frac{d^2y}{,\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}(\frac{\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{\mathrm{d}}{\mathrm{d}\theta}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
+&lt;p&gt;$$ \frac{\mathrm{d}y}{\mathrm{d}\theta} = \frac{\mathrm{d}y}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}\theta} \Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}, \frac{\mathrm{d}^2y}{,\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}(\frac{\mathrm{d}y}{\mathrm{d}x}) = \frac{\frac{\mathrm{d}}{\mathrm{d}\theta}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Why $\displaystyle d^2y/,\mathrm{d}x^2 \neq \frac{d^2y/\mathrm{d}\theta^2}{d^2x/\mathrm{d}\theta^2}?$&lt;/p&gt;
+&lt;p&gt;Why $\displaystyle \mathrm{d}^2y/,\mathrm{d}x^2 \neq \frac{\mathrm{d}^2y/\mathrm{d}\theta^2}{\mathrm{d}^2x/\mathrm{d}\theta^2}?$&lt;/p&gt;
 &lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
