@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. # WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc. # WHAT: What function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
 <title>Calculus: Vectors</title>
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/math/cal-vec/'>
 
 <link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="Calculus: Vectors">
-<meta property='og:description' content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. # WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
+<meta property='og:description' content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc. # WHAT: What function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/math/cal-vec/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='Calculus III' /><meta property='article:tag' content='Integral' /><meta property='article:tag' content='Partial Derivatives' /><meta property='article:tag' content='Multiple Integrals' /><meta property='article:tag' content='Vector Calculus' /><meta property='article:published_time' content='2023-10-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-25T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus: Vectors">
-<meta name="twitter:description" content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. # WHAT: What is vector / function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
+<meta name="twitter:description" content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc. # WHAT: What function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
     <link rel="shortcut icon" href="/favicon.png" />
 
   
@@ -244,7 +244,7 @@
             <nav id="TableOfContents">
   <ul>
     <li><a href="#why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</a></li>
-    <li><a href="#what-what-is-vector--function-with-multiple-variables">WHAT: What is vector / function with multiple variables?</a>
+    <li><a href="#what-what-function-with-multiple-variables">WHAT: What function with multiple variables?</a>
       <ul>
         <li><a href="#eg-from-x-y-z-coordinate-to-vectors">E.g. from X-Y-Z coordinate to vectors</a></li>
         <li><a href="#how-how-to-visualize-vectors-in-dimensions">HOW: How to visualize vectors in dimensions?</a></li>
@@ -260,6 +260,7 @@
       <ul>
         <li><a href="#what-what-is-vector-fields">WHAT: What is vector fields</a></li>
         <li><a href="#how-how-to-integrate-along-the-line---linepathcontour-integrals">HOW: How to integrate along the line - Line(Path/Contour) Integrals</a></li>
+        <li><a href="#how-how-to-integrate-along-the-surface---surface-integrals">HOW: How to integrate along the surface - Surface Integrals</a></li>
         <li><a href="#how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve">HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve</a></li>
       </ul>
     </li>
@@ -427,7 +428,7 @@
 
 
                 <time class="article-time--reading">
-                    14 minute read
+                    15 minute read
                 </time>
             </div>
         
@@ -467,9 +468,10 @@
     <a href="#why-why-should-we-apply-calculus-to-vector" class="header-anchor">#</a>
     WHY: Why should we apply calculus to vector?
 </h2><p>More applicable in the real world, like 3D real world, linear algebra, etc.</p>
-<h2 id="what-what-is-vector--function-with-multiple-variables">
-    <a href="#what-what-is-vector--function-with-multiple-variables" class="header-anchor">#</a>
-    WHAT: What is vector / function with multiple variables?
+<p>Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc.</p>
+<h2 id="what-what-function-with-multiple-variables">
+    <a href="#what-what-function-with-multiple-variables" class="header-anchor">#</a>
+    WHAT: What function with multiple variables?
 </h2><p>Express with set theory: $f: \{(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots\}$</p>
 <blockquote>
 <p>$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.</p>
@@ -506,7 +508,7 @@ w_x &amp; w_y &amp; w_z
 </li>
 </ul>
 </li>
-<li>Vector unitization: $\vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$</li>
+<li>Vector unitization: $\displaystyle \vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$</li>
 </ul>
 <h3 id="eg-from-x-y-z-coordinate-to-vectors">
     <a href="#eg-from-x-y-z-coordinate-to-vectors" class="header-anchor">#</a>
@@ -558,10 +560,10 @@ E.g. $O = (0, 0, 0)$ OR $O: \{(x, y, z) | x = 0, y = 0, z = 0\}$, $\hat{u} = (\f
 </ul>
 </li>
 <li>
-<p>planes: $\vec{n} \cdot (\vec{r} - \vec{r}_0)$ (from original direction to go perpendicularly the direction) $\Rightarrow ax + by + cz + d = 0$</p>
+<p>planes: $\vec{n} \cdot (\vec{r} - \vec{r}_0)$ (from original direction to go perpendicularly the direction) $\Rightarrow ax + by + cz + d = 0$ or $\vec{r}_0 +u\vec{r}_1 + v\vec{r}_2$</p>
 <ul>
-<li>cylinder: Circular ~ $x^2 + y^2 = 1$; Parabolic ~ $z = x^2$; Elliptic ~ $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$</li>
-<li>Sphere $(x - a)^2 + (y - b)^2 + (z - c)^2 = R^2$; Ellipsoid $\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$; Elliptic paraboloid $\frac{z}{c} = \frac{x^2}{a^2} + \frac{y^2}{b^2}$; Hyperbolic paraboloid(saddle) $\frac{z}{c} = \frac{x^2}{a^2} - \frac{y^2}{b^2}$</li>
+<li>cylinder: Circular ~ $x^2 + y^2 = 1$; Parabolic ~ $z = x^2$; Elliptic ~ $\displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$</li>
+<li>Sphere $(x - a)^2 + (y - b)^2 + (z - c)^2 = R^2$; Ellipsoid $\displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$; Elliptic paraboloid $\displaystyle \frac{z}{c} = \frac{x^2}{a^2} + \frac{y^2}{b^2}$; Hyperbolic paraboloid(saddle) $\displaystyle \frac{z}{c} = \frac{x^2}{a^2} - \frac{y^2}{b^2}$</li>
 </ul>
 </li>
 </ul>
@@ -863,6 +865,38 @@ $$</p>
 </ul>
 </li>
 </ul>
+<h3 id="how-how-to-integrate-along-the-surface---surface-integrals">
+    <a href="#how-how-to-integrate-along-the-surface---surface-integrals" class="header-anchor">#</a>
+    HOW: How to integrate along the surface - Surface Integrals
+</h3><h4 id="what-what-is-surfaces-and-areas">
+    <a href="#what-what-is-surfaces-and-areas" class="header-anchor">#</a>
+    WHAT: What is surfaces and areas
+</h4><ul>
+<li>Parametric Surfaces: $\mathbf{r}(u, v) = x(u, v)\mathbf{i} + y(u, v)\mathbf{j} + z(u, v)\mathbf{k}$
+<ul>
+<li>Revolution: eg. along x-axis - $\mathbf{r}(u, v) = u\mathbf{i} + f(u)\cos v\mathbf{j} + f(u)\sin v\mathbf{k}$</li>
+</ul>
+</li>
+<li>Tangent Planes: there are two direction for the tangent planes of a parematric surfaces - u-direction and v-directoin
+<ul>
+<li>$\mathbf{r}_u(u, v) = \frac{\partial}{\partial u}(x(u, v)\mathbf{i} + y(u, v)\mathbf{j} + z(u, v)\mathbf{k})$</li>
+<li>$\mathbf{r}_v(u, v) = \frac{\partial}{\partial v}(x(u, v)\mathbf{i} + y(u, v)\mathbf{j} + z(u, v)\mathbf{k})$</li>
+<li>$\mathbf{n} = \mathbf{r}_u(u, v) \times \mathbf{r}_v(u, v)$</li>
+<li>tangent planes: $\mathbf{n} \cdot (\mathbf{r} - \mathbf{r}_0)$</li>
+</ul>
+</li>
+<li>Surface Area (Integral of Tangent Planes)
+<ul>
+<li>Recall arc length: $l = \int_C |(x&rsquo;(t), y&rsquo;(t))| \,\mathrm{d}t = \int_C \sqrt{1 + y&rsquo;^2(x)} \,\mathrm{d}x$</li>
+<li>$A = \iint_D |\mathbf{r}_u(u, v) \times \mathbf{r}_v(u, v)| \,\mathrm{d}A = \iint_D \sqrt{1 + (\partial z/\partial x)^2 + (\partial z/\partial y)^2}\,\mathrm{d}A$</li>
+</ul>
+</li>
+</ul>
+<h4 id="how-how-to-do-surface-integral">
+    <a href="#how-how-to-do-surface-integral" class="header-anchor">#</a>
+    HOW: How to do surface integral
+</h4><p>Scalar field: $\iint_S \rho(x, y, z) \,\mathrm{d}S = \iint _D \rho(\mathbf{r}(u, v)) |\mathbf{r}_u \times \mathbf{r}_v| \,\mathrm{d}A$</p>
+<p>Vector field: $\iint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_S \mathbf{F} \cdot \mathbf{n} \,\mathrm{d}S = \iint_D \mathbf{F} \cdot (\mathbf{r}_u \times \mathbf{r}_v)\,\mathrm{d}A$</p>
 <h3 id="how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve">
     <a href="#how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve" class="header-anchor">#</a>
     HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve

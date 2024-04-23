@@ -55,9 +55,10 @@
     &lt;a href=&#34;#why-why-should-we-apply-calculus-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why should we apply calculus to vector?
 &lt;/h2&gt;&lt;p&gt;More applicable in the real world, like 3D real world, linear algebra, etc.&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-vector--function-with-multiple-variables&#34;&gt;
-    &lt;a href=&#34;#what-what-is-vector--function-with-multiple-variables&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is vector / function with multiple variables?
+&lt;p&gt;Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc.&lt;/p&gt;
+&lt;h2 id=&#34;what-what-function-with-multiple-variables&#34;&gt;
+    &lt;a href=&#34;#what-what-function-with-multiple-variables&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What function with multiple variables?
 &lt;/h2&gt;&lt;p&gt;Express with set theory: $f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;
@@ -94,7 +95,7 @@ w_x &amp;amp; w_y &amp;amp; w_z
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Vector unitization: $\vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$&lt;/li&gt;
+&lt;li&gt;Vector unitization: $\displaystyle \vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;eg-from-x-y-z-coordinate-to-vectors&#34;&gt;
     &lt;a href=&#34;#eg-from-x-y-z-coordinate-to-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
@@ -146,10 +147,10 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;planes: $\vec{n} \cdot (\vec{r} - \vec{r}_0)$ (from original direction to go perpendicularly the direction) $\Rightarrow ax + by + cz + d = 0$&lt;/p&gt;
+&lt;p&gt;planes: $\vec{n} \cdot (\vec{r} - \vec{r}_0)$ (from original direction to go perpendicularly the direction) $\Rightarrow ax + by + cz + d = 0$ or $\vec{r}_0 +u\vec{r}_1 + v\vec{r}_2$&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;cylinder: Circular ~ $x^2 + y^2 = 1$; Parabolic ~ $z = x^2$; Elliptic ~ $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$&lt;/li&gt;
-&lt;li&gt;Sphere $(x - a)^2 + (y - b)^2 + (z - c)^2 = R^2$; Ellipsoid $\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$; Elliptic paraboloid $\frac{z}{c} = \frac{x^2}{a^2} + \frac{y^2}{b^2}$; Hyperbolic paraboloid(saddle) $\frac{z}{c} = \frac{x^2}{a^2} - \frac{y^2}{b^2}$&lt;/li&gt;
+&lt;li&gt;cylinder: Circular ~ $x^2 + y^2 = 1$; Parabolic ~ $z = x^2$; Elliptic ~ $\displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$&lt;/li&gt;
+&lt;li&gt;Sphere $(x - a)^2 + (y - b)^2 + (z - c)^2 = R^2$; Ellipsoid $\displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$; Elliptic paraboloid $\displaystyle \frac{z}{c} = \frac{x^2}{a^2} + \frac{y^2}{b^2}$; Hyperbolic paraboloid(saddle) $\displaystyle \frac{z}{c} = \frac{x^2}{a^2} - \frac{y^2}{b^2}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -451,6 +452,38 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;how-how-to-integrate-along-the-surface---surface-integrals&#34;&gt;
+    &lt;a href=&#34;#how-how-to-integrate-along-the-surface---surface-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to integrate along the surface - Surface Integrals
+&lt;/h3&gt;&lt;h4 id=&#34;what-what-is-surfaces-and-areas&#34;&gt;
+    &lt;a href=&#34;#what-what-is-surfaces-and-areas&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is surfaces and areas
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Parametric Surfaces: $\mathbf{r}(u, v) = x(u, v)\mathbf{i} + y(u, v)\mathbf{j} + z(u, v)\mathbf{k}$
+&lt;ul&gt;
+&lt;li&gt;Revolution: eg. along x-axis - $\mathbf{r}(u, v) = u\mathbf{i} + f(u)\cos v\mathbf{j} + f(u)\sin v\mathbf{k}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tangent Planes: there are two direction for the tangent planes of a parematric surfaces - u-direction and v-directoin
+&lt;ul&gt;
+&lt;li&gt;$\mathbf{r}_u(u, v) = \frac{\partial}{\partial u}(x(u, v)\mathbf{i} + y(u, v)\mathbf{j} + z(u, v)\mathbf{k})$&lt;/li&gt;
+&lt;li&gt;$\mathbf{r}_v(u, v) = \frac{\partial}{\partial v}(x(u, v)\mathbf{i} + y(u, v)\mathbf{j} + z(u, v)\mathbf{k})$&lt;/li&gt;
+&lt;li&gt;$\mathbf{n} = \mathbf{r}_u(u, v) \times \mathbf{r}_v(u, v)$&lt;/li&gt;
+&lt;li&gt;tangent planes: $\mathbf{n} \cdot (\mathbf{r} - \mathbf{r}_0)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Surface Area (Integral of Tangent Planes)
+&lt;ul&gt;
+&lt;li&gt;Recall arc length: $l = \int_C |(x&amp;rsquo;(t), y&amp;rsquo;(t))| ,\mathrm{d}t = \int_C \sqrt{1 + y&amp;rsquo;^2(x)} ,\mathrm{d}x$&lt;/li&gt;
+&lt;li&gt;$A = \iint_D |\mathbf{r}_u(u, v) \times \mathbf{r}_v(u, v)| ,\mathrm{d}A = \iint_D \sqrt{1 + (\partial z/\partial x)^2 + (\partial z/\partial y)^2},\mathrm{d}A$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-how-to-do-surface-integral&#34;&gt;
+    &lt;a href=&#34;#how-how-to-do-surface-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to do surface integral
+&lt;/h4&gt;&lt;p&gt;Scalar field: $\iint_S \rho(x, y, z) ,\mathrm{d}S = \iint _D \rho(\mathbf{r}(u, v)) |\mathbf{r}_u \times \mathbf{r}_v| ,\mathrm{d}A$&lt;/p&gt;
+&lt;p&gt;Vector field: $\iint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_S \mathbf{F} \cdot \mathbf{n} ,\mathrm{d}S = \iint_D \mathbf{F} \cdot (\mathbf{r}_u \times \mathbf{r}_v),\mathrm{d}A$&lt;/p&gt;
 &lt;h3 id=&#34;how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34;&gt;
     &lt;a href=&#34;#how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve
