@@ -210,9 +210,9 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &amp;hellip;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-calculus-in-scalar-field&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-calculus-in-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the calculus in scalar field?
+&lt;h2 id=&#34;how-how-to-do-calculus-in-scalar-field&#34;&gt;
+    &lt;a href=&#34;#how-how-to-do-calculus-in-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to do calculus in scalar field?
 &lt;/h2&gt;&lt;h3 id=&#34;partial-derivatives&#34;&gt;
     &lt;a href=&#34;#partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Partial Derivatives
@@ -389,9 +389,9 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
 &lt;p&gt;$$M = \iiint\int_0^{\rho(x, y, z)} ,\mathrm{d}\rho,\mathrm{d}V = \iiint\rho(x, y, z),\mathrm{d}V$$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-calculus-in-vector-field&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-calculus-in-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the calculus in vector field?
+&lt;h2 id=&#34;how-how-to-do-calculus-in-vector-field&#34;&gt;
+    &lt;a href=&#34;#how-how-to-do-calculus-in-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to do calculus in vector field?
 &lt;/h2&gt;&lt;h3 id=&#34;what-what-is-vector-fields&#34;&gt;
     &lt;a href=&#34;#what-what-is-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHAT: What is vector fields
