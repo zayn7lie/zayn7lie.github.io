@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc. # WHAT: What function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
 <title>Calculus: Vectors</title>
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/math/cal-vec/'>
 
 <link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="Calculus: Vectors">
-<meta property='og:description' content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc. # WHAT: What function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
+<meta property='og:description' content="# WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/math/cal-vec/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='Calculus III' /><meta property='article:tag' content='Integral' /><meta property='article:tag' content='Partial Derivatives' /><meta property='article:tag' content='Multiple Integrals' /><meta property='article:tag' content='Vector Calculus' /><meta property='article:published_time' content='2023-10-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-25T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus: Vectors">
-<meta name="twitter:description" content="# WHY: Why should we apply calculus to vector? More applicable in the real world, like 3D real world, linear algebra, etc. Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc. # WHAT: What function with multiple variables? Express with set theory: $f: {(x_1, x_2, \\ldots) | f_1(x_1, x_2, \\ldots) = 0, f_2(x_1, x_2, \\ldots) = 0, \\ldots}$ $f_1(x_1, x_2, \\ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\\frac{x_1^2}{a^2} + \\frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.">
+<meta name="twitter:description" content="# WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
     <link rel="shortcut icon" href="/favicon.png" />
 
   
@@ -243,11 +243,20 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
+    <li><a href="#why-why-we-should-know-about-vector">WHY: Why we should know about vector?</a></li>
+    <li><a href="#what-what-is-the-vector">WHAT: What is the vector?</a></li>
     <li><a href="#why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</a></li>
-    <li><a href="#what-what-function-with-multiple-variables">WHAT: What function with multiple variables?</a>
+    <li><a href="#what-what-is-the-scalar-field">WHAT: What is the scalar field?</a>
       <ul>
+        <li><a href="#example-of-scalar-fields">Example of scalar fields</a></li>
+        <li><a href="#how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field">HOW: How to express objects (curves, surfaces, etc.) in a scalar field?</a></li>
         <li><a href="#eg-from-x-y-z-coordinate-to-vectors">E.g. from X-Y-Z coordinate to vectors</a></li>
         <li><a href="#how-how-to-visualize-vectors-in-dimensions">HOW: How to visualize vectors in dimensions?</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-what-is-the-vector-field">WHAT: What is the vector field?</a>
+      <ul>
+        <li><a href="#example-of-vector-fields">Example of vector fields</a></li>
       </ul>
     </li>
     <li><a href="#how-how-to-do-calculus-in-scalar-field">HOW: How to do calculus in scalar field?</a>
@@ -428,7 +437,7 @@
 
 
                 <time class="article-time--reading">
-                    15 minute read
+                    16 minute read
                 </time>
             </div>
         
@@ -464,19 +473,18 @@
 
     
     
-    <h2 id="why-why-should-we-apply-calculus-to-vector">
-    <a href="#why-why-should-we-apply-calculus-to-vector" class="header-anchor">#</a>
-    WHY: Why should we apply calculus to vector?
-</h2><p>More applicable in the real world, like 3D real world, linear algebra, etc.</p>
-<p>Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc.</p>
-<h2 id="what-what-function-with-multiple-variables">
-    <a href="#what-what-function-with-multiple-variables" class="header-anchor">#</a>
-    WHAT: What function with multiple variables?
-</h2><p>Express with set theory: $f: \{(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots\}$</p>
-<blockquote>
-<p>$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.</p>
-</blockquote>
-<ul>
+    <h2 id="why-why-we-should-know-about-vector">
+    <a href="#why-why-we-should-know-about-vector" class="header-anchor">#</a>
+    WHY: Why we should know about vector?
+</h2><ul>
+<li>A tool use to express objects in higher dimensions.</li>
+<li>A thing that contain more information: magnitude and direction</li>
+<li>A sequence of numbers (objects) in order used for more generalized analysis.</li>
+</ul>
+<h2 id="what-what-is-the-vector">
+    <a href="#what-what-is-the-vector" class="header-anchor">#</a>
+    WHAT: What is the vector?
+</h2><ul>
 <li>Vector addition / subtraction: $\vec{v} + \vec{u} = \vec{u} + \vec{v} = \sum_D (v_i + u_i)\hat{D_i} = (v_x + u_x)\hat{i} + (v_y + u_y)\hat{j} + \ldots = \langle v_x + u_x, v_y + u_y, \ldots \rangle$ ($-\vec{u} = \langle -u_x, -u_y, \ldots \rangle$); $(\vec{v}_1 + \vec{v}_2) + \vec{v}_3 = \vec{v}_1 + (\vec{v}_2 + \vec{v}_3)$</li>
 <li>Vector multiplication
 <ul>
@@ -510,6 +518,38 @@ w_x &amp; w_y &amp; w_z
 </li>
 <li>Vector unitization: $\displaystyle \vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$</li>
 </ul>
+<h2 id="why-why-should-we-apply-calculus-to-vector">
+    <a href="#why-why-should-we-apply-calculus-to-vector" class="header-anchor">#</a>
+    WHY: Why should we apply calculus to vector?
+</h2><ul>
+<li>
+<p>More applicable in the real world, like 3D real world, linear algebra, etc.</p>
+</li>
+<li>
+<p>Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc.</p>
+</li>
+</ul>
+<h2 id="what-what-is-the-scalar-field">
+    <a href="#what-what-is-the-scalar-field" class="header-anchor">#</a>
+    WHAT: What is the scalar field?
+</h2><blockquote>
+<p>$f(x_1, x_2, x_3, \ldots)$</p>
+</blockquote>
+<h3 id="example-of-scalar-fields">
+    <a href="#example-of-scalar-fields" class="header-anchor">#</a>
+    Example of scalar fields
+</h3><ul>
+<li>The height of a mountain: $h = f(x, y)$</li>
+<li>The temperature inside a room: $T = f(x, y, z)$</li>
+<li>The <em><strong>density</strong></em> of objects/water surface/air: $\rho = f(x_1, x_2, \ldots)$</li>
+</ul>
+<h3 id="how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field">
+    <a href="#how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field" class="header-anchor">#</a>
+    HOW: How to express objects (curves, surfaces, etc.) in a scalar field?
+</h3><p>$f: \{(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots\}$</p>
+<blockquote>
+<p>$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\displaystyle\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.</p>
+</blockquote>
 <h3 id="eg-from-x-y-z-coordinate-to-vectors">
     <a href="#eg-from-x-y-z-coordinate-to-vectors" class="header-anchor">#</a>
     E.g. from X-Y-Z coordinate to vectors
@@ -622,6 +662,21 @@ E.g. $O = (0, 0, 0)$ OR $O: \{(x, y, z) | x = 0, y = 0, z = 0\}$, $\hat{u} = (\f
 <li>
 <p>e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &hellip;)</p>
 </li>
+</ul>
+<h2 id="what-what-is-the-vector-field">
+    <a href="#what-what-is-the-vector-field" class="header-anchor">#</a>
+    WHAT: What is the vector field?
+</h2><blockquote>
+<p>$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$</p>
+</blockquote>
+<h3 id="example-of-vector-fields">
+    <a href="#example-of-vector-fields" class="header-anchor">#</a>
+    Example of vector fields
+</h3><ul>
+<li>The velocity of water/air (fluid): $\vec{v} = \mathbf{F}(x_1, x_2, x_3, \ldots)$</li>
+<li>Gravitational field (force): $\displaystyle \vec{F} = \mathbf{F}(x_1, x_2, x_3) = \frac{GMm}{r^2}\hat{r}$ ($\hat{r}$ is a unit vector)</li>
+<li>Electric field: $\displaystyle \vec{E} = \mathbf{F}(x_1, x_2, x_3) = k\frac{Q}{r^2}\hat{r}$</li>
+<li>Magnitic field: $\displaystyle \vec{B} = \mathbf{F}(x_1, x_2, x_3) = \frac{\mu_0q\vec{v}\times\hat{r}}{4\pi r^2}$</li>
 </ul>
 <h2 id="how-how-to-do-calculus-in-scalar-field">
     <a href="#how-how-to-do-calculus-in-scalar-field" class="header-anchor">#</a>
