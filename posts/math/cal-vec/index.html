@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="# WHY: From scalar to vector # WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
 <title>Calculus: Vectors</title>
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/math/cal-vec/'>
 
 <link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="Calculus: Vectors">
-<meta property='og:description' content="# WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
+<meta property='og:description' content="# WHY: From scalar to vector # WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/math/cal-vec/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Math' /><meta property='article:tag' content='Calculus' /><meta property='article:tag' content='Calculus III' /><meta property='article:tag' content='Integral' /><meta property='article:tag' content='Partial Derivatives' /><meta property='article:tag' content='Multiple Integrals' /><meta property='article:tag' content='Vector Calculus' /><meta property='article:published_time' content='2023-10-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-25T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="Calculus: Vectors">
-<meta name="twitter:description" content="# WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
+<meta name="twitter:description" content="# WHY: From scalar to vector # WHY: Why we should know about vector? A tool use to express objects in higher dimensions. A thing that contain more information: magnitude and direction A sequence of numbers (objects) in order used for more generalized analysis. # WHAT: What is the vector? Vector addition / subtraction: $\\vec{v} + \\vec{u} = \\vec{u} + \\vec{v} = \\sum_D (v_i + u_i)\\hat{D_i} = (v_x + u_x)\\hat{i} + (v_y + u_y)\\hat{j} + \\ldots = \\langle v_x + u_x, v_y + u_y, \\ldots \\rangle$ ($-\\vec{u} = \\langle -u_x, -u_y, \\ldots \\rangle$); $(\\vec{v}_1 + \\vec{v}_2) + \\vec{v}_3 = \\vec{v}_1 + (\\vec{v}_2 + \\vec{v}_3)$ Vector multiplication Scalar multiplication: $c\\vec{v} = \\langle cv_x, cv_y, \\ldots \\rangle$ Dot product: $\\vec{v} \\cdot \\vec{u} = \\sum_D v_i u_i = |\\vec{v}||\\vec{u}| \\cos\\langle\\vec{v}, \\vec{u}\\rangle \\Rightarrow \\cos\\langle\\vec{v}, \\vec{u}\\rangle = \\hat{v} \\cdot \\hat{u}$ As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: duality - Dot Product in Linear transformations">
     <link rel="shortcut icon" href="/favicon.png" />
 
   
@@ -243,9 +243,13 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#why-why-we-should-know-about-vector">WHY: Why we should know about vector?</a></li>
-    <li><a href="#what-what-is-the-vector">WHAT: What is the vector?</a></li>
-    <li><a href="#why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</a></li>
+    <li><a href="#why-from-scalar-to-vector">WHY: From scalar to vector</a>
+      <ul>
+        <li><a href="#why-why-we-should-know-about-vector">WHY: Why we should know about vector?</a></li>
+        <li><a href="#what-what-is-the-vector">WHAT: What is the vector?</a></li>
+        <li><a href="#why-why-should-we-apply-calculus-to-vector">WHY: Why should we apply calculus to vector?</a></li>
+      </ul>
+    </li>
     <li><a href="#what-what-is-the-scalar-field">WHAT: What is the scalar field?</a>
       <ul>
         <li><a href="#example-of-scalar-fields">Example of scalar fields</a></li>
@@ -254,20 +258,21 @@
         <li><a href="#how-how-to-visualize-vectors-in-dimensions">HOW: How to visualize vectors in dimensions?</a></li>
       </ul>
     </li>
-    <li><a href="#what-what-is-the-vector-field">WHAT: What is the vector field?</a>
-      <ul>
-        <li><a href="#example-of-vector-fields">Example of vector fields</a></li>
-      </ul>
-    </li>
     <li><a href="#how-how-to-do-calculus-in-scalar-field">HOW: How to do calculus in scalar field?</a>
       <ul>
+        <li><a href="#single-derivatives">Single derivatives</a></li>
         <li><a href="#partial-derivatives">Partial Derivatives</a></li>
         <li><a href="#iterated-integrals">Iterated Integrals</a></li>
       </ul>
     </li>
+    <li><a href="#what-what-is-the-vector-field">WHAT: What is the vector field?</a>
+      <ul>
+        <li><a href="#example-of-vector-fields">Example of vector fields</a></li>
+        <li><a href="#what-what-is-vector-fields">WHAT: What is vector fields</a></li>
+      </ul>
+    </li>
     <li><a href="#how-how-to-do-calculus-in-vector-field">HOW: How to do calculus in vector field?</a>
       <ul>
-        <li><a href="#what-what-is-vector-fields">WHAT: What is vector fields</a></li>
         <li><a href="#how-how-to-integrate-along-the-line---linepathcontour-integrals">HOW: How to integrate along the line - Line(Path/Contour) Integrals</a></li>
         <li><a href="#how-how-to-integrate-along-the-surface---surface-integrals">HOW: How to integrate along the surface - Surface Integrals</a></li>
         <li><a href="#how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve">HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve</a></li>
@@ -473,18 +478,21 @@
 
     
     
-    <h2 id="why-why-we-should-know-about-vector">
+    <h2 id="why-from-scalar-to-vector">
+    <a href="#why-from-scalar-to-vector" class="header-anchor">#</a>
+    WHY: From scalar to vector
+</h2><h3 id="why-why-we-should-know-about-vector">
     <a href="#why-why-we-should-know-about-vector" class="header-anchor">#</a>
     WHY: Why we should know about vector?
-</h2><ul>
+</h3><ul>
 <li>A tool use to express objects in higher dimensions.</li>
 <li>A thing that contain more information: magnitude and direction</li>
 <li>A sequence of numbers (objects) in order used for more generalized analysis.</li>
 </ul>
-<h2 id="what-what-is-the-vector">
+<h3 id="what-what-is-the-vector">
     <a href="#what-what-is-the-vector" class="header-anchor">#</a>
     WHAT: What is the vector?
-</h2><ul>
+</h3><ul>
 <li>Vector addition / subtraction: $\vec{v} + \vec{u} = \vec{u} + \vec{v} = \sum_D (v_i + u_i)\hat{D_i} = (v_x + u_x)\hat{i} + (v_y + u_y)\hat{j} + \ldots = \langle v_x + u_x, v_y + u_y, \ldots \rangle$ ($-\vec{u} = \langle -u_x, -u_y, \ldots \rangle$); $(\vec{v}_1 + \vec{v}_2) + \vec{v}_3 = \vec{v}_1 + (\vec{v}_2 + \vec{v}_3)$</li>
 <li>Vector multiplication
 <ul>
@@ -518,10 +526,10 @@ w_x &amp; w_y &amp; w_z
 </li>
 <li>Vector unitization: $\displaystyle \vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$</li>
 </ul>
-<h2 id="why-why-should-we-apply-calculus-to-vector">
+<h3 id="why-why-should-we-apply-calculus-to-vector">
     <a href="#why-why-should-we-apply-calculus-to-vector" class="header-anchor">#</a>
     WHY: Why should we apply calculus to vector?
-</h2><ul>
+</h3><ul>
 <li>
 <p>More applicable in the real world, like 3D real world, linear algebra, etc.</p>
 </li>
@@ -588,10 +596,13 @@ E.g. $O = (0, 0, 0)$ OR $O: \{(x, y, z) | x = 0, y = 0, z = 0\}$, $\hat{u} = (\f
 <blockquote>
 <p>Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.</p>
 </blockquote>
-<h4 id="how-how-to-present-in-the-coordinate">
-    <a href="#how-how-to-present-in-the-coordinate" class="header-anchor">#</a>
-    HOW: How to present in the coordinate
+<h4 id="how-how-to-present-in-the-coordinate---parametrized-objects">
+    <a href="#how-how-to-present-in-the-coordinate---parametrized-objects" class="header-anchor">#</a>
+    HOW: How to present in the coordinate - Parametrized Objects
 </h4><ul>
+<li>
+<p>Points/Vectors: $\vec{p} = \vec{r}_0$</p>
+</li>
 <li>
 <p>lines: $\vec{r} = \vec{r}_0 + t\vec{v}$ (from original point to go along the line)</p>
 <ul>
@@ -607,10 +618,27 @@ E.g. $O = (0, 0, 0)$ OR $O: \{(x, y, z) | x = 0, y = 0, z = 0\}$, $\hat{u} = (\f
 </ul>
 </li>
 </ul>
-<h4 id="how-how-to-introduce-calculus">
-    <a href="#how-how-to-introduce-calculus" class="header-anchor">#</a>
-    HOW: How to introduce calculus
-</h4><p>$\vec{r}(t) = \langle F(t), G(t), H(t) \rangle = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k}$</p>
+<h3 id="how-how-to-visualize-vectors-in-dimensions">
+    <a href="#how-how-to-visualize-vectors-in-dimensions" class="header-anchor">#</a>
+    HOW: How to visualize vectors in dimensions?
+</h3><blockquote>
+<p>From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$</p>
+</blockquote>
+<ul>
+<li>
+<p>Contour map, or Level curves: slice along the $z$ (or $y$ above)</p>
+</li>
+<li>
+<p>e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &hellip;)</p>
+</li>
+</ul>
+<h2 id="how-how-to-do-calculus-in-scalar-field">
+    <a href="#how-how-to-do-calculus-in-scalar-field" class="header-anchor">#</a>
+    HOW: How to do calculus in scalar field?
+</h2><h3 id="single-derivatives">
+    <a href="#single-derivatives" class="header-anchor">#</a>
+    Single derivatives
+</h3><p>$\vec{r}(t) = \langle F(t), G(t), H(t) \rangle = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k}$</p>
 <ul>
 <li>Derivative: $\vec{v}(t) = \vec{r}&rsquo;(t) = \langle F&rsquo;(t), G&rsquo;(t), H&rsquo;(t) \rangle = F&rsquo;(t)\hat{i} + G&rsquo;(t)\hat{j} + H&rsquo;(t)\hat{k}$
 <ul>
@@ -649,39 +677,7 @@ E.g. $O = (0, 0, 0)$ OR $O: \{(x, y, z) | x = 0, y = 0, z = 0\}$, $\hat{u} = (\f
 <blockquote>
 <p>Note. How to understand $\frac{\mathrm{d}}{\mathrm{d}t} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.</p>
 </blockquote>
-<h3 id="how-how-to-visualize-vectors-in-dimensions">
-    <a href="#how-how-to-visualize-vectors-in-dimensions" class="header-anchor">#</a>
-    HOW: How to visualize vectors in dimensions?
-</h3><blockquote>
-<p>From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$</p>
-</blockquote>
-<ul>
-<li>
-<p>Contour map, or Level curves: slice along the $z$ (or $y$ above)</p>
-</li>
-<li>
-<p>e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &hellip;)</p>
-</li>
-</ul>
-<h2 id="what-what-is-the-vector-field">
-    <a href="#what-what-is-the-vector-field" class="header-anchor">#</a>
-    WHAT: What is the vector field?
-</h2><blockquote>
-<p>$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$</p>
-</blockquote>
-<h3 id="example-of-vector-fields">
-    <a href="#example-of-vector-fields" class="header-anchor">#</a>
-    Example of vector fields
-</h3><ul>
-<li>The velocity of water/air (fluid): $\vec{v} = \mathbf{F}(x_1, x_2, x_3, \ldots)$</li>
-<li>Gravitational field (force): $\displaystyle \vec{F} = \mathbf{F}(x_1, x_2, x_3) = \frac{GMm}{r^2}\hat{r}$ ($\hat{r}$ is a unit vector)</li>
-<li>Electric field: $\displaystyle \vec{E} = \mathbf{F}(x_1, x_2, x_3) = k\frac{Q}{r^2}\hat{r}$</li>
-<li>Magnitic field: $\displaystyle \vec{B} = \mathbf{F}(x_1, x_2, x_3) = \frac{\mu_0q\vec{v}\times\hat{r}}{4\pi r^2}$</li>
-</ul>
-<h2 id="how-how-to-do-calculus-in-scalar-field">
-    <a href="#how-how-to-do-calculus-in-scalar-field" class="header-anchor">#</a>
-    HOW: How to do calculus in scalar field?
-</h2><h3 id="partial-derivatives">
+<h3 id="partial-derivatives">
     <a href="#partial-derivatives" class="header-anchor">#</a>
     Partial Derivatives
 </h3><h4 id="why-why-a-function-could-be-differentiated---differentiability">
@@ -857,10 +853,22 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:</p>
 <p>$$M = \iiint\int_0^{\rho(x, y, z)} \,\mathrm{d}\rho\,\mathrm{d}V = \iiint\rho(x, y, z)\,\mathrm{d}V$$</p>
 </li>
 </ul>
-<h2 id="how-how-to-do-calculus-in-vector-field">
-    <a href="#how-how-to-do-calculus-in-vector-field" class="header-anchor">#</a>
-    HOW: How to do calculus in vector field?
-</h2><h3 id="what-what-is-vector-fields">
+<h2 id="what-what-is-the-vector-field">
+    <a href="#what-what-is-the-vector-field" class="header-anchor">#</a>
+    WHAT: What is the vector field?
+</h2><blockquote>
+<p>$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$</p>
+</blockquote>
+<h3 id="example-of-vector-fields">
+    <a href="#example-of-vector-fields" class="header-anchor">#</a>
+    Example of vector fields
+</h3><ul>
+<li>The velocity of water/air (fluid): $\vec{v} = \mathbf{F}(x_1, x_2, x_3, \ldots)$</li>
+<li>Gravitational field (force): $\displaystyle \vec{F} = \mathbf{F}(x_1, x_2, x_3) = \frac{GMm}{r^2}\hat{r}$ ($\hat{r}$ is a unit vector)</li>
+<li>Electric field: $\displaystyle \vec{E} = \mathbf{F}(x_1, x_2, x_3) = k\frac{Q}{r^2}\hat{r}$</li>
+<li>Magnitic field: $\displaystyle \vec{B} = \mathbf{F}(x_1, x_2, x_3) = \frac{\mu_0q\vec{v}\times\hat{r}}{4\pi r^2}$</li>
+</ul>
+<h3 id="what-what-is-vector-fields">
     <a href="#what-what-is-vector-fields" class="header-anchor">#</a>
     WHAT: What is vector fields
 </h3><ul>
@@ -882,7 +890,10 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:</p>
 <blockquote>
 <p>Clairaut&rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$</p>
 </blockquote>
-<h3 id="how-how-to-integrate-along-the-line---linepathcontour-integrals">
+<h2 id="how-how-to-do-calculus-in-vector-field">
+    <a href="#how-how-to-do-calculus-in-vector-field" class="header-anchor">#</a>
+    HOW: How to do calculus in vector field?
+</h2><h3 id="how-how-to-integrate-along-the-line---linepathcontour-integrals">
     <a href="#how-how-to-integrate-along-the-line---linepathcontour-integrals" class="header-anchor">#</a>
     HOW: How to integrate along the line - Line(Path/Contour) Integrals
 </h3><p>$$\displaystyle \int_C \vec{F} \cdot \,\mathrm{d}\vec{r} = \int \vec{F}(\vec{r}(t)) \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t}\,\mathrm{d}t$$</p>
@@ -960,7 +971,7 @@ $$</p>
 </blockquote>
 <p>$$\int_{\partial D}\omega = \int_D \partial\omega$$</p>
 <p>$$\Rightarrow \oint_{C(\partial{S})}\mathbf{F} \cdot \mathrm{d}\mathbf{r} = \iint_S \vec\nabla \times \mathbf{F} \cdot \,\mathrm{d}\mathbf{S} = \iint_S \vec\nabla \times \mathbf{F} \cdot \mathbf{n} \,\mathrm{d}A = \iint_S |\vec\nabla \times \mathbf{F}| \,\mathrm{d}A \text{ in $\mathbb{R}^2$}$$</p>
-<p>$$\Rightarrow \oint_C \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_D \vec\nabla \mathbf{F} \,\mathrm{d}A, \oiint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iiint_E \vec\nabla \cdot \mathbf{F} \,\mathrm{d}V$$</p>
+<p>$$\Rightarrow \oint_C \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_D \vec\nabla \cdot \mathbf{F} \,\mathrm{d}A, \oiint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iiint_E \vec\nabla \cdot \mathbf{F} \,\mathrm{d}V$$</p>
 
 
 </section>
