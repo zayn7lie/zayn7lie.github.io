@@ -75,7 +75,20 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/page/sponsor/</guid>
-        <description>&lt;p&gt;Bitcoin(preferred): bc1q80cz3dtdzx65vw6yf3dfej62ta2422elcz8lze&lt;/p&gt;
+        <description>&lt;p&gt;Bitcoin Address(preferred):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-address&#34; data-lang=&#34;address&#34;&gt;bc1q80cz3dtdzx65vw6yf3dfej62ta2422elcz8lze
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Bitcoin QRCode:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/zayn7lie/zayn7lie.github.io/blob/master/page/sponsor/bitcoin.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Bitcoin&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Buy me a coffee:&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.buymeacoffee.com/zayn7lie&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;img src=&#34;https://cdn.buymeacoffee.com/buttons/default-orange.png&#34;
 	
