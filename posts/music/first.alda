@@ -1,0 +1,6 @@
+(key-sig! '(c minor))
+
+violin:
+    c4 g g {f e} | {d e} {f g} e c | <b+- >a a {b- a} | g2.  |
+    
+
