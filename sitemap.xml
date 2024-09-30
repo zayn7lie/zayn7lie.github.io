@@ -3,13 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zayn7lie.ber7.org/</loc>
-    <lastmod>2024-04-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zayn7lie.ber7.org/posts/</loc>
-    <lastmod>2024-04-30T00:00:00+00:00</lastmod>
+    <loc>https://zayn7lie.ber7.org/posts/linux/archlinux2/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/tags/arch-linux/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/categories/</loc>
-    <lastmod>2024-01-22T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/tags/install/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/tags/linux/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/categories/linux/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/posts/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/tags/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/geometry/</loc>
     <lastmod>2024-01-22T00:00:00+00:00</lastmod>
@@ -30,9 +48,6 @@
     <lastmod>2024-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/right-hand-rule/</loc>
-    <lastmod>2024-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/</loc>
     <lastmod>2024-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/vector-calculus/</loc>
@@ -78,9 +93,6 @@
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/posts/ettm/server/</loc>
-    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/linux/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/minecraft/</loc>
@@ -146,31 +158,10 @@
     <loc>https://zayn7lie.ber7.org/tags/toefl/</loc>
     <lastmod>2023-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/arch-linux/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://zayn7lie.ber7.org/tags/c&#43;&#43;/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/config/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/de/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/hyprland/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/posts/linux/hyprland/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/install/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://zayn7lie.ber7.org/tags/latex/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/categories/linux/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/markdown/</loc>
@@ -185,8 +176,11 @@
     <loc>https://zayn7lie.ber7.org/posts/linux/vscode/</loc>
     <lastmod>2023-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zayn7lie.ber7.org/tags/wm/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
+    <loc>https://zayn7lie.ber7.org/tags/config/</loc>
+    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/tags/de/</loc>
+    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/xfce/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>

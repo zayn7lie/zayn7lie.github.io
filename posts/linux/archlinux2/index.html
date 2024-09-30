@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" Note. This guide is written under Arch Linux\n# Android Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\n# Emulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
-<title>How to play Arknights on Linux, using MAA and key mapping</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" # Before entering WM Disable the -debug flag in /etc/makepkg.conf: in option, ! the debug Enable pacman features in /etc/pacman.conf: uncomment Color, and multilib Install yay Install pre-request: $ sudo pacman -Syyu git go Download AUR snapshot: $ curl -L -O https://archlinux.org/cgit/aur.git/snapshot/yay.tar.gz Extract the snapshot and enter the dir: $ tar -xf yay.tar.gz &amp;&amp; cd yay Make package and install: $ makepkg &amp;&amp; sudo pacman -U *.zst Git could also be configured: $ git config --global user.name ?{name}, and git config --global user.email ?{email} Install restic, recover the backup, and modify some backups: $ yay -S restic; $ restic -r ?{repo_location} recover latest --target ${HOME} Install WM: $ yay -S gtk3 hyprland-git kitty Enter the WM: $ Hyprland # Configuration of system-base settings and display For recording the processes, install code and wl-clipboard: $ yay -S code wl-clipboard Prefer settings in Hyprland in {HOME}/.config/hypr/hyprland.conf Change the scaling in MONITORS, set monitor=,preferred,auto,1 Swap the esc and caps in INPUT, under input: kb_options = caps:swapescape Enable natural scrolling in INPUT, under input:touchpad: natural_scroll = true Enable workspace swipe in INPUT, under gesture: workspace_swipe = true Install I/O &amp; Hyprland-must packages: $ yay -S xdg-desktop-portal-hyprland-git sof-firmware pipewire-pulse alsa-utils pipewire-alsa pipewire-jack polkit-gnome In ${HOME}/.config/hypr/hyprland, add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 Set fonts and dark mode: $ yay -S gnome-themes-extra adwaita-qt5-git adwaita-qt6-git noto-fonts noto-fonts-cjk ttf-fira-code ttf-nerd-fonts-symbols-mono In system settings:\n">
+<title>After Arch Linux Installation</title>
 
-<link rel='canonical' href='https://zayn7lie.ber7.org/posts/ettm/arknights/'>
+<link rel='canonical' href='https://zayn7lie.ber7.org/posts/linux/archlinux2/'>
 
-<link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="How to play Arknights on Linux, using MAA and key mapping">
-<meta property='og:description' content=" Note. This guide is written under Arch Linux\n# Android Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\n# Emulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
-<meta property='og:url' content='https://zayn7lie.ber7.org/posts/ettm/arknights/'>
+<link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="After Arch Linux Installation">
+<meta property='og:description' content=" # Before entering WM Disable the -debug flag in /etc/makepkg.conf: in option, ! the debug Enable pacman features in /etc/pacman.conf: uncomment Color, and multilib Install yay Install pre-request: $ sudo pacman -Syyu git go Download AUR snapshot: $ curl -L -O https://archlinux.org/cgit/aur.git/snapshot/yay.tar.gz Extract the snapshot and enter the dir: $ tar -xf yay.tar.gz &amp;&amp; cd yay Make package and install: $ makepkg &amp;&amp; sudo pacman -U *.zst Git could also be configured: $ git config --global user.name ?{name}, and git config --global user.email ?{email} Install restic, recover the backup, and modify some backups: $ yay -S restic; $ restic -r ?{repo_location} recover latest --target ${HOME} Install WM: $ yay -S gtk3 hyprland-git kitty Enter the WM: $ Hyprland # Configuration of system-base settings and display For recording the processes, install code and wl-clipboard: $ yay -S code wl-clipboard Prefer settings in Hyprland in {HOME}/.config/hypr/hyprland.conf Change the scaling in MONITORS, set monitor=,preferred,auto,1 Swap the esc and caps in INPUT, under input: kb_options = caps:swapescape Enable natural scrolling in INPUT, under input:touchpad: natural_scroll = true Enable workspace swipe in INPUT, under gesture: workspace_swipe = true Install I/O &amp; Hyprland-must packages: $ yay -S xdg-desktop-portal-hyprland-git sof-firmware pipewire-pulse alsa-utils pipewire-alsa pipewire-jack polkit-gnome In ${HOME}/.config/hypr/hyprland, add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 Set fonts and dark mode: $ yay -S gnome-themes-extra adwaita-qt5-git adwaita-qt6-git noto-fonts noto-fonts-cjk ttf-fira-code ttf-nerd-fonts-symbols-mono In system settings:\n">
+<meta property='og:url' content='https://zayn7lie.ber7.org/posts/linux/archlinux2/'>
 <meta property='og:site_name' content='zayn_lie&#39;s blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Misc' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Arknights' /><meta property='article:published_time' content='2023-08-06T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-08-06T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="How to play Arknights on Linux, using MAA and key mapping">
-<meta name="twitter:description" content=" Note. This guide is written under Arch Linux\n# Android Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\n# Emulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='install' /><meta property='article:published_time' content='2024-09-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-30T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="After Arch Linux Installation">
+<meta name="twitter:description" content=" # Before entering WM Disable the -debug flag in /etc/makepkg.conf: in option, ! the debug Enable pacman features in /etc/pacman.conf: uncomment Color, and multilib Install yay Install pre-request: $ sudo pacman -Syyu git go Download AUR snapshot: $ curl -L -O https://archlinux.org/cgit/aur.git/snapshot/yay.tar.gz Extract the snapshot and enter the dir: $ tar -xf yay.tar.gz &amp;&amp; cd yay Make package and install: $ makepkg &amp;&amp; sudo pacman -U *.zst Git could also be configured: $ git config --global user.name ?{name}, and git config --global user.email ?{email} Install restic, recover the backup, and modify some backups: $ yay -S restic; $ restic -r ?{repo_location} recover latest --target ${HOME} Install WM: $ yay -S gtk3 hyprland-git kitty Enter the WM: $ Hyprland # Configuration of system-base settings and display For recording the processes, install code and wl-clipboard: $ yay -S code wl-clipboard Prefer settings in Hyprland in {HOME}/.config/hypr/hyprland.conf Change the scaling in MONITORS, set monitor=,preferred,auto,1 Swap the esc and caps in INPUT, under input: kb_options = caps:swapescape Enable natural scrolling in INPUT, under input:touchpad: natural_scroll = true Enable workspace swipe in INPUT, under gesture: workspace_swipe = true Install I/O &amp; Hyprland-must packages: $ yay -S xdg-desktop-portal-hyprland-git sof-firmware pipewire-pulse alsa-utils pipewire-alsa pipewire-jack polkit-gnome In ${HOME}/.config/hypr/hyprland, add exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 Set fonts and dark mode: $ yay -S gnome-themes-extra adwaita-qt5-git adwaita-qt6-git noto-fonts noto-fonts-cjk ttf-fira-code ttf-nerd-fonts-symbols-mono In system settings:\n">
     <link rel="shortcut icon" href="/favicon.png" />
 
 
@@ -240,21 +240,11 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#android-emulator-or-container">Android Emulator or Container?</a>
-      <ul>
-        <li><a href="#emulator">Emulator</a></li>
-        <li><a href="#container">Container</a></li>
-        <li><a href="#arknights-installation">Arknights Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#key-mapping">Key Mapping</a>
-      <ul>
-        <li><a href="#keymapper-android-apphttpsgithubcomkeymapperorgkeymapperreleases"><a href="https://github.com/keymapperorg/KeyMapper/releases">KeyMapper Android App</a></a></li>
-        <li><a href="#qtscrcpyhttpsgithubcombarry-ranqtscrcpyreleases"><a href="https://github.com/barry-ran/QtScrcpy/releases">QtScrcpy</a></a></li>
-        <li><a href="#python-script-using-apis-of-pynput">Python Script (Using APIs of <code>pynput</code>)</a></li>
-      </ul>
-    </li>
-    <li><a href="#maa">MAA</a></li>
+    <li><a href="#before-entering-wm">Before entering WM</a></li>
+    <li><a href="#configuration-of-system-base-settings-and-display">Configuration of system-base settings and display</a></li>
+    <li><a href="#more-packages-applications-and-settings">More packages (applications) and settings</a></li>
+    <li><a href="#for-my-work">For my work</a></li>
+    <li><a href="#social-and-communication">Social and Communication</a></li>
   </ul>
 </nav>
         </div>
@@ -373,8 +363,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/ettm/" style="background-color: #2a9d8f; color: #fff;">
-                Entertainment
+            <a href="/categories/linux/" style="background-color: #ffcb0d; color: #000000;">
+                Linux
             </a>
         
     </header>
@@ -382,7 +372,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/posts/ettm/arknights/">How to play Arknights on Linux, using MAA and key mapping</a>
+            <a href="/posts/linux/archlinux2/">After Arch Linux Installation</a>
         </h2>
     
         
@@ -404,7 +394,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">08/06/2023</time>
+                <time class="article-time--published">09/30/2024</time>
             </div>
         
 
@@ -455,113 +445,165 @@
 
     
     
-    <blockquote>
-<p>Note. This guide is written under Arch Linux</p>
-</blockquote>
-<h2 id="android-emulator-or-container">
-    <a href="#android-emulator-or-container" class="header-anchor">#</a>
-    Android Emulator or Container?
+    <h2 id="before-entering-wm">
+    <a href="#before-entering-wm" class="header-anchor">#</a>
+    Before entering WM
+</h2><ol>
+<li>Disable the <code>-debug</code> flag in <code>/etc/makepkg.conf</code>: in <code>option</code>, <code>!</code> the <code>debug</code></li>
+<li>Enable <code>pacman</code> features in <code>/etc/pacman.conf</code>: uncomment <code>Color</code>, and <code>multilib</code></li>
+<li>Install <code>yay</code>
+<ol>
+<li>Install pre-request: <code>$ sudo pacman -Syyu git go</code></li>
+<li>Download <code>AUR snapshot</code>: <code>$ curl -L -O https://archlinux.org/cgit/aur.git/snapshot/yay.tar.gz</code></li>
+<li>Extract the <code>snapshot</code> and enter the dir: <code>$ tar -xf yay.tar.gz &amp;&amp; cd yay</code></li>
+<li>Make package and install: <code>$ makepkg &amp;&amp; sudo pacman -U *.zst</code></li>
+<li>Git could also be configured: <code>$ git config --global user.name ?{name}</code>, and <code>git config --global user.email ?{email}</code></li>
+</ol>
+</li>
+<li>Install <code>restic</code>, recover the backup, and modify some backups: <code>$ yay -S restic</code>; <code>$ restic -r ?{repo_location} recover latest --target ${HOME}</code></li>
+<li>Install WM: <code>$ yay -S gtk3 hyprland-git kitty</code></li>
+<li>Enter the WM: <code>$ Hyprland</code></li>
+</ol>
+<h2 id="configuration-of-system-base-settings-and-display">
+    <a href="#configuration-of-system-base-settings-and-display" class="header-anchor">#</a>
+    Configuration of system-base settings and display
+</h2><ol start="0">
+<li>For recording the processes, install <code>code</code> and <code>wl-clipboard</code>: <code>$ yay -S code wl-clipboard</code></li>
+<li>Prefer settings in <code>Hyprland</code> in <code>{HOME}/.config/hypr/hyprland.conf</code>
+<ol>
+<li>Change the scaling in <code>MONITORS</code>, set <code>monitor=,preferred,auto,1</code></li>
+<li>Swap the <code>esc</code> and <code>caps</code> in <code>INPUT</code>, under <code>input</code>: <code>kb_options = caps:swapescape</code></li>
+<li>Enable natural scrolling in <code>INPUT</code>, under <code>input:touchpad</code>: <code>natural_scroll = true</code></li>
+<li>Enable workspace swipe in <code>INPUT</code>, under <code>gesture</code>: <code>workspace_swipe = true</code></li>
+</ol>
+</li>
+<li>Install I/O &amp; <code>Hyprland</code>-must packages: <code>$ yay -S xdg-desktop-portal-hyprland-git sof-firmware pipewire-pulse alsa-utils pipewire-alsa pipewire-jack polkit-gnome</code>
+<ol>
+<li>In <code>${HOME}/.config/hypr/hyprland</code>, add <code>exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</code></li>
+</ol>
+</li>
+<li>Set fonts and dark mode: <code>$ yay -S gnome-themes-extra adwaita-qt5-git adwaita-qt6-git noto-fonts noto-fonts-cjk ttf-fira-code ttf-nerd-fonts-symbols-mono</code>
+<ol>
+<li>
+<p>In system settings:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
+</span></span><span style="display:flex;"><span>$ gsettings set org.gnome.desktop.wm.preferences theme Adwaita-dark
+</span></span><span style="display:flex;"><span>$ gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+</span></span><span style="display:flex;"><span>$ gsettings set org.gnome.desktop.interface font-name <span style="color:#e6db74">&#39;Noto Sans 12&#39;</span>
+</span></span><span style="display:flex;"><span>$ gsettings set org.gnome.desktop.interface document-font-name <span style="color:#e6db74">&#39;Noto Sans 12&#39;</span>
+</span></span><span style="display:flex;"><span>$ gsettings set org.gnome.desktop.interface monospace-font-name <span style="color:#e6db74">&#39;Fira Code 12&#39;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Environmental Vars (in <code>${HOME}/.config/hypr/hyprland.conf</code>):</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">env = GTK_THEME,Adwaita-dark
+env = GTK2_RC_FILES,/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+env = QT_STYLE_OVERRIDE,Adwaita-Dark
+</code></pre></li>
+<li>
+<p>Set fonts in <code>kitty</code> (in <code>${HOME}/.config/kitty/kitty.conf</code>):</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">font_family Fira Code
+scrollback_lines 8192
+foreground green
+background_opacity 0.75
+</code></pre></li>
+<li>
+<p>Set <code>waybar wofi</code>: <code>$ yay -S waybar wofi</code>, and <code>exec-once=waybar</code>, then set your config in <code>${HOME}/.config/waybar/config</code> and <code>${HOME}/.config/waybar/style.css</code></p>
+</li>
+</ol>
+</li>
+<li>Reboot: <code>$ reboot</code></li>
+</ol>
+<h2 id="more-packages-applications-and-settings">
+    <a href="#more-packages-applications-and-settings" class="header-anchor">#</a>
+    More packages (applications) and settings
 </h2><ul>
-<li>Emulator
-<ul>
-<li>Pros: Safety from good separation with system, cross-platform, user-friendly.</li>
-<li>Cons: High system resource usage, easily stuck.</li>
-</ul>
-</li>
-<li>Container
-<ul>
-<li>Pros: Good mosaic with system, less resource usage, running fluently.</li>
-<li>Cons: Complex dependents, more bugs, fewer options</li>
-</ul>
-</li>
-</ul>
-<p>Have a clear mind about the needs and choose one option for running Arknights.</p>
-<h3 id="emulator">
-    <a href="#emulator" class="header-anchor">#</a>
-    Emulator
-</h3><blockquote>
-<p>Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.</p>
-</blockquote>
-<h4 id="avd-android-virtual-device-the-project-under-android-studiohttpsdeveloperandroidcomstudio">
-    <a href="#avd-android-virtual-device-the-project-under-android-studiohttpsdeveloperandroidcomstudio" class="header-anchor">#</a>
-    <a class="link" href="https://developer.android.com/studio"  target="_blank" rel="noopener"
-    ><code>AVD</code> (<code>Android Virtual Device</code>, the project under <code>Android Studio</code>)</a>
-</h4><p>AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.</p>
-<p>Download and Install <a class="link" href="https://developer.android.com/studio"  target="_blank" rel="noopener"
-    ><code>Android Studio</code></a> (<code>$ yay -S android-studio</code> in Arch Linux), <code>More Actions</code> &gt; <code>Virtual Device Manager</code>, <code>Create device</code>, and then you could modify emulator by yourself. Android 11 with 16:9 resolution is recommended for <code>MAA</code>.</p>
-<h4 id="genymotionhttpswwwgenymotioncomdownload">
-    <a href="#genymotionhttpswwwgenymotioncomdownload" class="header-anchor">#</a>
-    <a class="link" href="https://www.genymotion.com/download/"  target="_blank" rel="noopener"
-    ><code>Genymotion</code></a>
-</h4><blockquote>
-<p>Note. Arknights of Bilibili version always break while using <code>Genymotion</code>, you could have a try in your device.</p>
-</blockquote>
-<p><a class="link" href="https://www.genymotion.com/download/"  target="_blank" rel="noopener"
-    ><code>Genymotion</code> offers AppImage (Installer) version</a> that can run directly.</p>
-<p><code>Genymotion</code> is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)</p>
-<h3 id="container">
-    <a href="#container" class="header-anchor">#</a>
-    Container
-</h3><p><code>Waydroid</code> is highly recommended. It is not recommended to use container while using WM that is not run on <code>Wayland</code>. After fixing several bugs of <code>Anbox</code>, I found that numerous API have changed. And Xdroid is too buggy.</p>
-<ul>
 <li>
-<p><code>Waydroid</code> dependence installation</p>
+<p>Fingerprint: <code>yay -S libfprint-2-tod1-xps9300-bin fprintd</code> then add <code>auth		sufficient  	pam_unix.so try_first_pass likeauth nullok</code>, then <code>auth		sufficient  	pam_fprintd.so</code> to <code>/etc/pam.d/login</code> (after <code>requisite</code>) and <code>sudo</code></p>
 <ul>
-<li><code>linux-zen</code> kernel: Highly recommend for desktop computer for the kernel has several optimizations for gaming. But it will increase battery usage.</li>
-<li><code>dkms</code> only: Recommend for laptop. <code>$ yay -S binder_linux-dkms</code>. If missing headers, install <code>$ sudo pacman -S linux-headers</code></li>
+<li>Enroll: <code># fprintd-enroll ${name}</code></li>
+<li>Delete: <code># fprintd-delete ${name}</code></li>
+<li>Verify: <code>$ fprintd-verify</code></li>
 </ul>
 </li>
 <li>
-<p><code>Waydroid</code> installation</p>
+<p>Power management: <code>$ yay -S tlp</code>, then edit <code>/etc/tlp.conf</code></p>
+</li>
+<li>
+<p>Adjust the brightness: <code># echo 10000 &gt; /sys/class/backlight/intel_backlight/brightness</code></p>
+</li>
+<li>
+<p>Btop: <code>$ yay -S btop</code>, then add ``</p>
+</li>
+<li>
+<p>Install and add file manager: <code>$ yay -S ranger python-pillow</code> (<code>python-pillow</code> to preview images)</p>
 <ul>
-<li>Follow <a class="link" href="https://docs.waydro.id/usage/install-on-desktops"  target="_blank" rel="noopener"
-    >this instruction</a> and install depending on your distro. Then <code>$ waydroid init</code>. If report RE, check dependence installation.</li>
-<li><code>waydroid show-full-ui</code> enter Android directly.</li>
+<li>In <code>${HOME}/.config/hypr/hyprland.conf</code>: ``</li>
+<li><code>$ ranger --copy-config=rc</code>- In <code>${HOME}/.config/ranger/rc.conf</code>: <code>set preview_images true</code>, <code>set preview_images_method kitty</code>; and <code>$ ranger --copy-config=rifle</code> - In <code>${HOME}/.config/ranger/rifle.conf</code>: <code>ext html, has firefox              X, flag f = firefox -- &quot;$@&quot;</code>; <code>ext pdf, has firefox,  X, flag f = firefox &quot;$@&quot;</code></li>
+<li>In <code>/usr/share/applications/ranger.desktop</code>: <code>Exec=kitty --title ranger sh -c 'ranger %U'</code>, and <code>terminal=false</code></li>
 </ul>
 </li>
-</ul>
-<h3 id="arknights-installation">
-    <a href="#arknights-installation" class="header-anchor">#</a>
-    Arknights Installation
-</h3><p>Although most emulators and containers are able to install directly through dragging <code>.apk</code> to UI, we could also install it using <code>adb</code> which is required by <code>MAA</code>:</p>
+<li>
+<p>Install and twick the browser: <code>$ yay -S firefox</code>, then <code>bind = $mainMod, b, exec, firefox</code></p>
 <ul>
-<li><code>adb</code> installation
-<ul>
-<li>If you use <code>Android Studio</code>, you could find <code>adb</code> under <code>~/Android/emulator/platform-tools</code>. You could run shell under the path directly. As for others, <code>$ sudo pacman -S android-tools</code> or install <code>adb</code> in other distros.</li>
-<li><code>$ adb devices</code> check your emulator or container is in the list. If not, please check <code>Android Debug Bridge</code> is enable in <code>Developer Options</code> in Android.</li>
+<li>Twick <code>betterfox</code>: <a class="link" href="https://github.com/yokoffing/BetterFox"  target="_blank" rel="noopener"
+    >Betterfox</a></li>
 </ul>
 </li>
-<li>Install Arknights using <code>adb</code>
+<li>
+<p>Lock and Blank screen: <code>$ yay -S hyprlock</code>, then <code>bind = $mainMod, L, exec, hyprlock &amp; sleep 0.5 &amp;&amp; hyprctl dispatcher dpms off</code> to <code>.config/hypr/hyprland.conf</code> and add <code>key_press_enables_dpms = true</code> under <code>misc</code></p>
+</li>
+<li>
+<p>Screenshot: <code>$ yay -S hyprshot</code>, then <code>bind = , PRINT, exec, hyprshot -m region --output-folder ${HOME}/Pictures/.hyprshot</code></p>
+</li>
+<li>
+<p>Adding Windows Entree: add the following to <code>/etc/grub.d/40_custom</code>, then <code># grub-mkconfig -0 /boot/grub/grub.cfg</code></p>
+<pre tabindex="0"><code class="language-40_custom" data-lang="40_custom">menuentry &#34;Windows&#34; {
+   insmod part_gpt
+   insmod chain
+   set root=&#39;hd0,gpt1&#39;
+   chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+}
+</code></pre></li>
+</ul>
+<h2 id="for-my-work">
+    <a href="#for-my-work" class="header-anchor">#</a>
+    For my work
+</h2><ul>
+<li>
+<p>$\LaTeX$: <code>texlive-latex</code> for <code>pdflatex</code>, <code>texlive-latexrecommended</code> for <code>amsmath</code>, <code>texlive-latexextra</code> for <code>orcidlink</code>, <code>texlive-fontsrecommended</code> for essentials published fonts.</p>
+</li>
+<li>
+<p>VSCode-OSS: <code>$ yay -S code</code> with extensions:</p>
 <ul>
-<li><code>$ adb install foo</code>, foo is the path of <code>.apk</code> package.</li>
+<li>Markdown: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one"  target="_blank" rel="noopener"
+    >Markdown All in One</a>: <code>ext install yzhang.markdown-all-in-one</code>; <a class="link" href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"  target="_blank" rel="noopener"
+    >markdownlint</a>:<code>ext install DavidAnson.vscode-markdownlint</code></li>
+<li>$\LaTeX$: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"  target="_blank" rel="noopener"
+    >LaTeX Workshop</a>:<code>ext install James-Yu.latex-workshop</code>; Grammar<a class="link" href="https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex"  target="_blank" rel="noopener"
+    >LTeX – LanguageTool grammar/spell checking</a>:<code>ext install valentjn.vscode-ltex</code></li>
+<li>Coding: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python"  target="_blank" rel="noopener"
+    >Python</a>:<code>ext install ms-python.python</code>; <a class="link" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools"  target="_blank" rel="noopener"
+    >C/C++</a>:<code>ext install ms-vscode.cpptools</code>; <a class="link" href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"  target="_blank" rel="noopener"
+    >GitHub Copilot</a>:<code>ext install GitHub.copilot</code></li>
 </ul>
 </li>
+<li>
+<p>Blog: <code>$ yay -S hugo</code> for blogs publishing.</p>
+</li>
+<li>
+<p>Paper: <code>$ yay -S zotero-bin</code></p>
+</li>
+<li>
+<p>Xournal++: <code>$ yay -S xournalpp</code></p>
+</li>
 </ul>
-<h2 id="key-mapping">
-    <a href="#key-mapping" class="header-anchor">#</a>
-    Key Mapping
-</h2><p>The logic of pause deployment is that click back 🔙 will change the statue of Pause or Unpause. Thus, after dragging out operator, we pass the pause command then we could deploy while game is pause.</p>
-<h3 id="keymapper-android-apphttpsgithubcomkeymapperorgkeymapperreleases">
-    <a href="#keymapper-android-apphttpsgithubcomkeymapperorgkeymapperreleases" class="header-anchor">#</a>
-    <a class="link" href="https://github.com/keymapperorg/KeyMapper/releases"  target="_blank" rel="noopener"
-    >KeyMapper Android App</a>
-</h3><p>After concerning a lot about how to achieve key mapping on PC, why don&rsquo;t we try to do this on our Android? There are a huge bunch of software, but KeyMapper is the most lightweight and compatible though it pauses developing.</p>
-<h3 id="qtscrcpyhttpsgithubcombarry-ranqtscrcpyreleases">
-    <a href="#qtscrcpyhttpsgithubcombarry-ranqtscrcpyreleases" class="header-anchor">#</a>
-    <a class="link" href="https://github.com/barry-ran/QtScrcpy/releases"  target="_blank" rel="noopener"
-    >QtScrcpy</a>
-</h3><p>Origins from <a class="link" href="https://github.com/Genymobile/scrcpy"  target="_blank" rel="noopener"
-    ><code>scrcpy</code></a> of Genymobile, an open-source software copy screen from Android to PC. <code>QtScrcpy</code> add key mapping function from it.</p>
-<h3 id="python-script-using-apis-of-pynput">
-    <a href="#python-script-using-apis-of-pynput" class="header-anchor">#</a>
-    Python Script (Using APIs of <code>pynput</code>)
-</h3><p><a class="link" href="https://github.com/Genymobile/scrcpy/issues/712#issuecomment-536564578"  target="_blank" rel="noopener"
-    >Sample</a></p>
-<h2 id="maa">
-    <a href="#maa" class="header-anchor">#</a>
-    MAA
-</h2><p>We have described in <a class="link" href="https://maa.plus/docs/en-us/1.5-EMULATOR_SUPPORTS_FOR_LINUX.html"  target="_blank" rel="noopener"
-    >this link</a> clearly. If you want to add something you could make comment or PR directly.</p>
+<h2 id="social-and-communication">
+    <a href="#social-and-communication" class="header-anchor">#</a>
+    Social and Communication
+</h2><ul>
+<li>Telegram: <code>$ yay -S telegram-desktop</code></li>
+<li>Discord: <code>$ yay -S webcord-bin</code></li>
+</ul>
 
 
 </section>
@@ -570,11 +612,11 @@
     
     <section class="article-tags">
         
-            <a href="/tags/misc/">Misc</a>
-        
             <a href="/tags/linux/">Linux</a>
         
-            <a href="/tags/arknights/">Arknights</a>
+            <a href="/tags/arch-linux/">Arch Linux</a>
+        
+            <a href="/tags/install/">Install</a>
         
     </section>
 
@@ -633,19 +675,6 @@
             
                 
 <article class="">
-    <a href="/posts/linux/vscode/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">VSCode All in One</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
     <a href="/posts/linux/xfce/">
         
         
@@ -670,6 +699,45 @@
 </article>
 
             
+                
+<article class="">
+    <a href="/posts/ettm/server/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">How to Create a Game (Minecraft/Terraria) Server with AWS</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/ettm/arknights/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">How to play Arknights on Linux, using MAA and key mapping</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/linux/vscode/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">VSCode All in One</h2>
+        </div>
+    </a>
+</article>
+
+            
         </div>
     </div>
 </aside>
@@ -680,9 +748,9 @@
     <div id="cusdis_thread"
     data-host="https://cusdis.com"
     data-app-id="21afa2aa-6f2f-47a0-b7dd-16a0bb7a5b81"
-    data-page-id="dde9bd4740bf98bb71f3526270bc4f3f"
-    data-page-url="https://zayn7lie.ber7.org/posts/ettm/arknights/"
-    data-page-title="How to play Arknights on Linux, using MAA and key mapping"></div>
+    data-page-id="34996b0a6d2b374cf55a9685e774e806"
+    data-page-url="https://zayn7lie.ber7.org/posts/linux/archlinux2/"
+    data-page-title="After Arch Linux Installation"></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <script>

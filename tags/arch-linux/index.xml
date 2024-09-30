@@ -6,259 +6,170 @@
         <description>Recent content in Arch Linux on zayn_lie&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Hyprland (Wayland)</title>
-        <link>https://zayn7lie.ber7.org/posts/linux/hyprland/</link>
-        <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+        <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>After Arch Linux Installation</title>
+        <link>https://zayn7lie.ber7.org/posts/linux/archlinux2/</link>
+        <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://zayn7lie.ber7.org/posts/linux/hyprland/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;12/05/2023-Updated: I have written a script for autoconfiguration. Uploaded to dot files below.&lt;/p&gt;
-&lt;p&gt;This is a record of some fixes for some bugs that I encounter, dot files, and the packages that I am using.&lt;/p&gt;
-&lt;p&gt;Dot files could be found in &lt;a class=&#34;link&#34; href=&#34;https://github.com/zayn7lie/dot-files&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/zayn7lie/dot-files&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;install&#34;&gt;
-    &lt;a href=&#34;#install&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Install
-&lt;/h2&gt;&lt;p&gt;Easy to install: &lt;code&gt;$ sudo pacman -S hyprland&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;config&#34;&gt;
-    &lt;a href=&#34;#config&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Config
-&lt;/h2&gt;&lt;h3 id=&#34;basic&#34;&gt;
-    &lt;a href=&#34;#basic&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Basic
-&lt;/h3&gt;&lt;h4 id=&#34;io&#34;&gt;
-    &lt;a href=&#34;#io&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    IO
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Disable Mouse Acceleration: add &lt;code&gt;force_no_accel = true&lt;/code&gt; to &lt;code&gt;input{}&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Authorization: &lt;code&gt;polkit-gnome&lt;/code&gt;, then add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Desktop Manager (Could this be called Desktop?): &lt;code&gt;sddm&lt;/code&gt;, then &lt;code&gt;$ sudo systemctl enable sddm&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;system&#34;&gt;
-    &lt;a href=&#34;#system&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    System
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;linux-flowx13&lt;/code&gt; specific kernel for ROG Flow X13&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SWAPFILE&lt;/code&gt; creation: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Swap#Swap_file&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://wiki.archlinux.org/title/Swap#Swap_file&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rog-control-center&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;wlogout&lt;/code&gt;AUR: logout menu&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;btop&lt;/code&gt;: resource monitor&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ntp&lt;/code&gt;: time synchronization&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;firefox&lt;/code&gt;: browser
+        <guid>https://zayn7lie.ber7.org/posts/linux/archlinux2/</guid>
+        <description>&lt;h2 id=&#34;before-entering-wm&#34;&gt;
+    &lt;a href=&#34;#before-entering-wm&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Before entering WM
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Disable the &lt;code&gt;-debug&lt;/code&gt; flag in &lt;code&gt;/etc/makepkg.conf&lt;/code&gt;: in &lt;code&gt;option&lt;/code&gt;, &lt;code&gt;!&lt;/code&gt; the &lt;code&gt;debug&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enable &lt;code&gt;pacman&lt;/code&gt; features in &lt;code&gt;/etc/pacman.conf&lt;/code&gt;: uncomment &lt;code&gt;Color&lt;/code&gt;, and &lt;code&gt;multilib&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;code&gt;yay&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;Install pre-request: &lt;code&gt;$ sudo pacman -Syyu git go&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Download &lt;code&gt;AUR snapshot&lt;/code&gt;: &lt;code&gt;$ curl -L -O https://archlinux.org/cgit/aur.git/snapshot/yay.tar.gz&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Extract the &lt;code&gt;snapshot&lt;/code&gt; and enter the dir: &lt;code&gt;$ tar -xf yay.tar.gz &amp;amp;&amp;amp; cd yay&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Make package and install: &lt;code&gt;$ makepkg &amp;amp;&amp;amp; sudo pacman -U *.zst&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Git could also be configured: &lt;code&gt;$ git config --global user.name ?{name}&lt;/code&gt;, and &lt;code&gt;git config --global user.email ?{email}&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Install &lt;code&gt;restic&lt;/code&gt;, recover the backup, and modify some backups: &lt;code&gt;$ yay -S restic&lt;/code&gt;; &lt;code&gt;$ restic -r ?{repo_location} recover latest --target ${HOME}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install WM: &lt;code&gt;$ yay -S gtk3 hyprland-git kitty&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enter the WM: &lt;code&gt;$ Hyprland&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;configuration-of-system-base-settings-and-display&#34;&gt;
+    &lt;a href=&#34;#configuration-of-system-base-settings-and-display&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Configuration of system-base settings and display
+&lt;/h2&gt;&lt;ol start=&#34;0&#34;&gt;
+&lt;li&gt;For recording the processes, install &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;wl-clipboard&lt;/code&gt;: &lt;code&gt;$ yay -S code wl-clipboard&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Prefer settings in &lt;code&gt;Hyprland&lt;/code&gt; in &lt;code&gt;{HOME}/.config/hypr/hyprland.conf&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;Change the scaling in &lt;code&gt;MONITORS&lt;/code&gt;, set &lt;code&gt;monitor=,preferred,auto,1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Swap the &lt;code&gt;esc&lt;/code&gt; and &lt;code&gt;caps&lt;/code&gt; in &lt;code&gt;INPUT&lt;/code&gt;, under &lt;code&gt;input&lt;/code&gt;: &lt;code&gt;kb_options = caps:swapescape&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enable natural scrolling in &lt;code&gt;INPUT&lt;/code&gt;, under &lt;code&gt;input:touchpad&lt;/code&gt;: &lt;code&gt;natural_scroll = true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enable workspace swipe in &lt;code&gt;INPUT&lt;/code&gt;, under &lt;code&gt;gesture&lt;/code&gt;: &lt;code&gt;workspace_swipe = true&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Install I/O &amp;amp; &lt;code&gt;Hyprland&lt;/code&gt;-must packages: &lt;code&gt;$ yay -S xdg-desktop-portal-hyprland-git sof-firmware pipewire-pulse alsa-utils pipewire-alsa pipewire-jack polkit-gnome&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;In &lt;code&gt;${HOME}/.config/hypr/hyprland&lt;/code&gt;, add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Set fonts and dark mode: &lt;code&gt;$ yay -S gnome-themes-extra adwaita-qt5-git adwaita-qt6-git noto-fonts noto-fonts-cjk ttf-fira-code ttf-nerd-fonts-symbols-mono&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In system settings:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ gsettings set org.gnome.desktop.wm.preferences theme Adwaita-dark
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ gsettings set org.gnome.desktop.interface font-name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Noto Sans 12&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ gsettings set org.gnome.desktop.interface document-font-name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Noto Sans 12&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ gsettings set org.gnome.desktop.interface monospace-font-name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Fira Code 12&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Environmental Vars (in &lt;code&gt;${HOME}/.config/hypr/hyprland.conf&lt;/code&gt;):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;env = GTK_THEME,Adwaita-dark
+env = GTK2_RC_FILES,/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+env = QT_STYLE_OVERRIDE,Adwaita-Dark
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set fonts in &lt;code&gt;kitty&lt;/code&gt; (in &lt;code&gt;${HOME}/.config/kitty/kitty.conf&lt;/code&gt;):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;font_family Fira Code
+scrollback_lines 8192
+foreground green
+background_opacity 0.75
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set &lt;code&gt;waybar wofi&lt;/code&gt;: &lt;code&gt;$ yay -S waybar wofi&lt;/code&gt;, and &lt;code&gt;exec-once=waybar&lt;/code&gt;, then set your config in &lt;code&gt;${HOME}/.config/waybar/config&lt;/code&gt; and &lt;code&gt;${HOME}/.config/waybar/style.css&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Reboot: &lt;code&gt;$ reboot&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;more-packages-applications-and-settings&#34;&gt;
+    &lt;a href=&#34;#more-packages-applications-and-settings&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    More packages (applications) and settings
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fingerprint: &lt;code&gt;yay -S libfprint-2-tod1-xps9300-bin fprintd&lt;/code&gt; then add &lt;code&gt;auth		sufficient  	pam_unix.so try_first_pass likeauth nullok&lt;/code&gt;, then &lt;code&gt;auth		sufficient  	pam_fprintd.so&lt;/code&gt; to &lt;code&gt;/etc/pam.d/login&lt;/code&gt; (after &lt;code&gt;requisite&lt;/code&gt;) and &lt;code&gt;sudo&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;betterfox&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enroll: &lt;code&gt;# fprintd-enroll ${name}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Delete: &lt;code&gt;# fprintd-delete ${name}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Verify: &lt;code&gt;$ fprintd-verify&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;appearance&#34;&gt;
-    &lt;a href=&#34;#appearance&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Appearance
-&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Theme Control: &lt;code&gt;qt5ct qt6ct&lt;/code&gt; &lt;code&gt;xfce4-settings&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Power management: &lt;code&gt;$ yay -S tlp&lt;/code&gt;, then edit &lt;code&gt;/etc/tlp.conf&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adjust the brightness: &lt;code&gt;# echo 10000 &amp;gt; /sys/class/backlight/intel_backlight/brightness&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Btop: &lt;code&gt;$ yay -S btop&lt;/code&gt;, then add ``&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install and add file manager: &lt;code&gt;$ yay -S ranger python-pillow&lt;/code&gt; (&lt;code&gt;python-pillow&lt;/code&gt; to preview images)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Set &lt;code&gt;/etc/environment&lt;/code&gt;: &lt;code&gt;QT_QPA_PLATFORMTHEME=qt5ct&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In &lt;code&gt;${HOME}/.config/hypr/hyprland.conf&lt;/code&gt;: ``&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ ranger --copy-config=rc&lt;/code&gt;- In &lt;code&gt;${HOME}/.config/ranger/rc.conf&lt;/code&gt;: &lt;code&gt;set preview_images true&lt;/code&gt;, &lt;code&gt;set preview_images_method kitty&lt;/code&gt;; and &lt;code&gt;$ ranger --copy-config=rifle&lt;/code&gt; - In &lt;code&gt;${HOME}/.config/ranger/rifle.conf&lt;/code&gt;: &lt;code&gt;ext html, has firefox              X, flag f = firefox -- &amp;quot;$@&amp;quot;&lt;/code&gt;; &lt;code&gt;ext pdf, has firefox,  X, flag f = firefox &amp;quot;$@&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In &lt;code&gt;/usr/share/applications/ranger.desktop&lt;/code&gt;: &lt;code&gt;Exec=kitty --title ranger sh -c &#39;ranger %U&#39;&lt;/code&gt;, and &lt;code&gt;terminal=false&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Screen Lock: &lt;code&gt;swaylock-effect&lt;/code&gt;, then bind hotkey using &lt;code&gt;bind = $mainMod, L, exec, swaylock # lock the screen: swaylock-effect&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Install and twick the browser: &lt;code&gt;$ yay -S firefox&lt;/code&gt;, then &lt;code&gt;bind = $mainMod, b, exec, firefox&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Swaylock-effect&lt;/code&gt; configuration: &lt;code&gt;~/.config/swaylock/config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Twick &lt;code&gt;betterfox&lt;/code&gt;: &lt;a class=&#34;link&#34; href=&#34;https://github.com/yokoffing/BetterFox&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Betterfox&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;background/Wallpaper: &lt;code&gt;swaybg&lt;/code&gt;, then add &lt;code&gt;exec-once = swaybg -m fill -i ?{~/Pictures/Wallpapers/ArchLinux.png}&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt; (&lt;code&gt;?{}&lt;/code&gt; is the path to your background picture)&lt;/p&gt;
+&lt;p&gt;Lock and Blank screen: &lt;code&gt;$ yay -S hyprlock&lt;/code&gt;, then &lt;code&gt;bind = $mainMod, L, exec, hyprlock &amp;amp; sleep 0.5 &amp;amp;&amp;amp; hyprctl dispatcher dpms off&lt;/code&gt; to &lt;code&gt;.config/hypr/hyprland.conf&lt;/code&gt; and add &lt;code&gt;key_press_enables_dpms = true&lt;/code&gt; under &lt;code&gt;misc&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;Topbar&lt;/code&gt;: &lt;code&gt;waybar&lt;/code&gt;, then add &lt;code&gt;exec-once = waybar&lt;/code&gt; to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;waybar&lt;/code&gt; configuration file: &lt;code&gt;~/.config/waybar/config&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Screenshot: &lt;code&gt;$ yay -S hyprshot&lt;/code&gt;, then &lt;code&gt;bind = , PRINT, exec, hyprshot -m region --output-folder ${HOME}/Pictures/.hyprshot&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Fonts: &lt;code&gt;ttf-ubuntu-font-family&lt;/code&gt;, &lt;code&gt;ttf-fira-code&lt;/code&gt;, &lt;code&gt;noto-fonts noto-fonts-cjk noto-fonts-emoji&lt;/code&gt;, &lt;code&gt;ttf-nerd-fonts-symbols-mono&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Icons: &lt;code&gt;papirus-icon-theme&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Terminal: &lt;code&gt;kitty&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;~/.config/kitty/kitty.conf&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;font_family      Fira Code&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;scrollback_lines 8192&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;foreground green&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;background_opacity 0.7&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;BUG: Not display properly while using SSH: Add &lt;code&gt;[ &amp;quot;$TERM&amp;quot; = &amp;quot;xterm-kitty&amp;quot; ] &amp;amp;&amp;amp; alias ssh=&amp;quot;kitty +kitten ssh&amp;quot;&lt;/code&gt; to &lt;code&gt;~/.bashrc&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;media&#34;&gt;
-    &lt;a href=&#34;#media&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Media
-&lt;/h3&gt;&lt;h4 id=&#34;image&#34;&gt;
-    &lt;a href=&#34;#image&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Image
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Screenshot: AUR&lt;code&gt;grimblast-git&lt;/code&gt;, then bind hotkey: &lt;code&gt;bind = $mainMod SHIFT, S, exec, env XDG_SCREENSHOTS_DIR=$HOME/Pictures/Screenshot grimblast copysave area&lt;/code&gt; in &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Copy2Clipboard: &lt;code&gt;wl-clipboard&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Edit: &lt;code&gt;krita&lt;/code&gt;(hand draw friendly) &lt;code&gt;inkscape&lt;/code&gt;(vectorize image friendly, especially for researcher who need &lt;code&gt;.svg&lt;/code&gt; image) &lt;code&gt;gimp&lt;/code&gt;(editor friendly)&lt;/li&gt;
-&lt;li&gt;view: &lt;code&gt;nsxiv&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Preview: &lt;code&gt;tumbler ffmpegthumbnailer&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;audio&#34;&gt;
-    &lt;a href=&#34;#audio&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Audio
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Music editing: &lt;code&gt;audacity&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Noise suppression: &lt;a class=&#34;link&#34; href=&#34;https://github.com/werman/noise-suppression-for-voice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;noise-suppression-for-voice&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf&lt;/code&gt;, then &lt;code&gt;$ systemctl restart --user pipewire.service&lt;/code&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;context.modules = [
-{   name = libpipewire-module-filter-chain
-    args = {
-        node.description =  &amp;#34;Noise Canceling source&amp;#34;
-        media.name =  &amp;#34;Noise Canceling source&amp;#34;
-        filter.graph = {
-            nodes = [
-                {
-                    type = ladspa
-                    name = rnnoise
-                    plugin = /usr/lib/ladspa/librnnoise_ladspa.so
-                    label = noise_suppressor_mono
-                    control = {
-                        &amp;#34;VAD Threshold (%)&amp;#34; = 50.0
-                        &amp;#34;VAD Grace Period (ms)&amp;#34; = 200
-                        &amp;#34;Retroactive VAD Grace (ms)&amp;#34; = 0
-                    }
-                }
-            ]
-        }
-        capture.props = {
-            node.name =  &amp;#34;capture.rnnoise_source&amp;#34;
-            node.passive = true
-            audio.rate = 48000
-        }
-        playback.props = {
-            node.name =  &amp;#34;rnnoise_source&amp;#34;
-            media.class = Audio/Source
-            audio.rate = 48000
-        }
-    }
+&lt;p&gt;Adding Windows Entree: add the following to &lt;code&gt;/etc/grub.d/40_custom&lt;/code&gt;, then &lt;code&gt;# grub-mkconfig -0 /boot/grub/grub.cfg&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-40_custom&#34; data-lang=&#34;40_custom&#34;&gt;menuentry &amp;#34;Windows&amp;#34; {
+   insmod part_gpt
+   insmod chain
+   set root=&amp;#39;hd0,gpt1&amp;#39;
+   chainloader /EFI/Microsoft/Boot/bootmgfw.efi
 }
-]
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;for-my-work&#34;&gt;
+    &lt;a href=&#34;#for-my-work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    For my work
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$\LaTeX$: &lt;code&gt;texlive-latex&lt;/code&gt; for &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;texlive-latexrecommended&lt;/code&gt; for &lt;code&gt;amsmath&lt;/code&gt;, &lt;code&gt;texlive-latexextra&lt;/code&gt; for &lt;code&gt;orcidlink&lt;/code&gt;, &lt;code&gt;texlive-fontsrecommended&lt;/code&gt; for essentials published fonts.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Bluetooth: &lt;code&gt;bluez bluez-utils blueman&lt;/code&gt;, then add &lt;code&gt;blueman-applet&lt;/code&gt; to config&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;video&#34;&gt;
-    &lt;a href=&#34;#video&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Video
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Editor: &lt;code&gt;blender&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;work&#34;&gt;
-    &lt;a href=&#34;#work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Work
-&lt;/h3&gt;&lt;h4 id=&#34;input&#34;&gt;
-    &lt;a href=&#34;#input&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Input
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;
+&lt;p&gt;VSCode-OSS: &lt;code&gt;$ yay -S code&lt;/code&gt; with extensions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Basis: &lt;code&gt;fcitx5-im fcitx5-chinese-addons&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;GUI: &lt;code&gt;fcitx5-nord&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;/etc/environment&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-env&#34; data-lang=&#34;env&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GTK_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QT_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;XMODIFIERS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;@im&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SDL_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;writing&#34;&gt;
-    &lt;a href=&#34;#writing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Writing
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Code: &lt;code&gt;code&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Paper: &lt;code&gt;zotero&lt;/code&gt;AUR
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://retorque.re/zotero-better-bibtex/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;Better BibTeX for Zotero&lt;/code&gt;Oth&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;Google Style Cite Key: &lt;code&gt;Citation Key Formula&lt;/code&gt;: &lt;code&gt;auth.lower + year + shorttitle(1).lower&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Fields to omit from export&lt;/code&gt;: &lt;code&gt;month, abstract, langid, file&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Dictionary: &lt;code&gt;goldendict-ng-git&lt;/code&gt;AUR&lt;/li&gt;
-&lt;li&gt;PDF Notation: &lt;code&gt;mupdf (tesseract-data-eng)&lt;/code&gt; &lt;code&gt;xournalpp&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;social&#34;&gt;
-    &lt;a href=&#34;#social&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Social
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Email: &lt;code&gt;thunderbird&lt;/code&gt; &lt;code&gt;# evolution evolution-on&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://addons.thunderbird.net/en-US/thunderbird/addon/provider-for-google-calendar/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Provider for Google Calendar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Chat: &lt;code&gt;telegram-desktop discord&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Meeting: &lt;code&gt;zoom&lt;/code&gt;AUR&lt;/li&gt;
-&lt;li&gt;Discord: &lt;code&gt;webcord&lt;/code&gt;AUR&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;game&#34;&gt;
-    &lt;a href=&#34;#game&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Game
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;enable &lt;code&gt;multilib&lt;/code&gt;: &lt;code&gt;/etc/pacman.conf&lt;/code&gt; - &lt;code&gt;[multilib]&lt;/code&gt; - uncomment &lt;code&gt;Include = /etc/pacman.d/mirrorlist&lt;/code&gt;, then refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Markdown: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown All in One&lt;/a&gt;: &lt;code&gt;ext install yzhang.markdown-all-in-one&lt;/code&gt;; &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;markdownlint&lt;/a&gt;:&lt;code&gt;ext install DavidAnson.vscode-markdownlint&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;$\LaTeX$: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LaTeX Workshop&lt;/a&gt;:&lt;code&gt;ext install James-Yu.latex-workshop&lt;/code&gt;; Grammar&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LTeX – LanguageTool grammar/spell checking&lt;/a&gt;:&lt;code&gt;ext install valentjn.vscode-ltex&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Coding: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Python&lt;/a&gt;:&lt;code&gt;ext install ms-python.python&lt;/code&gt;; &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;C/C++&lt;/a&gt;:&lt;code&gt;ext install ms-vscode.cpptools&lt;/code&gt;; &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Copilot&lt;/a&gt;:&lt;code&gt;ext install GitHub.copilot&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;osu-lazer&lt;/code&gt;AUR&lt;/p&gt;
+&lt;p&gt;Blog: &lt;code&gt;$ yay -S hugo&lt;/code&gt; for blogs publishing.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;prismlauncher&lt;/code&gt;AUR&lt;/p&gt;
+&lt;p&gt;Paper: &lt;code&gt;$ yay -S zotero-bin&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Xournal++: &lt;code&gt;$ yay -S xournalpp&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;social-and-communication&#34;&gt;
+    &lt;a href=&#34;#social-and-communication&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Social and Communication
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Telegram: &lt;code&gt;$ yay -S telegram-desktop&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Discord: &lt;code&gt;$ yay -S webcord-bin&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
@@ -575,7 +486,6 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;# lsblk&lt;/code&gt; to check your mounting situation. If this not meet your condition, you could modify by &lt;code&gt;# unmount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; command.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# pacstrap -K /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim} !{linux-headers}&lt;/code&gt; to install basis Arch Linux. &lt;code&gt;base-devel&lt;/code&gt; contains &lt;code&gt;makepkg&lt;/code&gt; that is necessary for installing AUR packages. You can install the Linux kernels that you want through &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/kernel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/kernel&lt;/a&gt;. &lt;code&gt;linux-firmware&lt;/code&gt; is necessary Linux kernel firmware. &lt;code&gt;e2fsprogs&lt;/code&gt; is for configuration of ext4 file system. &lt;code&gt;ntfs-3g&lt;/code&gt; is for configuration of NTFS (Windows File System) file system. &lt;code&gt;vim&lt;/code&gt; if for latter file editing.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt; to generate a &lt;code&gt;fstab&lt;/code&gt; file for Linux file tree viewing. It is safer to &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt; to check whether file is generated properly. P.S. Difference between &amp;raquo; and &amp;gt;: &amp;raquo; is appending (add) to the end of the file, &amp;gt; is replacing the file.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;5-user-setting&#34;&gt;
     &lt;a href=&#34;#5-user-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
@@ -616,7 +526,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;finish-installation&#34;&gt;
     &lt;a href=&#34;#finish-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Finish Installation
-&lt;/h3&gt;&lt;p&gt;Congratulation! You have installed Arch Linux in your machine. Now you can &lt;code&gt;# exit&lt;/code&gt; to exit your root user account, &lt;code&gt;# reboot&lt;/code&gt; and remove installation medium when computer is completely closed. Now, start your journey to &lt;code&gt;Arch Linux&lt;/code&gt;!&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;You have installed Arch Linux in your machine. Now you can &lt;code&gt;# exit&lt;/code&gt; to exit your root user account, it is important to &lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt; to generate a &lt;code&gt;fstab&lt;/code&gt; file for Linux file tree viewing. It is safer to &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt; to check whether file is generated properly. P.S. Difference between &amp;raquo; and &amp;gt;: &amp;raquo; is appending (add) to the end of the file, &amp;gt; is replacing the file. &lt;code&gt;# reboot&lt;/code&gt; and remove installation medium when computer is completely closed. Congratulation! Now, start your journey to &lt;code&gt;Arch Linux&lt;/code&gt;!&lt;/p&gt;
 &lt;h3 id=&#34;post-installation&#34;&gt;
     &lt;a href=&#34;#post-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Post-installation
@@ -639,7 +549,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Network&lt;/p&gt;
+&lt;p&gt;Network (Connect directly by mobile threatering)&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# iwctl&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# station wlan0 get-networks&lt;/code&gt;, &lt;code&gt;[iwd]# station wlan0 connect ${SSID}&lt;/code&gt;&lt;/li&gt;
@@ -651,7 +561,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Disk Mounting and Installation&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# fdisk -l&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p4}&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p2}&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p2} /mnt&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# mkdir /mnt/boot&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p1} /mnt/boot&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# lsblk&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim&lt;/code&gt;&lt;/li&gt;

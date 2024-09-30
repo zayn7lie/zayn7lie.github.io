@@ -318,12 +318,12 @@
                 Calculus BC
             </a>
         
-            <a href="/tags/config/" class="font_size_3">
-                Config
-            </a>
-        
             <a href="/tags/calculus-ii/" class="font_size_2">
                 Calculus II
+            </a>
+        
+            <a href="/tags/config/" class="font_size_2">
+                Config
             </a>
         
     </div>
@@ -353,7 +353,7 @@
                     <a href="/page/archives/#2024">
                         
                             <span class="year">2024</span>
-                            <span class="count">1</span>
+                            <span class="count">2</span>
                         
                     </a> 
                 </div>
@@ -361,7 +361,7 @@
                     <a href="/page/archives/#2023">
                         
                             <span class="year">2023</span>
-                            <span class="count">16</span>
+                            <span class="count">15</span>
                         
                     </a> 
                 </div>
@@ -567,7 +567,6 @@
 <li><code># lsblk</code> to check your mounting situation. If this not meet your condition, you could modify by <code># unmount /dev/?{nvme0n1p4} /mnt</code> command.</li>
 <li><code># pacstrap -K /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim} !{linux-headers}</code> to install basis Arch Linux. <code>base-devel</code> contains <code>makepkg</code> that is necessary for installing AUR packages. You can install the Linux kernels that you want through <a class="link" href="https://wiki.archlinux.org/title/kernel"  target="_blank" rel="noopener"
     >https://wiki.archlinux.org/title/kernel</a>. <code>linux-firmware</code> is necessary Linux kernel firmware. <code>e2fsprogs</code> is for configuration of ext4 file system. <code>ntfs-3g</code> is for configuration of NTFS (Windows File System) file system. <code>vim</code> if for latter file editing.</li>
-<li><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code> to generate a <code>fstab</code> file for Linux file tree viewing. It is safer to <code># cat /mnt/etc/fstab</code> to check whether file is generated properly. P.S. Difference between &raquo; and &gt;: &raquo; is appending (add) to the end of the file, &gt; is replacing the file.</li>
 </ol>
 <h3 id="5-user-setting">
     <a href="#5-user-setting" class="header-anchor">#</a>
@@ -608,7 +607,7 @@
 <h3 id="finish-installation">
     <a href="#finish-installation" class="header-anchor">#</a>
     Finish Installation
-</h3><p>Congratulation! You have installed Arch Linux in your machine. Now you can <code># exit</code> to exit your root user account, <code># reboot</code> and remove installation medium when computer is completely closed. Now, start your journey to <code>Arch Linux</code>!</p>
+</h3><p>You have installed Arch Linux in your machine. Now you can <code># exit</code> to exit your root user account, it is important to <code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code> to generate a <code>fstab</code> file for Linux file tree viewing. It is safer to <code># cat /mnt/etc/fstab</code> to check whether file is generated properly. P.S. Difference between &raquo; and &gt;: &raquo; is appending (add) to the end of the file, &gt; is replacing the file. <code># reboot</code> and remove installation medium when computer is completely closed. Congratulation! Now, start your journey to <code>Arch Linux</code>!</p>
 <h3 id="post-installation">
     <a href="#post-installation" class="header-anchor">#</a>
     Post-installation
@@ -631,7 +630,7 @@
 </ul>
 <ol>
 <li>
-<p>Network</p>
+<p>Network (Connect directly by mobile threatering)</p>
 <ol>
 <li><code># iwctl</code></li>
 <li><code>[iwd]# station wlan0 get-networks</code>, <code>[iwd]# station wlan0 connect ${SSID}</code></li>
@@ -643,7 +642,7 @@
 <p>Disk Mounting and Installation</p>
 <ol>
 <li><code># fdisk -l</code></li>
-<li><code># mkfs.ext4 /dev/?{nvme0n1p4}</code>, <code># mount /dev/?{nvme0n1p4} /mnt</code></li>
+<li><code># mkfs.ext4 /dev/?{nvme0n1p2}</code>, <code># mount /dev/?{nvme0n1p2} /mnt</code></li>
 <li><code># mkdir /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code></li>
 <li><code># lsblk</code></li>
 <li><code># pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim</code></li>
