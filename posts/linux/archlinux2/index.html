@@ -409,7 +409,7 @@
 
 
                 <time class="article-time--reading">
-                    3 minute read
+                    4 minute read
                 </time>
             </div>
         
@@ -553,7 +553,7 @@ background_opacity 0.75
 <p>Lock and Blank screen: <code>$ yay -S hyprlock</code>, then <code>bind = $mainMod, L, exec, hyprlock &amp; sleep 0.5 &amp;&amp; hyprctl dispatcher dpms off</code> to <code>.config/hypr/hyprland.conf</code> and add <code>key_press_enables_dpms = true</code> under <code>misc</code></p>
 </li>
 <li>
-<p>Screenshot: <code>$ yay -S hyprshot</code>, then <code>bind = , PRINT, exec, hyprshot -m region --output-folder ${HOME}/Pictures/.hyprshot</code></p>
+<p>Screenshot: <code>$ yay -S grimblast hyprpicker</code>, then <code>bind = , PRINT, exec, XDG_SCREENSHOTS_DIR=~/Pictures/.screenshots/ grimblast --freeze copysave area</code></p>
 </li>
 <li>
 <p>Adding Windows Entree: add the following to <code>/etc/grub.d/40_custom</code>, then <code># grub-mkconfig -0 /boot/grub/grub.cfg</code></p>
@@ -563,6 +563,12 @@ background_opacity 0.75
    set root=&#39;hd0,gpt1&#39;
    chainloader /EFI/Microsoft/Boot/bootmgfw.efi
 }
+</code></pre></li>
+<li>
+<p>IBUS Input (Bugs remains): <code>$ yay -S ibus</code>, then add to <code>~/.config/hypr/hyprland.conf</code>:</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">env = GTK_IM_MODULE,ibus
+env = QT_IM_MODULE,ibus
+env = XMODIFIERS,&#34;@im=ibus&#34;
 </code></pre></li>
 </ul>
 <h2 id="for-my-work">
@@ -581,10 +587,11 @@ background_opacity 0.75
 <li>$\LaTeX$: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"  target="_blank" rel="noopener"
     >LaTeX Workshop</a>:<code>ext install James-Yu.latex-workshop</code>; Grammar<a class="link" href="https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex"  target="_blank" rel="noopener"
     >LTeX – LanguageTool grammar/spell checking</a>:<code>ext install valentjn.vscode-ltex</code></li>
-<li>Coding: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python"  target="_blank" rel="noopener"
+<li>Coding: <code>$ yay -S gdb</code> for <code>C/C++</code> debugger; <a class="link" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python"  target="_blank" rel="noopener"
     >Python</a>:<code>ext install ms-python.python</code>; <a class="link" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools"  target="_blank" rel="noopener"
     >C/C++</a>:<code>ext install ms-vscode.cpptools</code>; <a class="link" href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"  target="_blank" rel="noopener"
-    >GitHub Copilot</a>:<code>ext install GitHub.copilot</code></li>
+    >GitHub Copilot</a>:<code>ext install GitHub.copilot</code>; <a class="link" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor"  target="_blank" rel="noopener"
+    >Hex(binary viewer)</a>:<code>ext install ms-vscode.hexeditor</code>.</li>
 </ul>
 </li>
 <li>
@@ -595,6 +602,9 @@ background_opacity 0.75
 </li>
 <li>
 <p>Xournal++: <code>$ yay -S xournalpp</code></p>
+</li>
+<li>
+<p>Network and VPN: <code>$ yay -S networkmanager-openconnect</code></p>
 </li>
 </ul>
 <h2 id="social-and-communication">

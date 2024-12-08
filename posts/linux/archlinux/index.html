@@ -576,7 +576,7 @@
 <li><code># passwd</code> to reset the root user password.</li>
 <li><code># echo ?{zayn7lie-acl} &gt; /etc/hostname</code> to reset your machine name.</li>
 <li><code># useradd -m -G wheel -s /bin/bash ${zayn7lie}</code> set up a new user <code>${zayn7lie}</code>, set it log in directory and add to wheel group. <code># passwd ${zayn7lie}</code> to set user’s password. P.S. Wheel group users are used to update system (like a wheel to update continuously)</li>
-<li><code># vim /etc/sudoers</code> to open config file using vim. Type i to enter insert(edit) mode for vim and then find and uncomment (delete <code>#</code>) before <code>%wheel ALL=(ALL:ALL) ALL</code>. Then <code>esc</code> to escape from insert mode and <code>:wq</code> to write in (save) and quit. P.S. <code>:wq!</code> and <code>:q!</code> the <code>!</code> means force. <code>:wq!</code> will force writing in (If the file is unchangeable, it will create a new file and replace it.), and <code>:q!</code> will force you to quite without any change of the file.</li>
+<li><code># EDITOR=nvim visudo</code> to open config file using vim. Type i to enter insert(edit) mode for vim and then find and uncomment (delete <code>#</code>) before <code>%wheel ALL=(ALL:ALL) ALL</code>. Then <code>esc</code> to escape from insert mode and <code>:wq</code> to write in (save) and quit. P.S. <code>:wq!</code> and <code>:q!</code> the <code>!</code> means force. <code>:wq!</code> will force writing in (If the file is unchangeable, it will create a new file and replace it.), and <code>:q!</code> will force you to quite without any change of the file.</li>
 <li><code># vim /etc/hosts</code> to config localhost settings. Insert:</li>
 </ol>
 <pre tabindex="0"><code class="language-hosts" data-lang="hosts">127.0.0.1 localhost
@@ -630,7 +630,7 @@
 </ul>
 <ol>
 <li>
-<p>Network (Connect directly by mobile threatering)</p>
+<p>Network (Connect directly by mobile threatening)</p>
 <ol>
 <li><code># iwctl</code></li>
 <li><code>[iwd]# station wlan0 get-networks</code>, <code>[iwd]# station wlan0 connect ${SSID}</code></li>
@@ -643,10 +643,10 @@
 <ol>
 <li><code># fdisk -l</code></li>
 <li><code># mkfs.ext4 /dev/?{nvme0n1p2}</code>, <code># mount /dev/?{nvme0n1p2} /mnt</code></li>
-<li><code># mkdir /mnt/boot</code>, <code># mount /dev/?{nvme0n1p1} /mnt/boot</code></li>
+<li><code># mount --mkdir /dev/?{nvme0n1p1} /mnt/boot</code></li>
+<li><code># mkswap -U clear --size 16G --file /mnt/swapfile</code>, <code># swapon /mnt/swapfile</code></li>
 <li><code># lsblk</code></li>
-<li><code># pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim</code></li>
-<li><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code>, <code># cat /mnt/etc/fstab</code></li>
+<li><code># pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g neovim</code></li>
 </ol>
 </li>
 <li>
@@ -689,7 +689,7 @@
 <p>Final</p>
 <ol>
 <li><code># pacman -S networkmanager</code>, <code># systemctl enable NetworkManager</code></li>
-<li><code># exit</code>, <code># reboot</code></li>
+<li><code># exit</code>,<code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code>, <code># cat /mnt/etc/fstab</code> <code># reboot</code></li>
 <li><code>NetworkManager</code>
 <ol>
 <li><code>$ nmcli device wifi list</code></li>

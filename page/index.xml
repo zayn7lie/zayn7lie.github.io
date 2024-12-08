@@ -14,7 +14,19 @@
         <description>&lt;h2 id=&#34;zayn-lie-zayn-wangzayn-wong&#34;&gt;
     &lt;a href=&#34;#zayn-lie-zayn-wangzayn-wong&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Zayn Lie (Zayn Wang/Zayn Wong)
-&lt;/h2&gt;&lt;h3 id=&#34;account-profile&#34;&gt;
+&lt;/h2&gt;&lt;p&gt;My preferred name &lt;code&gt;Zayn&lt;/code&gt; comes from the seventh Hebrew letter, concerning pronunciation and my interest in &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Set_theory&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Set Theory&lt;/a&gt;, in which &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Aleph_number&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;Aleph&lt;/code&gt; number $\aleph$&lt;/a&gt; is the first Hebrew letter and &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Beth_number&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;Beth&lt;/code&gt; number $\beth$&lt;/a&gt; is the second.&lt;/p&gt;
+&lt;p&gt;My research interests are swifting with my understanding of math. In the high school, I was interested in the algorithms of computer science and starting to do some research of machine learning. But the black box of it disappointed me, then I was trying to think and unearth every unclear knowledge especially in math and cs. That lead me to read &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gödel&amp;rsquo;s incompleteness theorems&lt;/a&gt;, which fund the basis of my interests in Set Theory.&lt;/p&gt;
+&lt;p&gt;Currently, my research interests could be divided into three main parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pure Analysis, Abstract Algebra, and Topology&lt;/li&gt;
+&lt;li&gt;Set Theory, Computability and Completeness, and Logic with Axioms&lt;/li&gt;
+&lt;li&gt;Theoretical Computer Science, Formal Method and Verification&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;account-profile&#34;&gt;
     &lt;a href=&#34;#account-profile&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Account Profile
 &lt;/h3&gt;&lt;ul&gt;
@@ -27,23 +39,15 @@
 &lt;li&gt;GitHub: &lt;a class=&#34;link&#34; href=&#34;https://github.com/zayn7lie&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;zayn7lie&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;research-interests&#34;&gt;
-    &lt;a href=&#34;#research-interests&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Research Interests
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Computational Logic (Set Theory)&lt;/li&gt;
-&lt;li&gt;Analysis&lt;/li&gt;
-&lt;li&gt;Verification&lt;/li&gt;
-&lt;li&gt;(No Longer) Numerical Computing (Numerical Analysis)&lt;/li&gt;
-&lt;li&gt;(No Longer) Machine Learning&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h3 id=&#34;papers--publications&#34;&gt;
     &lt;a href=&#34;#papers--publications&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Papers &amp;amp; Publications
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Wang, Z.&lt;/strong&gt; Enhancing ocular diseases recognition with domain adaptive framework: leveraging domain confusion. Int. J. Mach. Learn. &amp;amp; Cyber. (2024). &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/s13042-024-02358-2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; (On going) &lt;strong&gt;Wang, Z.&lt;/strong&gt;, Shi, W.. Numerical Analysis&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; (Under Review) &lt;strong&gt;Wang, Z.&lt;/strong&gt; Advancing Portfolio Optimization: Hybrid Relaxation and Heuristic Approaches for Cardinality Constrained MIQP Problems.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Wang, Z.&lt;/strong&gt; Enhancing ocular diseases recognition with domain adaptive framework: leveraging domain confusion. Int. J. Mach. Learn. &amp;amp; Cyber. (2024). &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/s13042-024-02358-2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://doi.org/10.1007/s13042-024-02358-2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wang, Z.&lt;/strong&gt; (2022). Emotion Recognition Based on Multi-scale Convolutional Neural Network. In: Tan, Y., Shi, Y. (eds) Data Mining and Big Data. DMBD 2022. Communications in Computer and Information Science, vol 1744. Springer, Singapore. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/978-981-19-9297-1_12&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Wang, Z.&lt;/strong&gt; (2022). Emotion Recognition Based on Multi-scale Convolutional Neural Network. In: Tan, Y., Shi, Y. (eds) Data Mining and Big Data. DMBD 2022. Communications in Computer and Information Science, vol 1744. Springer, Singapore. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/978-981-19-9297-1_12&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://doi.org/10.1007/978-981-19-9297-1_12&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>

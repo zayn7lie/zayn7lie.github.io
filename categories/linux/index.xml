@@ -120,7 +120,7 @@ background_opacity 0.75
 &lt;p&gt;Lock and Blank screen: &lt;code&gt;$ yay -S hyprlock&lt;/code&gt;, then &lt;code&gt;bind = $mainMod, L, exec, hyprlock &amp;amp; sleep 0.5 &amp;amp;&amp;amp; hyprctl dispatcher dpms off&lt;/code&gt; to &lt;code&gt;.config/hypr/hyprland.conf&lt;/code&gt; and add &lt;code&gt;key_press_enables_dpms = true&lt;/code&gt; under &lt;code&gt;misc&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Screenshot: &lt;code&gt;$ yay -S hyprshot&lt;/code&gt;, then &lt;code&gt;bind = , PRINT, exec, hyprshot -m region --output-folder ${HOME}/Pictures/.hyprshot&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Screenshot: &lt;code&gt;$ yay -S grimblast hyprpicker&lt;/code&gt;, then &lt;code&gt;bind = , PRINT, exec, XDG_SCREENSHOTS_DIR=~/Pictures/.screenshots/ grimblast --freeze copysave area&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Adding Windows Entree: add the following to &lt;code&gt;/etc/grub.d/40_custom&lt;/code&gt;, then &lt;code&gt;# grub-mkconfig -0 /boot/grub/grub.cfg&lt;/code&gt;&lt;/p&gt;
@@ -130,6 +130,12 @@ background_opacity 0.75
    set root=&amp;#39;hd0,gpt1&amp;#39;
    chainloader /EFI/Microsoft/Boot/bootmgfw.efi
 }
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IBUS Input (Bugs remains): &lt;code&gt;$ yay -S ibus&lt;/code&gt;, then add to &lt;code&gt;~/.config/hypr/hyprland.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;env = GTK_IM_MODULE,ibus
+env = QT_IM_MODULE,ibus
+env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;for-my-work&#34;&gt;
@@ -148,10 +154,11 @@ background_opacity 0.75
 &lt;li&gt;$\LaTeX$: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LaTeX Workshop&lt;/a&gt;:&lt;code&gt;ext install James-Yu.latex-workshop&lt;/code&gt;; Grammar&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LTeX – LanguageTool grammar/spell checking&lt;/a&gt;:&lt;code&gt;ext install valentjn.vscode-ltex&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Coding: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;Coding: &lt;code&gt;$ yay -S gdb&lt;/code&gt; for &lt;code&gt;C/C++&lt;/code&gt; debugger; &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Python&lt;/a&gt;:&lt;code&gt;ext install ms-python.python&lt;/code&gt;; &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;C/C++&lt;/a&gt;:&lt;code&gt;ext install ms-vscode.cpptools&lt;/code&gt;; &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub Copilot&lt;/a&gt;:&lt;code&gt;ext install GitHub.copilot&lt;/code&gt;&lt;/li&gt;
+    &gt;GitHub Copilot&lt;/a&gt;:&lt;code&gt;ext install GitHub.copilot&lt;/code&gt;; &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hex(binary viewer)&lt;/a&gt;:&lt;code&gt;ext install ms-vscode.hexeditor&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -162,6 +169,9 @@ background_opacity 0.75
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Xournal++: &lt;code&gt;$ yay -S xournalpp&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Network and VPN: &lt;code&gt;$ yay -S networkmanager-openconnect&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;social-and-communication&#34;&gt;
@@ -559,7 +569,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;# passwd&lt;/code&gt; to reset the root user password.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# echo ?{zayn7lie-acl} &amp;gt; /etc/hostname&lt;/code&gt; to reset your machine name.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# useradd -m -G wheel -s /bin/bash ${zayn7lie}&lt;/code&gt; set up a new user &lt;code&gt;${zayn7lie}&lt;/code&gt;, set it log in directory and add to wheel group. &lt;code&gt;# passwd ${zayn7lie}&lt;/code&gt; to set user’s password. P.S. Wheel group users are used to update system (like a wheel to update continuously)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# vim /etc/sudoers&lt;/code&gt; to open config file using vim. Type i to enter insert(edit) mode for vim and then find and uncomment (delete &lt;code&gt;#&lt;/code&gt;) before &lt;code&gt;%wheel ALL=(ALL:ALL) ALL&lt;/code&gt;. Then &lt;code&gt;esc&lt;/code&gt; to escape from insert mode and &lt;code&gt;:wq&lt;/code&gt; to write in (save) and quit. P.S. &lt;code&gt;:wq!&lt;/code&gt; and &lt;code&gt;:q!&lt;/code&gt; the &lt;code&gt;!&lt;/code&gt; means force. &lt;code&gt;:wq!&lt;/code&gt; will force writing in (If the file is unchangeable, it will create a new file and replace it.), and &lt;code&gt;:q!&lt;/code&gt; will force you to quite without any change of the file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# EDITOR=nvim visudo&lt;/code&gt; to open config file using vim. Type i to enter insert(edit) mode for vim and then find and uncomment (delete &lt;code&gt;#&lt;/code&gt;) before &lt;code&gt;%wheel ALL=(ALL:ALL) ALL&lt;/code&gt;. Then &lt;code&gt;esc&lt;/code&gt; to escape from insert mode and &lt;code&gt;:wq&lt;/code&gt; to write in (save) and quit. P.S. &lt;code&gt;:wq!&lt;/code&gt; and &lt;code&gt;:q!&lt;/code&gt; the &lt;code&gt;!&lt;/code&gt; means force. &lt;code&gt;:wq!&lt;/code&gt; will force writing in (If the file is unchangeable, it will create a new file and replace it.), and &lt;code&gt;:q!&lt;/code&gt; will force you to quite without any change of the file.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# vim /etc/hosts&lt;/code&gt; to config localhost settings. Insert:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-hosts&#34; data-lang=&#34;hosts&#34;&gt;127.0.0.1 localhost
@@ -613,7 +623,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Network (Connect directly by mobile threatering)&lt;/p&gt;
+&lt;p&gt;Network (Connect directly by mobile threatening)&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# iwctl&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# station wlan0 get-networks&lt;/code&gt;, &lt;code&gt;[iwd]# station wlan0 connect ${SSID}&lt;/code&gt;&lt;/li&gt;
@@ -626,10 +636,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# fdisk -l&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p2}&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p2} /mnt&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# mkdir /mnt/boot&lt;/code&gt;, &lt;code&gt;# mount /dev/?{nvme0n1p1} /mnt/boot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mount --mkdir /dev/?{nvme0n1p1} /mnt/boot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# mkswap -U clear --size 16G --file /mnt/swapfile&lt;/code&gt;, &lt;code&gt;# swapon /mnt/swapfile&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# lsblk&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g vim&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt;, &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# pacstrap /mnt base base-devel linux linux-firmware e2fsprogs ntfs-3g neovim&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -672,7 +682,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Final&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt;, &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;# exit&lt;/code&gt;, &lt;code&gt;# reboot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;# exit&lt;/code&gt;,&lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt;, &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt; &lt;code&gt;# reboot&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;NetworkManager&lt;/code&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;$ nmcli device wifi list&lt;/code&gt;&lt;/li&gt;
