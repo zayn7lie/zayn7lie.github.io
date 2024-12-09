@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Alda on zayn_lie&#39;s studio</title>
+        <link>https://zayn7lie.ber7.org/tags/alda/</link>
+        <description>Recent content in Alda on zayn_lie&#39;s studio</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/alda/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Alda for Music Creation</title>
+        <link>https://zayn7lie.ber7.org/posts/music/alda/</link>
+        <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/music/alda/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;This guide is a re-organization for &lt;a class=&#34;link&#34; href=&#34;https://alda.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Alda Official&lt;/a&gt;. If something is missing please go to the website for more details.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;why-why&#34;&gt;
+    &lt;a href=&#34;#why-why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Alda is a very simple tool for music creation, which fullfill my all requirements for music creation.&lt;/li&gt;
+&lt;li&gt;Alda is a text-base tools which means I could fully editing in the terminal.&lt;/li&gt;
+&lt;li&gt;Alda is totally open-source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-what&#34;&gt;
+    &lt;a href=&#34;#what-what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Alda is a text-based programming language for music composition. It allows you to write and play back music using only a text editor and the command line.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;how-how&#34;&gt;
+    &lt;a href=&#34;#how-how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

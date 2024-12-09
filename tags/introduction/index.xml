@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Introduction on zayn_lie&#39;s blog</title>
+        <title>Introduction on zayn_lie&#39;s studio</title>
         <link>https://zayn7lie.ber7.org/tags/introduction/</link>
-        <description>Recent content in Introduction on zayn_lie&#39;s blog</description>
+        <description>Recent content in Introduction on zayn_lie&#39;s studio</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/introduction/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -12,32 +12,46 @@
         <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/la-intro/</guid>
-        <description>&lt;h2 id=&#34;why-why-we-should-learn-linear-algebra&#34;&gt;WHY: Why we should learn Linear Algebra&lt;/h2&gt;
-&lt;ul&gt;
+        <description>&lt;h2 id=&#34;why-why-we-should-learn-linear-algebra&#34;&gt;
+    &lt;a href=&#34;#why-why-we-should-learn-linear-algebra&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why we should learn Linear Algebra
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;It could help us better understand and solve Calculus in multi-dimentions&lt;/li&gt;
 &lt;li&gt;It is needed for Machine Learning especially Deep Learning&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-scalars-vectors-matrices-and-spaces&#34;&gt;WHAT: What is Scalars, Vectors, Matrices, and Spaces&lt;/h2&gt;
-&lt;h3 id=&#34;vector-vecv&#34;&gt;Vector $\vec{v}$&lt;/h3&gt;
-&lt;h3 id=&#34;matrix-a&#34;&gt;Matrix $A$&lt;/h3&gt;
-&lt;h4 id=&#34;why-why-should-we-know-about-matrix&#34;&gt;WHY: Why should we know about Matrix&lt;/h4&gt;
-&lt;p&gt;$$ \begin{cases} 2x - y = 0 \\ -x + 2y = 0 \end{cases} \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \\ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \Rightarrow Ax = b
+&lt;h2 id=&#34;what-what-is-scalars-vectors-matrices-and-spaces&#34;&gt;
+    &lt;a href=&#34;#what-what-is-scalars-vectors-matrices-and-spaces&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Scalars, Vectors, Matrices, and Spaces
+&lt;/h2&gt;&lt;h3 id=&#34;vector-vecv&#34;&gt;
+    &lt;a href=&#34;#vector-vecv&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Vector $\vec{v}$
+&lt;/h3&gt;&lt;h3 id=&#34;matrix-a&#34;&gt;
+    &lt;a href=&#34;#matrix-a&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Matrix $A$
+&lt;/h3&gt;&lt;h4 id=&#34;why-why-should-we-know-about-matrix&#34;&gt;
+    &lt;a href=&#34;#why-why-should-we-know-about-matrix&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why should we know about Matrix
+&lt;/h4&gt;&lt;p&gt;$$ \begin{cases} 2x - y = 0 \ -x + 2y = 0 \end{cases} \Rightarrow \begin{pmatrix} 2 &amp;amp; -1 \ -1 &amp;amp; 2 \end{pmatrix} \begin{pmatrix} x \ y \end{pmatrix} = \begin{pmatrix} 0 \ 0 \end{pmatrix} \Rightarrow Ax = b
 $$&lt;/p&gt;
-&lt;h4 id=&#34;what-what-is-matrix&#34;&gt;WHAT: What is Matrix&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;what-what-is-matrix&#34;&gt;
+    &lt;a href=&#34;#what-what-is-matrix&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Matrix
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;It is an &amp;ldquo;arragement&amp;rdquo; of vectors
-$$ A = \begin{pmatrix} \vec{v} &amp;amp; \vec{w} &amp;amp; \ldots \end{pmatrix} = \begin{pmatrix} v_1 &amp;amp; w_1 &amp;amp; \ldots  \\ v_2 &amp;amp; w_2 &amp;amp; \ldots \\ \ldots &amp;amp; \ldots &amp;amp; \ldots\end{pmatrix}
+$$ A = \begin{pmatrix} \vec{v} &amp;amp; \vec{w} &amp;amp; \ldots \end{pmatrix} = \begin{pmatrix} v_1 &amp;amp; w_1 &amp;amp; \ldots  \ v_2 &amp;amp; w_2 &amp;amp; \ldots \ \ldots &amp;amp; \ldots &amp;amp; \ldots\end{pmatrix}
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;It is an &amp;ldquo;arragement&amp;rdquo; of rows and columns
-$$ A = \begin{pmatrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \\ 5 &amp;amp; 6 \end{pmatrix} \text{is a 3 by 2 matrix: m = 3 rows and n = 2 columns. Rank 2.}
+$$ A = \begin{pmatrix} 1 &amp;amp; 2 \ 3 &amp;amp; 4 \ 5 &amp;amp; 6 \end{pmatrix} \text{is a 3 by 2 matrix: m = 3 rows and n = 2 columns. Rank 2.}
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;what-what-is-the-rank-of-a-matrix&#34;&gt;WHAT: What is the rank of a Matrix&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;what-what-is-the-rank-of-a-matrix&#34;&gt;
+    &lt;a href=&#34;#what-what-is-the-rank-of-a-matrix&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is the rank of a Matrix
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;The &lt;strong&gt;Indepnedence&lt;/strong&gt; and the &lt;strong&gt;dependence&lt;/strong&gt; of the vectors in a metrix (column).
 $$ \exists \vec{x} \neq 0, Ax = 0 \Rightarrow \exists \vec{v} \in A, \vec{v} \text{ is not independent, or dependent to others vector (or columns)}
@@ -49,8 +63,10 @@ $$ C(A) \text{: All combinations of the columns}
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-do-calculations-with-matrices&#34;&gt;HOW: How to do calculations with Matrices&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;how-how-to-do-calculations-with-matrices&#34;&gt;
+    &lt;a href=&#34;#how-how-to-do-calculations-with-matrices&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to do calculations with Matrices
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Multiple Matrices&lt;/p&gt;
 &lt;ul&gt;
@@ -87,8 +103,10 @@ $$&lt;/p&gt;
 &lt;p&gt;If A has indep col, then AT A is invertible&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;spaces-r&#34;&gt;Spaces $R$&lt;/h3&gt;
-</description>
+&lt;h3 id=&#34;spaces-r&#34;&gt;
+    &lt;a href=&#34;#spaces-r&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Spaces $R$
+&lt;/h3&gt;</description>
         </item>
         
     </channel>

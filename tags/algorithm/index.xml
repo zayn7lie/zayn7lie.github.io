@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Algorithm on zayn_lie&#39;s blog</title>
+        <title>Algorithm on zayn_lie&#39;s studio</title>
         <link>https://zayn7lie.ber7.org/tags/algorithm/</link>
-        <description>Recent content in Algorithm on zayn_lie&#39;s blog</description>
+        <description>Recent content in Algorithm on zayn_lie&#39;s studio</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/algorithm/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -12,14 +12,22 @@
         <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/data_structure/</guid>
-        <description>&lt;h2 id=&#34;how-how-java-runs&#34;&gt;HOW: How Java runs&lt;/h2&gt;
-&lt;p&gt;Source Code -&lt;code&gt;javac SOURCE_CODE_FILE&lt;/code&gt;-&amp;gt; bytecode -&lt;code&gt;java CLASS_FILE&lt;/code&gt;-&amp;gt; machine instructions (in Java Virtual Machine or JVM)&lt;/p&gt;
-&lt;h3 id=&#34;jvm&#34;&gt;JVM&lt;/h3&gt;
-&lt;p&gt;pros: run in different machine&lt;/p&gt;
+        <description>&lt;h2 id=&#34;how-how-java-runs&#34;&gt;
+    &lt;a href=&#34;#how-how-java-runs&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How Java runs
+&lt;/h2&gt;&lt;p&gt;Source Code -&lt;code&gt;javac SOURCE_CODE_FILE&lt;/code&gt;-&amp;gt; bytecode -&lt;code&gt;java CLASS_FILE&lt;/code&gt;-&amp;gt; machine instructions (in Java Virtual Machine or JVM)&lt;/p&gt;
+&lt;h3 id=&#34;jvm&#34;&gt;
+    &lt;a href=&#34;#jvm&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    JVM
+&lt;/h3&gt;&lt;p&gt;pros: run in different machine&lt;/p&gt;
 &lt;p&gt;cons: make java slightly slower&lt;/p&gt;
-&lt;h3 id=&#34;programs-memory-heap-and-stack&#34;&gt;Program&amp;rsquo;s Memory: Heap and Stack&lt;/h3&gt;
-&lt;h4 id=&#34;variable-types-storage&#34;&gt;Variable Types Storage&lt;/h4&gt;
-&lt;p&gt;Primitive: &lt;code&gt;int x = 7;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;programs-memory-heap-and-stack&#34;&gt;
+    &lt;a href=&#34;#programs-memory-heap-and-stack&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Program&amp;rsquo;s Memory: Heap and Stack
+&lt;/h3&gt;&lt;h4 id=&#34;variable-types-storage&#34;&gt;
+    &lt;a href=&#34;#variable-types-storage&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Variable Types Storage
+&lt;/h4&gt;&lt;p&gt;Primitive: &lt;code&gt;int x = 7;&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;name: x&lt;/li&gt;
 &lt;li&gt;value: 7&lt;/li&gt;
@@ -34,8 +42,10 @@
 &lt;li&gt;value: ? (better to assign &lt;code&gt;null&lt;/code&gt;) -&amp;gt; value: 0x3EF3B(store the memory address, or &lt;strong&gt;points&lt;/strong&gt; to)&lt;/li&gt;
 &lt;li&gt;If no pointer points to the object, the object will turn into Garbage Collection&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;memory-storage&#34;&gt;Memory Storage&lt;/h4&gt;
-&lt;p&gt;Stack&lt;/p&gt;
+&lt;h4 id=&#34;memory-storage&#34;&gt;
+    &lt;a href=&#34;#memory-storage&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Memory Storage
+&lt;/h4&gt;&lt;p&gt;Stack&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Stack frames: collection of memory blocks(ONLY create while functions runs)&lt;/li&gt;
 &lt;li&gt;Size: could be varied concerning variables, number of functions&lt;/li&gt;
@@ -59,16 +69,20 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;void swap(d1, d2)&lt;/code&gt; does not work in Java&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;why-why-should-we-learn-algorithm&#34;&gt;WHY: Why should we learn algorithm&lt;/h2&gt;
-&lt;p&gt;Be CORRECT and EFFICIENT&lt;/p&gt;
+&lt;h2 id=&#34;why-why-should-we-learn-algorithm&#34;&gt;
+    &lt;a href=&#34;#why-why-should-we-learn-algorithm&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why should we learn algorithm
+&lt;/h2&gt;&lt;p&gt;Be CORRECT and EFFICIENT&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Be CORRECT first then EFFICIENT.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Binary Search - O($\log{N}$)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-array&#34;&gt;WHAT: What is Array&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;what-what-is-array&#34;&gt;
+    &lt;a href=&#34;#what-what-is-array&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Array
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Search
 &lt;ul&gt;
 &lt;li&gt;Operation time: O(1)&lt;/li&gt;
@@ -88,8 +102,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-linked-list&#34;&gt;WHAT: What is Linked List&lt;/h2&gt;
-&lt;p&gt;Storing - &lt;code&gt;class Node {int data; Node next;}&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-what-is-linked-list&#34;&gt;
+    &lt;a href=&#34;#what-what-is-linked-list&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Linked List
+&lt;/h2&gt;&lt;p&gt;Storing - &lt;code&gt;class Node {int data; Node next;}&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;head&lt;/code&gt; is a reference to the first node, &lt;code&gt;tail&lt;/code&gt; is a reference to the last node (they are not nodes)&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -102,8 +118,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-stacks&#34;&gt;WHAT: What is Stacks&lt;/h2&gt;
-&lt;p&gt;FILO: First In Last Out&lt;/p&gt;
+&lt;h2 id=&#34;what-what-is-stacks&#34;&gt;
+    &lt;a href=&#34;#what-what-is-stacks&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Stacks
+&lt;/h2&gt;&lt;p&gt;FILO: First In Last Out&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Add: &lt;code&gt;push&lt;/code&gt;(only one)&lt;/li&gt;
 &lt;li&gt;Remove: &lt;code&gt;pop&lt;/code&gt;(only one)&lt;/li&gt;
@@ -113,8 +131,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-queue&#34;&gt;WHAT: What is Queue&lt;/h2&gt;
-&lt;p&gt;FIFO: First In First Out&lt;/p&gt;
+&lt;h2 id=&#34;what-what-is-queue&#34;&gt;
+    &lt;a href=&#34;#what-what-is-queue&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Queue
+&lt;/h2&gt;&lt;p&gt;FIFO: First In First Out&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Add: enqueue&lt;/li&gt;
 &lt;li&gt;Remove: dequeue&lt;/li&gt;
@@ -125,24 +145,34 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-binary-trees&#34;&gt;WHAT: What is Binary Trees&lt;/h2&gt;
-&lt;blockquote&gt;
+&lt;h2 id=&#34;what-what-is-binary-trees&#34;&gt;
+    &lt;a href=&#34;#what-what-is-binary-trees&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Binary Trees
+&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Connect Array(Binary Search) and Linked List&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Storing: &lt;code&gt;class Node { int data; Node left; Node right;}&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Root&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-hash-tables&#34;&gt;WHAT: What is Hash Tables&lt;/h2&gt;
-&lt;h2 id=&#34;how-how-to-read-the-code-of-programs&#34;&gt;HOW: How to read the code of programs?&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;javadoc 17&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-what-is-hash-tables&#34;&gt;
+    &lt;a href=&#34;#what-what-is-hash-tables&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What is Hash Tables
+&lt;/h2&gt;&lt;h2 id=&#34;how-how-to-read-the-code-of-programs&#34;&gt;
+    &lt;a href=&#34;#how-how-to-read-the-code-of-programs&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to read the code of programs?
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;javadoc 17&lt;/code&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Read &lt;code&gt;README.md&lt;/code&gt; &amp;amp; try to run the program(build class with package name &lt;code&gt;$ javac packageName/foo.java&lt;/code&gt;, then run code &lt;code&gt;$ java packageName.foo&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;Find the &lt;code&gt;main&lt;/code&gt; function then &lt;code&gt;debug&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;how-how-to-create-a-data-structure&#34;&gt;HOW: How to create a data structure?&lt;/h2&gt;
-&lt;h3 id=&#34;a-list-adt&#34;&gt;A List ADT&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;how-how-to-create-a-data-structure&#34;&gt;
+    &lt;a href=&#34;#how-how-to-create-a-data-structure&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How to create a data structure?
+&lt;/h2&gt;&lt;h3 id=&#34;a-list-adt&#34;&gt;
+    &lt;a href=&#34;#a-list-adt&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    A List ADT
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;(ADT) Abstract Data Type&lt;/p&gt;
 &lt;ul&gt;
@@ -262,8 +292,10 @@
 &lt;p&gt;Circular Linked List&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;arrayliste&#34;&gt;&lt;code&gt;ArrayList&amp;lt;E&amp;gt;&lt;/code&gt;&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;arrayliste&#34;&gt;
+    &lt;a href=&#34;#arrayliste&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;code&gt;ArrayList&amp;lt;E&amp;gt;&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Add Last: &lt;code&gt;O(N)&lt;/code&gt;, but faster than do it by ourselves - use &lt;code&gt;arraycopy()&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -296,16 +328,22 @@
 &lt;p&gt;&lt;code&gt;&amp;lt;?&amp;gt;&lt;/code&gt;: we need not actually type is the same.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;stacke--queueeinterface&#34;&gt;&lt;code&gt;Stack&amp;lt;E&amp;gt;&lt;/code&gt; &amp;amp; &lt;code&gt;Queue&amp;lt;E&amp;gt;&lt;/code&gt;(interface)&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;stacke--queueeinterface&#34;&gt;
+    &lt;a href=&#34;#stacke--queueeinterface&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;code&gt;Stack&amp;lt;E&amp;gt;&lt;/code&gt; &amp;amp; &lt;code&gt;Queue&amp;lt;E&amp;gt;&lt;/code&gt;(interface)
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;LinkedList&lt;/code&gt;: top at the head: &lt;code&gt;O(1)&lt;/code&gt; (pop), top at the tail: &lt;code&gt;O(N)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$ Negative \ Modulo: -6 = (8 - 6) \equiv 2 \pmod{8}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;binary-search-tree&#34;&gt;&lt;code&gt;Binary Search Tree&lt;/code&gt;&lt;/h3&gt;
-&lt;h4 id=&#34;recursive-base-case-first--recursive-call&#34;&gt;Recursive: base case first + recursive call&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;binary-search-tree&#34;&gt;
+    &lt;a href=&#34;#binary-search-tree&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    &lt;code&gt;Binary Search Tree&lt;/code&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;recursive-base-case-first--recursive-call&#34;&gt;
+    &lt;a href=&#34;#recursive-base-case-first--recursive-call&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Recursive: base case first + recursive call
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Memory: stack frame + 1&lt;/p&gt;
 &lt;ul&gt;
@@ -318,8 +356,10 @@ $$&lt;/p&gt;
 &lt;p&gt;Backtracking &amp;amp; Storing without repeated calls&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;searching-and-sorting&#34;&gt;Searching and Sorting&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;searching-and-sorting&#34;&gt;
+    &lt;a href=&#34;#searching-and-sorting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Searching and Sorting
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Binary Search&lt;/p&gt;
 &lt;ul&gt;
@@ -336,8 +376,10 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;tree&#34;&gt;Tree&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;tree&#34;&gt;
+    &lt;a href=&#34;#tree&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Tree
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Names and Definitions&lt;/p&gt;
 &lt;ul&gt;
@@ -406,14 +448,56 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;graph&#34;&gt;Graph&lt;/h4&gt;
-&lt;ul&gt;
+&lt;h4 id=&#34;graph&#34;&gt;
+    &lt;a href=&#34;#graph&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Graph
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Nodes, Edges&lt;/li&gt;
 &lt;li&gt;Path, length, cycle, adjacent&lt;/li&gt;
 &lt;li&gt;Graph with no cycle - tree&lt;/li&gt;
 &lt;li&gt;Directed graph&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+        </item>
+        <item>
+        <title>Algorithm Basic - 04 Sort</title>
+        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-04/</link>
+        <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-04/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Algorithm Basic - 03 Greedy</title>
+        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-03/</link>
+        <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-03/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Algorithm Basic - 02 Time &amp; Space</title>
+        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-02/</link>
+        <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-02/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Algorithm Basic - 01 Recursion &amp; Enumeration</title>
+        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-01/</link>
+        <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-01/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Algorithm Basic - 00 How to Analyze a question?</title>
+        <link>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-00/</link>
+        <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/01-00/</guid>
+        <description></description>
         </item>
         
     </channel>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Paper Writing on zayn_lie&#39;s studio</title>
+        <link>https://zayn7lie.ber7.org/tags/paper-writing/</link>
+        <description>Recent content in Paper Writing on zayn_lie&#39;s studio</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/paper-writing/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to write LaTeX the correct way?</title>
+        <link>https://zayn7lie.ber7.org/posts/misc/latex/</link>
+        <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/misc/latex/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Note. The following $\LaTeX$ code would be present in the way: &lt;code&gt;$some_LaTeX_codes$&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;why-why-we-should-write-latex-in-the-formal-way&#34;&gt;
+    &lt;a href=&#34;#why-why-we-should-write-latex-in-the-formal-way&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHY: Why we should write $\LaTeX$ in the formal way?
+&lt;/h2&gt;&lt;p&gt;After getting deeper into $\LaTeX$ and paper writing, sometime I find there are numerous ways to present formula, like slash in &lt;code&gt;$cos\theta$&lt;/code&gt;: $cos\theta$ or &lt;code&gt;$\cos\theta$&lt;/code&gt;: $\cos\theta$, and &lt;code&gt;$\R$&lt;/code&gt; in Mathjax: $\R$ or &lt;code&gt;$\mathbb{R}$&lt;/code&gt; in $\LaTeX$: $\mathbb{R}$.&lt;/p&gt;
+&lt;p&gt;There are several problems exist for informal $\LaTeX$ writing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The informal usage between $normal \ font$ (&lt;code&gt;$normal \ font$&lt;/code&gt; or &lt;code&gt;$\mathnormal{normal \ font}$&lt;/code&gt;), $\mathrm{removed \ font}$ (&lt;code&gt;$\mathrm{removed \ font}$&lt;/code&gt;), and $\text{text}$ (&lt;code&gt;$\text{text}$&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Too specific grammars only for single modified or embedded $\LaTeX$ compiler like Mathjax (especially in markdown writing like my blog), like real number sets in $\LaTeX$ $\mathbb{R}$ (&lt;code&gt;$\mathbb{R}$&lt;/code&gt;) or specific grammar in Mathjax $\R$ (&lt;code&gt;$\R$&lt;/code&gt;), and right arrow in $\LaTeX$ $\Rightarrow$ (&lt;code&gt;$\Rightarrow$&lt;/code&gt;) or specific grammar in Mathjax $\rArr$ (&lt;code&gt;$\rArr$&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;The informal but widely accepted or old notation like integral $\int f , \mathrm{d}x$ (&lt;code&gt;$\int f \, \mathrm{d}x$&lt;/code&gt;) or $\int f dx$ (&lt;code&gt;$\int f dx$&lt;/code&gt;), and vector presentation $\mathbf{v}$ (&lt;code&gt;$\mathbf{v}$&lt;/code&gt;) or $\vec{v}$ (&lt;code&gt;\vec{v}&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Others problems are going to be added&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are flows causing by these problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Misunderstanding, revision needed from editors, even the rejection from the journal.&lt;/li&gt;
+&lt;li&gt;Too familiar with a modified $\LaTeX$ compiler to write the correct and accepted grammar in original $\LaTeX$ compiler, greatly decreasing the efficiency in paper writing.&lt;/li&gt;
+&lt;li&gt;Lower readers efficiency while reading your papers transferring between different idea.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-what&#34;&gt;
+    &lt;a href=&#34;#what-what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    WHAT: What
+&lt;/h2&gt;&lt;h2 id=&#34;how-how&#34;&gt;
+    &lt;a href=&#34;#how-how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    HOW: How
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

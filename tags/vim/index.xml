@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Vim on zayn_lie&#39;s studio</title>
+        <link>https://zayn7lie.ber7.org/tags/vim/</link>
+        <description>Recent content in Vim on zayn_lie&#39;s studio</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 09 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/vim/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Vim</title>
+        <link>https://zayn7lie.ber7.org/posts/linux/vim/</link>
+        <pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/linux/vim/</guid>
+        <description>&lt;h2 id=&#34;basic-usage&#34;&gt;
+    &lt;a href=&#34;#basic-usage&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Basic Usage
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Navigation - &lt;code&gt;hjkl&lt;/code&gt; (looking at keyboard that four keys are basic keys together for right hand)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;h&lt;/code&gt; - left; &lt;code&gt;j&lt;/code&gt; - down; &lt;code&gt;k&lt;/code&gt; - up; &lt;code&gt;l&lt;/code&gt; - right&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Line Editing - &lt;code&gt;IiaA&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;I&lt;/code&gt; - insert &lt;code&gt;I&lt;/code&gt;n front of line&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i&lt;/code&gt; - insert &lt;code&gt;i&lt;/code&gt;n front of cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a&lt;/code&gt; - insert &lt;code&gt;a&lt;/code&gt;fter cursor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A&lt;/code&gt; - insert &lt;code&gt;A&lt;/code&gt;fter line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Del &amp;amp; Replace - &lt;code&gt;xr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Copy &amp;amp; Paste:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;+y&lt;/code&gt;: yank(copy)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;+c&lt;/code&gt;: cut&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt;: paste&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;integrate-nvim-as-ide&#34;&gt;
+    &lt;a href=&#34;#integrate-nvim-as-ide&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+    Integrate Nvim as IDE
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;NvChad&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
