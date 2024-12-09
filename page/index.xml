@@ -17,14 +17,28 @@
 &lt;/h2&gt;&lt;p&gt;My preferred name &lt;code&gt;Zayn&lt;/code&gt; comes from the seventh Hebrew letter, concerning pronunciation and my interest in &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Set_theory&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Set Theory&lt;/a&gt;, in which &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Aleph_number&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Aleph&lt;/code&gt; number $\aleph$&lt;/a&gt; is the first Hebrew letter and &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Beth_number&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;Beth&lt;/code&gt; number $\beth$&lt;/a&gt; is the second.&lt;/p&gt;
+    &gt;&lt;code&gt;Beth&lt;/code&gt; number $\beth$&lt;/a&gt; is the second; and the seven as &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Set-theoretic_definition_of_natural_numbers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;an natural number&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;$$\begin{align*}
+{&amp;amp;\emptyset, \
+&amp;amp;{\emptyset}, \
+&amp;amp;{\emptyset, {\emptyset}}, \
+&amp;amp;{\emptyset, {\emptyset}, {\emptyset, {\emptyset}}}, \
+&amp;amp;{\emptyset, {\emptyset}, {\emptyset, {\emptyset}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}}}, \
+&amp;amp;{\emptyset, {\emptyset}, {\emptyset, {\emptyset}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}}}}, \
+&amp;amp;{\emptyset, {\emptyset}, {\emptyset, {\emptyset}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}, {\emptyset, {\emptyset}, {\emptyset, {\emptyset}}}}}} \
+}
+\end{align*}
+$$&lt;/p&gt;
+&lt;p&gt;is &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Interesting_number_paradox&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;an interesting number&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;My research interests are swifting with my understanding of math. In the high school, I was interested in the algorithms of computer science and starting to do some research of machine learning. But the black box of it disappointed me, then I was trying to think and unearth every unclear knowledge especially in math and cs. That lead me to read &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Gödel&amp;rsquo;s incompleteness theorems&lt;/a&gt;, which fund the basis of my interests in Set Theory.&lt;/p&gt;
 &lt;p&gt;Currently, my research interests could be divided into three main parts:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Pure Analysis, Abstract Algebra, and Topology&lt;/li&gt;
-&lt;li&gt;Set Theory, Computability and Completeness, and Logic with Axioms&lt;/li&gt;
 &lt;li&gt;Theoretical Computer Science, Formal Method and Verification&lt;/li&gt;
+&lt;li&gt;Set Theory, Computability and Completeness, and Logic with Axioms&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;account-profile&#34;&gt;
     &lt;a href=&#34;#account-profile&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
