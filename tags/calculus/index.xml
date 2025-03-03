@@ -6,7 +6,36 @@
         <description>Recent content in Calculus on zayn_lie&#39;s studio</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 02 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/tags/calculus/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to understand the Chain Rule and its proof?</title>
+        <link>https://zayn7lie.ber7.org/posts/math/chain_rule/</link>
+        <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://zayn7lie.ber7.org/posts/math/chain_rule/</guid>
+        <description>&lt;h2 id=&#34;why-why&#34;&gt;WHY: Why
+&lt;/h2&gt;&lt;p&gt;Ref. &lt;code&gt;Cal-2&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-whathow-how-to-understand&#34;&gt;WHAT: What/HOW: How to understand?
+&lt;/h2&gt;&lt;p&gt;First and foremost, I do not like people analyzing derivatives using notion $\frac{\mathrm{d}y}{\mathrm{d}x}$, but $y&amp;rsquo;$ since I would like to identify $\frac{\Delta{y}}{\mathrm{d}x}$:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\mathrm{d}y}{\mathrm{d}x} = y&amp;rsquo;, \frac{\Delta{y}}{\mathrm{d}x} = y&amp;rsquo; + \epsilon(\mathrm{d}x) \Rightarrow \Delta{y} = y&amp;rsquo;\mathrm{d}x + \epsilon(\mathrm{d}x)\mathrm{d}x
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why can I break down $\frac{\Delta{y}}{\mathrm{d}x}$? It is because I specify $\mathrm{d}x$ to be the thing to be limited and the error of $\Delta{y}$. Notice that it is $\Delta{y}$ but NOT $\mathrm{d}y$. I will later specify what $\mathrm{d}y$ is.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Since $\epsilon(\mathrm{d}x)\mathrm{d}x \ll \mathrm{d}x$ as $\mathrm{d}x \to 0$. Therefore, for simplicity without losing any formality, let $o(\mathrm{d}x) = \epsilon(\mathrm{d}x)\mathrm{d}x$, we have $\Delta{y} = y&amp;rsquo;\mathrm{d}x + o(\mathrm{d}x)$. And it is time for specifying what $\mathrm{d}y$ is. After cancelling the error, $\mathrm{d}y$ reveals: $\mathrm{d}y = y&amp;rsquo;\mathrm{d}x = \Delta{y} - o(\mathrm{d}x)$.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s proof $\frac{\Delta{y}}{\mathrm{d}t} \cdot \frac{\Delta{t}}{\mathrm{d}x} = \frac{\Delta{y}}{\mathrm{d}x}$:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align*}
+\Delta{t} = t&amp;rsquo;\mathrm{d}x + o(\mathrm{d}t) &amp;amp; \Rightarrow \mathrm{d}t = t&amp;rsquo;\mathrm{d}x = \Delta{t} - o(\mathrm{d}t)\
+\Delta{y} &amp;amp; = y&amp;rsquo;\mathrm{d}t + o(\mathrm{d}t) \
+[&amp;amp; = y&amp;rsquo;(\Delta{t} - o(\mathrm{d}t)) + o(\Delta{t} - o(\mathrm{d}t))] \
+[&amp;amp; = y&amp;rsquo;(t&amp;rsquo;\mathrm{d}x + o(\mathrm{d}t) - o(\mathrm{d}t)) + o(t&amp;rsquo;\mathrm{d}x + o(\mathrm{d}t) - o(\mathrm{d}t))] \
+&amp;amp; = y&amp;rsquo;t&amp;rsquo;\mathrm{d}x + o(t&amp;rsquo;\mathrm{d}x)
+\end{align*}
+$$&lt;/p&gt;
+&lt;p&gt;The equation with [blanket] is for understanding what going on. The key is to understand how $\mathrm{d}t$ turn to $\Delta{t}$.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Calculus: Vectors</title>
         <link>https://zayn7lie.ber7.org/posts/math/cal-vec/</link>
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
