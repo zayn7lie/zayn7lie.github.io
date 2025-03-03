@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.\n# WHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.\nPlaying Minecraft with my friends when not under LAN.\n# WHAT AWS Introduction\nSSH Intro\n# HOW * means Optional Operation\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.\nWHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.\nPlaying Minecraft with my friends when not under LAN.\nWHAT AWS Introduction\nSSH Intro\nHOW * means Optional Operation\n">
 <title>How to Create a Game (Minecraft/Terraria) Server with AWS</title>
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/ettm/server/'>
 
-<link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="How to Create a Game (Minecraft/Terraria) Server with AWS">
-<meta property='og:description' content=" This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.\n# WHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.\nPlaying Minecraft with my friends when not under LAN.\n# WHAT AWS Introduction\nSSH Intro\n# HOW * means Optional Operation\n">
+<link rel="stylesheet" href="/scss/style.min.25aedd98495ce72cb7610061ca17ba5fa219cfcb01c6f102043d6cbfb7ca82b2.css"><meta property='og:title' content="How to Create a Game (Minecraft/Terraria) Server with AWS">
+<meta property='og:description' content=" This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.\nWHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.\nPlaying Minecraft with my friends when not under LAN.\nWHAT AWS Introduction\nSSH Intro\nHOW * means Optional Operation\n">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/ettm/server/'>
 <meta property='og:site_name' content='zayn_lie&#39;s studio'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Minecraft' /><meta property='article:tag' content='AWS' /><meta property='article:tag' content='Server' /><meta property='article:published_time' content='2023-10-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-04T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="How to Create a Game (Minecraft/Terraria) Server with AWS">
-<meta name="twitter:description" content=" This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.\n# WHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.\nPlaying Minecraft with my friends when not under LAN.\n# WHAT AWS Introduction\nSSH Intro\n# HOW * means Optional Operation\n">
+<meta name="twitter:description" content=" This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.\nWHY Learning something about AWS, SSH remote connection (ip, port, domain), and java usage.\nPlaying Minecraft with my friends when not under LAN.\nWHAT AWS Introduction\nSSH Intro\nHOW * means Optional Operation\n">
     <link rel="shortcut icon" href="/favicon.png" />
 
 
@@ -397,26 +397,18 @@
     
     <blockquote>
 <p>This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.</p></blockquote>
-<h2 id="why">
-    <a href="#why" class="header-anchor">#</a>
-    WHY
+<h2 id="why">WHY
 </h2><p>Learning something about <code>AWS</code>, <code>SSH</code> remote connection (<code>ip</code>, <code>port</code>, <code>domain</code>), and <code>java</code> usage.</p>
 <p>Playing Minecraft with my friends when not under <code>LAN</code>.</p>
-<h2 id="what">
-    <a href="#what" class="header-anchor">#</a>
-    WHAT
+<h2 id="what">WHAT
 </h2><p><a class="link" href="https://aws.amazon.com/what-is-aws/"  target="_blank" rel="noopener"
     >AWS Introduction</a></p>
 <p><a class="link" href="https://wiki.archlinux.org/title/Secure_Shell"  target="_blank" rel="noopener"
     ><code>SSH</code> Intro</a></p>
-<h2 id="how">
-    <a href="#how" class="header-anchor">#</a>
-    HOW
+<h2 id="how">HOW
 </h2><blockquote>
 <p><code>*</code> means Optional Operation</p></blockquote>
-<h3 id="1-create-an-aws-ec2-instance">
-    <a href="#1-create-an-aws-ec2-instance" class="header-anchor">#</a>
-    1. Create an AWS EC2 Instance
+<h3 id="1-create-an-aws-ec2-instance">1. Create an AWS EC2 Instance
 </h3><blockquote>
 <p>Note. There is a free x86_64 CPU &ldquo;<code>Free tier: In your first year includes 750 hours of t2.micro (or t3.micro in the Regions in which t2.micro is unavailable) instance usage on free tier AMIs per month, 30 GiB of EBS storage, 2 million IOs, 1 GB of snapshots, and 100 GB of bandwidth to the internet.</code>&rdquo; for new user, but it is not very good for running Minecraft Server. But if you want to use it, you could follow the tutor, but you need to change the <code>Architecture</code> to <code>64-bit (x86)</code> in <code>Application and OS Images (Amazon Machine Image)</code> and choose <code>t2.micro</code> in <code>Instance type</code></p></blockquote>
 <ol>
@@ -470,9 +462,7 @@
 </ol>
 </li>
 </ol>
-<h3 id="2-connect-linux-to-the-instance-with-ssh">
-    <a href="#2-connect-linux-to-the-instance-with-ssh" class="header-anchor">#</a>
-    2. Connect Linux to the Instance with SSH
+<h3 id="2-connect-linux-to-the-instance-with-ssh">2. Connect Linux to the Instance with SSH
 </h3><ol>
 <li>Turn back to <code>instances</code>, select the <code>instance id</code> you just created</li>
 <li>Then you open a new panel which lists all the detailed information for your instance. If the instance is not open, select <code>Instance state</code> - <code>Start Instance</code> to start it.</li>
@@ -480,9 +470,7 @@
 <li>Use <code>OpenSSH</code> command <code>$ ssh -i PATH_TO_PEM.pem ec2-user@IPv4</code> to connect to your instance.</li>
 <li>*Before step 2.4, you might already have Minecraft Server file, you could transfer your file through <code>$ scp -i PATH_TO_PEM.pem -r SOURCE_FILE_OR_FOLDER ec2-user@IPv4:PATH_YOU_WANT_TO_STORE</code></li>
 </ol>
-<h3 id="3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance">
-    <a href="#3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance" class="header-anchor">#</a>
-    3. Install Java &amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)
+<h3 id="3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance">3. Install Java &amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)
 </h3><ol>
 <li>
 <p>Install <code>Java 8</code>: <code>$ sudo yum install java-1.8.0</code></p>
@@ -505,9 +493,7 @@
     ><code>EULA</code></a>: 1. Open <code>eula.txt</code>: <code>$ vim eula.txt</code>, 2. Change <code>eula=false</code> to <code>eula=true</code> to indicate acceptance of the <code>EULA</code></p>
 </li>
 </ol>
-<h3 id="4-launch-the-server--commands">
-    <a href="#4-launch-the-server--commands" class="header-anchor">#</a>
-    4. Launch the Server &amp; Commands
+<h3 id="4-launch-the-server--commands">4. Launch the Server &amp; Commands
 </h3><ul>
 <li>Launch Pure or Forge version <code>$ java -Xmx1536M -Xms512M -jar SERVER_NAME.jar --nogui</code>
 <ul>
@@ -527,9 +513,7 @@
 </span></span></code></pre></div><ul>
 <li>Stop the Server: <code>/stop</code></li>
 </ul>
-<h3 id="5-adding-mods-and-worlds">
-    <a href="#5-adding-mods-and-worlds" class="header-anchor">#</a>
-    5*. Adding mods and worlds
+<h3 id="5-adding-mods-and-worlds">5*. Adding mods and worlds
 </h3><ul>
 <li>Before the second launch, create a new folder <code>world</code> or <code>mod</code> then put the data into the folder</li>
 </ul>
@@ -582,7 +566,8 @@
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.body, {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -592,6 +577,7 @@
             ignoredClasses: ["gist"]
         });})
 </script>
+
     
 </article>
 
@@ -696,7 +682,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -785,7 +771,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/linux/vscode/'>
 
-<link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="VSCode All in One">
+<link rel="stylesheet" href="/scss/style.min.25aedd98495ce72cb7610061ca17ba5fa219cfcb01c6f102043d6cbfb7ca82b2.css"><meta property='og:title' content="VSCode All in One">
 <meta property='og:description' content="Using vscode as complier, editor, writer">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/linux/vscode/'>
 <meta property='og:site_name' content='zayn_lie&#39;s studio'>
@@ -392,9 +392,7 @@
 
     
     
-    <h2 id="installation">
-    <a href="#installation" class="header-anchor">#</a>
-    Installation
+    <h2 id="installation">Installation
 </h2><p>Code: <code>code</code></p>
 <p>GitHub Login: install <code>gnome-keyring</code>, <code>Ctrl+Shift+P</code>: <code>Preferences: Configure Runtime Arguments</code>: <code>&quot;password-store&quot;:&quot;gnome&quot;</code> or <code>/usr/share/applications/code-oss.desktop</code>: <code>Exec=/usr/bin/code-oss --unity-launch --password-store=&quot;gnome&quot; %F</code></p>
 <p>Word Count: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=kirozen.wordcounter"  target="_blank" rel="noopener"
@@ -402,9 +400,7 @@
 <p>Vim: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim"  target="_blank" rel="noopener"
     ><code>Vim</code>OOS</a></p>
 <p>Disable auto reveal: <code>explorer.autoReveal = False</code></p>
-<h2 id="latex">
-    <a href="#latex" class="header-anchor">#</a>
-    Latex
+<h2 id="latex">Latex
 </h2><p><a class="link" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"  target="_blank" rel="noopener"
     ><code>LaTeX Workshop</code>OOS</a></p>
 <ul>
@@ -420,9 +416,7 @@
     ><code>vscode-pandoc</code>OOS</a></p>
 </li>
 </ul>
-<h2 id="c">
-    <a href="#c" class="header-anchor">#</a>
-    C++
+<h2 id="c">C++
 </h2><ol>
 <li>
 <p>Install debug tool <code>gdb</code>: <code>$ sudo pacman -S gdb</code></p>
@@ -441,9 +435,7 @@
 <p><code>Terminal</code> -&gt; <code>Config Default Build Task...</code> -&gt; <code>C/C++: g++ build active file</code>; then turn back to <code>test.cpp</code>, click the <code>gear</code> icon: <code>&quot;C/C++: g++ build and debug active file&quot;</code></p>
 </li>
 </ol>
-<h2 id="misc">
-    <a href="#misc" class="header-anchor">#</a>
-    Misc
+<h2 id="misc">Misc
 </h2><ul>
 <li>Excalidraw</li>
 <li>SSH: <a class="link" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh"  target="_blank" rel="noopener"
@@ -502,7 +494,8 @@
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.body, {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -512,6 +505,7 @@
             ignoredClasses: ["gist"]
         });})
 </script>
+
     
 </article>
 
@@ -616,7 +610,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -705,7 +699,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

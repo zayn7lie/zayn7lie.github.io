@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" Note. This guide is written under Arch Linux\n# Android Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\n# Emulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" Note. This guide is written under Arch Linux\nAndroid Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\nEmulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
 <title>How to play Arknights on Linux, using MAA and key mapping</title>
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/ettm/arknights/'>
 
-<link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="How to play Arknights on Linux, using MAA and key mapping">
-<meta property='og:description' content=" Note. This guide is written under Arch Linux\n# Android Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\n# Emulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
+<link rel="stylesheet" href="/scss/style.min.25aedd98495ce72cb7610061ca17ba5fa219cfcb01c6f102043d6cbfb7ca82b2.css"><meta property='og:title' content="How to play Arknights on Linux, using MAA and key mapping">
+<meta property='og:description' content=" Note. This guide is written under Arch Linux\nAndroid Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\nEmulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/ettm/arknights/'>
 <meta property='og:site_name' content='zayn_lie&#39;s studio'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Misc' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Arknights' /><meta property='article:published_time' content='2023-08-06T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-08-06T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="How to play Arknights on Linux, using MAA and key mapping">
-<meta name="twitter:description" content=" Note. This guide is written under Arch Linux\n# Android Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\n# Emulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
+<meta name="twitter:description" content=" Note. This guide is written under Arch Linux\nAndroid Emulator or Container? Emulator Pros: Safety from good separation with system, cross-platform, user-friendly. Cons: High system resource usage, easily stuck. Container Pros: Good mosaic with system, less resource usage, running fluently. Cons: Complex dependents, more bugs, fewer options Have a clear mind about the needs and choose one option for running Arknights.\nEmulator Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.\n">
     <link rel="shortcut icon" href="/favicon.png" />
 
 
@@ -401,9 +401,7 @@
     
     <blockquote>
 <p>Note. This guide is written under Arch Linux</p></blockquote>
-<h2 id="android-emulator-or-container">
-    <a href="#android-emulator-or-container" class="header-anchor">#</a>
-    Android Emulator or Container?
+<h2 id="android-emulator-or-container">Android Emulator or Container?
 </h2><ul>
 <li>Emulator
 <ul>
@@ -419,30 +417,22 @@
 </li>
 </ul>
 <p>Have a clear mind about the needs and choose one option for running Arknights.</p>
-<h3 id="emulator">
-    <a href="#emulator" class="header-anchor">#</a>
-    Emulator
+<h3 id="emulator">Emulator
 </h3><blockquote>
 <p>Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.</p></blockquote>
-<h4 id="avd">
-    <a href="#avd" class="header-anchor">#</a>
-    <a class="link" href="https://developer.android.com/studio"  target="_blank" rel="noopener"
+<h4 id="avd"><a class="link" href="https://developer.android.com/studio"  target="_blank" rel="noopener"
     ><code>AVD</code> (<code>Android Virtual Device</code>, the project under <code>Android Studio</code>)</a>
 </h4><p>AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.</p>
 <p>Download and Install <a class="link" href="https://developer.android.com/studio"  target="_blank" rel="noopener"
     ><code>Android Studio</code></a> (<code>$ yay -S android-studio</code> in Arch Linux), <code>More Actions</code> &gt; <code>Virtual Device Manager</code>, <code>Create device</code>, and then you could modify emulator by yourself. Android 11 with 16:9 resolution is recommended for <code>MAA</code>.</p>
-<h4 id="genymotion">
-    <a href="#genymotion" class="header-anchor">#</a>
-    <a class="link" href="https://www.genymotion.com/download/"  target="_blank" rel="noopener"
+<h4 id="genymotion"><a class="link" href="https://www.genymotion.com/download/"  target="_blank" rel="noopener"
     ><code>Genymotion</code></a>
 </h4><blockquote>
 <p>Note. Arknights of Bilibili version always break while using <code>Genymotion</code>, you could have a try in your device.</p></blockquote>
 <p><a class="link" href="https://www.genymotion.com/download/"  target="_blank" rel="noopener"
     ><code>Genymotion</code> offers AppImage (Installer) version</a> that can run directly.</p>
 <p><code>Genymotion</code> is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)</p>
-<h3 id="container">
-    <a href="#container" class="header-anchor">#</a>
-    Container
+<h3 id="container">Container
 </h3><p><code>Waydroid</code> is highly recommended. It is not recommended to use container while using WM that is not run on <code>Wayland</code>. After fixing several bugs of <code>Anbox</code>, I found that numerous API have changed. And Xdroid is too buggy.</p>
 <ul>
 <li>
@@ -461,9 +451,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="arknights-installation">
-    <a href="#arknights-installation" class="header-anchor">#</a>
-    Arknights Installation
+<h3 id="arknights-installation">Arknights Installation
 </h3><p>Although most emulators and containers are able to install directly through dragging <code>.apk</code> to UI, we could also install it using <code>adb</code> which is required by <code>MAA</code>:</p>
 <ul>
 <li><code>adb</code> installation
@@ -478,29 +466,19 @@
 </ul>
 </li>
 </ul>
-<h2 id="key-mapping">
-    <a href="#key-mapping" class="header-anchor">#</a>
-    Key Mapping
+<h2 id="key-mapping">Key Mapping
 </h2><p>The logic of pause deployment is that click back 🔙 will change the statue of Pause or Unpause. Thus, after dragging out operator, we pass the pause command then we could deploy while game is pause.</p>
-<h3 id="keymapper-android-app">
-    <a href="#keymapper-android-app" class="header-anchor">#</a>
-    <a class="link" href="https://github.com/keymapperorg/KeyMapper/releases"  target="_blank" rel="noopener"
+<h3 id="keymapper-android-app"><a class="link" href="https://github.com/keymapperorg/KeyMapper/releases"  target="_blank" rel="noopener"
     >KeyMapper Android App</a>
 </h3><p>After concerning a lot about how to achieve key mapping on PC, why don&rsquo;t we try to do this on our Android? There are a huge bunch of software, but KeyMapper is the most lightweight and compatible though it pauses developing.</p>
-<h3 id="qtscrcpy">
-    <a href="#qtscrcpy" class="header-anchor">#</a>
-    <a class="link" href="https://github.com/barry-ran/QtScrcpy/releases"  target="_blank" rel="noopener"
+<h3 id="qtscrcpy"><a class="link" href="https://github.com/barry-ran/QtScrcpy/releases"  target="_blank" rel="noopener"
     >QtScrcpy</a>
 </h3><p>Origins from <a class="link" href="https://github.com/Genymobile/scrcpy"  target="_blank" rel="noopener"
     ><code>scrcpy</code></a> of Genymobile, an open-source software copy screen from Android to PC. <code>QtScrcpy</code> add key mapping function from it.</p>
-<h3 id="python-script-using-apis-of-pynput">
-    <a href="#python-script-using-apis-of-pynput" class="header-anchor">#</a>
-    Python Script (Using APIs of <code>pynput</code>)
+<h3 id="python-script-using-apis-of-pynput">Python Script (Using APIs of <code>pynput</code>)
 </h3><p><a class="link" href="https://github.com/Genymobile/scrcpy/issues/712#issuecomment-536564578"  target="_blank" rel="noopener"
     >Sample</a></p>
-<h2 id="maa">
-    <a href="#maa" class="header-anchor">#</a>
-    MAA
+<h2 id="maa">MAA
 </h2><p>We have described in <a class="link" href="https://maa.plus/docs/en-us/1.5-EMULATOR_SUPPORTS_FOR_LINUX.html"  target="_blank" rel="noopener"
     >this link</a> clearly. If you want to add something you could make comment or PR directly.</p>
 
@@ -550,7 +528,8 @@
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.body, {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -560,6 +539,7 @@
             ignoredClasses: ["gist"]
         });})
 </script>
+
     
 </article>
 
@@ -651,7 +631,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -740,7 +720,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

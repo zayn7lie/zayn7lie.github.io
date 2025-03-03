@@ -12,20 +12,14 @@
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-vec/</guid>
-        <description>&lt;h2 id=&#34;why-from-scalar-to-vector&#34;&gt;
-    &lt;a href=&#34;#why-from-scalar-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: From scalar to vector
-&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-know-about-vectors&#34;&gt;
-    &lt;a href=&#34;#why-why-we-should-know-about-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why we should know about vectors?
+        <description>&lt;h2 id=&#34;why-from-scalar-to-vector&#34;&gt;WHY: From scalar to vector
+&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-know-about-vectors&#34;&gt;WHY: Why we should know about vectors?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;A tool used to express objects in higher dimensions.&lt;/li&gt;
 &lt;li&gt;A thing that contains more information: magnitude and direction&lt;/li&gt;
 &lt;li&gt;A sequence of numbers (objects) in order used for more generalized analysis.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-what-is-the-vector&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the vector?
+&lt;h3 id=&#34;what-what-is-the-vector&#34;&gt;WHAT: What is the vector?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Vector addition / subtraction: $\vec{v} + \vec{u} = \vec{u} + \vec{v} = \sum_D (v_i + u_i)\hat{D_i} = (v_x + u_x)\hat{i} + (v_y + u_y)\hat{j} + \ldots = \langle v_x + u_x, v_y + u_y, \ldots \rangle$ ($-\vec{u} = \langle -u_x, -u_y, \ldots \rangle$); $(\vec{v}_1 + \vec{v}_2) + \vec{v}_3 = \vec{v}_1 + (\vec{v}_2 + \vec{v}_3)$&lt;/li&gt;
 &lt;li&gt;Vector multiplication
@@ -59,9 +53,7 @@ w_x &amp;amp; w_y &amp;amp; w_z
 &lt;/li&gt;
 &lt;li&gt;Vector unitization: $\displaystyle \vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-why-should-we-apply-calculus-to-vectors&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-apply-calculus-to-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we apply calculus to vectors?
+&lt;h3 id=&#34;why-why-should-we-apply-calculus-to-vectors&#34;&gt;WHY: Why should we apply calculus to vectors?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;More applicable in the real world, like the 3D real world, linear algebra, etc.&lt;/p&gt;
@@ -70,39 +62,27 @@ w_x &amp;amp; w_y &amp;amp; w_z
 &lt;p&gt;Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-scalar-field&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the scalar field?
+&lt;h2 id=&#34;what-what-is-the-scalar-field&#34;&gt;WHAT: What is the scalar field?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;$f(x_1, x_2, x_3, \ldots)$&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;example-of-scalar-fields&#34;&gt;
-    &lt;a href=&#34;#example-of-scalar-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Example of scalar fields
+&lt;h3 id=&#34;example-of-scalar-fields&#34;&gt;Example of scalar fields
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;The height of a mountain: $h = f(x, y)$&lt;/li&gt;
 &lt;li&gt;The temperature inside a room: $T = f(x, y, z)$&lt;/li&gt;
 &lt;li&gt;The &lt;em&gt;&lt;strong&gt;density&lt;/strong&gt;&lt;/em&gt; of objects/water surface/air: $\rho = f(x_1, x_2, \ldots)$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field&#34;&gt;
-    &lt;a href=&#34;#how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to express objects (curves, surfaces, etc.) in a scalar field?
+&lt;h3 id=&#34;how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field&#34;&gt;HOW: How to express objects (curves, surfaces, etc.) in a scalar field?
 &lt;/h3&gt;&lt;p&gt;$f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\displaystyle\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;eg-from-x-y-z-coordinates-to-vectors&#34;&gt;
-    &lt;a href=&#34;#eg-from-x-y-z-coordinates-to-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    E.g. from X-Y-Z coordinates to vectors
-&lt;/h3&gt;&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-use-x-y-z-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we use X-Y-Z coordinate
+&lt;h3 id=&#34;eg-from-x-y-z-coordinates-to-vectors&#34;&gt;E.g. from X-Y-Z coordinates to vectors
+&lt;/h3&gt;&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;WHY: Why should we use X-Y-Z coordinate
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;It is the generalization of the X-Y coordinate that is easy to learn and understand&lt;/li&gt;
 &lt;li&gt;It is more visualizable using some graphic software or even drawn by hand&lt;/li&gt;
 &lt;li&gt;The process of the generalization from X-Y to X-Y-Z is the same as the generalization from X-Y-Z to higher dimensions. In the higher dimensions, the meaning of &lt;em&gt;vector&lt;/em&gt; is generalized to just a set of points: $\vec{v} = (x_1, x_2, \ldots)$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;what-what-are-points-lines-and-planes-in-the-coordinate&#34;&gt;
-    &lt;a href=&#34;#what-what-are-points-lines-and-planes-in-the-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What are points, lines, and planes in the coordinate
+&lt;h4 id=&#34;what-what-are-points-lines-and-planes-in-the-coordinate&#34;&gt;WHAT: What are points, lines, and planes in the coordinate
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Points/Vectors(3 variables - 3 constraints = 0 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$
 E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$&lt;/li&gt;
@@ -125,9 +105,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;how-how-to-present-in-the-coordinate---parametrized-objects&#34;&gt;
-    &lt;a href=&#34;#how-how-to-present-in-the-coordinate---parametrized-objects&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to present in the coordinate - Parametrized Objects
+&lt;h4 id=&#34;how-how-to-present-in-the-coordinate---parametrized-objects&#34;&gt;HOW: How to present in the coordinate - Parametrized Objects
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Points/Vectors: $\vec{p} = \vec{r}_0$&lt;/p&gt;
@@ -147,9 +125,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-visualize-vectors-in-dimensions&#34;&gt;
-    &lt;a href=&#34;#how-how-to-visualize-vectors-in-dimensions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to visualize vectors in dimensions?
+&lt;h3 id=&#34;how-how-to-visualize-vectors-in-dimensions&#34;&gt;HOW: How to visualize vectors in dimensions?
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
@@ -160,12 +136,8 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &amp;hellip;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how-how-to-do-calculus-in-a-scalar-field&#34;&gt;
-    &lt;a href=&#34;#how-how-to-do-calculus-in-a-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to do calculus in a scalar field?
-&lt;/h2&gt;&lt;h3 id=&#34;single-derivatives&#34;&gt;
-    &lt;a href=&#34;#single-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Single derivatives
+&lt;h2 id=&#34;how-how-to-do-calculus-in-a-scalar-field&#34;&gt;HOW: How to do calculus in a scalar field?
+&lt;/h2&gt;&lt;h3 id=&#34;single-derivatives&#34;&gt;Single derivatives
 &lt;/h3&gt;&lt;p&gt;$\vec{r}(t) = \langle F(t), G(t), H(t) \rangle = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k}$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Derivative: $\vec{v}(t) = \vec{r}&amp;rsquo;(t) = \langle F&amp;rsquo;(t), G&amp;rsquo;(t), H&amp;rsquo;(t) \rangle = F&amp;rsquo;(t)\hat{i} + G&amp;rsquo;(t)\hat{j} + H&amp;rsquo;(t)\hat{k}$
@@ -188,9 +160,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-space&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-to-space&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply to space?
+&lt;h4 id=&#34;how-how-to-apply-to-space&#34;&gt;HOW: How to apply to space?
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Tangent vector to a space curve: $\hat{T} = \vec{r}&amp;rsquo;/|\vec{r}&amp;rsquo;|$&lt;/li&gt;
 &lt;li&gt;Normal vector to a tangent vector: $\hat{N} = \hat{T}&amp;rsquo;/|\hat{T}&amp;rsquo;| = \hat{T}&amp;rsquo;/|\kappa \vec{r}&amp;rsquo;|$&lt;/li&gt;
@@ -202,12 +172,8 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;$\Rightarrow \vec{a} = a_T\hat{T} + a_N\hat{N}, a_T = v&amp;rsquo; = \frac{|\vec{r}&amp;rsquo; \cdot \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}, a_N = \kappa v^2 = \frac{|\vec{r}&amp;rsquo; \times \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note. How to understand $\frac{\mathrm{d}}{\mathrm{d}t} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;partial-derivatives&#34;&gt;
-    &lt;a href=&#34;#partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Partial Derivatives
-&lt;/h3&gt;&lt;h4 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
-    &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why a function could be differentiated? - Differentiability
+&lt;h3 id=&#34;partial-derivatives&#34;&gt;Partial Derivatives
+&lt;/h3&gt;&lt;h4 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Limit &amp;amp; Continuity: $\displaystyle \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L$ (no matter any directions approaching to $(a, b)$, f(x, y) is continuous at $(a, b)$ if and only if those values are the same)&lt;/p&gt;
@@ -228,9 +194,7 @@ Limit along the specific line: $y = x$&lt;/li&gt;
 &lt;p&gt;Continuity: $\lim_{(x, y) \rightarrow (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;what-what-are-partial-derivatives&#34;&gt;
-    &lt;a href=&#34;#what-what-are-partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What are Partial Derivatives
+&lt;h4 id=&#34;what-what-are-partial-derivatives&#34;&gt;WHAT: What are Partial Derivatives
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Algebra: Definition
@@ -251,9 +215,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;
-    &lt;a href=&#34;#how-how-to-do-partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to do Partial Derivatives
+&lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;*Chain Rule
 $$ (1) z = f(x, y): \frac{\mathrm{d}z}{\mathrm{d}t} = \frac{\partial f}{\partial x} \frac{\mathrm{d}x}{\mathrm{d}t} + \frac{\partial f}{\partial y} \frac{\mathrm{d}y}{\mathrm{d}t}
@@ -265,9 +227,7 @@ $$
 $$ *(3): \frac{\partial u}{\partial x_1} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial x_1} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial x_1} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial x_1} + \ldots \ \text{since $x_1, x_2, x_3, \ldots$ are independent} \Rightarrow \frac{\partial x_n}{\partial x_1} = 0, \frac{\partial x_1}{\partial x_1} = 1 \Rightarrow \frac{\partial u}{\partial x_1} = \frac{\partial u}{\partial x_1}
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-vector&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to Apply to Vector
+&lt;h4 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector
 &lt;/h4&gt;&lt;p&gt;$$ D_u{f(x, y)} = \vec\nabla{f(x, y)} \cdot \hat{u}
 $$&lt;/p&gt;
 &lt;ul&gt;
@@ -291,9 +251,7 @@ P &amp;amp; Q &amp;amp; R
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-to-finding-maximum-and-minimum&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to Apply to Finding Maximum and Minimum
+&lt;h5 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum
 &lt;/h5&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;$\displaystyle \frac{\partial f}{\partial x} = 0, \frac{\partial f}{\partial y} = 0 \Leftarrow \frac{\partial}{\partial t} = a\frac{\partial}{\partial x} + b\frac{\partial}{\partial y}, \frac{\partial f}{\partial \forall t} = 0$&lt;/p&gt;
@@ -332,16 +290,10 @@ P &amp;amp; Q &amp;amp; R
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;iterated-integrals&#34;&gt;
-    &lt;a href=&#34;#iterated-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Iterated Integrals
-&lt;/h3&gt;&lt;h4 id=&#34;what-what-is-the-double-integral&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-double-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the double integral
+&lt;h3 id=&#34;iterated-integrals&#34;&gt;Iterated Integrals
+&lt;/h3&gt;&lt;h4 id=&#34;what-what-is-the-double-integral&#34;&gt;WHAT: What is the double integral
 &lt;/h4&gt;&lt;p&gt;$\iint\limits_R{f(x, y)},\mathrm{d}A = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}$ (Double Riemann Sum, Midpoint: $x^* , y^ * \rightarrow \bar{x}, \bar{y}$)&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-switch-iterating-order&#34;&gt;
-    &lt;a href=&#34;#how-how-to-switch-iterating-order&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to switch iterating order?
+&lt;h4 id=&#34;how-how-to-switch-iterating-order&#34;&gt;HOW: How to switch iterating order?
 &lt;/h4&gt;&lt;p&gt;$$ \int\int{f(x, y)},\mathrm{d}A (A =[a, b] \times [c, d]) = \int_a^b[\int_c^df(x, y),\mathrm{d}y],\mathrm{d}x = \int_c^d[\int_a^bf(x, y),\mathrm{d}x],\mathrm{d}y
 $$&lt;/p&gt;
 &lt;p&gt;$$ \iiint f(x, y, z) ,\mathrm{d}V (V = [0, 1] \times [\sqrt{x}, 1] \times [0, 1 - y]) \
@@ -349,9 +301,7 @@ $$&lt;/p&gt;
 = \int_0^1\int_0^{1 - \sqrt{x}}\int_{\sqrt{x}}^{1 - z} f(x, y, z) ,\mathrm{d}y,\mathrm{d}z,\mathrm{d}x = \int_0^1\int_0^{(1 - z)^2}\int_{\sqrt{x}}^{1 - z} f(x, y, z) ,\mathrm{d}y,\mathrm{d}x,\mathrm{d}z \
 = \int_0^1\int_0^{1 - z}\int_0^{y^2} f(x, y, z) ,\mathrm{d}x,\mathrm{d}y,\mathrm{d}z = \int_0^1\int_0^{1 - y}\int_0^{y^2} f(x, y, z) ,\mathrm{d}x,\mathrm{d}z,\mathrm{d}y
 $$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-turn-variables-in-different-coordinates&#34;&gt;
-    &lt;a href=&#34;#how-how-to-turn-variables-in-different-coordinates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to turn variables in different coordinates?
+&lt;h4 id=&#34;how-how-to-turn-variables-in-different-coordinates&#34;&gt;HOW: How to turn variables in different coordinates?
 &lt;/h4&gt;&lt;p&gt;$$\iint_\mathbb{R} f(x, y) \partial x \partial y = \iint_\mathbb{R} f(u, v) |\frac{\partial(x, y)}{\partial(u, v)}| \partial u \partial v, |\frac{\partial(x, y)}{\partial(u, v)}| = \begin{vmatrix}
 \partial x / \partial u &amp;amp; \partial x / \partial v \
 \partial y / \partial u &amp;amp; \partial y / \partial v
@@ -361,9 +311,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$\iint f(x, y) ,\mathrm{d}x,\mathrm{d}y = \iint f(r\cos\theta, r\sin\theta) \cdot r ,\mathrm{d} r ,\mathrm{d}\theta$$&lt;/p&gt;
 &lt;p&gt;$$\iiint f(x, y, z) ,\mathrm{d}x,\mathrm{d}y,\mathrm{d}z = \iiint f(r\cos\theta, r\sin\theta, z) \cdot r ,\mathrm{d} r ,\mathrm{d}\theta ,\mathrm{d}z \
 = \iiint f(\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi) \cdot \rho^2\sin\phi ,\mathrm{d} \rho ,\mathrm{d}\theta ,\mathrm{d}\phi$$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-reality&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-to-reality&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply to reality
+&lt;h4 id=&#34;how-how-to-apply-to-reality&#34;&gt;HOW: How to apply to reality
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Volume
@@ -376,23 +324,17 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
 &lt;p&gt;$$M = \iiint\int_0^{\rho(x, y, z)} ,\mathrm{d}\rho,\mathrm{d}V = \iiint\rho(x, y, z),\mathrm{d}V$$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-vector-field&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the vector field?
+&lt;h2 id=&#34;what-what-is-the-vector-field&#34;&gt;WHAT: What is the vector field?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;example-of-vector-fields&#34;&gt;
-    &lt;a href=&#34;#example-of-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Example of vector fields
+&lt;h3 id=&#34;example-of-vector-fields&#34;&gt;Example of vector fields
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;The velocity of water/air (fluid): $\vec{v} = \mathbf{F}(x_1, x_2, x_3, \ldots)$&lt;/li&gt;
 &lt;li&gt;Gravitational field (force): $\displaystyle \vec{F} = \mathbf{F}(x_1, x_2, x_3) = \frac{GMm}{r^2}\hat{r}$ ($\hat{r}$ is a unit vector)&lt;/li&gt;
 &lt;li&gt;Electric field: $\displaystyle \vec{E} = \mathbf{F}(x_1, x_2, x_3) = k\frac{Q}{r^2}\hat{r}$&lt;/li&gt;
 &lt;li&gt;Magnitic field: $\displaystyle \vec{B} = \mathbf{F}(x_1, x_2, x_3) = \frac{\mu_0q\vec{v}\times\hat{r}}{4\pi r^2}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-what-are-vector-fields&#34;&gt;
-    &lt;a href=&#34;#what-what-are-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What are vector fields
+&lt;h3 id=&#34;what-what-are-vector-fields&#34;&gt;WHAT: What are vector fields
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$&lt;/p&gt;
@@ -401,21 +343,15 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
 &lt;p&gt;Gradient Fields: $\vec\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;conservative-vector-fields&#34;&gt;
-    &lt;a href=&#34;#conservative-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Conservative vector fields
+&lt;h4 id=&#34;conservative-vector-fields&#34;&gt;Conservative vector fields
 &lt;/h4&gt;&lt;p&gt;$$\forall C_1, C_2 = (P_1 \rightarrow P_2) \in D, \int_{C_1} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r} = \int_{C_2} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r} \Leftrightarrow \exists f, \vec\nabla{f} = \mathbf{F}$$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$D$: an &lt;strong&gt;open&lt;/strong&gt;($\forall P \in D,\exists \circ P \in D$) &lt;strong&gt;connected&lt;/strong&gt;($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a &lt;strong&gt;conservative vector field&lt;/strong&gt;; under this situation, we call $\int_{C} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r}$ is &lt;strong&gt;independent of path&lt;/strong&gt;, or &lt;em&gt;line integrals of conservative vector fields are independent of path.&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x ,\mathbf{or}, \vec\nabla \times \mathbf{F} = \mathbf{0}$$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Clairaut&amp;rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;how-how-to-do-calculus-in-vector-field&#34;&gt;
-    &lt;a href=&#34;#how-how-to-do-calculus-in-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to do calculus in vector field?
-&lt;/h2&gt;&lt;h3 id=&#34;how-how-to-integrate-along-the-line---linepathcontour-integrals&#34;&gt;
-    &lt;a href=&#34;#how-how-to-integrate-along-the-line---linepathcontour-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to integrate along the line - Line(Path/Contour) Integrals
+&lt;h2 id=&#34;how-how-to-do-calculus-in-vector-field&#34;&gt;HOW: How to do calculus in vector field?
+&lt;/h2&gt;&lt;h3 id=&#34;how-how-to-integrate-along-the-line---linepathcontour-integrals&#34;&gt;HOW: How to integrate along the line - Line(Path/Contour) Integrals
 &lt;/h3&gt;&lt;p&gt;$$\displaystyle \int_C \vec{F} \cdot ,\mathrm{d}\vec{r} = \int \vec{F}(\vec{r}(t)) \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t},\mathrm{d}t$$&lt;/p&gt;
 &lt;p&gt;$$ \int_{\mathrm{curve},C}f(x, y),\mathrm{d}s = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, \mathrm{curve}, C: s = \int_a^b\sqrt{(\frac{\mathrm{d}x}{\mathrm{d}t})^2 + (\frac{\mathrm{d}y}{\mathrm{d}t})^2}\mathrm{d}t
 $$
@@ -451,12 +387,8 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-integrate-along-the-surface---surface-integrals&#34;&gt;
-    &lt;a href=&#34;#how-how-to-integrate-along-the-surface---surface-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to integrate along the surface - Surface Integrals
-&lt;/h3&gt;&lt;h4 id=&#34;what-what-are-surfaces-and-areas&#34;&gt;
-    &lt;a href=&#34;#what-what-are-surfaces-and-areas&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What are surfaces and areas
+&lt;h3 id=&#34;how-how-to-integrate-along-the-surface---surface-integrals&#34;&gt;HOW: How to integrate along the surface - Surface Integrals
+&lt;/h3&gt;&lt;h4 id=&#34;what-what-are-surfaces-and-areas&#34;&gt;WHAT: What are surfaces and areas
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Parametric Surfaces: $\mathbf{r}(u, v) = x(u, v)\mathbf{i} + y(u, v)\mathbf{j} + z(u, v)\mathbf{k}$
 &lt;ul&gt;
@@ -478,15 +410,11 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-do-surface-integral&#34;&gt;
-    &lt;a href=&#34;#how-how-to-do-surface-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to do surface integral
+&lt;h4 id=&#34;how-how-to-do-surface-integral&#34;&gt;HOW: How to do surface integral
 &lt;/h4&gt;&lt;p&gt;Scalar field: $\iint_S \rho(x, y, z) ,\mathrm{d}S = \iint _D \rho(\mathbf{r}(u, v)) |\mathbf{r}_u \times \mathbf{r}_v| ,\mathrm{d}A$&lt;/p&gt;
 &lt;p&gt;Vector field: $\iint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_S \mathbf{F} \cdot \hat{n} ,\mathrm{d}S = \iint_S \mathbf{F} \cdot \mathbf{n} ,\mathrm{d}A = \iint_D \mathbf{F} \cdot (\mathbf{r}_u \times \mathbf{r}_v),\mathrm{d}A$&lt;/p&gt;
 &lt;p&gt;For $\hat{n}$ and $\mathbf{n}$: $\displaystyle \mathbf{n} = \hat{n}\mathrm{(1)} \cdot |\mathbf{r}_u \times \mathbf{r}_v|\mathrm{(2)} = \frac{\mathbf{r}_u \times \mathbf{r}_v}{|\mathbf{r}_u \times \mathbf{r}_v|}\mathrm{(1)} \cdot |\mathbf{r}_u \times \mathbf{r}_v|\mathrm{(2)}$, for $\mathrm{(2)}$ is related to Jacobian Matrix&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34;&gt;
-    &lt;a href=&#34;#how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve
+&lt;h3 id=&#34;how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34;&gt;HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Greens&amp;rsquo; Theorem to Stokes&amp;rsquo; Theorem, and Divergence Theorem&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\int_{\partial D}\omega = \int_D \partial\omega$$&lt;/p&gt;
@@ -500,9 +428,7 @@ $$&lt;/p&gt;
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-learn-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we learn Series
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
@@ -511,13 +437,9 @@ $$&lt;/p&gt;
 &lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;
-    &lt;a href=&#34;#what-what-is-sequence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is Sequence
+&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence
 &lt;/h2&gt;&lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h3 id=&#34;convergence&#34;&gt;
-    &lt;a href=&#34;#convergence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Convergence
+&lt;h3 id=&#34;convergence&#34;&gt;Convergence
 &lt;/h3&gt;&lt;p&gt;$\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/p&gt;
 &lt;p&gt;E.g. $1/x$: for all $\epsilon$, exist $N = \frac{1}{\epsilon}$, for all $n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n$ convergent to 0&lt;/p&gt;
 &lt;ul&gt;
@@ -562,9 +484,7 @@ $$ \text{Hint 1: } (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
 $$
 $$ \text{Hint 2: } a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;
-    &lt;a href=&#34;#arbitrary-sequence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arbitrary Sequence
+&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Arithmetic sequence&lt;/p&gt;
@@ -573,13 +493,9 @@ $$&lt;/p&gt;
 &lt;p&gt;Geometric progression&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-series&#34;&gt;
-    &lt;a href=&#34;#what-what-is-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is Series
+&lt;h2 id=&#34;what-what-is-series&#34;&gt;WHAT: What is Series
 &lt;/h2&gt;&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;
-    &lt;a href=&#34;#convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges
+&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Test for Series&lt;/p&gt;
@@ -632,9 +548,7 @@ $$ \sum(1 - \frac{1}{n})^n, \sum(1 - \frac{1}{n})^{n^2}, \sum{\ln(1 + \frac{1}{n
 $$
 $$ \sum \frac{x^n}{\ln^p x}, \text{Known $b_n \rightarrow \frac{2}{5}$, }\sum_1\frac{(-1)^nn!}{n^nb_1b_2\ldots b_n}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arbitrary-series&#34;&gt;
-    &lt;a href=&#34;#arbitrary-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arbitrary Series
+&lt;h3 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Geometric Series&lt;/p&gt;
@@ -651,29 +565,21 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
-&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-applycation-of-series---power-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the applycation of series - Power Series
+&lt;h2 id=&#34;how&#34;&gt;HOW
+&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;WHAT: What is the applycation of series - Power Series
 &lt;/h3&gt;&lt;p&gt;$f(x) = \sum c(x - a)^n$ is called a power series centered at $a$, domain of $f(x)$ is the set that series converge.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;only converge at $x = a$&lt;/li&gt;
 &lt;li&gt;converge for all $x \in R$&lt;/li&gt;
 &lt;li&gt;$\exists R &amp;gt; 0, |x - a| &amp;lt; R \text{ the series converge}, R: \text{radius of convergence}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;
-    &lt;a href=&#34;#how-ratio-test--two-sides&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: Ratio Test + Two sides
+&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;HOW: Ratio Test + Two sides
 &lt;/h4&gt;&lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Find the domain of } f(x) = \sum \frac{(x - 3)^n}{n} (ANS: [2,4))
 $$
 $$ \text{}
 $$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-apply&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply
+&lt;h4 id=&#34;how-how-to-apply&#34;&gt;HOW: How to apply
 &lt;/h4&gt;&lt;p&gt;if the power series has a convergent radius R &amp;gt; 0, the f(x) is both differentiatable and integrable on the interval (a - R, a + R), and&lt;/p&gt;
 &lt;p&gt;$$ f&amp;rsquo;(x) = \sum n c_n (x - a)^{n - 1}
 $$
@@ -691,9 +597,7 @@ $$ \text{If $f(x) = \sum c_n x^n$, where $c_{n + 4} = c_n$ for all $n \geq 0$,}
 $$
 $$ \text{find the interval of convergence of the series and the formula for f(x)}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-for-graphing---taylor-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply for graphing - Taylor Series
+&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;HOW: How to apply for graphing - Taylor Series
 &lt;/h3&gt;&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
 &lt;blockquote&gt;
@@ -757,19 +661,13 @@ $$&lt;/p&gt;
         <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;
-    &lt;a href=&#34;#why-why-do-we-want-to-find-out-the-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why do we want to find out the integral
+&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;WHY: Why do we want to find out the integral
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Find out the area&lt;/li&gt;
 &lt;li&gt;Find out some physics parameters&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;
-    &lt;a href=&#34;#what-what-is-integral---area-with-positive-and-negative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;
-&lt;/h2&gt;&lt;h3 id=&#34;approx-integral&#34;&gt;
-    &lt;a href=&#34;#approx-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Approx. Integral
+&lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;
+&lt;/h2&gt;&lt;h3 id=&#34;approx-integral&#34;&gt;Approx. Integral
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Equaling space is not necessary&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
@@ -798,12 +696,8 @@ E = \begin{cases}
 \text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 \end{cases}
 $$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;
-    &lt;a href=&#34;#how-how-to-integral---technique&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to integral - Technique
-&lt;/h2&gt;&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;
-    &lt;a href=&#34;#substitution-if-the-function-combines-with-its-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Substitution: If the function combines with its derivative
+&lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;HOW: How to integral - Technique
+&lt;/h2&gt;&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;Substitution: If the function combines with its derivative
 &lt;/h3&gt;&lt;p&gt;Based on Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \Rightarrow \int_{x_1}^{x_2} f(x) \frac{\mathrm{d}u}{\mathrm{d}x},\mathrm{d}x = \int_{u(x_1)}^{u(x_2)}f(u),\mathrm{d}u$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$&lt;/p&gt;&lt;/blockquote&gt;
@@ -832,9 +726,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-02-03&lt;/code&gt;: $\displaystyle \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}},\mathrm{d}x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-02-04&lt;/code&gt;: $\displaystyle \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}},\mathrm{d}x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-02-05&lt;/code&gt;: $\displaystyle \int{\frac{x^5 - x}{x^8 + 1}},\mathrm{d}x$&lt;/p&gt;
-&lt;h3 id=&#34;integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34;&gt;
-    &lt;a href=&#34;#integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Integration by part: If the function combines with a simple function&amp;rsquo;s derivative
+&lt;h3 id=&#34;integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34;&gt;Integration by part: If the function combines with a simple function&amp;rsquo;s derivative
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Reduce Power: $\int{x \cdot \sin x},\mathrm{d}x$&lt;/p&gt;
@@ -858,9 +750,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-03-01&lt;/code&gt;: Known $\displaystyle \int_0^{\infty}{\frac{\sin{x}}{x}},\mathrm{d}x = \frac{\pi}{2}$, derive $\displaystyle \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}},\mathrm{d}x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-03-02&lt;/code&gt;: $\int{\arcsin x \cdot \ln x},\mathrm{d}x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-03-03&lt;/code&gt;: $\int(4x^4 + 1)e^{x^4},\mathrm{d}x$&lt;/p&gt;
-&lt;h3 id=&#34;eg1-trans-between-different-variables&#34;&gt;
-    &lt;a href=&#34;#eg1-trans-between-different-variables&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    E.g.1. Trans between different variables
+&lt;h3 id=&#34;eg1-trans-between-different-variables&#34;&gt;E.g.1. Trans between different variables
 &lt;/h3&gt;&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)},\mathrm{d}t, \text{assume } F(t) = \int{f(t)},\mathrm{d}t \Rightarrow \int_{C}^{g(x)}{f(t)},\mathrm{d}t = F(g(x)) - F(C)
 $$
 $$ \text{Taking derivative in both sides:} \frac{\mathrm{d}}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)},\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}x}F(g(x)) - \frac{\mathrm{d}}{\mathrm{d}x}F(C)
@@ -869,9 +759,7 @@ $$ F&amp;rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&amp;rsquo;(g(x
 $$
 $$ \therefore \frac{\mathrm{d}}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)},\mathrm{d}t} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{\mathrm{d}}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)},\mathrm{d}t} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
 $$&lt;/p&gt;
-&lt;h3 id=&#34;eg2-partial-fractions&#34;&gt;
-    &lt;a href=&#34;#eg2-partial-fractions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    E.g.2. Partial Fractions
+&lt;h3 id=&#34;eg2-partial-fractions&#34;&gt;E.g.2. Partial Fractions
 &lt;/h3&gt;&lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
 $$
 $$ D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
@@ -919,12 +807,8 @@ $$&lt;/p&gt;
 For integral $\int_a^b{f(x)},\mathrm{d}x$, when there are some points that are not defined, we use $t$ to approx. the limit of those points&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)},\mathrm{d}x = \lim_{t \rightarrow b}\int_a^t{f(x)},\mathrm{d}x
 $$&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-integral-to-reality&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply integral to reality
-&lt;/h2&gt;&lt;h3 id=&#34;rate---differential-equations&#34;&gt;
-    &lt;a href=&#34;#rate---differential-equations&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Rate - Differential Equations
+&lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality
+&lt;/h2&gt;&lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations
 &lt;/h3&gt;&lt;p&gt;$$ \text{Informal:} \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y,\mathrm{d}y = x,\mathrm{d}x \Rightarrow \int{y},\mathrm{d}y = \int{x},\mathrm{d}x
 $$
 $$ \text{*Formal Solution:} \frac{\mathrm{d}}{\mathrm{d}x}{y(t(x))} = \frac{\mathrm{d}y}{\mathrm{d}t} \cdot \frac{\mathrm{d}t}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{\mathrm{d}t}{\mathrm{d}x})},\mathrm{d}x = \int{(y \frac{\mathrm{d}t}{\mathrm{d}x})},\mathrm{d}x = \frac{y^2}{2}
@@ -945,38 +829,26 @@ $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-05-01&lt;/code&gt;: $\displaystyle \frac{\mathrm{d}N}{\mathrm{d}t} = -aN\ln(bN)$&lt;/p&gt;
 &lt;p&gt;*&lt;code&gt;EX-CAL-INT-05-02&lt;/code&gt;: $\displaystyle \frac{\mathrm{d}^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{\mathrm{d}N^2}{\mathrm{d}t^2}$&lt;/p&gt;
-&lt;h3 id=&#34;arc-length&#34;&gt;
-    &lt;a href=&#34;#arc-length&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arc Length
+&lt;h3 id=&#34;arc-length&#34;&gt;Arc Length
 &lt;/h3&gt;&lt;p&gt;$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}},\mathrm{d}x
 $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-06-01&lt;/code&gt;: Find curve length of $y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4$&lt;/p&gt;
-&lt;h3 id=&#34;areas&#34;&gt;
-    &lt;a href=&#34;#areas&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Areas
+&lt;h3 id=&#34;areas&#34;&gt;Areas
 &lt;/h3&gt;&lt;p&gt;$$ A = \lim_{n \rightarrow \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))},\mathrm{d}x = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))},\mathrm{d}y
 $$&lt;/p&gt;
-&lt;h3 id=&#34;surface&#34;&gt;
-    &lt;a href=&#34;#surface&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Surface
+&lt;h3 id=&#34;surface&#34;&gt;Surface
 &lt;/h3&gt;&lt;p&gt;$$ S = \int{2\pi f(x)\sqrt{1 + f&amp;rsquo;^2}},\mathrm{d}x
 $$&lt;/p&gt;
-&lt;h3 id=&#34;volume&#34;&gt;
-    &lt;a href=&#34;#volume&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Volume
+&lt;h3 id=&#34;volume&#34;&gt;Volume
 &lt;/h3&gt;&lt;p&gt;$$ V = \int{A(z)},\mathrm{d}z
 $$
 $$ \text{Cylindrical Shells (y-axis): } V = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi ((x + \Delta{x})^2 - x^2)}}
 $$
 $$ = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi (2x \Delta{x} + \Delta^2{x})}} = \int{h(x) 2 \pi x},\mathrm{d}x
 $$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-apply-in-polar-coordinate&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-in-polar-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply in Polar Coordinate
-&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34;&gt;
-    &lt;a href=&#34;#why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why we should learn about Polar Coordinate - Cycloid &amp;amp; Parametric Curves
+&lt;h2 id=&#34;how-how-to-apply-in-polar-coordinate&#34;&gt;HOW: How to apply in Polar Coordinate
+&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34;&gt;WHY: Why we should learn about Polar Coordinate - Cycloid &amp;amp; Parametric Curves
 &lt;/h3&gt;&lt;p&gt;$$ \begin{cases}
 x = r(\theta - \sin\theta) \
 y = r(1 - \cos\theta)
@@ -989,9 +861,7 @@ $$&lt;/p&gt;
 &lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
 $$&lt;/p&gt;
-&lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;
-    &lt;a href=&#34;#what-what-is-polar-coordinates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is Polar Coordinates
+&lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;WHAT: What is Polar Coordinates
 &lt;/h3&gt;&lt;p&gt;$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
 $$&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1004,14 +874,10 @@ $$&lt;/p&gt;
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-learn-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we learn differentiation?
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;WHY: Why should we learn differentiation?
 &lt;/h2&gt;&lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;p&gt;How to sketch a function? - Find the tendency of a function, knowning &lt;em&gt;monotonicity&lt;/em&gt; and &lt;em&gt;concavity&lt;/em&gt;. (&amp;amp; Optimization)&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;
-    &lt;a href=&#34;#what-what-is-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is differentiation?
+&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;WHAT: What is differentiation?
 &lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ (1)} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ (2)} = \frac{\mathrm{d}f(x)}{\mathrm{d}x} \textbf{ (3)} \Rightarrow f&amp;rsquo;(x) \textbf{ (4)}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1024,9 +890,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-01&lt;/code&gt;: Use the derivative way to present $g(x)$: $g(x) = \lim_{h \rightarrow 0}\Large{\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}}$&lt;/p&gt;
-&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
-    &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why a function could be differentiated? - Differentiability
+&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Limit &amp;amp; Continuity: $\lim_{x \rightarrow a}{f(x)} = f(a)$ ($\lim_{x \rightarrow a}{f(x)} = \lim_{x \rightarrow a^+}{f(x)} = \lim_{x \rightarrow a^-}{f(x)}$)
 &lt;ul&gt;
@@ -1055,9 +919,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-01&lt;/code&gt;: $\lim_{x \rightarrow 0^+}{x\ln{x}}$, $\lim_{x \rightarrow 0^+}{x^x}$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-02&lt;/code&gt;: $\lim_{x \rightarrow \pm\infty}(1 + \frac{1}{x})^x$ (Important one, that&amp;rsquo;s the definition of $e$)&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-03&lt;/code&gt;: $\lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}$&lt;/p&gt;
-&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-derivative-for-basic-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the derivative for basic function
+&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;WHAT: What is the derivative for basic function
 &lt;/h3&gt;&lt;p&gt;$$ \frac{d}{\mathrm{d}x}x^n = n \cdot x^{n - 1}, \frac{d}{\mathrm{d}x}Constant = 0, \frac{d}{\mathrm{d}x}\ln{x} = \frac{1}{x}, \frac{d}{\mathrm{d}x}e^x = e^x
 $$
 $$ \frac{d}{\mathrm{d}x}\sin{x} = \cos{x}, \frac{d}{\mathrm{d}x}\cos{x} = -\sin{x}, \frac{d}{\mathrm{d}x}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
@@ -1065,9 +927,7 @@ $$
 $$ \frac{d}{\mathrm{d}x}\sin^{-1}{x} = \frac{d}{\mathrm{d}x}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{\mathrm{d}x}\cos^{-1}{x} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{\mathrm{d}x}\tan^{-1}{x} = \frac{1}{1 + x^2}
 $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-03&lt;/code&gt;: Try to use definition to derive the first two lines.&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;
-    &lt;a href=&#34;#how-how-to-differentiate---basic-rules&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to differentiate? - Basic rules
+&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;HOW: How to differentiate? - Basic rules
 &lt;/h3&gt;&lt;p&gt;$$ \frac{d}{\mathrm{d}x}(f(x) + g(x)) = \frac{d}{\mathrm{d}x}f(x) + \frac{d}{\mathrm{d}x}g(x) \Leftrightarrow (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
 $$
 $$ \frac{d}{\mathrm{d}x}(f(x) \cdot g(x)) = \frac{d}{\mathrm{d}x}f(x) \cdot g(x) + f(x) \cdot \frac{d}{\mathrm{d}x}g(x) \Leftrightarrow (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
@@ -1079,17 +939,11 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-01&lt;/code&gt;: Try to use the basic rule to derive the third line in &lt;code&gt;WHAT: What is the derivative for basic function&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-02&lt;/code&gt;: Differentiate: $a^x$; $\log_ax$; $x^x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-03&lt;/code&gt;: Known $x^2 + y^2 = 25$, derive $\frac{d}{\mathrm{d}x}y$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-differentiation-in-solving-problem&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply differentiation in solving problem?
-&lt;/h2&gt;&lt;h3 id=&#34;finding-rates&#34;&gt;
-    &lt;a href=&#34;#finding-rates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Finding Rates
+&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;HOW: How to apply differentiation in solving problem?
+&lt;/h2&gt;&lt;h3 id=&#34;finding-rates&#34;&gt;Finding Rates
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-01&lt;/code&gt;: A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-02&lt;/code&gt;: The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{\mathrm{d}}{\mathrm{d}t}x = \frac{\mathrm{d}}{\mathrm{d}t}z$ and the rate of the diagonal $z$ has $\frac{\mathrm{d}}{\mathrm{d}t}z = \frac{\mathrm{d}}{\mathrm{d}t}y$. Derive the value of $k$.&lt;/p&gt;
-&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;
-    &lt;a href=&#34;#curve-sketching--optimization&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Curve Sketching &amp;amp; Optimization
+&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;Curve Sketching &amp;amp; Optimization
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Monotonicity with $\mathrm{d}y/\mathrm{d}x$
 &lt;ul&gt;

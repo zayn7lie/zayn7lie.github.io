@@ -12,9 +12,7 @@
         <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/linux/archlinux2/</guid>
-        <description>&lt;h2 id=&#34;before-entering-wm&#34;&gt;
-    &lt;a href=&#34;#before-entering-wm&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Before entering WM
+        <description>&lt;h2 id=&#34;before-entering-wm&#34;&gt;Before entering WM
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Disable the &lt;code&gt;-debug&lt;/code&gt; flag in &lt;code&gt;/etc/makepkg.conf&lt;/code&gt;: in &lt;code&gt;option&lt;/code&gt;, &lt;code&gt;!&lt;/code&gt; the &lt;code&gt;debug&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Enable &lt;code&gt;pacman&lt;/code&gt; features in &lt;code&gt;/etc/pacman.conf&lt;/code&gt;: uncomment &lt;code&gt;Color&lt;/code&gt;, and &lt;code&gt;multilib&lt;/code&gt;&lt;/li&gt;
@@ -31,9 +29,7 @@
 &lt;li&gt;Install WM: &lt;code&gt;$ yay -S gtk3 hyprland-git kitty&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Enter the WM: &lt;code&gt;$ Hyprland&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;configuration-of-system-base-settings-and-display&#34;&gt;
-    &lt;a href=&#34;#configuration-of-system-base-settings-and-display&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Configuration of system-base settings and display
+&lt;h2 id=&#34;configuration-of-system-base-settings-and-display&#34;&gt;Configuration of system-base settings and display
 &lt;/h2&gt;&lt;ol start=&#34;0&#34;&gt;
 &lt;li&gt;For recording the processes, install &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;wl-clipboard&lt;/code&gt;: &lt;code&gt;$ yay -S code wl-clipboard&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Prefer settings in &lt;code&gt;Hyprland&lt;/code&gt; in &lt;code&gt;{HOME}/.config/hypr/hyprland.conf&lt;/code&gt;
@@ -80,9 +76,7 @@ background_opacity 0.75
 &lt;/li&gt;
 &lt;li&gt;Reboot: &lt;code&gt;$ reboot&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;more-packages-applications-and-settings&#34;&gt;
-    &lt;a href=&#34;#more-packages-applications-and-settings&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    More packages (applications) and settings
+&lt;h2 id=&#34;more-packages-applications-and-settings&#34;&gt;More packages (applications) and settings
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Fingerprint: &lt;code&gt;yay -S libfprint-2-tod1-xps9300-bin fprintd&lt;/code&gt; then add &lt;code&gt;auth		sufficient  	pam_unix.so try_first_pass likeauth nullok&lt;/code&gt;, then &lt;code&gt;auth		sufficient  	pam_fprintd.so&lt;/code&gt; to &lt;code&gt;/etc/pam.d/login&lt;/code&gt; (after &lt;code&gt;requisite&lt;/code&gt;) and &lt;code&gt;sudo&lt;/code&gt;&lt;/p&gt;
@@ -138,9 +132,7 @@ env = QT_IM_MODULE,ibus
 env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;for-my-work&#34;&gt;
-    &lt;a href=&#34;#for-my-work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    For my work
+&lt;h2 id=&#34;for-my-work&#34;&gt;For my work
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$\LaTeX$: &lt;code&gt;texlive-latex&lt;/code&gt; for &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;texlive-latexrecommended&lt;/code&gt; for &lt;code&gt;amsmath&lt;/code&gt;, &lt;code&gt;texlive-latexextra&lt;/code&gt; for &lt;code&gt;orcidlink&lt;/code&gt;, &lt;code&gt;texlive-fontsrecommended&lt;/code&gt; for essentials published fonts.&lt;/p&gt;
@@ -174,9 +166,7 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
 &lt;p&gt;Network and VPN: &lt;code&gt;$ yay -S networkmanager-openconnect&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;social-and-communication&#34;&gt;
-    &lt;a href=&#34;#social-and-communication&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Social and Communication
+&lt;h2 id=&#34;social-and-communication&#34;&gt;Social and Communication
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Telegram: &lt;code&gt;$ yay -S telegram-desktop&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Discord: &lt;code&gt;$ yay -S webcord-bin&lt;/code&gt;&lt;/li&gt;
@@ -191,20 +181,14 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
         <guid>https://zayn7lie.ber7.org/posts/linux/xfce/</guid>
         <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
 &lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;
-    &lt;a href=&#34;#install&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Install
+&lt;h2 id=&#34;install&#34;&gt;Install
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install XFCE. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start &lt;code&gt;xfce4&lt;/code&gt; in the next boot and ignore step 3. It is highly recommended installing a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DM&lt;/a&gt;, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your DM. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/p&gt;
-&lt;h2 id=&#34;config&#34;&gt;
-    &lt;a href=&#34;#config&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Config
-&lt;/h2&gt;&lt;h3 id=&#34;system&#34;&gt;
-    &lt;a href=&#34;#system&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    System
+&lt;h2 id=&#34;config&#34;&gt;Config
+&lt;/h2&gt;&lt;h3 id=&#34;system&#34;&gt;System
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;AUR manager: &lt;code&gt;yay&lt;/code&gt;&lt;/p&gt;
@@ -257,12 +241,8 @@ xft-rgba=none
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;media&#34;&gt;
-    &lt;a href=&#34;#media&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Media
-&lt;/h3&gt;&lt;h4 id=&#34;sound&#34;&gt;
-    &lt;a href=&#34;#sound&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Sound
+&lt;h3 id=&#34;media&#34;&gt;Media
+&lt;/h3&gt;&lt;h4 id=&#34;sound&#34;&gt;Sound
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
@@ -316,28 +296,20 @@ xft-rgba=none
 &lt;p&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;video&#34;&gt;
-    &lt;a href=&#34;#video&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Video
+&lt;h4 id=&#34;video&#34;&gt;Video
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Video Player: &lt;code&gt;vlc&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Recording &amp;amp; Steaming: &lt;code&gt;obs-studio&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Edit: &lt;code&gt;flowblade&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;image&#34;&gt;
-    &lt;a href=&#34;#image&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Image
+&lt;h4 id=&#34;image&#34;&gt;Image
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Screenshot: &lt;code&gt;flameshot&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Edit: &lt;code&gt;krita inkscape&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;View: &lt;code&gt;ristretto&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;work&#34;&gt;
-    &lt;a href=&#34;#work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Work
-&lt;/h3&gt;&lt;h4 id=&#34;input&#34;&gt;
-    &lt;a href=&#34;#input&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Input
+&lt;h3 id=&#34;work&#34;&gt;Work
+&lt;/h3&gt;&lt;h4 id=&#34;input&#34;&gt;Input
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;
 &lt;ul&gt;
@@ -357,25 +329,19 @@ xft-rgba=none
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;writing&#34;&gt;
-    &lt;a href=&#34;#writing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Writing
+&lt;h4 id=&#34;writing&#34;&gt;Writing
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Paper: &lt;code&gt;zotero&lt;/code&gt;AUR&lt;/li&gt;
 &lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;social&#34;&gt;
-    &lt;a href=&#34;#social&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Social
+&lt;h4 id=&#34;social&#34;&gt;Social
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Email: &lt;code&gt;evolution evolution-on&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Chat: &lt;code&gt;telegram-desktop discord&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Meeting: &lt;code&gt;zoom&lt;/code&gt;AUR&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;game&#34;&gt;
-    &lt;a href=&#34;#game&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Game
+&lt;h3 id=&#34;game&#34;&gt;Game
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
@@ -391,12 +357,8 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/linux/archlinux/</guid>
-        <description>&lt;h2 id=&#34;why&#34;&gt;
-    &lt;a href=&#34;#why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY
-&lt;/h2&gt;&lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;
-    &lt;a href=&#34;#why-do-i-want-to-switch-from-windows-to-linux&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Why do I want to switch from Windows to Linux?
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY
+&lt;/h2&gt;&lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;Why do I want to switch from Windows to Linux?
 &lt;/h3&gt;&lt;p&gt;First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want. But in Windows, we have to deal with lots of random and unknown services to change only a system font, and then we will get a number of bugs that we cannot solve for the unknown source code.&lt;/li&gt;
@@ -405,9 +367,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;We have a large community to solve problems. In Linux, I have solved all bugs and run system smoothly without asking for any help - almost all problems and questions I encountered have been solved in Linux communities or forums.&lt;/li&gt;
 &lt;li&gt;I am able to uninstall the services I do not want. In Linux, we are able to install whatever we want and uninstall (remove) whatever we do not want. But in Windows, there are so many services like SMB file transfer that I might not want to use for entire life! The total storage of Pure Arch Linux with Xfce and daily working and gaming software is below 8 G!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-do-i-want-to-switch-from-ubuntu-to-arch&#34;&gt;
-    &lt;a href=&#34;#why-do-i-want-to-switch-from-ubuntu-to-arch&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Why do I want to switch from Ubuntu to Arch?
+&lt;h3 id=&#34;why-do-i-want-to-switch-from-ubuntu-to-arch&#34;&gt;Why do I want to switch from Ubuntu to Arch?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;After using Ubuntu for several months, I have the ability to work smoothly with terminals and have basis understanding of Linux. I want to step in further, and installing Arch Linux is a good approach to that.&lt;/li&gt;
 &lt;li&gt;Arch have the most complete wiki that we might be able to solve all problems there!&lt;/li&gt;
@@ -416,32 +376,22 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;Ubuntu still have lots of services I do not know. And gnome is an anti-lightweight desktop environment which could be very annoying.&lt;/li&gt;
 &lt;li&gt;Ubuntu with gnome is stepping in commercial and be less community-friendly. And there are some ads of Ubuntu Pro appear in the system.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-do-i-want-to-install-arch-linux-without-the-script&#34;&gt;
-    &lt;a href=&#34;#why-do-i-want-to-install-arch-linux-without-the-script&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Why do I want to install Arch Linux without the script?
+&lt;h3 id=&#34;why-do-i-want-to-install-arch-linux-without-the-script&#34;&gt;Why do I want to install Arch Linux without the script?
 &lt;/h3&gt;&lt;p&gt;Learn more about Linux and fully customize for myself.&lt;/p&gt;
-&lt;h2 id=&#34;what&#34;&gt;
-    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT
+&lt;h2 id=&#34;what&#34;&gt;WHAT
 &lt;/h2&gt;&lt;p&gt;Here is an introduction of Arch Linux from its wiki: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Arch_Linux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/Arch_Linux&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
+&lt;h2 id=&#34;how&#34;&gt;HOW
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. This guide is just a simplification, clarification and modification based &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Arch Linux-Installation Guide&lt;/a&gt;. If you have any questions or if I not mention or skip about some necessary steps, you could just read the wiki and find out the answer. By the way, this guide is more focusing on understanding Linux system and how a system could be installed in a machine.&lt;/p&gt;
 &lt;p&gt;Every command begin with &lt;code&gt;#&lt;/code&gt; meaning it is a shell command. &lt;code&gt;#&lt;/code&gt; is always input automatically that you do not need to type it again. E.g. &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; you might only need to type in &lt;code&gt;mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;. &lt;code&gt;$&lt;/code&gt;, &lt;code&gt;[iwd]#&lt;/code&gt;, etc. is also similar to &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Everything with &lt;code&gt;?{ }&lt;/code&gt; meaning that you could modify it based on your situation, for example &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; might be &lt;code&gt;# mount /dev/sd1 /mnt&lt;/code&gt; for you. Everything with &lt;code&gt;!{ }&lt;/code&gt; meaning that you could not to type this based on your situation. E.g. &lt;code&gt;# arch-chroot /mnt !{/bin/bash}&lt;/code&gt; you might only need to run &lt;code&gt;# arch-chroot /mnt&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;1-preparation&#34;&gt;
-    &lt;a href=&#34;#1-preparation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    1. Preparation
+&lt;h3 id=&#34;1-preparation&#34;&gt;1. Preparation
 &lt;/h3&gt;&lt;p&gt;A target machine that you want to install system to. A computer with 16 GB or above disk and AMD or Intel CPU is recommended. (P.S. High RAM is highly recommended. In this guide, I would not introduce how to create SWAP partition because my 16 GB RAM is enough for daily use.)&lt;/p&gt;
 &lt;p&gt;A USB flash drive (storage device) that could be modified. A USB with 8 GB or larger is recommended.&lt;/p&gt;
 &lt;p&gt;An available network that is able to access to Arch Linux packages. (If you are a Chinese User, this post is recommended to use.) An unhidden network is recommended.&lt;/p&gt;
-&lt;h3 id=&#34;2-making-an-installation-medium&#34;&gt;
-    &lt;a href=&#34;#2-making-an-installation-medium&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    2. Making an Installation Medium
+&lt;h3 id=&#34;2-making-an-installation-medium&#34;&gt;2. Making an Installation Medium
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Windows User&lt;/p&gt;
@@ -468,9 +418,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;3-network-configuration&#34;&gt;
-    &lt;a href=&#34;#3-network-configuration&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    3. Network Configuration
+&lt;h3 id=&#34;3-network-configuration&#34;&gt;3. Network Configuration
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. The installation medium have installed &lt;code&gt;iwd&lt;/code&gt; tool. Although &lt;code&gt;networkmanager&lt;/code&gt; is more popular in Arch Linux network settings, &lt;code&gt;iwd&lt;/code&gt; is the default network settings tool for installation.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
@@ -480,9 +428,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# station ?{wlan0} connect ${SSID}&lt;/code&gt; to connect to SSID, you might need to type password after connect to it.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# exit&lt;/code&gt; to exit the network tool.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;4-disk-mounting-and-installation&#34;&gt;
-    &lt;a href=&#34;#4-disk-mounting-and-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4. Disk Mounting and Installation
+&lt;h3 id=&#34;4-disk-mounting-and-installation&#34;&gt;4. Disk Mounting and Installation
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
@@ -493,9 +439,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;# pacstrap -K /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim} !{linux-headers}&lt;/code&gt; to install basis Arch Linux. &lt;code&gt;base-devel&lt;/code&gt; contains &lt;code&gt;makepkg&lt;/code&gt; that is necessary for installing AUR packages. You can install the Linux kernels that you want through &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/kernel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/kernel&lt;/a&gt;. &lt;code&gt;linux-firmware&lt;/code&gt; is necessary Linux kernel firmware. &lt;code&gt;e2fsprogs&lt;/code&gt; is for configuration of ext4 file system. &lt;code&gt;ntfs-3g&lt;/code&gt; is for configuration of NTFS (Windows File System) file system. &lt;code&gt;vim&lt;/code&gt; if for latter file editing.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;5-user-setting&#34;&gt;
-    &lt;a href=&#34;#5-user-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    5. User Setting
+&lt;h3 id=&#34;5-user-setting&#34;&gt;5. User Setting
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# arch-chroot /mnt /bin/bash&lt;/code&gt; to change root to &lt;code&gt;/mnt&lt;/code&gt; (root user path) using shell in &lt;code&gt;/bin/bash&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# passwd&lt;/code&gt; to reset the root user password.&lt;/li&gt;
@@ -508,42 +452,30 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 ::1 localhost
 127.0.1.1 ?{zayn7lie-acl}.localdomain ?{zayn7lie-acl}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace &lt;code&gt;?{zayn7lie-acl}&lt;/code&gt; with your machine name.&lt;/p&gt;
-&lt;h3 id=&#34;6-language--time&#34;&gt;
-    &lt;a href=&#34;#6-language--time&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    6. Language &amp;amp; Time
+&lt;h3 id=&#34;6-language--time&#34;&gt;6. Language &amp;amp; Time
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# vim /etc/locale.gen&lt;/code&gt; to enter language config file, then uncomment &lt;code&gt;en-US.UTF-8 UTF-8&lt;/code&gt; and the language you want use, then save the file. &lt;code&gt;# locale-gen&lt;/code&gt; to generate and install language files.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# echo LANG=C.UTF-8 &amp;gt; /etc/locale.conf&lt;/code&gt; make system default characters to characters in C.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# hwclock --systohc --utc&lt;/code&gt; and &lt;code&gt;# timedatectl set-ntp true&lt;/code&gt; to update your system time to installation medium time.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime&lt;/code&gt; to config your local time. &lt;code&gt;?{EST}&lt;/code&gt; Could be change based on your region. You can use &lt;code&gt;# ls /usr/share/zoneinfo/&lt;/code&gt; to check which option could be used. Some folder like ./Asia might have subfolders that you need to choose in more specific way. E.G. &lt;code&gt;# ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime&lt;/code&gt;. P.S. s meaning soft link which will not actually copy all file to the target folder, f meaning force to do it.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;7-launch-setting&#34;&gt;
-    &lt;a href=&#34;#7-launch-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    7. Launch Setting
+&lt;h3 id=&#34;7-launch-setting&#34;&gt;7. Launch Setting
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# pacman -S ?{amd-ucode} grub efibootmgr&lt;/code&gt; to install necessary boot package. If you are using Intel CPU, change &lt;code&gt;?{amd-ucode}&lt;/code&gt; to &lt;code&gt;intel-ucode&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&amp;quot;GRUB&amp;quot;} --recheck&lt;/code&gt; to install grub file. &lt;code&gt;!{--removable}&lt;/code&gt; determines whether you are able to remove it from UEFI, &lt;code&gt;?{&amp;quot;Arch Linux&amp;quot;}&lt;/code&gt; is your system name in grub.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt; to generate config file.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;8-misc&#34;&gt;
-    &lt;a href=&#34;#8-misc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    8. Misc
+&lt;h3 id=&#34;8-misc&#34;&gt;8. Misc
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt; to install NetworkManager tool, then &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt; to let &lt;code&gt;NetworkManager&lt;/code&gt; start automatically when you boot your system. As I have mentioned above, &lt;code&gt;networkmanager&lt;/code&gt; is more popular than &lt;code&gt;iwd&lt;/code&gt;. And &lt;code&gt;iwd&lt;/code&gt; is only installed in your installation medium but not your system. You still have to install a network manager tool for your &lt;code&gt;Arch Linux&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;finish-installation&#34;&gt;
-    &lt;a href=&#34;#finish-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Finish Installation
+&lt;h3 id=&#34;finish-installation&#34;&gt;Finish Installation
 &lt;/h3&gt;&lt;p&gt;You have installed Arch Linux in your machine. Now you can &lt;code&gt;# exit&lt;/code&gt; to exit your root user account, it is important to &lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt; to generate a &lt;code&gt;fstab&lt;/code&gt; file for Linux file tree viewing. It is safer to &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt; to check whether file is generated properly. P.S. Difference between &amp;raquo; and &amp;gt;: &amp;raquo; is appending (add) to the end of the file, &amp;gt; is replacing the file. &lt;code&gt;# reboot&lt;/code&gt; and remove installation medium when computer is completely closed. Congratulation! Now, start your journey to &lt;code&gt;Arch Linux&lt;/code&gt;!&lt;/p&gt;
-&lt;h3 id=&#34;post-installation&#34;&gt;
-    &lt;a href=&#34;#post-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Post-installation
+&lt;h3 id=&#34;post-installation&#34;&gt;Post-installation
 &lt;/h3&gt;&lt;p&gt;If you encounter any problems or bugs, reading &lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wiki&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;googling&lt;/a&gt; (&lt;a class=&#34;link&#34; href=&#34;https://duckduckgo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DDG&lt;/a&gt; is a better option with high privacy protection), searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;a smart way&lt;/a&gt;. That’s all, it is my best hope that you could join and enjoy our open-source communities!&lt;/p&gt;
-&lt;h2 id=&#34;quick-ref&#34;&gt;
-    &lt;a href=&#34;#quick-ref&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Quick Ref
+&lt;h2 id=&#34;quick-ref&#34;&gt;Quick Ref
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;installation medium:
 &lt;ul&gt;
@@ -639,28 +571,20 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/misc/blog/</guid>
-        <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;
-    &lt;a href=&#34;#why-why-do-i-want-to-construct-my-blog-site&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why do I want to construct my blog site?
+        <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;WHY: Why do I want to construct my blog site?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Contributing to and being involved in the open-source community&lt;/li&gt;
 &lt;li&gt;Sharing some knowledge with my own understanding way and logic&lt;/li&gt;
 &lt;li&gt;I am a tech-geek who loves to learn some new tech&lt;/li&gt;
 &lt;li&gt;Increasing my popularity to make more people know about me and accept my ideal.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what&#34;&gt;
-    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT
-&lt;/h2&gt;&lt;h3 id=&#34;what-is-the-blog-site&#34;&gt;
-    &lt;a href=&#34;#what-is-the-blog-site&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    What is the Blog Site
+&lt;h2 id=&#34;what&#34;&gt;WHAT
+&lt;/h2&gt;&lt;h3 id=&#34;what-is-the-blog-site&#34;&gt;What is the Blog Site
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;A unique site that runs your blog, people could directly gain access to your blog through website address or searching engines&lt;/li&gt;
 &lt;li&gt;A place that you could post your own idea, share your thinking, help others, and introduce yourself&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34;&gt;
-    &lt;a href=&#34;#what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    What is the difference between constructing own site and use others services of other companies? (WHY I do not want to use other companies service directly?)
+&lt;h3 id=&#34;what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34;&gt;What is the difference between constructing own site and use others services of other companies? (WHY I do not want to use other companies service directly?)
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;More freedom in configuring your webpage, customizing your appearance, and fewer limitations from companies&lt;/li&gt;
 &lt;li&gt;Cheaper price (even no price) running the whole service (you could choose every service you want)&lt;/li&gt;
@@ -668,22 +592,14 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;You will learn more things about constructing a blog, like &lt;code&gt;hugo&lt;/code&gt; usage, IP allocating, etc.&lt;/li&gt;
 &lt;li&gt;The site constructed by your own is more appealing to geeks, companies, and educational facilities which means you would gain more opportunities from them.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
-&lt;/h2&gt;&lt;h3 id=&#34;basic-constructing&#34;&gt;
-    &lt;a href=&#34;#basic-constructing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Basic Constructing
-&lt;/h3&gt;&lt;h4 id=&#34;pre-request&#34;&gt;
-    &lt;a href=&#34;#pre-request&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Pre-request
+&lt;h2 id=&#34;how&#34;&gt;HOW
+&lt;/h2&gt;&lt;h3 id=&#34;basic-constructing&#34;&gt;Basic Constructing
+&lt;/h3&gt;&lt;h4 id=&#34;pre-request&#34;&gt;Pre-request
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;A valid GitHub account&lt;/li&gt;
 &lt;li&gt;Already installing &lt;code&gt;Hugo&lt;/code&gt; on your machine: &lt;code&gt;$ sudo pacman -S hugo&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;create-a-new-github-page&#34;&gt;
-    &lt;a href=&#34;#create-a-new-github-page&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Create a new GitHub Page
+&lt;h4 id=&#34;create-a-new-github-page&#34;&gt;Create a new GitHub Page
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;Create a new repo with Repository name &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;, then your repo will look like this: &lt;code&gt;YOUR_GITHUB_NAME/YOUR_GITHUB_NAME.github.io&lt;/code&gt;, e.g. Mine is &lt;code&gt;zayn7lie/zayn7lie.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Connect the repo to your local computer
@@ -695,9 +611,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;In the repo, turn to &lt;code&gt;Setting&lt;/code&gt; - &lt;code&gt;Code and automation&lt;/code&gt; - &lt;code&gt;Pages&lt;/code&gt;, check &lt;code&gt;Build and deployment&lt;/code&gt; - &lt;code&gt;Source&lt;/code&gt; is &lt;code&gt;Deploy from a branch&lt;/code&gt;, and &lt;code&gt;Branch&lt;/code&gt; is &lt;code&gt;master&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;setting-up-source-code-for-blog&#34;&gt;
-    &lt;a href=&#34;#setting-up-source-code-for-blog&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Setting up source code for blog
+&lt;h4 id=&#34;setting-up-source-code-for-blog&#34;&gt;Setting up source code for blog
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;Turn to your local machine, &lt;code&gt;$ hugo new site YOUR_SITE_NAME&lt;/code&gt; to create and initial your new blog site, add &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt; in &lt;code&gt;baseURL&lt;/code&gt; in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Turn to the folder you just connect with your &lt;code&gt;GitHub Page&lt;/code&gt;, rename it as &lt;code&gt;public&lt;/code&gt; with moving it to your site folder you just have generated.&lt;/li&gt;
@@ -709,14 +623,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;After checking, &lt;code&gt;$ hugo&lt;/code&gt; to generate the final &lt;code&gt;html&lt;/code&gt; to &lt;code&gt;public&lt;/code&gt; folder, then commit it to your &lt;code&gt;GitHub&lt;/code&gt; repo.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;GitHub&lt;/code&gt; will automatically run &lt;code&gt;Action&lt;/code&gt; to build your blog website with &lt;code&gt;Jekyll&lt;/code&gt;(you do not need to know anything about &lt;code&gt;Jekyll&lt;/code&gt;), after compiling, you could see your public website in &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;advanced-configuration&#34;&gt;
-    &lt;a href=&#34;#advanced-configuration&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Advanced Configuration
+&lt;h3 id=&#34;advanced-configuration&#34;&gt;Advanced Configuration
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;The global config file is in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;theme-setting&#34;&gt;
-    &lt;a href=&#34;#theme-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Theme Setting
+&lt;h4 id=&#34;theme-setting&#34;&gt;Theme Setting
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;I am using &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Stack&lt;/a&gt;, it has a &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -765,12 +675,8 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tag-cloud&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}},
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;archives&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;github-limitation-with-github-page&#34;&gt;
-    &lt;a href=&#34;#github-limitation-with-github-page&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    GitHub Limitation with &lt;code&gt;GitHub Page&lt;/code&gt;
-&lt;/h4&gt;&lt;h4 id=&#34;domain-configuration-using-custom-domain&#34;&gt;
-    &lt;a href=&#34;#domain-configuration-using-custom-domain&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Domain Configuration (Using custom domain)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;github-limitation-with-github-page&#34;&gt;GitHub Limitation with &lt;code&gt;GitHub Page&lt;/code&gt;
+&lt;/h4&gt;&lt;h4 id=&#34;domain-configuration-using-custom-domain&#34;&gt;Domain Configuration (Using custom domain)
 &lt;/h4&gt;</description>
         </item>
         

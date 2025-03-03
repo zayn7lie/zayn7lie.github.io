@@ -12,9 +12,7 @@
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/linux/vscode/</guid>
-        <description>&lt;h2 id=&#34;installation&#34;&gt;
-    &lt;a href=&#34;#installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Installation
+        <description>&lt;h2 id=&#34;installation&#34;&gt;Installation
 &lt;/h2&gt;&lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;: &lt;code&gt;Preferences: Configure Runtime Arguments&lt;/code&gt;: &lt;code&gt;&amp;quot;password-store&amp;quot;:&amp;quot;gnome&amp;quot;&lt;/code&gt; or &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Word Count: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=kirozen.wordcounter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -22,9 +20,7 @@
 &lt;p&gt;Vim: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Vim&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Disable auto reveal: &lt;code&gt;explorer.autoReveal = False&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;latex&#34;&gt;
-    &lt;a href=&#34;#latex&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Latex
+&lt;h2 id=&#34;latex&#34;&gt;Latex
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;LaTeX Workshop&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -40,9 +36,7 @@
     &gt;&lt;code&gt;vscode-pandoc&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;c&#34;&gt;
-    &lt;a href=&#34;#c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    C++
+&lt;h2 id=&#34;c&#34;&gt;C++
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install debug tool &lt;code&gt;gdb&lt;/code&gt;: &lt;code&gt;$ sudo pacman -S gdb&lt;/code&gt;&lt;/p&gt;
@@ -61,9 +55,7 @@
 &lt;p&gt;&lt;code&gt;Terminal&lt;/code&gt; -&amp;gt; &lt;code&gt;Config Default Build Task...&lt;/code&gt; -&amp;gt; &lt;code&gt;C/C++: g++ build active file&lt;/code&gt;; then turn back to &lt;code&gt;test.cpp&lt;/code&gt;, click the &lt;code&gt;gear&lt;/code&gt; icon: &lt;code&gt;&amp;quot;C/C++: g++ build and debug active file&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;misc&#34;&gt;
-    &lt;a href=&#34;#misc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Misc
+&lt;h2 id=&#34;misc&#34;&gt;Misc
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Excalidraw&lt;/li&gt;
 &lt;li&gt;SSH: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -77,9 +69,7 @@
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-02/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-use-header-files&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-use-header-files&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we use header files?
+        <description>&lt;h2 id=&#34;why-why-should-we-use-header-files&#34;&gt;WHY: Why should we use header files?
 &lt;/h2&gt;&lt;p&gt;In &lt;code&gt;C++ Basic - 01 Function&lt;/code&gt;, we have learned about function. But there are numerous which have been already written, like print function &lt;code&gt;printf()&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-h&#34; data-lang=&#34;h&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;__format, ...){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; __retval;
@@ -90,9 +80,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The function of function is &lt;em&gt;output&lt;/em&gt; or &lt;em&gt;print&lt;/em&gt; something. This is only the main part of the function, and the function involves a huge amount of APIs and parameters.&lt;/p&gt;
 &lt;p&gt;Thus, if we write the function by ourselves, it would be extremely inefficient. So C++ or C has written for us already, and the only thing we are supposed to do is using header files.&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-header-files&#34;&gt;
-    &lt;a href=&#34;#what-what-is-header-files&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is header files?
+&lt;h2 id=&#34;what-what-is-header-files&#34;&gt;WHAT: What is header files?
 &lt;/h2&gt;</description>
         </item>
         <item>
@@ -101,9 +89,7 @@
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/</guid>
-        <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;
-    &lt;a href=&#34;#why-why-shouldnt-we-learn-from-hello-world-first&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?
+        <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?
 &lt;/h2&gt;&lt;p&gt;I believe many people are confused about the reason we start from function instead of popular &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt;. It is because &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; program is too difficult to beginner.&lt;/p&gt;
 &lt;p&gt;Some people might still be confused with &lt;em&gt;difficult&lt;/em&gt;, then let&amp;rsquo;s have a review of the program first:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
@@ -124,20 +110,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To be more accurate, this is not a &lt;em&gt;program&lt;/em&gt; but a &lt;em&gt;function&lt;/em&gt; that is supposed to be the beginning for beginner.&lt;/p&gt;
-&lt;h2 id=&#34;what&#34;&gt;
-    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT
-&lt;/h2&gt;&lt;h3 id=&#34;what-is-function&#34;&gt;
-    &lt;a href=&#34;#what-is-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    What is function?
+&lt;h2 id=&#34;what&#34;&gt;WHAT
+&lt;/h2&gt;&lt;h3 id=&#34;what-is-function&#34;&gt;What is function?
 &lt;/h3&gt;&lt;p&gt;Ref. &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Function_%28mathematics%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wikipedia&lt;/a&gt;: In mathematics, a &lt;strong&gt;function&lt;/strong&gt; from a set $X$ to a set $Y$ assigns to each element of $X$ exactly one element of $Y$.&lt;/p&gt;
 &lt;p&gt;Too abstract? Just understand that &lt;code&gt;Function&lt;/code&gt; is a &amp;ldquo;machine&amp;rdquo; containing some functions. E.g. $f(x) = x + 1$ machine $f(x)$ contains a function that could help to add 1 to input.&lt;/p&gt;
 &lt;p&gt;Then, you might find that all math or cs questions could be turned into functions with different complexity like $f(g(x) + h(y) \cdot u(z))$. And if we turn this into a language that computer could understand, it is a &lt;em&gt;program&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Now, you might understand why should we start from function. Function, is the most basic logic under program. Or, &lt;em&gt;all programs are consisted by functions&lt;/em&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;what-is-the-components-of-function&#34;&gt;
-    &lt;a href=&#34;#what-is-the-components-of-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    What is the components of function?
+&lt;h3 id=&#34;what-is-the-components-of-function&#34;&gt;What is the components of function?
 &lt;/h3&gt;&lt;p&gt;Let&amp;rsquo;s have a review of the previous function: &lt;code&gt;int f(int x){return x + 1;}&lt;/code&gt;, which equals to $f(x) = x + 1$ in mathematics. It&amp;rsquo;s time to fully understand this function:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
@@ -171,9 +151,7 @@
 &lt;p&gt;In a nutshell, the function of &lt;code&gt;function()&lt;/code&gt; is that first assigning $7$ to &lt;code&gt;bestNum&lt;/code&gt; that we declare as an integer, then assign &lt;code&gt;bestNum&lt;/code&gt; to &lt;code&gt;a&lt;/code&gt;, then assign the number that &lt;code&gt;a&lt;/code&gt; times $2$ to &lt;code&gt;a&lt;/code&gt;, then assign &lt;code&gt;a&lt;/code&gt; back to &lt;code&gt;bestNum&lt;/code&gt;, finally returns &lt;code&gt;bestNum&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You might find that there is no point to input &lt;code&gt;a&lt;/code&gt; for it will be &amp;lsquo;refreshed&amp;rsquo; or assigned with another number &lt;code&gt;bestNum&lt;/code&gt; in line 4. So we could rewrite line 1: &lt;code&gt;int function() {&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;If you could get the points in the nutshell, then congratulation that you stepped in c++ now. But you might still be confused about although there is no CE (Compile-time Error) but RE (Runtime Error). Which the function that the overall program start with?&lt;/p&gt;
-&lt;h3 id=&#34;the-main-function-of-a-program---main-function&#34;&gt;
-    &lt;a href=&#34;#the-main-function-of-a-program---main-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    The main function of a program - &lt;code&gt;main()&lt;/code&gt; function
+&lt;h3 id=&#34;the-main-function-of-a-program---main-function&#34;&gt;The main function of a program - &lt;code&gt;main()&lt;/code&gt; function
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; y;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
@@ -205,12 +183,8 @@
 &lt;p&gt;&lt;code&gt;main&lt;/code&gt; -&amp;gt; &lt;code&gt;f&lt;/code&gt; -&amp;gt; &lt;code&gt;h&lt;/code&gt; (return) -&amp;gt; &lt;code&gt;f&lt;/code&gt; -&amp;gt; &lt;code&gt;main&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;It is a &lt;code&gt;stack&lt;/code&gt; structure, which we put &lt;code&gt;main&lt;/code&gt; in the bottom first, then &lt;code&gt;f&lt;/code&gt;, then &lt;code&gt;h&lt;/code&gt;. When we want to return, we also have to pick from the top first: &lt;code&gt;h&lt;/code&gt;, &lt;code&gt;f&lt;/code&gt; then &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;stack&lt;/code&gt; structure, which is defined as LIFO, Last In First Out, is widely use in algorithm, computer hardware, etc. We will gain a deeper sight of this in the following courses.&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-write-a-program&#34;&gt;
-    &lt;a href=&#34;#how-how-to-write-a-program&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to write a Program?
-&lt;/h2&gt;&lt;h3 id=&#34;begin-with-main-is-a-good-habit&#34;&gt;
-    &lt;a href=&#34;#begin-with-main-is-a-good-habit&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Begin with &lt;code&gt;main()&lt;/code&gt; is a good habit
+&lt;h2 id=&#34;how-how-to-write-a-program&#34;&gt;HOW: How to write a Program?
+&lt;/h2&gt;&lt;h3 id=&#34;begin-with-main-is-a-good-habit&#34;&gt;Begin with &lt;code&gt;main()&lt;/code&gt; is a good habit
 &lt;/h3&gt;&lt;p&gt;From the knowledge we have learned above, every program contains a &lt;code&gt;main()&lt;/code&gt; function.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;sentence&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;;
@@ -237,17 +211,13 @@
 &lt;blockquote&gt;
 &lt;p&gt;The first thing to understand is that hackers actually like hard problems and good, thought-provoking questions about them. If we didn&amp;rsquo;t, we wouldn&amp;rsquo;t be here. If you give us an interesting question to chew on we&amp;rsquo;ll be grateful to you; good questions are a stimulus and a gift. Good questions help us develop our understanding, and often reveal problems we might not have noticed or thought about otherwise. Among hackers, “Good question!” is a strong and sincere compliment.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Now, we know how to create a structure of a program, then what about calculation?&lt;/p&gt;
-&lt;h3 id=&#34;arithmetic&#34;&gt;
-    &lt;a href=&#34;#arithmetic&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arithmetic
+&lt;h3 id=&#34;arithmetic&#34;&gt;Arithmetic
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Basic &lt;code&gt;+ - * /&lt;/code&gt; could be use directly. E.g. &lt;code&gt;int a = 5 - 3;&lt;/code&gt;, &lt;code&gt;float b = 3 / 6&lt;/code&gt; (float is a type could store float number). But notice that &lt;code&gt;/&lt;/code&gt; still cannot divide with &lt;code&gt;0&lt;/code&gt;. Although there is no CE, but RE will happen while running the program.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;=&lt;/code&gt; We have clarified that &lt;code&gt;=&lt;/code&gt; is not &lt;em&gt;equal&lt;/em&gt; but &lt;em&gt;assign&lt;/em&gt; as an arithmetic.&lt;/li&gt;
 &lt;li&gt;Mod calculation: &lt;code&gt;%&lt;/code&gt;. E.g. &lt;code&gt;int a = 8 % 3; // a equals 2&lt;/code&gt; (&lt;code&gt;//&lt;/code&gt; is a comment sign. The content after &lt;code&gt;//&lt;/code&gt; will not be compiled and run. &lt;code&gt;/*content*/&lt;/code&gt; is similar to &lt;code&gt;//&lt;/code&gt;, but you can comment for several lines.)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;practice&#34;&gt;
-    &lt;a href=&#34;#practice&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Practice
+&lt;h2 id=&#34;practice&#34;&gt;Practice
 &lt;/h2&gt;&lt;p&gt;As the first practice, I will declare that how to use &lt;code&gt;practice&lt;/code&gt; to improve ourselves.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Practice&lt;/code&gt; has three levels: &lt;code&gt;KNOW&lt;/code&gt;, &lt;code&gt;UNDERSTAND&lt;/code&gt;, &lt;code&gt;MASTER&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -255,9 +225,7 @@
 &lt;li&gt;&lt;code&gt;UNDERSTAND&lt;/code&gt; makes some modification with content itself and parameters, which is necessary for next learning. Figuring out &lt;code&gt;UNDERSTAND&lt;/code&gt; means that you gain your own understanding while reading the post. If you cannot solve &lt;code&gt;UNDERSTAND&lt;/code&gt;, please conclude the post and find out what you miss in this course, you could ask search engine for help as well.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;MASTER&lt;/code&gt; explores deeper into knowledge and content, which is necessary for mastering C++ and next learning for algorithm. Figuring out &lt;code&gt;MASTER&lt;/code&gt; means that you get every point of the post and build your would logical system of learning C++. If you cannot solve &lt;code&gt;MASTER&lt;/code&gt;, you could read the answer directly and then understand how the answer works. After that, re-answer the question again.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;know&#34;&gt;
-    &lt;a href=&#34;#know&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    KNOW
+&lt;h3 id=&#34;know&#34;&gt;KNOW
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
@@ -269,9 +237,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Find the value of &lt;code&gt;a&lt;/code&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;code&gt;a&lt;/code&gt; equals 2.&lt;/p&gt;
-&lt;h3 id=&#34;understand&#34;&gt;
-    &lt;a href=&#34;#understand&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    UNDERSTAND
+&lt;h3 id=&#34;understand&#34;&gt;UNDERSTAND
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;h&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
@@ -296,9 +262,7 @@
 &lt;p&gt;&lt;code&gt;a&lt;/code&gt; equals 1.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;master&#34;&gt;
-    &lt;a href=&#34;#master&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    MASTER
+&lt;h3 id=&#34;master&#34;&gt;MASTER
 &lt;/h3&gt;&lt;p&gt;Write a function &lt;code&gt;switch(int a, int b)&lt;/code&gt; that could switch the value stored in &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;, then returns &lt;code&gt;a&lt;/code&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;switch&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b){

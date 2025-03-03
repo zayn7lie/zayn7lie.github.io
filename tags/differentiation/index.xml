@@ -12,14 +12,10 @@
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-learn-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we learn differentiation?
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;WHY: Why should we learn differentiation?
 &lt;/h2&gt;&lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;p&gt;How to sketch a function? - Find the tendency of a function, knowning &lt;em&gt;monotonicity&lt;/em&gt; and &lt;em&gt;concavity&lt;/em&gt;. (&amp;amp; Optimization)&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;
-    &lt;a href=&#34;#what-what-is-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is differentiation?
+&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;WHAT: What is differentiation?
 &lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ (1)} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ (2)} = \frac{\mathrm{d}f(x)}{\mathrm{d}x} \textbf{ (3)} \Rightarrow f&amp;rsquo;(x) \textbf{ (4)}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
@@ -32,9 +28,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-01&lt;/code&gt;: Use the derivative way to present $g(x)$: $g(x) = \lim_{h \rightarrow 0}\Large{\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}}$&lt;/p&gt;
-&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
-    &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why a function could be differentiated? - Differentiability
+&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Limit &amp;amp; Continuity: $\lim_{x \rightarrow a}{f(x)} = f(a)$ ($\lim_{x \rightarrow a}{f(x)} = \lim_{x \rightarrow a^+}{f(x)} = \lim_{x \rightarrow a^-}{f(x)}$)
 &lt;ul&gt;
@@ -63,9 +57,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-01&lt;/code&gt;: $\lim_{x \rightarrow 0^+}{x\ln{x}}$, $\lim_{x \rightarrow 0^+}{x^x}$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-02&lt;/code&gt;: $\lim_{x \rightarrow \pm\infty}(1 + \frac{1}{x})^x$ (Important one, that&amp;rsquo;s the definition of $e$)&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-03&lt;/code&gt;: $\lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}$&lt;/p&gt;
-&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-derivative-for-basic-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the derivative for basic function
+&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;WHAT: What is the derivative for basic function
 &lt;/h3&gt;&lt;p&gt;$$ \frac{d}{\mathrm{d}x}x^n = n \cdot x^{n - 1}, \frac{d}{\mathrm{d}x}Constant = 0, \frac{d}{\mathrm{d}x}\ln{x} = \frac{1}{x}, \frac{d}{\mathrm{d}x}e^x = e^x
 $$
 $$ \frac{d}{\mathrm{d}x}\sin{x} = \cos{x}, \frac{d}{\mathrm{d}x}\cos{x} = -\sin{x}, \frac{d}{\mathrm{d}x}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
@@ -73,9 +65,7 @@ $$
 $$ \frac{d}{\mathrm{d}x}\sin^{-1}{x} = \frac{d}{\mathrm{d}x}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{\mathrm{d}x}\cos^{-1}{x} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{\mathrm{d}x}\tan^{-1}{x} = \frac{1}{1 + x^2}
 $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-03&lt;/code&gt;: Try to use definition to derive the first two lines.&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;
-    &lt;a href=&#34;#how-how-to-differentiate---basic-rules&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to differentiate? - Basic rules
+&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;HOW: How to differentiate? - Basic rules
 &lt;/h3&gt;&lt;p&gt;$$ \frac{d}{\mathrm{d}x}(f(x) + g(x)) = \frac{d}{\mathrm{d}x}f(x) + \frac{d}{\mathrm{d}x}g(x) \Leftrightarrow (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
 $$
 $$ \frac{d}{\mathrm{d}x}(f(x) \cdot g(x)) = \frac{d}{\mathrm{d}x}f(x) \cdot g(x) + f(x) \cdot \frac{d}{\mathrm{d}x}g(x) \Leftrightarrow (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
@@ -87,17 +77,11 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-01&lt;/code&gt;: Try to use the basic rule to derive the third line in &lt;code&gt;WHAT: What is the derivative for basic function&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-02&lt;/code&gt;: Differentiate: $a^x$; $\log_ax$; $x^x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-03&lt;/code&gt;: Known $x^2 + y^2 = 25$, derive $\frac{d}{\mathrm{d}x}y$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-differentiation-in-solving-problem&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply differentiation in solving problem?
-&lt;/h2&gt;&lt;h3 id=&#34;finding-rates&#34;&gt;
-    &lt;a href=&#34;#finding-rates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Finding Rates
+&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;HOW: How to apply differentiation in solving problem?
+&lt;/h2&gt;&lt;h3 id=&#34;finding-rates&#34;&gt;Finding Rates
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-01&lt;/code&gt;: A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-02&lt;/code&gt;: The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{\mathrm{d}}{\mathrm{d}t}x = \frac{\mathrm{d}}{\mathrm{d}t}z$ and the rate of the diagonal $z$ has $\frac{\mathrm{d}}{\mathrm{d}t}z = \frac{\mathrm{d}}{\mathrm{d}t}y$. Derive the value of $k$.&lt;/p&gt;
-&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;
-    &lt;a href=&#34;#curve-sketching--optimization&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Curve Sketching &amp;amp; Optimization
+&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;Curve Sketching &amp;amp; Optimization
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Monotonicity with $\mathrm{d}y/\mathrm{d}x$
 &lt;ul&gt;

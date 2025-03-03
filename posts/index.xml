@@ -6,15 +6,13 @@
         <description>Recent content in Posts on zayn_lie&#39;s studio</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 02 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/posts/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>After Arch Linux Installation</title>
         <link>https://zayn7lie.ber7.org/posts/linux/archlinux2/</link>
         <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/linux/archlinux2/</guid>
-        <description>&lt;h2 id=&#34;before-entering-wm&#34;&gt;
-    &lt;a href=&#34;#before-entering-wm&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Before entering WM
+        <description>&lt;h2 id=&#34;before-entering-wm&#34;&gt;Before entering WM
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Disable the &lt;code&gt;-debug&lt;/code&gt; flag in &lt;code&gt;/etc/makepkg.conf&lt;/code&gt;: in &lt;code&gt;option&lt;/code&gt;, &lt;code&gt;!&lt;/code&gt; the &lt;code&gt;debug&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Enable &lt;code&gt;pacman&lt;/code&gt; features in &lt;code&gt;/etc/pacman.conf&lt;/code&gt;: uncomment &lt;code&gt;Color&lt;/code&gt;, and &lt;code&gt;multilib&lt;/code&gt;&lt;/li&gt;
@@ -31,9 +29,7 @@
 &lt;li&gt;Install WM: &lt;code&gt;$ yay -S gtk3 hyprland-git kitty&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Enter the WM: &lt;code&gt;$ Hyprland&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;configuration-of-system-base-settings-and-display&#34;&gt;
-    &lt;a href=&#34;#configuration-of-system-base-settings-and-display&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Configuration of system-base settings and display
+&lt;h2 id=&#34;configuration-of-system-base-settings-and-display&#34;&gt;Configuration of system-base settings and display
 &lt;/h2&gt;&lt;ol start=&#34;0&#34;&gt;
 &lt;li&gt;For recording the processes, install &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;wl-clipboard&lt;/code&gt;: &lt;code&gt;$ yay -S code wl-clipboard&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Prefer settings in &lt;code&gt;Hyprland&lt;/code&gt; in &lt;code&gt;{HOME}/.config/hypr/hyprland.conf&lt;/code&gt;
@@ -80,9 +76,7 @@ background_opacity 0.75
 &lt;/li&gt;
 &lt;li&gt;Reboot: &lt;code&gt;$ reboot&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;more-packages-applications-and-settings&#34;&gt;
-    &lt;a href=&#34;#more-packages-applications-and-settings&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    More packages (applications) and settings
+&lt;h2 id=&#34;more-packages-applications-and-settings&#34;&gt;More packages (applications) and settings
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Fingerprint: &lt;code&gt;yay -S libfprint-2-tod1-xps9300-bin fprintd&lt;/code&gt; then add &lt;code&gt;auth		sufficient  	pam_unix.so try_first_pass likeauth nullok&lt;/code&gt;, then &lt;code&gt;auth		sufficient  	pam_fprintd.so&lt;/code&gt; to &lt;code&gt;/etc/pam.d/login&lt;/code&gt; (after &lt;code&gt;requisite&lt;/code&gt;) and &lt;code&gt;sudo&lt;/code&gt;&lt;/p&gt;
@@ -138,9 +132,7 @@ env = QT_IM_MODULE,ibus
 env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;for-my-work&#34;&gt;
-    &lt;a href=&#34;#for-my-work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    For my work
+&lt;h2 id=&#34;for-my-work&#34;&gt;For my work
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$\LaTeX$: &lt;code&gt;texlive-latex&lt;/code&gt; for &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;texlive-latexrecommended&lt;/code&gt; for &lt;code&gt;amsmath&lt;/code&gt;, &lt;code&gt;texlive-latexextra&lt;/code&gt; for &lt;code&gt;orcidlink&lt;/code&gt;, &lt;code&gt;texlive-fontsrecommended&lt;/code&gt; for essentials published fonts.&lt;/p&gt;
@@ -174,9 +166,7 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
 &lt;p&gt;Network and VPN: &lt;code&gt;$ yay -S networkmanager-openconnect&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;social-and-communication&#34;&gt;
-    &lt;a href=&#34;#social-and-communication&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Social and Communication
+&lt;h2 id=&#34;social-and-communication&#34;&gt;Social and Communication
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Telegram: &lt;code&gt;$ yay -S telegram-desktop&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Discord: &lt;code&gt;$ yay -S webcord-bin&lt;/code&gt;&lt;/li&gt;
@@ -189,25 +179,19 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/geo-left_fist/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-use-left-fist-rule&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-use-left-fist-rule&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we use left-fist rule?
+        <description>&lt;h2 id=&#34;why-why-should-we-use-left-fist-rule&#34;&gt;WHY: Why should we use left-fist rule?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;The thumb is in the fist which is more lively to some situation. (More in HOW section)&lt;/li&gt;
 &lt;li&gt;I do not want to put down my pen when I am thinking and writing. (Sorry for the left-handed)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-left-fist-rule&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-left-fist-rule&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the left-fist rule?
+&lt;h2 id=&#34;what-what-is-the-left-fist-rule&#34;&gt;WHAT: What is the left-fist rule?
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Raise your left hand with thumb in your palm&lt;/li&gt;
 &lt;li&gt;Point your rest four fingers to $x$ OR one of the radius direction&lt;/li&gt;
 &lt;li&gt;Find a way so that you could scroll your fingers to $y$ direction to form a fist OR along the spin direction&lt;/li&gt;
 &lt;li&gt;the direction of your thumb is $z$ direction&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;how-how-to-apply-the-left-fist-rule&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-the-left-fist-rule&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply the left-fist rule?
+&lt;h2 id=&#34;how-how-to-apply-the-left-fist-rule&#34;&gt;HOW: How to apply the left-fist rule?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;X-Y-Z direction: point fingers to $x$, find a way scroll to $y$, your thumb in your fist is pointing at $z$&lt;/li&gt;
 &lt;li&gt;Cross Product $\vec{A} \times \vec{B}$: pointing four fingers to the direction of $\vec{A}$ with thumb in the palm, then curling four finger to the direction of $\vec{B}$, thumb in the fist is the direction of $\vec{A} \times \vec{B}$&lt;/li&gt;
@@ -228,20 +212,14 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
         <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-vec/</guid>
-        <description>&lt;h2 id=&#34;why-from-scalar-to-vector&#34;&gt;
-    &lt;a href=&#34;#why-from-scalar-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: From scalar to vector
-&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-know-about-vectors&#34;&gt;
-    &lt;a href=&#34;#why-why-we-should-know-about-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why we should know about vectors?
+        <description>&lt;h2 id=&#34;why-from-scalar-to-vector&#34;&gt;WHY: From scalar to vector
+&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-know-about-vectors&#34;&gt;WHY: Why we should know about vectors?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;A tool used to express objects in higher dimensions.&lt;/li&gt;
 &lt;li&gt;A thing that contains more information: magnitude and direction&lt;/li&gt;
 &lt;li&gt;A sequence of numbers (objects) in order used for more generalized analysis.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-what-is-the-vector&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the vector?
+&lt;h3 id=&#34;what-what-is-the-vector&#34;&gt;WHAT: What is the vector?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Vector addition / subtraction: $\vec{v} + \vec{u} = \vec{u} + \vec{v} = \sum_D (v_i + u_i)\hat{D_i} = (v_x + u_x)\hat{i} + (v_y + u_y)\hat{j} + \ldots = \langle v_x + u_x, v_y + u_y, \ldots \rangle$ ($-\vec{u} = \langle -u_x, -u_y, \ldots \rangle$); $(\vec{v}_1 + \vec{v}_2) + \vec{v}_3 = \vec{v}_1 + (\vec{v}_2 + \vec{v}_3)$&lt;/li&gt;
 &lt;li&gt;Vector multiplication
@@ -275,9 +253,7 @@ w_x &amp;amp; w_y &amp;amp; w_z
 &lt;/li&gt;
 &lt;li&gt;Vector unitization: $\displaystyle \vec{a} = |\vec{a}|\hat{a} = a\hat{a} = \sqrt{a_x^2 + a_y^2 + \ldots} \cdots \frac{\langle a_x, a_y, \ldots \rangle}{\sqrt{a_x^2 + a_y^2 + \ldots}}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-why-should-we-apply-calculus-to-vectors&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-apply-calculus-to-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we apply calculus to vectors?
+&lt;h3 id=&#34;why-why-should-we-apply-calculus-to-vectors&#34;&gt;WHY: Why should we apply calculus to vectors?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;More applicable in the real world, like the 3D real world, linear algebra, etc.&lt;/p&gt;
@@ -286,39 +262,27 @@ w_x &amp;amp; w_y &amp;amp; w_z
 &lt;p&gt;Vector calculus in two/three dimensions is largely applied in fluid mechanics, electromagnetism, etc.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-scalar-field&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the scalar field?
+&lt;h2 id=&#34;what-what-is-the-scalar-field&#34;&gt;WHAT: What is the scalar field?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;$f(x_1, x_2, x_3, \ldots)$&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;example-of-scalar-fields&#34;&gt;
-    &lt;a href=&#34;#example-of-scalar-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Example of scalar fields
+&lt;h3 id=&#34;example-of-scalar-fields&#34;&gt;Example of scalar fields
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;The height of a mountain: $h = f(x, y)$&lt;/li&gt;
 &lt;li&gt;The temperature inside a room: $T = f(x, y, z)$&lt;/li&gt;
 &lt;li&gt;The &lt;em&gt;&lt;strong&gt;density&lt;/strong&gt;&lt;/em&gt; of objects/water surface/air: $\rho = f(x_1, x_2, \ldots)$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field&#34;&gt;
-    &lt;a href=&#34;#how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to express objects (curves, surfaces, etc.) in a scalar field?
+&lt;h3 id=&#34;how-how-to-express-objects-curves-surfaces-etc-in-a-scalar-field&#34;&gt;HOW: How to express objects (curves, surfaces, etc.) in a scalar field?
 &lt;/h3&gt;&lt;p&gt;$f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\displaystyle\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;eg-from-x-y-z-coordinates-to-vectors&#34;&gt;
-    &lt;a href=&#34;#eg-from-x-y-z-coordinates-to-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    E.g. from X-Y-Z coordinates to vectors
-&lt;/h3&gt;&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-use-x-y-z-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we use X-Y-Z coordinate
+&lt;h3 id=&#34;eg-from-x-y-z-coordinates-to-vectors&#34;&gt;E.g. from X-Y-Z coordinates to vectors
+&lt;/h3&gt;&lt;h4 id=&#34;why-why-should-we-use-x-y-z-coordinate&#34;&gt;WHY: Why should we use X-Y-Z coordinate
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;It is the generalization of the X-Y coordinate that is easy to learn and understand&lt;/li&gt;
 &lt;li&gt;It is more visualizable using some graphic software or even drawn by hand&lt;/li&gt;
 &lt;li&gt;The process of the generalization from X-Y to X-Y-Z is the same as the generalization from X-Y-Z to higher dimensions. In the higher dimensions, the meaning of &lt;em&gt;vector&lt;/em&gt; is generalized to just a set of points: $\vec{v} = (x_1, x_2, \ldots)$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;what-what-are-points-lines-and-planes-in-the-coordinate&#34;&gt;
-    &lt;a href=&#34;#what-what-are-points-lines-and-planes-in-the-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What are points, lines, and planes in the coordinate
+&lt;h4 id=&#34;what-what-are-points-lines-and-planes-in-the-coordinate&#34;&gt;WHAT: What are points, lines, and planes in the coordinate
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Points/Vectors(3 variables - 3 constraints = 0 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b, f_3(x, y, z) = c}$
 E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})$&lt;/li&gt;
@@ -341,9 +305,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;how-how-to-present-in-the-coordinate---parametrized-objects&#34;&gt;
-    &lt;a href=&#34;#how-how-to-present-in-the-coordinate---parametrized-objects&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to present in the coordinate - Parametrized Objects
+&lt;h4 id=&#34;how-how-to-present-in-the-coordinate---parametrized-objects&#34;&gt;HOW: How to present in the coordinate - Parametrized Objects
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Points/Vectors: $\vec{p} = \vec{r}_0$&lt;/p&gt;
@@ -363,9 +325,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-visualize-vectors-in-dimensions&#34;&gt;
-    &lt;a href=&#34;#how-how-to-visualize-vectors-in-dimensions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to visualize vectors in dimensions?
+&lt;h3 id=&#34;how-how-to-visualize-vectors-in-dimensions&#34;&gt;HOW: How to visualize vectors in dimensions?
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
@@ -376,12 +336,8 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;e.i. $t = f(x, y, z) = x^2 - y^2 - z^2$: hyperboloid of one sheet $\rightarrow$ cone $\rightarrow$ hyperboloid of one sheet (cell division, droplet, &amp;hellip;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how-how-to-do-calculus-in-a-scalar-field&#34;&gt;
-    &lt;a href=&#34;#how-how-to-do-calculus-in-a-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to do calculus in a scalar field?
-&lt;/h2&gt;&lt;h3 id=&#34;single-derivatives&#34;&gt;
-    &lt;a href=&#34;#single-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Single derivatives
+&lt;h2 id=&#34;how-how-to-do-calculus-in-a-scalar-field&#34;&gt;HOW: How to do calculus in a scalar field?
+&lt;/h2&gt;&lt;h3 id=&#34;single-derivatives&#34;&gt;Single derivatives
 &lt;/h3&gt;&lt;p&gt;$\vec{r}(t) = \langle F(t), G(t), H(t) \rangle = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k}$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Derivative: $\vec{v}(t) = \vec{r}&amp;rsquo;(t) = \langle F&amp;rsquo;(t), G&amp;rsquo;(t), H&amp;rsquo;(t) \rangle = F&amp;rsquo;(t)\hat{i} + G&amp;rsquo;(t)\hat{j} + H&amp;rsquo;(t)\hat{k}$
@@ -404,9 +360,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-space&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-to-space&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply to space?
+&lt;h4 id=&#34;how-how-to-apply-to-space&#34;&gt;HOW: How to apply to space?
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Tangent vector to a space curve: $\hat{T} = \vec{r}&amp;rsquo;/|\vec{r}&amp;rsquo;|$&lt;/li&gt;
 &lt;li&gt;Normal vector to a tangent vector: $\hat{N} = \hat{T}&amp;rsquo;/|\hat{T}&amp;rsquo;| = \hat{T}&amp;rsquo;/|\kappa \vec{r}&amp;rsquo;|$&lt;/li&gt;
@@ -418,12 +372,8 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;p&gt;$\Rightarrow \vec{a} = a_T\hat{T} + a_N\hat{N}, a_T = v&amp;rsquo; = \frac{|\vec{r}&amp;rsquo; \cdot \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}, a_N = \kappa v^2 = \frac{|\vec{r}&amp;rsquo; \times \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note. How to understand $\frac{\mathrm{d}}{\mathrm{d}t} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;partial-derivatives&#34;&gt;
-    &lt;a href=&#34;#partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Partial Derivatives
-&lt;/h3&gt;&lt;h4 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
-    &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why a function could be differentiated? - Differentiability
+&lt;h3 id=&#34;partial-derivatives&#34;&gt;Partial Derivatives
+&lt;/h3&gt;&lt;h4 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Limit &amp;amp; Continuity: $\displaystyle \lim_{(x, y) \rightarrow (a, b)}f(x, y) = L$ (no matter any directions approaching to $(a, b)$, f(x, y) is continuous at $(a, b)$ if and only if those values are the same)&lt;/p&gt;
@@ -444,9 +394,7 @@ Limit along the specific line: $y = x$&lt;/li&gt;
 &lt;p&gt;Continuity: $\lim_{(x, y) \rightarrow (a, b)}f(x, y) = f(a, b)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;what-what-are-partial-derivatives&#34;&gt;
-    &lt;a href=&#34;#what-what-are-partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What are Partial Derivatives
+&lt;h4 id=&#34;what-what-are-partial-derivatives&#34;&gt;WHAT: What are Partial Derivatives
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Algebra: Definition
@@ -467,9 +415,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;
-    &lt;a href=&#34;#how-how-to-do-partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to do Partial Derivatives
+&lt;h4 id=&#34;how-how-to-do-partial-derivatives&#34;&gt;HOW: How to do Partial Derivatives
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;*Chain Rule
 $$ (1) z = f(x, y): \frac{\mathrm{d}z}{\mathrm{d}t} = \frac{\partial f}{\partial x} \frac{\mathrm{d}x}{\mathrm{d}t} + \frac{\partial f}{\partial y} \frac{\mathrm{d}y}{\mathrm{d}t}
@@ -481,9 +427,7 @@ $$
 $$ *(3): \frac{\partial u}{\partial x_1} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial x_1} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial x_1} + \frac{\partial u}{\partial x_3} \frac{\partial x_3}{\partial x_1} + \ldots \ \text{since $x_1, x_2, x_3, \ldots$ are independent} \Rightarrow \frac{\partial x_n}{\partial x_1} = 0, \frac{\partial x_1}{\partial x_1} = 1 \Rightarrow \frac{\partial u}{\partial x_1} = \frac{\partial u}{\partial x_1}
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-vector&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-to-vector&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to Apply to Vector
+&lt;h4 id=&#34;how-how-to-apply-to-vector&#34;&gt;HOW: How to Apply to Vector
 &lt;/h4&gt;&lt;p&gt;$$ D_u{f(x, y)} = \vec\nabla{f(x, y)} \cdot \hat{u}
 $$&lt;/p&gt;
 &lt;ul&gt;
@@ -507,9 +451,7 @@ P &amp;amp; Q &amp;amp; R
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-to-finding-maximum-and-minimum&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to Apply to Finding Maximum and Minimum
+&lt;h5 id=&#34;how-how-to-apply-to-finding-maximum-and-minimum&#34;&gt;HOW: How to Apply to Finding Maximum and Minimum
 &lt;/h5&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;$\displaystyle \frac{\partial f}{\partial x} = 0, \frac{\partial f}{\partial y} = 0 \Leftarrow \frac{\partial}{\partial t} = a\frac{\partial}{\partial x} + b\frac{\partial}{\partial y}, \frac{\partial f}{\partial \forall t} = 0$&lt;/p&gt;
@@ -548,16 +490,10 @@ P &amp;amp; Q &amp;amp; R
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;iterated-integrals&#34;&gt;
-    &lt;a href=&#34;#iterated-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Iterated Integrals
-&lt;/h3&gt;&lt;h4 id=&#34;what-what-is-the-double-integral&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-double-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the double integral
+&lt;h3 id=&#34;iterated-integrals&#34;&gt;Iterated Integrals
+&lt;/h3&gt;&lt;h4 id=&#34;what-what-is-the-double-integral&#34;&gt;WHAT: What is the double integral
 &lt;/h4&gt;&lt;p&gt;$\iint\limits_R{f(x, y)},\mathrm{d}A = \lim_{max \Delta x_i, \Delta y_i \rightarrow 0}\sum_{i = 1}^{m}\sum_{j = 1}^{n}f(x_{ij}^* , y_{ij}^* ) \Delta A_{i,j}$ (Double Riemann Sum, Midpoint: $x^* , y^ * \rightarrow \bar{x}, \bar{y}$)&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-switch-iterating-order&#34;&gt;
-    &lt;a href=&#34;#how-how-to-switch-iterating-order&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to switch iterating order?
+&lt;h4 id=&#34;how-how-to-switch-iterating-order&#34;&gt;HOW: How to switch iterating order?
 &lt;/h4&gt;&lt;p&gt;$$ \int\int{f(x, y)},\mathrm{d}A (A =[a, b] \times [c, d]) = \int_a^b[\int_c^df(x, y),\mathrm{d}y],\mathrm{d}x = \int_c^d[\int_a^bf(x, y),\mathrm{d}x],\mathrm{d}y
 $$&lt;/p&gt;
 &lt;p&gt;$$ \iiint f(x, y, z) ,\mathrm{d}V (V = [0, 1] \times [\sqrt{x}, 1] \times [0, 1 - y]) \
@@ -565,9 +501,7 @@ $$&lt;/p&gt;
 = \int_0^1\int_0^{1 - \sqrt{x}}\int_{\sqrt{x}}^{1 - z} f(x, y, z) ,\mathrm{d}y,\mathrm{d}z,\mathrm{d}x = \int_0^1\int_0^{(1 - z)^2}\int_{\sqrt{x}}^{1 - z} f(x, y, z) ,\mathrm{d}y,\mathrm{d}x,\mathrm{d}z \
 = \int_0^1\int_0^{1 - z}\int_0^{y^2} f(x, y, z) ,\mathrm{d}x,\mathrm{d}y,\mathrm{d}z = \int_0^1\int_0^{1 - y}\int_0^{y^2} f(x, y, z) ,\mathrm{d}x,\mathrm{d}z,\mathrm{d}y
 $$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-turn-variables-in-different-coordinates&#34;&gt;
-    &lt;a href=&#34;#how-how-to-turn-variables-in-different-coordinates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to turn variables in different coordinates?
+&lt;h4 id=&#34;how-how-to-turn-variables-in-different-coordinates&#34;&gt;HOW: How to turn variables in different coordinates?
 &lt;/h4&gt;&lt;p&gt;$$\iint_\mathbb{R} f(x, y) \partial x \partial y = \iint_\mathbb{R} f(u, v) |\frac{\partial(x, y)}{\partial(u, v)}| \partial u \partial v, |\frac{\partial(x, y)}{\partial(u, v)}| = \begin{vmatrix}
 \partial x / \partial u &amp;amp; \partial x / \partial v \
 \partial y / \partial u &amp;amp; \partial y / \partial v
@@ -577,9 +511,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$\iint f(x, y) ,\mathrm{d}x,\mathrm{d}y = \iint f(r\cos\theta, r\sin\theta) \cdot r ,\mathrm{d} r ,\mathrm{d}\theta$$&lt;/p&gt;
 &lt;p&gt;$$\iiint f(x, y, z) ,\mathrm{d}x,\mathrm{d}y,\mathrm{d}z = \iiint f(r\cos\theta, r\sin\theta, z) \cdot r ,\mathrm{d} r ,\mathrm{d}\theta ,\mathrm{d}z \
 = \iiint f(\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi) \cdot \rho^2\sin\phi ,\mathrm{d} \rho ,\mathrm{d}\theta ,\mathrm{d}\phi$$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-apply-to-reality&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-to-reality&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply to reality
+&lt;h4 id=&#34;how-how-to-apply-to-reality&#34;&gt;HOW: How to apply to reality
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Volume
@@ -592,23 +524,17 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
 &lt;p&gt;$$M = \iiint\int_0^{\rho(x, y, z)} ,\mathrm{d}\rho,\mathrm{d}V = \iiint\rho(x, y, z),\mathrm{d}V$$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-vector-field&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the vector field?
+&lt;h2 id=&#34;what-what-is-the-vector-field&#34;&gt;WHAT: What is the vector field?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;example-of-vector-fields&#34;&gt;
-    &lt;a href=&#34;#example-of-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Example of vector fields
+&lt;h3 id=&#34;example-of-vector-fields&#34;&gt;Example of vector fields
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;The velocity of water/air (fluid): $\vec{v} = \mathbf{F}(x_1, x_2, x_3, \ldots)$&lt;/li&gt;
 &lt;li&gt;Gravitational field (force): $\displaystyle \vec{F} = \mathbf{F}(x_1, x_2, x_3) = \frac{GMm}{r^2}\hat{r}$ ($\hat{r}$ is a unit vector)&lt;/li&gt;
 &lt;li&gt;Electric field: $\displaystyle \vec{E} = \mathbf{F}(x_1, x_2, x_3) = k\frac{Q}{r^2}\hat{r}$&lt;/li&gt;
 &lt;li&gt;Magnitic field: $\displaystyle \vec{B} = \mathbf{F}(x_1, x_2, x_3) = \frac{\mu_0q\vec{v}\times\hat{r}}{4\pi r^2}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-what-are-vector-fields&#34;&gt;
-    &lt;a href=&#34;#what-what-are-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What are vector fields
+&lt;h3 id=&#34;what-what-are-vector-fields&#34;&gt;WHAT: What are vector fields
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Vector Fields: $\vec{F}(x, y) = I(x, y)\hat{i} + J(x, y)\hat{j} = \langle I(x, y), J(x, y) \rangle (in \ \R^2)$&lt;/p&gt;
@@ -617,21 +543,15 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
 &lt;p&gt;Gradient Fields: $\vec\nabla{f(x, y)} = f_x(x, y)\hat{i} + f_y(x, y)\hat{j}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;conservative-vector-fields&#34;&gt;
-    &lt;a href=&#34;#conservative-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Conservative vector fields
+&lt;h4 id=&#34;conservative-vector-fields&#34;&gt;Conservative vector fields
 &lt;/h4&gt;&lt;p&gt;$$\forall C_1, C_2 = (P_1 \rightarrow P_2) \in D, \int_{C_1} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r} = \int_{C_2} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r} \Leftrightarrow \exists f, \vec\nabla{f} = \mathbf{F}$$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$D$: an &lt;strong&gt;open&lt;/strong&gt;($\forall P \in D,\exists \circ P \in D$) &lt;strong&gt;connected&lt;/strong&gt;($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a &lt;strong&gt;conservative vector field&lt;/strong&gt;; under this situation, we call $\int_{C} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r}$ is &lt;strong&gt;independent of path&lt;/strong&gt;, or &lt;em&gt;line integrals of conservative vector fields are independent of path.&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x ,\mathbf{or}, \vec\nabla \times \mathbf{F} = \mathbf{0}$$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Clairaut&amp;rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;how-how-to-do-calculus-in-vector-field&#34;&gt;
-    &lt;a href=&#34;#how-how-to-do-calculus-in-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to do calculus in vector field?
-&lt;/h2&gt;&lt;h3 id=&#34;how-how-to-integrate-along-the-line---linepathcontour-integrals&#34;&gt;
-    &lt;a href=&#34;#how-how-to-integrate-along-the-line---linepathcontour-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to integrate along the line - Line(Path/Contour) Integrals
+&lt;h2 id=&#34;how-how-to-do-calculus-in-vector-field&#34;&gt;HOW: How to do calculus in vector field?
+&lt;/h2&gt;&lt;h3 id=&#34;how-how-to-integrate-along-the-line---linepathcontour-integrals&#34;&gt;HOW: How to integrate along the line - Line(Path/Contour) Integrals
 &lt;/h3&gt;&lt;p&gt;$$\displaystyle \int_C \vec{F} \cdot ,\mathrm{d}\vec{r} = \int \vec{F}(\vec{r}(t)) \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t},\mathrm{d}t$$&lt;/p&gt;
 &lt;p&gt;$$ \int_{\mathrm{curve},C}f(x, y),\mathrm{d}s = \lim_{\max \Delta{s}_i \rightarrow 0}\sum_{i = 1}^{n}f(x_i^* , y_i^*)\Delta{s}_i, \mathrm{curve}, C: s = \int_a^b\sqrt{(\frac{\mathrm{d}x}{\mathrm{d}t})^2 + (\frac{\mathrm{d}y}{\mathrm{d}t})^2}\mathrm{d}t
 $$
@@ -667,12 +587,8 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-how-to-integrate-along-the-surface---surface-integrals&#34;&gt;
-    &lt;a href=&#34;#how-how-to-integrate-along-the-surface---surface-integrals&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to integrate along the surface - Surface Integrals
-&lt;/h3&gt;&lt;h4 id=&#34;what-what-are-surfaces-and-areas&#34;&gt;
-    &lt;a href=&#34;#what-what-are-surfaces-and-areas&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What are surfaces and areas
+&lt;h3 id=&#34;how-how-to-integrate-along-the-surface---surface-integrals&#34;&gt;HOW: How to integrate along the surface - Surface Integrals
+&lt;/h3&gt;&lt;h4 id=&#34;what-what-are-surfaces-and-areas&#34;&gt;WHAT: What are surfaces and areas
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Parametric Surfaces: $\mathbf{r}(u, v) = x(u, v)\mathbf{i} + y(u, v)\mathbf{j} + z(u, v)\mathbf{k}$
 &lt;ul&gt;
@@ -694,15 +610,11 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-how-to-do-surface-integral&#34;&gt;
-    &lt;a href=&#34;#how-how-to-do-surface-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to do surface integral
+&lt;h4 id=&#34;how-how-to-do-surface-integral&#34;&gt;HOW: How to do surface integral
 &lt;/h4&gt;&lt;p&gt;Scalar field: $\iint_S \rho(x, y, z) ,\mathrm{d}S = \iint _D \rho(\mathbf{r}(u, v)) |\mathbf{r}_u \times \mathbf{r}_v| ,\mathrm{d}A$&lt;/p&gt;
 &lt;p&gt;Vector field: $\iint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_S \mathbf{F} \cdot \hat{n} ,\mathrm{d}S = \iint_S \mathbf{F} \cdot \mathbf{n} ,\mathrm{d}A = \iint_D \mathbf{F} \cdot (\mathbf{r}_u \times \mathbf{r}_v),\mathrm{d}A$&lt;/p&gt;
 &lt;p&gt;For $\hat{n}$ and $\mathbf{n}$: $\displaystyle \mathbf{n} = \hat{n}\mathrm{(1)} \cdot |\mathbf{r}_u \times \mathbf{r}_v|\mathrm{(2)} = \frac{\mathbf{r}_u \times \mathbf{r}_v}{|\mathbf{r}_u \times \mathbf{r}_v|}\mathrm{(1)} \cdot |\mathbf{r}_u \times \mathbf{r}_v|\mathrm{(2)}$, for $\mathrm{(2)}$ is related to Jacobian Matrix&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34;&gt;
-    &lt;a href=&#34;#how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve
+&lt;h3 id=&#34;how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34;&gt;HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Greens&amp;rsquo; Theorem to Stokes&amp;rsquo; Theorem, and Divergence Theorem&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\int_{\partial D}\omega = \int_D \partial\omega$$&lt;/p&gt;
@@ -716,9 +628,7 @@ $$&lt;/p&gt;
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-learn-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we learn Series
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
@@ -727,13 +637,9 @@ $$&lt;/p&gt;
 &lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;
-    &lt;a href=&#34;#what-what-is-sequence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is Sequence
+&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence
 &lt;/h2&gt;&lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h3 id=&#34;convergence&#34;&gt;
-    &lt;a href=&#34;#convergence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Convergence
+&lt;h3 id=&#34;convergence&#34;&gt;Convergence
 &lt;/h3&gt;&lt;p&gt;$\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/p&gt;
 &lt;p&gt;E.g. $1/x$: for all $\epsilon$, exist $N = \frac{1}{\epsilon}$, for all $n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n$ convergent to 0&lt;/p&gt;
 &lt;ul&gt;
@@ -778,9 +684,7 @@ $$ \text{Hint 1: } (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
 $$
 $$ \text{Hint 2: } a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;
-    &lt;a href=&#34;#arbitrary-sequence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arbitrary Sequence
+&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Arithmetic sequence&lt;/p&gt;
@@ -789,13 +693,9 @@ $$&lt;/p&gt;
 &lt;p&gt;Geometric progression&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-series&#34;&gt;
-    &lt;a href=&#34;#what-what-is-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is Series
+&lt;h2 id=&#34;what-what-is-series&#34;&gt;WHAT: What is Series
 &lt;/h2&gt;&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;
-    &lt;a href=&#34;#convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges
+&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Test for Series&lt;/p&gt;
@@ -848,9 +748,7 @@ $$ \sum(1 - \frac{1}{n})^n, \sum(1 - \frac{1}{n})^{n^2}, \sum{\ln(1 + \frac{1}{n
 $$
 $$ \sum \frac{x^n}{\ln^p x}, \text{Known $b_n \rightarrow \frac{2}{5}$, }\sum_1\frac{(-1)^nn!}{n^nb_1b_2\ldots b_n}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arbitrary-series&#34;&gt;
-    &lt;a href=&#34;#arbitrary-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arbitrary Series
+&lt;h3 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Geometric Series&lt;/p&gt;
@@ -867,29 +765,21 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
-&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-applycation-of-series---power-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the applycation of series - Power Series
+&lt;h2 id=&#34;how&#34;&gt;HOW
+&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;WHAT: What is the applycation of series - Power Series
 &lt;/h3&gt;&lt;p&gt;$f(x) = \sum c(x - a)^n$ is called a power series centered at $a$, domain of $f(x)$ is the set that series converge.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;only converge at $x = a$&lt;/li&gt;
 &lt;li&gt;converge for all $x \in R$&lt;/li&gt;
 &lt;li&gt;$\exists R &amp;gt; 0, |x - a| &amp;lt; R \text{ the series converge}, R: \text{radius of convergence}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;
-    &lt;a href=&#34;#how-ratio-test--two-sides&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: Ratio Test + Two sides
+&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;HOW: Ratio Test + Two sides
 &lt;/h4&gt;&lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Find the domain of } f(x) = \sum \frac{(x - 3)^n}{n} (ANS: [2,4))
 $$
 $$ \text{}
 $$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-apply&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply
+&lt;h4 id=&#34;how-how-to-apply&#34;&gt;HOW: How to apply
 &lt;/h4&gt;&lt;p&gt;if the power series has a convergent radius R &amp;gt; 0, the f(x) is both differentiatable and integrable on the interval (a - R, a + R), and&lt;/p&gt;
 &lt;p&gt;$$ f&amp;rsquo;(x) = \sum n c_n (x - a)^{n - 1}
 $$
@@ -907,9 +797,7 @@ $$ \text{If $f(x) = \sum c_n x^n$, where $c_{n + 4} = c_n$ for all $n \geq 0$,}
 $$
 $$ \text{find the interval of convergence of the series and the formula for f(x)}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-for-graphing---taylor-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply for graphing - Taylor Series
+&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;HOW: How to apply for graphing - Taylor Series
 &lt;/h3&gt;&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
 &lt;blockquote&gt;
@@ -973,26 +861,18 @@ $$&lt;/p&gt;
         <guid>https://zayn7lie.ber7.org/posts/ettm/server/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;why&#34;&gt;
-    &lt;a href=&#34;#why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY
+&lt;h2 id=&#34;why&#34;&gt;WHY
 &lt;/h2&gt;&lt;p&gt;Learning something about &lt;code&gt;AWS&lt;/code&gt;, &lt;code&gt;SSH&lt;/code&gt; remote connection (&lt;code&gt;ip&lt;/code&gt;, &lt;code&gt;port&lt;/code&gt;, &lt;code&gt;domain&lt;/code&gt;), and &lt;code&gt;java&lt;/code&gt; usage.&lt;/p&gt;
 &lt;p&gt;Playing Minecraft with my friends when not under &lt;code&gt;LAN&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;what&#34;&gt;
-    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT
+&lt;h2 id=&#34;what&#34;&gt;WHAT
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://aws.amazon.com/what-is-aws/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AWS Introduction&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Secure_Shell&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;SSH&lt;/code&gt; Intro&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
+&lt;h2 id=&#34;how&#34;&gt;HOW
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;*&lt;/code&gt; means Optional Operation&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;1-create-an-aws-ec2-instance&#34;&gt;
-    &lt;a href=&#34;#1-create-an-aws-ec2-instance&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    1. Create an AWS EC2 Instance
+&lt;h3 id=&#34;1-create-an-aws-ec2-instance&#34;&gt;1. Create an AWS EC2 Instance
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. There is a free x86_64 CPU &amp;ldquo;&lt;code&gt;Free tier: In your first year includes 750 hours of t2.micro (or t3.micro in the Regions in which t2.micro is unavailable) instance usage on free tier AMIs per month, 30 GiB of EBS storage, 2 million IOs, 1 GB of snapshots, and 100 GB of bandwidth to the internet.&lt;/code&gt;&amp;rdquo; for new user, but it is not very good for running Minecraft Server. But if you want to use it, you could follow the tutor, but you need to change the &lt;code&gt;Architecture&lt;/code&gt; to &lt;code&gt;64-bit (x86)&lt;/code&gt; in &lt;code&gt;Application and OS Images (Amazon Machine Image)&lt;/code&gt; and choose &lt;code&gt;t2.micro&lt;/code&gt; in &lt;code&gt;Instance type&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
@@ -1046,9 +926,7 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;2-connect-linux-to-the-instance-with-ssh&#34;&gt;
-    &lt;a href=&#34;#2-connect-linux-to-the-instance-with-ssh&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    2. Connect Linux to the Instance with SSH
+&lt;h3 id=&#34;2-connect-linux-to-the-instance-with-ssh&#34;&gt;2. Connect Linux to the Instance with SSH
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;Turn back to &lt;code&gt;instances&lt;/code&gt;, select the &lt;code&gt;instance id&lt;/code&gt; you just created&lt;/li&gt;
 &lt;li&gt;Then you open a new panel which lists all the detailed information for your instance. If the instance is not open, select &lt;code&gt;Instance state&lt;/code&gt; - &lt;code&gt;Start Instance&lt;/code&gt; to start it.&lt;/li&gt;
@@ -1056,9 +934,7 @@ $$&lt;/p&gt;
 &lt;li&gt;Use &lt;code&gt;OpenSSH&lt;/code&gt; command &lt;code&gt;$ ssh -i PATH_TO_PEM.pem ec2-user@IPv4&lt;/code&gt; to connect to your instance.&lt;/li&gt;
 &lt;li&gt;*Before step 2.4, you might already have Minecraft Server file, you could transfer your file through &lt;code&gt;$ scp -i PATH_TO_PEM.pem -r SOURCE_FILE_OR_FOLDER ec2-user@IPv4:PATH_YOU_WANT_TO_STORE&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance&#34;&gt;
-    &lt;a href=&#34;#3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    3. Install Java &amp;amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)
+&lt;h3 id=&#34;3-install-java--minecraft-server-to-the-instance-after-loginning-in-to-your-remote-instance&#34;&gt;3. Install Java &amp;amp; Minecraft Server to the Instance (After loginning in to your Remote Instance)
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install &lt;code&gt;Java 8&lt;/code&gt;: &lt;code&gt;$ sudo yum install java-1.8.0&lt;/code&gt;&lt;/p&gt;
@@ -1081,9 +957,7 @@ $$&lt;/p&gt;
     &gt;&lt;code&gt;EULA&lt;/code&gt;&lt;/a&gt;: 1. Open &lt;code&gt;eula.txt&lt;/code&gt;: &lt;code&gt;$ vim eula.txt&lt;/code&gt;, 2. Change &lt;code&gt;eula=false&lt;/code&gt; to &lt;code&gt;eula=true&lt;/code&gt; to indicate acceptance of the &lt;code&gt;EULA&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;4-launch-the-server--commands&#34;&gt;
-    &lt;a href=&#34;#4-launch-the-server--commands&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4. Launch the Server &amp;amp; Commands
+&lt;h3 id=&#34;4-launch-the-server--commands&#34;&gt;4. Launch the Server &amp;amp; Commands
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Launch Pure or Forge version &lt;code&gt;$ java -Xmx1536M -Xms512M -jar SERVER_NAME.jar --nogui&lt;/code&gt;
 &lt;ul&gt;
@@ -1103,9 +977,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Stop the Server: &lt;code&gt;/stop&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;5-adding-mods-and-worlds&#34;&gt;
-    &lt;a href=&#34;#5-adding-mods-and-worlds&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    5*. Adding mods and worlds
+&lt;h3 id=&#34;5-adding-mods-and-worlds&#34;&gt;5*. Adding mods and worlds
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Before the second launch, create a new folder &lt;code&gt;world&lt;/code&gt; or &lt;code&gt;mod&lt;/code&gt; then put the data into the folder&lt;/li&gt;
 &lt;/ul&gt;
@@ -1139,17 +1011,13 @@ $$&lt;/p&gt;
         <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;why-why-am-i-going-to-do-that&#34;&gt;
-    &lt;a href=&#34;#why-why-am-i-going-to-do-that&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why am I going to do that?
+&lt;h2 id=&#34;why-why-am-i-going-to-do-that&#34;&gt;WHY: Why am I going to do that?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;With more and more people reading and learning from my posts, it is time to take a next step to promote my posts and make available to more people.&lt;/li&gt;
 &lt;li&gt;I encourage people to get something from my posts, that is also a purpose of my improving blog.&lt;/li&gt;
 &lt;li&gt;Without the limitation of &lt;code&gt;NC&lt;/code&gt; and &lt;code&gt;SA&lt;/code&gt;, I will more focus on &lt;code&gt;BY&lt;/code&gt; for my popularity. Let people not only one of my posts, but also my whole blogs.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-the-content-of-cc-by&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-content-of-cc-by&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the content of &lt;code&gt;CC BY&lt;/code&gt;?
+&lt;h2 id=&#34;what-what-is-the-content-of-cc-by&#34;&gt;WHAT: What is the content of &lt;code&gt;CC BY&lt;/code&gt;?
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Attribution 4.0 International
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;=======================================================================
@@ -1545,15 +1413,11 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;public licenses.
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Creative Commons may be contacted at creativecommons.org.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;how-how-can-i-use-those-posts&#34;&gt;
-    &lt;a href=&#34;#how-how-can-i-use-those-posts&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How can I use those posts?
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;how-how-can-i-use-those-posts&#34;&gt;HOW: How can I use those posts?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;you-are-free-to&#34;&gt;
-    &lt;a href=&#34;#you-are-free-to&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    You are free to
+&lt;h3 id=&#34;you-are-free-to&#34;&gt;You are free to
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Share&lt;/strong&gt; — copy and redistribute the material in any medium or format&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Adapt&lt;/strong&gt; — remix, transform, and build upon the material
@@ -1561,9 +1425,7 @@ for any purpose, even commercially.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;under-the-following-terms&#34;&gt;
-    &lt;a href=&#34;#under-the-following-terms&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Under the following terms
+&lt;h3 id=&#34;under-the-following-terms&#34;&gt;Under the following terms
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Attribution&lt;/strong&gt; — You must give &lt;a class=&#34;link&#34; href=&#34;http://wiki.creativecommons.org/License_Versions#Detailed_attribution_comparison_chart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;appropriate credit&lt;/a&gt;, provide a link to the license, and &lt;a class=&#34;link&#34; href=&#34;https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_a_good_attribution_for_material_you_modified_slightly&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1571,9 +1433,7 @@ for any purpose, even commercially.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;No additional restrictions&lt;/strong&gt; — You may not apply legal terms or &lt;a class=&#34;link&#34; href=&#34;http://wiki.creativecommons.org/License_Versions#Application_of_effective_technological_measures_by_users_of_CC-licensed_works_prohibited&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;technological measures&lt;/a&gt; that legally restrict others from doing anything the license permits.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;notice&#34;&gt;
-    &lt;a href=&#34;#notice&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Notice
+&lt;h3 id=&#34;notice&#34;&gt;Notice
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable &lt;a class=&#34;link&#34; href=&#34;http://wiki.creativecommons.org/Frequently_Asked_Questions#Do_Creative_Commons_licenses_affect_exceptions_and_limitations_to_copyright.2C_such_as_fair_dealing_and_fair_use.3F&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;exception or limitation&lt;/a&gt;.&lt;/li&gt;
@@ -1590,19 +1450,13 @@ for any purpose, even commercially.&lt;/li&gt;
         <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;
-    &lt;a href=&#34;#why-why-do-we-want-to-find-out-the-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why do we want to find out the integral
+&lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;WHY: Why do we want to find out the integral
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Find out the area&lt;/li&gt;
 &lt;li&gt;Find out some physics parameters&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;
-    &lt;a href=&#34;#what-what-is-integral---area-with-positive-and-negative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;
-&lt;/h2&gt;&lt;h3 id=&#34;approx-integral&#34;&gt;
-    &lt;a href=&#34;#approx-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Approx. Integral
+&lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;
+&lt;/h2&gt;&lt;h3 id=&#34;approx-integral&#34;&gt;Approx. Integral
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Equaling space is not necessary&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
@@ -1631,12 +1485,8 @@ E = \begin{cases}
 \text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 \end{cases}
 $$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;
-    &lt;a href=&#34;#how-how-to-integral---technique&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to integral - Technique
-&lt;/h2&gt;&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;
-    &lt;a href=&#34;#substitution-if-the-function-combines-with-its-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Substitution: If the function combines with its derivative
+&lt;h2 id=&#34;how-how-to-integral---technique&#34;&gt;HOW: How to integral - Technique
+&lt;/h2&gt;&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;Substitution: If the function combines with its derivative
 &lt;/h3&gt;&lt;p&gt;Based on Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \Rightarrow \int_{x_1}^{x_2} f(x) \frac{\mathrm{d}u}{\mathrm{d}x},\mathrm{d}x = \int_{u(x_1)}^{u(x_2)}f(u),\mathrm{d}u$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$&lt;/p&gt;&lt;/blockquote&gt;
@@ -1665,9 +1515,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-02-03&lt;/code&gt;: $\displaystyle \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}},\mathrm{d}x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-02-04&lt;/code&gt;: $\displaystyle \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}},\mathrm{d}x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-02-05&lt;/code&gt;: $\displaystyle \int{\frac{x^5 - x}{x^8 + 1}},\mathrm{d}x$&lt;/p&gt;
-&lt;h3 id=&#34;integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34;&gt;
-    &lt;a href=&#34;#integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Integration by part: If the function combines with a simple function&amp;rsquo;s derivative
+&lt;h3 id=&#34;integration-by-part-if-the-function-combines-with-a-simple-functions-derivative&#34;&gt;Integration by part: If the function combines with a simple function&amp;rsquo;s derivative
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Reduce Power: $\int{x \cdot \sin x},\mathrm{d}x$&lt;/p&gt;
@@ -1691,9 +1539,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-03-01&lt;/code&gt;: Known $\displaystyle \int_0^{\infty}{\frac{\sin{x}}{x}},\mathrm{d}x = \frac{\pi}{2}$, derive $\displaystyle \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}},\mathrm{d}x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-03-02&lt;/code&gt;: $\int{\arcsin x \cdot \ln x},\mathrm{d}x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-03-03&lt;/code&gt;: $\int(4x^4 + 1)e^{x^4},\mathrm{d}x$&lt;/p&gt;
-&lt;h3 id=&#34;eg1-trans-between-different-variables&#34;&gt;
-    &lt;a href=&#34;#eg1-trans-between-different-variables&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    E.g.1. Trans between different variables
+&lt;h3 id=&#34;eg1-trans-between-different-variables&#34;&gt;E.g.1. Trans between different variables
 &lt;/h3&gt;&lt;p&gt;$$ \int_{C}^{g(x)}{f(t)},\mathrm{d}t, \text{assume } F(t) = \int{f(t)},\mathrm{d}t \Rightarrow \int_{C}^{g(x)}{f(t)},\mathrm{d}t = F(g(x)) - F(C)
 $$
 $$ \text{Taking derivative in both sides:} \frac{\mathrm{d}}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)},\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}x}F(g(x)) - \frac{\mathrm{d}}{\mathrm{d}x}F(C)
@@ -1702,9 +1548,7 @@ $$ F&amp;rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&amp;rsquo;(g(x
 $$
 $$ \therefore \frac{\mathrm{d}}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)},\mathrm{d}t} = f(g(x)) \cdot g&amp;rsquo;(x), \frac{\mathrm{d}}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)},\mathrm{d}t} = f(g(x)) \cdot g&amp;rsquo;(x) - f(h(x)) \cdot h&amp;rsquo;(x)
 $$&lt;/p&gt;
-&lt;h3 id=&#34;eg2-partial-fractions&#34;&gt;
-    &lt;a href=&#34;#eg2-partial-fractions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    E.g.2. Partial Fractions
+&lt;h3 id=&#34;eg2-partial-fractions&#34;&gt;E.g.2. Partial Fractions
 &lt;/h3&gt;&lt;p&gt;$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &amp;gt;= deg(B) \ or \ deg(C) &amp;lt; deg(D)
 $$
 $$ D(x) = (a_1x+b_1)^{p_1}&amp;hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&amp;hellip;(u_jx^2 + v_jx + w_j)^{r_j}
@@ -1752,12 +1596,8 @@ $$&lt;/p&gt;
 For integral $\int_a^b{f(x)},\mathrm{d}x$, when there are some points that are not defined, we use $t$ to approx. the limit of those points&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)},\mathrm{d}x = \lim_{t \rightarrow b}\int_a^t{f(x)},\mathrm{d}x
 $$&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-integral-to-reality&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply integral to reality
-&lt;/h2&gt;&lt;h3 id=&#34;rate---differential-equations&#34;&gt;
-    &lt;a href=&#34;#rate---differential-equations&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Rate - Differential Equations
+&lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality
+&lt;/h2&gt;&lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations
 &lt;/h3&gt;&lt;p&gt;$$ \text{Informal:} \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y,\mathrm{d}y = x,\mathrm{d}x \Rightarrow \int{y},\mathrm{d}y = \int{x},\mathrm{d}x
 $$
 $$ \text{*Formal Solution:} \frac{\mathrm{d}}{\mathrm{d}x}{y(t(x))} = \frac{\mathrm{d}y}{\mathrm{d}t} \cdot \frac{\mathrm{d}t}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{\mathrm{d}t}{\mathrm{d}x})},\mathrm{d}x = \int{(y \frac{\mathrm{d}t}{\mathrm{d}x})},\mathrm{d}x = \frac{y^2}{2}
@@ -1778,38 +1618,26 @@ $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-05-01&lt;/code&gt;: $\displaystyle \frac{\mathrm{d}N}{\mathrm{d}t} = -aN\ln(bN)$&lt;/p&gt;
 &lt;p&gt;*&lt;code&gt;EX-CAL-INT-05-02&lt;/code&gt;: $\displaystyle \frac{\mathrm{d}^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{\mathrm{d}N^2}{\mathrm{d}t^2}$&lt;/p&gt;
-&lt;h3 id=&#34;arc-length&#34;&gt;
-    &lt;a href=&#34;#arc-length&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arc Length
+&lt;h3 id=&#34;arc-length&#34;&gt;Arc Length
 &lt;/h3&gt;&lt;p&gt;$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&amp;rsquo;^2}},\mathrm{d}x
 $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-INT-06-01&lt;/code&gt;: Find curve length of $y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4$&lt;/p&gt;
-&lt;h3 id=&#34;areas&#34;&gt;
-    &lt;a href=&#34;#areas&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Areas
+&lt;h3 id=&#34;areas&#34;&gt;Areas
 &lt;/h3&gt;&lt;p&gt;$$ A = \lim_{n \rightarrow \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))},\mathrm{d}x = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))},\mathrm{d}y
 $$&lt;/p&gt;
-&lt;h3 id=&#34;surface&#34;&gt;
-    &lt;a href=&#34;#surface&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Surface
+&lt;h3 id=&#34;surface&#34;&gt;Surface
 &lt;/h3&gt;&lt;p&gt;$$ S = \int{2\pi f(x)\sqrt{1 + f&amp;rsquo;^2}},\mathrm{d}x
 $$&lt;/p&gt;
-&lt;h3 id=&#34;volume&#34;&gt;
-    &lt;a href=&#34;#volume&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Volume
+&lt;h3 id=&#34;volume&#34;&gt;Volume
 &lt;/h3&gt;&lt;p&gt;$$ V = \int{A(z)},\mathrm{d}z
 $$
 $$ \text{Cylindrical Shells (y-axis): } V = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi ((x + \Delta{x})^2 - x^2)}}
 $$
 $$ = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi (2x \Delta{x} + \Delta^2{x})}} = \int{h(x) 2 \pi x},\mathrm{d}x
 $$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-apply-in-polar-coordinate&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-in-polar-coordinate&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply in Polar Coordinate
-&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34;&gt;
-    &lt;a href=&#34;#why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why we should learn about Polar Coordinate - Cycloid &amp;amp; Parametric Curves
+&lt;h2 id=&#34;how-how-to-apply-in-polar-coordinate&#34;&gt;HOW: How to apply in Polar Coordinate
+&lt;/h2&gt;&lt;h3 id=&#34;why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves&#34;&gt;WHY: Why we should learn about Polar Coordinate - Cycloid &amp;amp; Parametric Curves
 &lt;/h3&gt;&lt;p&gt;$$ \begin{cases}
 x = r(\theta - \sin\theta) \
 y = r(1 - \cos\theta)
@@ -1822,9 +1650,7 @@ $$&lt;/p&gt;
 &lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
 $$&lt;/p&gt;
-&lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;
-    &lt;a href=&#34;#what-what-is-polar-coordinates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is Polar Coordinates
+&lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;WHAT: What is Polar Coordinates
 &lt;/h3&gt;&lt;p&gt;$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
 $$&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1839,9 +1665,7 @@ $$&lt;/p&gt;
         <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;android-emulator-or-container&#34;&gt;
-    &lt;a href=&#34;#android-emulator-or-container&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Android Emulator or Container?
+&lt;h2 id=&#34;android-emulator-or-container&#34;&gt;Android Emulator or Container?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Emulator
 &lt;ul&gt;
@@ -1857,30 +1681,22 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Have a clear mind about the needs and choose one option for running Arknights.&lt;/p&gt;
-&lt;h3 id=&#34;emulator&#34;&gt;
-    &lt;a href=&#34;#emulator&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Emulator
+&lt;h3 id=&#34;emulator&#34;&gt;Emulator
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;avd&#34;&gt;
-    &lt;a href=&#34;#avd&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h4 id=&#34;avd&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;AVD&lt;/code&gt; (&lt;code&gt;Android Virtual Device&lt;/code&gt;, the project under &lt;code&gt;Android Studio&lt;/code&gt;)&lt;/a&gt;
 &lt;/h4&gt;&lt;p&gt;AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.&lt;/p&gt;
 &lt;p&gt;Download and Install &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Android Studio&lt;/code&gt;&lt;/a&gt; (&lt;code&gt;$ yay -S android-studio&lt;/code&gt; in Arch Linux), &lt;code&gt;More Actions&lt;/code&gt; &amp;gt; &lt;code&gt;Virtual Device Manager&lt;/code&gt;, &lt;code&gt;Create device&lt;/code&gt;, and then you could modify emulator by yourself. Android 11 with 16:9 resolution is recommended for &lt;code&gt;MAA&lt;/code&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;genymotion&#34;&gt;
-    &lt;a href=&#34;#genymotion&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    &lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h4 id=&#34;genymotion&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt;&lt;/a&gt;
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt; offers AppImage (Installer) version&lt;/a&gt; that can run directly.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Genymotion&lt;/code&gt; is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)&lt;/p&gt;
-&lt;h3 id=&#34;container&#34;&gt;
-    &lt;a href=&#34;#container&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Container
+&lt;h3 id=&#34;container&#34;&gt;Container
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;Waydroid&lt;/code&gt; is highly recommended. It is not recommended to use container while using WM that is not run on &lt;code&gt;Wayland&lt;/code&gt;. After fixing several bugs of &lt;code&gt;Anbox&lt;/code&gt;, I found that numerous API have changed. And Xdroid is too buggy.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1899,9 +1715,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;arknights-installation&#34;&gt;
-    &lt;a href=&#34;#arknights-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arknights Installation
+&lt;h3 id=&#34;arknights-installation&#34;&gt;Arknights Installation
 &lt;/h3&gt;&lt;p&gt;Although most emulators and containers are able to install directly through dragging &lt;code&gt;.apk&lt;/code&gt; to UI, we could also install it using &lt;code&gt;adb&lt;/code&gt; which is required by &lt;code&gt;MAA&lt;/code&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;adb&lt;/code&gt; installation
@@ -1916,29 +1730,19 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;key-mapping&#34;&gt;
-    &lt;a href=&#34;#key-mapping&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Key Mapping
+&lt;h2 id=&#34;key-mapping&#34;&gt;Key Mapping
 &lt;/h2&gt;&lt;p&gt;The logic of pause deployment is that click back 🔙 will change the statue of Pause or Unpause. Thus, after dragging out operator, we pass the pause command then we could deploy while game is pause.&lt;/p&gt;
-&lt;h3 id=&#34;keymapper-android-app&#34;&gt;
-    &lt;a href=&#34;#keymapper-android-app&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    &lt;a class=&#34;link&#34; href=&#34;https://github.com/keymapperorg/KeyMapper/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;keymapper-android-app&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/keymapperorg/KeyMapper/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KeyMapper Android App&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;After concerning a lot about how to achieve key mapping on PC, why don&amp;rsquo;t we try to do this on our Android? There are a huge bunch of software, but KeyMapper is the most lightweight and compatible though it pauses developing.&lt;/p&gt;
-&lt;h3 id=&#34;qtscrcpy&#34;&gt;
-    &lt;a href=&#34;#qtscrcpy&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    &lt;a class=&#34;link&#34; href=&#34;https://github.com/barry-ran/QtScrcpy/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;qtscrcpy&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/barry-ran/QtScrcpy/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;QtScrcpy&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;Origins from &lt;a class=&#34;link&#34; href=&#34;https://github.com/Genymobile/scrcpy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;scrcpy&lt;/code&gt;&lt;/a&gt; of Genymobile, an open-source software copy screen from Android to PC. &lt;code&gt;QtScrcpy&lt;/code&gt; add key mapping function from it.&lt;/p&gt;
-&lt;h3 id=&#34;python-script-using-apis-of-pynput&#34;&gt;
-    &lt;a href=&#34;#python-script-using-apis-of-pynput&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Python Script (Using APIs of &lt;code&gt;pynput&lt;/code&gt;)
+&lt;h3 id=&#34;python-script-using-apis-of-pynput&#34;&gt;Python Script (Using APIs of &lt;code&gt;pynput&lt;/code&gt;)
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Genymobile/scrcpy/issues/712#issuecomment-536564578&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Sample&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;maa&#34;&gt;
-    &lt;a href=&#34;#maa&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    MAA
+&lt;h2 id=&#34;maa&#34;&gt;MAA
 &lt;/h2&gt;&lt;p&gt;We have described in &lt;a class=&#34;link&#34; href=&#34;https://maa.plus/docs/en-us/1.5-EMULATOR_SUPPORTS_FOR_LINUX.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;this link&lt;/a&gt; clearly. If you want to add something you could make comment or PR directly.&lt;/p&gt;
 </description>
@@ -1949,24 +1753,16 @@ $$&lt;/p&gt;
         <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/english/reading/</guid>
-        <description>&lt;h2 id=&#34;why&#34;&gt;
-    &lt;a href=&#34;#why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY
-&lt;/h2&gt;&lt;h3 id=&#34;why-should-we-use-verb-and-logic-to-read-a-passage&#34;&gt;
-    &lt;a href=&#34;#why-should-we-use-verb-and-logic-to-read-a-passage&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Why should we use verb and logic to read a passage?
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY
+&lt;/h2&gt;&lt;h3 id=&#34;why-should-we-use-verb-and-logic-to-read-a-passage&#34;&gt;Why should we use verb and logic to read a passage?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;VERB is the key to the core of a sentence.&lt;/li&gt;
 &lt;li&gt;LOGIC helps us to fully understand a passage.&lt;/li&gt;
 &lt;li&gt;The combination of VERB and LOGIC helps us to catch the main idea of a passage in the most efficient approach.&lt;/li&gt;
 &lt;li&gt;The questions of TOEFL Reading are coming from the logic of passages.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what&#34;&gt;
-    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT
-&lt;/h2&gt;&lt;h3 id=&#34;verb&#34;&gt;
-    &lt;a href=&#34;#verb&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Verb
+&lt;h2 id=&#34;what&#34;&gt;WHAT
+&lt;/h2&gt;&lt;h3 id=&#34;verb&#34;&gt;Verb
 &lt;/h3&gt;&lt;p&gt;From &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Verb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wikipedia&lt;/a&gt;: A verb (from Latin verbum &amp;lsquo;word&amp;rsquo;) is a word (part of speech) that in syntax generally conveys an action (bring, read, walk, run, learn), an occurrence (happen, become), or a state of being (be, exist, stand).&lt;/p&gt;
 &lt;p&gt;To abstract? We could simply understand verb is a kind of &lt;em&gt;action&lt;/em&gt; or &lt;em&gt;attitude&lt;/em&gt; (occurrence or a state of being, it is because these two verbs contain &lt;em&gt;positive&lt;/em&gt;, &lt;em&gt;neutral&lt;/em&gt; that is always used in definition or &lt;em&gt;negative&lt;/em&gt; attitude).&lt;/p&gt;
@@ -1977,9 +1773,7 @@ $$&lt;/p&gt;
 &lt;li&gt;Barack Obama became the President of the United States in 2009. -&amp;gt; Action: became or Attitude: be positive&lt;/li&gt;
 &lt;li&gt;Mike Trout is a center fielder. -&amp;gt; Attitude: neutral (definition)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;logic&#34;&gt;
-    &lt;a href=&#34;#logic&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Logic
+&lt;h3 id=&#34;logic&#34;&gt;Logic
 &lt;/h3&gt;&lt;p&gt;Every passage especially in TOEFL Reading has a target. Reading passage with logic help us to reach the target without missing any point:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Introducing object: Why we should know? What is this thing? How do we use this thing?&lt;/li&gt;
@@ -1989,12 +1783,8 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;In addition, Logic words are also been supposed to notice. Logic words help us to understand the connection between sentences and paragraphs.&lt;/p&gt;
 &lt;p&gt;BTW, the words with ‘s’ could also be a &amp;rsquo;logic word&amp;rsquo;. It implies that there will be parallel logic in the following content.&lt;/p&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
-&lt;/h2&gt;&lt;h3 id=&#34;how-to-read-the-passages&#34;&gt;
-    &lt;a href=&#34;#how-to-read-the-passages&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    How to read the passages
+&lt;h2 id=&#34;how&#34;&gt;HOW
+&lt;/h2&gt;&lt;h3 id=&#34;how-to-read-the-passages&#34;&gt;How to read the passages
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Title&lt;/li&gt;
 &lt;li&gt;Beginning paragraph/Background/Target&lt;/li&gt;
@@ -2002,9 +1792,7 @@ $$&lt;/p&gt;
 &lt;li&gt;Connection between paragraph&lt;/li&gt;
 &lt;li&gt;Ending paragraph/Conclusion&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;how-to-solve-the-questions&#34;&gt;
-    &lt;a href=&#34;#how-to-solve-the-questions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    How to solve the questions
+&lt;h3 id=&#34;how-to-solve-the-questions&#34;&gt;How to solve the questions
 &lt;/h3&gt;</description>
         </item>
         <item>
@@ -2013,9 +1801,7 @@ $$&lt;/p&gt;
         <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/linux/vscode/</guid>
-        <description>&lt;h2 id=&#34;installation&#34;&gt;
-    &lt;a href=&#34;#installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Installation
+        <description>&lt;h2 id=&#34;installation&#34;&gt;Installation
 &lt;/h2&gt;&lt;p&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;GitHub Login: install &lt;code&gt;gnome-keyring&lt;/code&gt;, &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;: &lt;code&gt;Preferences: Configure Runtime Arguments&lt;/code&gt;: &lt;code&gt;&amp;quot;password-store&amp;quot;:&amp;quot;gnome&amp;quot;&lt;/code&gt; or &lt;code&gt;/usr/share/applications/code-oss.desktop&lt;/code&gt;: &lt;code&gt;Exec=/usr/bin/code-oss --unity-launch --password-store=&amp;quot;gnome&amp;quot; %F&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Word Count: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=kirozen.wordcounter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2023,9 +1809,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Vim: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Vim&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Disable auto reveal: &lt;code&gt;explorer.autoReveal = False&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;latex&#34;&gt;
-    &lt;a href=&#34;#latex&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Latex
+&lt;h2 id=&#34;latex&#34;&gt;Latex
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;LaTeX Workshop&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2041,9 +1825,7 @@ $$&lt;/p&gt;
     &gt;&lt;code&gt;vscode-pandoc&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;c&#34;&gt;
-    &lt;a href=&#34;#c&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    C++
+&lt;h2 id=&#34;c&#34;&gt;C++
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install debug tool &lt;code&gt;gdb&lt;/code&gt;: &lt;code&gt;$ sudo pacman -S gdb&lt;/code&gt;&lt;/p&gt;
@@ -2062,9 +1844,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Terminal&lt;/code&gt; -&amp;gt; &lt;code&gt;Config Default Build Task...&lt;/code&gt; -&amp;gt; &lt;code&gt;C/C++: g++ build active file&lt;/code&gt;; then turn back to &lt;code&gt;test.cpp&lt;/code&gt;, click the &lt;code&gt;gear&lt;/code&gt; icon: &lt;code&gt;&amp;quot;C/C++: g++ build and debug active file&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;misc&#34;&gt;
-    &lt;a href=&#34;#misc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Misc
+&lt;h2 id=&#34;misc&#34;&gt;Misc
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Excalidraw&lt;/li&gt;
 &lt;li&gt;SSH: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2080,20 +1860,14 @@ $$&lt;/p&gt;
         <guid>https://zayn7lie.ber7.org/posts/linux/xfce/</guid>
         <description>&lt;p&gt;XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).&lt;/p&gt;
 &lt;p&gt;XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;
-    &lt;a href=&#34;#install&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Install
+&lt;h2 id=&#34;install&#34;&gt;Install
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install XFCE. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start &lt;code&gt;xfce4&lt;/code&gt; in the next boot and ignore step 3. It is highly recommended installing a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DM&lt;/a&gt;, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your DM. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/p&gt;
-&lt;h2 id=&#34;config&#34;&gt;
-    &lt;a href=&#34;#config&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Config
-&lt;/h2&gt;&lt;h3 id=&#34;system&#34;&gt;
-    &lt;a href=&#34;#system&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    System
+&lt;h2 id=&#34;config&#34;&gt;Config
+&lt;/h2&gt;&lt;h3 id=&#34;system&#34;&gt;System
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;AUR manager: &lt;code&gt;yay&lt;/code&gt;&lt;/p&gt;
@@ -2146,12 +1920,8 @@ xft-rgba=none
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;media&#34;&gt;
-    &lt;a href=&#34;#media&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Media
-&lt;/h3&gt;&lt;h4 id=&#34;sound&#34;&gt;
-    &lt;a href=&#34;#sound&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Sound
+&lt;h3 id=&#34;media&#34;&gt;Media
+&lt;/h3&gt;&lt;h4 id=&#34;sound&#34;&gt;Sound
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Basis: &lt;code&gt;pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils&lt;/code&gt;&lt;/p&gt;
@@ -2205,28 +1975,20 @@ xft-rgba=none
 &lt;p&gt;Music Player: &lt;code&gt;audacious&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;video&#34;&gt;
-    &lt;a href=&#34;#video&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Video
+&lt;h4 id=&#34;video&#34;&gt;Video
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Video Player: &lt;code&gt;vlc&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Recording &amp;amp; Steaming: &lt;code&gt;obs-studio&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Edit: &lt;code&gt;flowblade&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;image&#34;&gt;
-    &lt;a href=&#34;#image&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Image
+&lt;h4 id=&#34;image&#34;&gt;Image
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Screenshot: &lt;code&gt;flameshot&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Edit: &lt;code&gt;krita inkscape&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;View: &lt;code&gt;ristretto&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;work&#34;&gt;
-    &lt;a href=&#34;#work&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Work
-&lt;/h3&gt;&lt;h4 id=&#34;input&#34;&gt;
-    &lt;a href=&#34;#input&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Input
+&lt;h3 id=&#34;work&#34;&gt;Work
+&lt;/h3&gt;&lt;h4 id=&#34;input&#34;&gt;Input
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Method: &lt;code&gt;fcitx5&lt;/code&gt;
 &lt;ul&gt;
@@ -2246,25 +2008,19 @@ xft-rgba=none
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;writing&#34;&gt;
-    &lt;a href=&#34;#writing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Writing
+&lt;h4 id=&#34;writing&#34;&gt;Writing
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Code: &lt;code&gt;code&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Paper: &lt;code&gt;zotero&lt;/code&gt;AUR&lt;/li&gt;
 &lt;li&gt;Blog: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;social&#34;&gt;
-    &lt;a href=&#34;#social&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Social
+&lt;h4 id=&#34;social&#34;&gt;Social
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Email: &lt;code&gt;evolution evolution-on&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Chat: &lt;code&gt;telegram-desktop discord&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Meeting: &lt;code&gt;zoom&lt;/code&gt;AUR&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;game&#34;&gt;
-    &lt;a href=&#34;#game&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Game
+&lt;h3 id=&#34;game&#34;&gt;Game
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Steam: &lt;code&gt;steam&lt;/code&gt;&lt;/p&gt;
@@ -2280,12 +2036,8 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/linux/archlinux/</guid>
-        <description>&lt;h2 id=&#34;why&#34;&gt;
-    &lt;a href=&#34;#why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY
-&lt;/h2&gt;&lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;
-    &lt;a href=&#34;#why-do-i-want-to-switch-from-windows-to-linux&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Why do I want to switch from Windows to Linux?
+        <description>&lt;h2 id=&#34;why&#34;&gt;WHY
+&lt;/h2&gt;&lt;h3 id=&#34;why-do-i-want-to-switch-from-windows-to-linux&#34;&gt;Why do I want to switch from Windows to Linux?
 &lt;/h3&gt;&lt;p&gt;First and foremost, Linux is OPEN-SOURCE. Actually, I am an OPEN-SOURCIST. It is my hope to fully stand for open-source community.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I am able to fully customize my system. Windows have limited a large amount of options to make system fit for us. Take system fonts for example. In Linux, we could just open the config file and fill in the font we want. But in Windows, we have to deal with lots of random and unknown services to change only a system font, and then we will get a number of bugs that we cannot solve for the unknown source code.&lt;/li&gt;
@@ -2294,9 +2046,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;We have a large community to solve problems. In Linux, I have solved all bugs and run system smoothly without asking for any help - almost all problems and questions I encountered have been solved in Linux communities or forums.&lt;/li&gt;
 &lt;li&gt;I am able to uninstall the services I do not want. In Linux, we are able to install whatever we want and uninstall (remove) whatever we do not want. But in Windows, there are so many services like SMB file transfer that I might not want to use for entire life! The total storage of Pure Arch Linux with Xfce and daily working and gaming software is below 8 G!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-do-i-want-to-switch-from-ubuntu-to-arch&#34;&gt;
-    &lt;a href=&#34;#why-do-i-want-to-switch-from-ubuntu-to-arch&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Why do I want to switch from Ubuntu to Arch?
+&lt;h3 id=&#34;why-do-i-want-to-switch-from-ubuntu-to-arch&#34;&gt;Why do I want to switch from Ubuntu to Arch?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;After using Ubuntu for several months, I have the ability to work smoothly with terminals and have basis understanding of Linux. I want to step in further, and installing Arch Linux is a good approach to that.&lt;/li&gt;
 &lt;li&gt;Arch have the most complete wiki that we might be able to solve all problems there!&lt;/li&gt;
@@ -2305,32 +2055,22 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;Ubuntu still have lots of services I do not know. And gnome is an anti-lightweight desktop environment which could be very annoying.&lt;/li&gt;
 &lt;li&gt;Ubuntu with gnome is stepping in commercial and be less community-friendly. And there are some ads of Ubuntu Pro appear in the system.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-do-i-want-to-install-arch-linux-without-the-script&#34;&gt;
-    &lt;a href=&#34;#why-do-i-want-to-install-arch-linux-without-the-script&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Why do I want to install Arch Linux without the script?
+&lt;h3 id=&#34;why-do-i-want-to-install-arch-linux-without-the-script&#34;&gt;Why do I want to install Arch Linux without the script?
 &lt;/h3&gt;&lt;p&gt;Learn more about Linux and fully customize for myself.&lt;/p&gt;
-&lt;h2 id=&#34;what&#34;&gt;
-    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT
+&lt;h2 id=&#34;what&#34;&gt;WHAT
 &lt;/h2&gt;&lt;p&gt;Here is an introduction of Arch Linux from its wiki: &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Arch_Linux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/Arch_Linux&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
+&lt;h2 id=&#34;how&#34;&gt;HOW
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. This guide is just a simplification, clarification and modification based &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Arch Linux-Installation Guide&lt;/a&gt;. If you have any questions or if I not mention or skip about some necessary steps, you could just read the wiki and find out the answer. By the way, this guide is more focusing on understanding Linux system and how a system could be installed in a machine.&lt;/p&gt;
 &lt;p&gt;Every command begin with &lt;code&gt;#&lt;/code&gt; meaning it is a shell command. &lt;code&gt;#&lt;/code&gt; is always input automatically that you do not need to type it again. E.g. &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; you might only need to type in &lt;code&gt;mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;. &lt;code&gt;$&lt;/code&gt;, &lt;code&gt;[iwd]#&lt;/code&gt;, etc. is also similar to &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Everything with &lt;code&gt;?{ }&lt;/code&gt; meaning that you could modify it based on your situation, for example &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; might be &lt;code&gt;# mount /dev/sd1 /mnt&lt;/code&gt; for you. Everything with &lt;code&gt;!{ }&lt;/code&gt; meaning that you could not to type this based on your situation. E.g. &lt;code&gt;# arch-chroot /mnt !{/bin/bash}&lt;/code&gt; you might only need to run &lt;code&gt;# arch-chroot /mnt&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;1-preparation&#34;&gt;
-    &lt;a href=&#34;#1-preparation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    1. Preparation
+&lt;h3 id=&#34;1-preparation&#34;&gt;1. Preparation
 &lt;/h3&gt;&lt;p&gt;A target machine that you want to install system to. A computer with 16 GB or above disk and AMD or Intel CPU is recommended. (P.S. High RAM is highly recommended. In this guide, I would not introduce how to create SWAP partition because my 16 GB RAM is enough for daily use.)&lt;/p&gt;
 &lt;p&gt;A USB flash drive (storage device) that could be modified. A USB with 8 GB or larger is recommended.&lt;/p&gt;
 &lt;p&gt;An available network that is able to access to Arch Linux packages. (If you are a Chinese User, this post is recommended to use.) An unhidden network is recommended.&lt;/p&gt;
-&lt;h3 id=&#34;2-making-an-installation-medium&#34;&gt;
-    &lt;a href=&#34;#2-making-an-installation-medium&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    2. Making an Installation Medium
+&lt;h3 id=&#34;2-making-an-installation-medium&#34;&gt;2. Making an Installation Medium
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Windows User&lt;/p&gt;
@@ -2357,9 +2097,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;3-network-configuration&#34;&gt;
-    &lt;a href=&#34;#3-network-configuration&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    3. Network Configuration
+&lt;h3 id=&#34;3-network-configuration&#34;&gt;3. Network Configuration
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. The installation medium have installed &lt;code&gt;iwd&lt;/code&gt; tool. Although &lt;code&gt;networkmanager&lt;/code&gt; is more popular in Arch Linux network settings, &lt;code&gt;iwd&lt;/code&gt; is the default network settings tool for installation.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
@@ -2369,9 +2107,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# station ?{wlan0} connect ${SSID}&lt;/code&gt; to connect to SSID, you might need to type password after connect to it.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# exit&lt;/code&gt; to exit the network tool.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;4-disk-mounting-and-installation&#34;&gt;
-    &lt;a href=&#34;#4-disk-mounting-and-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    4. Disk Mounting and Installation
+&lt;h3 id=&#34;4-disk-mounting-and-installation&#34;&gt;4. Disk Mounting and Installation
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
@@ -2382,9 +2118,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;# pacstrap -K /mnt base !{base-devel} ?{linux} linux-firmware e2fsprogs !{ntfs-3g} ?{vim} !{linux-headers}&lt;/code&gt; to install basis Arch Linux. &lt;code&gt;base-devel&lt;/code&gt; contains &lt;code&gt;makepkg&lt;/code&gt; that is necessary for installing AUR packages. You can install the Linux kernels that you want through &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/kernel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.archlinux.org/title/kernel&lt;/a&gt;. &lt;code&gt;linux-firmware&lt;/code&gt; is necessary Linux kernel firmware. &lt;code&gt;e2fsprogs&lt;/code&gt; is for configuration of ext4 file system. &lt;code&gt;ntfs-3g&lt;/code&gt; is for configuration of NTFS (Windows File System) file system. &lt;code&gt;vim&lt;/code&gt; if for latter file editing.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;5-user-setting&#34;&gt;
-    &lt;a href=&#34;#5-user-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    5. User Setting
+&lt;h3 id=&#34;5-user-setting&#34;&gt;5. User Setting
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# arch-chroot /mnt /bin/bash&lt;/code&gt; to change root to &lt;code&gt;/mnt&lt;/code&gt; (root user path) using shell in &lt;code&gt;/bin/bash&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# passwd&lt;/code&gt; to reset the root user password.&lt;/li&gt;
@@ -2397,42 +2131,30 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 ::1 localhost
 127.0.1.1 ?{zayn7lie-acl}.localdomain ?{zayn7lie-acl}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace &lt;code&gt;?{zayn7lie-acl}&lt;/code&gt; with your machine name.&lt;/p&gt;
-&lt;h3 id=&#34;6-language--time&#34;&gt;
-    &lt;a href=&#34;#6-language--time&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    6. Language &amp;amp; Time
+&lt;h3 id=&#34;6-language--time&#34;&gt;6. Language &amp;amp; Time
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# vim /etc/locale.gen&lt;/code&gt; to enter language config file, then uncomment &lt;code&gt;en-US.UTF-8 UTF-8&lt;/code&gt; and the language you want use, then save the file. &lt;code&gt;# locale-gen&lt;/code&gt; to generate and install language files.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# echo LANG=C.UTF-8 &amp;gt; /etc/locale.conf&lt;/code&gt; make system default characters to characters in C.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# hwclock --systohc --utc&lt;/code&gt; and &lt;code&gt;# timedatectl set-ntp true&lt;/code&gt; to update your system time to installation medium time.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# ln -sf /usr/share/zoneinfo/?{EST} /etc/localtime&lt;/code&gt; to config your local time. &lt;code&gt;?{EST}&lt;/code&gt; Could be change based on your region. You can use &lt;code&gt;# ls /usr/share/zoneinfo/&lt;/code&gt; to check which option could be used. Some folder like ./Asia might have subfolders that you need to choose in more specific way. E.G. &lt;code&gt;# ln -sf /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime&lt;/code&gt;. P.S. s meaning soft link which will not actually copy all file to the target folder, f meaning force to do it.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;7-launch-setting&#34;&gt;
-    &lt;a href=&#34;#7-launch-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    7. Launch Setting
+&lt;h3 id=&#34;7-launch-setting&#34;&gt;7. Launch Setting
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# pacman -S ?{amd-ucode} grub efibootmgr&lt;/code&gt; to install necessary boot package. If you are using Intel CPU, change &lt;code&gt;?{amd-ucode}&lt;/code&gt; to &lt;code&gt;intel-ucode&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# grub-install !{--removable} --target=x86_64-efi --efi-directory=/boot --bootloader-id=?{&amp;quot;GRUB&amp;quot;} --recheck&lt;/code&gt; to install grub file. &lt;code&gt;!{--removable}&lt;/code&gt; determines whether you are able to remove it from UEFI, &lt;code&gt;?{&amp;quot;Arch Linux&amp;quot;}&lt;/code&gt; is your system name in grub.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt; to generate config file.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;8-misc&#34;&gt;
-    &lt;a href=&#34;#8-misc&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    8. Misc
+&lt;h3 id=&#34;8-misc&#34;&gt;8. Misc
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;# pacman -S networkmanager&lt;/code&gt; to install NetworkManager tool, then &lt;code&gt;# systemctl enable NetworkManager&lt;/code&gt; to let &lt;code&gt;NetworkManager&lt;/code&gt; start automatically when you boot your system. As I have mentioned above, &lt;code&gt;networkmanager&lt;/code&gt; is more popular than &lt;code&gt;iwd&lt;/code&gt;. And &lt;code&gt;iwd&lt;/code&gt; is only installed in your installation medium but not your system. You still have to install a network manager tool for your &lt;code&gt;Arch Linux&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;finish-installation&#34;&gt;
-    &lt;a href=&#34;#finish-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Finish Installation
+&lt;h3 id=&#34;finish-installation&#34;&gt;Finish Installation
 &lt;/h3&gt;&lt;p&gt;You have installed Arch Linux in your machine. Now you can &lt;code&gt;# exit&lt;/code&gt; to exit your root user account, it is important to &lt;code&gt;# genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab&lt;/code&gt; to generate a &lt;code&gt;fstab&lt;/code&gt; file for Linux file tree viewing. It is safer to &lt;code&gt;# cat /mnt/etc/fstab&lt;/code&gt; to check whether file is generated properly. P.S. Difference between &amp;raquo; and &amp;gt;: &amp;raquo; is appending (add) to the end of the file, &amp;gt; is replacing the file. &lt;code&gt;# reboot&lt;/code&gt; and remove installation medium when computer is completely closed. Congratulation! Now, start your journey to &lt;code&gt;Arch Linux&lt;/code&gt;!&lt;/p&gt;
-&lt;h3 id=&#34;post-installation&#34;&gt;
-    &lt;a href=&#34;#post-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Post-installation
+&lt;h3 id=&#34;post-installation&#34;&gt;Post-installation
 &lt;/h3&gt;&lt;p&gt;If you encounter any problems or bugs, reading &lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wiki&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;googling&lt;/a&gt; (&lt;a class=&#34;link&#34; href=&#34;https://duckduckgo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DDG&lt;/a&gt; is a better option with high privacy protection), searching in the forums or communities are both good options. But remember that if you want to ask a question, please ask in &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;a smart way&lt;/a&gt;. That’s all, it is my best hope that you could join and enjoy our open-source communities!&lt;/p&gt;
-&lt;h2 id=&#34;quick-ref&#34;&gt;
-    &lt;a href=&#34;#quick-ref&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Quick Ref
+&lt;h2 id=&#34;quick-ref&#34;&gt;Quick Ref
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;installation medium:
 &lt;ul&gt;
@@ -2528,14 +2250,10 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-dif/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-learn-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we learn differentiation?
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-differentiation&#34;&gt;WHY: Why should we learn differentiation?
 &lt;/h2&gt;&lt;p&gt;How to find the speed? How to find the acceleration? - Find the &lt;em&gt;rate&lt;/em&gt;: At (when), the rate at which (how) is increasing/decreasing by (what) (unit).&lt;/p&gt;
 &lt;p&gt;How to sketch a function? - Find the tendency of a function, knowning &lt;em&gt;monotonicity&lt;/em&gt; and &lt;em&gt;concavity&lt;/em&gt;. (&amp;amp; Optimization)&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;
-    &lt;a href=&#34;#what-what-is-differentiation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is differentiation?
+&lt;h2 id=&#34;what-what-is-differentiation&#34;&gt;WHAT: What is differentiation?
 &lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ (1)} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ (2)} = \frac{\mathrm{d}f(x)}{\mathrm{d}x} \textbf{ (3)} \Rightarrow f&amp;rsquo;(x) \textbf{ (4)}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2548,9 +2266,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-01&lt;/code&gt;: Use the derivative way to present $g(x)$: $g(x) = \lim_{h \rightarrow 0}\Large{\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}}$&lt;/p&gt;
-&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
-    &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why a function could be differentiated? - Differentiability
+&lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Limit &amp;amp; Continuity: $\lim_{x \rightarrow a}{f(x)} = f(a)$ ($\lim_{x \rightarrow a}{f(x)} = \lim_{x \rightarrow a^+}{f(x)} = \lim_{x \rightarrow a^-}{f(x)}$)
 &lt;ul&gt;
@@ -2579,9 +2295,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-01&lt;/code&gt;: $\lim_{x \rightarrow 0^+}{x\ln{x}}$, $\lim_{x \rightarrow 0^+}{x^x}$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-02&lt;/code&gt;: $\lim_{x \rightarrow \pm\infty}(1 + \frac{1}{x})^x$ (Important one, that&amp;rsquo;s the definition of $e$)&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-02-03&lt;/code&gt;: $\lim_{x \rightarrow 0}\frac{\sin{x} - x}{x(\cos{x} - 1)}$&lt;/p&gt;
-&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-derivative-for-basic-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the derivative for basic function
+&lt;h3 id=&#34;what-what-is-the-derivative-for-basic-function&#34;&gt;WHAT: What is the derivative for basic function
 &lt;/h3&gt;&lt;p&gt;$$ \frac{d}{\mathrm{d}x}x^n = n \cdot x^{n - 1}, \frac{d}{\mathrm{d}x}Constant = 0, \frac{d}{\mathrm{d}x}\ln{x} = \frac{1}{x}, \frac{d}{\mathrm{d}x}e^x = e^x
 $$
 $$ \frac{d}{\mathrm{d}x}\sin{x} = \cos{x}, \frac{d}{\mathrm{d}x}\cos{x} = -\sin{x}, \frac{d}{\mathrm{d}x}\tan{x} = \frac{1}{\cos^2{x}} = \sec^2{x}
@@ -2589,9 +2303,7 @@ $$
 $$ \frac{d}{\mathrm{d}x}\sin^{-1}{x} = \frac{d}{\mathrm{d}x}\arcsin{x} = \frac{1}{\sqrt{1 - x^2}}, \frac{d}{\mathrm{d}x}\cos^{-1}{x} = -\frac{1}{\sqrt{1 - x^2}}, \frac{d}{\mathrm{d}x}\tan^{-1}{x} = \frac{1}{1 + x^2}
 $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-03&lt;/code&gt;: Try to use definition to derive the first two lines.&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;
-    &lt;a href=&#34;#how-how-to-differentiate---basic-rules&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to differentiate? - Basic rules
+&lt;h3 id=&#34;how-how-to-differentiate---basic-rules&#34;&gt;HOW: How to differentiate? - Basic rules
 &lt;/h3&gt;&lt;p&gt;$$ \frac{d}{\mathrm{d}x}(f(x) + g(x)) = \frac{d}{\mathrm{d}x}f(x) + \frac{d}{\mathrm{d}x}g(x) \Leftrightarrow (f + g)&amp;rsquo; = f&amp;rsquo; + g&#39;
 $$
 $$ \frac{d}{\mathrm{d}x}(f(x) \cdot g(x)) = \frac{d}{\mathrm{d}x}f(x) \cdot g(x) + f(x) \cdot \frac{d}{\mathrm{d}x}g(x) \Leftrightarrow (f \cdot g)&amp;rsquo; = f&amp;rsquo; \cdot g + f \cdot g&#39;
@@ -2603,17 +2315,11 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-01&lt;/code&gt;: Try to use the basic rule to derive the third line in &lt;code&gt;WHAT: What is the derivative for basic function&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-02&lt;/code&gt;: Differentiate: $a^x$; $\log_ax$; $x^x$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-04-03&lt;/code&gt;: Known $x^2 + y^2 = 25$, derive $\frac{d}{\mathrm{d}x}y$&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-differentiation-in-solving-problem&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply differentiation in solving problem?
-&lt;/h2&gt;&lt;h3 id=&#34;finding-rates&#34;&gt;
-    &lt;a href=&#34;#finding-rates&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Finding Rates
+&lt;h2 id=&#34;how-how-to-apply-differentiation-in-solving-problem&#34;&gt;HOW: How to apply differentiation in solving problem?
+&lt;/h2&gt;&lt;h3 id=&#34;finding-rates&#34;&gt;Finding Rates
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-01&lt;/code&gt;: A particle moves along the x-axis so that at time $t \geq 0$ the position of the particle is given by $x(t) = 0.5t^4 - 1.5t^3 - 2t^2 + 6t - 1$. What is the velocity of the particle at the first instance the particle is at the origin?&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-05-02&lt;/code&gt;: The sides and diagonal of the rectangle are strictly increasing with time. At the instant when two sides of rectangle $x = 4$ and $y = 3$, $\frac{\mathrm{d}}{\mathrm{d}t}x = \frac{\mathrm{d}}{\mathrm{d}t}z$ and the rate of the diagonal $z$ has $\frac{\mathrm{d}}{\mathrm{d}t}z = \frac{\mathrm{d}}{\mathrm{d}t}y$. Derive the value of $k$.&lt;/p&gt;
-&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;
-    &lt;a href=&#34;#curve-sketching--optimization&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Curve Sketching &amp;amp; Optimization
+&lt;h3 id=&#34;curve-sketching--optimization&#34;&gt;Curve Sketching &amp;amp; Optimization
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Monotonicity with $\mathrm{d}y/\mathrm{d}x$
 &lt;ul&gt;
@@ -2638,9 +2344,7 @@ $$&lt;/p&gt;
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-02/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-use-header-files&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-use-header-files&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we use header files?
+        <description>&lt;h2 id=&#34;why-why-should-we-use-header-files&#34;&gt;WHY: Why should we use header files?
 &lt;/h2&gt;&lt;p&gt;In &lt;code&gt;C++ Basic - 01 Function&lt;/code&gt;, we have learned about function. But there are numerous which have been already written, like print function &lt;code&gt;printf()&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-h&#34; data-lang=&#34;h&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;__format, ...){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; __retval;
@@ -2651,9 +2355,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The function of function is &lt;em&gt;output&lt;/em&gt; or &lt;em&gt;print&lt;/em&gt; something. This is only the main part of the function, and the function involves a huge amount of APIs and parameters.&lt;/p&gt;
 &lt;p&gt;Thus, if we write the function by ourselves, it would be extremely inefficient. So C++ or C has written for us already, and the only thing we are supposed to do is using header files.&lt;/p&gt;
-&lt;h2 id=&#34;what-what-is-header-files&#34;&gt;
-    &lt;a href=&#34;#what-what-is-header-files&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is header files?
+&lt;h2 id=&#34;what-what-is-header-files&#34;&gt;WHAT: What is header files?
 &lt;/h2&gt;</description>
         </item>
         <item>
@@ -2662,9 +2364,7 @@ $$&lt;/p&gt;
         <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/cpp-algorithm/00-01/</guid>
-        <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;
-    &lt;a href=&#34;#why-why-shouldnt-we-learn-from-hello-world-first&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?
+        <description>&lt;h2 id=&#34;why-why-shouldnt-we-learn-from-hello-world-first&#34;&gt;WHY: Why shouldn&amp;rsquo;t we learn from &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; first?
 &lt;/h2&gt;&lt;p&gt;I believe many people are confused about the reason we start from function instead of popular &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt;. It is because &lt;code&gt;&amp;quot;Hello, world&amp;quot;&lt;/code&gt; program is too difficult to beginner.&lt;/p&gt;
 &lt;p&gt;Some people might still be confused with &lt;em&gt;difficult&lt;/em&gt;, then let&amp;rsquo;s have a review of the program first:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
@@ -2685,20 +2385,14 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To be more accurate, this is not a &lt;em&gt;program&lt;/em&gt; but a &lt;em&gt;function&lt;/em&gt; that is supposed to be the beginning for beginner.&lt;/p&gt;
-&lt;h2 id=&#34;what&#34;&gt;
-    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT
-&lt;/h2&gt;&lt;h3 id=&#34;what-is-function&#34;&gt;
-    &lt;a href=&#34;#what-is-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    What is function?
+&lt;h2 id=&#34;what&#34;&gt;WHAT
+&lt;/h2&gt;&lt;h3 id=&#34;what-is-function&#34;&gt;What is function?
 &lt;/h3&gt;&lt;p&gt;Ref. &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Function_%28mathematics%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wikipedia&lt;/a&gt;: In mathematics, a &lt;strong&gt;function&lt;/strong&gt; from a set $X$ to a set $Y$ assigns to each element of $X$ exactly one element of $Y$.&lt;/p&gt;
 &lt;p&gt;Too abstract? Just understand that &lt;code&gt;Function&lt;/code&gt; is a &amp;ldquo;machine&amp;rdquo; containing some functions. E.g. $f(x) = x + 1$ machine $f(x)$ contains a function that could help to add 1 to input.&lt;/p&gt;
 &lt;p&gt;Then, you might find that all math or cs questions could be turned into functions with different complexity like $f(g(x) + h(y) \cdot u(z))$. And if we turn this into a language that computer could understand, it is a &lt;em&gt;program&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Now, you might understand why should we start from function. Function, is the most basic logic under program. Or, &lt;em&gt;all programs are consisted by functions&lt;/em&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;what-is-the-components-of-function&#34;&gt;
-    &lt;a href=&#34;#what-is-the-components-of-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    What is the components of function?
+&lt;h3 id=&#34;what-is-the-components-of-function&#34;&gt;What is the components of function?
 &lt;/h3&gt;&lt;p&gt;Let&amp;rsquo;s have a review of the previous function: &lt;code&gt;int f(int x){return x + 1;}&lt;/code&gt;, which equals to $f(x) = x + 1$ in mathematics. It&amp;rsquo;s time to fully understand this function:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
@@ -2732,9 +2426,7 @@ $$&lt;/p&gt;
 &lt;p&gt;In a nutshell, the function of &lt;code&gt;function()&lt;/code&gt; is that first assigning $7$ to &lt;code&gt;bestNum&lt;/code&gt; that we declare as an integer, then assign &lt;code&gt;bestNum&lt;/code&gt; to &lt;code&gt;a&lt;/code&gt;, then assign the number that &lt;code&gt;a&lt;/code&gt; times $2$ to &lt;code&gt;a&lt;/code&gt;, then assign &lt;code&gt;a&lt;/code&gt; back to &lt;code&gt;bestNum&lt;/code&gt;, finally returns &lt;code&gt;bestNum&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You might find that there is no point to input &lt;code&gt;a&lt;/code&gt; for it will be &amp;lsquo;refreshed&amp;rsquo; or assigned with another number &lt;code&gt;bestNum&lt;/code&gt; in line 4. So we could rewrite line 1: &lt;code&gt;int function() {&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;If you could get the points in the nutshell, then congratulation that you stepped in c++ now. But you might still be confused about although there is no CE (Compile-time Error) but RE (Runtime Error). Which the function that the overall program start with?&lt;/p&gt;
-&lt;h3 id=&#34;the-main-function-of-a-program---main-function&#34;&gt;
-    &lt;a href=&#34;#the-main-function-of-a-program---main-function&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    The main function of a program - &lt;code&gt;main()&lt;/code&gt; function
+&lt;h3 id=&#34;the-main-function-of-a-program---main-function&#34;&gt;The main function of a program - &lt;code&gt;main()&lt;/code&gt; function
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; y;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
@@ -2766,12 +2458,8 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;main&lt;/code&gt; -&amp;gt; &lt;code&gt;f&lt;/code&gt; -&amp;gt; &lt;code&gt;h&lt;/code&gt; (return) -&amp;gt; &lt;code&gt;f&lt;/code&gt; -&amp;gt; &lt;code&gt;main&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;It is a &lt;code&gt;stack&lt;/code&gt; structure, which we put &lt;code&gt;main&lt;/code&gt; in the bottom first, then &lt;code&gt;f&lt;/code&gt;, then &lt;code&gt;h&lt;/code&gt;. When we want to return, we also have to pick from the top first: &lt;code&gt;h&lt;/code&gt;, &lt;code&gt;f&lt;/code&gt; then &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;stack&lt;/code&gt; structure, which is defined as LIFO, Last In First Out, is widely use in algorithm, computer hardware, etc. We will gain a deeper sight of this in the following courses.&lt;/p&gt;
-&lt;h2 id=&#34;how-how-to-write-a-program&#34;&gt;
-    &lt;a href=&#34;#how-how-to-write-a-program&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to write a Program?
-&lt;/h2&gt;&lt;h3 id=&#34;begin-with-main-is-a-good-habit&#34;&gt;
-    &lt;a href=&#34;#begin-with-main-is-a-good-habit&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Begin with &lt;code&gt;main()&lt;/code&gt; is a good habit
+&lt;h2 id=&#34;how-how-to-write-a-program&#34;&gt;HOW: How to write a Program?
+&lt;/h2&gt;&lt;h3 id=&#34;begin-with-main-is-a-good-habit&#34;&gt;Begin with &lt;code&gt;main()&lt;/code&gt; is a good habit
 &lt;/h3&gt;&lt;p&gt;From the knowledge we have learned above, every program contains a &lt;code&gt;main()&lt;/code&gt; function.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;sentence&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;;
@@ -2798,17 +2486,13 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The first thing to understand is that hackers actually like hard problems and good, thought-provoking questions about them. If we didn&amp;rsquo;t, we wouldn&amp;rsquo;t be here. If you give us an interesting question to chew on we&amp;rsquo;ll be grateful to you; good questions are a stimulus and a gift. Good questions help us develop our understanding, and often reveal problems we might not have noticed or thought about otherwise. Among hackers, “Good question!” is a strong and sincere compliment.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Now, we know how to create a structure of a program, then what about calculation?&lt;/p&gt;
-&lt;h3 id=&#34;arithmetic&#34;&gt;
-    &lt;a href=&#34;#arithmetic&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arithmetic
+&lt;h3 id=&#34;arithmetic&#34;&gt;Arithmetic
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Basic &lt;code&gt;+ - * /&lt;/code&gt; could be use directly. E.g. &lt;code&gt;int a = 5 - 3;&lt;/code&gt;, &lt;code&gt;float b = 3 / 6&lt;/code&gt; (float is a type could store float number). But notice that &lt;code&gt;/&lt;/code&gt; still cannot divide with &lt;code&gt;0&lt;/code&gt;. Although there is no CE, but RE will happen while running the program.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;=&lt;/code&gt; We have clarified that &lt;code&gt;=&lt;/code&gt; is not &lt;em&gt;equal&lt;/em&gt; but &lt;em&gt;assign&lt;/em&gt; as an arithmetic.&lt;/li&gt;
 &lt;li&gt;Mod calculation: &lt;code&gt;%&lt;/code&gt;. E.g. &lt;code&gt;int a = 8 % 3; // a equals 2&lt;/code&gt; (&lt;code&gt;//&lt;/code&gt; is a comment sign. The content after &lt;code&gt;//&lt;/code&gt; will not be compiled and run. &lt;code&gt;/*content*/&lt;/code&gt; is similar to &lt;code&gt;//&lt;/code&gt;, but you can comment for several lines.)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;practice&#34;&gt;
-    &lt;a href=&#34;#practice&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Practice
+&lt;h2 id=&#34;practice&#34;&gt;Practice
 &lt;/h2&gt;&lt;p&gt;As the first practice, I will declare that how to use &lt;code&gt;practice&lt;/code&gt; to improve ourselves.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Practice&lt;/code&gt; has three levels: &lt;code&gt;KNOW&lt;/code&gt;, &lt;code&gt;UNDERSTAND&lt;/code&gt;, &lt;code&gt;MASTER&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2816,9 +2500,7 @@ $$&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;UNDERSTAND&lt;/code&gt; makes some modification with content itself and parameters, which is necessary for next learning. Figuring out &lt;code&gt;UNDERSTAND&lt;/code&gt; means that you gain your own understanding while reading the post. If you cannot solve &lt;code&gt;UNDERSTAND&lt;/code&gt;, please conclude the post and find out what you miss in this course, you could ask search engine for help as well.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;MASTER&lt;/code&gt; explores deeper into knowledge and content, which is necessary for mastering C++ and next learning for algorithm. Figuring out &lt;code&gt;MASTER&lt;/code&gt; means that you get every point of the post and build your would logical system of learning C++. If you cannot solve &lt;code&gt;MASTER&lt;/code&gt;, you could read the answer directly and then understand how the answer works. After that, re-answer the question again.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;know&#34;&gt;
-    &lt;a href=&#34;#know&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    KNOW
+&lt;h3 id=&#34;know&#34;&gt;KNOW
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
@@ -2830,9 +2512,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Find the value of &lt;code&gt;a&lt;/code&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;code&gt;a&lt;/code&gt; equals 2.&lt;/p&gt;
-&lt;h3 id=&#34;understand&#34;&gt;
-    &lt;a href=&#34;#understand&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    UNDERSTAND
+&lt;h3 id=&#34;understand&#34;&gt;UNDERSTAND
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;h&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
@@ -2857,9 +2537,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;a&lt;/code&gt; equals 1.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;master&#34;&gt;
-    &lt;a href=&#34;#master&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    MASTER
+&lt;h3 id=&#34;master&#34;&gt;MASTER
 &lt;/h3&gt;&lt;p&gt;Write a function &lt;code&gt;switch(int a, int b)&lt;/code&gt; that could switch the value stored in &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;, then returns &lt;code&gt;a&lt;/code&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;switch&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b){
@@ -2876,28 +2554,20 @@ $$&lt;/p&gt;
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/misc/blog/</guid>
-        <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;
-    &lt;a href=&#34;#why-why-do-i-want-to-construct-my-blog-site&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why do I want to construct my blog site?
+        <description>&lt;h2 id=&#34;why-why-do-i-want-to-construct-my-blog-site&#34;&gt;WHY: Why do I want to construct my blog site?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Contributing to and being involved in the open-source community&lt;/li&gt;
 &lt;li&gt;Sharing some knowledge with my own understanding way and logic&lt;/li&gt;
 &lt;li&gt;I am a tech-geek who loves to learn some new tech&lt;/li&gt;
 &lt;li&gt;Increasing my popularity to make more people know about me and accept my ideal.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what&#34;&gt;
-    &lt;a href=&#34;#what&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT
-&lt;/h2&gt;&lt;h3 id=&#34;what-is-the-blog-site&#34;&gt;
-    &lt;a href=&#34;#what-is-the-blog-site&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    What is the Blog Site
+&lt;h2 id=&#34;what&#34;&gt;WHAT
+&lt;/h2&gt;&lt;h3 id=&#34;what-is-the-blog-site&#34;&gt;What is the Blog Site
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;A unique site that runs your blog, people could directly gain access to your blog through website address or searching engines&lt;/li&gt;
 &lt;li&gt;A place that you could post your own idea, share your thinking, help others, and introduce yourself&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34;&gt;
-    &lt;a href=&#34;#what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    What is the difference between constructing own site and use others services of other companies? (WHY I do not want to use other companies service directly?)
+&lt;h3 id=&#34;what-is-the-difference-between-constructing-own-site-and-use-others-services-of-other-companies-why-i-do-not-want-to-use-other-companies-service-directly&#34;&gt;What is the difference between constructing own site and use others services of other companies? (WHY I do not want to use other companies service directly?)
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;More freedom in configuring your webpage, customizing your appearance, and fewer limitations from companies&lt;/li&gt;
 &lt;li&gt;Cheaper price (even no price) running the whole service (you could choose every service you want)&lt;/li&gt;
@@ -2905,22 +2575,14 @@ $$&lt;/p&gt;
 &lt;li&gt;You will learn more things about constructing a blog, like &lt;code&gt;hugo&lt;/code&gt; usage, IP allocating, etc.&lt;/li&gt;
 &lt;li&gt;The site constructed by your own is more appealing to geeks, companies, and educational facilities which means you would gain more opportunities from them.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
-&lt;/h2&gt;&lt;h3 id=&#34;basic-constructing&#34;&gt;
-    &lt;a href=&#34;#basic-constructing&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Basic Constructing
-&lt;/h3&gt;&lt;h4 id=&#34;pre-request&#34;&gt;
-    &lt;a href=&#34;#pre-request&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Pre-request
+&lt;h2 id=&#34;how&#34;&gt;HOW
+&lt;/h2&gt;&lt;h3 id=&#34;basic-constructing&#34;&gt;Basic Constructing
+&lt;/h3&gt;&lt;h4 id=&#34;pre-request&#34;&gt;Pre-request
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;A valid GitHub account&lt;/li&gt;
 &lt;li&gt;Already installing &lt;code&gt;Hugo&lt;/code&gt; on your machine: &lt;code&gt;$ sudo pacman -S hugo&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;create-a-new-github-page&#34;&gt;
-    &lt;a href=&#34;#create-a-new-github-page&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Create a new GitHub Page
+&lt;h4 id=&#34;create-a-new-github-page&#34;&gt;Create a new GitHub Page
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;Create a new repo with Repository name &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;, then your repo will look like this: &lt;code&gt;YOUR_GITHUB_NAME/YOUR_GITHUB_NAME.github.io&lt;/code&gt;, e.g. Mine is &lt;code&gt;zayn7lie/zayn7lie.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Connect the repo to your local computer
@@ -2932,9 +2594,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;In the repo, turn to &lt;code&gt;Setting&lt;/code&gt; - &lt;code&gt;Code and automation&lt;/code&gt; - &lt;code&gt;Pages&lt;/code&gt;, check &lt;code&gt;Build and deployment&lt;/code&gt; - &lt;code&gt;Source&lt;/code&gt; is &lt;code&gt;Deploy from a branch&lt;/code&gt;, and &lt;code&gt;Branch&lt;/code&gt; is &lt;code&gt;master&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;setting-up-source-code-for-blog&#34;&gt;
-    &lt;a href=&#34;#setting-up-source-code-for-blog&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Setting up source code for blog
+&lt;h4 id=&#34;setting-up-source-code-for-blog&#34;&gt;Setting up source code for blog
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;Turn to your local machine, &lt;code&gt;$ hugo new site YOUR_SITE_NAME&lt;/code&gt; to create and initial your new blog site, add &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt; in &lt;code&gt;baseURL&lt;/code&gt; in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Turn to the folder you just connect with your &lt;code&gt;GitHub Page&lt;/code&gt;, rename it as &lt;code&gt;public&lt;/code&gt; with moving it to your site folder you just have generated.&lt;/li&gt;
@@ -2946,14 +2606,10 @@ $$&lt;/p&gt;
 &lt;li&gt;After checking, &lt;code&gt;$ hugo&lt;/code&gt; to generate the final &lt;code&gt;html&lt;/code&gt; to &lt;code&gt;public&lt;/code&gt; folder, then commit it to your &lt;code&gt;GitHub&lt;/code&gt; repo.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;GitHub&lt;/code&gt; will automatically run &lt;code&gt;Action&lt;/code&gt; to build your blog website with &lt;code&gt;Jekyll&lt;/code&gt;(you do not need to know anything about &lt;code&gt;Jekyll&lt;/code&gt;), after compiling, you could see your public website in &lt;code&gt;YOUR_GITHUB_NAME.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;advanced-configuration&#34;&gt;
-    &lt;a href=&#34;#advanced-configuration&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Advanced Configuration
+&lt;h3 id=&#34;advanced-configuration&#34;&gt;Advanced Configuration
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;The global config file is in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;theme-setting&#34;&gt;
-    &lt;a href=&#34;#theme-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Theme Setting
+&lt;h4 id=&#34;theme-setting&#34;&gt;Theme Setting
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;I am using &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Stack&lt;/a&gt;, it has a &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -3002,12 +2658,8 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tag-cloud&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}},
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;archives&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt; = {&lt;span style=&#34;color:#a6e22e&#34;&gt;limit&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;github-limitation-with-github-page&#34;&gt;
-    &lt;a href=&#34;#github-limitation-with-github-page&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    GitHub Limitation with &lt;code&gt;GitHub Page&lt;/code&gt;
-&lt;/h4&gt;&lt;h4 id=&#34;domain-configuration-using-custom-domain&#34;&gt;
-    &lt;a href=&#34;#domain-configuration-using-custom-domain&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Domain Configuration (Using custom domain)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;github-limitation-with-github-page&#34;&gt;GitHub Limitation with &lt;code&gt;GitHub Page&lt;/code&gt;
+&lt;/h4&gt;&lt;h4 id=&#34;domain-configuration-using-custom-domain&#34;&gt;Domain Configuration (Using custom domain)
 &lt;/h4&gt;</description>
         </item>
         

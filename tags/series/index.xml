@@ -12,9 +12,7 @@
         <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-ser/</guid>
-        <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;
-    &lt;a href=&#34;#why-why-should-we-learn-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHY: Why should we learn Series
+        <description>&lt;h2 id=&#34;why-why-should-we-learn-series&#34;&gt;WHY: Why should we learn Series
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Making Linear to Discrete.&lt;/p&gt;
@@ -23,13 +21,9 @@
 &lt;p&gt;A tool for solving some problems in Physics(TAYLOR POLYNOMIALS, etc.) and some situation.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;
-    &lt;a href=&#34;#what-what-is-sequence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is Sequence
+&lt;h2 id=&#34;what-what-is-sequence&#34;&gt;WHAT: What is Sequence
 &lt;/h2&gt;&lt;p&gt;Sequences: A list of number written in a definite order ${a_n}_{n = 1}^\infty$&lt;/p&gt;
-&lt;h3 id=&#34;convergence&#34;&gt;
-    &lt;a href=&#34;#convergence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Convergence
+&lt;h3 id=&#34;convergence&#34;&gt;Convergence
 &lt;/h3&gt;&lt;p&gt;$\forall \epsilon, \exists N, \forall n &amp;gt; N, |a_n - l| &amp;lt; \epsilon \Rightarrow a_n \rightarrow l$ OR $\lim_{n \rightarrow \infty}a_n = L \Rightarrow a_n \rightarrow L$&lt;/p&gt;
 &lt;p&gt;E.g. $1/x$: for all $\epsilon$, exist $N = \frac{1}{\epsilon}$, for all $n &amp;gt; N, |a_n - 0| &amp;lt; \epsilon \Rightarrow a_n$ convergent to 0&lt;/p&gt;
 &lt;ul&gt;
@@ -74,9 +68,7 @@ $$ \text{Hint 1: } (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
 $$
 $$ \text{Hint 2: } a_n &amp;lt; b_n = (1 + \frac{1}{n})^{n + 1}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;
-    &lt;a href=&#34;#arbitrary-sequence&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arbitrary Sequence
+&lt;h3 id=&#34;arbitrary-sequence&#34;&gt;Arbitrary Sequence
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Arithmetic sequence&lt;/p&gt;
@@ -85,13 +77,9 @@ $$&lt;/p&gt;
 &lt;p&gt;Geometric progression&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-what-is-series&#34;&gt;
-    &lt;a href=&#34;#what-what-is-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is Series
+&lt;h2 id=&#34;what-what-is-series&#34;&gt;WHAT: What is Series
 &lt;/h2&gt;&lt;p&gt;Series: the sum of the infinite terms from a sequence (limit the $n$ of partial sum $S_n = \sum_{i = 1}^na_n$ to infinity) &amp;ldquo;The Integral of a Sequence&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;
-    &lt;a href=&#34;#convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges
+&lt;h3 id=&#34;convergence-the-divergence-or-convergence-of-s_n-leftrightarrow-series-diverges-or-converges&#34;&gt;Convergence: The divergence or convergence of $S_n \Leftrightarrow Series$ diverges or converges
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Test for Series&lt;/p&gt;
@@ -144,9 +132,7 @@ $$ \sum(1 - \frac{1}{n})^n, \sum(1 - \frac{1}{n})^{n^2}, \sum{\ln(1 + \frac{1}{n
 $$
 $$ \sum \frac{x^n}{\ln^p x}, \text{Known $b_n \rightarrow \frac{2}{5}$, }\sum_1\frac{(-1)^nn!}{n^nb_1b_2\ldots b_n}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;arbitrary-series&#34;&gt;
-    &lt;a href=&#34;#arbitrary-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    Arbitrary Series
+&lt;h3 id=&#34;arbitrary-series&#34;&gt;Arbitrary Series
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Geometric Series&lt;/p&gt;
@@ -163,29 +149,21 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;how&#34;&gt;
-    &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW
-&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;
-    &lt;a href=&#34;#what-what-is-the-applycation-of-series---power-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    WHAT: What is the applycation of series - Power Series
+&lt;h2 id=&#34;how&#34;&gt;HOW
+&lt;/h2&gt;&lt;h3 id=&#34;what-what-is-the-applycation-of-series---power-series&#34;&gt;WHAT: What is the applycation of series - Power Series
 &lt;/h3&gt;&lt;p&gt;$f(x) = \sum c(x - a)^n$ is called a power series centered at $a$, domain of $f(x)$ is the set that series converge.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;only converge at $x = a$&lt;/li&gt;
 &lt;li&gt;converge for all $x \in R$&lt;/li&gt;
 &lt;li&gt;$\exists R &amp;gt; 0, |x - a| &amp;lt; R \text{ the series converge}, R: \text{radius of convergence}$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;
-    &lt;a href=&#34;#how-ratio-test--two-sides&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: Ratio Test + Two sides
+&lt;h4 id=&#34;how-ratio-test--two-sides&#34;&gt;HOW: Ratio Test + Two sides
 &lt;/h4&gt;&lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Find the domain of } f(x) = \sum \frac{(x - 3)^n}{n} (ANS: [2,4))
 $$
 $$ \text{}
 $$&lt;/p&gt;
-&lt;h4 id=&#34;how-how-to-apply&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply
+&lt;h4 id=&#34;how-how-to-apply&#34;&gt;HOW: How to apply
 &lt;/h4&gt;&lt;p&gt;if the power series has a convergent radius R &amp;gt; 0, the f(x) is both differentiatable and integrable on the interval (a - R, a + R), and&lt;/p&gt;
 &lt;p&gt;$$ f&amp;rsquo;(x) = \sum n c_n (x - a)^{n - 1}
 $$
@@ -203,9 +181,7 @@ $$ \text{If $f(x) = \sum c_n x^n$, where $c_{n + 4} = c_n$ for all $n \geq 0$,}
 $$
 $$ \text{find the interval of convergence of the series and the formula for f(x)}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;
-    &lt;a href=&#34;#how-how-to-apply-for-graphing---taylor-series&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
-    HOW: How to apply for graphing - Taylor Series
+&lt;h3 id=&#34;how-how-to-apply-for-graphing---taylor-series&#34;&gt;HOW: How to apply for graphing - Taylor Series
 &lt;/h3&gt;&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
 &lt;blockquote&gt;

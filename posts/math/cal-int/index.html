@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/math/cal-int/'>
 
-<link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="Calculus: Integral">
+<link rel="stylesheet" href="/scss/style.min.25aedd98495ce72cb7610061ca17ba5fa219cfcb01c6f102043d6cbfb7ca82b2.css"><meta property='og:title' content="Calculus: Integral">
 <meta property='og:description' content="Calculus II, special thanks to professor [Wenzheng Shi](https://sites.google.com/view/wenzhengshi/) who provided me with excellent exercises!">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/math/cal-int/'>
 <meta property='og:site_name' content='zayn_lie&#39;s studio'>
@@ -419,19 +419,13 @@
     
     <blockquote>
 <p>The knowledge marked with * is not necessary in Calculus II</p></blockquote>
-<h2 id="why-why-do-we-want-to-find-out-the-integral">
-    <a href="#why-why-do-we-want-to-find-out-the-integral" class="header-anchor">#</a>
-    WHY: Why do we want to find out the integral
+<h2 id="why-why-do-we-want-to-find-out-the-integral">WHY: Why do we want to find out the integral
 </h2><ul>
 <li>Find out the area</li>
 <li>Find out some physics parameters</li>
 </ul>
-<h2 id="what-what-is-integral---area-with-positive-and-negative">
-    <a href="#what-what-is-integral---area-with-positive-and-negative" class="header-anchor">#</a>
-    WHAT: What is integral - &ldquo;Area (with positive and negative)&rdquo;
-</h2><h3 id="approx-integral">
-    <a href="#approx-integral" class="header-anchor">#</a>
-    Approx. Integral
+<h2 id="what-what-is-integral---area-with-positive-and-negative">WHAT: What is integral - &ldquo;Area (with positive and negative)&rdquo;
+</h2><h3 id="approx-integral">Approx. Integral
 </h3><blockquote>
 <p>Equaling space is not necessary</p></blockquote>
 <p>Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:</p>
@@ -460,12 +454,8 @@ E = \begin{cases}
 \text{Simpson} \frac{K(b - a)^5}{180n^4} (K = |f^{(4)}_{max}(x)|)
 \end{cases}
 $$</p>
-<h2 id="how-how-to-integral---technique">
-    <a href="#how-how-to-integral---technique" class="header-anchor">#</a>
-    HOW: How to integral - Technique
-</h2><h3 id="substitution-if-the-function-combines-with-its-derivative">
-    <a href="#substitution-if-the-function-combines-with-its-derivative" class="header-anchor">#</a>
-    Substitution: If the function combines with its derivative
+<h2 id="how-how-to-integral---technique">HOW: How to integral - Technique
+</h2><h3 id="substitution-if-the-function-combines-with-its-derivative">Substitution: If the function combines with its derivative
 </h3><p>Based on Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \Rightarrow \int_{x_1}^{x_2} f(x) \frac{\mathrm{d}u}{\mathrm{d}x}\,\mathrm{d}x = \int_{u(x_1)}^{u(x_2)}f(u)\,\mathrm{d}u$</p>
 <blockquote>
 <p>The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$</p></blockquote>
@@ -494,9 +484,7 @@ $$</p>
 <p><code>EX-CAL-INT-02-03</code>: $\displaystyle \int_{0}^{3}{\frac{x}{\sqrt[3]{x - 2}}}\,\mathrm{d}x$</p>
 <p><code>EX-CAL-INT-02-04</code>: $\displaystyle \int_{e}^{\infty}{\frac{1}{x(\ln^p{x})}}\,\mathrm{d}x$</p>
 <p><code>EX-CAL-INT-02-05</code>: $\displaystyle \int{\frac{x^5 - x}{x^8 + 1}}\,\mathrm{d}x$</p>
-<h3 id="integration-by-part-if-the-function-combines-with-a-simple-functions-derivative">
-    <a href="#integration-by-part-if-the-function-combines-with-a-simple-functions-derivative" class="header-anchor">#</a>
-    Integration by part: If the function combines with a simple function&rsquo;s derivative
+<h3 id="integration-by-part-if-the-function-combines-with-a-simple-functions-derivative">Integration by part: If the function combines with a simple function&rsquo;s derivative
 </h3><ul>
 <li>
 <p>Reduce Power: $\int{x \cdot \sin x}\,\mathrm{d}x$</p>
@@ -520,9 +508,7 @@ $$</p>
 <p><code>EX-CAL-INT-03-01</code>: Known $\displaystyle \int_0^{\infty}{\frac{\sin{x}}{x}}\,\mathrm{d}x = \frac{\pi}{2}$, derive $\displaystyle \int_{-\infty}^{\infty}{\frac{\sin^2{x}}{x^2}}\,\mathrm{d}x$</p>
 <p><code>EX-CAL-INT-03-02</code>: $\int{\arcsin x \cdot \ln x}\,\mathrm{d}x$</p>
 <p><code>EX-CAL-INT-03-03</code>: $\int(4x^4 + 1)e^{x^4}\,\mathrm{d}x$</p>
-<h3 id="eg1-trans-between-different-variables">
-    <a href="#eg1-trans-between-different-variables" class="header-anchor">#</a>
-    E.g.1. Trans between different variables
+<h3 id="eg1-trans-between-different-variables">E.g.1. Trans between different variables
 </h3><p>$$ \int_{C}^{g(x)}{f(t)}\,\mathrm{d}t, \text{assume } F(t) = \int{f(t)}\,\mathrm{d}t \Rightarrow \int_{C}^{g(x)}{f(t)}\,\mathrm{d}t = F(g(x)) - F(C)
 $$
 $$ \text{Taking derivative in both sides:} \frac{\mathrm{d}}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\,\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}x}F(g(x)) - \frac{\mathrm{d}}{\mathrm{d}x}F(C)
@@ -531,9 +517,7 @@ $$ F&rsquo;(x) = f(x), F(C) \text{ is constant} \Rightarrow F&rsquo;(g(x)) \cdot
 $$
 $$ \therefore \frac{\mathrm{d}}{\mathrm{d}x}{\int_{C}^{g(x)}{f(t)}\,\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x), \frac{\mathrm{d}}{\mathrm{d}x}{\int_{h(x)}^{g(x)}{f(t)}\,\mathrm{d}t} = f(g(x)) \cdot g&rsquo;(x) - f(h(x)) \cdot h&rsquo;(x)
 $$</p>
-<h3 id="eg2-partial-fractions">
-    <a href="#eg2-partial-fractions" class="header-anchor">#</a>
-    E.g.2. Partial Fractions
+<h3 id="eg2-partial-fractions">E.g.2. Partial Fractions
 </h3><p>$$ f(x) = \frac{A(x)}{B(x)} = f_1(x) + \frac{C(x)}{D(x)}, deg(A) &gt;= deg(B) \ or \ deg(C) &lt; deg(D)
 $$
 $$ D(x) = (a_1x+b_1)^{p_1}&hellip;(a_ix+b_i)^{p_i}(u_1x^2 + v_1x + w_1)^{r_1}&hellip;(u_jx^2 + v_jx + w_j)^{r_j}
@@ -581,12 +565,8 @@ $$</p>
 For integral $\int_a^b{f(x)}\,\mathrm{d}x$, when there are some points that are not defined, we use $t$ to approx. the limit of those points</p>
 <p>$$ \int_a^b{f(x)}\,\mathrm{d}x = \lim_{t \rightarrow b}\int_a^t{f(x)}\,\mathrm{d}x
 $$</p></blockquote>
-<h2 id="how-how-to-apply-integral-to-reality">
-    <a href="#how-how-to-apply-integral-to-reality" class="header-anchor">#</a>
-    HOW: How to apply integral to reality
-</h2><h3 id="rate---differential-equations">
-    <a href="#rate---differential-equations" class="header-anchor">#</a>
-    Rate - Differential Equations
+<h2 id="how-how-to-apply-integral-to-reality">HOW: How to apply integral to reality
+</h2><h3 id="rate---differential-equations">Rate - Differential Equations
 </h3><p>$$ \text{Informal:} \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y\,\mathrm{d}y = x\,\mathrm{d}x \Rightarrow \int{y}\,\mathrm{d}y = \int{x}\,\mathrm{d}x
 $$
 $$ \text{*Formal Solution:} \frac{\mathrm{d}}{\mathrm{d}x}{y(t(x))} = \frac{\mathrm{d}y}{\mathrm{d}t} \cdot \frac{\mathrm{d}t}{\mathrm{d}x} \Leftrightarrow \int{(y(t(x)) \frac{\mathrm{d}t}{\mathrm{d}x})}\,\mathrm{d}x = \int{(y \frac{\mathrm{d}t}{\mathrm{d}x})}\,\mathrm{d}x = \frac{y^2}{2}
@@ -607,38 +587,26 @@ $$</p>
 <p>Exercise:</p>
 <p><code>EX-CAL-INT-05-01</code>: $\displaystyle \frac{\mathrm{d}N}{\mathrm{d}t} = -aN\ln(bN)$</p>
 <p>*<code>EX-CAL-INT-05-02</code>: $\displaystyle \frac{\mathrm{d}^2N}{\mathrm{d}t^2} = -aN\ln(bN) - \frac{1}{N}\frac{\mathrm{d}N^2}{\mathrm{d}t^2}$</p>
-<h3 id="arc-length">
-    <a href="#arc-length" class="header-anchor">#</a>
-    Arc Length
+<h3 id="arc-length">Arc Length
 </h3><p>$$ L = \lim_{x_2 \rightarrow x_1}{\sum{\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}}} = \int{\sqrt{1 + y&rsquo;^2}}\,\mathrm{d}x
 $$</p>
 <p>Exercise:</p>
 <p><code>EX-CAL-INT-06-01</code>: Find curve length of $y = \ln{\sec{x}}, 0 \leq x \leq \pi / 4$</p>
-<h3 id="areas">
-    <a href="#areas" class="header-anchor">#</a>
-    Areas
+<h3 id="areas">Areas
 </h3><p>$$ A = \lim_{n \rightarrow \infty}{\sum_{i = 1}^{n}{\Delta{x}(f(x_i^\star) - g(x_i^\star))}} = \int_{x_1}^{x_2}{(f(x) - g(x))}\,\mathrm{d}x = \int_{y_1}^{y_2}{(f^{-1}(y) - g^{-1}(y))}\,\mathrm{d}y
 $$</p>
-<h3 id="surface">
-    <a href="#surface" class="header-anchor">#</a>
-    Surface
+<h3 id="surface">Surface
 </h3><p>$$ S = \int{2\pi f(x)\sqrt{1 + f&rsquo;^2}}\,\mathrm{d}x
 $$</p>
-<h3 id="volume">
-    <a href="#volume" class="header-anchor">#</a>
-    Volume
+<h3 id="volume">Volume
 </h3><p>$$ V = \int{A(z)}\,\mathrm{d}z
 $$
 $$ \text{Cylindrical Shells (y-axis): } V = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi ((x + \Delta{x})^2 - x^2)}}
 $$
 $$ = \lim_{\Delta{x} \rightarrow 0}{\sum{h(x) \cdot \pi (2x \Delta{x} + \Delta^2{x})}} = \int{h(x) 2 \pi x}\,\mathrm{d}x
 $$</p>
-<h2 id="how-how-to-apply-in-polar-coordinate">
-    <a href="#how-how-to-apply-in-polar-coordinate" class="header-anchor">#</a>
-    HOW: How to apply in Polar Coordinate
-</h2><h3 id="why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves">
-    <a href="#why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves" class="header-anchor">#</a>
-    WHY: Why we should learn about Polar Coordinate - Cycloid &amp; Parametric Curves
+<h2 id="how-how-to-apply-in-polar-coordinate">HOW: How to apply in Polar Coordinate
+</h2><h3 id="why-why-we-should-learn-about-polar-coordinate---cycloid--parametric-curves">WHY: Why we should learn about Polar Coordinate - Cycloid &amp; Parametric Curves
 </h3><p>$$ \begin{cases}
 x = r(\theta - \sin\theta) \\
 y = r(1 - \cos\theta)
@@ -651,9 +619,7 @@ $$</p>
 <p>If you remember &ldquo;$y$ and $x$ are not in the same manner&rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.</p></blockquote>
 <p>$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{\,\mathrm{d}x^2}}}\,\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
 $$</p>
-<h3 id="what-what-is-polar-coordinates">
-    <a href="#what-what-is-polar-coordinates" class="header-anchor">#</a>
-    WHAT: What is Polar Coordinates
+<h3 id="what-what-is-polar-coordinates">WHAT: What is Polar Coordinates
 </h3><p>$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
 $$</p>
 <blockquote>
@@ -711,7 +677,8 @@ $$</p>
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.body, {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -721,6 +688,7 @@ $$</p>
             ignoredClasses: ["gist"]
         });})
 </script>
+
     
 </article>
 
@@ -786,7 +754,7 @@ $$</p>
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -875,7 +843,7 @@ $$</p>
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://zayn7lie.ber7.org/posts/linux/xfce/'>
 
-<link rel="stylesheet" href="/scss/style.min.86febdceb97d28a5d1787fd0e608a9338363feb7605e84367cbc0b86a66987bc.css"><meta property='og:title' content="XFCE (X11)">
+<link rel="stylesheet" href="/scss/style.min.25aedd98495ce72cb7610061ca17ba5fa219cfcb01c6f102043d6cbfb7ca82b2.css"><meta property='og:title' content="XFCE (X11)">
 <meta property='og:description' content="XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).\nXFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.\n">
 <meta property='og:url' content='https://zayn7lie.ber7.org/posts/linux/xfce/'>
 <meta property='og:site_name' content='zayn_lie&#39;s studio'>
@@ -395,20 +395,14 @@
     
     <p>XFCE is a more lightweight Desktop Environment (or Common Environment) and it will use less RAM and CPU, which are able to make my laptop battery life longer (about 8~12 hours for normal use).</p>
 <p>XFCE is clean and easy to customize. You can install lots of plugins for XFCE and make it like Gnome or KDE but have less CPU use than Gnome and KDE. And it is cleaner as well.</p>
-<h2 id="install">
-    <a href="#install" class="header-anchor">#</a>
-    Install
+<h2 id="install">Install
 </h2><blockquote>
 <p>Note. It is not necessary and recommended installing <code>xorg</code> independently looking forward to lightweight. Some packages from <code>xorg</code> group would install automatically as the dependent packages of XFCE</p></blockquote>
 <p><code># pacman -S xfce4</code> to install XFCE. It is NOT recommended that you can <code># echo &quot;exec startxfce4&quot; &gt;&gt; /etc/X11/xinit/xinitrc</code> to start <code>xfce4</code> in the next boot and ignore step 3. It is highly recommended installing a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.</p>
 <p><code># pacman -S lightdm lightdm-gtk-greeter light-locker</code> to install this recommended lightweight <a class="link" href="https://wiki.archlinux.org/title/Display_manager"  target="_blank" rel="noopener"
     >DM</a>, then <code># systemctl enable lightdm</code> to let <code>lightdm</code> start automatically when you boot your system. You can also choose your DM. P.S. <code>lightdm</code> is the main DM, <code>lightdm-gtk-greeter</code> is for configuring your <code>lightdm</code>, <code>light-loceker</code> is for that you can lock your screen with your settings.</p>
-<h2 id="config">
-    <a href="#config" class="header-anchor">#</a>
-    Config
-</h2><h3 id="system">
-    <a href="#system" class="header-anchor">#</a>
-    System
+<h2 id="config">Config
+</h2><h3 id="system">System
 </h3><ul>
 <li>
 <p>AUR manager: <code>yay</code></p>
@@ -461,12 +455,8 @@ xft-rgba=none
 </ul>
 </li>
 </ul>
-<h3 id="media">
-    <a href="#media" class="header-anchor">#</a>
-    Media
-</h3><h4 id="sound">
-    <a href="#sound" class="header-anchor">#</a>
-    Sound
+<h3 id="media">Media
+</h3><h4 id="sound">Sound
 </h4><ul>
 <li>
 <p>Basis: <code>pipewire-pulse pipewire-alsa pipewire-jack pipewire alsa-utils</code></p>
@@ -520,28 +510,20 @@ xft-rgba=none
 <p>Music Player: <code>audacious</code></p>
 </li>
 </ul>
-<h4 id="video">
-    <a href="#video" class="header-anchor">#</a>
-    Video
+<h4 id="video">Video
 </h4><ul>
 <li>Video Player: <code>vlc</code></li>
 <li>Recording &amp; Steaming: <code>obs-studio</code></li>
 <li>Edit: <code>flowblade</code></li>
 </ul>
-<h4 id="image">
-    <a href="#image" class="header-anchor">#</a>
-    Image
+<h4 id="image">Image
 </h4><ul>
 <li>Screenshot: <code>flameshot</code></li>
 <li>Edit: <code>krita inkscape</code></li>
 <li>View: <code>ristretto</code></li>
 </ul>
-<h3 id="work">
-    <a href="#work" class="header-anchor">#</a>
-    Work
-</h3><h4 id="input">
-    <a href="#input" class="header-anchor">#</a>
-    Input
+<h3 id="work">Work
+</h3><h4 id="input">Input
 </h4><ul>
 <li>Method: <code>fcitx5</code>
 <ul>
@@ -561,25 +543,19 @@ xft-rgba=none
 </ul>
 </li>
 </ul>
-<h4 id="writing">
-    <a href="#writing" class="header-anchor">#</a>
-    Writing
+<h4 id="writing">Writing
 </h4><ul>
 <li>Code: <code>code</code></li>
 <li>Paper: <code>zotero</code>AUR</li>
 <li>Blog: <code>hugo</code></li>
 </ul>
-<h4 id="social">
-    <a href="#social" class="header-anchor">#</a>
-    Social
+<h4 id="social">Social
 </h4><ul>
 <li>Email: <code>evolution evolution-on</code></li>
 <li>Chat: <code>telegram-desktop discord</code></li>
 <li>Meeting: <code>zoom</code>AUR</li>
 </ul>
-<h3 id="game">
-    <a href="#game" class="header-anchor">#</a>
-    Game
+<h3 id="game">Game
 </h3><ul>
 <li>
 <p>Steam: <code>steam</code></p>
@@ -640,7 +616,8 @@ refresh: <code>$ sudo pacman -Syy</code></p>
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.body, {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -650,6 +627,7 @@ refresh: <code>$ sudo pacman -Syy</code></p>
             ignoredClasses: ["gist"]
         });})
 </script>
+
     
 </article>
 
@@ -728,7 +706,7 @@ refresh: <code>$ sudo pacman -Syy</code></p>
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -817,7 +795,7 @@ refresh: <code>$ sudo pacman -Syy</code></p>
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
