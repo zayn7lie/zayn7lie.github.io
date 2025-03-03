@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zayn7lie.ber7.org/</loc>
-    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zayn7lie.ber7.org/posts/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/posts/linux/archlinux2/</loc>
     <lastmod>2024-09-30T00:00:00+00:00</lastmod>
@@ -21,9 +24,6 @@
     <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/categories/linux/</loc>
-    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/posts/</loc>
     <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/tags/</loc>
@@ -234,8 +234,6 @@
     <lastmod>2023-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zayn7lie.ber7.org/page/about/</loc>
-  </url><url>
-    <loc>https://zayn7lie.ber7.org/page/archives/</loc>
   </url><url>
     <loc>https://zayn7lie.ber7.org/page/links/</loc>
   </url><url>

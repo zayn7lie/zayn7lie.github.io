@@ -6,7 +6,7 @@
         <description>Recent content in Posts on zayn_lie&#39;s studio</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 02 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://zayn7lie.ber7.org/posts/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>After Arch Linux Installation</title>
         <link>https://zayn7lie.ber7.org/posts/linux/archlinux2/</link>
         <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
@@ -250,8 +250,7 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
 &lt;li&gt;Dot product: $\vec{v} \cdot \vec{u} = \sum_D v_i u_i = |\vec{v}||\vec{u}| \cos\langle\vec{v}, \vec{u}\rangle \Rightarrow \cos\langle\vec{v}, \vec{u}\rangle = \hat{v} \cdot \hat{u}$
 &lt;blockquote&gt;
 &lt;p&gt;As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: &lt;em&gt;duality&lt;/em&gt; - &lt;a class=&#34;link&#34; href=&#34;https://www.3blue1brown.com/lessons/dot-products#linear-transformations&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Dot Product in Linear transformations&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;Dot Product in Linear transformations&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Component(Scalar): $\text{comp}_{\vec{a}}{\vec{b}} = |\vec{b}|\cos\theta = \vec{b} \cdot \hat{a}$&lt;/li&gt;
 &lt;li&gt;Projection(Vector): $\text{proj}_{\vec{a}}{\vec{b}} = |\vec{b}|\cos\theta = (\vec{b} \cdot \hat{a}) \hat{a}$&lt;/li&gt;
@@ -291,8 +290,7 @@ w_x &amp;amp; w_y &amp;amp; w_z
     &lt;a href=&#34;#what-what-is-the-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHAT: What is the scalar field?
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;$f(x_1, x_2, x_3, \ldots)$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$f(x_1, x_2, x_3, \ldots)$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;example-of-scalar-fields&#34;&gt;
     &lt;a href=&#34;#example-of-scalar-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Example of scalar fields
@@ -306,8 +304,7 @@ w_x &amp;amp; w_y &amp;amp; w_z
     HOW: How to express objects (curves, surfaces, etc.) in a scalar field?
 &lt;/h3&gt;&lt;p&gt;$f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\displaystyle\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\displaystyle\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;eg-from-x-y-z-coordinates-to-vectors&#34;&gt;
     &lt;a href=&#34;#eg-from-x-y-z-coordinates-to-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     E.g. from X-Y-Z coordinates to vectors
@@ -330,8 +327,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;ol&gt;
 &lt;li&gt;$f_1$, $f_2$, and $f_3$ is &lt;em&gt;independent&lt;/em&gt; (&lt;em&gt;independent&lt;/em&gt;: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)&lt;/li&gt;
 &lt;li&gt;Vector is just a set of numbers, it could be used for showing direction(vectors in three dimensions), matrix(computer science programming), etc.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Lines/Curves(3 variables - 2 constraints = 1 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$&lt;/p&gt;
@@ -344,8 +340,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;how-how-to-present-in-the-coordinate---parametrized-objects&#34;&gt;
     &lt;a href=&#34;#how-how-to-present-in-the-coordinate---parametrized-objects&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to present in the coordinate - Parametrized Objects
@@ -372,8 +367,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
     &lt;a href=&#34;#how-how-to-visualize-vectors-in-dimensions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to visualize vectors in dimensions?
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Contour map, or Level curves: slice along the $z$ (or $y$ above)&lt;/p&gt;
@@ -397,8 +391,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Why the rule of product could be applied to dot and cross product? As for dot product, we regard it as multiple independent product process, and combine it after the product.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Why the rule of product could be applied to dot and cross product? As for dot product, we regard it as multiple independent product process, and combine it after the product.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Integral: $\vec{r}(t) = \int\vec{v}(t)\mathrm{d}t = \langle \int f(t) ,\mathrm{d}t, \int g(t) ,\mathrm{d}t, \int h(t) ,\mathrm{d}t \rangle = \int f(t) ,\mathrm{d}t \hat{i} + \int g(t) ,\mathrm{d}t \hat{j} + \int h(t) ,\mathrm{d}t \hat{k}$
 &lt;ul&gt;
@@ -420,13 +413,11 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;li&gt;Binormal vector to the vectors: $\hat{B} = \hat{N} \times \hat{T}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Build the coordinate with $\hat{T}, \hat{N}, \hat{B}$: $\vec{r} \Rightarrow \hat{T} \Rightarrow \hat{N} \Rightarrow \hat{B}$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Build the coordinate with $\hat{T}, \hat{N}, \hat{B}$: $\vec{r} \Rightarrow \hat{T} \Rightarrow \hat{N} \Rightarrow \hat{B}$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$\vec{a} = \vec{v}&amp;rsquo; = (v\hat{T}) = v&amp;rsquo;\hat{T} + v\hat{T}&amp;rsquo; = v&amp;rsquo;\hat{T} + v^2\kappa\hat{N}$&lt;/p&gt;
 &lt;p&gt;$\Rightarrow \vec{a} = a_T\hat{T} + a_N\hat{N}, a_T = v&amp;rsquo; = \frac{|\vec{r}&amp;rsquo; \cdot \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}, a_N = \kappa v^2 = \frac{|\vec{r}&amp;rsquo; \times \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note. How to understand $\frac{\mathrm{d}}{\mathrm{d}t} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. How to understand $\frac{\mathrm{d}}{\mathrm{d}t} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;partial-derivatives&#34;&gt;
     &lt;a href=&#34;#partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Partial Derivatives
@@ -443,8 +434,7 @@ $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When $f \rightarrow L$ no matter what direction $(x, y) \rightarrow (a, b)$, the limit of $f$ in $(a, b)$ exists.&lt;/p&gt;
-&lt;p&gt;It is easy to prove the limit is &lt;strong&gt;not&lt;/strong&gt; exists. If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;It is easy to prove the limit is &lt;strong&gt;not&lt;/strong&gt; exists. If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Limit along axis: let $y = 0$ or $x = 0$
 Limit along the specific line: $y = x$&lt;/li&gt;
@@ -583,8 +573,7 @@ $$&lt;/p&gt;
 \partial y / \partial u &amp;amp; \partial y / \partial v
 \end{vmatrix}$$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;from polar coordinate, to cylindar, then to sphere&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;from polar coordinate, to cylindar, then to sphere&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\iint f(x, y) ,\mathrm{d}x,\mathrm{d}y = \iint f(r\cos\theta, r\sin\theta) \cdot r ,\mathrm{d} r ,\mathrm{d}\theta$$&lt;/p&gt;
 &lt;p&gt;$$\iiint f(x, y, z) ,\mathrm{d}x,\mathrm{d}y,\mathrm{d}z = \iiint f(r\cos\theta, r\sin\theta, z) \cdot r ,\mathrm{d} r ,\mathrm{d}\theta ,\mathrm{d}z \
 = \iiint f(\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi) \cdot \rho^2\sin\phi ,\mathrm{d} \rho ,\mathrm{d}\theta ,\mathrm{d}\phi$$&lt;/p&gt;
@@ -607,8 +596,7 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
     &lt;a href=&#34;#what-what-is-the-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHAT: What is the vector field?
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;example-of-vector-fields&#34;&gt;
     &lt;a href=&#34;#example-of-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Example of vector fields
@@ -634,12 +622,10 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
     Conservative vector fields
 &lt;/h4&gt;&lt;p&gt;$$\forall C_1, C_2 = (P_1 \rightarrow P_2) \in D, \int_{C_1} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r} = \int_{C_2} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r} \Leftrightarrow \exists f, \vec\nabla{f} = \mathbf{F}$$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$D$: an &lt;strong&gt;open&lt;/strong&gt;($\forall P \in D,\exists \circ P \in D$) &lt;strong&gt;connected&lt;/strong&gt;($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a &lt;strong&gt;conservative vector field&lt;/strong&gt;; under this situation, we call $\int_{C} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r}$ is &lt;strong&gt;independent of path&lt;/strong&gt;, or &lt;em&gt;line integrals of conservative vector fields are independent of path.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$D$: an &lt;strong&gt;open&lt;/strong&gt;($\forall P \in D,\exists \circ P \in D$) &lt;strong&gt;connected&lt;/strong&gt;($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a &lt;strong&gt;conservative vector field&lt;/strong&gt;; under this situation, we call $\int_{C} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r}$ is &lt;strong&gt;independent of path&lt;/strong&gt;, or &lt;em&gt;line integrals of conservative vector fields are independent of path.&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x ,\mathbf{or}, \vec\nabla \times \mathbf{F} = \mathbf{0}$$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Clairaut&amp;rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Clairaut&amp;rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-do-calculus-in-vector-field&#34;&gt;
     &lt;a href=&#34;#how-how-to-do-calculus-in-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to do calculus in vector field?
@@ -718,8 +704,7 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Greens&amp;rsquo; Theorem to Stokes&amp;rsquo; Theorem, and Divergence Theorem&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Greens&amp;rsquo; Theorem to Stokes&amp;rsquo; Theorem, and Divergence Theorem&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\int_{\partial D}\omega = \int_D \partial\omega$$&lt;/p&gt;
 &lt;p&gt;$$\Rightarrow \oint_{C(\partial{S})}\mathbf{F} \cdot \mathrm{d}\mathbf{r} = \iint_S \vec\nabla \times \mathbf{F} \cdot ,\mathrm{d}\mathbf{S} = \iint_S \vec\nabla \times \mathbf{F} \cdot \mathbf{n} ,\mathrm{d}A = \iint_S |\vec\nabla \times \mathbf{F}| ,\mathrm{d}A \text{ in $\mathbb{R}^2$}$$&lt;/p&gt;
 &lt;p&gt;$$\Rightarrow \oint_C \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_D \vec\nabla \cdot \mathbf{F} ,\mathrm{d}A, \oiint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iiint_E \vec\nabla \cdot \mathbf{F} ,\mathrm{d}V$$&lt;/p&gt;
@@ -761,8 +746,7 @@ $$&lt;/p&gt;
 &lt;li&gt;Bounded in both sides: $\forall n, a_n \leq M$ and $\forall n, a_n \geq N$&lt;/li&gt;
 &lt;li&gt;Monotonically increasing or decreasing: $\forall n, a_n &amp;lt; a_{n+1}$ or $\forall n, a_n &amp;gt; a_{n+1}$
 &lt;blockquote&gt;
-&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -787,8 +771,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ \text{Find if (a) $a_n = \frac{n!}{n^n} (a &amp;gt; 0)$, (b) $a_n = \frac{a^n}{n!} (a &amp;gt; 0)$, (c) $a_n = \frac{n^b}{a^n}$, (d) $a_n = \frac{\ln n}{n^b}$ converges}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n} \gg C$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n} \gg C$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ \text{(a) $a_n = (1 + \frac{1}{n})^n$, (b) $a_n = (\frac{n}{n+1})^{2n}$ converges}
 $$
 $$ \text{Hint 1: } (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
@@ -930,8 +913,7 @@ $$&lt;/p&gt;
 &lt;/h3&gt;&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$1 + x$ Format
@@ -963,8 +945,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Notice. $\int$ and $\sum$ cannot always exchange the places for some specific infinite sum.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Notice. $\int$ and $\sum$ cannot always exchange the places for some specific infinite sum.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Known $\int_0^\infty e^{-x} x^n ,\mathrm{d}x = n!$, derive $\frac{1}{\pi}\int_0^1\frac{\sin{\ln{x}}}{\ln{x}},\mathrm{d}x$}
 $$
@@ -975,8 +956,7 @@ $$
 $$ \text{Find the compact form for of $\sum \frac{(\frac{1}{2})^n x^{2n}}{(n + 1)!}$}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;What about the Error Bond if the series finite?&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;What about the Error Bond if the series finite?&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ f(x) = \sum_0^N\frac{f^{n}(a)}{n!}(x - a)^n + \sum_{N + 1}^\infty\frac{f^{n}(a)}{n!}(x - a)^n = T_N(x) + R_N(x)
 $$
 $$ \text{Accordint to MVT, } \exists z \in [x, a], \frac{f^{N + 1}(z)}{(N + 1)!}(x - a)^{N + 1} = R_N(x)
@@ -992,8 +972,7 @@ $$&lt;/p&gt;
         
         <guid>https://zayn7lie.ber7.org/posts/ettm/server/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;why&#34;&gt;
     &lt;a href=&#34;#why&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY
@@ -1010,14 +989,12 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#how&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;*&lt;/code&gt; means Optional Operation&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;*&lt;/code&gt; means Optional Operation&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;1-create-an-aws-ec2-instance&#34;&gt;
     &lt;a href=&#34;#1-create-an-aws-ec2-instance&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     1. Create an AWS EC2 Instance
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. There is a free x86_64 CPU &amp;ldquo;&lt;code&gt;Free tier: In your first year includes 750 hours of t2.micro (or t3.micro in the Regions in which t2.micro is unavailable) instance usage on free tier AMIs per month, 30 GiB of EBS storage, 2 million IOs, 1 GB of snapshots, and 100 GB of bandwidth to the internet.&lt;/code&gt;&amp;rdquo; for new user, but it is not very good for running Minecraft Server. But if you want to use it, you could follow the tutor, but you need to change the &lt;code&gt;Architecture&lt;/code&gt; to &lt;code&gt;64-bit (x86)&lt;/code&gt; in &lt;code&gt;Application and OS Images (Amazon Machine Image)&lt;/code&gt; and choose &lt;code&gt;t2.micro&lt;/code&gt; in &lt;code&gt;Instance type&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. There is a free x86_64 CPU &amp;ldquo;&lt;code&gt;Free tier: In your first year includes 750 hours of t2.micro (or t3.micro in the Regions in which t2.micro is unavailable) instance usage on free tier AMIs per month, 30 GiB of EBS storage, 2 million IOs, 1 GB of snapshots, and 100 GB of bandwidth to the internet.&lt;/code&gt;&amp;rdquo; for new user, but it is not very good for running Minecraft Server. But if you want to use it, you could follow the tutor, but you need to change the &lt;code&gt;Architecture&lt;/code&gt; to &lt;code&gt;64-bit (x86)&lt;/code&gt; in &lt;code&gt;Application and OS Images (Amazon Machine Image)&lt;/code&gt; and choose &lt;code&gt;t2.micro&lt;/code&gt; in &lt;code&gt;Instance type&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a &lt;code&gt;AWS&lt;/code&gt; account&lt;/li&gt;
 &lt;li&gt;Choose a good place that near your home on the top right of the AWS main webpage, e.g. I choose &lt;code&gt;US East (N. Virginia)us-east-1&lt;/code&gt;&lt;/li&gt;
@@ -1161,8 +1138,7 @@ $$&lt;/p&gt;
         
         <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;why-why-am-i-going-to-do-that&#34;&gt;
     &lt;a href=&#34;#why-why-am-i-going-to-do-that&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why am I going to do that?
@@ -1574,8 +1550,7 @@ $$&lt;/p&gt;
     HOW: How can I use those posts?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;you-are-free-to&#34;&gt;
     &lt;a href=&#34;#you-are-free-to&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     You are free to
@@ -1585,8 +1560,7 @@ $$&lt;/p&gt;
 for any purpose, even commercially.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;under-the-following-terms&#34;&gt;
     &lt;a href=&#34;#under-the-following-terms&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Under the following terms
@@ -1615,8 +1589,7 @@ for any purpose, even commercially.&lt;/li&gt;
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;
     &lt;a href=&#34;#why-why-do-we-want-to-find-out-the-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why do we want to find out the integral
@@ -1631,8 +1604,7 @@ for any purpose, even commercially.&lt;/li&gt;
     &lt;a href=&#34;#approx-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Approx. Integral
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Equaling space is not necessary&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Equaling space is not necessary&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)},\mathrm{d}x) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
@@ -1667,8 +1639,7 @@ $$&lt;/p&gt;
     Substitution: If the function combines with its derivative
 &lt;/h3&gt;&lt;p&gt;Based on Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \Rightarrow \int_{x_1}^{x_2} f(x) \frac{\mathrm{d}u}{\mathrm{d}x},\mathrm{d}x = \int_{u(x_1)}^{u(x_2)}f(u),\mathrm{d}u$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\displaystyle \int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{,\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
@@ -1682,8 +1653,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ v = \sin{u}, \frac{\mathrm{d}v}{\mathrm{d}u} = \cos{u} \Rightarrow \int{\frac{1}{v}}{,\mathrm{d}v} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
@@ -1781,8 +1751,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Notice. Approx to limit - Improper Integral:
 For integral $\int_a^b{f(x)},\mathrm{d}x$, when there are some points that are not defined, we use $t$ to approx. the limit of those points&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)},\mathrm{d}x = \lim_{t \rightarrow b}\int_a^t{f(x)},\mathrm{d}x
-$$&lt;/p&gt;
-&lt;/blockquote&gt;
+$$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;
     &lt;a href=&#34;#how-how-to-apply-integral-to-reality&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to apply integral to reality
@@ -1803,8 +1772,7 @@ $$
 $$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $\mathrm{d}N/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $\mathrm{d}N/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ x\frac{\mathrm{d}^2y}{,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{\mathrm{d}^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})},\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
 $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
@@ -1851,8 +1819,7 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Why $\displaystyle \mathrm{d}^2y/,\mathrm{d}x^2 \neq \frac{\mathrm{d}^2y/\mathrm{d}\theta^2}{\mathrm{d}^2x/\mathrm{d}\theta^2}?$&lt;/p&gt;
-&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
 $$&lt;/p&gt;
 &lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;
@@ -1861,8 +1828,7 @@ $$&lt;/p&gt;
 &lt;/h3&gt;&lt;p&gt;$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$(r, \theta) = (-r, \theta + (2k + 1)\pi) = (r, \theta + 2k\pi)$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$(r, \theta) = (-r, \theta + (2k + 1)\pi) = (r, \theta + 2k\pi)$&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
@@ -1872,8 +1838,7 @@ $$&lt;/p&gt;
         
         <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;android-emulator-or-container&#34;&gt;
     &lt;a href=&#34;#android-emulator-or-container&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Android Emulator or Container?
@@ -1896,22 +1861,20 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#emulator&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Emulator
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;avd-android-virtual-device-the-project-under-android-studiohttpsdeveloperandroidcomstudio&#34;&gt;
-    &lt;a href=&#34;#avd-android-virtual-device-the-project-under-android-studiohttpsdeveloperandroidcomstudio&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;avd&#34;&gt;
+    &lt;a href=&#34;#avd&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;AVD&lt;/code&gt; (&lt;code&gt;Android Virtual Device&lt;/code&gt;, the project under &lt;code&gt;Android Studio&lt;/code&gt;)&lt;/a&gt;
 &lt;/h4&gt;&lt;p&gt;AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.&lt;/p&gt;
 &lt;p&gt;Download and Install &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Android Studio&lt;/code&gt;&lt;/a&gt; (&lt;code&gt;$ yay -S android-studio&lt;/code&gt; in Arch Linux), &lt;code&gt;More Actions&lt;/code&gt; &amp;gt; &lt;code&gt;Virtual Device Manager&lt;/code&gt;, &lt;code&gt;Create device&lt;/code&gt;, and then you could modify emulator by yourself. Android 11 with 16:9 resolution is recommended for &lt;code&gt;MAA&lt;/code&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;genymotionhttpswwwgenymotioncomdownload&#34;&gt;
-    &lt;a href=&#34;#genymotionhttpswwwgenymotioncomdownload&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+&lt;h4 id=&#34;genymotion&#34;&gt;
+    &lt;a href=&#34;#genymotion&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     &lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt;&lt;/a&gt;
 &lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt; offers AppImage (Installer) version&lt;/a&gt; that can run directly.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Genymotion&lt;/code&gt; is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)&lt;/p&gt;
@@ -1957,13 +1920,13 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#key-mapping&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Key Mapping
 &lt;/h2&gt;&lt;p&gt;The logic of pause deployment is that click back 🔙 will change the statue of Pause or Unpause. Thus, after dragging out operator, we pass the pause command then we could deploy while game is pause.&lt;/p&gt;
-&lt;h3 id=&#34;keymapper-android-apphttpsgithubcomkeymapperorgkeymapperreleases&#34;&gt;
-    &lt;a href=&#34;#keymapper-android-apphttpsgithubcomkeymapperorgkeymapperreleases&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+&lt;h3 id=&#34;keymapper-android-app&#34;&gt;
+    &lt;a href=&#34;#keymapper-android-app&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     &lt;a class=&#34;link&#34; href=&#34;https://github.com/keymapperorg/KeyMapper/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KeyMapper Android App&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;After concerning a lot about how to achieve key mapping on PC, why don&amp;rsquo;t we try to do this on our Android? There are a huge bunch of software, but KeyMapper is the most lightweight and compatible though it pauses developing.&lt;/p&gt;
-&lt;h3 id=&#34;qtscrcpyhttpsgithubcombarry-ranqtscrcpyreleases&#34;&gt;
-    &lt;a href=&#34;#qtscrcpyhttpsgithubcombarry-ranqtscrcpyreleases&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+&lt;h3 id=&#34;qtscrcpy&#34;&gt;
+    &lt;a href=&#34;#qtscrcpy&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     &lt;a class=&#34;link&#34; href=&#34;https://github.com/barry-ran/QtScrcpy/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;QtScrcpy&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;Origins from &lt;a class=&#34;link&#34; href=&#34;https://github.com/Genymobile/scrcpy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2059,6 +2022,7 @@ $$&lt;/p&gt;
     &gt;&lt;code&gt;WordCounter&lt;/code&gt;MS&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vim: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Vim&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Disable auto reveal: &lt;code&gt;explorer.autoReveal = False&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;latex&#34;&gt;
     &lt;a href=&#34;#latex&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Latex
@@ -2120,8 +2084,7 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#install&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Install
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install XFCE. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start &lt;code&gt;xfce4&lt;/code&gt; in the next boot and ignore step 3. It is highly recommended installing a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DM&lt;/a&gt;, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your DM. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/p&gt;
@@ -2358,8 +2321,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Note. This guide is just a simplification, clarification and modification based &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Arch Linux-Installation Guide&lt;/a&gt;. If you have any questions or if I not mention or skip about some necessary steps, you could just read the wiki and find out the answer. By the way, this guide is more focusing on understanding Linux system and how a system could be installed in a machine.&lt;/p&gt;
 &lt;p&gt;Every command begin with &lt;code&gt;#&lt;/code&gt; meaning it is a shell command. &lt;code&gt;#&lt;/code&gt; is always input automatically that you do not need to type it again. E.g. &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; you might only need to type in &lt;code&gt;mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;. &lt;code&gt;$&lt;/code&gt;, &lt;code&gt;[iwd]#&lt;/code&gt;, etc. is also similar to &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Everything with &lt;code&gt;?{ }&lt;/code&gt; meaning that you could modify it based on your situation, for example &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; might be &lt;code&gt;# mount /dev/sd1 /mnt&lt;/code&gt; for you. Everything with &lt;code&gt;!{ }&lt;/code&gt; meaning that you could not to type this based on your situation. E.g. &lt;code&gt;# arch-chroot /mnt !{/bin/bash}&lt;/code&gt; you might only need to run &lt;code&gt;# arch-chroot /mnt&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Everything with &lt;code&gt;?{ }&lt;/code&gt; meaning that you could modify it based on your situation, for example &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; might be &lt;code&gt;# mount /dev/sd1 /mnt&lt;/code&gt; for you. Everything with &lt;code&gt;!{ }&lt;/code&gt; meaning that you could not to type this based on your situation. E.g. &lt;code&gt;# arch-chroot /mnt !{/bin/bash}&lt;/code&gt; you might only need to run &lt;code&gt;# arch-chroot /mnt&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;1-preparation&#34;&gt;
     &lt;a href=&#34;#1-preparation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     1. Preparation
@@ -2399,8 +2361,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
     &lt;a href=&#34;#3-network-configuration&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     3. Network Configuration
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. The installation medium have installed &lt;code&gt;iwd&lt;/code&gt; tool. Although &lt;code&gt;networkmanager&lt;/code&gt; is more popular in Arch Linux network settings, &lt;code&gt;iwd&lt;/code&gt; is the default network settings tool for installation.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. The installation medium have installed &lt;code&gt;iwd&lt;/code&gt; tool. Although &lt;code&gt;networkmanager&lt;/code&gt; is more popular in Arch Linux network settings, &lt;code&gt;iwd&lt;/code&gt; is the default network settings tool for installation.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# iwctl&lt;/code&gt; to enter iwd tool.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# device list&lt;/code&gt; to check your network device. You need to remember your device name and type into ?{wlan0} in the following commands.&lt;/li&gt;
@@ -2412,8 +2373,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
     &lt;a href=&#34;#4-disk-mounting-and-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     4. Disk Mounting and Installation
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# fdisk -l&lt;/code&gt; to check your partitions of disk.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p4}&lt;/code&gt; to format a partition to ext4 file system for your main Arch Linux System Installation. If you want to install Dual-systems, do not run the following commands: &lt;code&gt;# mkfs.vfat -F32 /dev/?{nvme0n1p1}&lt;/code&gt; to format a partition to fat32 file system for the boot partition.&lt;/li&gt;
@@ -2579,16 +2539,14 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ (1)} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ (2)} = \frac{\mathrm{d}f(x)}{\mathrm{d}x} \textbf{ (3)} \Rightarrow f&amp;rsquo;(x) \textbf{ (4)}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $\mathrm{d}$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{\mathrm{d}f(x)}{\mathrm{d}x} \neq \mathrm{d}f(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $\mathrm{d}$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{\mathrm{d}f(x)}{\mathrm{d}x} \neq \mathrm{d}f(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Difference between differentiation and derivative?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ differentiation is a method to crop source function to small range for knowing the tendency&lt;/li&gt;
 &lt;li&gt;$f&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-01&lt;/code&gt;: Use the derivative way to present $g(x)$: $g(x) = \lim_{h \rightarrow 0}\Large{\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}}$&lt;/p&gt;
 &lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;
     &lt;a href=&#34;#why-why-a-function-could-be-differentiated---differentiability&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
@@ -2838,8 +2796,7 @@ $$&lt;/p&gt;
 &lt;p&gt;I use this case to emphasize that the purpose of my blog is not &lt;em&gt;finding answer&lt;/em&gt; but &lt;em&gt;getting better understanding and logic for specific knowledge&lt;/em&gt;. I hope everyone could follow &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;How To Ask Questions The Smart Way&lt;/a&gt; before asking questions.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The first thing to understand is that hackers actually like hard problems and good, thought-provoking questions about them. If we didn&amp;rsquo;t, we wouldn&amp;rsquo;t be here. If you give us an interesting question to chew on we&amp;rsquo;ll be grateful to you; good questions are a stimulus and a gift. Good questions help us develop our understanding, and often reveal problems we might not have noticed or thought about otherwise. Among hackers, “Good question!” is a strong and sincere compliment.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The first thing to understand is that hackers actually like hard problems and good, thought-provoking questions about them. If we didn&amp;rsquo;t, we wouldn&amp;rsquo;t be here. If you give us an interesting question to chew on we&amp;rsquo;ll be grateful to you; good questions are a stimulus and a gift. Good questions help us develop our understanding, and often reveal problems we might not have noticed or thought about otherwise. Among hackers, “Good question!” is a strong and sincere compliment.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Now, we know how to create a structure of a program, then what about calculation?&lt;/p&gt;
 &lt;h3 id=&#34;arithmetic&#34;&gt;
     &lt;a href=&#34;#arithmetic&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
@@ -2993,16 +2950,14 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#advanced-configuration&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Advanced Configuration
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;The global config file is in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The global config file is in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;theme-setting&#34;&gt;
     &lt;a href=&#34;#theme-setting&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Theme Setting
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;I am using &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Stack&lt;/a&gt;, it has a &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;doc&lt;/a&gt; for fully configuration that you could read.&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;doc&lt;/a&gt; for fully configuration that you could read.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a &lt;code&gt;themes&lt;/code&gt; folder, and move the theme folder that you want to adopt, to &lt;code&gt;themes&lt;/code&gt; folder.&lt;/li&gt;
 &lt;li&gt;Open &lt;code&gt;hugo.toml&lt;/code&gt;, insert &lt;code&gt;theme = &amp;quot;YOUR_THEME_NAME&amp;quot;&lt;/code&gt; at the beginning&lt;/li&gt;

@@ -13,8 +13,7 @@
         
         <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;why-why-am-i-going-to-do-that&#34;&gt;
     &lt;a href=&#34;#why-why-am-i-going-to-do-that&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why am I going to do that?
@@ -426,8 +425,7 @@
     HOW: How can I use those posts?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;you-are-free-to&#34;&gt;
     &lt;a href=&#34;#you-are-free-to&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     You are free to
@@ -437,8 +435,7 @@
 for any purpose, even commercially.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;under-the-following-terms&#34;&gt;
     &lt;a href=&#34;#under-the-following-terms&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Under the following terms
@@ -467,8 +464,7 @@ for any purpose, even commercially.&lt;/li&gt;
         
         <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;android-emulator-or-container&#34;&gt;
     &lt;a href=&#34;#android-emulator-or-container&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Android Emulator or Container?
@@ -491,22 +487,20 @@ for any purpose, even commercially.&lt;/li&gt;
     &lt;a href=&#34;#emulator&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Emulator
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;avd-android-virtual-device-the-project-under-android-studiohttpsdeveloperandroidcomstudio&#34;&gt;
-    &lt;a href=&#34;#avd-android-virtual-device-the-project-under-android-studiohttpsdeveloperandroidcomstudio&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;avd&#34;&gt;
+    &lt;a href=&#34;#avd&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;AVD&lt;/code&gt; (&lt;code&gt;Android Virtual Device&lt;/code&gt;, the project under &lt;code&gt;Android Studio&lt;/code&gt;)&lt;/a&gt;
 &lt;/h4&gt;&lt;p&gt;AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.&lt;/p&gt;
 &lt;p&gt;Download and Install &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Android Studio&lt;/code&gt;&lt;/a&gt; (&lt;code&gt;$ yay -S android-studio&lt;/code&gt; in Arch Linux), &lt;code&gt;More Actions&lt;/code&gt; &amp;gt; &lt;code&gt;Virtual Device Manager&lt;/code&gt;, &lt;code&gt;Create device&lt;/code&gt;, and then you could modify emulator by yourself. Android 11 with 16:9 resolution is recommended for &lt;code&gt;MAA&lt;/code&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;genymotionhttpswwwgenymotioncomdownload&#34;&gt;
-    &lt;a href=&#34;#genymotionhttpswwwgenymotioncomdownload&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+&lt;h4 id=&#34;genymotion&#34;&gt;
+    &lt;a href=&#34;#genymotion&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     &lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt;&lt;/a&gt;
 &lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt; offers AppImage (Installer) version&lt;/a&gt; that can run directly.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Genymotion&lt;/code&gt; is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)&lt;/p&gt;
@@ -552,13 +546,13 @@ for any purpose, even commercially.&lt;/li&gt;
     &lt;a href=&#34;#key-mapping&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Key Mapping
 &lt;/h2&gt;&lt;p&gt;The logic of pause deployment is that click back 🔙 will change the statue of Pause or Unpause. Thus, after dragging out operator, we pass the pause command then we could deploy while game is pause.&lt;/p&gt;
-&lt;h3 id=&#34;keymapper-android-apphttpsgithubcomkeymapperorgkeymapperreleases&#34;&gt;
-    &lt;a href=&#34;#keymapper-android-apphttpsgithubcomkeymapperorgkeymapperreleases&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+&lt;h3 id=&#34;keymapper-android-app&#34;&gt;
+    &lt;a href=&#34;#keymapper-android-app&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     &lt;a class=&#34;link&#34; href=&#34;https://github.com/keymapperorg/KeyMapper/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KeyMapper Android App&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;After concerning a lot about how to achieve key mapping on PC, why don&amp;rsquo;t we try to do this on our Android? There are a huge bunch of software, but KeyMapper is the most lightweight and compatible though it pauses developing.&lt;/p&gt;
-&lt;h3 id=&#34;qtscrcpyhttpsgithubcombarry-ranqtscrcpyreleases&#34;&gt;
-    &lt;a href=&#34;#qtscrcpyhttpsgithubcombarry-ranqtscrcpyreleases&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
+&lt;h3 id=&#34;qtscrcpy&#34;&gt;
+    &lt;a href=&#34;#qtscrcpy&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     &lt;a class=&#34;link&#34; href=&#34;https://github.com/barry-ran/QtScrcpy/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;QtScrcpy&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;Origins from &lt;a class=&#34;link&#34; href=&#34;https://github.com/Genymobile/scrcpy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

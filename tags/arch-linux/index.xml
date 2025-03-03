@@ -195,8 +195,7 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
     &lt;a href=&#34;#install&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Install
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. It is not necessary and recommended installing &lt;code&gt;xorg&lt;/code&gt; independently looking forward to lightweight. Some packages from &lt;code&gt;xorg&lt;/code&gt; group would install automatically as the dependent packages of XFCE&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S xfce4&lt;/code&gt; to install XFCE. It is NOT recommended that you can &lt;code&gt;# echo &amp;quot;exec startxfce4&amp;quot; &amp;gt;&amp;gt; /etc/X11/xinit/xinitrc&lt;/code&gt; to start &lt;code&gt;xfce4&lt;/code&gt; in the next boot and ignore step 3. It is highly recommended installing a display manager (DM) to start your system because DM will start your system more proper and create a user locker for log in as well.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;# pacman -S lightdm lightdm-gtk-greeter light-locker&lt;/code&gt; to install this recommended lightweight &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Display_manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DM&lt;/a&gt;, then &lt;code&gt;# systemctl enable lightdm&lt;/code&gt; to let &lt;code&gt;lightdm&lt;/code&gt; start automatically when you boot your system. You can also choose your DM. P.S. &lt;code&gt;lightdm&lt;/code&gt; is the main DM, &lt;code&gt;lightdm-gtk-greeter&lt;/code&gt; is for configuring your &lt;code&gt;lightdm&lt;/code&gt;, &lt;code&gt;light-loceker&lt;/code&gt; is for that you can lock your screen with your settings.&lt;/p&gt;
@@ -433,8 +432,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Note. This guide is just a simplification, clarification and modification based &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Arch Linux-Installation Guide&lt;/a&gt;. If you have any questions or if I not mention or skip about some necessary steps, you could just read the wiki and find out the answer. By the way, this guide is more focusing on understanding Linux system and how a system could be installed in a machine.&lt;/p&gt;
 &lt;p&gt;Every command begin with &lt;code&gt;#&lt;/code&gt; meaning it is a shell command. &lt;code&gt;#&lt;/code&gt; is always input automatically that you do not need to type it again. E.g. &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; you might only need to type in &lt;code&gt;mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt;. &lt;code&gt;$&lt;/code&gt;, &lt;code&gt;[iwd]#&lt;/code&gt;, etc. is also similar to &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Everything with &lt;code&gt;?{ }&lt;/code&gt; meaning that you could modify it based on your situation, for example &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; might be &lt;code&gt;# mount /dev/sd1 /mnt&lt;/code&gt; for you. Everything with &lt;code&gt;!{ }&lt;/code&gt; meaning that you could not to type this based on your situation. E.g. &lt;code&gt;# arch-chroot /mnt !{/bin/bash}&lt;/code&gt; you might only need to run &lt;code&gt;# arch-chroot /mnt&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Everything with &lt;code&gt;?{ }&lt;/code&gt; meaning that you could modify it based on your situation, for example &lt;code&gt;# mount /dev/?{nvme0n1p4} /mnt&lt;/code&gt; might be &lt;code&gt;# mount /dev/sd1 /mnt&lt;/code&gt; for you. Everything with &lt;code&gt;!{ }&lt;/code&gt; meaning that you could not to type this based on your situation. E.g. &lt;code&gt;# arch-chroot /mnt !{/bin/bash}&lt;/code&gt; you might only need to run &lt;code&gt;# arch-chroot /mnt&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;1-preparation&#34;&gt;
     &lt;a href=&#34;#1-preparation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     1. Preparation
@@ -474,8 +472,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
     &lt;a href=&#34;#3-network-configuration&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     3. Network Configuration
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. The installation medium have installed &lt;code&gt;iwd&lt;/code&gt; tool. Although &lt;code&gt;networkmanager&lt;/code&gt; is more popular in Arch Linux network settings, &lt;code&gt;iwd&lt;/code&gt; is the default network settings tool for installation.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. The installation medium have installed &lt;code&gt;iwd&lt;/code&gt; tool. Although &lt;code&gt;networkmanager&lt;/code&gt; is more popular in Arch Linux network settings, &lt;code&gt;iwd&lt;/code&gt; is the default network settings tool for installation.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# iwctl&lt;/code&gt; to enter iwd tool.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[iwd]# device list&lt;/code&gt; to check your network device. You need to remember your device name and type into ?{wlan0} in the following commands.&lt;/li&gt;
@@ -487,8 +484,7 @@ refresh: &lt;code&gt;$ sudo pacman -Syy&lt;/code&gt;&lt;/p&gt;
     &lt;a href=&#34;#4-disk-mounting-and-installation&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     4. Disk Mounting and Installation
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;# fdisk -l&lt;/code&gt; to check your partitions of disk.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;# mkfs.ext4 /dev/?{nvme0n1p4}&lt;/code&gt; to format a partition to ext4 file system for your main Arch Linux System Installation. If you want to install Dual-systems, do not run the following commands: &lt;code&gt;# mkfs.vfat -F32 /dev/?{nvme0n1p1}&lt;/code&gt; to format a partition to fat32 file system for the boot partition.&lt;/li&gt;

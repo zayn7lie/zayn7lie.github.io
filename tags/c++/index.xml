@@ -21,6 +21,7 @@
     &gt;&lt;code&gt;WordCounter&lt;/code&gt;MS&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vim: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Vim&lt;/code&gt;OOS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Disable auto reveal: &lt;code&gt;explorer.autoReveal = False&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;latex&#34;&gt;
     &lt;a href=&#34;#latex&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Latex
@@ -234,8 +235,7 @@
 &lt;p&gt;I use this case to emphasize that the purpose of my blog is not &lt;em&gt;finding answer&lt;/em&gt; but &lt;em&gt;getting better understanding and logic for specific knowledge&lt;/em&gt;. I hope everyone could follow &lt;a class=&#34;link&#34; href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;How To Ask Questions The Smart Way&lt;/a&gt; before asking questions.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The first thing to understand is that hackers actually like hard problems and good, thought-provoking questions about them. If we didn&amp;rsquo;t, we wouldn&amp;rsquo;t be here. If you give us an interesting question to chew on we&amp;rsquo;ll be grateful to you; good questions are a stimulus and a gift. Good questions help us develop our understanding, and often reveal problems we might not have noticed or thought about otherwise. Among hackers, “Good question!” is a strong and sincere compliment.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The first thing to understand is that hackers actually like hard problems and good, thought-provoking questions about them. If we didn&amp;rsquo;t, we wouldn&amp;rsquo;t be here. If you give us an interesting question to chew on we&amp;rsquo;ll be grateful to you; good questions are a stimulus and a gift. Good questions help us develop our understanding, and often reveal problems we might not have noticed or thought about otherwise. Among hackers, “Good question!” is a strong and sincere compliment.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Now, we know how to create a structure of a program, then what about calculation?&lt;/p&gt;
 &lt;h3 id=&#34;arithmetic&#34;&gt;
     &lt;a href=&#34;#arithmetic&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;

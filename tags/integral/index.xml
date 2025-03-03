@@ -34,8 +34,7 @@
 &lt;li&gt;Dot product: $\vec{v} \cdot \vec{u} = \sum_D v_i u_i = |\vec{v}||\vec{u}| \cos\langle\vec{v}, \vec{u}\rangle \Rightarrow \cos\langle\vec{v}, \vec{u}\rangle = \hat{v} \cdot \hat{u}$
 &lt;blockquote&gt;
 &lt;p&gt;As for why numerical multiplication can relate to geometry trigonometry interpretation, here is a very good explanation: &lt;em&gt;duality&lt;/em&gt; - &lt;a class=&#34;link&#34; href=&#34;https://www.3blue1brown.com/lessons/dot-products#linear-transformations&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Dot Product in Linear transformations&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;Dot Product in Linear transformations&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Component(Scalar): $\text{comp}_{\vec{a}}{\vec{b}} = |\vec{b}|\cos\theta = \vec{b} \cdot \hat{a}$&lt;/li&gt;
 &lt;li&gt;Projection(Vector): $\text{proj}_{\vec{a}}{\vec{b}} = |\vec{b}|\cos\theta = (\vec{b} \cdot \hat{a}) \hat{a}$&lt;/li&gt;
@@ -75,8 +74,7 @@ w_x &amp;amp; w_y &amp;amp; w_z
     &lt;a href=&#34;#what-what-is-the-scalar-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHAT: What is the scalar field?
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;$f(x_1, x_2, x_3, \ldots)$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$f(x_1, x_2, x_3, \ldots)$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;example-of-scalar-fields&#34;&gt;
     &lt;a href=&#34;#example-of-scalar-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Example of scalar fields
@@ -90,8 +88,7 @@ w_x &amp;amp; w_y &amp;amp; w_z
     HOW: How to express objects (curves, surfaces, etc.) in a scalar field?
 &lt;/h3&gt;&lt;p&gt;$f: {(x_1, x_2, \ldots) | f_1(x_1, x_2, \ldots) = 0, f_2(x_1, x_2, \ldots) = 0, \ldots}$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\displaystyle\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$f_1(x_1, x_2, \ldots) = 0$ has many examples, like $x_2 - b - kx_1 = 0$ (it is the same as popular function $x_2 = b + kx_1$), $\displaystyle\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} - 1 = 0$, $(x_1 - a)^2 + (x_2 - b)^2 + (x_3 - c)^2 - R^2 = 0$, etc.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;eg-from-x-y-z-coordinates-to-vectors&#34;&gt;
     &lt;a href=&#34;#eg-from-x-y-z-coordinates-to-vectors&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     E.g. from X-Y-Z coordinates to vectors
@@ -114,8 +111,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;ol&gt;
 &lt;li&gt;$f_1$, $f_2$, and $f_3$ is &lt;em&gt;independent&lt;/em&gt; (&lt;em&gt;independent&lt;/em&gt;: you cannot turn $f_1 = a$ to $f_2 = b$ OR there is only one solution to the functions)&lt;/li&gt;
 &lt;li&gt;Vector is just a set of numbers, it could be used for showing direction(vectors in three dimensions), matrix(computer science programming), etc.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Lines/Curves(3 variables - 2 constraints = 1 dimensions): ${(x, y, z) | f_1(x, y, z) = a, f_2(x, y, z) = b}$&lt;/p&gt;
@@ -128,8 +124,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Partial Constraints, not absolutely equal constraints, or constraints with intervals, still gives some freedom to one particular dimensions/some lines to move along, so the points would not be fixed and spawn greater dimensions.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;how-how-to-present-in-the-coordinate---parametrized-objects&#34;&gt;
     &lt;a href=&#34;#how-how-to-present-in-the-coordinate---parametrized-objects&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to present in the coordinate - Parametrized Objects
@@ -156,8 +151,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
     &lt;a href=&#34;#how-how-to-visualize-vectors-in-dimensions&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to visualize vectors in dimensions?
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;From $y = f(x_1, x_2, \cdots)$ to $y = f(\vec{x})$ for $\vec{x} = \langle x_1, x_2, \cdots \rangle$; mappings of $\R^n \rightarrow \R$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Contour map, or Level curves: slice along the $z$ (or $y$ above)&lt;/p&gt;
@@ -181,8 +175,7 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Why the rule of product could be applied to dot and cross product? As for dot product, we regard it as multiple independent product process, and combine it after the product.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Why the rule of product could be applied to dot and cross product? As for dot product, we regard it as multiple independent product process, and combine it after the product.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Integral: $\vec{r}(t) = \int\vec{v}(t)\mathrm{d}t = \langle \int f(t) ,\mathrm{d}t, \int g(t) ,\mathrm{d}t, \int h(t) ,\mathrm{d}t \rangle = \int f(t) ,\mathrm{d}t \hat{i} + \int g(t) ,\mathrm{d}t \hat{j} + \int h(t) ,\mathrm{d}t \hat{k}$
 &lt;ul&gt;
@@ -204,13 +197,11 @@ E.g. $O = (0, 0, 0)$ OR $O: {(x, y, z) | x = 0, y = 0, z = 0}$, $\hat{u} = (\fra
 &lt;li&gt;Binormal vector to the vectors: $\hat{B} = \hat{N} \times \hat{T}$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Build the coordinate with $\hat{T}, \hat{N}, \hat{B}$: $\vec{r} \Rightarrow \hat{T} \Rightarrow \hat{N} \Rightarrow \hat{B}$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Build the coordinate with $\hat{T}, \hat{N}, \hat{B}$: $\vec{r} \Rightarrow \hat{T} \Rightarrow \hat{N} \Rightarrow \hat{B}$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$\vec{a} = \vec{v}&amp;rsquo; = (v\hat{T}) = v&amp;rsquo;\hat{T} + v\hat{T}&amp;rsquo; = v&amp;rsquo;\hat{T} + v^2\kappa\hat{N}$&lt;/p&gt;
 &lt;p&gt;$\Rightarrow \vec{a} = a_T\hat{T} + a_N\hat{N}, a_T = v&amp;rsquo; = \frac{|\vec{r}&amp;rsquo; \cdot \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}, a_N = \kappa v^2 = \frac{|\vec{r}&amp;rsquo; \times \vec{r}&amp;rsquo;&amp;rsquo;|}{|\vec{r}&amp;rsquo;|}$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note. How to understand $\frac{\mathrm{d}}{\mathrm{d}t} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. How to understand $\frac{\mathrm{d}}{\mathrm{d}t} \hat{i} \cdot \hat{i} = 0$: as the magnitude of $\hat{i}$ never change, the only change of $\hat{i}$ is its direction. And the change of its direction only present in the tendency of the orthogonal effect vector.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;partial-derivatives&#34;&gt;
     &lt;a href=&#34;#partial-derivatives&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Partial Derivatives
@@ -227,8 +218,7 @@ $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When $f \rightarrow L$ no matter what direction $(x, y) \rightarrow (a, b)$, the limit of $f$ in $(a, b)$ exists.&lt;/p&gt;
-&lt;p&gt;It is easy to prove the limit is &lt;strong&gt;not&lt;/strong&gt; exists. If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;It is easy to prove the limit is &lt;strong&gt;not&lt;/strong&gt; exists. If $f(x, y) \rightarrow L_1$ as $(x, y) \rightarrow (a, b)$ along a path $C_1$ and $f(x, y) \rightarrow L_2$ as $(x, y) \rightarrow (a, b)$ along a path $C_2$, where $L_1 \neq L_2$, then $\lim_{(x, y) \rightarrow (a, b)}f(x, y)$ does not exist.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Limit along axis: let $y = 0$ or $x = 0$
 Limit along the specific line: $y = x$&lt;/li&gt;
@@ -367,8 +357,7 @@ $$&lt;/p&gt;
 \partial y / \partial u &amp;amp; \partial y / \partial v
 \end{vmatrix}$$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;from polar coordinate, to cylindar, then to sphere&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;from polar coordinate, to cylindar, then to sphere&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\iint f(x, y) ,\mathrm{d}x,\mathrm{d}y = \iint f(r\cos\theta, r\sin\theta) \cdot r ,\mathrm{d} r ,\mathrm{d}\theta$$&lt;/p&gt;
 &lt;p&gt;$$\iiint f(x, y, z) ,\mathrm{d}x,\mathrm{d}y,\mathrm{d}z = \iiint f(r\cos\theta, r\sin\theta, z) \cdot r ,\mathrm{d} r ,\mathrm{d}\theta ,\mathrm{d}z \
 = \iiint f(\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi) \cdot \rho^2\sin\phi ,\mathrm{d} \rho ,\mathrm{d}\theta ,\mathrm{d}\phi$$&lt;/p&gt;
@@ -391,8 +380,7 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
     &lt;a href=&#34;#what-what-is-the-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHAT: What is the vector field?
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$\mathbf{F}(x_1, x_2, x_3, \ldots)$ or $\vec{F}(x_1, x_2, x_3, \ldots)$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;example-of-vector-fields&#34;&gt;
     &lt;a href=&#34;#example-of-vector-fields&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Example of vector fields
@@ -418,12 +406,10 @@ Mass of a volume in $x_1, x_2, y_1(x), y_2(x), z_1(x,y), z_2(x, y)$:&lt;/p&gt;
     Conservative vector fields
 &lt;/h4&gt;&lt;p&gt;$$\forall C_1, C_2 = (P_1 \rightarrow P_2) \in D, \int_{C_1} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r} = \int_{C_2} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r} \Leftrightarrow \exists f, \vec\nabla{f} = \mathbf{F}$$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$D$: an &lt;strong&gt;open&lt;/strong&gt;($\forall P \in D,\exists \circ P \in D$) &lt;strong&gt;connected&lt;/strong&gt;($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a &lt;strong&gt;conservative vector field&lt;/strong&gt;; under this situation, we call $\int_{C} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r}$ is &lt;strong&gt;independent of path&lt;/strong&gt;, or &lt;em&gt;line integrals of conservative vector fields are independent of path.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$D$: an &lt;strong&gt;open&lt;/strong&gt;($\forall P \in D,\exists \circ P \in D$) &lt;strong&gt;connected&lt;/strong&gt;($\forall P_1, P_2 \in D, \exists C = (P_1 \rightarrow P_2) \in D$) region; the right side means $\mathbf{F}$ is a &lt;strong&gt;conservative vector field&lt;/strong&gt;; under this situation, we call $\int_{C} \mathbf{F} \cdot ,\mathrm{d} \mathbf{r}$ is &lt;strong&gt;independent of path&lt;/strong&gt;, or &lt;em&gt;line integrals of conservative vector fields are independent of path.&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\exists f, \vec\nabla{f} = \mathbf{F} \Leftrightarrow \mathbf{F} = P\mathbf{i} + Q\mathbf{j}, \partial P / \partial y = \partial Q / \partial x ,\mathbf{or}, \vec\nabla \times \mathbf{F} = \mathbf{0}$$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Clairaut&amp;rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Clairaut&amp;rsquo;s Theorem: $\partial^2f/\partial x\partial y = \partial^2f/\partial y \partial x$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-do-calculus-in-vector-field&#34;&gt;
     &lt;a href=&#34;#how-how-to-do-calculus-in-vector-field&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to do calculus in vector field?
@@ -502,8 +488,7 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#how-how-to-switch-the-integral-from-vector-integral-to-iterative-integral-under-a-closed-surfacecurve&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to switch the integral from vector integral to iterative integral under a closed surface/curve
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Greens&amp;rsquo; Theorem to Stokes&amp;rsquo; Theorem, and Divergence Theorem&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Greens&amp;rsquo; Theorem to Stokes&amp;rsquo; Theorem, and Divergence Theorem&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$\int_{\partial D}\omega = \int_D \partial\omega$$&lt;/p&gt;
 &lt;p&gt;$$\Rightarrow \oint_{C(\partial{S})}\mathbf{F} \cdot \mathrm{d}\mathbf{r} = \iint_S \vec\nabla \times \mathbf{F} \cdot ,\mathrm{d}\mathbf{S} = \iint_S \vec\nabla \times \mathbf{F} \cdot \mathbf{n} ,\mathrm{d}A = \iint_S |\vec\nabla \times \mathbf{F}| ,\mathrm{d}A \text{ in $\mathbb{R}^2$}$$&lt;/p&gt;
 &lt;p&gt;$$\Rightarrow \oint_C \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iint_D \vec\nabla \cdot \mathbf{F} ,\mathrm{d}A, \oiint_S \mathbf{F} \cdot \mathrm{d}\mathbf{S} = \iiint_E \vec\nabla \cdot \mathbf{F} ,\mathrm{d}V$$&lt;/p&gt;
@@ -516,8 +501,7 @@ $$&lt;/p&gt;
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;
     &lt;a href=&#34;#why-why-do-we-want-to-find-out-the-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     WHY: Why do we want to find out the integral
@@ -532,8 +516,7 @@ $$&lt;/p&gt;
     &lt;a href=&#34;#approx-integral&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     Approx. Integral
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Equaling space is not necessary&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Equaling space is not necessary&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)},\mathrm{d}x) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
@@ -568,8 +551,7 @@ $$&lt;/p&gt;
     Substitution: If the function combines with its derivative
 &lt;/h3&gt;&lt;p&gt;Based on Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \Rightarrow \int_{x_1}^{x_2} f(x) \frac{\mathrm{d}u}{\mathrm{d}x},\mathrm{d}x = \int_{u(x_1)}^{u(x_2)}f(u),\mathrm{d}u$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\displaystyle \int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{,\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
@@ -583,8 +565,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ v = \sin{u}, \frac{\mathrm{d}v}{\mathrm{d}u} = \cos{u} \Rightarrow \int{\frac{1}{v}}{,\mathrm{d}v} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
@@ -682,8 +663,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Notice. Approx to limit - Improper Integral:
 For integral $\int_a^b{f(x)},\mathrm{d}x$, when there are some points that are not defined, we use $t$ to approx. the limit of those points&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)},\mathrm{d}x = \lim_{t \rightarrow b}\int_a^t{f(x)},\mathrm{d}x
-$$&lt;/p&gt;
-&lt;/blockquote&gt;
+$$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;
     &lt;a href=&#34;#how-how-to-apply-integral-to-reality&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;
     HOW: How to apply integral to reality
@@ -704,8 +684,7 @@ $$
 $$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $\mathrm{d}N/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $\mathrm{d}N/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ x\frac{\mathrm{d}^2y}{,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{\mathrm{d}^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})},\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
 $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
@@ -752,8 +731,7 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Why $\displaystyle \mathrm{d}^2y/,\mathrm{d}x^2 \neq \frac{\mathrm{d}^2y/\mathrm{d}\theta^2}{\mathrm{d}^2x/\mathrm{d}\theta^2}?$&lt;/p&gt;
-&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
 $$&lt;/p&gt;
 &lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;
@@ -762,8 +740,7 @@ $$&lt;/p&gt;
 &lt;/h3&gt;&lt;p&gt;$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$(r, \theta) = (-r, \theta + (2k + 1)\pi) = (r, \theta + 2k\pi)$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$(r, \theta) = (-r, \theta + (2k + 1)\pi) = (r, \theta + 2k\pi)$&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         

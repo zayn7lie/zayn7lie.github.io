@@ -42,8 +42,7 @@
 &lt;li&gt;Bounded in both sides: $\forall n, a_n \leq M$ and $\forall n, a_n \geq N$&lt;/li&gt;
 &lt;li&gt;Monotonically increasing or decreasing: $\forall n, a_n &amp;lt; a_{n+1}$ or $\forall n, a_n &amp;gt; a_{n+1}$
 &lt;blockquote&gt;
-&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -68,8 +67,7 @@
 &lt;p&gt;$$ \text{Find if (a) $a_n = \frac{n!}{n^n} (a &amp;gt; 0)$, (b) $a_n = \frac{a^n}{n!} (a &amp;gt; 0)$, (c) $a_n = \frac{n^b}{a^n}$, (d) $a_n = \frac{\ln n}{n^b}$ converges}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n} \gg C$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n} \gg C$&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ \text{(a) $a_n = (1 + \frac{1}{n})^n$, (b) $a_n = (\frac{n}{n+1})^{2n}$ converges}
 $$
 $$ \text{Hint 1: } (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
@@ -211,8 +209,7 @@ $$&lt;/p&gt;
 &lt;/h3&gt;&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$1 + x$ Format
@@ -244,8 +241,7 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Notice. $\int$ and $\sum$ cannot always exchange the places for some specific infinite sum.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Notice. $\int$ and $\sum$ cannot always exchange the places for some specific infinite sum.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Known $\int_0^\infty e^{-x} x^n ,\mathrm{d}x = n!$, derive $\frac{1}{\pi}\int_0^1\frac{\sin{\ln{x}}}{\ln{x}},\mathrm{d}x$}
 $$
@@ -256,8 +252,7 @@ $$
 $$ \text{Find the compact form for of $\sum \frac{(\frac{1}{2})^n x^{2n}}{(n + 1)!}$}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;What about the Error Bond if the series finite?&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;What about the Error Bond if the series finite?&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;$$ f(x) = \sum_0^N\frac{f^{n}(a)}{n!}(x - a)^n + \sum_{N + 1}^\infty\frac{f^{n}(a)}{n!}(x - a)^n = T_N(x) + R_N(x)
 $$
 $$ \text{Accordint to MVT, } \exists z \in [x, a], \frac{f^{N + 1}(z)}{(N + 1)!}(x - a)^{N + 1} = R_N(x)
