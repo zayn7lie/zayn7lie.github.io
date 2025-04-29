@@ -45,6 +45,14 @@
 &lt;li&gt;In &lt;code&gt;${HOME}/.config/hypr/hyprland&lt;/code&gt;, add &lt;code&gt;exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;li&gt;Adjust the brightness: Give the member of &lt;code&gt;video&lt;/code&gt; group the permission to change the backlight
+&lt;ol&gt;
+&lt;li&gt;Create &lt;code&gt;udev&lt;/code&gt; rules in &lt;code&gt;/etc/udev/rules.d/backlight.rules&lt;/code&gt;: &lt;code&gt;ACTION==&amp;quot;add&amp;quot;, SUBSYSTEM==&amp;quot;backlight&amp;quot;, RUN+=&amp;quot;/bin/chgrp video $sys$devpath/brightness&amp;quot;, RUN+=&amp;quot;/bin/chmod g+w $sys$devpath/brightness&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add current user to &lt;code&gt;video&lt;/code&gt; group: &lt;code&gt;# usermod -aG video ${CURRENT_USER}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reboot/Re-login&lt;/li&gt;
+&lt;li&gt;It is more convenient to create a link to the brightness file: &lt;code&gt;$ ln -sf /sys/class/backlight/intel_backlight/brightness ./.config/brightness&lt;/code&gt; and direct &lt;code&gt;$ echo ${BRIGHTNESS} &amp;gt; ./.config/brightness&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;li&gt;Set fonts and dark mode: &lt;code&gt;$ yay -S gnome-themes-extra adwaita-qt5-git adwaita-qt6-git noto-fonts noto-fonts-cjk ttf-fira-code ttf-nerd-fonts-symbols-mono&lt;/code&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -74,6 +82,7 @@ background_opacity 0.75
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;li&gt;Time/Date Sync: &lt;code&gt;$ sudo timedatectl set-ntp true&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Reboot: &lt;code&gt;$ reboot&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;more-packages-applications-and-settings&#34;&gt;More packages (applications) and settings
@@ -88,9 +97,6 @@ background_opacity 0.75
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Power management: &lt;code&gt;$ yay -S tlp&lt;/code&gt;, then edit &lt;code&gt;/etc/tlp.conf&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Adjust the brightness: &lt;code&gt;# echo 10000 &amp;gt; /sys/class/backlight/intel_backlight/brightness&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Btop: &lt;code&gt;$ yay -S btop&lt;/code&gt;, then add ``&lt;/p&gt;
