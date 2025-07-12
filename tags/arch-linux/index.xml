@@ -71,11 +71,14 @@ env = GTK2_RC_FILES,/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
 env = QT_STYLE_OVERRIDE,Adwaita-Dark
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Set fonts in &lt;code&gt;kitty&lt;/code&gt; (in &lt;code&gt;${HOME}/.config/kitty/kitty.conf&lt;/code&gt;):&lt;/p&gt;
+&lt;p&gt;Set fonts and cursor in &lt;code&gt;kitty&lt;/code&gt; (in &lt;code&gt;${HOME}/.config/kitty/kitty.conf&lt;/code&gt;):&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;font_family Fira Code
+disable_ligatures always
 scrollback_lines 8192
 foreground green
 background_opacity 0.75
+cursor_trail 1
+cursor_trail_decay 0.0 0.3
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Set &lt;code&gt;waybar wofi&lt;/code&gt;: &lt;code&gt;$ yay -S waybar wofi&lt;/code&gt;, and &lt;code&gt;exec-once=waybar&lt;/code&gt;, then set your config in &lt;code&gt;${HOME}/.config/waybar/config&lt;/code&gt; and &lt;code&gt;${HOME}/.config/waybar/style.css&lt;/code&gt;&lt;/p&gt;
@@ -104,9 +107,14 @@ background_opacity 0.75
 &lt;li&gt;
 &lt;p&gt;Install and add file manager: &lt;code&gt;$ yay -S ranger python-pillow&lt;/code&gt; (&lt;code&gt;python-pillow&lt;/code&gt; to preview images)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In &lt;code&gt;${HOME}/.config/hypr/hyprland.conf&lt;/code&gt;: ``&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$ ranger --copy-config=rc&lt;/code&gt;- In &lt;code&gt;${HOME}/.config/ranger/rc.conf&lt;/code&gt;: &lt;code&gt;set preview_images true&lt;/code&gt;, &lt;code&gt;set preview_images_method kitty&lt;/code&gt;; and &lt;code&gt;$ ranger --copy-config=rifle&lt;/code&gt; - In &lt;code&gt;${HOME}/.config/ranger/rifle.conf&lt;/code&gt;: &lt;code&gt;ext html, has firefox              X, flag f = firefox -- &amp;quot;$@&amp;quot;&lt;/code&gt;; &lt;code&gt;ext pdf, has firefox,  X, flag f = firefox &amp;quot;$@&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In &lt;code&gt;/usr/share/applications/ranger.desktop&lt;/code&gt;: &lt;code&gt;Exec=kitty --title ranger sh -c &#39;ranger %U&#39;&lt;/code&gt;, and &lt;code&gt;terminal=false&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In &lt;code&gt;${HOME}/.config/hypr/hyprland.conf&lt;/code&gt;: &lt;code&gt;env = EDITOR, nvim&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ ranger --copy-config=rc&lt;/code&gt;- In &lt;code&gt;${HOME}/.config/ranger/rc.conf&lt;/code&gt;: &lt;code&gt;set preview_images true&lt;/code&gt;, &lt;code&gt;set preview_images_method kitty&lt;/code&gt;, and add &lt;code&gt;set editor nvim&lt;/code&gt;; and &lt;code&gt;$ ranger --copy-config=rifle&lt;/code&gt; - In &lt;code&gt;${HOME}/.config/ranger/rifle.conf&lt;/code&gt;: &lt;code&gt;ext pdf, has firefox,  X, flag g = firefox -- &amp;quot;$@&amp;quot;&lt;/code&gt; disable all generic file openers&lt;/li&gt;
+&lt;li&gt;Set default file manager:
+&lt;ul&gt;
+&lt;li&gt;Make a &lt;code&gt;/usr/share/applications/ranger-open.desktop&lt;/code&gt; with copying &lt;code&gt;ranger.desktop&lt;/code&gt;, then change &lt;code&gt;Terminal=true&lt;/code&gt; to &lt;code&gt;Terminal=false&lt;/code&gt;, and &lt;code&gt;Exec=ranger&lt;/code&gt; to &lt;code&gt;Exec=kitty -T ranger -e ranger %f&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Tell the XDG system to use your new &lt;code&gt;ranger-open.desktop&lt;/code&gt; when opening folders: &lt;code&gt;$ xdg-mime default ranger-open.desktop inode/directory&lt;/code&gt;, verifying with &lt;code&gt;$xdg-mime query default inode/directory&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -144,7 +152,7 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
 &lt;p&gt;$\LaTeX$: &lt;code&gt;texlive-latex&lt;/code&gt; for &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;texlive-latexrecommended&lt;/code&gt; for &lt;code&gt;amsmath&lt;/code&gt;, &lt;code&gt;texlive-latexextra&lt;/code&gt; for &lt;code&gt;orcidlink&lt;/code&gt;, &lt;code&gt;texlive-fontsrecommended&lt;/code&gt; for essentials published fonts.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;VSCode-OSS: &lt;code&gt;$ yay -S code&lt;/code&gt; with extensions:&lt;/p&gt;
+&lt;p&gt;VSCode-OSS (Using vim now): &lt;code&gt;$ yay -S code&lt;/code&gt; with extensions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Markdown: &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Markdown All in One&lt;/a&gt;: &lt;code&gt;ext install yzhang.markdown-all-in-one&lt;/code&gt;; &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -170,6 +178,9 @@ env = XMODIFIERS,&amp;#34;@im=ibus&amp;#34;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Network and VPN: &lt;code&gt;$ yay -S networkmanager-openconnect&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dictionary: &lt;code&gt;yay -S goldendict-ng&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;social-and-communication&#34;&gt;Social and Communication
