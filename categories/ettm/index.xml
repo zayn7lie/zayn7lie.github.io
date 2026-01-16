@@ -13,7 +13,8 @@
         
         <guid>https://zayn7lie.ber7.org/posts/ettm/server/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This tutor is under Linux machine (my working and server machine is both using Linux), if you use Windows or Mac, please know how to open the terminal and install OpenSSH for connection.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;why&#34;&gt;WHY
 &lt;/h2&gt;&lt;p&gt;Learning something about &lt;code&gt;AWS&lt;/code&gt;, &lt;code&gt;SSH&lt;/code&gt; remote connection (&lt;code&gt;ip&lt;/code&gt;, &lt;code&gt;port&lt;/code&gt;, &lt;code&gt;domain&lt;/code&gt;), and &lt;code&gt;java&lt;/code&gt; usage.&lt;/p&gt;
 &lt;p&gt;Playing Minecraft with my friends when not under &lt;code&gt;LAN&lt;/code&gt;.&lt;/p&gt;
@@ -24,10 +25,12 @@
     &gt;&lt;code&gt;SSH&lt;/code&gt; Intro&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;how&#34;&gt;HOW
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;*&lt;/code&gt; means Optional Operation&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;*&lt;/code&gt; means Optional Operation&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;1-create-an-aws-ec2-instance&#34;&gt;1. Create an AWS EC2 Instance
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. There is a free x86_64 CPU &amp;ldquo;&lt;code&gt;Free tier: In your first year includes 750 hours of t2.micro (or t3.micro in the Regions in which t2.micro is unavailable) instance usage on free tier AMIs per month, 30 GiB of EBS storage, 2 million IOs, 1 GB of snapshots, and 100 GB of bandwidth to the internet.&lt;/code&gt;&amp;rdquo; for new user, but it is not very good for running Minecraft Server. But if you want to use it, you could follow the tutor, but you need to change the &lt;code&gt;Architecture&lt;/code&gt; to &lt;code&gt;64-bit (x86)&lt;/code&gt; in &lt;code&gt;Application and OS Images (Amazon Machine Image)&lt;/code&gt; and choose &lt;code&gt;t2.micro&lt;/code&gt; in &lt;code&gt;Instance type&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. There is a free x86_64 CPU &amp;ldquo;&lt;code&gt;Free tier: In your first year includes 750 hours of t2.micro (or t3.micro in the Regions in which t2.micro is unavailable) instance usage on free tier AMIs per month, 30 GiB of EBS storage, 2 million IOs, 1 GB of snapshots, and 100 GB of bandwidth to the internet.&lt;/code&gt;&amp;rdquo; for new user, but it is not very good for running Minecraft Server. But if you want to use it, you could follow the tutor, but you need to change the &lt;code&gt;Architecture&lt;/code&gt; to &lt;code&gt;64-bit (x86)&lt;/code&gt; in &lt;code&gt;Application and OS Images (Amazon Machine Image)&lt;/code&gt; and choose &lt;code&gt;t2.micro&lt;/code&gt; in &lt;code&gt;Instance type&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a &lt;code&gt;AWS&lt;/code&gt; account&lt;/li&gt;
 &lt;li&gt;Choose a good place that near your home on the top right of the AWS main webpage, e.g. I choose &lt;code&gt;US East (N. Virginia)us-east-1&lt;/code&gt;&lt;/li&gt;
@@ -143,7 +146,8 @@
         
         <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;android-emulator-or-container&#34;&gt;Android Emulator or Container?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Emulator
@@ -162,7 +166,8 @@
 &lt;p&gt;Have a clear mind about the needs and choose one option for running Arknights.&lt;/p&gt;
 &lt;h3 id=&#34;emulator&#34;&gt;Emulator
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;avd&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;AVD&lt;/code&gt; (&lt;code&gt;Android Virtual Device&lt;/code&gt;, the project under &lt;code&gt;Android Studio&lt;/code&gt;)&lt;/a&gt;
 &lt;/h4&gt;&lt;p&gt;AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.&lt;/p&gt;
@@ -171,7 +176,8 @@
 &lt;h4 id=&#34;genymotion&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt;&lt;/a&gt;
 &lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt; offers AppImage (Installer) version&lt;/a&gt; that can run directly.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Genymotion&lt;/code&gt; is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)&lt;/p&gt;

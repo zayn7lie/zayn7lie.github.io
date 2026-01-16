@@ -13,7 +13,8 @@
         
         <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;android-emulator-or-container&#34;&gt;Android Emulator or Container?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Emulator
@@ -32,7 +33,8 @@
 &lt;p&gt;Have a clear mind about the needs and choose one option for running Arknights.&lt;/p&gt;
 &lt;h3 id=&#34;emulator&#34;&gt;Emulator
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;avd&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;AVD&lt;/code&gt; (&lt;code&gt;Android Virtual Device&lt;/code&gt;, the project under &lt;code&gt;Android Studio&lt;/code&gt;)&lt;/a&gt;
 &lt;/h4&gt;&lt;p&gt;AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.&lt;/p&gt;
@@ -41,7 +43,8 @@
 &lt;h4 id=&#34;genymotion&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt;&lt;/a&gt;
 &lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt; offers AppImage (Installer) version&lt;/a&gt; that can run directly.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Genymotion&lt;/code&gt; is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)&lt;/p&gt;

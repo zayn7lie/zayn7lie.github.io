@@ -36,7 +36,8 @@
 &lt;li&gt;Bounded in both sides: $\forall n, a_n \leq M$ and $\forall n, a_n \geq N$&lt;/li&gt;
 &lt;li&gt;Monotonically increasing or decreasing: $\forall n, a_n &amp;lt; a_{n+1}$ or $\forall n, a_n &amp;gt; a_{n+1}$
 &lt;blockquote&gt;
-&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. Identifying between decreasing and non-increasing&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -61,7 +62,8 @@
 &lt;p&gt;$$ \text{Find if (a) $a_n = \frac{n!}{n^n} (a &amp;gt; 0)$, (b) $a_n = \frac{a^n}{n!} (a &amp;gt; 0)$, (c) $a_n = \frac{n^b}{a^n}$, (d) $a_n = \frac{\ln n}{n^b}$ converges}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n} \gg C$&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;$n^n \gg n! \gg a^n \gg n^b \gg \ln{n} \gg C$&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;$$ \text{(a) $a_n = (1 + \frac{1}{n})^n$, (b) $a_n = (\frac{n}{n+1})^{2n}$ converges}
 $$
 $$ \text{Hint 1: } (1 - x)^n \geq 1 - nx, (1 + x)^n \geq 1 + nx, x \in [0, 1]
@@ -185,7 +187,8 @@ $$&lt;/p&gt;
 &lt;/h3&gt;&lt;p&gt;$$ c_n = \frac{f^{(n)}(a)}{n!} \Rightarrow f(x) = \sum \frac{f^{(n)}(a)}{n!}(x - a)^n, |x - a| &amp;lt; R
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;when $a = 0$, it is called Maclaurin series&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$1 + x$ Format
@@ -217,7 +220,8 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Notice. $\int$ and $\sum$ cannot always exchange the places for some specific infinite sum.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Notice. $\int$ and $\sum$ cannot always exchange the places for some specific infinite sum.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Exercise.&lt;/p&gt;
 &lt;p&gt;$$ \text{Known $\int_0^\infty e^{-x} x^n ,\mathrm{d}x = n!$, derive $\frac{1}{\pi}\int_0^1\frac{\sin{\ln{x}}}{\ln{x}},\mathrm{d}x$}
 $$
@@ -228,7 +232,8 @@ $$
 $$ \text{Find the compact form for of $\sum \frac{(\frac{1}{2})^n x^{2n}}{(n + 1)!}$}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;What about the Error Bond if the series finite?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;What about the Error Bond if the series finite?&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;$$ f(x) = \sum_0^N\frac{f^{n}(a)}{n!}(x - a)^n + \sum_{N + 1}^\infty\frac{f^{n}(a)}{n!}(x - a)^n = T_N(x) + R_N(x)
 $$
 $$ \text{Accordint to MVT, } \exists z \in [x, a], \frac{f^{N + 1}(z)}{(N + 1)!}(x - a)^{N + 1} = R_N(x)
@@ -244,7 +249,8 @@ $$&lt;/p&gt;
         
         <guid>https://zayn7lie.ber7.org/posts/math/cal-int/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The knowledge marked with * is not necessary in Calculus II&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;why-why-do-we-want-to-find-out-the-integral&#34;&gt;WHY: Why do we want to find out the integral
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Find out the area&lt;/li&gt;
@@ -253,7 +259,8 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;what-what-is-integral---area-with-positive-and-negative&#34;&gt;WHAT: What is integral - &amp;ldquo;Area (with positive and negative)&amp;rdquo;
 &lt;/h2&gt;&lt;h3 id=&#34;approx-integral&#34;&gt;Approx. Integral
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Equaling space is not necessary&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Equaling space is not necessary&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Dividing a function and approx it to separated rectangles, then just calculate the areas of rectangles:&lt;/p&gt;
 &lt;p&gt;$$ S (\int_a^b{f(x)},\mathrm{d}x) = \lim_{n \rightarrow \infty} \sum_{i = 0}^{n - 1} \Delta x f(x_i)  = \lim_{n \rightarrow \infty}{\sum_{i = 0}^{n - 1}\frac{b - a}{n}f(a + \frac{b - a}{n}i)}
 $$&lt;/p&gt;
@@ -284,7 +291,8 @@ $$&lt;/p&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;substitution-if-the-function-combines-with-its-derivative&#34;&gt;Substitution: If the function combines with its derivative
 &lt;/h3&gt;&lt;p&gt;Based on Rules: $\displaystyle \frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \Rightarrow \int_{x_1}^{x_2} f(x) \frac{\mathrm{d}u}{\mathrm{d}x},\mathrm{d}x = \int_{u(x_1)}^{u(x_2)}f(u),\mathrm{d}u$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The reason why we change the bound from $(x_1, x_2)$ to $(u(x_1), u(x_2))$ is we are from limiting $\mathrm{d}x \rightarrow 0$ to limiting $\mathrm{d}u \rightarrow 0$&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\displaystyle \int{F&amp;rsquo;(g(x)) \cdot g&amp;rsquo;(x)}{,\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
@@ -298,7 +306,8 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ v = \sin{u}, \frac{\mathrm{d}v}{\mathrm{d}u} = \cos{u} \Rightarrow \int{\frac{1}{v}}{,\mathrm{d}v} = \ln{v} + C = \ln{\sin{u}} + C = \ln{\sin{\arctan{x}} + C}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Trigonometric function: $\sqrt{1 - x^2}$, $\sqrt{1 + x^2}$, $\sqrt{x^2 - 1}$, $\frac{1}{1 + x^2}$, $\frac{1}{\sqrt{1 - x^2}}$&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;$\int{\sec^4{x} \tan^3{x}}{\mathrm{d}x}$&lt;/li&gt;
 &lt;/ul&gt;
@@ -390,7 +399,8 @@ $$&lt;/p&gt;
 &lt;p&gt;Notice. Approx to limit - Improper Integral:
 For integral $\int_a^b{f(x)},\mathrm{d}x$, when there are some points that are not defined, we use $t$ to approx. the limit of those points&lt;/p&gt;
 &lt;p&gt;$$ \int_a^b{f(x)},\mathrm{d}x = \lim_{t \rightarrow b}\int_a^t{f(x)},\mathrm{d}x
-$$&lt;/p&gt;&lt;/blockquote&gt;
+$$&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;how-how-to-apply-integral-to-reality&#34;&gt;HOW: How to apply integral to reality
 &lt;/h2&gt;&lt;h3 id=&#34;rate---differential-equations&#34;&gt;Rate - Differential Equations
 &lt;/h3&gt;&lt;p&gt;$$ \text{Informal:} \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{x}{y} \Rightarrow y,\mathrm{d}y = x,\mathrm{d}x \Rightarrow \int{y},\mathrm{d}y = \int{x},\mathrm{d}x
@@ -407,7 +417,8 @@ $$
 $$ \ln{N} - \ln{(K - N)} = rt + C_1 \Rightarrow N = \frac{K}{1 + e^{-rt}}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $\mathrm{d}N/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;$N$ is the population size, $r$ is the intrinsic growth rate, $K$ is the carrying capacity of the local environment, and $\mathrm{d}N/\mathrm{d}t$, the derivative of $N$ with respect to time $t$, is the rate of change in population with time.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;$$ x\frac{\mathrm{d}^2y}{,\mathrm{d}x^2} + 2\frac{\mathrm{d}y}{\mathrm{d}x} = 0 \Rightarrow \int{(x\frac{\mathrm{d}^2y}{\mathrm{d}x} + \frac{\mathrm{d}y}{\mathrm{d}x})},\mathrm{d}x = \int{-\frac{\mathrm{d}y}{\mathrm{d}x}},\mathrm{d}x \Rightarrow x\frac{\mathrm{d}y}{\mathrm{d}x} = -y
 $$&lt;/p&gt;
 &lt;p&gt;Exercise:&lt;/p&gt;
@@ -442,14 +453,16 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Why $\displaystyle \mathrm{d}^2y/,\mathrm{d}x^2 \neq \frac{\mathrm{d}^2y/\mathrm{d}\theta^2}{\mathrm{d}^2x/\mathrm{d}\theta^2}?$&lt;/p&gt;
-&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;If you remember &amp;ldquo;$y$ and $x$ are not in the same manner&amp;rdquo; that I mentioned before, you would find that in this equation, the left is differentiation respecting to $x$, or they are in different stage, but the right side turns the $x$ and $y$ into same stage.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;$$ L = \int_{a}^{b}{\sqrt{1 + \frac{\mathrm{d}y^2}{,\mathrm{d}x^2}}},\mathrm{d}x = \int_{\alpha}^{\beta}{\sqrt{1 + (\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t})^2}}\frac{\mathrm{d}x}{\mathrm{d}t}\mathrm{d}t = \int_{\alpha}^{\beta}{\sqrt{\frac{\mathrm{d}x^2}{\mathrm{d}t^2} + \frac{\mathrm{d}y^2}{\mathrm{d}t^2}}}\mathrm{d}t
 $$&lt;/p&gt;
 &lt;h3 id=&#34;what-what-is-polar-coordinates&#34;&gt;WHAT: What is Polar Coordinates
 &lt;/h3&gt;&lt;p&gt;$$ A(x, y) \Rightarrow A(r\cos{\theta}, r\sin{\theta}) \Rightarrow A(r, \theta)
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$(r, \theta) = (-r, \theta + (2k + 1)\pi) = (r, \theta + 2k\pi)$&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;$(r, \theta) = (-r, \theta + (2k + 1)\pi) = (r, \theta + 2k\pi)$&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         

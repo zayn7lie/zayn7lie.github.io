@@ -13,7 +13,8 @@
         
         <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;why-why-am-i-going-to-do-that&#34;&gt;WHY: Why am I going to do that?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;With more and more people reading and learning from my posts, it is time to take a next step to promote my posts and make available to more people.&lt;/li&gt;
@@ -419,7 +420,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;how-how-can-i-use-those-posts&#34;&gt;HOW: How can I use those posts?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;you-are-free-to&#34;&gt;You are free to
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Share&lt;/strong&gt; — copy and redistribute the material in any medium or format&lt;/li&gt;
@@ -427,7 +429,8 @@
 for any purpose, even commercially.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;under-the-following-terms&#34;&gt;Under the following terms
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Attribution&lt;/strong&gt; — You must give &lt;a class=&#34;link&#34; href=&#34;http://wiki.creativecommons.org/License_Versions#Detailed_attribution_comparison_chart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -505,12 +508,14 @@ for any purpose, even commercially.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;advanced-configuration&#34;&gt;Advanced Configuration
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;The global config file is in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The global config file is in &lt;code&gt;./hugo.toml&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;theme-setting&#34;&gt;Theme Setting
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;I am using &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Stack&lt;/a&gt;, it has a &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;doc&lt;/a&gt; for fully configuration that you could read.&lt;/p&gt;&lt;/blockquote&gt;
+    &gt;doc&lt;/a&gt; for fully configuration that you could read.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a &lt;code&gt;themes&lt;/code&gt; folder, and move the theme folder that you want to adopt, to &lt;code&gt;themes&lt;/code&gt; folder.&lt;/li&gt;
 &lt;li&gt;Open &lt;code&gt;hugo.toml&lt;/code&gt;, insert &lt;code&gt;theme = &amp;quot;YOUR_THEME_NAME&amp;quot;&lt;/code&gt; at the beginning&lt;/li&gt;

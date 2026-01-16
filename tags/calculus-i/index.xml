@@ -19,14 +19,16 @@
 &lt;/h2&gt;&lt;p&gt;$$ \lim_{h \rightarrow 0}\frac{f(x + h) - f(x)}{h} \textbf{ (1)} = \lim_{\Delta{x} \rightarrow 0}\frac{\Delta{f(x)}}{\Delta{x}} \textbf{ (2)} = \frac{\mathrm{d}f(x)}{\mathrm{d}x} \textbf{ (3)} \Rightarrow f&amp;rsquo;(x) \textbf{ (4)}
 $$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $\mathrm{d}$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{\mathrm{d}f(x)}{\mathrm{d}x} \neq \mathrm{d}f(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Notice. When transform from #2 to #3, we make two simplifications: Change $\Delta$ to $\mathrm{d}$; &lt;strong&gt;Leave out $\lim_{\Delta{x} \rightarrow 0}$&lt;/strong&gt;. So that is a reason why $\frac{\mathrm{d}f(x)}{\mathrm{d}x} \neq \mathrm{d}f(x) \div \mathrm{d}x$, because $f(x)$ and $x$ are &lt;strong&gt;not in the same manner&lt;/strong&gt;, or $\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ is &lt;strong&gt;respected to $x$&lt;/strong&gt;. Thus, it is preferred to write in $\frac{d}{\mathrm{d}x}f(x)$, or $f&amp;rsquo;(x)$ for reminding which is respected.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Difference between differentiation and derivative?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$\frac{\mathrm{d}f(x)}{\mathrm{d}x}$ differentiation is a method to crop source function to small range for knowing the tendency&lt;/li&gt;
 &lt;li&gt;$f&amp;rsquo;(x)$ derivative is that kinds of tendency.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Or we can say, differentiation is a method to find the derivative.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;EX-CAL-DIF-01&lt;/code&gt;: Use the derivative way to present $g(x)$: $g(x) = \lim_{h \rightarrow 0}\Large{\frac{f(x + h) - \frac{3}{4}f(x + 2h) + \frac{1}{8}f(x + 4h) - \frac{3}{8}f(x)}{h^3}}$&lt;/p&gt;
 &lt;h3 id=&#34;why-why-a-function-could-be-differentiated---differentiability&#34;&gt;WHY: Why a function could be differentiated? - Differentiability
 &lt;/h3&gt;&lt;ul&gt;

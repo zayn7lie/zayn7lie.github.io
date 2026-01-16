@@ -63,7 +63,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_895787f08da61092.png" width="300"
+                        <img src="/img/avatar_hu_810c91b46dd0dd65.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -266,7 +266,7 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/tags/linux/" class="font_size_6">
+            <a href="/tags/linux/" class="font_size_7">
                 Linux
             </a>
         
@@ -274,7 +274,7 @@
                 Calculus
             </a>
         
-            <a href="/tags/install/" class="font_size_4">
+            <a href="/tags/install/" class="font_size_5">
                 Install
             </a>
         
@@ -436,7 +436,8 @@
 <p>Note. This guide is just a simplification, clarification and modification based <a class="link" href="https://wiki.archlinux.org/title/Installation_guide"  target="_blank" rel="noopener"
     >Arch Linux-Installation Guide</a>. If you have any questions or if I not mention or skip about some necessary steps, you could just read the wiki and find out the answer. By the way, this guide is more focusing on understanding Linux system and how a system could be installed in a machine.</p>
 <p>Every command begin with <code>#</code> meaning it is a shell command. <code>#</code> is always input automatically that you do not need to type it again. E.g. <code># mount /dev/?{nvme0n1p4} /mnt</code> you might only need to type in <code>mount /dev/?{nvme0n1p4} /mnt</code>. <code>$</code>, <code>[iwd]#</code>, etc. is also similar to <code>$</code>.</p>
-<p>Everything with <code>?{ }</code> meaning that you could modify it based on your situation, for example <code># mount /dev/?{nvme0n1p4} /mnt</code> might be <code># mount /dev/sd1 /mnt</code> for you. Everything with <code>!{ }</code> meaning that you could not to type this based on your situation. E.g. <code># arch-chroot /mnt !{/bin/bash}</code> you might only need to run <code># arch-chroot /mnt</code>.</p></blockquote>
+<p>Everything with <code>?{ }</code> meaning that you could modify it based on your situation, for example <code># mount /dev/?{nvme0n1p4} /mnt</code> might be <code># mount /dev/sd1 /mnt</code> for you. Everything with <code>!{ }</code> meaning that you could not to type this based on your situation. E.g. <code># arch-chroot /mnt !{/bin/bash}</code> you might only need to run <code># arch-chroot /mnt</code>.</p>
+</blockquote>
 <h3 id="1-preparation">1. Preparation
 </h3><p>A target machine that you want to install system to. A computer with 16 GB or above disk and AMD or Intel CPU is recommended. (P.S. High RAM is highly recommended. In this guide, I would not introduce how to create SWAP partition because my 16 GB RAM is enough for daily use.)</p>
 <p>A USB flash drive (storage device) that could be modified. A USB with 8 GB or larger is recommended.</p>
@@ -470,7 +471,8 @@
 </ul>
 <h3 id="3-network-configuration">3. Network Configuration
 </h3><blockquote>
-<p>Note. The installation medium have installed <code>iwd</code> tool. Although <code>networkmanager</code> is more popular in Arch Linux network settings, <code>iwd</code> is the default network settings tool for installation.</p></blockquote>
+<p>Note. The installation medium have installed <code>iwd</code> tool. Although <code>networkmanager</code> is more popular in Arch Linux network settings, <code>iwd</code> is the default network settings tool for installation.</p>
+</blockquote>
 <ol>
 <li><code># iwctl</code> to enter iwd tool.</li>
 <li><code>[iwd]# device list</code> to check your network device. You need to remember your device name and type into ?{wlan0} in the following commands.</li>
@@ -480,7 +482,8 @@
 </ol>
 <h3 id="4-disk-mounting-and-installation">4. Disk Mounting and Installation
 </h3><blockquote>
-<p>Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.</p></blockquote>
+<p>Note. Mounting disk partitions to installation medium enable we to modify partitions through installation medium. You need to prepare at least two partitions - one at least 150 M as your starting partition and another above 16 G is recommended for your main Arch Linux System.</p>
+</blockquote>
 <ol>
 <li><code># fdisk -l</code> to check your partitions of disk.</li>
 <li><code># mkfs.ext4 /dev/?{nvme0n1p4}</code> to format a partition to ext4 file system for your main Arch Linux System Installation. If you want to install Dual-systems, do not run the following commands: <code># mkfs.vfat -F32 /dev/?{nvme0n1p1}</code> to format a partition to fat32 file system for the boot partition.</li>
@@ -582,6 +585,7 @@
 <li><code># vim /etc/locale.gen</code> uncomment <code>en-US.UTF-8 UTF-8</code>, <code># locale-gen</code></li>
 <li><code># echo LANG=C.UTF-8 &gt; /etc/locale.conf</code></li>
 <li><code># ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime</code></li>
+<li><code># hwclock --systohc</code></li>
 </ol>
 </li>
 <li>
@@ -732,7 +736,7 @@
     <section class="copyright">
         &copy; 
         
-        2025 zayn_lie&#39;s studio
+        2026 zayn_lie&#39;s studio
     </section>
     
     <section class="powerby">

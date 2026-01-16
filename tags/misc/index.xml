@@ -13,7 +13,8 @@
         
         <guid>https://zayn7lie.ber7.org/posts/misc/license/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Notice: some posts might have limitation because of reference from other posts that has &lt;code&gt;SA&lt;/code&gt; requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;why-why-am-i-going-to-do-that&#34;&gt;WHY: Why am I going to do that?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;With more and more people reading and learning from my posts, it is time to take a next step to promote my posts and make available to more people.&lt;/li&gt;
@@ -419,7 +420,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;how-how-can-i-use-those-posts&#34;&gt;HOW: How can I use those posts?
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    &gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;you-are-free-to&#34;&gt;You are free to
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Share&lt;/strong&gt; — copy and redistribute the material in any medium or format&lt;/li&gt;
@@ -427,7 +429,8 @@
 for any purpose, even commercially.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The licensor (me) cannot revoke these freedoms as long as you follow the license terms.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;under-the-following-terms&#34;&gt;Under the following terms
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Attribution&lt;/strong&gt; — You must give &lt;a class=&#34;link&#34; href=&#34;http://wiki.creativecommons.org/License_Versions#Detailed_attribution_comparison_chart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -452,7 +455,8 @@ for any purpose, even commercially.&lt;/li&gt;
         
         <guid>https://zayn7lie.ber7.org/posts/ettm/arknights/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. This guide is written under Arch Linux&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;android-emulator-or-container&#34;&gt;Android Emulator or Container?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Emulator
@@ -471,7 +475,8 @@ for any purpose, even commercially.&lt;/li&gt;
 &lt;p&gt;Have a clear mind about the needs and choose one option for running Arknights.&lt;/p&gt;
 &lt;h3 id=&#34;emulator&#34;&gt;Emulator
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. Arknights needs about 3G + 7G storage, above 24G is recommended. RAM has less requirement, but above 8G is still recommended.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;avd&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;AVD&lt;/code&gt; (&lt;code&gt;Android Virtual Device&lt;/code&gt;, the project under &lt;code&gt;Android Studio&lt;/code&gt;)&lt;/a&gt;
 &lt;/h4&gt;&lt;p&gt;AVD originally is used for debugging in Android Studio, but the complete version of Android and functions people also use it as an emulator for games.&lt;/p&gt;
@@ -480,7 +485,8 @@ for any purpose, even commercially.&lt;/li&gt;
 &lt;h4 id=&#34;genymotion&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt;&lt;/a&gt;
 &lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note. Arknights of Bilibili version always break while using &lt;code&gt;Genymotion&lt;/code&gt;, you could have a try in your device.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.genymotion.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;Genymotion&lt;/code&gt; offers AppImage (Installer) version&lt;/a&gt; that can run directly.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Genymotion&lt;/code&gt; is not a free software which have watermark using free version. After register, choose Android 11 and above then install (Android 11 and above have x86_64 structure)&lt;/p&gt;
